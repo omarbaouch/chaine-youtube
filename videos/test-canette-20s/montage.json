@@ -1,0 +1,65 @@
+{
+ "titre": "Test 20 s : combien coûte une canette vide ?",
+ "scenes": [
+  {
+   "id": "p1",
+   "type": "video",
+   "recherche": [
+    "aluminum cans conveyor",
+    "empty cans production line",
+    "cans moving conveyor close up"
+   ],
+   "duree_min": 3
+  },
+  {
+   "id": "p2",
+   "type": "video",
+   "recherche": [
+    "aluminum coil unwinding",
+    "aluminium sheet roll factory",
+    "aluminum rolling mill"
+   ],
+   "duree_min": 2.5
+  },
+  {
+   "id": "p3",
+   "type": "video",
+   "recherche": [
+    "can manufacturing line",
+    "beverage cans factory automation",
+    "canning line high speed"
+   ],
+   "duree_min": 4.5
+  },
+  {
+   "id": "p4",
+   "type": "video",
+   "recherche": [
+    "empty aluminum can macro",
+    "single soda can rotating",
+    "aluminum can close up"
+   ],
+   "duree_min": 4
+  },
+  {
+   "id": "p5",
+   "type": "video",
+   "recherche": [
+    "hand taking can from shelf",
+    "soda cans supermarket shelf",
+    "drinks aisle cans"
+   ],
+   "duree_min": 3.5
+  },
+  {
+   "id": "p6",
+   "type": "video",
+   "recherche": [
+    "paying with coins checkout",
+    "coins in hand close up",
+    "counting coins slow motion"
+   ],
+   "duree_min": 3.0
+  }
+ ]
+}

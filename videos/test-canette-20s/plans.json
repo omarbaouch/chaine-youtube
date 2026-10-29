@@ -1,0 +1,88 @@
+{
+ "plans": [
+  {
+   "id": "p1",
+   "debut_s": 0,
+   "fin_s": 3,
+   "narration": "Devine combien coûte cette canette. Vide.",
+   "image_reelle": "Gros plan de canettes vides en aluminium (non remplies, sans couvercle) qui défilent en file sur un convoyeur d'usine",
+   "recherche": [
+    "aluminum cans conveyor",
+    "empty cans production line",
+    "cans moving conveyor close up"
+   ],
+   "couche_animee": "Visee qui se verrouille sur une canette nette au centre, puis Etiquette « Prix : ? »",
+   "surtitre": ""
+  },
+  {
+   "id": "p2",
+   "debut_s": 3,
+   "fin_s": 5.5,
+   "narration": "Une bande d'aluminium entre d'un côté.",
+   "image_reelle": "Bobine ou bande d'aluminium clair et brillant qui se déroule dans une usine (refuser acier sombre ou rouillé, câbles)",
+   "recherche": [
+    "aluminum coil unwinding",
+    "aluminium sheet roll factory",
+    "aluminum rolling mill"
+   ],
+   "couche_animee": "Annotation (point + trait) posée sur la bande : « Bande d'aluminium ≈ 0,3 mm »",
+   "surtitre": "Épaisseur : alcircle.com"
+  },
+  {
+   "id": "p3",
+   "debut_s": 5.5,
+   "fin_s": 10,
+   "narration": "De l'autre, des canettes sortent à la chaîne, sans jamais s'arrêter.",
+   "image_reelle": "Ligne de fabrication de canettes vides en aluminium à pleine vitesse, plan large ou en enfilade (refuser bouteilles, jus, verre)",
+   "recherche": [
+    "can manufacturing line",
+    "beverage cans factory automation",
+    "canning line high speed"
+   ],
+   "couche_animee": "Vitesse 1,5 à 2 ; Flash + secousse légère + choc métallique calés sur la coupe d'entrée",
+   "surtitre": ""
+  },
+  {
+   "id": "p4",
+   "debut_s": 10,
+   "fin_s": 14,
+   "narration": "La fabriquer coûte moins de quatre centimes. De dollar.",
+   "image_reelle": "Une seule canette en aluminium, nette, en plan serré (en usine ou sur fond neutre, marque peu visible)",
+   "recherche": [
+    "empty aluminum can macro",
+    "single soda can rotating",
+    "aluminum can close up"
+   ],
+   "couche_animee": "Vitre + Compteur qui descend jusqu'à « < 0,04 $ » (tic à chaque palier, le $ en couleur d'accent sur « De dollar »)",
+   "surtitre": "Estimation : Adam S. Hersh, Economic Policy Institute, via CNN, 2 mars 2025"
+  },
+  {
+   "id": "p5",
+   "debut_s": 14,
+   "fin_s": 17.5,
+   "narration": "Alors, où passe tout le reste de ce que tu paies ?",
+   "image_reelle": "Rayon de supermarché rempli de canettes reconnaissables, idéalement une main qui en prend une",
+   "recherche": [
+    "hand taking can from shelf",
+    "soda cans supermarket shelf",
+    "drinks aisle cans"
+   ],
+   "couche_animee": "MotsQuiMontent « Où va le reste ? »",
+   "surtitre": ""
+  },
+  {
+   "id": "p6",
+   "debut_s": 17.5,
+   "fin_s": 20.5,
+   "narration": "On suit l'argent, centime par centime.",
+   "image_reelle": "Pièces de monnaie en gros plan : paiement en pièces à une caisse ou pièces posées dans une main",
+   "recherche": [
+    "paying with coins checkout",
+    "coins in hand close up",
+    "counting coins slow motion"
+   ],
+   "couche_animee": "MotsQuiMontent « On suit l'argent », puis carton final « Bientôt : la vidéo complète »",
+   "surtitre": ""
+  }
+ ]
+}
