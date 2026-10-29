@@ -25,11 +25,25 @@ async function telecharger(url, dest) {
   fs.writeFileSync(dest, Buffer.from(await r.arrayBuffer()));
 }
 
+// Rush choisi au repérage (scripts/reperage.mjs) : "pixabay_id" dans la scène → ce rush précis, sans deviner.
+async function videoParId(id) {
+  const r = await fetch(`https://pixabay.com/api/videos/?${new URLSearchParams({key: CLE, id: String(id)})}`);
+  if (!r.ok) throw new Error(`Pixabay a répondu ${r.status} pour l'id ${id}`);
+  const h = (await r.json()).hits[0];
+  if (!h) throw new Error(`Rush Pixabay ${id} introuvable`);
+  return {h, v: h.videos.large?.url ? h.videos.large : h.videos.medium};
+}
+
 async function chercherVideo(s) {
-  const params = new URLSearchParams({key: CLE, q: s.recherche, per_page: '30', safesearch: 'true', video_type: 'film'});
-  const r = await fetch(`https://pixabay.com/api/videos/?${params}`);
-  if (!r.ok) throw new Error(`Pixabay a répondu ${r.status} pour "${s.recherche}"`);
-  const {hits} = await r.json();
+  if (s.pixabay_id) return videoParId(s.pixabay_id);
+  const requetes = Array.isArray(s.recherche) ? s.recherche : [s.recherche];
+  const hits = [];
+  for (const q of requetes) {
+    const params = new URLSearchParams({key: CLE, q, per_page: '30', safesearch: 'true', video_type: 'film'});
+    const r = await fetch(`https://pixabay.com/api/videos/?${params}`);
+    if (!r.ok) throw new Error(`Pixabay a répondu ${r.status} pour "${q}"`);
+    hits.push(...(await r.json()).hits.filter((h) => !hits.some((x) => x.id === h.id)));
+  }
   const besoin = dureeVoulue(s) / (s.vitesse ?? 1);
   const candidats = hits
     .filter((h) => !dejaPris.has(h.id))
@@ -49,7 +63,8 @@ async function chercherVideo(s) {
 }
 
 async function chercherImage(s) {
-  const params = new URLSearchParams({key: CLE, q: s.recherche, per_page: '30', safesearch: 'true', image_type: 'photo', orientation: 'horizontal'});
+  const q = Array.isArray(s.recherche) ? s.recherche[0] : s.recherche;
+  const params = new URLSearchParams({key: CLE, q, per_page: '30', safesearch: 'true', image_type: 'photo', orientation: 'horizontal'});
   const r = await fetch(`https://pixabay.com/api/?${params}`);
   if (!r.ok) throw new Error(`Pixabay a répondu ${r.status} pour "${s.recherche}"`);
   const {hits} = await r.json();
@@ -71,7 +86,7 @@ for (const s of montage.scenes) {
     console.log(`✔ ${s.id} : ton média ${s.fichier}`);
     continue;
   }
-  if (!s.recherche) continue;
+  if (!s.recherche && !s.pixabay_id) continue;
   if (existant) {
     console.log(`↺ ${s.id} : déjà téléchargé (${existant})`);
     continue;

@@ -20,18 +20,24 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Tous les rushes sont-ils choisis ?
+        id: pret
+        run: node -e "const m=require('./tests/scene/montage.json');console.log('ok='+(m.scenes.every(s=>s.pixabay_id||s.fichier)?'1':'0'))" >> "$GITHUB_OUTPUT"
       - name: Outils
+        if: steps.pret.outputs.ok == '1'
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           npm ci
           npx remotion browser ensure
       - name: Rushes Pixabay
+        if: steps.pret.outputs.ok == '1'
         env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           mkdir -p episodes/test-canette && cp tests/scene/montage.json episodes/test-canette/
           node scripts/medias.mjs test-canette
       - name: Rendu
+        if: steps.pret.outputs.ok == '1'
         run: |
           mkdir -p out
           npx remotion render src/index.ts TestCanette out/test-canette.mp4 --codec=h264 --crf=18 --concurrency=100%
@@ -39,6 +45,7 @@ jobs:
           ffmpeg -y -loglevel error -pattern_type glob -i 'out/f_*.jpg' -vf tile=2x3:padding=4 -frames:v 1 out/test-canette-planche.jpg
           cp public/ep/test-canette/credits.txt out/test-canette-credits.txt || true
       - name: Publier
+        if: steps.pret.outputs.ok == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

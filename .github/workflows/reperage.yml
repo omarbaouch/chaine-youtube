@@ -1,0 +1,58 @@
+name: Repérage des rushes
+
+# Planches de rushes candidats (Pixabay) pour qu'on choisisse les bons plans à l'œil.
+# Se lance quand tests/scene/montage.json ou un montage d'épisode a des scènes sans "pixabay_id".
+on:
+  push:
+    branches: [main]
+    paths: ['tests/scene/montage.json', 'episodes/*/montage.json']
+  workflow_dispatch:
+    inputs:
+      montage:
+        description: 'Chemin du montage.json à repérer'
+        required: true
+        default: tests/scene/montage.json
+
+permissions:
+  contents: write
+
+jobs:
+  reperage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Quels montages ?
+        id: quoi
+        env:
+          ENTREE: ${{ inputs.montage }}
+        run: |
+          if [ -n "$ENTREE" ]; then liste="$ENTREE"; else
+            liste="$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- tests/scene/montage.json 'episodes/*/montage.json' 2>/dev/null || true)"; fi
+          garder=""
+          for m in $liste; do
+            [ -f "$m" ] && node -e "const m=require('./$m');process.exit(m.scenes.some(s=>s.recherche&&!s.pixabay_id&&!s.fichier)?0:1)" && garder="$garder $m"
+          done
+          echo "montages=$garder" >> "$GITHUB_OUTPUT"
+      - name: Planches
+        if: steps.quoi.outputs.montages != ''
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          for m in ${{ steps.quoi.outputs.montages }}; do
+            nom=$(basename $(dirname "$m")); node scripts/reperage.mjs "$m" "out/reperage/$nom"
+            (cd "out/reperage/$nom" && for f in *.jpg; do mv "$f" "$nom-$f"; done && mv candidats.json "$nom-candidats.json")
+          done
+      - name: Publier
+        if: steps.quoi.outputs.montages != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "reperage-${{ github.run_number }}" out/reperage/*/* --title "🔎 Repérage #${{ github.run_number }}" \
+            --notes "Planches de rushes candidats : choisir les id et les écrire en pixabay_id." --prerelease
