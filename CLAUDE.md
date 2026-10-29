@@ -12,7 +12,7 @@ depuis son téléphone : réponses courtes, concrètes, sans jargon.
 ## Comment une vidéo est fabriquée
 1. `episodes/<slug>/montage.json` : **la seule source que tu écris**. Le reste est généré.
 2. `scripts/produire.sh <slug> [--brouillon]` enchaîne :
-   rushes (`scripts/medias.mjs`, Pixabay) → voix (`scripts/voix.py`, Chatterbox) → timeline (`scripts/construire.mjs`)
+   rushes (`scripts/medias.mjs`, Pixabay) → voix (`scripts/voix.py`, Pocket TTS + traitement radio) → timeline (`scripts/construire.mjs`)
    → rendu Remotion (`src/`) → planche de contrôle `out/<slug>*-planche.jpg`.
 3. Sur GitHub, chaque push qui touche `episodes/**` lance `.github/workflows/rendu.yml` qui publie le MP4,
    la planche et les crédits dans l'onglet **Releases**. Commit avec `[brouillon]` = rendu 540p rapide.
@@ -29,6 +29,14 @@ bash scripts/produire.sh <slug> --brouillon
 (adapter le chemin du navigateur : `find /opt -name chrome-headless-shell -type f`). Puis **regarder la planche**
 avec Read avant de dire que c'est bon. Le vrai rendu (vrais rushes + vraie voix) se fait en poussant sur GitHub.
 
+## Motion design : vraies images + animation, toujours ensemble
+Lire `.claude/skills/remotion-motion-graphics/SKILL.md` avant d'écrire une scène. Briques prêtes dans `src/motion/` :
+`Rush` (vidéo + Ken Burns + étalonnage), `CarteVideo`, `Annotation` (point + trait + étiquette sur la vidéo), `Visee` (HUD),
+`Vitre` (panneau vitré pour schémas/chiffres posés sur la vidéo), `Flash`, `MotsQuiMontent`, `Etiquette`, `Compteur`,
+couches `FondVivant`/`Etalonnage`/`Grain`/`Vignette`. Exemple complet : `src/tests/Canette.tsx`.
+Jamais une vidéo nue avec des sous-titres, jamais du dessin seul : chaque plan mélange un rush réel ET une couche animée
+(fenêtre en forme d'objet, annotation, schéma vitré, chiffres). Bruitages dans `public/sfx/` (`node scripts/sfx.mjs`).
+
 ## Format de `montage.json`
 ```jsonc
 {
@@ -36,7 +44,7 @@ avec Read avant de dire que c'est bon. Le vrai rendu (vrais rushes + vraie voix)
   "format": {"largeur": 1920, "hauteur": 1080, "fps": 30},
   "transition_defaut": "fondu",           // fondu | glissement | balayage | coupe
   "duree_transition": 12,                 // frames
-  "voix": {"expressivite": 0.5, "cfg": 0.5, "pause_phrase": 0.22},  // expressivité 0.3 posé → 0.8 très animé ; cfg plus bas = débit plus vif
+  "voix": {"modele": "french_24l", "locuteur": "estelle", "temperature": 0.3, "pause_phrase": 0.22},  // Pocket TTS (Kyutai) ; température plus haute = plus expressif
   "musique": {"fichier": "../../assets/musique/xxx.mp3", "volume": 0.12},
   "etalonnage": {"contraste": 1.08, "saturation": 1.1, "luminosite": 1},
   "grain": true,
@@ -53,7 +61,10 @@ avec Read avant de dire que c'est bon. Le vrai rendu (vrais rushes + vraie voix)
 - `recherche` : mots-clés **en anglais**, concrets et visuels (« baker kneading dough close up », pas « travail »).
 - `fichier` : média fourni par Omar, chemin relatif au dossier de l'épisode. Toujours prioritaire sur Pixabay.
 - Voix d'Omar : `episodes/<slug>/voix/<id>.wav|mp3|m4a` remplace la voix IA pour cette scène.
-  `assets/voix/reference.wav` (10–20 s de sa voix, au calme) = la voix IA est clonée sur sa voix.
+  Le clonage de voix Pocket TTS demande un compte Hugging Face (conditions acceptées + jeton) : pas activé pour l'instant.
+- Son de la voix : chaîne d'égalisation mesurée dans `scripts/voix.py` (EGALISATION_IA). Si on change de voix,
+  remesurer avec `python3 scripts/analyse_voix.py avant.wav apres.wav --png spectre.png` et réajuster :
+  cibles = clarté 2–5 kHz ≈ -20 dB / sifflantes 5–9 kHz sous la clarté / -16 LUFS / crête ≤ -1,5 dBTP.
 - La durée d'une scène = durée de sa voix + respiration (`respiration`, 0.4 s par défaut), au minimum `duree_min`.
 
 ## Règles d'écriture (la voix est lue par une IA)
