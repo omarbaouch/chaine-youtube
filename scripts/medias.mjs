@@ -33,14 +33,14 @@ async function chercherVideo(s) {
   const besoin = dureeVoulue(s) / (s.vitesse ?? 1);
   const candidats = hits
     .filter((h) => !dejaPris.has(h.id))
-    .map((h) => {
+    .map((h, rang) => {
       const v = h.videos.large?.url ? h.videos.large : h.videos.medium;
-      let score = 0;
+      let score = Math.max(0, 6 - rang * 0.4); // la pertinence Pixabay compte le plus
       if (v.width >= 1920) score += 3;
       else if (v.width >= 1280) score += 1;
       if (v.width > v.height) score += 3; // paysage
       if (h.duration >= besoin) score += 2;
-      score += Math.min(2, (h.downloads ?? 0) / 20000); // popularité = souvent plus beau
+      score += Math.min(1, (h.downloads ?? 0) / 40000); // popularité = souvent plus beau
       return {h, v, score};
     })
     .filter((c) => c.v?.url)

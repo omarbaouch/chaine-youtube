@@ -35,10 +35,10 @@ export const SousTitres: React.FC<{lignes: Ligne[]}> = ({lignes}) => {
               key={i}
               style={{
                 display: 'inline-block',
-                margin: '0 0.22em',
-                transformOrigin: 'center bottom',
+                margin: '0 0.28em',
                 color: actif ? '#FFD400' : 'white',
-                transform: `scale(${1 + 0.12 * pop})`,
+                // Petit saut vers le haut plutôt qu'un agrandissement : les mots longs ne mordent plus sur l'espace.
+                transform: `translateY(${-8 * pop * (1 - pop) * 4}px) scale(${1 + 0.04 * pop})`,
               }}
             >
               {m.texte}

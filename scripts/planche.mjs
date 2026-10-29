@@ -11,7 +11,7 @@ props.scenes.forEach((s, i) => {
   if (i && s.transition !== 'coupe') t -= props.dureeTransition;
   const milieu = (t + s.voixDebut + Math.min(s.duree - s.voixDebut, 45)) / props.fps; // un peu après le début de la voix : sous-titre visible
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', milieu.toFixed(2), '-i', video, '-frames:v', '1', '-vf',
-    `scale=480:-1,drawtext=text='${s.id}':x=10:y=10:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6`, path.join(tmp, `${String(i).padStart(3, '0')}.jpg`)]);
+    `scale=480:-1,drawtext=text='${s.id}':x=w-tw-10:y=h-th-10:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6`, path.join(tmp, `${String(i).padStart(3, '0')}.jpg`)]);
   t += s.duree;
 });
 const n = props.scenes.length;
