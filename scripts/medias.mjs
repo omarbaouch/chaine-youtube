@@ -71,6 +71,44 @@ async function chercherImage(s) {
   return hits.find((h) => !dejaPris.has(h.id));
 }
 
+// Média choisi au repérage multi-sources : "pv:<id>" vidéo Pixabay, "pi:<id>" photo Pixabay, "wc:File:<titre>" Wikimedia Commons.
+const UA = {'User-Agent': 'chaine-youtube-medias/1.0 (github.com/omarbaouch/chaine-youtube)'};
+async function telechargerRef(s) {
+  const [src, ...reste] = s.media_ref.split(':');
+  const id = reste.join(':');
+  if (src === 'pv') {
+    const c = await videoParId(id);
+    await telecharger(c.v.url, path.join(sortie, `${s.id}.mp4`));
+    credits.push(`${s.id} : https://pixabay.com/videos/id-${id}/ (Pixabay, ${c.h.user})`);
+  } else if (src === 'pi') {
+    const r = await fetch(`https://pixabay.com/api/?${new URLSearchParams({key: CLE, id})}`);
+    const h = (await r.json()).hits?.[0];
+    if (!h) throw new Error(`Photo Pixabay ${id} introuvable`);
+    await telecharger(h.largeImageURL, path.join(sortie, `${s.id}.jpg`));
+    credits.push(`${s.id} : ${h.pageURL} (Pixabay, ${h.user})`);
+  } else if (src === 'wc') {
+    const p = new URLSearchParams({action: 'query', titles: id, prop: 'imageinfo', iiprop: 'url|mime|extmetadata', iiurlwidth: '2400', format: 'json'});
+    const pg = Object.values((await (await fetch(`https://commons.wikimedia.org/w/api.php?${p}`, {headers: UA})).json()).query.pages)[0];
+    const ii = pg.imageinfo[0];
+    const m = ii.extmetadata ?? {};
+    if (ii.mime.startsWith('video/')) {
+      const brut = path.join(sortie, `${s.id}.source`);
+      const rr = await fetch(ii.url, {headers: UA});
+      fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, '-an', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
+      fs.rmSync(brut);
+    } else {
+      const rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});
+      fs.writeFileSync(path.join(sortie, `${s.id}.jpg`), Buffer.from(await rr.arrayBuffer()));
+    }
+    const auteur = (m.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim();
+    credits.push(`${s.id} : ${ii.descriptionurl ?? `https://commons.wikimedia.org/wiki/${encodeURIComponent(id)}`} (Wikimedia Commons, ${auteur}, ${m.LicenseShortName?.value ?? ''})`);
+  } else {
+    throw new Error(`media_ref inconnu : ${s.media_ref}`);
+  }
+  console.log(`✔ ${s.id} : ${s.media_ref}`);
+}
+
 function fauxRush(s, dest) {
   const couleurs = ['0x1b2a4a', '0x4a1c3a', '0x1c4a3a', '0x4a3a1c'];
   const c = couleurs[parseInt(s.id.replace(/\D/g, '') || '0', 10) % couleurs.length];
@@ -86,9 +124,13 @@ for (const s of montage.scenes) {
     console.log(`✔ ${s.id} : ton média ${s.fichier}`);
     continue;
   }
-  if (!s.recherche && !s.pixabay_id) continue;
+  if (!s.recherche && !s.pixabay_id && !s.media_ref) continue;
   if (existant) {
     console.log(`↺ ${s.id} : déjà téléchargé (${existant})`);
+    continue;
+  }
+  if (s.media_ref && CLE) {
+    await telechargerRef(s);
     continue;
   }
   const estImage = s.type === 'image';

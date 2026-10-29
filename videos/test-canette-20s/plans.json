@@ -4,7 +4,7 @@
    "id": "p1",
    "debut_s": 0,
    "fin_s": 3,
-   "narration": "Devine combien coûte cette canette. Vide.",
+   "narration": "Devine combien vaut l'aluminium de cette canette.",
    "image_reelle": "Gros plan de canettes vides en aluminium (non remplies, sans couvercle) qui défilent en file sur un convoyeur d'usine",
    "recherche": [
     "aluminum cans conveyor",
@@ -32,7 +32,7 @@
    "id": "p3",
    "debut_s": 5.5,
    "fin_s": 10,
-   "narration": "De l'autre, des canettes sortent à la chaîne, sans jamais s'arrêter.",
+   "narration": "De l'autre, des canettes sortent à la chaîne, à toute vitesse.",
    "image_reelle": "Ligne de fabrication de canettes vides en aluminium à pleine vitesse, plan large ou en enfilade (refuser bouteilles, jus, verre)",
    "recherche": [
     "can manufacturing line",
@@ -46,7 +46,7 @@
    "id": "p4",
    "debut_s": 10,
    "fin_s": 14,
-   "narration": "La fabriquer coûte moins de quatre centimes. De dollar.",
+   "narration": "Le métal d'une canette ? Environ quatre centimes. De dollar.",
    "image_reelle": "Une seule canette en aluminium, nette, en plan serré (en usine ou sur fond neutre, marque peu visible)",
    "recherche": [
     "empty aluminum can macro",
@@ -84,5 +84,6 @@
    "couche_animee": "MotsQuiMontent « On suit l'argent », puis carton final « Bientôt : la vidéo complète »",
    "surtitre": ""
   }
- ]
+ ],
+ "corrections_fact_check": "Les 4 centimes = valeur de l'aluminium (Hersh/EPI via CNN, 2 mars 2025), pas le coût de fabrication. Étiquette p1 « Aluminium : ? », compteur p4 « ≈ 0,04 $ », surtitre « valeur de l'aluminium, cours début 2025 »."
 }

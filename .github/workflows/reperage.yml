@@ -5,7 +5,7 @@ name: Repérage des rushes
 on:
   push:
     branches: [main]
-    paths: ['tests/scene/montage.json', 'episodes/*/montage.json']
+    paths: ['tests/scene/montage.json', 'episodes/*/montage.json', 'videos/*/montage.json']
   workflow_dispatch:
     inputs:
       montage:
@@ -33,10 +33,10 @@ jobs:
           ENTREE: ${{ inputs.montage }}
         run: |
           if [ -n "$ENTREE" ]; then liste="$ENTREE"; else
-            liste="$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- tests/scene/montage.json 'episodes/*/montage.json' 2>/dev/null || true)"; fi
+            liste="$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- tests/scene/montage.json 'episodes/*/montage.json' 'videos/*/montage.json' 2>/dev/null || true)"; fi
           garder=""
           for m in $liste; do
-            [ -f "$m" ] && node -e "const m=require('./$m');process.exit(m.scenes.some(s=>s.recherche&&!s.pixabay_id&&!s.fichier)?0:1)" && garder="$garder $m"
+            [ -f "$m" ] && node -e "const m=require('./$m');process.exit(m.scenes.some(s=>s.recherche&&!s.pixabay_id&&!s.media_ref&&!s.fichier)?0:1)" && garder="$garder $m"
           done
           echo "montages=$garder" >> "$GITHUB_OUTPUT"
       - name: Planches

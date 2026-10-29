@@ -22,7 +22,7 @@ jobs:
           cache: npm
       - name: Tous les rushes sont-ils choisis ?
         id: pret
-        run: node -e "const m=require('./tests/scene/montage.json');console.log('ok='+(m.scenes.every(s=>s.pixabay_id||s.fichier)?'1':'0'))" >> "$GITHUB_OUTPUT"
+        run: node -e "const m=require('./tests/scene/montage.json');console.log('ok='+(m.scenes.every(s=>s.pixabay_id||s.media_ref||s.fichier)?'1':'0'))" >> "$GITHUB_OUTPUT"
       - name: Outils
         if: steps.pret.outputs.ok == '1'
         run: |
