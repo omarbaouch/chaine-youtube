@@ -1,0 +1,150 @@
+{
+ "titre": "Repérage baguette reperage-a",
+ "scenes": [
+  {
+   "id": "r01",
+   "recherche": [
+    "baguette bread table",
+    "french baguette close up",
+    "baguette"
+   ]
+  },
+  {
+   "id": "r02",
+   "recherche": [
+    "holding baguette",
+    "baguette paper bag",
+    "carrying baguette"
+   ]
+  },
+  {
+   "id": "r03",
+   "recherche": [
+    "wheat field wind",
+    "golden wheat field",
+    "wheat field sunset"
+   ]
+  },
+  {
+   "id": "r04",
+   "recherche": [
+    "wheat ear close up",
+    "wheat spike macro",
+    "ear of wheat"
+   ]
+  },
+  {
+   "id": "r05",
+   "recherche": [
+    "combine harvester wheat",
+    "harvester field",
+    "wheat harvest"
+   ]
+  },
+  {
+   "id": "r06",
+   "recherche": [
+    "grain unloading truck",
+    "harvester unloading grain",
+    "grain trailer"
+   ]
+  },
+  {
+   "id": "r07",
+   "recherche": [
+    "wheat grains hand",
+    "wheat grains macro",
+    "wheat kernels"
+   ]
+  },
+  {
+   "id": "r08",
+   "recherche": [
+    "grain silo",
+    "grain elevator",
+    "silo farm"
+   ]
+  },
+  {
+   "id": "r09",
+   "recherche": [
+    "flour mill",
+    "roller mill flour",
+    "flour mill machinery",
+    "Walzenstuhl"
+   ]
+  },
+  {
+   "id": "r10",
+   "recherche": [
+    "flour falling slow motion",
+    "flour sifting",
+    "sieving flour"
+   ]
+  },
+  {
+   "id": "r11",
+   "recherche": [
+    "flour sack",
+    "bag of flour",
+    "flour bags warehouse"
+   ]
+  },
+  {
+   "id": "r12",
+   "recherche": [
+    "baker hands flour",
+    "hands flour dough",
+    "flour on table"
+   ]
+  },
+  {
+   "id": "r13",
+   "recherche": [
+    "dough kneading machine",
+    "bakery mixer dough",
+    "spiral mixer dough"
+   ]
+  },
+  {
+   "id": "r14",
+   "recherche": [
+    "dough stretching",
+    "stretch dough gluten",
+    "bread dough close up"
+   ]
+  },
+  {
+   "id": "r15",
+   "recherche": [
+    "dough rising time lapse",
+    "dough proofing",
+    "rising dough"
+   ]
+  },
+  {
+   "id": "r16",
+   "recherche": [
+    "yeast",
+    "fresh yeast",
+    "yeast bubbles"
+   ]
+  },
+  {
+   "id": "r17",
+   "recherche": [
+    "baker shaping baguette",
+    "shaping bread dough",
+    "baguette dough"
+   ]
+  },
+  {
+   "id": "r18",
+   "recherche": [
+    "dough cutting bakery",
+    "dough scale weighing",
+    "bakery dough pieces"
+   ]
+  }
+ ]
+}

@@ -54,5 +54,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "reperage-${{ github.run_number }}" out/reperage/*/* --title "🔎 Repérage #${{ github.run_number }}" \
+          gh release create "reperage-${{ github.run_number }}" out/reperage/*/* --target "${{ github.sha }}" --title "🔎 Repérage #${{ github.run_number }}" \
             --notes "Planches de rushes candidats : choisir les id et les écrire en pixabay_id." --prerelease

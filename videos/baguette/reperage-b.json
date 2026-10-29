@@ -1,0 +1,149 @@
+{
+ "titre": "Repérage baguette reperage-b",
+ "scenes": [
+  {
+   "id": "r19",
+   "recherche": [
+    "scoring bread",
+    "bread lame scoring",
+    "cutting dough blade"
+   ]
+  },
+  {
+   "id": "r20",
+   "recherche": [
+    "bakery oven bread",
+    "loading oven bread peel",
+    "baker oven"
+   ]
+  },
+  {
+   "id": "r21",
+   "recherche": [
+    "bread baking in oven",
+    "bread oven",
+    "baking bread"
+   ]
+  },
+  {
+   "id": "r22",
+   "recherche": [
+    "taking bread out of oven",
+    "baker taking baguettes out",
+    "fresh bread oven"
+   ]
+  },
+  {
+   "id": "r23",
+   "recherche": [
+    "crusty bread close up",
+    "bread crust",
+    "bread crumb texture"
+   ]
+  },
+  {
+   "id": "r24",
+   "recherche": [
+    "baguettes basket",
+    "baguettes bakery shelf",
+    "bread rack bakery"
+   ]
+  },
+  {
+   "id": "r25",
+   "recherche": [
+    "cutting baguette knife",
+    "slicing bread",
+    "bread knife cutting"
+   ]
+  },
+  {
+   "id": "r26",
+   "recherche": [
+    "euro coins",
+    "euro coins table",
+    "cent coins"
+   ]
+  },
+  {
+   "id": "r27",
+   "recherche": [
+    "paying bakery counter",
+    "buying bread bakery",
+    "bakery customer"
+   ]
+  },
+  {
+   "id": "r28",
+   "recherche": [
+    "baker night work",
+    "bakery early morning",
+    "baker working"
+   ]
+  },
+  {
+   "id": "r29",
+   "recherche": [
+    "bakery shop window",
+    "boulangerie",
+    "french bakery storefront"
+   ]
+  },
+  {
+   "id": "r30",
+   "recherche": [
+    "supermarket bread aisle",
+    "supermarket bakery",
+    "bread supermarket shelf"
+   ]
+  },
+  {
+   "id": "r31",
+   "recherche": [
+    "industrial bakery production line",
+    "bread factory",
+    "bread production line"
+   ]
+  },
+  {
+   "id": "r32",
+   "recherche": [
+    "electricity meter",
+    "energy bill",
+    "power meter"
+   ]
+  },
+  {
+   "id": "r33",
+   "recherche": [
+    "alarm clock night",
+    "clock early morning",
+    "night street lamps"
+   ]
+  },
+  {
+   "id": "r34",
+   "recherche": [
+    "paris street morning",
+    "french village bakery",
+    "paris bakery"
+   ]
+  },
+  {
+   "id": "r35",
+   "recherche": [
+    "tractor field plowing",
+    "sowing wheat",
+    "farmer field tractor"
+   ]
+  },
+  {
+   "id": "r36",
+   "recherche": [
+    "bread crumb macro",
+    "bread air holes",
+    "sourdough crumb"
+   ]
+  }
+ ]
+}

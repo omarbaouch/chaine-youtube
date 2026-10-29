@@ -101,6 +101,6 @@ jobs:
             tag="$ep-${{ steps.quoi.outputs.mode }}-${{ github.run_number }}"
             fichiers=$(ls out/"$ep"*.mp4 out/"$ep"*-planche.jpg 2>/dev/null)
             [ -f "public/ep/$ep/credits.txt" ] && cp "public/ep/$ep/credits.txt" "out/$ep-credits.txt" && fichiers="$fichiers out/$ep-credits.txt"
-            gh release create "$tag" $fichiers --title "🎬 $ep (${{ steps.quoi.outputs.mode }}) #${{ github.run_number }}" \
+            gh release create "$tag" $fichiers --target "${{ github.sha }}" --title "🎬 $ep (${{ steps.quoi.outputs.mode }}) #${{ github.run_number }}" \
               --notes "Rendu automatique de episodes/$ep — commit ${{ github.sha }}" --prerelease
           done
