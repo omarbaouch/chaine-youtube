@@ -1,0 +1,90 @@
+name: Studio (outils OpenMontage)
+
+# Exécute les appels d'outils préparés par Claude : videos/<slug>/appels/<etape>.json
+# - les résultats (JSON) sont commités dans videos/<slug>/resultats/
+# - les médias (rushes, voix, rendus, planches) sont publiés dans une Release "studio-<slug>-<etape>-N"
+on:
+  push:
+    branches: [main]
+    paths: ['videos/*/appels/*.json']
+  workflow_dispatch:
+    inputs:
+      appels:
+        description: 'Fichier d’appels (ex. videos/canette/appels/assets.json)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio
+  cancel-in-progress: false
+
+jobs:
+  studio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Quels fichiers d'appels ?
+        id: quoi
+        env:
+          ENTREE: ${{ inputs.appels }}
+        run: |
+          if [ -n "$ENTREE" ]; then liste="$ENTREE"; else
+            liste="$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^videos/[^/]+/appels/[^/]+\.json$' || true)"; fi
+          echo "fichiers=$(echo $liste | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        if: steps.quoi.outputs.fichiers != ''
+        with:
+          python-version: '3.11'
+          cache: pip
+      - uses: actions/setup-node@v4
+        if: steps.quoi.outputs.fichiers != ''
+        with:
+          node-version: 22
+      - name: Installer le studio
+        if: steps.quoi.outputs.fichiers != ''
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q -r studio/requirements.txt
+          pip install -q pocket-tts scipy --extra-index-url https://download.pytorch.org/whl/cpu
+          (cd studio/remotion-composer && npm install --no-audit --no-fund > /dev/null 2>&1 || true)
+          npm ci > /dev/null 2>&1 && npx remotion browser ensure > /dev/null 2>&1 || true
+      - name: Restaurer les médias déjà produits
+        if: steps.quoi.outputs.fichiers != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for f in ${{ steps.quoi.outputs.fichiers }}; do
+            slug=$(echo "$f" | cut -d/ -f2)
+            tag=$(gh release list --limit 100 --json tagName -q ".[].tagName" | grep "^studio-$slug-" | head -1 || true)
+            if [ -n "$tag" ]; then gh release download "$tag" -p "projet-$slug.tar.gz" -D /tmp && mkdir -p studio/projects && tar -xzf "/tmp/projet-$slug.tar.gz" -C studio/projects || true; fi
+          done
+      - name: Exécuter
+        if: steps.quoi.outputs.fichiers != ''
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          for f in ${{ steps.quoi.outputs.fichiers }}; do python scripts/studio_executer.py "$f"; done
+      - name: Publier résultats et médias
+        if: steps.quoi.outputs.fichiers != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "Robot studio" && git config user.email "actions@github.com"
+          git add videos/*/resultats || true
+          git commit -m "Studio : résultats ${{ steps.quoi.outputs.fichiers }}" || true
+          git pull --rebase origin main && git push origin main || true
+          for f in ${{ steps.quoi.outputs.fichiers }}; do
+            slug=$(echo "$f" | cut -d/ -f2); etape=$(basename "$f" .json)
+            [ -d "studio/projects/$slug" ] || continue
+            tar -czf "/tmp/projet-$slug.tar.gz" -C studio/projects "$slug"
+            medias=$(find "studio/projects/$slug" -type f \( -name '*.mp4' -o -name '*.jpg' -o -name '*.png' -o -name '*.wav' -o -name '*.mp3' \) -size -100M | head -40)
+            gh release create "studio-$slug-$etape-${{ github.run_number }}" "/tmp/projet-$slug.tar.gz" $medias \
+              --title "🎬 Studio · $slug · $etape #${{ github.run_number }}" --notes "Résultats de $f" --prerelease
+          done

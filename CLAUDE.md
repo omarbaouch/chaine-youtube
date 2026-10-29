@@ -8,6 +8,32 @@ depuis son téléphone : réponses courtes, concrètes, sans jargon.
 (`.claude/skills/monteur-chaine/SKILL.md`). Il contient les règles validées par Omar, dont la n°1 :
 ce qu'on voit = ce qu'on dit (l'objet réel, reconnaissable, jamais un dessin symbolique à la place).
 
+## Le studio : qui fait quoi
+Chaque vidéo suit une chaîne de rôles. **Tout part du script.** Omar valide aux étapes marquées ★.
+
+| # | Rôle | Agent / skill | Livrable dans `videos/<slug>/` |
+|---|---|---|---|
+| 1 | Stratège : sujet, angle, concurrence | agent `content-strategist` | `_workspace/01_strategist_brief.md` ★ |
+| 2 | Documentaliste : faits, chiffres, sources | agent `documentaliste-recherche`, skill `investigative-research` | `_workspace/01b_recherche.md` |
+| 3 | Scénariste : script parlé, accroche, relances, indications visuelles | agent `scriptwriter`, skills `hook-writing`, `narrative-structure` | `_workspace/02_scriptwriter_script.md` ★ |
+| 4 | Fact-checker | agent `fact-checker` | `_workspace/02b_fact_check.md` |
+| 5 | Producteur : pipeline OpenMontage **hybrid**, plan de scènes | `studio/AGENT_GUIDE.md`, `studio/skills/pipelines/hybrid/*-director.md` | plan de scènes ★ |
+| 6 | Repérage des rushes réels | asset-director, workflow Repérage, `monteur-chaine` règle n°2 | rushes choisis ★ |
+| 7 | Voix off | outil studio `pocket_tts` + `scripts/traitement_audio.py` | voix WAV |
+| 8 | Monteur / motion designer | edit/compose-directors, skills `remotion-motion-graphics`, `monteur-chaine`, briques `src/motion/` | rendu MP4 |
+| 9 | Contrôle qualité | `studio/skills/meta/reviewer.md`, `monteur-chaine` règle n°5 | planche + rapport |
+| 10 | Packaging : miniature, titre, description, chapitres | agents `thumbnail-designer`, `seo-optimizer` | `_workspace/03_*`, `04_*` ★ |
+| 11 | Relecteur final | agent `production-reviewer` | `_workspace/05_review_report.md` |
+
+- Rôles 1-4 et 10-11 : sous-agents (Omar a demandé une équipe). Leur passer le slug, le dossier et les livrables précédents.
+- Rôles 5-9 : OpenMontage dans `studio/` (licence AGPL). Lire `studio/AGENT_GUIDE.md`, `studio/pipeline_defs/hybrid.yaml`
+  et le *director* de chaque étape avant de la travailler.
+- Exécution des outils OpenMontage : sur GitHub Actions (workflow **Studio**), choix d'Omar du 29/10/2026. Écrire les appels
+  dans `videos/<slug>/appels/<etape>.json` ; résultats dans `videos/<slug>/resultats/`, médias dans la Release
+  `studio-<slug>-<etape>-N`.
+- En cas de conflit : 1) règles d'Omar (`monteur-chaine`), 2) ce fichier, 3) OpenMontage, 4) Harness.
+  Voix = `pocket_tts` ; tout gratuit (budget 0 $) ; ce qu'on voit = ce qu'on dit.
+
 ## Thème et ton de la chaîne
 - Thème : **À DÉFINIR avec Omar** (remplacer cette ligne dès qu'il est choisi).
 - Ton : direct, curieux, tutoiement, phrases courtes faites pour l'oral.
