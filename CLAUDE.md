@@ -9,7 +9,11 @@ depuis son téléphone : réponses courtes, concrètes, sans jargon.
 ce qu'on voit = ce qu'on dit (l'objet réel, reconnaissable, jamais un dessin symbolique à la place).
 
 ## Le studio : qui fait quoi
-Chaque vidéo suit une chaîne de rôles. **Tout part du script.** Omar valide aux étapes marquées ★.
+Chaque vidéo suit une chaîne de rôles. **Tout part du script.**
+**Mode automatique (décision d'Omar, 29/10/2026)** : aucune validation intermédiaire. Les étapes ★ sont des points de
+contrôle internes (relecteur + règles `monteur-chaine`), pas des questions à Omar. Les checkpoints OpenMontage passent
+en mode autonome : on décide, on journalise la décision, on continue. Exceptions : Omar regarde 1) le premier test court,
+2) la première vraie vidéo avant sa mise en ligne. Ensuite, tout est automatique de bout en bout.
 
 | # | Rôle | Agent / skill | Livrable dans `videos/<slug>/` |
 |---|---|---|---|
@@ -25,7 +29,8 @@ Chaque vidéo suit une chaîne de rôles. **Tout part du script.** Omar valide a
 | 10 | Packaging : miniature, titre, description, chapitres | agents `thumbnail-designer`, `seo-optimizer` | `_workspace/03_*`, `04_*` ★ |
 | 11 | Relecteur final | agent `production-reviewer` | `_workspace/05_review_report.md` |
 
-- Rôles 1-4 et 10-11 : sous-agents (Omar a demandé une équipe). Leur passer le slug, le dossier et les livrables précédents.
+- Rôles 1-4 et 10-11 : sous-agents (Omar a demandé une équipe).
+- Quand une règle OpenMontage demande « d'attendre l'approbation de l'utilisateur », choisir soi-même l'option recommandée et la consigner dans le `decision_log`. Leur passer le slug, le dossier et les livrables précédents.
 - Rôles 5-9 : OpenMontage dans `studio/` (licence AGPL). Lire `studio/AGENT_GUIDE.md`, `studio/pipeline_defs/hybrid.yaml`
   et le *director* de chaque étape avant de la travailler.
 - Exécution des outils OpenMontage : sur GitHub Actions (workflow **Studio**), choix d'Omar du 29/10/2026. Écrire les appels
