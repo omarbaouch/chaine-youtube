@@ -4,3 +4,4 @@ out/
 .cache/
 __pycache__/
 *.tmp.wav
+public/sfx/musique-*.wav

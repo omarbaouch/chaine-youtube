@@ -7,6 +7,7 @@ slug="${1:?Usage : bash scripts/produire.sh <slug> [--brouillon]}"
 mode="${2:-}"
 cd "$(dirname "$0")/.."
 
+echo "▶ 0/4 Musique";  node scripts/musique.mjs
 echo "▶ 1/4 Rushes";   node scripts/medias.mjs "$slug"
 echo "▶ 2/4 Voix";     python3 scripts/voix.py "$slug"
 echo "▶ 3/4 Timeline"; node scripts/construire.mjs "$slug"

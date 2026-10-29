@@ -4,7 +4,9 @@ import {Audio, Video} from '@remotion/media';
 import type {EpisodeProps, Scene} from './types';
 import {SousTitres} from './effets/SousTitres';
 import {Surtitre} from './effets/Surtitre';
-import {POLICE} from './police';
+import {theme} from './theme';
+import {Bruit} from './motion/Schemas';
+import {CarteChapitre, PlanEcranPartage, PlanMosaique, PlanSchema} from './motion/Formats';
 import {CouchesScene} from './motion/Couches2';
 
 const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
@@ -45,67 +47,75 @@ const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
   );
 };
 
-const CarteTitre: React.FC<{scene: Scene}> = ({scene}) => {
-  const frame = useCurrentFrame();
+// Règle n°7 : emphase cinétique — zoom rapide sur le mot ou le chiffre clé, avec impact.
+const usePunch = (punch: Scene['punch']) => {
+  const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const entree = spring({frame, fps, config: {damping: 200}, durationInFrames: 25});
-  const sortie = interpolate(frame, [scene.duree - 12, scene.duree], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const barre = spring({frame: frame - 8, fps, config: {damping: 200}, durationInFrames: 20});
-  const sous = spring({frame: frame - 14, fps, config: {damping: 200}, durationInFrames: 22});
+  if (!punch) return 1;
+  const a = Math.round(punch.a * fps);
+  const monte = interpolate(f, [a, a + 4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const redescend = interpolate(f, [a + 4, a + 22], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)});
+  return 1 + 0.13 * monte - 0.09 * redescend;
+};
+
+const MotPunch: React.FC<{texte: string; a: number}> = ({texte, a}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const debut = Math.round(a * fps);
+  const p = spring({frame: f - debut, fps, config: theme.ressort.rebond});
+  if (f < debut) return null;
+  const sortie = interpolate(f, [debut + fps * 1.4, debut + fps * 1.8], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.courbe.entree});
+  if (sortie <= 0) return null;
   return (
-    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', opacity: sortie, fontFamily: POLICE}}>
-      <div
-        style={{
-          color: 'white',
-          fontSize: 120,
-          fontWeight: 900,
-          letterSpacing: interpolate(entree, [0, 1], [24, -2]),
-          textTransform: 'uppercase',
-          textAlign: 'center',
-          lineHeight: 1.02,
-          maxWidth: '85%',
-          opacity: entree,
-          transform: `translateY(${interpolate(entree, [0, 1], [30, 0])}px)`,
-          textShadow: '0 10px 40px rgba(0,0,0,.55)',
-        }}
-      >
-        {scene.titre}
+    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingBottom: 160, opacity: sortie}}>
+      <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 130, color: theme.couleurs.heros, textTransform: 'uppercase',
+        letterSpacing: '-0.03em', background: 'rgba(11,14,20,0.78)', padding: '6px 40px', borderRadius: 24, whiteSpace: 'nowrap',
+        boxShadow: `0 0 60px ${theme.couleurs.lueur}`, opacity: interpolate(p, [0, 0.3], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
+        transform: `scale(${interpolate(p, [0, 1], [1.6, 1])}) rotate(-2deg)`}}>
+        {texte}
       </div>
-      <div style={{width: 220 * barre, height: 8, background: '#FFD400', marginTop: 28, borderRadius: 4}} />
-      {scene.sousTitre ? (
-        <div
-          style={{
-            color: 'rgba(255,255,255,.88)',
-            fontSize: 46,
-            fontWeight: 600,
-            marginTop: 26,
-            opacity: sous,
-            transform: `translateY(${interpolate(sous, [0, 1], [20, 0])}px)`,
-            textAlign: 'center',
-            maxWidth: '75%',
-          }}
-        >
-          {scene.sousTitre}
-        </div>
-      ) : null}
     </AbsoluteFill>
   );
 };
 
+const Contenu: React.FC<{scene: Scene; filtre: string}> = ({scene, filtre}) => {
+  switch (scene.format) {
+    case 'titre':
+      return <CarteChapitre scene={scene} />;
+    case 'schema':
+      return <PlanSchema scene={scene} />;
+    case 'ecran_partage':
+      return <PlanEcranPartage scene={scene} />;
+    case 'mosaique':
+      return <PlanMosaique scene={scene} />;
+    default:
+      return (
+        <>
+          <AbsoluteFill style={{filter: filtre}}>
+            <Fond scene={scene} />
+          </AbsoluteFill>
+          <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.5) 100%)'}} />
+        </>
+      );
+  }
+};
+
 export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalonnage']}> = ({scene, etalonnage}) => {
+  const {fps} = useVideoConfig();
   const filtre = `contrast(${etalonnage.contraste}) saturate(${etalonnage.saturation}) brightness(${etalonnage.luminosite})`;
+  const zoomPunch = usePunch(scene.punch);
   return (
     <AbsoluteFill style={{backgroundColor: '#000', overflow: 'hidden'}}>
-      {/* Couche image : même étalonnage sur tous les rushes pour un rendu homogène "film". */}
-      <AbsoluteFill style={{filter: filtre}}>
-        <Fond scene={scene} flou={scene.type === 'titre'} />
+      <AbsoluteFill style={{transform: `scale(${zoomPunch})`}}>
+        <Contenu scene={scene} filtre={filtre} />
+        {scene.couches?.length ? <CouchesScene couches={scene.couches} /> : null}
       </AbsoluteFill>
-      {/* Vignettage + dégradé bas pour la lisibilité des sous-titres */}
-      <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%)'}} />
-      <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 55%, rgba(0,0,0,.65) 100%)'}} />
-      {scene.type === 'titre' ? <CarteTitre scene={scene} /> : null}
+      {/* dégradé bas pour la lisibilité des sous-titres */}
+      <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 62%, rgba(0,0,0,.6) 100%)', pointerEvents: 'none'}} />
       {scene.surtitre ? <Surtitre texte={scene.surtitre} /> : null}
-      {scene.couches?.length ? <CouchesScene couches={scene.couches} /> : null}
+      {scene.punch?.texte ? <MotPunch texte={scene.punch.texte} a={scene.punch.a} /> : null}
+      {scene.punch ? <Bruit nom="impact" a={Math.round(scene.punch.a * fps) - 1} volume={0.5} /> : null}
+      {scene.sons.map((s, i) => <Bruit key={i} nom={s.nom} a={Math.round(s.a * fps)} volume={s.volume ?? 0.45} />)}
       {scene.voix ? (
         <Sequence from={scene.voixDebut} name="Voix" layout="none">
           <Audio src={staticFile(scene.voix)} />

@@ -40,7 +40,8 @@ en mode autonome : on décide, on journalise la décision, on continue. Exceptio
   Voix = `pocket_tts` ; tout gratuit (budget 0 $) ; ce qu'on voit = ce qu'on dit.
 
 ## Thème et ton de la chaîne
-- Thème : **À DÉFINIR avec Omar** (remplacer cette ligne dès qu'il est choisi).
+- Thème : **« Comment c'est fait, et combien ça coûte vraiment »** — l'ingénierie cachée des objets du quotidien, angle argent
+  (coût de fabrication, prix payé, qui gagne quoi). Consigne d'Omar du 29/10/2026.
 - Ton : direct, curieux, tutoiement, phrases courtes faites pour l'oral.
 - Format : 16:9, 1920×1080, 30 i/s. Durée cible : 8–12 min (à ajuster selon le thème).
 
@@ -93,6 +94,25 @@ Jamais une vidéo nue avec des sous-titres, jamais du dessin seul : chaque plan 
   ]
 }
 ```
+### Formats de plan (règle n°6) — champ `format` de chaque scène
+```jsonc
+{"id": "p07", "format": "rush", "media_ref": "pv:123", "texte": "…", "couches": [...], "surtitre": "…",
+ "punch": {"a": 1.4, "texte": "5 CENTIMES"}}                  // zoom + impact sur le mot clé (1 par plan max)
+{"id": "p08", "format": "ecran_partage", "media_ref": "pi:456", "cote": "gauche", "etiquette_schema": "Où vont tes 2 €",
+ "texte": "…", "schema": {"type": "decomposition", "titre": "Prix payé", "unite": " €",
+   "parts": [{"label": "Fabrication", "valeur": 0.05, "heros": true}, {"label": "Magasin", "valeur": 0.9}], "source": "…"}}
+{"id": "p09", "format": "mosaique", "texte": "…", "recherche": ["…"],
+ "medias": [{"media_ref": "pv:1", "legende": "Les granulés"}, {"media_ref": "wc:File:…"}, {"media_ref": "pi:3"}]}  // 2 à 4
+{"id": "p10", "format": "schema", "media_ref": "pv:789" /* fond flouté, facultatif */, "etiquette_schema": "Coût réel", "texte": "…",
+ "schema": {"type": "chiffre", "valeur": 0.05, "decimales": 2, "suffixe": " €", "legende": "…", "comparaison": "Moins qu'un…",
+   "revele_a": 2.4 /* « ? » jusqu'à 2,4 s puis impact */, "source": "…"}}
+{"id": "p11", "format": "titre", "numero": "02", "titre": "La fabrication", "sous_titre": "…", "media_ref": "pv:…", "duree_min": 2.8}
+```
+Types de `schema` : `decomposition` (barre de prix), `processus` (`etapes`, `actif`), `chiffre`, `comparaison` (`a`, `b`, `heros`),
+`liste` (`elements`: texte, valeur, heros). `sons`: `[{"nom": "riser", "a": 0.5, "volume": 0.4}]` (whoosh, impact, metal, riser, tick, pop).
+Couche `source` : `{"type": "source", "texte": "…"}`. Musique : `scripts/musique.mjs` (générée, libre de droits) :
+`"musique": {"fichier": "../../public/sfx/musique-enquete.wav", "volume": 0.16}` ; elle se baisse toute seule sous la voix.
+
 - `recherche` : mots-clés **en anglais**, concrets et visuels (« baker kneading dough close up », pas « travail »).
 - `fichier` : média fourni par Omar, chemin relatif au dossier de l'épisode. Toujours prioritaire sur Pixabay.
 - Voix d'Omar : `episodes/<slug>/voix/<id>.wav|mp3|m4a` remplace la voix IA pour cette scène.

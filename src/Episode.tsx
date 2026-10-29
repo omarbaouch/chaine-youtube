@@ -15,8 +15,18 @@ const presentation = (t: Scene['transition']) => {
   return fade();
 };
 
-const Musique: React.FC<{src: string; volume: number}> = ({src, volume}) => {
+// Musique qui se baisse sous la voix (ducking) et remonte dans les respirations.
+const Musique: React.FC<{src: string; volume: number; plages?: [number, number][]}> = ({src, volume, plages = []}) => {
   const {durationInFrames, fps} = useVideoConfig();
+  const rampe = Math.round(fps * 0.35);
+  const sousVoix = (f: number) => {
+    let k = 0;
+    for (const [a, b] of plages) {
+      if (f < a - rampe) break;
+      if (f <= b + rampe) k = Math.max(k, Math.min(1, (f - (a - rampe)) / rampe, (b + rampe - f) / rampe));
+    }
+    return k;
+  };
   return (
     <Audio
       name="Musique"
@@ -26,7 +36,7 @@ const Musique: React.FC<{src: string; volume: number}> = ({src, volume}) => {
         interpolate(f, [0, fps * 1.5, durationInFrames - fps * 2, durationInFrames], [0, volume, volume, 0], {
           extrapolateLeft: 'clamp',
           extrapolateRight: 'clamp',
-        })
+        }) * (1 - 0.5 * sousVoix(f))
       }
     />
   );
@@ -55,7 +65,7 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       <TransitionSeries>{items}</TransitionSeries>
-      {musique ? <Musique src={musique.src} volume={musique.volume} /> : null}
+      {musique ? <Musique src={musique.src} volume={musique.volume} plages={props.voixPlages} /> : null}
       {grain ? <Grain /> : null}
     </AbsoluteFill>
   );

@@ -18,6 +18,9 @@ const parDefaut: EpisodeProps = {
     {
       id: 's01',
       type: 'titre',
+      format: 'titre',
+      medias: [],
+      sons: [],
       duree: 90,
       voixDebut: 0,
       titre: 'Ma chaîne',

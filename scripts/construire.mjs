@@ -59,34 +59,83 @@ function lignes(mots) {
   return res;
 }
 
+const dossierMedia = path.join(pub, 'media');
+const fichiersMedia = fs.existsSync(dossierMedia) ? fs.readdirSync(dossierMedia) : [];
+const estImage = (f) => /\.(jpe?g|png|webp)$/i.test(f);
+
+const formatDe = (s, media, medias) => {
+  if (s.format) return s.format;
+  if (s.type === 'titre') return 'titre';
+  if (medias.length > 1) return 'mosaique';
+  if (s.schema) return media || medias.length ? 'ecran_partage' : 'schema';
+  return 'rush';
+};
+
 const scenes = montage.scenes.map((s, i) => {
-  const media = fs.existsSync(path.join(pub, 'media')) ? fs.readdirSync(path.join(pub, 'media')).find((f) => f.startsWith(`${s.id}.`)) : undefined;
+  const media = fichiersMedia.find((f) => f.startsWith(`${s.id}.`));
+  const medias = fichiersMedia
+    .filter((f) => f.startsWith(`${s.id}-`) && /^\d+\./.test(f.slice(s.id.length + 1)))
+    .sort((a, b) => parseInt(a.slice(s.id.length + 1), 10) - parseInt(b.slice(s.id.length + 1), 10))
+    .map((f) => {
+      const k = parseInt(f.slice(s.id.length + 1), 10) - 1;
+      return {src: `ep/${slug}/media/${f}`, image: estImage(f), legende: s.medias?.[k]?.legende};
+    });
   const voixWav = path.join(pub, 'voix', `${s.id}.wav`);
   const aVoix = fs.existsSync(voixWav);
-  const voixDebut = aVoix ? Math.round((i === 0 ? 0.15 : 0.35) * fps) : 0;
+  const voixDebut = aVoix ? Math.round((s.avant_voix ?? (i === 0 ? 0.15 : 0.3)) * fps) : 0;
   const dVoix = aVoix ? Math.ceil(dureeAudio(voixWav) * fps) : 0;
   const minimum = Math.round((s.duree_min ?? (s.type === 'titre' ? 2.5 : 2)) * fps);
-  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? 0.4) * fps), dureeTransition * 2 + 2);
+  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? 0.35) * fps), dureeTransition * 2 + 2);
   const segments = aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
   const sousTitres = s.sous_titres === false || montage.sous_titres?.actifs === false ? [] : lignes(minuterMots(segments));
+  const transition = i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu');
+  const sons = [...(s.sons ?? [])];
+  if (transition === 'glissement' || transition === 'balayage') sons.push({nom: 'whoosh', a: 0, volume: 0.35});
   return {
     id: s.id,
-    type: media && /\.(jpe?g|png|webp)$/i.test(media) && s.type !== 'titre' ? 'image' : s.type,
+    type: media && estImage(media) && s.type !== 'titre' ? 'image' : s.type ?? 'video',
+    format: formatDe(s, media, medias),
     duree,
     media: media ? `ep/${slug}/media/${media}` : undefined,
+    medias,
     voix: aVoix ? `ep/${slug}/voix/${s.id}.wav` : undefined,
     voixDebut,
+    segments,
     titre: s.titre,
     sousTitre: s.sous_titre,
+    numero: s.numero,
     surtitre: s.surtitre,
     sousTitres,
-    transition: i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu'),
+    transition,
     zoom: s.zoom ?? (i % 2 ? 'arriere' : 'avant'),
     vitesse: s.vitesse ?? 1,
     debutMedia: s.debut_media ?? 0,
     couches: s.couches ?? [],
+    schema: s.schema,
+    etiquetteSchema: s.etiquette_schema,
+    cote: s.cote,
+    punch: s.punch,
+    sons,
   };
 });
+
+// Plages de voix (frames globales) : la musique se baisse dessous.
+const voixPlages = [];
+{
+  let t = 0;
+  scenes.forEach((s, i) => {
+    if (i && s.transition !== 'coupe') t -= dureeTransition;
+    for (const g of s.segments) voixPlages.push([Math.round(t + s.voixDebut + g.debut * fps), Math.round(t + s.voixDebut + g.fin * fps)]);
+    t += s.duree;
+  });
+}
+scenes.forEach((s) => delete s.segments);
+
+// Règle n°6 : jamais deux plans consécutifs du même format.
+const doublons = scenes.filter((s, i) => i && s.format === scenes[i - 1].format).map((s) => s.id);
+if (doublons.length) console.warn(`⚠ règle n°6 : même format que le plan précédent → ${doublons.join(', ')}`);
+const parFormat = scenes.reduce((a, s) => ((a[s.format] = (a[s.format] ?? 0) + 1), a), {});
+console.log('formats :', JSON.stringify(parFormat));
 
 const musique = fs.readdirSync(pub).find((f) => f.startsWith('musique.'));
 const props = {
@@ -98,6 +147,7 @@ const props = {
   musique: musique ? {src: `ep/${slug}/${musique}`, volume: montage.musique?.volume ?? 0.12} : undefined,
   etalonnage: {contraste: 1.08, saturation: 1.1, luminosite: 1, ...(montage.etalonnage ?? {})},
   grain: montage.grain ?? true,
+  voixPlages,
   scenes,
 };
 fs.writeFileSync(path.join(pub, 'props.json'), JSON.stringify(props, null, 1));

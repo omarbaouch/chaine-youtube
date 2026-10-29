@@ -70,6 +70,13 @@ const UneCouche: React.FC<{c: Couche}> = ({c}) => {
       return <Carton c={c} />;
     case 'flash':
       return <Flash a={[0]} />;
+    case 'source':
+      return (
+        <AbsoluteFill style={{padding: '0 90px 250px', justifyContent: 'flex-end', alignItems: 'flex-end'}}>
+          <div style={{fontFamily: theme.polices.texte, fontWeight: 500, fontSize: 24, color: C.texteDim, background: 'rgba(11,14,20,0.75)',
+            padding: '8px 16px', borderRadius: 10, maxWidth: 900}}>Source : {c.texte}</div>
+        </AbsoluteFill>
+      );
     default:
       return null;
   }

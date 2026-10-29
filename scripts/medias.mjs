@@ -75,6 +75,8 @@ async function chercherImage(s) {
 const UA = {'User-Agent': 'chaine-youtube-medias/1.0 (github.com/omarbaouch/chaine-youtube)'};
 async function telechargerRef(s) {
   const [src, ...reste] = s.media_ref.split(':');
+  if (dejaPris.has(s.media_ref)) console.warn(`⚠ ${s.id} : ${s.media_ref} déjà utilisé dans ce montage (règle : un rush ne sert qu'une fois)`);
+  dejaPris.add(s.media_ref);
   const id = reste.join(':');
   if (src === 'pv') {
     const c = await videoParId(id);
@@ -115,6 +117,30 @@ function fauxRush(s, dest) {
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `testsrc2=size=1920x1080:rate=30,colorchannelmixer=.5:0:0:0:0:.5:0:0:0:0:.5,drawbox=c=${c}@0.6:t=fill`, '-t', '8', '-pix_fmt', 'yuv420p', dest]);
 }
 
+// Médias multiples (mosaïque, écran partagé) : "medias": [{"media_ref": "pv:…", "legende": "…"}, {"fichier": "…"}]
+// → public/ep/<slug>/media/<id>-1.ext, <id>-2.ext…
+for (const s of montage.scenes) {
+  (s.medias ?? []).forEach((m, k) => (m._id = `${s.id}-${k + 1}`));
+}
+for (const s of montage.scenes) {
+  for (const m of s.medias ?? []) {
+    const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${m._id}.`));
+    if (existant) { console.log(`↺ ${m._id} : déjà téléchargé`); continue; }
+    if (m.fichier) {
+      const src = path.join(dossierEp, m.fichier);
+      fs.copyFileSync(src, path.join(sortie, `${m._id}${path.extname(src).toLowerCase()}`));
+      continue;
+    }
+    if (!CLE) {
+      if (/^(pi|wc):/.test(m.media_ref ?? '') && !/\.(webm|ogv|mp4)$/i.test(m.media_ref)) {
+        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1920x1080', '-frames:v', '1', path.join(sortie, `${m._id}.jpg`)]);
+      } else fauxRush({id: m._id}, path.join(sortie, `${m._id}.mp4`));
+      continue;
+    }
+    await telechargerRef({id: m._id, media_ref: m.media_ref});
+  }
+}
+
 for (const s of montage.scenes) {
   const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${s.id}.`));
   if (s.fichier) {
@@ -133,7 +159,7 @@ for (const s of montage.scenes) {
     await telechargerRef(s);
     continue;
   }
-  const estImage = s.type === 'image';
+  const estImage = s.type === 'image' || (/^(pi|wc):/.test(s.media_ref ?? '') && !/\.(webm|ogv|mp4)$/i.test(s.media_ref));
   if (!CLE) {
     console.warn(`⚠ ${s.id} : pas de PIXABAY_API_KEY → faux rush de test`);
     if (estImage) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1920x1080', '-frames:v', '1', path.join(sortie, `${s.id}.jpg`)]);
