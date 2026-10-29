@@ -1,0 +1,13 @@
+{
+  "inventaire": true,
+  "appels": [
+    {
+      "nom": "voix-test",
+      "outil": "pocket_tts",
+      "entrees": {
+        "text": "Bienvenue dans le studio. Si tu entends cette phrase, la voix est bien branchée.",
+        "output_path": "projects/test-studio/voix-test.wav"
+      }
+    }
+  ]
+}
