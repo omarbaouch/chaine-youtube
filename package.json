@@ -1,0 +1,29 @@
+{
+  "name": "chaine-youtube",
+  "version": "1.0.0",
+  "description": "Montage vidéo automatisé (Remotion + Claude)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "produire": "bash scripts/produire.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarbaouch/chaine-youtube.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarbaouch/chaine-youtube/issues"
+  },
+  "homepage": "https://github.com/omarbaouch/chaine-youtube#readme",
+  "dependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@remotion/cli": "^4.0.539",
+    "@remotion/media": "4.0.539",
+    "@remotion/media-utils": "^4.0.539",
+    "@remotion/transitions": "^4.0.539",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539"
+  },
+  "private": true
+}

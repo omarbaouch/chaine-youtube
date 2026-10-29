@@ -1,0 +1,6 @@
+node_modules/
+public/ep/
+out/
+.cache/
+__pycache__/
+*.tmp.wav

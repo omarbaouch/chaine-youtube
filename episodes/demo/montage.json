@@ -1,0 +1,46 @@
+{
+  "titre": "Démo : la nuit, les villes ne dorment jamais",
+  "format": {"largeur": 1920, "hauteur": 1080, "fps": 30},
+  "transition_defaut": "fondu",
+  "voix": {"expressivite": 0.55, "cfg": 0.45},
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "video",
+      "recherche": "city night aerial lights",
+      "texte": "Il est trois heures du matin. Tu dors. Mais autour de toi, une ville entière est encore éveillée.",
+      "zoom": "avant"
+    },
+    {
+      "id": "s02",
+      "type": "titre",
+      "recherche": "night highway traffic timelapse",
+      "titre": "La ville qui ne dort jamais",
+      "sous_titre": "Ce qui se passe pendant que tu dors",
+      "duree_min": 3
+    },
+    {
+      "id": "s03",
+      "type": "video",
+      "recherche": "bakery bread oven",
+      "surtitre": "4 h 00",
+      "texte": "Dans les boulangeries, les fours sont chauds depuis longtemps. Le pain de ton petit déjeuner est déjà en train de cuire.",
+      "transition": "glissement"
+    },
+    {
+      "id": "s04",
+      "type": "video",
+      "recherche": "train station night empty",
+      "surtitre": "4 h 30",
+      "texte": "Les premiers trains se préparent. Des dizaines d'agents vérifient chaque voie, en silence.",
+      "vitesse": 0.85
+    },
+    {
+      "id": "s05",
+      "type": "video",
+      "recherche": "sunrise city skyline",
+      "texte": "Et quand le soleil se lève, personne ne remarque tout ce travail invisible. Abonne-toi pour découvrir la suite.",
+      "zoom": "arriere"
+    }
+  ]
+}

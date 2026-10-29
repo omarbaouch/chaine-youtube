@@ -1,0 +1,106 @@
+name: Rendu vidéo
+
+# Se lance tout seul quand un épisode change (episodes/<slug>/...), ou à la main depuis l'onglet Actions.
+# Message de commit contenant [brouillon] → rendu rapide 540p pour relire le montage.
+on:
+  push:
+    branches: [main]
+    paths: ['episodes/**']
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: 'Nom du dossier de l’épisode (ex. demo)'
+        required: true
+      qualite:
+        description: 'brouillon (rapide, 540p) ou final (1080p)'
+        type: choice
+        options: [final, brouillon]
+        default: final
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rendu-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  rendu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Quels épisodes rendre ?
+        id: quoi
+        env:
+          MESSAGE: ${{ github.event.head_commit.message }}
+          EPISODE: ${{ inputs.episode }}
+          QUALITE: ${{ inputs.qualite }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "episodes=$(echo "$EPISODE" | tr -cd 'a-zA-Z0-9_-')" >> "$GITHUB_OUTPUT"
+            echo "mode=$QUALITE" >> "$GITHUB_OUTPUT"
+          else
+            avant="${{ github.event.before }}"
+            if [ -z "$avant" ] || [ "$avant" = "0000000000000000000000000000000000000000" ]; then avant="$(git rev-list --max-parents=0 HEAD | tail -1)"; fi
+            eps="$(git diff --name-only "$avant" "${{ github.sha }}" -- episodes | cut -d/ -f2 | sort -u | while read e; do [ -f "episodes/$e/montage.json" ] && echo "$e"; done | tr '\n' ' ')"
+            echo "episodes=$eps" >> "$GITHUB_OUTPUT"
+            if echo "$MESSAGE" | grep -qi '\[brouillon\]'; then echo "mode=brouillon" >> "$GITHUB_OUTPUT"; else echo "mode=final" >> "$GITHUB_OUTPUT"; fi
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.quoi.outputs.episodes != ''
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        if: steps.quoi.outputs.episodes != ''
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-voix.txt
+
+      - name: Outils (FFmpeg, Remotion, voix IA)
+        if: steps.quoi.outputs.episodes != ''
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          npm ci
+          npx remotion browser ensure
+          pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-voix.txt
+
+      - name: Cache des voix déjà générées et du modèle
+        if: steps.quoi.outputs.episodes != ''
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache/voix
+            ~/.cache/huggingface
+          key: voix-${{ hashFiles('episodes/**/montage.json', 'assets/voix/**') }}
+          restore-keys: voix-
+
+      - name: Montage et rendu
+        if: steps.quoi.outputs.episodes != ''
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          REMOTION_CONCURRENCY: '100%'
+        run: |
+          for ep in ${{ steps.quoi.outputs.episodes }}; do
+            if [ "${{ steps.quoi.outputs.mode }}" = "brouillon" ]; then bash scripts/produire.sh "$ep" --brouillon; else bash scripts/produire.sh "$ep"; fi
+          done
+
+      - name: Publier la vidéo (onglet Releases du dépôt)
+        if: steps.quoi.outputs.episodes != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for ep in ${{ steps.quoi.outputs.episodes }}; do
+            tag="$ep-${{ steps.quoi.outputs.mode }}-${{ github.run_number }}"
+            fichiers=$(ls out/"$ep"*.mp4 out/"$ep"*-planche.jpg 2>/dev/null)
+            [ -f "public/ep/$ep/credits.txt" ] && cp "public/ep/$ep/credits.txt" "out/$ep-credits.txt" && fichiers="$fichiers out/$ep-credits.txt"
+            gh release create "$tag" $fichiers --title "🎬 $ep (${{ steps.quoi.outputs.mode }}) #${{ github.run_number }}" \
+              --notes "Rendu automatique de episodes/$ep — commit ${{ github.sha }}" --prerelease
+          done
