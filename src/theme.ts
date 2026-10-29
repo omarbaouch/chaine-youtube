@@ -18,7 +18,7 @@ export const theme = {
     metalMoyen: '#9AA6B6',
     metalSombre: '#3A4352',
     texte: '#F2F4F7',
-    texteDim: '#9AA4B2',
+    texteDim: '#B4BDC9',
     grille: 'rgba(127, 212, 255, 0.07)',
     lueur: 'rgba(255, 107, 44, 0.45)',
   },

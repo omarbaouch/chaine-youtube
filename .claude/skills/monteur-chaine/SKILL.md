@@ -65,6 +65,38 @@ Placer annotations et visées SUR l'objet visible dans le rush (vérifier sa pos
 2. Pour chaque scène, écrire dans la réponse de travail : narration → ce qu'on voit à l'écran → OK/KO selon la règle n°1.
 3. Corriger, re-rendre, puis seulement envoyer à Omar (SendUserFile) avec une phrase de contexte.
 
+## Règle n°6 — Varier les formats, ne jamais lasser
+Retour d'Omar (test 20 s) : « une combinaison de tout : des fois des animations SVG, des fois des vidéos, des fois
+des images, des fois une composition d'un peu de tout. Je veux que celui qui voit la vidéo ne se lasse pas. »
+- Formats disponibles (champ `format` d'une scène, voir CLAUDE.md) : `rush` (vidéo/photo plein écran + couches),
+  `ecran_partage` (média réel d'un côté, schéma SVG de l'autre), `mosaique` (2 à 4 médias réels qui s'enchaînent),
+  `schema` (animation SVG pure : `decomposition` de prix, `processus` en étapes, `chiffre` géant, `comparaison`).
+- **Jamais deux plans consécutifs du même format.** Sur 6 plans : au moins 3 formats différents, dont au moins un
+  `schema` et une composition (`ecran_partage` ou `mosaique`).
+- Un `schema` reste fidèle à la règle n°1 : il explique ce qu'une caméra ne peut pas montrer (un prix décomposé,
+  une épaisseur, un ordre de grandeur), il est étiqueté, et il suit ou entoure un plan réel de l'objet.
+
+## Règle n°7 — Techniques psychologiques de rétention (à appliquer à chaque vidéo)
+| Technique | Ce que ça donne au montage |
+|---|---|
+| Fossé de curiosité / boucle ouverte | poser la question, retarder la réponse ; afficher « ? » à la place de la réponse ; chaque fin de partie ouvre la suivante |
+| Rupture de rythme (pattern interrupt) | changer de format toutes les 3–6 s ; un élément neuf à l'écran toutes les ~2 s |
+| Effet d'isolement (Von Restorff) | UNE seule information en couleur héros par image (orange) ; le reste en blanc/gris |
+| Emphase cinétique | `zoom_punch` (zoom rapide + bruitage) sur le mot ou le chiffre clé, pas plus d'une fois par plan |
+| Ancrage et comparaison | un chiffre est toujours comparé à quelque chose de familier (un cheveu, un ticket de métro) |
+| Progression visible | numéroter les étapes (01, 02, 03…) : le cerveau veut finir la série |
+| Son qui prépare | riser avant une révélation, une demi-seconde de silence juste avant le chiffre clé, impact pile dessus |
+| Pic et fin (peak-end) | le plus beau moment visuel à la révélation ; la fin laisse une question ouverte vers la vidéo suivante |
+
+## Règle n°8 — Typographie et couleurs (retour d'Omar : tailles et couleurs des polices)
+- Échelle unique (1920×1080) : titres 140–170 px (Montserrat 900) ; mots clés plein écran 120 px ; chiffres 110–150 px ;
+  sous-titres 78 px (Montserrat 900, MAJUSCULES, contour noir) ; étiquettes d'étape 34 px ; annotations 36 px ;
+  sources 24 px minimum. Rien en dessous de 24 px à l'écran.
+- Couleurs : texte blanc `#F2F4F7` ; héros orange `#FF6B2C` (le mot ou chiffre clé) ; accent bleu acier `#7FD4FF`
+  (traits, cadres, numéros) ; gris `#B4BDC9` seulement pour le secondaire. Le mot actif des sous-titres est sur une
+  pastille orange (texte foncé), pas en jaune.
+- Tout texte posé sur une image a un fond (pastille ou panneau vitré) ou un contour : lisible sur téléphone.
+
 ## Travailler avec Omar
 - Il parle depuis son téléphone : réponses courtes, une question à la fois, fichiers envoyés plutôt que décrits.
 - Pas d'attente bloquante longue : pousser sur GitHub, programmer une vérification (send_later) et rendre la main.

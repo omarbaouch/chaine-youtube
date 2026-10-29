@@ -56,11 +56,15 @@ export const Annotation: React.FC<{x: number; y: number; vers: [number, number];
       <svg width={1920} height={1080} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
         <circle cx={x} cy={y} r={22 * pulse} fill="none" stroke={C.heros} strokeWidth={2} opacity={point * (1.5 - pulse)} />
         <circle cx={x} cy={y} r={9 * point} fill={C.heros} style={{filter: `drop-shadow(0 0 10px ${C.heros})`}} />
-        <line x1={x} y1={y} x2={x + (x2 - x) * trait} y2={y + (y2 - y) * trait} stroke="white" strokeWidth={2.5} opacity={0.9} />
+        <line x1={x} y1={y} x2={x + (x2 - x) * trait} y2={y + (y2 - y) * trait} stroke="white" strokeWidth={3.5} opacity={0.95}
+          style={{filter: 'drop-shadow(0 2px 6px rgba(0,0,0,.6))'}} />
       </svg>
-      <div style={{position: 'absolute', left: x2 + 14, top: y2 - 30, opacity: etiq, transform: `translateY(${interpolate(etiq, [0, 1], [14, 0])}px)`,
-        padding: '12px 20px', borderRadius: 12, background: 'rgba(11,14,20,0.62)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.14)',
-        fontFamily: theme.polices.texte, fontSize: 30, fontWeight: 600, color: C.texte, whiteSpace: 'nowrap'}}>
+      {/* étiquette lisible sur téléphone (règle n°8) : 36 px, pastille sombre opaque, liseré orange ; s'ancre à gauche si elle déborderait */}
+      <div style={{position: 'absolute', ...(x2 > 1350 ? {right: 1920 - x2 + 14} : {left: x2 + 14}), top: y2 - 34, opacity: etiq,
+        transform: `translateY(${interpolate(etiq, [0, 1], [14, 0])}px)`,
+        padding: '12px 24px', borderRadius: 14, background: 'rgba(11,14,20,0.88)', borderLeft: `6px solid ${C.heros}`,
+        boxShadow: '0 14px 40px rgba(0,0,0,.45)', fontFamily: theme.polices.titre, fontSize: 36, fontWeight: 800, color: C.texte,
+        whiteSpace: 'nowrap', letterSpacing: '-0.01em'}}>
         {texte}
       </div>
     </>

@@ -1,9 +1,12 @@
 import React from 'react';
-import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {Ligne} from '../types';
-import {POLICE} from '../police';
+import {theme} from '../theme';
 
-// Sous-titres "style YouTubeur" : 2-6 mots à la fois, le mot prononcé passe en jaune avec un petit "pop".
+const C = theme.couleurs;
+
+// Sous-titres "style YouTubeur" (règle n°8) : 78 px, MAJUSCULES, contour noir ;
+// le mot prononcé passe sur une pastille orange (texte foncé) qui glisse de mot en mot.
 export const SousTitres: React.FC<{lignes: Ligne[]}> = ({lignes}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -11,34 +14,42 @@ export const SousTitres: React.FC<{lignes: Ligne[]}> = ({lignes}) => {
   if (!ligne) return null;
   const apparition = spring({frame: frame - ligne.debut, fps, config: {damping: 14, mass: 0.6}, durationInFrames: 10});
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 120}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 96}}>
       <div
         style={{
-          fontFamily: POLICE,
+          fontFamily: theme.polices.titre,
           fontWeight: 900,
-          fontSize: 68,
-          lineHeight: 1.15,
+          fontSize: 78,
+          lineHeight: 1.18,
           textAlign: 'center',
-          maxWidth: '78%',
+          maxWidth: 1560,
           textTransform: 'uppercase',
-          transform: `scale(${0.85 + 0.15 * apparition})`,
-          WebkitTextStroke: '10px rgba(0,0,0,.85)',
-          paintOrder: 'stroke fill',
-          textShadow: '0 6px 18px rgba(0,0,0,.5)',
+          letterSpacing: '-0.01em',
+          opacity: apparition,
+          transform: `translateY(${interpolate(apparition, [0, 1], [18, 0])}px) scale(${0.9 + 0.1 * apparition})`,
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          columnGap: 18,
         }}
       >
         {ligne.mots.map((m, i) => {
           const actif = frame >= m.debut && frame < m.fin;
-          const pop = actif ? spring({frame: frame - m.debut, fps, config: {damping: 10}, durationInFrames: 8}) : 0;
+          const pop = actif ? spring({frame: frame - m.debut, fps, config: {damping: 12, stiffness: 220}, durationInFrames: 8}) : 0;
           return (
             <span
               key={i}
               style={{
                 display: 'inline-block',
-                margin: '0 0.28em',
-                color: actif ? '#FFD400' : 'white',
-                // Petit saut vers le haut plutôt qu'un agrandissement : les mots longs ne mordent plus sur l'espace.
-                transform: `translateY(${-8 * pop * (1 - pop) * 4}px) scale(${1 + 0.04 * pop})`,
+                padding: '0 14px',
+                borderRadius: 14,
+                background: actif ? C.heros : 'transparent',
+                color: actif ? '#0B0E14' : C.texte,
+                WebkitTextStroke: actif ? '0px transparent' : '10px rgba(0,0,0,.9)',
+                paintOrder: 'stroke fill',
+                textShadow: actif ? 'none' : '0 6px 18px rgba(0,0,0,.55)',
+                boxShadow: actif ? `0 10px 30px ${C.lueur}` : 'none',
+                transform: `scale(${1 + 0.06 * pop}) rotate(${actif ? -1.2 : 0}deg)`,
               }}
             >
               {m.texte}

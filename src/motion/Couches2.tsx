@@ -14,13 +14,13 @@ const CompteurVitre: React.FC<{c: Extract<Couche, {type: 'compteur'}>}> = ({c}) 
   const pos = c.position ?? 'droite';
   const x = pos === 'gauche' ? 120 : pos === 'centre' ? 660 : 1200;
   return (
-    <Vitre x={x} y={330} l={600} h={c.source ? 360 : 300} debut={0}>
+    <Vitre x={x} y={300} l={640} h={c.source ? 420 : 300} debut={0}>
       <div style={{padding: '40px 46px', fontFamily: theme.polices.texte, color: C.texte}}>
         {c.legende ? <div style={{fontSize: 30, color: C.texteDim, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 14}}>{c.legende}</div> : null}
         <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 104, lineHeight: 1, whiteSpace: 'nowrap', color: C.heros, textShadow: `0 0 40px ${C.lueur}`}}>
           {c.prefixe ?? ''}<Compteur vers={c.vers} decimales={c.decimales ?? 0} debut={4} />{c.suffixe ?? ''}
         </div>
-        {c.source ? <div style={{marginTop: 26, fontSize: 20, color: C.texteDim, lineHeight: 1.35}}>Source : {c.source}</div> : null}
+        {c.source ? <div style={{marginTop: 26, fontSize: 24, color: C.texteDim, lineHeight: 1.35}}>Source : {c.source}</div> : null}
       </div>
     </Vitre>
   );

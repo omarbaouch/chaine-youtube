@@ -35,7 +35,8 @@ export const Etiquette: React.FC<{numero: string; texte: string; debut?: number}
   const trait = interpolate(f - debut, [4, 26], [0, 1], {...clamp, easing: theme.courbe.sortie});
   return (
     <div style={{display: 'flex', alignItems: 'center', gap: 22, opacity: p, transform: `translateX(${interpolate(p, [0, 1], [-30, 0])}px)`,
-      fontFamily: theme.polices.texte, fontWeight: 600, fontSize: 30, letterSpacing: '0.18em', color: theme.couleurs.texteDim}}>
+      fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 34, letterSpacing: '0.16em', color: theme.couleurs.texte,
+      background: 'rgba(11,14,20,0.72)', padding: '10px 22px', borderRadius: 12, width: 'fit-content'}}>
       <span style={{color: theme.couleurs.accent, fontVariantNumeric: 'tabular-nums'}}>{numero}</span>
       <div style={{width: 90 * trait, height: 2, background: theme.couleurs.accent, opacity: 0.7}} />
       <span>{texte}</span>
