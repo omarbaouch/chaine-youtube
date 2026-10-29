@@ -1,0 +1,10 @@
+{
+  "titre": "Test mixed media : la canette",
+  "scenes": [
+    {"id": "m1", "type": "video", "recherche": "aluminum cans production line factory", "duree_min": 5},
+    {"id": "m2", "type": "video", "recherche": "steel coil factory", "duree_min": 5},
+    {"id": "m3", "type": "video", "recherche": "metal stamping press machine", "duree_min": 5},
+    {"id": "m4", "type": "video", "recherche": "beverage cans conveyor", "duree_min": 5},
+    {"id": "m5", "type": "video", "recherche": "soda can opening slow motion", "duree_min": 4}
+  ]
+}

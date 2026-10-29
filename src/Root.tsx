@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {Episode, dureeTotale} from './Episode';
 import type {EpisodeProps} from './types';
+import {TestCanette} from './tests/Canette';
 
 // Props par défaut : une carte titre seule, pour que le Studio s'ouvre même sans épisode construit.
 // Pour un vrai épisode : npm run produire -- <slug>  (crée public/ep/<slug>/props.json)
@@ -31,6 +32,8 @@ const parDefaut: EpisodeProps = {
 };
 
 export const RemotionRoot: React.FC = () => (
+  <>
+  <Composition id="TestCanette" component={TestCanette} durationInFrames={450} fps={30} width={1920} height={1080} />
   <Composition
     id="Episode"
     component={Episode}
@@ -46,4 +49,5 @@ export const RemotionRoot: React.FC = () => (
       height: props.hauteur,
     })}
   />
+  </>
 );

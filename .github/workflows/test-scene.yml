@@ -1,0 +1,46 @@
+name: Test scène mixed media
+
+# Rend la scène test "canette" avec de VRAIS rushes Pixabay et la publie dans Releases.
+on:
+  push:
+    branches: [main]
+    paths: ['tests/scene/**', 'src/tests/**', 'src/motion/**', 'src/theme.ts']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scene:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          npm ci
+          npx remotion browser ensure
+      - name: Rushes Pixabay
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          mkdir -p episodes/test-canette && cp tests/scene/montage.json episodes/test-canette/
+          node scripts/medias.mjs test-canette
+      - name: Rendu
+        run: |
+          mkdir -p out
+          npx remotion render src/index.ts TestCanette out/test-canette.mp4 --codec=h264 --crf=18 --concurrency=100%
+          for t in 2 5 8 11 12.3 14; do ffmpeg -y -loglevel error -ss $t -i out/test-canette.mp4 -frames:v 1 -vf scale=960:-1 "out/f_$t.jpg"; done
+          ffmpeg -y -loglevel error -pattern_type glob -i 'out/f_*.jpg' -vf tile=2x3:padding=4 -frames:v 1 out/test-canette-planche.jpg
+          cp public/ep/test-canette/credits.txt out/test-canette-credits.txt || true
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "test-scene-${{ github.run_number }}" out/test-canette.mp4 out/test-canette-planche.jpg out/test-canette-credits.txt \
+            --title "🎬 Test scène mixed media #${{ github.run_number }}" --notes "Scène test canette : vrais rushes + motion design." --prerelease
