@@ -19,7 +19,12 @@ const dureeAudio = (f) =>
 function minuterMots(segments) {
   const mots = [];
   for (const seg of segments) {
-    const liste = seg.texte.split(/\s+/).filter(Boolean);
+    // la ponctuation isolée (« ? », « ! », « : ») est collée au mot précédent (sinon un « ? » s'affiche seul)
+    const liste = seg.texte.split(/\s+/).filter(Boolean).reduce((acc, m) => {
+      if (/^[?!:;.…»]+$/.test(m) && acc.length) acc[acc.length - 1] += '\u00a0' + m;
+      else acc.push(m);
+      return acc;
+    }, []);
     const poids = liste.map((m) => m.replace(/[^\p{L}\p{N}]/gu, '').length + 2 + (/[,;:]$/.test(m) ? 3 : 0) + (/[.!?…]$/.test(m) ? 4 : 0));
     const total = poids.reduce((a, b) => a + b, 0) || 1;
     let t = seg.debut;
@@ -79,6 +84,7 @@ const scenes = montage.scenes.map((s, i) => {
     zoom: s.zoom ?? (i % 2 ? 'arriere' : 'avant'),
     vitesse: s.vitesse ?? 1,
     debutMedia: s.debut_media ?? 0,
+    couches: s.couches ?? [],
   };
 });
 

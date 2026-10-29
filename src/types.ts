@@ -19,7 +19,18 @@ export type Scene = {
   zoom: 'avant' | 'arriere' | 'aucun';
   vitesse: number;
   debutMedia: number; // secondes à sauter au début du rush
+  couches?: Couche[]; // motion design posé sur le rush (positions en % de l'image : x 0-100, y 0-100)
 };
+
+// Couches animées, écrites dans montage.json (champ "couches" d'une scène). "a" = début en secondes dans la scène.
+export type Couche =
+  | {type: 'annotation'; x: number; y: number; vers_x: number; vers_y: number; texte: string; a?: number}
+  | {type: 'visee'; x: number; y: number; l: number; h: number; a?: number}
+  | {type: 'compteur'; vers: number; decimales?: number; prefixe?: string; suffixe?: string; legende?: string; source?: string; a?: number; position?: 'droite' | 'gauche' | 'centre'}
+  | {type: 'mots'; texte: string; heros?: string; a?: number; position?: 'centre' | 'gauche' | 'haut'}
+  | {type: 'etiquette'; numero: string; texte: string; a?: number}
+  | {type: 'carton'; texte: string; sous_texte?: string; a?: number}
+  | {type: 'flash'; a: number};
 
 export type EpisodeProps = {
   titre: string;

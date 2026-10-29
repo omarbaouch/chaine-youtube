@@ -5,6 +5,7 @@ import type {EpisodeProps, Scene} from './types';
 import {SousTitres} from './effets/SousTitres';
 import {Surtitre} from './effets/Surtitre';
 import {POLICE} from './police';
+import {CouchesScene} from './motion/Couches2';
 
 const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
   const frame = useCurrentFrame();
@@ -104,6 +105,7 @@ export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalon
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 55%, rgba(0,0,0,.65) 100%)'}} />
       {scene.type === 'titre' ? <CarteTitre scene={scene} /> : null}
       {scene.surtitre ? <Surtitre texte={scene.surtitre} /> : null}
+      {scene.couches?.length ? <CouchesScene couches={scene.couches} /> : null}
       {scene.voix ? (
         <Sequence from={scene.voixDebut} name="Voix" layout="none">
           <Audio src={staticFile(scene.voix)} />
