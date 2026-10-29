@@ -119,6 +119,15 @@ const scenes = montage.scenes.map((s, i) => {
   };
 });
 
+// Sound design automatique (règle n°7) : petit souffle à chaque changement de format,
+// riser qui monte dans la dernière seconde et demie avant chaque carte de chapitre.
+scenes.forEach((s, i) => {
+  if (i && s.format !== scenes[i - 1].format && s.format !== 'titre' && !s.sons.some((x) => x.a < 0.3))
+    s.sons.push({nom: 'whoosh', a: 0, volume: 0.12});
+  if (scenes[i + 1]?.format === 'titre' && s.duree > fps * 2)
+    s.sons.push({nom: 'riser', a: Math.max(0, s.duree / fps - 1.6), volume: 0.22});
+});
+
 // Plages de voix (frames globales) : la musique se baisse dessous.
 const voixPlages = [];
 {
