@@ -1,6 +1,7 @@
 // Rendu des "couches" décrites dans montage.json : le motion design posé SUR le rush réel.
 import React from 'react';
-import {AbsoluteFill, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Audio} from '@remotion/media';
 import type {Couche} from '../types';
 import {theme, clamp} from '../theme';
 import {Annotation, Visee, Vitre, Flash} from './MixedMedia';
@@ -70,6 +71,10 @@ const UneCouche: React.FC<{c: Couche}> = ({c}) => {
       return <Carton c={c} />;
     case 'flash':
       return <Flash a={[0]} />;
+    case 'zoom_punch':
+      return <Audio src={staticFile('sfx/impact.wav')} volume={0.55} />;
+    case 'son':
+      return <Audio src={staticFile(`sfx/${c.src}.wav`)} volume={c.volume ?? 0.7} />;
     default:
       return null;
   }

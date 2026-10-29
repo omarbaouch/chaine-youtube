@@ -124,6 +124,15 @@ for (const s of montage.scenes) {
     console.log(`✔ ${s.id} : ton média ${s.fichier}`);
     continue;
   }
+  // Mosaïque : plusieurs médias choisis au repérage → <id>-1, <id>-2, ...
+  if (Array.isArray(s.medias) && s.medias.length) {
+    for (const [k, ref] of s.medias.entries()) {
+      const id = `${s.id}-${k + 1}`;
+      if (fs.readdirSync(sortie).some((f) => f.startsWith(`${id}.`))) continue;
+      if (CLE) await telechargerRef({id, media_ref: ref});
+      else fauxRush({id: String(k + 1)}, path.join(sortie, `${id}.mp4`));
+    }
+  }
   if (!s.recherche && !s.pixabay_id && !s.media_ref) continue;
   if (existant) {
     console.log(`↺ ${s.id} : déjà téléchargé (${existant})`);

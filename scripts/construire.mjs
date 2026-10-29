@@ -85,6 +85,16 @@ const scenes = montage.scenes.map((s, i) => {
     vitesse: s.vitesse ?? 1,
     debutMedia: s.debut_media ?? 0,
     couches: s.couches ?? [],
+    format: s.format ?? 'rush',
+    schema: s.schema,
+    medias: (s.medias ?? []).map((_, k) => {
+      const f = fs.existsSync(path.join(pub, 'media')) ? fs.readdirSync(path.join(pub, 'media')).find((x) => x.startsWith(`${s.id}-${k + 1}.`)) : undefined;
+      return f ? `ep/${slug}/media/${f}` : undefined;
+    }).filter(Boolean),
+    legendes: s.legendes,
+    etapes: s.etapes,
+    cote: s.cote,
+    legende: s.legende,
   };
 });
 

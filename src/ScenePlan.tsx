@@ -6,6 +6,9 @@ import {SousTitres} from './effets/SousTitres';
 import {Surtitre} from './effets/Surtitre';
 import {POLICE} from './police';
 import {CouchesScene} from './motion/Couches2';
+import {Mosaique, EcranPartage} from './motion/Formats';
+import {SchemaAnime} from './motion/Schemas';
+import {FondVivant} from './motion/Couches';
 
 const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
   const frame = useCurrentFrame();
@@ -94,11 +97,30 @@ const CarteTitre: React.FC<{scene: Scene}> = ({scene}) => {
 
 export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalonnage']}> = ({scene, etalonnage}) => {
   const filtre = `contrast(${etalonnage.contraste}) saturate(${etalonnage.saturation}) brightness(${etalonnage.luminosite})`;
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  // Emphase cinétique (règle n°7) : zoom rapide sur le mot/chiffre clé, puis légère tenue.
+  const punch = (scene.couches ?? []).filter((c) => c.type === 'zoom_punch').reduce((m, c) => {
+    const a = Math.round((c.a ?? 0) * fps);
+    return Math.max(m, interpolate(frame, [a, a + 3, a + 14, a + 40], [1, 1.13, 1.06, 1.05], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
+  }, 1);
+  const format = scene.format ?? 'rush';
   return (
     <AbsoluteFill style={{backgroundColor: '#000', overflow: 'hidden'}}>
-      {/* Couche image : même étalonnage sur tous les rushes pour un rendu homogène "film". */}
-      <AbsoluteFill style={{filter: filtre}}>
-        <Fond scene={scene} flou={scene.type === 'titre'} />
+      {/* Couche image : même étalonnage partout pour un rendu homogène "film". Le format varie (règle n°6). */}
+      <AbsoluteFill style={{filter: filtre, transform: `scale(${punch})`}}>
+        {format === 'schema' ? (
+          <>
+            <FondVivant />
+            {scene.schema ? <SchemaAnime schema={scene.schema} /> : null}
+          </>
+        ) : format === 'mosaique' && scene.medias?.length ? (
+          <Mosaique medias={scene.medias} legendes={scene.legendes} etapes={scene.etapes} duree={scene.duree} />
+        ) : format === 'ecran_partage' && scene.media ? (
+          <EcranPartage media={scene.media} schema={scene.schema} cote={scene.cote} legende={scene.legende} duree={scene.duree} />
+        ) : (
+          <Fond scene={scene} flou={scene.type === 'titre'} />
+        )}
       </AbsoluteFill>
       {/* Vignettage + dégradé bas pour la lisibilité des sous-titres */}
       <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%)'}} />

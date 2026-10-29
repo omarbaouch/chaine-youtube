@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, staticFile, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, staticFile, useVideoConfig} from 'remotion';
 import {Audio} from '@remotion/media';
 import {TransitionSeries, linearTiming} from '@remotion/transitions';
 import {fade} from '@remotion/transitions/fade';
@@ -56,6 +56,12 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       <TransitionSeries>{items}</TransitionSeries>
       {musique ? <Musique src={musique.src} volume={musique.volume} /> : null}
+      {/* Rupture de rythme sonore (règle n°7) : un whoosh discret 3 images avant chaque changement de plan */}
+      {debutsScenes(props).slice(1).map((d, i) => (
+        <Sequence key={`w${i}`} from={Math.max(0, d - 3)} layout="none" name="whoosh">
+          <Audio src={staticFile('sfx/whoosh.wav')} volume={0.32} />
+        </Sequence>
+      ))}
       {grain ? <Grain /> : null}
     </AbsoluteFill>
   );
@@ -64,4 +70,14 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
 export const dureeTotale = (p: EpisodeProps) => {
   const transitions = p.scenes.filter((s, i) => i > 0 && s.transition !== 'coupe').length;
   return Math.max(1, p.scenes.reduce((a, s) => a + s.duree, 0) - transitions * p.dureeTransition);
+};
+
+export const debutsScenes = (p: EpisodeProps) => {
+  let t = 0;
+  return p.scenes.map((s, i) => {
+    if (i > 0 && s.transition !== 'coupe') t -= p.dureeTransition;
+    const d = t;
+    t += s.duree;
+    return d;
+  });
 };

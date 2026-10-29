@@ -93,6 +93,19 @@ Jamais une vidéo nue avec des sous-titres, jamais du dessin seul : chaque plan 
   ]
 }
 ```
+- **Formats de plan (règle n°6, champ `format`)** — ne jamais en enchaîner deux identiques :
+  - `rush` (défaut) : `media_ref` plein écran + `couches`.
+  - `ecran_partage` : `media_ref` dans une carte + `schema` (de préférence `comparaison` ou `chiffre`) ; `cote`, `legende`.
+  - `mosaique` : `medias` = 2 à 4 `media_ref`, `legendes`, `etapes: true` pour numéroter.
+  - `schema` : animation SVG pure, `schema` = `{"type":"decomposition","total","unite","parts":[{"label","valeur"|null,"heros"}]}`
+    (les parts à `null` s'affichent « ? » : fossé de curiosité) | `{"type":"processus","titre","etapes":[{"label","icone"}]}`
+    (icônes : bobine, disque, gobelet, canette, camion, magasin, piece, usine, presse, recyclage) |
+    `{"type":"chiffre","valeur","decimales","prefixe","suffixe","legende","comparaison","source"}` |
+    `{"type":"comparaison","titre","items":[{"label","valeur","unite","heros"}],"source"}`.
+- **Couches** (`couches`, `a` = seconde dans le plan) : `visee`, `annotation`, `compteur`, `mots`, `etiquette`, `carton`, `flash`,
+  `zoom_punch` (emphase + impact, une fois par plan max), `son` (bruitage de `public/sfx/` : whoosh, impact, metal, riser, tick, pop).
+  Un whoosh discret est ajouté automatiquement à chaque changement de plan. Exemple complet : `episodes/test-canette-20s-v2/montage.json`.
+- `media_ref` : `pv:<id>` vidéo Pixabay, `pi:<id>` photo Pixabay, `wc:File:<titre>` Wikimedia Commons — choisi au repérage.
 - `recherche` : mots-clés **en anglais**, concrets et visuels (« baker kneading dough close up », pas « travail »).
 - `fichier` : média fourni par Omar, chemin relatif au dossier de l'épisode. Toujours prioritaire sur Pixabay.
 - Voix d'Omar : `episodes/<slug>/voix/<id>.wav|mp3|m4a` remplace la voix IA pour cette scène.
