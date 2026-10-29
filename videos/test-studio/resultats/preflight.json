@@ -1,0 +1,20 @@
+[
+ {
+  "nom": "voix-test",
+  "outil": "pocket_tts",
+  "succes": true,
+  "erreur": null,
+  "donnees": {
+   "provider": "kyutai_pocket",
+   "model": "french_24l",
+   "voice": "estelle",
+   "steps": 5,
+   "output": "projects/test-studio/voix-test.wav",
+   "format": "wav"
+  },
+  "fichiers": [
+   "projects/test-studio/voix-test.wav"
+  ],
+  "cout_usd": 0.0
+ }
+]
