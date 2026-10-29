@@ -1,0 +1,5897 @@
+{
+"r01": {
+"V1": {
+"ref": "pv:238823",
+"credit": "Pixabay (xBriantcx)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V3": {
+"ref": "pv:145012",
+"credit": "Pixabay (Tilixia-Summer)",
+"info": "48s"
+},
+"V4": {
+"ref": "pv:237504",
+"credit": "Pixabay (xBriantcx)",
+"info": "9s"
+},
+"V5": {
+"ref": "pv:2339",
+"credit": "Pixabay (Life-Of-Vids)",
+"info": "35s"
+},
+"V6": {
+"ref": "pv:27230",
+"credit": "Pixabay (jeffjacobs1990)",
+"info": "20s"
+},
+"V7": {
+"ref": "pv:186709",
+"credit": "Pixabay (ghasoub)",
+"info": "10s"
+},
+"V8": {
+"ref": "pv:172686",
+"credit": "Pixabay (Eaktas06)",
+"info": "12s"
+},
+"I1": {
+"ref": "pi:1398259",
+"credit": "Pixabay (maaci)",
+"info": "5184px"
+},
+"I2": {
+"ref": "pi:1433498",
+"credit": "Pixabay (JillWellington)",
+"info": "5427px"
+},
+"I3": {
+"ref": "pi:1829678",
+"credit": "Pixabay (jpduretz)",
+"info": "2872px"
+},
+"I4": {
+"ref": "pi:1840189",
+"credit": "Pixabay (Pexels)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:1009203",
+"credit": "Pixabay (Fotocitizen)",
+"info": "2000px"
+},
+"I6": {
+"ref": "pi:3618640",
+"credit": "Pixabay (congerdesign)",
+"info": "6016px"
+},
+"I7": {
+"ref": "pi:3395872",
+"credit": "Pixabay (StephanieAlbert)",
+"info": "5472px"
+},
+"I8": {
+"ref": "pi:4027385",
+"credit": "Pixabay (irinashutko)",
+"info": "3888px"
+},
+"C1": {
+"ref": "wc:File:Petit brunch.jpg",
+"credit": "Wikimedia Commons, Missty Lutz from France, CC BY 2.0",
+"info": "1280px"
+},
+"C2": {
+"ref": "wc:File:Camping breakfast bread.JPG",
+"credit": "Wikimedia Commons, Demeester, CC BY-SA 3.0",
+"info": "2448px"
+},
+"C3": {
+"ref": "wc:File:BaguettesOnBreadBoardForTableService.jpg",
+"credit": "Wikimedia Commons, Imjustmatthew, CC BY-SA 3.0",
+"info": "3039px"
+},
+"C4": {
+"ref": "wc:File:Creme Brulee Tart at Sugardough Panificio.jpg",
+"credit": "Wikimedia Commons, Alpha, CC BY-SA 2.0",
+"info": "2048px"
+},
+"C5": {
+"ref": "wc:File:Brot 001 2016 07 03.jpg",
+"credit": "Wikimedia Commons, Friedrich Haag, CC BY-SA 4.0",
+"info": "4460px"
+},
+"C6": {
+"ref": "wc:File:Baguette with cheese close-up.jpg",
+"credit": "Wikimedia Commons, DocteurCosmos, CC BY 3.0",
+"info": "2272px"
+},
+"C7": {
+"ref": "wc:File:Frenchbread3000ppx.jpg",
+"credit": "Wikimedia Commons, FASTILY (TALK), CC BY-SA 3.0",
+"info": "3872px"
+},
+"C8": {
+"ref": "wc:File:Baguettes - stonesoup.jpg",
+"credit": "Wikimedia Commons, jules / stonesoup, CC BY 2.0",
+"info": "2832px"
+}
+},
+"r02": {
+"V1": {
+"ref": "pv:38084",
+"credit": "Pixabay (mephala1980)",
+"info": "8s"
+},
+"V2": {
+"ref": "pv:101795",
+"credit": "Pixabay (Nick_the_Photographer)",
+"info": "9s"
+},
+"V3": {
+"ref": "pv:7817",
+"credit": "Pixabay (Qamar-Iqbal76)",
+"info": "10s"
+},
+"V4": {
+"ref": "pv:101929",
+"credit": "Pixabay (Nick_the_Photographer)",
+"info": "15s"
+},
+"V5": {
+"ref": "pv:552",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "4s"
+},
+"V6": {
+"ref": "pv:47551",
+"credit": "Pixabay (deeanaarts)",
+"info": "10s"
+},
+"V7": {
+"ref": "pv:3616",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "11s"
+},
+"V8": {
+"ref": "pv:421",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "5s"
+},
+"I1": {
+"ref": "pi:2417533",
+"credit": "Pixabay (YanceTAY)",
+"info": "2048px"
+},
+"I2": {
+"ref": "pi:2561",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4620px"
+},
+"I3": {
+"ref": "pi:1761197",
+"credit": "Pixabay (jackmac34)",
+"info": "3757px"
+},
+"I4": {
+"ref": "pi:1868925",
+"credit": "Pixabay (Pexels)",
+"info": "3264px"
+},
+"I5": {
+"ref": "pi:8503298",
+"credit": "Pixabay (Storme22k)",
+"info": "5599px"
+},
+"I6": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I7": {
+"ref": "pi:1743939",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:1378049",
+"credit": "Pixabay (Couleur)",
+"info": "3057px"
+},
+"C1": {
+"ref": "wc:File:Austrian Hot Dog.jpg",
+"credit": "Wikimedia Commons, Kai Brinker, CC BY-SA 2.5",
+"info": "1944px"
+},
+"C2": {
+"ref": "wc:File:Comment tenir des baguettes - Première étape.JPG",
+"credit": "Wikimedia Commons, Magohurion, CC BY-SA 4.0",
+"info": "1640px"
+},
+"C3": {
+"ref": "wc:File:Comment tenir des baguettes - Troisième étape.JPG",
+"credit": "Wikimedia Commons, Magohurion, CC BY-SA 4.0",
+"info": "1640px"
+},
+"C4": {
+"ref": "wc:File:Comment tenir des baguettes - Deuxième étape.JPG",
+"credit": "Wikimedia Commons, Magohurion, CC BY-SA 4.0",
+"info": "1636px"
+},
+"C5": {
+"ref": "wc:File:Comment tenir des baguettes - Quatrième étape.JPG",
+"credit": "Wikimedia Commons, Magohurion, CC BY-SA 4.0",
+"info": "1600px"
+},
+"C6": {
+"ref": "wc:File:Carnaval Annecy 2026 (12).jpg",
+"credit": "Wikimedia Commons, Protokitoy, CC0",
+"info": "3456px"
+},
+"C7": {
+"ref": "wc:File:The Boy and his Baguette (4275787077).jpg",
+"credit": "Wikimedia Commons, Alex Proimos from Sydney, Australia, CC BY 2.0",
+"info": "1024px"
+},
+"C8": {
+"ref": "wc:File:Paris French baguette travelling in an embroidered Portuguese backpack.jpg",
+"credit": "Wikimedia Commons, 2benny, CC BY 2.0",
+"info": "2304px"
+}
+},
+"r03": {
+"V1": {
+"ref": "pv:17285",
+"credit": "Pixabay (ulleo)",
+"info": "28s"
+},
+"V2": {
+"ref": "pv:213754",
+"credit": "Pixabay (RuslanSikunov)",
+"info": "19s"
+},
+"V3": {
+"ref": "pv:64994",
+"credit": "Pixabay (MilanWulf)",
+"info": "30s"
+},
+"V4": {
+"ref": "pv:119252",
+"credit": "Pixabay (adege)",
+"info": "28s"
+},
+"V5": {
+"ref": "pv:245681",
+"credit": "Pixabay (JoshuaWoroniecki)",
+"info": "23s"
+},
+"V6": {
+"ref": "pv:62390",
+"credit": "Pixabay (JoshuaWoroniecki)",
+"info": "10s"
+},
+"V7": {
+"ref": "pv:42379",
+"credit": "Pixabay (RoyBuri)",
+"info": "15s"
+},
+"V8": {
+"ref": "pv:36011",
+"credit": "Pixabay (Miguelito_Garcia)",
+"info": "7s"
+},
+"I1": {
+"ref": "pi:4550711",
+"credit": "Pixabay (Al3xanderD)",
+"info": "5292px"
+},
+"I2": {
+"ref": "pi:1838788",
+"credit": "Pixabay (Pexels)",
+"info": "5398px"
+},
+"I3": {
+"ref": "pi:2301623",
+"credit": "Pixabay (Anradu)",
+"info": "4558px"
+},
+"I4": {
+"ref": "pi:5324144",
+"credit": "Pixabay (ybernardi)",
+"info": "4592px"
+},
+"I5": {
+"ref": "pi:5153522",
+"credit": "Pixabay (Sven_fotografiert)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:10296044",
+"credit": "Pixabay (GoranH)",
+"info": "6720px"
+},
+"I7": {
+"ref": "pi:7651150",
+"credit": "Pixabay (u_zas7qefp)",
+"info": "6016px"
+},
+"I8": {
+"ref": "pi:1382749",
+"credit": "Pixabay (dimitrisvetsikas1969)",
+"info": "4608px"
+},
+"C1": {
+"ref": "wc:File:Wheat field and wind turbine - geograph.org.uk - 3098740.jpg",
+"credit": "Wikimedia Commons, Andrew Hill, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C2": {
+"ref": "wc:File:Wind turbine in a wheat field - geograph.org.uk - 4070491.jpg",
+"credit": "Wikimedia Commons, Richard Humphrey, CC BY-SA 2.0",
+"info": "4320px"
+},
+"C3": {
+"ref": "wc:File:Wind pump in a wheat field - geograph.org.uk - 5457275.jpg",
+"credit": "Wikimedia Commons, Philip Halling, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C4": {
+"ref": "wc:File:Emberton, Wheat field and wind farm - geograph.org.uk - 7565548.jpg",
+"credit": "Wikimedia Commons, Michael Garlick, CC BY-SA 2.0",
+"info": "6748px"
+},
+"C5": {
+"ref": "wc:File:Wheat field and wind turbines - geograph.org.uk - 8102972.jpg",
+"credit": "Wikimedia Commons, Jonathan Thacker, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C6": {
+"ref": "wc:File:Wheat field and wind turbines - geograph.org.uk - 8360453.jpg",
+"credit": "Wikimedia Commons, Jonathan Thacker, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C7": {
+"ref": "wc:File:Wheat field with wind turbines beyond - geograph.org.uk - 8372391.jpg",
+"credit": "Wikimedia Commons, Philip Jeffrey, CC BY-SA 2.0",
+"info": "1600px"
+},
+"C8": {
+"ref": "wc:File:Golden Wheat Field - geograph.org.uk - 1955915.jpg",
+"credit": "Wikimedia Commons, Oast House Archive, CC BY-SA 2.0",
+"info": "1024px"
+}
+},
+"r04": {
+"V1": {
+"ref": "pv:122707",
+"credit": "Pixabay (alaindelpey)",
+"info": "22s"
+},
+"V2": {
+"ref": "pv:369192",
+"credit": "Pixabay (doktorkleinmusic)",
+"info": "20s"
+},
+"V3": {
+"ref": "pv:352836",
+"credit": "Pixabay (Solarselle77)",
+"info": "5s"
+},
+"V4": {
+"ref": "pv:352833",
+"credit": "Pixabay (Solarselle77)",
+"info": "5s"
+},
+"V5": {
+"ref": "pv:17285",
+"credit": "Pixabay (ulleo)",
+"info": "28s"
+},
+"V6": {
+"ref": "pv:189018",
+"credit": "Pixabay (choxyltd)",
+"info": "14s"
+},
+"V7": {
+"ref": "pv:26493",
+"credit": "Pixabay (StefWithAnF)",
+"info": "74s"
+},
+"V8": {
+"ref": "pv:240531",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "7s"
+},
+"I1": {
+"ref": "pi:7272712",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "5633px"
+},
+"I2": {
+"ref": "pi:8844604",
+"credit": "Pixabay (terbe_rezso)",
+"info": "5184px"
+},
+"I3": {
+"ref": "pi:7363769",
+"credit": "Pixabay (WFranz)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:7363775",
+"credit": "Pixabay (WFranz)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:8213738",
+"credit": "Pixabay (Wubbsy)",
+"info": "5569px"
+},
+"I6": {
+"ref": "pi:4461030",
+"credit": "Pixabay (Ralphs_Fotos)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:4422106",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:2554356",
+"credit": "Pixabay (kirahoffmann)",
+"info": "5999px"
+},
+"C1": {
+"ref": "wc:File:Wheat close-up.JPG",
+"credit": "Wikimedia Commons, User:Bluemoose, CC BY-SA 3.0",
+"info": "2592px"
+},
+"C2": {
+"ref": "wc:File:Wheat ear close-up in a field Bangladesh 03.jpg",
+"credit": "Wikimedia Commons, A S M Jobaer, CC BY-SA 4.0",
+"info": "4000px"
+},
+"C3": {
+"ref": "wc:File:Wheat ear close-up in a field Bangladesh 02.jpg",
+"credit": "Wikimedia Commons, A S M Jobaer, CC BY-SA 4.0",
+"info": "4000px"
+},
+"C4": {
+"ref": "wc:File:Wheat ear close-up in a field Bangladesh 01.jpg",
+"credit": "Wikimedia Commons, A S M Jobaer, CC BY-SA 4.0",
+"info": "6000px"
+}
+},
+"r05": {
+"V1": {
+"ref": "pv:232561",
+"credit": "Pixabay (Ivan267)",
+"info": "19s"
+},
+"V2": {
+"ref": "pv:45635",
+"credit": "Pixabay (adege)",
+"info": "59s"
+},
+"V3": {
+"ref": "pv:7412",
+"credit": "Pixabay (MichaelFinster)",
+"info": "174s"
+},
+"V4": {
+"ref": "pv:103543",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V5": {
+"ref": "pv:166811",
+"credit": "Pixabay (AndyWolares)",
+"info": "11s"
+},
+"V6": {
+"ref": "pv:86119",
+"credit": "Pixabay (Thomas-Ritter)",
+"info": "20s"
+},
+"V7": {
+"ref": "pv:166810",
+"credit": "Pixabay (AndyWolares)",
+"info": "6s"
+},
+"V8": {
+"ref": "pv:86122",
+"credit": "Pixabay (Thomas-Ritter)",
+"info": "20s"
+},
+"I1": {
+"ref": "pi:9738590",
+"credit": "Pixabay (LMX5Fotografie)",
+"info": "6000px"
+},
+"I2": {
+"ref": "pi:8192037",
+"credit": "Pixabay (andystrauss)",
+"info": "4272px"
+},
+"I3": {
+"ref": "pi:5401538",
+"credit": "Pixabay (Anrita1705)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:2147239",
+"credit": "Pixabay (ThiloBecker)",
+"info": "4272px"
+},
+"I5": {
+"ref": "pi:5401536",
+"credit": "Pixabay (Anrita1705)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:7389472",
+"credit": "Pixabay (Ricktapam)",
+"info": "6016px"
+},
+"I7": {
+"ref": "pi:6586592",
+"credit": "Pixabay (reijotelaranta)",
+"info": "5472px"
+},
+"I8": {
+"ref": "pi:6488887",
+"credit": "Pixabay (schauhi)",
+"info": "5760px"
+},
+"C1": {
+"ref": "wc:File:Combine in wheat field.jpg",
+"credit": "Wikimedia Commons, Dan Kollmann, CC BY-SA 3.0",
+"info": "4037px"
+},
+"C2": {
+"ref": "wc:File:Harvest, agriculture, grain, wheat-field, combine harvester Fortepan 89614.jpg",
+"credit": "Wikimedia Commons, FOTO:Fortepan — ID 89614: Adományozó/Donor: Urbán Tamás., CC BY-SA 3.0",
+"info": "5144px"
+},
+"C3": {
+"ref": "wc:File:The 2010 wheat crop leaves the combine harvester - geograph.org.uk - 2004721.jpg",
+"credit": "Wikimedia Commons, Roger Davies, CC BY-SA 2.0",
+"info": "3008px"
+},
+"C4": {
+"ref": "wc:File:Combine Harvester, Fodder Fen - geograph.org.uk - 3149633.jpg",
+"credit": "Wikimedia Commons, Hugh Venables, CC BY-SA 2.0",
+"info": "1600px"
+},
+"C5": {
+"ref": "wc:File:A combine harvester at work in a field of wheat - geograph.org.uk - 6246353.jpg",
+"credit": "Wikimedia Commons, Ian Calderwood, CC BY-SA 2.0",
+"info": "1280px"
+},
+"C6": {
+"ref": "wc:File:View of wheat cutting by combine harvester, Kurigram, Bangladesh.jpg",
+"credit": "Wikimedia Commons, Tanvir Rahat, CC BY-SA 4.0",
+"info": "4032px"
+},
+"C7": {
+"ref": "wc:File:Combine harvester cutting wheat at Arbuthnott, Aberdeenshire - geograph.org.uk - 8117522.jpg",
+"credit": "Wikimedia Commons, Adrian Diack, CC BY-SA 2.0",
+"info": "5472px"
+},
+"C8": {
+"ref": "wc:File:Harvester in Punchbowl Lane Field - geograph.org.uk - 2521802.jpg",
+"credit": "Wikimedia Commons, Josie Campbell, CC BY-SA 2.0",
+"info": "1600px"
+}
+},
+"r06": {
+"V1": {
+"ref": "pv:232561",
+"credit": "Pixabay (Ivan267)",
+"info": "19s"
+},
+"V2": {
+"ref": "pv:12714",
+"credit": "Pixabay (eroyka)",
+"info": "15s"
+},
+"V3": {
+"ref": "pv:17285",
+"credit": "Pixabay (ulleo)",
+"info": "28s"
+},
+"V4": {
+"ref": "pv:130940",
+"credit": "Pixabay (miukia_aki)",
+"info": "5s"
+},
+"V5": {
+"ref": "pv:220088",
+"credit": "Pixabay (NickyPe)",
+"info": "20s"
+},
+"V6": {
+"ref": "pv:164099",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V7": {
+"ref": "pv:128126",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V8": {
+"ref": "pv:81542",
+"credit": "Pixabay (NickyPe)",
+"info": "26s"
+},
+"I1": {
+"ref": "pi:554521",
+"credit": "Pixabay (445693)",
+"info": "2048px"
+},
+"I2": {
+"ref": "pi:3109757",
+"credit": "Pixabay (Tama66)",
+"info": "5525px"
+},
+"I3": {
+"ref": "pi:1978262",
+"credit": "Pixabay (dimitrisvetsikas1969)",
+"info": "4608px"
+},
+"I4": {
+"ref": "pi:1845572",
+"credit": "Pixabay (Pexels)",
+"info": "2738px"
+},
+"I5": {
+"ref": "pi:3636010",
+"credit": "Pixabay (Marys_fotos)",
+"info": "4608px"
+},
+"I6": {
+"ref": "pi:482421",
+"credit": "Pixabay (422737)",
+"info": "5184px"
+},
+"I7": {
+"ref": "pi:1523793",
+"credit": "Pixabay (kridneh)",
+"info": "3264px"
+},
+"I8": {
+"ref": "pi:3717095",
+"credit": "Pixabay (markusspiske)",
+"info": "5760px"
+},
+"C1": {
+"ref": "wc:File:Grain spec tipper trailer unloading rock.jpg",
+"credit": "Wikimedia Commons, Bidgee, CC BY-SA 3.0 au",
+"info": "3648px"
+},
+"C2": {
+"ref": "wc:File:Grain spec tipper trailer unloading rock (1).jpg",
+"credit": "Wikimedia Commons, Bidgee, CC BY-SA 3.0 au",
+"info": "3648px"
+},
+"C3": {
+"ref": "wc:File:Dominator unloading grain on truck.JPG",
+"credit": "Wikimedia Commons, Blonder1984, CC BY-SA 3.0",
+"info": "2048px"
+},
+"C4": {
+"ref": "wc:File:Truck unloading grain, National Harbours Board Grain Elevators, Port Colborne (I0003234).jpg",
+"credit": "Wikimedia Commons, auteur inconnu, OGL-ON",
+"info": "1900px"
+},
+"C5": {
+"ref": "wc:File:Combine unloads grain - Wheat harvesting in Eastern Washington near the town of Steptoe.jpg",
+"credit": "Wikimedia Commons, Charles Knowles from Meridian Idaho, USA, CC BY 2.0",
+"info": "1500px"
+},
+"C6": {
+"ref": "wc:File:Combine harvester unloading grain into a trailer, Astley - geograph.org.uk - 6913526.jpg",
+"credit": "Wikimedia Commons, A J Paxton, CC BY-SA 2.0",
+"info": "2592px"
+},
+"C7": {
+"ref": "wc:File:Grain hopper trailer.webp",
+"credit": "Wikimedia Commons, OSHA, Public domain",
+"info": "1119px"
+},
+"C8": {
+"ref": "wc:File:Grain hopper trailer Timpte 01.jpg",
+"credit": "Wikimedia Commons, Wikideas1, CC0",
+"info": "3929px"
+}
+},
+"r07": {
+"V1": {
+"ref": "pv:49549",
+"credit": "Pixabay (x_OI)",
+"info": "31s"
+},
+"V2": {
+"ref": "pv:45657",
+"credit": "Pixabay (sergo75-75)",
+"info": "10s"
+},
+"V3": {
+"ref": "pv:17285",
+"credit": "Pixabay (ulleo)",
+"info": "28s"
+},
+"V4": {
+"ref": "pv:232561",
+"credit": "Pixabay (Ivan267)",
+"info": "19s"
+},
+"V5": {
+"ref": "pv:119252",
+"credit": "Pixabay (adege)",
+"info": "28s"
+},
+"V6": {
+"ref": "pv:128126",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V7": {
+"ref": "pv:132781",
+"credit": "Pixabay (adege)",
+"info": "41s"
+},
+"V8": {
+"ref": "pv:39982",
+"credit": "Pixabay (RoyBuri)",
+"info": "16s"
+},
+"I1": {
+"ref": "pi:7128270",
+"credit": "Pixabay (congerdesign)",
+"info": "6016px"
+},
+"I2": {
+"ref": "pi:4357683",
+"credit": "Pixabay (Peggychoucair)",
+"info": "6000px"
+},
+"I3": {
+"ref": "pi:1530321",
+"credit": "Pixabay (Pavlofox)",
+"info": "5184px"
+},
+"I4": {
+"ref": "pi:3534233",
+"credit": "Pixabay (Marzena7)",
+"info": "5456px"
+},
+"I5": {
+"ref": "pi:4183076",
+"credit": "Pixabay (ha11ok)",
+"info": "5184px"
+},
+"I6": {
+"ref": "pi:925760",
+"credit": "Pixabay (StockSnap)",
+"info": "3008px"
+},
+"I7": {
+"ref": "pi:8487373",
+"credit": "Pixabay (NatureNomad)",
+"info": "4096px"
+},
+"I8": {
+"ref": "pi:4168765",
+"credit": "Pixabay (GiuseppeASR92)",
+"info": "4272px"
+},
+"C1": {
+"ref": "wc:File:The story of a grain of wheat (1903) (14763988894).jpg",
+"credit": "Wikimedia Commons, Internet Archive Book Images, No restrictions",
+"info": "1936px"
+},
+"C2": {
+"ref": "wc:File:The story of a grain of wheat (1903) (14579855477).jpg",
+"credit": "Wikimedia Commons, Internet Archive Book Images, No restrictions",
+"info": "2822px"
+},
+"C3": {
+"ref": "wc:File:The story of a grain of wheat (1903) (14763139101).jpg",
+"credit": "Wikimedia Commons, Edgar, William C. (William Crowell), 1856-1932, No restrictions",
+"info": "3184px"
+},
+"C4": {
+"ref": "wc:File:The story of a grain of wheat (1903) (14765993372).jpg",
+"credit": "Wikimedia Commons, Edgar, William C. (William Crowell), 1856-1932, No restrictions",
+"info": "2822px"
+},
+"C5": {
+"ref": "wc:File:Sprouting wheat.jpg",
+"credit": "Wikimedia Commons, auteur inconnu, GFDL 1.2",
+"info": "1600px"
+},
+"C6": {
+"ref": "wc:File:Pšenica.jpg",
+"credit": "Wikimedia Commons, Smihael, CC BY-SA 3.0",
+"info": "3008px"
+},
+"C7": {
+"ref": "wc:File:Dülmen, Alte Brennerei Löhning -- 2015 -- 8677-81.jpg",
+"credit": "Wikimedia Commons, Dietmar Rabich, CC BY-SA 4.0",
+"info": "5139px"
+},
+"C8": {
+"ref": "wc:File:Wheat Grain (109321671).jpeg",
+"credit": "Wikimedia Commons, Ullasa Kodandaramaiah, CC BY-SA 3.0",
+"info": "2048px"
+}
+},
+"r08": {
+"V1": {
+"ref": "pv:207109",
+"credit": "Pixabay (aerofotografialincoln)",
+"info": "50s"
+},
+"V2": {
+"ref": "pv:281005",
+"credit": "Pixabay (OneGod_TheFather)",
+"info": "30s"
+},
+"V3": {
+"ref": "pv:232561",
+"credit": "Pixabay (Ivan267)",
+"info": "19s"
+},
+"V4": {
+"ref": "pv:17285",
+"credit": "Pixabay (ulleo)",
+"info": "28s"
+},
+"V5": {
+"ref": "pv:228647",
+"credit": "Pixabay (adege)",
+"info": "36s"
+},
+"V6": {
+"ref": "pv:100257",
+"credit": "Pixabay (adege)",
+"info": "30s"
+},
+"V7": {
+"ref": "pv:220088",
+"credit": "Pixabay (NickyPe)",
+"info": "20s"
+},
+"V8": {
+"ref": "pv:164099",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"I1": {
+"ref": "pi:8253284",
+"credit": "Pixabay (wal_172619)",
+"info": "4249px"
+},
+"I2": {
+"ref": "pi:5434589",
+"credit": "Pixabay (iLights)",
+"info": "4032px"
+},
+"I3": {
+"ref": "pi:420186",
+"credit": "Pixabay (stevepb)",
+"info": "4962px"
+},
+"I4": {
+"ref": "pi:2787297",
+"credit": "Pixabay (Momentmal)",
+"info": "5180px"
+},
+"I5": {
+"ref": "pi:1937447",
+"credit": "Pixabay (12019)",
+"info": "2200px"
+},
+"I6": {
+"ref": "pi:3602875",
+"credit": "Pixabay (5892437)",
+"info": "4608px"
+},
+"I7": {
+"ref": "pi:3870231",
+"credit": "Pixabay (MaritDW)",
+"info": "5472px"
+},
+"I8": {
+"ref": "pi:4484540",
+"credit": "Pixabay (7722424)",
+"info": "7500px"
+},
+"C1": {
+"ref": "wc:File:Ralls Texas Grain Silos 2010.jpg",
+"credit": "Wikimedia Commons, Leaflet, CC BY-SA 3.0",
+"info": "2816px"
+},
+"C2": {
+"ref": "wc:File:Bamberg Grain Silo 6140208.jpg",
+"credit": "Wikimedia Commons, Ermell, CC BY-SA 4.0",
+"info": "3888px"
+},
+"C3": {
+"ref": "wc:File:Münster, Hafen, ehem. Schüttvorrichtung -- 2020 -- 8064.jpg",
+"credit": "Wikimedia Commons, Dietmar Rabich, CC BY-SA 4.0",
+"info": "5775px"
+},
+"C4": {
+"ref": "wc:File:Rockingham Milling Co grain silo 2021-06-06 161229 1 crop.jpg",
+"credit": "Wikimedia Commons, G. Edward Johnson, CC BY 4.0",
+"info": "6182px"
+},
+"C5": {
+"ref": "wc:File:Gifford, IL silo and grain elevator.jpg",
+"credit": "Wikimedia Commons, TheTechnician27, CC0",
+"info": "5248px"
+},
+"C6": {
+"ref": "wc:File:Grain silos in the Iberian city of Ullastret 04.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "5472px"
+},
+"C7": {
+"ref": "wc:File:Farm Grain Silo - geograph.org.uk - 4040638.jpg",
+"credit": "Wikimedia Commons, Keith Evans, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C8": {
+"ref": "wc:File:Grain Silo - geograph.org.uk - 4040644.jpg",
+"credit": "Wikimedia Commons, Keith Evans, CC BY-SA 2.0",
+"info": "1024px"
+}
+},
+"r09": {
+"V1": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V2": {
+"ref": "pv:94003",
+"credit": "Pixabay (NickyPe)",
+"info": "20s"
+},
+"V3": {
+"ref": "pv:94004",
+"credit": "Pixabay (NickyPe)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:71170",
+"credit": "Pixabay (Keldxxxx)",
+"info": "13s"
+},
+"V5": {
+"ref": "pv:71171",
+"credit": "Pixabay (Keldxxxx)",
+"info": "15s"
+},
+"V6": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V7": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"V8": {
+"ref": "pv:137099",
+"credit": "Pixabay (MabelAmber)",
+"info": "26s"
+},
+"I1": {
+"ref": "pi:7588752",
+"credit": "Pixabay (hansbenn)",
+"info": "4272px"
+},
+"I2": {
+"ref": "pi:7974363",
+"credit": "Pixabay (monk83)",
+"info": "5456px"
+},
+"I3": {
+"ref": "pi:5709598",
+"credit": "Pixabay (LediK)",
+"info": "4032px"
+},
+"I4": {
+"ref": "pi:4613690",
+"credit": "Pixabay (TimHill)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:7456823",
+"credit": "Pixabay (guvo59)",
+"info": "5184px"
+},
+"I6": {
+"ref": "pi:4613682",
+"credit": "Pixabay (TimHill)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:1138948",
+"credit": "Pixabay (652234)",
+"info": "4501px"
+},
+"I8": {
+"ref": "pi:3212205",
+"credit": "Pixabay (dimitrisvetsikas1969)",
+"info": "5296px"
+},
+"C1": {
+"ref": "wc:File:Bristol MMB «B1 CWS Flour Mills.jpg",
+"credit": "Wikimedia Commons, mattbuck (category), CC BY-SA 3.0",
+"info": "2328px"
+},
+"C2": {
+"ref": "wc:File:Old Flour Mill, c1861. Peter Neaum. - panoramio.jpg",
+"credit": "Wikimedia Commons, Peter Neaum, CC BY 3.0",
+"info": "3513px"
+},
+"C3": {
+"ref": "wc:File:Harrington Grist Mill and Mill Pond - Harrington, ON.jpg",
+"credit": "Wikimedia Commons, JFVoll, CC BY-SA 4.0",
+"info": "1920px"
+},
+"C4": {
+"ref": "wc:File:20240801 - Morristown Feed Mill-01.jpg",
+"credit": "Wikimedia Commons, Heritage Preservation Department - MNHS, CC BY-SA 2.0",
+"info": "2016px"
+},
+"C5": {
+"ref": "wc:File:20240801 - Morristown Feed Mill-02.jpg",
+"credit": "Wikimedia Commons, Heritage Preservation Department - MNHS, CC BY-SA 2.0",
+"info": "1969px"
+},
+"C6": {
+"ref": "wc:File:20240801 - Morristown Feed Mill-04.jpg",
+"credit": "Wikimedia Commons, Heritage Preservation Department - MNHS, CC BY-SA 2.0",
+"info": "2016px"
+},
+"C7": {
+"ref": "wc:File:20240801 - Morristown Feed Mill-09 - 53954842185.jpg",
+"credit": "Wikimedia Commons, Heritage Preservation Department - MNHS, CC BY-SA 2.0",
+"info": "1512px"
+},
+"C8": {
+"ref": "wc:File:20240801 - Morristown Feed Mill-08 - 53953495737.jpg",
+"credit": "Wikimedia Commons, Heritage Preservation Department - MNHS, CC BY-SA 2.0",
+"info": "2016px"
+}
+},
+"r10": {
+"V1": {
+"ref": "pv:283533",
+"credit": "Pixabay (BlenderTimer)",
+"info": "40s"
+},
+"V2": {
+"ref": "pv:145320",
+"credit": "Pixabay (NickyPe)",
+"info": "21s"
+},
+"V3": {
+"ref": "pv:168572",
+"credit": "Pixabay (NickyPe)",
+"info": "50s"
+},
+"V4": {
+"ref": "pv:113004",
+"credit": "Pixabay (NickyPe)",
+"info": "25s"
+},
+"V5": {
+"ref": "pv:165065",
+"credit": "Pixabay (NickyPe)",
+"info": "40s"
+},
+"V6": {
+"ref": "pv:181916",
+"credit": "Pixabay (NickyPe)",
+"info": "45s"
+},
+"V7": {
+"ref": "pv:178826",
+"credit": "Pixabay (NickyPe)",
+"info": "35s"
+},
+"V8": {
+"ref": "pv:112429",
+"credit": "Pixabay (NickyPe)",
+"info": "30s"
+},
+"I1": {
+"ref": "pi:1838330",
+"credit": "Pixabay (Pexels)",
+"info": "3191px"
+},
+"I2": {
+"ref": "pi:1882395",
+"credit": "Pixabay (Kai_Vogel)",
+"info": "3153px"
+},
+"I3": {
+"ref": "pi:9474544",
+"credit": "Pixabay (karsten_madsen)",
+"info": "5259px"
+},
+"I4": {
+"ref": "pi:532651",
+"credit": "Pixabay (stevepb)",
+"info": "4405px"
+},
+"I5": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I6": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I7": {
+"ref": "pi:1281053",
+"credit": "Pixabay (Couleur)",
+"info": "1920px"
+},
+"I8": {
+"ref": "pi:4840960",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "6720px"
+},
+"C1": {
+"ref": "wc:File:Usain Bolt Olympics Celebration.jpg",
+"credit": "Wikimedia Commons, Richard Giles, CC BY-SA 2.0",
+"info": "1534px"
+},
+"C2": {
+"ref": "wc:File:Flour sifting tray, Chukchansi Yokuts - Oakland Museum of California - DSC05002.JPG",
+"credit": "Wikimedia Commons, Daderot, CC0",
+"info": "4058px"
+},
+"C3": {
+"ref": "wc:File:Nuts and Bolts sequence.jpg",
+"credit": "Wikimedia Commons, Tomascastelazo, CC BY-SA 4.0",
+"info": "4600px"
+},
+"C4": {
+"ref": "wc:File:TM Sifting Project 09.jpg",
+"credit": "Wikimedia Commons, Ana al'ain, CC BY-SA 4.0",
+"info": "2592px"
+},
+"C5": {
+"ref": "wc:File:Flour sifting.jpg",
+"credit": "Wikimedia Commons, Nibeza, CC0",
+"info": "2400px"
+},
+"C6": {
+"ref": "wc:File:Baker sifting flour in a wooden bowl for making dough at a rustic kitchen.jpg",
+"credit": "Wikimedia Commons, Shixart1985, CC BY 2.0",
+"info": "3637px"
+},
+"C7": {
+"ref": "wc:File:Chef sifting flour.jpg",
+"credit": "Wikimedia Commons, Landon Heredia, Public domain",
+"info": "2896px"
+},
+"C8": {
+"ref": "wc:File:Сито механическое (кружка-сито) Sieve, Flour Sifter.JPG",
+"credit": "Wikimedia Commons, Shliphmash, Public domain",
+"info": "3072px"
+}
+},
+"r11": {
+"V1": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V3": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:207994",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "44s"
+},
+"V5": {
+"ref": "pv:207992",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "13s"
+},
+"V6": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V7": {
+"ref": "pv:63066",
+"credit": "Pixabay (AlexKopeykin)",
+"info": "22s"
+},
+"V8": {
+"ref": "pv:207991",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "6s"
+},
+"I1": {
+"ref": "pi:1528338",
+"credit": "Pixabay (congerdesign)",
+"info": "4928px"
+},
+"I2": {
+"ref": "pi:1528438",
+"credit": "Pixabay (congerdesign)",
+"info": "4928px"
+},
+"I3": {
+"ref": "pi:667768",
+"credit": "Pixabay (FotoRieth)",
+"info": "4032px"
+},
+"I4": {
+"ref": "pi:2947257",
+"credit": "Pixabay (anncapictures)",
+"info": "3994px"
+},
+"I5": {
+"ref": "pi:532651",
+"credit": "Pixabay (stevepb)",
+"info": "4405px"
+},
+"I6": {
+"ref": "pi:21467",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "5000px"
+},
+"I7": {
+"ref": "pi:3392168",
+"credit": "Pixabay (Couleur)",
+"info": "4227px"
+},
+"I8": {
+"ref": "pi:7331739",
+"credit": "Pixabay (roshan_bhatia)",
+"info": "6000px"
+}
+},
+"r12": {
+"V1": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V2": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V3": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V4": {
+"ref": "pv:258562",
+"credit": "Pixabay (SOÑA)",
+"info": "18s"
+},
+"V5": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V6": {
+"ref": "pv:73847",
+"credit": "Pixabay (JustYøu)",
+"info": "14s"
+},
+"V7": {
+"ref": "pv:34091",
+"credit": "Pixabay (jLasWilson)",
+"info": "24s"
+},
+"V8": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"I1": {
+"ref": "pi:8364737",
+"credit": "Pixabay (Wounds_and_Cracks)",
+"info": "4957px"
+},
+"I2": {
+"ref": "pi:1910046",
+"credit": "Pixabay (HG-Fotografie)",
+"info": "5184px"
+},
+"I3": {
+"ref": "pi:10430859",
+"credit": "Pixabay (Vilkasss)",
+"info": "5376px"
+},
+"I4": {
+"ref": "pi:4310465",
+"credit": "Pixabay (giulioperricone)",
+"info": "4368px"
+},
+"I5": {
+"ref": "pi:2885089",
+"credit": "Pixabay (jackmac34)",
+"info": "3724px"
+},
+"I6": {
+"ref": "pi:725873",
+"credit": "Pixabay (MorningbirdPhoto)",
+"info": "3879px"
+},
+"I7": {
+"ref": "pi:4183076",
+"credit": "Pixabay (ha11ok)",
+"info": "5184px"
+},
+"I8": {
+"ref": "pi:4183097",
+"credit": "Pixabay (ha11ok)",
+"info": "5184px"
+},
+"C1": {
+"ref": "wc:File:Two children's hands press colorful cookie cutters into rolled dough on a flour-dusted countertop.jpg",
+"credit": "Wikimedia Commons, Shixart1985, CC BY 2.0",
+"info": "6048px"
+},
+"C2": {
+"ref": "wc:File:US Navy 041206-N-5837R-029 Culinary Specialist 3rd Class Joshua Savoy spreads flour on his food preparation table before making peach cobbler dough for the crew of the Nimitz-class aircraft carrier USS Abraham Lincoln (CVN 72).jpg",
+"credit": "Wikimedia Commons, U.S. Navy photo by Photographer's Mate Airman Apprentice Tim, Public domain",
+"info": "1500px"
+},
+"C3": {
+"ref": "wc:File:Putting down flour on lefse rolling surface.jpg",
+"credit": "Wikimedia Commons, MarkTraceur, CC BY-SA 3.0",
+"info": "2560px"
+},
+"C4": {
+"ref": "wc:File:Report of the Federal trade commission on commercial wheat flour milling. September 15, 1920 (1920) (14762418381).jpg",
+"credit": "Wikimedia Commons, United States. Federal Trade Commission, No restrictions",
+"info": "1572px"
+},
+"C5": {
+"ref": "wc:File:Report of the Federal trade commission on commercial wheat flour milling. September 15, 1920 (1920) (14579130977).jpg",
+"credit": "Wikimedia Commons, United States. Federal Trade Commission, No restrictions",
+"info": "3018px"
+},
+"C6": {
+"ref": "wc:File:Maison Consulaire (Saint-Flour) boudoir 2.jpg",
+"credit": "Wikimedia Commons, Chatsam, CC BY-SA 4.0",
+"info": "6000px"
+},
+"C7": {
+"ref": "wc:File:Sweets Table, WCI 2023 (11).jpg",
+"credit": "Wikimedia Commons, Dolon Prova, CC BY-SA 4.0",
+"info": "5152px"
+}
+},
+"r13": {
+"V1": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V3": {
+"ref": "pv:46989",
+"credit": "Pixabay (NickyPe)",
+"info": "35s"
+},
+"V4": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V5": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"V6": {
+"ref": "pv:232561",
+"credit": "Pixabay (Ivan267)",
+"info": "19s"
+},
+"V7": {
+"ref": "pv:208477",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "11s"
+},
+"V8": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"I1": {
+"ref": "pi:4433634",
+"credit": "Pixabay (Leanne_hei)",
+"info": "4819px"
+},
+"I2": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I3": {
+"ref": "pi:3082589",
+"credit": "Pixabay (webandi)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:6749844",
+"credit": "Pixabay (CikguWan)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:7711415",
+"credit": "Pixabay (eatde)",
+"info": "3000px"
+},
+"I6": {
+"ref": "pi:4656334",
+"credit": "Pixabay (bishwas)",
+"info": "6240px"
+},
+"I7": {
+"ref": "pi:923037",
+"credit": "Pixabay (dreamypixel)",
+"info": "4928px"
+},
+"I8": {
+"ref": "pi:3873339",
+"credit": "Pixabay (congerdesign)",
+"info": "6016px"
+},
+"C1": {
+"ref": "wc:File:Dough hook.JPG",
+"credit": "Wikimedia Commons, דניאל צבי, Public domain",
+"info": "1014px"
+},
+"C2": {
+"ref": "wc:File:Stephan Universalmaschine 1 (fcm).jpg",
+"credit": "Wikimedia Commons, Photograph:  Frank C. Müller, Baden-Baden, CC BY-SA 4.0",
+"info": "1458px"
+},
+"C3": {
+"ref": "wc:File:Dough making machine at ostia antica.jpg",
+"credit": "Wikimedia Commons, Chris 73, CC BY-SA 3.0",
+"info": "3264px"
+},
+"C4": {
+"ref": "wc:File:Mixing Tara's Fried Dough.jpg",
+"credit": "Wikimedia Commons, Arge300exx at en.wikipedia, CC BY-SA 3.0",
+"info": "2592px"
+},
+"C5": {
+"ref": "wc:File:Dough mixing machine - Flickr - Al Jazeera English.jpg",
+"credit": "Wikimedia Commons, Omar Chatriwala of Al Jazeera English, CC BY-SA 2.0",
+"info": "2592px"
+},
+"C6": {
+"ref": "wc:File:Baking dough blender Diosna 1951 IMG 7656 cloppenburg museumsdorf.JPG",
+"credit": "Wikimedia Commons, Bjoertvedt, CC BY-SA 4.0",
+"info": "3456px"
+},
+"C7": {
+"ref": "wc:File:Baking dough blender Diosna 1951 IMG 7657 cloppenburg museumsdorf.JPG",
+"credit": "Wikimedia Commons, Bjoertvedt, CC BY-SA 4.0",
+"info": "3456px"
+},
+"C8": {
+"ref": "wc:File:Female figurine kneading dough(?) MET GR690.jpg",
+"credit": "Wikimedia Commons, auteur inconnu, CC0",
+"info": "1500px"
+}
+},
+"r14": {
+"V1": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:445",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "14s"
+},
+"V3": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V4": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"V5": {
+"ref": "pv:208477",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "11s"
+},
+"V6": {
+"ref": "pv:134469",
+"credit": "Pixabay (patw64)",
+"info": "12s"
+},
+"V7": {
+"ref": "pv:134468",
+"credit": "Pixabay (patw64)",
+"info": "12s"
+},
+"V8": {
+"ref": "pv:134465",
+"credit": "Pixabay (patw64)",
+"info": "12s"
+},
+"I1": {
+"ref": "pi:1850233",
+"credit": "Pixabay (Pexels)",
+"info": "4000px"
+},
+"I2": {
+"ref": "pi:10340041",
+"credit": "Pixabay (tehzeebkazmii)",
+"info": "7040px"
+},
+"I3": {
+"ref": "pi:4618189",
+"credit": "Pixabay (happyveganfit)",
+"info": "5184px"
+},
+"I4": {
+"ref": "pi:2573216",
+"credit": "Pixabay (StockSnap)",
+"info": "4460px"
+},
+"I5": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I6": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I7": {
+"ref": "pi:3053488",
+"credit": "Pixabay (lograstudio)",
+"info": "6720px"
+},
+"I8": {
+"ref": "pi:2959213",
+"credit": "Pixabay (AndiP)",
+"info": "2048px"
+},
+"C1": {
+"ref": "wc:File:Lamian Toshomen València.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "3456px"
+},
+"C2": {
+"ref": "wc:File:Dough before stretching (15463325352).jpg",
+"credit": "Wikimedia Commons, Karen and Brad Emerson, CC BY 2.0",
+"info": "1936px"
+},
+"C3": {
+"ref": "wc:File:Lamian de vedella.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "4624px"
+},
+"C4": {
+"ref": "wc:File:Sibisi - Lamian de vedella.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "3472px"
+},
+"C5": {
+"ref": "wc:File:Lamian de vedella amb envinagrat.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "4624px"
+},
+"C6": {
+"ref": "wc:File:Lamian de vedella amb verdura confitada.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "4624px"
+},
+"C7": {
+"ref": "wc:File:King Baos - Lamian de Vedella i Curry.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "4624px"
+},
+"C8": {
+"ref": "wc:File:Lamian de Vedella i Curry.jpg",
+"credit": "Wikimedia Commons, Francesc Fort, CC BY-SA 4.0",
+"info": "3472px"
+}
+},
+"r15": {
+"V1": {
+"ref": "pv:190332",
+"credit": "Pixabay (DancingSky)",
+"info": "14s"
+},
+"V2": {
+"ref": "pv:2213",
+"credit": "Pixabay (VariousPhotography)",
+"info": "13s"
+},
+"V3": {
+"ref": "pv:22555",
+"credit": "Pixabay (adege)",
+"info": "17s"
+},
+"V4": {
+"ref": "pv:9825",
+"credit": "Pixabay (ZenJoe)",
+"info": "18s"
+},
+"V5": {
+"ref": "pv:24105",
+"credit": "Pixabay (adege)",
+"info": "29s"
+},
+"V6": {
+"ref": "pv:23263",
+"credit": "Pixabay (adege)",
+"info": "33s"
+},
+"V7": {
+"ref": "pv:22634",
+"credit": "Pixabay (adege)",
+"info": "26s"
+},
+"V8": {
+"ref": "pv:71457",
+"credit": "Pixabay (adege)",
+"info": "31s"
+},
+"I1": {
+"ref": "pi:7524598",
+"credit": "Pixabay (adege)",
+"info": "4934px"
+},
+"I2": {
+"ref": "pi:7524597",
+"credit": "Pixabay (adege)",
+"info": "5184px"
+},
+"I3": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I4": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I5": {
+"ref": "pi:399286",
+"credit": "Pixabay (TiBine)",
+"info": "5184px"
+},
+"I6": {
+"ref": "pi:4840960",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "6720px"
+},
+"I7": {
+"ref": "pi:6881348",
+"credit": "Pixabay (Mylene2401)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:2132874",
+"credit": "Pixabay (Daria-Yakovleva)",
+"info": "5676px"
+},
+"C1": {
+"ref": "wc:File:Rye sourdough starter culture rising.webm",
+"credit": "Wikimedia Commons, David M. Jensen (Storkk), CC BY-SA 3.0",
+"info": "4928px"
+}
+},
+"r16": {
+"V1": {
+"ref": "pv:212705",
+"credit": "Pixabay (adege)",
+"info": "20s"
+},
+"V2": {
+"ref": "pv:65278",
+"credit": "Pixabay (assadalit)",
+"info": "7s"
+},
+"V3": {
+"ref": "pv:61954",
+"credit": "Pixabay (krzys16)",
+"info": "41s"
+},
+"V4": {
+"ref": "pv:346166",
+"credit": "Pixabay (Dimi_Tri)",
+"info": "12s"
+},
+"V5": {
+"ref": "pv:82602",
+"credit": "Pixabay (TPMotion)",
+"info": "54s"
+},
+"V6": {
+"ref": "pv:1085",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "15s"
+},
+"V7": {
+"ref": "pv:58142",
+"credit": "Pixabay (SYG_Anime)",
+"info": "13s"
+},
+"V8": {
+"ref": "pv:6847",
+"credit": "Pixabay (Schäferle)",
+"info": "14s"
+},
+"I1": {
+"ref": "pi:2313462",
+"credit": "Pixabay (DomPixabay)",
+"info": "6000px"
+},
+"I2": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I3": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I4": {
+"ref": "pi:2531902",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I5": {
+"ref": "pi:4889633",
+"credit": "Pixabay (webentwicklerin)",
+"info": "5594px"
+},
+"I6": {
+"ref": "pi:7033979",
+"credit": "Pixabay (congerdesign)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:5724548",
+"credit": "Pixabay (RitaE)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:7395604",
+"credit": "Pixabay (jackmac34)",
+"info": "6016px"
+},
+"C1": {
+"ref": "wc:File:Yeast Cell Diagram Illustration.jpg",
+"credit": "Wikimedia Commons, Morganocyte, CC BY-SA 4.0",
+"info": "1979px"
+},
+"C2": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 2.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C3": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 10.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C4": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 1.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C5": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 3.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C6": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 4.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C7": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 5.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+},
+"C8": {
+"ref": "wc:File:Sap Yeast Cystofilobasidium macerans Fungi 6.jpg",
+"credit": "Wikimedia Commons, MariahKRogers, CC0",
+"info": "1536px"
+}
+},
+"r17": {
+"V1": {
+"ref": "pv:258562",
+"credit": "Pixabay (SOÑA)",
+"info": "18s"
+},
+"V2": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V3": {
+"ref": "pv:205890",
+"credit": "Pixabay (AlfLucio)",
+"info": "9s"
+},
+"V4": {
+"ref": "pv:215534",
+"credit": "Pixabay (julientromeur)",
+"info": "5s"
+},
+"V5": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V6": {
+"ref": "pv:65278",
+"credit": "Pixabay (assadalit)",
+"info": "7s"
+},
+"V7": {
+"ref": "pv:56376",
+"credit": "Pixabay (davidargeta)",
+"info": "8s"
+},
+"V8": {
+"ref": "pv:9809",
+"credit": "Pixabay (ArtSqb)",
+"info": "15s"
+},
+"I1": {
+"ref": "pi:8503298",
+"credit": "Pixabay (Storme22k)",
+"info": "5599px"
+},
+"I2": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I3": {
+"ref": "pi:1868925",
+"credit": "Pixabay (Pexels)",
+"info": "3264px"
+},
+"I4": {
+"ref": "pi:3277831",
+"credit": "Pixabay (garten-gg)",
+"info": "5184px"
+},
+"I5": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I6": {
+"ref": "pi:1761219",
+"credit": "Pixabay (jackmac34)",
+"info": "3709px"
+},
+"I7": {
+"ref": "pi:2561",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4620px"
+},
+"I8": {
+"ref": "pi:1761197",
+"credit": "Pixabay (jackmac34)",
+"info": "3757px"
+},
+"C1": {
+"ref": "wc:File:Publix Shapes Their Bread Funny - Flickr - wharman.jpg",
+"credit": "Wikimedia Commons, Wendy Harman from Washington DC, USA, CC BY 2.0",
+"info": "1600px"
+},
+"C2": {
+"ref": "wc:File:5 façonneuse à baguettes.jpg",
+"credit": "Wikimedia Commons, Pancrat, CC BY-SA 3.0",
+"info": "2560px"
+},
+"C3": {
+"ref": "wc:File:5 repose-pâtons.jpg",
+"credit": "Wikimedia Commons, Pancrat, CC BY-SA 3.0",
+"info": "2560px"
+},
+"C4": {
+"ref": "wc:File:Baguette coocking - IMG 4272 (14160296194).jpg",
+"credit": "Wikimedia Commons, N i c o l a from Fiumicino (Rome), Italy, CC BY 2.0",
+"info": "5472px"
+},
+"C5": {
+"ref": "wc:File:EJÉRCITO ENTREGÓ 15 MIL PANES “PACHACÚTEC” A DAMNIFICADOS POR LLUVIAS Y HUAICOS (32927188110).jpg",
+"credit": "Wikimedia Commons, Galeria del Ministerio de Defensa del Perú, CC BY 2.0",
+"info": "5184px"
+},
+"C6": {
+"ref": "wc:File:EJÉRCITO ENTREGÓ 15 MIL PANES “PACHACÚTEC” A DAMNIFICADOS POR LLUVIAS Y HUAICOS (32927189730).jpg",
+"credit": "Wikimedia Commons, Galeria del Ministerio de Defensa del Perú, CC BY 2.0",
+"info": "4820px"
+},
+"C7": {
+"ref": "wc:File:EJÉRCITO ENTREGÓ 15 MIL PANES “PACHACÚTEC” A DAMNIFICADOS POR LLUVIAS Y HUAICOS (32927189170).jpg",
+"credit": "Wikimedia Commons, Galeria del Ministerio de Defensa del Perú, CC BY 2.0",
+"info": "5184px"
+},
+"C8": {
+"ref": "wc:File:Baguette Cooking - IMG 4276 (14180272263).jpg",
+"credit": "Wikimedia Commons, N i c o l a from Fiumicino (Rome), Italy, CC BY 2.0",
+"info": "3648px"
+}
+},
+"r18": {
+"V1": {
+"ref": "pv:173134",
+"credit": "Pixabay (wdT0R0)",
+"info": "12s"
+},
+"V2": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"V4": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V5": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V6": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V7": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V8": {
+"ref": "pv:208477",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "11s"
+},
+"I1": {
+"ref": "pi:926454",
+"credit": "Pixabay (StockSnap)",
+"info": "4094px"
+},
+"I2": {
+"ref": "pi:3849078",
+"credit": "Pixabay (_Alicja_)",
+"info": "4629px"
+},
+"I3": {
+"ref": "pi:4516870",
+"credit": "Pixabay (analogicus)",
+"info": "5184px"
+},
+"I4": {
+"ref": "pi:399286",
+"credit": "Pixabay (TiBine)",
+"info": "5184px"
+},
+"I5": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I6": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I7": {
+"ref": "pi:4840960",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "6720px"
+},
+"I8": {
+"ref": "pi:2193537",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"C1": {
+"ref": "wc:File:Industry during the First World War Q28321.jpg",
+"credit": "Wikimedia Commons, George P. Lewis, Public domain",
+"info": "1300px"
+},
+"C2": {
+"ref": "wc:File:Industry during the First World War Q28310.jpg",
+"credit": "Wikimedia Commons, Lewis G P, Public domain",
+"info": "1300px"
+},
+"C3": {
+"ref": "wc:File:Jacob's biscuit factory (19137953022).jpg",
+"credit": "Wikimedia Commons, National Library of Ireland on The Commons, Public domain",
+"info": "2000px"
+},
+"C4": {
+"ref": "wc:File:Berliner Pfannkuchen 1.jpg",
+"credit": "Wikimedia Commons, Sebastian Koppehel, CC BY 4.0",
+"info": "4702px"
+},
+"C5": {
+"ref": "wc:File:Váhy na vážení těsta.jpg",
+"credit": "Wikimedia Commons, Chmee2, CC BY 3.0",
+"info": "3871px"
+},
+"C6": {
+"ref": "wc:File:Richard weighing dough (5958992945).jpg",
+"credit": "Wikimedia Commons, Jeremy Keith from Brighton &amp; Hove, United Kingdom, CC BY 2.0",
+"info": "1704px"
+},
+"C7": {
+"ref": "wc:File:Dough-Donut-Lemon-Ginger.jpg",
+"credit": "Wikimedia Commons, Evan-Amos, Public domain",
+"info": "3540px"
+},
+"C8": {
+"ref": "wc:File:Dough-Donut-Toasted-Coconut.jpg",
+"credit": "Wikimedia Commons, Evan-Amos, Public domain",
+"info": "3240px"
+}
+},
+"r19": {
+"V1": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V2": {
+"ref": "pv:186709",
+"credit": "Pixabay (ghasoub)",
+"info": "10s"
+},
+"V3": {
+"ref": "pv:170912",
+"credit": "Pixabay (emredoganfilms)",
+"info": "9s"
+},
+"V4": {
+"ref": "pv:142121",
+"credit": "Pixabay (31906497)",
+"info": "6s"
+},
+"V5": {
+"ref": "pv:238823",
+"credit": "Pixabay (xBriantcx)",
+"info": "17s"
+},
+"V6": {
+"ref": "pv:238826",
+"credit": "Pixabay (xBriantcx)",
+"info": "9s"
+},
+"V7": {
+"ref": "pv:128126",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V8": {
+"ref": "pv:209418",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "22s"
+},
+"I1": {
+"ref": "pi:4857068",
+"credit": "Pixabay (Wounds_and_Cracks)",
+"info": "5184px"
+},
+"I2": {
+"ref": "pi:1614188",
+"credit": "Pixabay (mp1746)",
+"info": "3504px"
+},
+"I3": {
+"ref": "pi:3788689",
+"credit": "Pixabay (matthiasboeckel)",
+"info": "5173px"
+},
+"I4": {
+"ref": "pi:5671124",
+"credit": "Pixabay (sofi5t)",
+"info": "6016px"
+},
+"I5": {
+"ref": "pi:1077984",
+"credit": "Pixabay (CordMediaDigitalServices)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:2532192",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I7": {
+"ref": "pi:2178874",
+"credit": "Pixabay (Pexels)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:3467243",
+"credit": "Pixabay (manfredrichter)",
+"info": "4272px"
+},
+"C1": {
+"ref": "wc:File:Scored loaves of Rye bread.jpg",
+"credit": "Wikimedia Commons, Doubleyouyou, CC BY-SA 3.0",
+"info": "1024px"
+},
+"C2": {
+"ref": "wc:File:Lame-breadslahing.jpg",
+"credit": "Wikimedia Commons, User:Nleamy, CC BY-SA 3.0",
+"info": "1792px"
+},
+"C3": {
+"ref": "wc:File:Sourdough Bread Loaf.jpg",
+"credit": "Wikimedia Commons, Agelaia, CC BY 4.0",
+"info": "4032px"
+},
+"C4": {
+"ref": "wc:File:Sourdough bread cut with lame, after baking.jpg",
+"credit": "Wikimedia Commons, Joy, CC BY 2.0",
+"info": "1350px"
+},
+"C5": {
+"ref": "wc:File:Baking the Best Persian Bread in a Traditional Oven - Iranian Bakeries.webm",
+"credit": "Wikimedia Commons, Street Food Tourists, CC BY 3.0",
+"info": "1920px"
+},
+"C6": {
+"ref": "wc:File:Sourdough bread with decorative scores.jpg",
+"credit": "Wikimedia Commons, SueRostvold, CC BY 4.0",
+"info": "2048px"
+},
+"C7": {
+"ref": "wc:File:Tower of london wire monkey.JPG",
+"credit": "Wikimedia Commons, Rosakoalaglitzereinhorn, CC BY-SA 3.0",
+"info": "4672px"
+}
+},
+"r20": {
+"V1": {
+"ref": "pv:11697",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "21s"
+},
+"V2": {
+"ref": "pv:373536",
+"credit": "Pixabay (Openly)",
+"info": "8s"
+},
+"V3": {
+"ref": "pv:373538",
+"credit": "Pixabay (Openly)",
+"info": "8s"
+},
+"V4": {
+"ref": "pv:373537",
+"credit": "Pixabay (Openly)",
+"info": "8s"
+},
+"V5": {
+"ref": "pv:140934",
+"credit": "Pixabay (Amina_Salim)",
+"info": "14s"
+},
+"V6": {
+"ref": "pv:141842",
+"credit": "Pixabay (Amina_Salim)",
+"info": "8s"
+},
+"V7": {
+"ref": "pv:373534",
+"credit": "Pixabay (Openly)",
+"info": "8s"
+},
+"V8": {
+"ref": "pv:373541",
+"credit": "Pixabay (Openly)",
+"info": "8s"
+},
+"I1": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I2": {
+"ref": "pi:1281053",
+"credit": "Pixabay (Couleur)",
+"info": "1920px"
+},
+"I3": {
+"ref": "pi:2193537",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I4": {
+"ref": "pi:821503",
+"credit": "Pixabay (fancycrave1)",
+"info": "5616px"
+},
+"I5": {
+"ref": "pi:9424463",
+"credit": "Pixabay (fotoblend)",
+"info": "5891px"
+},
+"I6": {
+"ref": "pi:388647",
+"credit": "Pixabay (267490)",
+"info": "5184px"
+},
+"I7": {
+"ref": "pi:3471667",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I8": {
+"ref": "pi:7956320",
+"credit": "Pixabay (donauwood_de)",
+"info": "7360px"
+},
+"C1": {
+"ref": "wc:File:Putting bread in the oven (5958998763).jpg",
+"credit": "Wikimedia Commons, Jeremy Keith from Brighton &amp; Hove, United Kingdom, CC BY 2.0",
+"info": "2272px"
+},
+"C2": {
+"ref": "wc:File:Bread in the oven (5959009561).jpg",
+"credit": "Wikimedia Commons, Jeremy Keith from Brighton &amp; Hove, United Kingdom, CC BY 2.0",
+"info": "2272px"
+},
+"C3": {
+"ref": "wc:File:Bread oven (5101489218).jpg",
+"credit": "Wikimedia Commons, Julien Menichini from Paris, France, CC BY 2.0",
+"info": "3504px"
+},
+"C4": {
+"ref": "wc:File:Bakery oven bread, 2013.jpg",
+"credit": "Wikimedia Commons, Jarkko Laine, CC BY 2.0",
+"info": "3561px"
+},
+"C5": {
+"ref": "wc:File:Bread maker Qormi.jpg",
+"credit": "Wikimedia Commons, Noport, CC BY-SA 4.0",
+"info": "2736px"
+},
+"C6": {
+"ref": "wc:File:Baking the Best Persian Bread in a Traditional Oven - Iranian Bakeries.webm",
+"credit": "Wikimedia Commons, Street Food Tourists, CC BY 3.0",
+"info": "1920px"
+},
+"C7": {
+"ref": "wc:File:Bread ovens inside Honey's Bakery - geograph.org.uk - 6956996.jpg",
+"credit": "Wikimedia Commons, Vieve Forward, CC BY-SA 2.0",
+"info": "2250px"
+},
+"C8": {
+"ref": "wc:File:Mysterium Fidei Museum Traditional Cooking Wood Oven (Bread).jpg",
+"credit": "Wikimedia Commons, Damiz2692, CC BY-SA 4.0",
+"info": "5976px"
+}
+},
+"r21": {
+"V1": {
+"ref": "pv:66",
+"credit": "Pixabay (DistillVideos)",
+"info": "20s"
+},
+"V2": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V3": {
+"ref": "pv:205890",
+"credit": "Pixabay (AlfLucio)",
+"info": "9s"
+},
+"V4": {
+"ref": "pv:2336",
+"credit": "Pixabay (Life-Of-Vids)",
+"info": "61s"
+},
+"V5": {
+"ref": "pv:176",
+"credit": "Pixabay (Republica)",
+"info": "20s"
+},
+"V6": {
+"ref": "pv:14133",
+"credit": "Pixabay (Pixabay)",
+"info": "20s"
+},
+"V7": {
+"ref": "pv:11563",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "57s"
+},
+"V8": {
+"ref": "pv:27539",
+"credit": "Pixabay (socialsudo)",
+"info": "8s"
+},
+"I1": {
+"ref": "pi:5999119",
+"credit": "Pixabay (Massariello)",
+"info": "4608px"
+},
+"I2": {
+"ref": "pi:9424463",
+"credit": "Pixabay (fotoblend)",
+"info": "5891px"
+},
+"I3": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I4": {
+"ref": "pi:7956320",
+"credit": "Pixabay (donauwood_de)",
+"info": "7360px"
+},
+"I5": {
+"ref": "pi:2193537",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I6": {
+"ref": "pi:1281053",
+"credit": "Pixabay (Couleur)",
+"info": "1920px"
+},
+"I7": {
+"ref": "pi:821503",
+"credit": "Pixabay (fancycrave1)",
+"info": "5616px"
+},
+"I8": {
+"ref": "pi:10542331",
+"credit": "Pixabay (Jerryblessed)",
+"info": "5088px"
+},
+"C1": {
+"ref": "wc:File:Home baked bread. Bake bread. Szreniawa.jpg",
+"credit": "Wikimedia Commons, MOs810, CC BY-SA 3.0",
+"info": "2318px"
+},
+"C2": {
+"ref": "wc:File:Baking Bread Communal Oven, 2011.jpg",
+"credit": "Wikimedia Commons, travelwayoflife, CC BY-SA 2.0",
+"info": "4374px"
+},
+"C3": {
+"ref": "wc:File:Oven for baking bread at Jexhof, Bavaria 02.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "3648px"
+},
+"C4": {
+"ref": "wc:File:Oven for baking bread at Jexhof, Bavaria 01.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "3648px"
+},
+"C5": {
+"ref": "wc:File:Bread, fresh from the oven - Massachusetts.jpg",
+"credit": "Wikimedia Commons, Daderot, CC0",
+"info": "2753px"
+},
+"C6": {
+"ref": "wc:File:112101 moshav elyashiv baking bread PikiWiki Israel.jpg",
+"credit": "Wikimedia Commons, זולטן קלוגר - לעמ, Public domain",
+"info": "1618px"
+},
+"C7": {
+"ref": "wc:File:6311 sourdough bread in dutch oven.jpg",
+"credit": "Wikimedia Commons, Virtual-Pano, CC BY-SA 4.0",
+"info": "6582px"
+},
+"C8": {
+"ref": "wc:File:Baking the Best Persian Bread in a Traditional Oven - Iranian Bakeries.webm",
+"credit": "Wikimedia Commons, Street Food Tourists, CC BY 3.0",
+"info": "1920px"
+}
+},
+"r22": {
+"V1": {
+"ref": "pv:205890",
+"credit": "Pixabay (AlfLucio)",
+"info": "9s"
+},
+"V2": {
+"ref": "pv:2336",
+"credit": "Pixabay (Life-Of-Vids)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:3068",
+"credit": "Pixabay (TH-DARK-Media)",
+"info": "10s"
+},
+"V4": {
+"ref": "pv:22761",
+"credit": "Pixabay (adege)",
+"info": "47s"
+},
+"V5": {
+"ref": "pv:17176",
+"credit": "Pixabay (Citor3)",
+"info": "14s"
+},
+"V6": {
+"ref": "pv:8989",
+"credit": "Pixabay (PIRO4D)",
+"info": "21s"
+},
+"V7": {
+"ref": "pv:17177",
+"credit": "Pixabay (Citor3)",
+"info": "51s"
+},
+"V8": {
+"ref": "pv:245",
+"credit": "Pixabay (FlickrVideos)",
+"info": "179s"
+},
+"I1": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I2": {
+"ref": "pi:2193537",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I3": {
+"ref": "pi:1281053",
+"credit": "Pixabay (Couleur)",
+"info": "1920px"
+},
+"I4": {
+"ref": "pi:821503",
+"credit": "Pixabay (fancycrave1)",
+"info": "5616px"
+},
+"I5": {
+"ref": "pi:9424463",
+"credit": "Pixabay (fotoblend)",
+"info": "5891px"
+},
+"I6": {
+"ref": "pi:388647",
+"credit": "Pixabay (267490)",
+"info": "5184px"
+},
+"I7": {
+"ref": "pi:3471667",
+"credit": "Pixabay (Couleur)",
+"info": "4896px"
+},
+"I8": {
+"ref": "pi:7956320",
+"credit": "Pixabay (donauwood_de)",
+"info": "7360px"
+},
+"C1": {
+"ref": "wc:File:Kelmscott Manor, domestic outbuildings, Wooden shovel for taking bread in and out of the oven - geograph.org.uk - 5794755.jpg",
+"credit": "Wikimedia Commons, Michael Garlick, CC BY-SA 2.0",
+"info": "7360px"
+},
+"C2": {
+"ref": "wc:File:Banana bread fresh from the oven (2), October 2009.jpg",
+"credit": "Wikimedia Commons, Melissa Sanders, CC BY 2.0",
+"info": "1024px"
+},
+"C3": {
+"ref": "wc:File:Banana bread fresh from the oven, October 2009.jpg",
+"credit": "Wikimedia Commons, Melissa Sanders, CC BY 2.0",
+"info": "1024px"
+},
+"C4": {
+"ref": "wc:File:Fresh from the oven (4988520682).jpg",
+"credit": "Wikimedia Commons, jeffreyw, CC BY 2.0",
+"info": "1599px"
+},
+"C5": {
+"ref": "wc:File:Sourdough fresh from the oven (6318637603).jpg",
+"credit": "Wikimedia Commons, jeffreyw, CC BY 2.0",
+"info": "2047px"
+},
+"C6": {
+"ref": "wc:File:Sourdough buns, fresh from the oven (6255507411).jpg",
+"credit": "Wikimedia Commons, jeffreyw, CC BY 2.0",
+"info": "2047px"
+},
+"C7": {
+"ref": "wc:File:Bread, fresh from the oven - Massachusetts.jpg",
+"credit": "Wikimedia Commons, Daderot, CC0",
+"info": "2753px"
+},
+"C8": {
+"ref": "wc:File:Fresh Out of the Oven (2263059983).jpg",
+"credit": "Wikimedia Commons, Joel Penner from Winnipeg, Canada, CC BY 2.0",
+"info": "3100px"
+}
+},
+"r23": {
+"V1": {
+"ref": "pv:189018",
+"credit": "Pixabay (choxyltd)",
+"info": "14s"
+},
+"V2": {
+"ref": "pv:26493",
+"credit": "Pixabay (StefWithAnF)",
+"info": "74s"
+},
+"V3": {
+"ref": "pv:240531",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "7s"
+},
+"V4": {
+"ref": "pv:30470",
+"credit": "Pixabay (mike-media)",
+"info": "6s"
+},
+"V5": {
+"ref": "pv:4948",
+"credit": "Pixabay (klimkin)",
+"info": "12s"
+},
+"V6": {
+"ref": "pv:13100",
+"credit": "Pixabay (StefWithAnF)",
+"info": "53s"
+},
+"V7": {
+"ref": "pv:199545",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "7s"
+},
+"V8": {
+"ref": "pv:197946",
+"credit": "Pixabay (Engin_Akyurt)",
+"info": "55s"
+},
+"I1": {
+"ref": "pi:1979706",
+"credit": "Pixabay (congerdesign)",
+"info": "6000px"
+},
+"I2": {
+"ref": "pi:4393651",
+"credit": "Pixabay (webandi)",
+"info": "6024px"
+},
+"I3": {
+"ref": "pi:4591814",
+"credit": "Pixabay (streetwindy)",
+"info": "5472px"
+},
+"I4": {
+"ref": "pi:4542459",
+"credit": "Pixabay (Sabrinakoeln)",
+"info": "3872px"
+},
+"I5": {
+"ref": "pi:2472608",
+"credit": "Pixabay (Felix-Mittermeier)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:4766306",
+"credit": "Pixabay (ReinhardThrainer)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:4378924",
+"credit": "Pixabay (Engin_Akyurt)",
+"info": "7280px"
+},
+"I8": {
+"ref": "pi:2281151",
+"credit": "Pixabay (KRiemer)",
+"info": "2272px"
+},
+"C1": {
+"ref": "wc:File:Baguettes - stonesoup.jpg",
+"credit": "Wikimedia Commons, jules / stonesoup, CC BY 2.0",
+"info": "2832px"
+},
+"C2": {
+"ref": "wc:File:Big Mac hamburger.jpg",
+"credit": "Wikimedia Commons, Evan-Amos, CC0",
+"info": "2640px"
+},
+"C3": {
+"ref": "wc:File:Lob Жаворонки 95.jpg",
+"credit": "Wikimedia Commons, Лобачев Владимир, CC0",
+"info": "3888px"
+},
+"C4": {
+"ref": "wc:File:Crust of milk loaf with wheatgerm.jpg",
+"credit": "Wikimedia Commons, Acabashi, CC BY-SA 4.0",
+"info": "2099px"
+},
+"C5": {
+"ref": "wc:File:Kifli made with spelt flour (Serbian cuisine).jpg",
+"credit": "Wikimedia Commons, Petar Milošević, CC BY-SA 4.0",
+"info": "4352px"
+},
+"C6": {
+"ref": "wc:File:Мармалад од кајсии 2.jpg",
+"credit": "Wikimedia Commons, MadMona, CC BY-SA 4.0",
+"info": "3685px"
+},
+"C7": {
+"ref": "wc:File:Breads of Moskovskaya Oblast. img 008.jpg",
+"credit": "Wikimedia Commons, Dmitry Makeev, CC BY-SA 4.0",
+"info": "3844px"
+},
+"C8": {
+"ref": "wc:File:Home made sour dough bread.jpg",
+"credit": "Wikimedia Commons, Tomascastelazo, CC BY-SA 4.0",
+"info": "8688px"
+}
+},
+"r24": {
+"V1": {
+"ref": "pv:177138",
+"credit": "Pixabay (NickyPe)",
+"info": "25s"
+},
+"V2": {
+"ref": "pv:126181",
+"credit": "Pixabay (adege)",
+"info": "47s"
+},
+"V3": {
+"ref": "pv:124425",
+"credit": "Pixabay (NickyPe)",
+"info": "15s"
+},
+"V4": {
+"ref": "pv:111130",
+"credit": "Pixabay (NickyPe)",
+"info": "17s"
+},
+"V5": {
+"ref": "pv:125065",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"V6": {
+"ref": "pv:55611",
+"credit": "Pixabay (tommyvideo)",
+"info": "10s"
+},
+"V7": {
+"ref": "pv:143758",
+"credit": "Pixabay (julientromeur)",
+"info": "5s"
+},
+"V8": {
+"ref": "pv:112560",
+"credit": "Pixabay (NickyPe)",
+"info": "30s"
+},
+"I1": {
+"ref": "pi:5588723",
+"credit": "Pixabay (MOHANN)",
+"info": "5616px"
+},
+"I2": {
+"ref": "pi:2705179",
+"credit": "Pixabay (Momentmal)",
+"info": "4681px"
+},
+"I3": {
+"ref": "pi:5436586",
+"credit": "Pixabay (planet_fox)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:1465190",
+"credit": "Pixabay (AlLes)",
+"info": "3996px"
+},
+"I5": {
+"ref": "pi:2816374",
+"credit": "Pixabay (Momentmal)",
+"info": "3516px"
+},
+"I6": {
+"ref": "pi:1465232",
+"credit": "Pixabay (AlLes)",
+"info": "4191px"
+},
+"I7": {
+"ref": "pi:1433498",
+"credit": "Pixabay (JillWellington)",
+"info": "5427px"
+},
+"I8": {
+"ref": "pi:2864665",
+"credit": "Pixabay (aureliofoxrj)",
+"info": "5937px"
+},
+"C1": {
+"ref": "wc:File:Weißbrot und aufgeschnittene Laugenstangen.JPG",
+"credit": "Wikimedia Commons, 4028mdk09, CC BY-SA 3.0",
+"info": "3648px"
+},
+"C2": {
+"ref": "wc:File:French bread.JPG",
+"credit": "Wikimedia Commons, Marianne Casamance, CC BY-SA 4.0",
+"info": "4000px"
+},
+"C3": {
+"ref": "wc:File:Dibre !.JPG",
+"credit": "Wikimedia Commons, Mwenjew, CC BY-SA 4.0",
+"info": "4896px"
+},
+"C4": {
+"ref": "wc:File:Petite corbeille de pain.JPG",
+"credit": "Wikimedia Commons, Marianne Casamance, CC BY-SA 4.0",
+"info": "3456px"
+},
+"C5": {
+"ref": "wc:File:Baguette de pain en corbeille.jpg",
+"credit": "Wikimedia Commons, Marianne Casamance, CC BY-SA 4.0",
+"info": "3456px"
+},
+"C6": {
+"ref": "wc:File:Bread-breakfast-baguette-sliced (24244220141).jpg",
+"credit": "Wikimedia Commons, www.Pixel.la Free Stock Photos, CC0",
+"info": "5472px"
+},
+"C7": {
+"ref": "wc:File:Baguettes, Paris, France - panoramio.jpg",
+"credit": "Wikimedia Commons, Nick Thweatt, CC BY-SA 3.0",
+"info": "2048px"
+},
+"C8": {
+"ref": "wc:File:Baguette and butter curls.jpg",
+"credit": "Wikimedia Commons, Pru.mitchell, CC BY-SA 4.0",
+"info": "2048px"
+}
+},
+"r25": {
+"V1": {
+"ref": "pv:1489",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "14s"
+},
+"V2": {
+"ref": "pv:1490",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "14s"
+},
+"V3": {
+"ref": "pv:8477",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "59s"
+},
+"V4": {
+"ref": "pv:11230",
+"credit": "Pixabay (klimkin)",
+"info": "14s"
+},
+"V5": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V6": {
+"ref": "pv:141853",
+"credit": "Pixabay (Amina_Salim)",
+"info": "18s"
+},
+"V7": {
+"ref": "pv:11638",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "60s"
+},
+"V8": {
+"ref": "pv:115788",
+"credit": "Pixabay (AlexKopeykin)",
+"info": "10s"
+},
+"I1": {
+"ref": "pi:8503298",
+"credit": "Pixabay (Storme22k)",
+"info": "5599px"
+},
+"I2": {
+"ref": "pi:6581575",
+"credit": "Pixabay (pictavio)",
+"info": "5028px"
+},
+"I3": {
+"ref": "pi:7601802",
+"credit": "Pixabay (Bru-nO)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:1090026",
+"credit": "Pixabay (eak_kkk)",
+"info": "4608px"
+},
+"I5": {
+"ref": "pi:3421838",
+"credit": "Pixabay (Zms66)",
+"info": "7952px"
+},
+"I6": {
+"ref": "pi:573958",
+"credit": "Pixabay (congerdesign)",
+"info": "3674px"
+},
+"I7": {
+"ref": "pi:657712",
+"credit": "Pixabay (stevepb)",
+"info": "5472px"
+},
+"I8": {
+"ref": "pi:1969949",
+"credit": "Pixabay (stevepb)",
+"info": "5472px"
+},
+"C1": {
+"ref": "wc:File:Banana bread slices on a plate, February 2008.jpg",
+"credit": "Wikimedia Commons, Janna Mordan Osborne, CC BY-SA 2.0",
+"info": "4000px"
+},
+"C2": {
+"ref": "wc:File:Een vrouw die brood snijdt Rijksmuseum SK-C-156.jpeg",
+"credit": "Wikimedia Commons, Johannes Christiaan Janson, Public domain",
+"info": "2016px"
+},
+"C3": {
+"ref": "wc:File:Fresh made bread 05.jpg",
+"credit": "Wikimedia Commons, FranHogan, CC BY-SA 4.0",
+"info": "2526px"
+},
+"C4": {
+"ref": "wc:File:Fresh made bread 06.jpg",
+"credit": "Wikimedia Commons, FranHogan, CC BY-SA 4.0",
+"info": "2490px"
+},
+"C5": {
+"ref": "wc:File:Banana bread cut into slices.jpg",
+"credit": "Wikimedia Commons, Shisma, CC BY 4.0",
+"info": "4032px"
+},
+"C6": {
+"ref": "wc:File:Slice of Bread.jpg",
+"credit": "Wikimedia Commons, Gaurav Dhwaj Khadka, CC BY-SA 4.0",
+"info": "3024px"
+},
+"C7": {
+"ref": "wc:File:Brown bread made with dinkel wheat and millet 03.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "5472px"
+},
+"C8": {
+"ref": "wc:File:Brown bread made with dinkel wheat and millet 02.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "5472px"
+}
+},
+"r26": {
+"V1": {
+"ref": "pv:203874",
+"credit": "Pixabay (u_02xho3qp11)",
+"info": "7s"
+},
+"V2": {
+"ref": "pv:91679",
+"credit": "Pixabay (NickyPe)",
+"info": "27s"
+},
+"V3": {
+"ref": "pv:138315",
+"credit": "Pixabay (NickyPe)",
+"info": "27s"
+},
+"V4": {
+"ref": "pv:138317",
+"credit": "Pixabay (NickyPe)",
+"info": "13s"
+},
+"V5": {
+"ref": "pv:5132",
+"credit": "Pixabay (tommyvideo)",
+"info": "18s"
+},
+"V6": {
+"ref": "pv:9091",
+"credit": "Pixabay (Matthias_Groeneveld)",
+"info": "12s"
+},
+"V7": {
+"ref": "pv:51722",
+"credit": "Pixabay (AHAHase)",
+"info": "10s"
+},
+"V8": {
+"ref": "pv:9728",
+"credit": "Pixabay (frycyk01)",
+"info": "15s"
+},
+"I1": {
+"ref": "pi:1353420",
+"credit": "Pixabay (image4you)",
+"info": "4752px"
+},
+"I2": {
+"ref": "pi:400249",
+"credit": "Pixabay (stux)",
+"info": "2000px"
+},
+"I3": {
+"ref": "pi:400247",
+"credit": "Pixabay (stux)",
+"info": "2000px"
+},
+"I4": {
+"ref": "pi:2180330",
+"credit": "Pixabay (kschneider2991)",
+"info": "5184px"
+},
+"I5": {
+"ref": "pi:400253",
+"credit": "Pixabay (stux)",
+"info": "5400px"
+},
+"I6": {
+"ref": "pi:400287",
+"credit": "Pixabay (stux)",
+"info": "5400px"
+},
+"I7": {
+"ref": "pi:400242",
+"credit": "Pixabay (stux)",
+"info": "2000px"
+},
+"I8": {
+"ref": "pi:1642989",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "6000px"
+},
+"C1": {
+"ref": "wc:File:Confocal measurement of 1-euro-star 3d.png",
+"credit": "Wikimedia Commons, Dr. Schorsch, CC BY-SA 3.0",
+"info": "3908px"
+},
+"C2": {
+"ref": "wc:File:Confocal measurement of 1-euro-star 3d and euro.png",
+"credit": "Wikimedia Commons, Confocal_measurement_of_1-euro-star_3d.png: Dr. Schorsch\nEUR, CC BY-SA 3.0",
+"info": "3908px"
+},
+"C3": {
+"ref": "wc:File:EURO stardikomplekt.JPG",
+"credit": "Wikimedia Commons, Dmitry G, CC BY-SA 3.0",
+"info": "3648px"
+},
+"C4": {
+"ref": "wc:File:Euro coins 2.jpg",
+"credit": "Wikimedia Commons, Jesse Siirilä, CC BY-SA 4.0",
+"info": "4208px"
+},
+"C5": {
+"ref": "wc:File:1 Euro at Republica 2023 02.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "3648px"
+},
+"C6": {
+"ref": "wc:File:1 Euro at Republica 2023 01.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "3648px"
+},
+"C7": {
+"ref": "wc:File:Paid bill for coffee.jpg",
+"credit": "Wikimedia Commons, Kritzolina, CC BY-SA 4.0",
+"info": "3648px"
+},
+"C8": {
+"ref": "wc:File:Jednotná v rozmanitosti.jpg",
+"credit": "Wikimedia Commons, Jirifry, CC BY-SA 4.0",
+"info": "4948px"
+}
+},
+"r27": {
+"V1": {
+"ref": "pv:10853",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "12s"
+},
+"V2": {
+"ref": "pv:7515",
+"credit": "Pixabay (MilanWulf)",
+"info": "60s"
+},
+"V3": {
+"ref": "pv:124746",
+"credit": "Pixabay (JCI-21)",
+"info": "20s"
+},
+"V4": {
+"ref": "pv:7372",
+"credit": "Pixabay (PIRO4D)",
+"info": "10s"
+},
+"V5": {
+"ref": "pv:10350",
+"credit": "Pixabay (motionions)",
+"info": "608s"
+},
+"V6": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V7": {
+"ref": "pv:122366",
+"credit": "Pixabay (olenchic)",
+"info": "10s"
+},
+"V8": {
+"ref": "pv:191429",
+"credit": "Pixabay (Kidysfoodproducts)",
+"info": "20s"
+},
+"I1": {
+"ref": "pi:1868573",
+"credit": "Pixabay (Pexels)",
+"info": "5886px"
+},
+"I2": {
+"ref": "pi:1868925",
+"credit": "Pixabay (Pexels)",
+"info": "3264px"
+},
+"I3": {
+"ref": "pi:1869656",
+"credit": "Pixabay (Pexels)",
+"info": "5616px"
+},
+"I4": {
+"ref": "pi:1867459",
+"credit": "Pixabay (Pexels)",
+"info": "5184px"
+},
+"I5": {
+"ref": "pi:2600877",
+"credit": "Pixabay (StockSnap)",
+"info": "4091px"
+},
+"I6": {
+"ref": "pi:4054286",
+"credit": "Pixabay (allybally4b)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:1845295",
+"credit": "Pixabay (Pexels)",
+"info": "4592px"
+},
+"I8": {
+"ref": "pi:2609042",
+"credit": "Pixabay (StockSnap)",
+"info": "4272px"
+},
+"C1": {
+"ref": "wc:File:Eastern Market Fire, 4.30.07.jpg",
+"credit": "Wikimedia Commons, dbking, CC BY 2.0",
+"info": "3234px"
+},
+"C2": {
+"ref": "wc:File:Street Arabs and gutter snipes. The pathetic and humorous side of young vagabond life in the great cities, with records of work for their reclamation (1884) (14579159707).jpg",
+"credit": "Wikimedia Commons, Internet Archive Book Images, No restrictions",
+"info": "1500px"
+},
+"C3": {
+"ref": "wc:File:Fresh bread for sale - Flickr - Al Jazeera English.jpg",
+"credit": "Wikimedia Commons, Omar Chatriwala of Al Jazeera English, CC BY-SA 2.0",
+"info": "2592px"
+},
+"C4": {
+"ref": "wc:File:Buying Bread.jpg",
+"credit": "Wikimedia Commons, Dave Proffer, CC BY 2.0",
+"info": "1280px"
+},
+"C5": {
+"ref": "wc:File:Bread-the vital food, illustrated with plates on copper from authentic sources, including a glossary of bread terms, also a selected list of general and historical references to bread (1920) (14783740543).jpg",
+"credit": "Wikimedia Commons, Internet Archive Book Images, No restrictions",
+"info": "1836px"
+},
+"C6": {
+"ref": "wc:File:Buying Bread (8906010083).jpg",
+"credit": "Wikimedia Commons, David Stanley from Nanaimo, Canada, CC BY 2.0",
+"info": "1024px"
+},
+"C7": {
+"ref": "wc:File:Fortress Louisbourg DSC02356 - King's Bakery (8176337897).jpg",
+"credit": "Wikimedia Commons, Dennis G. Jarvis, CC BY-SA 2.0",
+"info": "6000px"
+},
+"C8": {
+"ref": "wc:File:Fortress Louisbourg DSC02355 - King’s Bakery (8176366670).jpg",
+"credit": "Wikimedia Commons, Dennis G. Jarvis, CC BY-SA 2.0",
+"info": "6136px"
+}
+},
+"r28": {
+"V1": {
+"ref": "pv:258562",
+"credit": "Pixabay (SOÑA)",
+"info": "18s"
+},
+"V2": {
+"ref": "pv:215751",
+"credit": "Pixabay (G3Remote)",
+"info": "18s"
+},
+"V3": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:202987",
+"credit": "Pixabay (Natures_Embrace)",
+"info": "15s"
+},
+"V5": {
+"ref": "pv:212404",
+"credit": "Pixabay (素君)",
+"info": "12s"
+},
+"V6": {
+"ref": "pv:10339",
+"credit": "Pixabay (5239640)",
+"info": "13s"
+},
+"V7": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V8": {
+"ref": "pv:205890",
+"credit": "Pixabay (AlfLucio)",
+"info": "9s"
+},
+"I1": {
+"ref": "pi:6606414",
+"credit": "Pixabay (TheOtherKev)",
+"info": "3000px"
+},
+"I2": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I3": {
+"ref": "pi:1627703",
+"credit": "Pixabay (51581)",
+"info": "3000px"
+},
+"I4": {
+"ref": "pi:8503298",
+"credit": "Pixabay (Storme22k)",
+"info": "5599px"
+},
+"I5": {
+"ref": "pi:4840960",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "6720px"
+},
+"I6": {
+"ref": "pi:9292504",
+"credit": "Pixabay (bongbabyhousevn)",
+"info": "6720px"
+},
+"I7": {
+"ref": "pi:4983590",
+"credit": "Pixabay (Engin_Akyurt)",
+"info": "6720px"
+},
+"I8": {
+"ref": "pi:1868925",
+"credit": "Pixabay (Pexels)",
+"info": "3264px"
+},
+"C1": {
+"ref": "wc:File:Baker House, MIT, Cambridge, MA - night.JPG",
+"credit": "Wikimedia Commons, Daderot, Public domain",
+"info": "3264px"
+},
+"C2": {
+"ref": "wc:File:Baker Street tube station MMB 01 C Stock.jpg",
+"credit": "Wikimedia Commons, mattbuck (category), CC BY-SA 3.0",
+"info": "3849px"
+},
+"C3": {
+"ref": "wc:File:Rudi Baker, Glenn A. Baker (7982323640).jpg",
+"credit": "Wikimedia Commons, Eva Rinaldi, CC BY-SA 2.0",
+"info": "1000px"
+},
+"C4": {
+"ref": "wc:File:Baker Street with route 139 bus at night - panoramio.jpg",
+"credit": "Wikimedia Commons, Валерий Дед, CC BY 3.0",
+"info": "1021px"
+},
+"C5": {
+"ref": "wc:File:Sean Baker at the Closing Night red carpet at the Red Sea International Film Festival 2025.jpg",
+"credit": "Wikimedia Commons, Segolene Liger, CC BY-SA 4.0",
+"info": "4724px"
+},
+"C6": {
+"ref": "wc:File:Early morning bread stop (5051823549).jpg",
+"credit": "Wikimedia Commons, Shaun Dunphy from Lindfield, United Kingdom, CC BY-SA 2.0",
+"info": "3024px"
+},
+"C7": {
+"ref": "wc:File:Early morning bread stop (5051829793).jpg",
+"credit": "Wikimedia Commons, Shaun Dunphy from Lindfield, United Kingdom, CC BY-SA 2.0",
+"info": "4032px"
+},
+"C8": {
+"ref": "wc:File:‘The Old Bakery’ historic building with Sainsbury's Local at 277 Gillingham Road in the early hours of the morning, Gillingham, Kent, England, 19 October 2025.jpg",
+"credit": "Wikimedia Commons, OathOn, CC BY-SA 4.0",
+"info": "2825px"
+}
+},
+"r29": {
+"V1": {
+"ref": "pv:6387",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "14s"
+},
+"V2": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:11722",
+"credit": "Pixabay (Iconikmg)",
+"info": "33s"
+},
+"V4": {
+"ref": "pv:191429",
+"credit": "Pixabay (Kidysfoodproducts)",
+"info": "20s"
+},
+"V5": {
+"ref": "pv:7954",
+"credit": "Pixabay (MilanWulf)",
+"info": "30s"
+},
+"V6": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"V7": {
+"ref": "pv:1006",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "19s"
+},
+"V8": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"I1": {
+"ref": "pi:4992402",
+"credit": "Pixabay (Roses_Street)",
+"info": "6016px"
+},
+"I2": {
+"ref": "pi:887722",
+"credit": "Pixabay (LisaRedfern)",
+"info": "5116px"
+},
+"I3": {
+"ref": "pi:4489926",
+"credit": "Pixabay (4262159)",
+"info": "3456px"
+},
+"I4": {
+"ref": "pi:2625778",
+"credit": "Pixabay (StockSnap)",
+"info": "2509px"
+},
+"I5": {
+"ref": "pi:677274",
+"credit": "Pixabay (88ayang)",
+"info": "3456px"
+},
+"I6": {
+"ref": "pi:238562",
+"credit": "Pixabay (rolypolys)",
+"info": "4608px"
+},
+"I7": {
+"ref": "pi:2588182",
+"credit": "Pixabay (StockSnap)",
+"info": "2000px"
+},
+"I8": {
+"ref": "pi:2753596",
+"credit": "Pixabay (dimitrisvetsikas1969)",
+"info": "4231px"
+},
+"C1": {
+"ref": "wc:File:Bakery store window - panoramio.jpg",
+"credit": "Wikimedia Commons, Jens Cederskjold, CC BY 3.0",
+"info": "2934px"
+},
+"C2": {
+"ref": "wc:File:HK TKL 調景嶺 Tiu Keng Leng 都會駅 MetroTown mall food shop window bakery cakes display Dec 2018 SSG 04.jpg",
+"credit": "Wikimedia Commons, Zheongugbulld, CC BY-SA 4.0",
+"info": "3264px"
+},
+"C3": {
+"ref": "wc:File:Bakery Window Display (5338966789).jpg",
+"credit": "Wikimedia Commons, Vancouver Bites! from Vancouver, Canada, CC BY-SA 2.0",
+"info": "2592px"
+},
+"C4": {
+"ref": "wc:File:HK 中環 Central 太子大廈 Prince's Building mall shop window bakery September 2021 SS2 03.jpg",
+"credit": "Wikimedia Commons, GUIATAIEMP 126, CC BY-SA 4.0",
+"info": "4128px"
+},
+"C5": {
+"ref": "wc:File:HK 中環 Central 太子大廈 Prince's Building mall shop window bakery September 2021 SS2 02.jpg",
+"credit": "Wikimedia Commons, GUIATAIEMP 126, CC BY-SA 4.0",
+"info": "4128px"
+},
+"C6": {
+"ref": "wc:File:Window display, Baltzersen Bakery, High Street, Wetherby (26th May 2022).jpg",
+"credit": "Wikimedia Commons, Mtaylor848, CC BY-SA 4.0",
+"info": "5152px"
+},
+"C7": {
+"ref": "wc:File:HK WC 灣仔道 Wan Chai Road shop June 2022 Px3 06 bakery window display.jpg",
+"credit": "Wikimedia Commons, CHOADAICHONG MinuddR, CC BY-SA 4.0",
+"info": "4000px"
+},
+"C8": {
+"ref": "wc:File:HK WC 灣仔道 Wan Chai Road shop June 2022 Px3 05 bakery window display.jpg",
+"credit": "Wikimedia Commons, CHOADAICHONG MinuddR, CC BY-SA 4.0",
+"info": "4000px"
+}
+},
+"r30": {
+"V1": {
+"ref": "pv:21117",
+"credit": "Pixabay (RafterJr72)",
+"info": "6s"
+},
+"V2": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V3": {
+"ref": "pv:186709",
+"credit": "Pixabay (ghasoub)",
+"info": "10s"
+},
+"V4": {
+"ref": "pv:1735",
+"credit": "Pixabay (Buvrix27)",
+"info": "18s"
+},
+"V5": {
+"ref": "pv:170912",
+"credit": "Pixabay (emredoganfilms)",
+"info": "9s"
+},
+"V6": {
+"ref": "pv:142121",
+"credit": "Pixabay (31906497)",
+"info": "6s"
+},
+"V7": {
+"ref": "pv:238823",
+"credit": "Pixabay (xBriantcx)",
+"info": "17s"
+},
+"V8": {
+"ref": "pv:128126",
+"credit": "Pixabay (adege)",
+"info": "40s"
+},
+"I1": {
+"ref": "pi:949913",
+"credit": "Pixabay (ElasticComputeFarm)",
+"info": "4928px"
+},
+"I2": {
+"ref": "pi:1232944",
+"credit": "Pixabay (stevepb)",
+"info": "5472px"
+},
+"I3": {
+"ref": "pi:698608",
+"credit": "Pixabay (StockSnap)",
+"info": "5472px"
+},
+"I4": {
+"ref": "pi:3105631",
+"credit": "Pixabay (igorovsyannykov)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:6771933",
+"credit": "Pixabay (Surprising_Media)",
+"info": "4800px"
+},
+"I6": {
+"ref": "pi:2619380",
+"credit": "Pixabay (ccipeggy)",
+"info": "3648px"
+},
+"I7": {
+"ref": "pi:2923690",
+"credit": "Pixabay (Sunriseforever)",
+"info": "2449px"
+},
+"I8": {
+"ref": "pi:3105629",
+"credit": "Pixabay (igorovsyannykov)",
+"info": "5866px"
+},
+"C1": {
+"ref": "wc:File:Tesco without bread (5228922199).jpg",
+"credit": "Wikimedia Commons, Simon Harriyott from Uckfield, England, CC BY 2.0",
+"info": "2294px"
+},
+"C2": {
+"ref": "wc:File:BreadSupermarket.jpg",
+"credit": "Wikimedia Commons, Raysonho @ Open Grid Scheduler / Grid Engine, CC0",
+"info": "4928px"
+},
+"C3": {
+"ref": "wc:File:Bun grocery store Tønsberg Norway rosinbolle hvetebolle butikkhylle lefse Berthas smurte lefser 2016-12-28.jpg",
+"credit": "Wikimedia Commons, Wolfmann, CC BY-SA 4.0",
+"info": "2913px"
+},
+"C4": {
+"ref": "wc:File:Bun grocery store Tønsberg Norway rosinbolle hvetebolle butikkhylle 2016-12-28.jpg",
+"credit": "Wikimedia Commons, Wolfmann, CC BY-SA 4.0",
+"info": "3653px"
+},
+"C5": {
+"ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 Breads etc.jpg",
+"credit": "Wikimedia Commons, Wolfmann, CC BY-SA 4.0",
+"info": "4032px"
+},
+"C6": {
+"ref": "wc:File:Brood, winkels, Bestanddeelnr 921-7185.jpg",
+"credit": "Wikimedia Commons, Eric Koch for Anefo, CC0",
+"info": "3651px"
+},
+"C7": {
+"ref": "wc:File:Asda - bread aisle.jpg",
+"credit": "Wikimedia Commons, Tiia Monto, CC BY-SA 3.0",
+"info": "3737px"
+},
+"C8": {
+"ref": "wc:File:Empty shelves in the bread aisle - March 2020 at Fred Meyer in Federal Way, Washington, USA (49662769878).jpg",
+"credit": "Wikimedia Commons, Wonderlane from Seattle, USA, CC BY 2.0",
+"info": "4128px"
+}
+},
+"r31": {
+"V1": {
+"ref": "pv:159021",
+"credit": "Pixabay (Dimitri_K)",
+"info": "11s"
+},
+"V2": {
+"ref": "pv:199788",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "17s"
+},
+"V3": {
+"ref": "pv:8686",
+"credit": "Pixabay (matlevesque)",
+"info": "8s"
+},
+"V4": {
+"ref": "pv:154902",
+"credit": "Pixabay (harishs)",
+"info": "34s"
+},
+"V5": {
+"ref": "pv:135849",
+"credit": "Pixabay (messden)",
+"info": "10s"
+},
+"V6": {
+"ref": "pv:2151",
+"credit": "Pixabay (FindingFootage)",
+"info": "19s"
+},
+"V7": {
+"ref": "pv:10447",
+"credit": "Pixabay (2427999)",
+"info": "51s"
+},
+"V8": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"I1": {
+"ref": "pi:4474815",
+"credit": "Pixabay (652234)",
+"info": "4606px"
+},
+"I2": {
+"ref": "pi:6322085",
+"credit": "Pixabay (Quanlecntt2004)",
+"info": "6000px"
+},
+"I3": {
+"ref": "pi:1140760",
+"credit": "Pixabay (652234)",
+"info": "4433px"
+},
+"I4": {
+"ref": "pi:186980",
+"credit": "Pixabay (marcin049)",
+"info": "3488px"
+},
+"I5": {
+"ref": "pi:2963766",
+"credit": "Pixabay (Tama66)",
+"info": "5833px"
+},
+"I6": {
+"ref": "pi:6322036",
+"credit": "Pixabay (Quanlecntt2004)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:1846969",
+"credit": "Pixabay (Pexels)",
+"info": "4256px"
+},
+"I8": {
+"ref": "pi:1761801",
+"credit": "Pixabay (SD-Pictures)",
+"info": "2048px"
+},
+"C1": {
+"ref": "wc:File:Bread factory silos in Csepel-Rózsadomb, 2016 Budapest.jpg",
+"credit": "Wikimedia Commons, Globetrotter19, CC BY-SA 3.0",
+"info": "1704px"
+},
+"C2": {
+"ref": "wc:File:Jama'a bread factory, Kafanchan.jpg",
+"credit": "Wikimedia Commons, Kambai Akau, CC BY-SA 4.0",
+"info": "6000px"
+},
+"C3": {
+"ref": "wc:File:Jama'a bread factory 2.jpg",
+"credit": "Wikimedia Commons, Kambai Akau, CC BY-SA 4.0",
+"info": "6000px"
+},
+"C4": {
+"ref": "wc:File:Bread Factory 6 in Astrakhan.jpg",
+"credit": "Wikimedia Commons, Dor Shabashewitz, CC BY-SA 4.0",
+"info": "4272px"
+},
+"C5": {
+"ref": "wc:File:Syracuse Bread Company factory water street entrance.jpg",
+"credit": "Wikimedia Commons, Kenneth C. Zirkel, CC BY-SA 4.0",
+"info": "3600px"
+},
+"C6": {
+"ref": "wc:File:Syracuse Bread Company factory detail.jpg",
+"credit": "Wikimedia Commons, Kenneth C. Zirkel, CC BY-SA 4.0",
+"info": "3600px"
+},
+"C7": {
+"ref": "wc:File:Syracuse Bread Company factory corner view.jpg",
+"credit": "Wikimedia Commons, Kenneth C. Zirkel, CC BY-SA 4.0",
+"info": "3600px"
+},
+"C8": {
+"ref": "wc:File:Local bread factory in Saminaka.jpg",
+"credit": "Wikimedia Commons, Kambai Akau, CC BY-SA 4.0",
+"info": "5184px"
+}
+},
+"r32": {
+"V1": {
+"ref": "pv:307864",
+"credit": "Pixabay (Ponnguyenduy)",
+"info": "19s"
+},
+"V2": {
+"ref": "pv:5167",
+"credit": "Pixabay (tommyvideo)",
+"info": "10s"
+},
+"V3": {
+"ref": "pv:27467",
+"credit": "Pixabay (Bastien86)",
+"info": "24s"
+},
+"V4": {
+"ref": "pv:27465",
+"credit": "Pixabay (Bastien86)",
+"info": "11s"
+},
+"V5": {
+"ref": "pv:1644",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "13s"
+},
+"V6": {
+"ref": "pv:305",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "15s"
+},
+"V7": {
+"ref": "pv:91633",
+"credit": "Pixabay (mirerek8)",
+"info": "5s"
+},
+"V8": {
+"ref": "pv:159678",
+"credit": "Pixabay (CreativeCommonsCentral)",
+"info": "25s"
+},
+"I1": {
+"ref": "pi:96863",
+"credit": "Pixabay (geralt)",
+"info": "2592px"
+},
+"I2": {
+"ref": "pi:5229750",
+"credit": "Pixabay (jillrose999)",
+"info": "4608px"
+},
+"I3": {
+"ref": "pi:3410068",
+"credit": "Pixabay (rgaudet17)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:7776176",
+"credit": "Pixabay (Pixelharvester)",
+"info": "3840px"
+},
+"I5": {
+"ref": "pi:167969",
+"credit": "Pixabay (AlexanderStein)",
+"info": "5931px"
+},
+"I6": {
+"ref": "pi:96512",
+"credit": "Pixabay (biker_becca)",
+"info": "3264px"
+},
+"I7": {
+"ref": "pi:217276",
+"credit": "Pixabay (brudix)",
+"info": "4297px"
+},
+"I8": {
+"ref": "pi:3202309",
+"credit": "Pixabay (ddzphoto)",
+"info": "3000px"
+},
+"C1": {
+"ref": "wc:File:India - Kolkata electricity meters - 3832.jpg",
+"credit": "Wikimedia Commons, Jorge Royan, CC BY-SA 3.0",
+"info": "3504px"
+},
+"C2": {
+"ref": "wc:File:Kos-Kos city-Electricity meter-01ASD.jpg",
+"credit": "Wikimedia Commons, Asurnipal, CC BY-SA 4.0",
+"info": "4592px"
+},
+"C3": {
+"ref": "wc:File:Kos-Kos city-Electricity meter-02ASD.jpg",
+"credit": "Wikimedia Commons, Asurnipal, CC BY-SA 4.0",
+"info": "3056px"
+},
+"C4": {
+"ref": "wc:File:Vorarlberger Kraftwerke-Energy meter (electro)-01ASD.jpg",
+"credit": "Wikimedia Commons, Asurnipal, CC BY-SA 4.0",
+"info": "3361px"
+},
+"C5": {
+"ref": "wc:File:Electricians fixing electricity meter 4.jpg",
+"credit": "Wikimedia Commons, Jeromi Mikhael, CC0",
+"info": "1781px"
+},
+"C6": {
+"ref": "wc:File:Electricians fixing electricity meter 3.jpg",
+"credit": "Wikimedia Commons, Jeromi Mikhael, CC0",
+"info": "2448px"
+},
+"C7": {
+"ref": "wc:File:Electricians fixing electricity meter 5.jpg",
+"credit": "Wikimedia Commons, Jeromi Mikhael, CC0",
+"info": "3264px"
+},
+"C8": {
+"ref": "wc:File:Electricity meter in India.jpg",
+"credit": "Wikimedia Commons, GautamSudhanshu, CC BY-SA 4.0",
+"info": "3000px"
+}
+},
+"r33": {
+"V1": {
+"ref": "pv:15629",
+"credit": "Pixabay (wastedgeneration)",
+"info": "11s"
+},
+"V2": {
+"ref": "pv:21223",
+"credit": "Pixabay (ha11ok)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:21222",
+"credit": "Pixabay (ha11ok)",
+"info": "61s"
+},
+"V4": {
+"ref": "pv:8503",
+"credit": "Pixabay (PIRO4D)",
+"info": "13s"
+},
+"V5": {
+"ref": "pv:8897",
+"credit": "Pixabay (PIRO4D)",
+"info": "30s"
+},
+"V6": {
+"ref": "pv:7549",
+"credit": "Pixabay (PIRO4D)",
+"info": "10s"
+},
+"V7": {
+"ref": "pv:19044",
+"credit": "Pixabay (MarcusValleCriar)",
+"info": "7s"
+},
+"V8": {
+"ref": "pv:122810",
+"credit": "Pixabay (AlexKopeykin)",
+"info": "13s"
+},
+"I1": {
+"ref": "pi:2846323",
+"credit": "Pixabay (Ylanite)",
+"info": "4000px"
+},
+"I2": {
+"ref": "pi:4580016",
+"credit": "Pixabay (FotoKacper)",
+"info": "5184px"
+},
+"I3": {
+"ref": "pi:1049968",
+"credit": "Pixabay (530183)",
+"info": "3794px"
+},
+"I4": {
+"ref": "pi:974682",
+"credit": "Pixabay (ArabicBrand)",
+"info": "3500px"
+},
+"I5": {
+"ref": "pi:2420545",
+"credit": "Pixabay (albina01)",
+"info": "2200px"
+},
+"I6": {
+"ref": "pi:3041890",
+"credit": "Pixabay (Shane_the_weird)",
+"info": "2000px"
+},
+"I7": {
+"ref": "pi:2980690",
+"credit": "Pixabay (JESHOOTS-com)",
+"info": "5472px"
+},
+"I8": {
+"ref": "pi:3101625",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "5952px"
+},
+"C1": {
+"ref": "wc:File:Sony Dream Machine at 6 37am.jpg",
+"credit": "Wikimedia Commons, arvind grover from New York City, USA, CC BY-SA 2.0",
+"info": "3888px"
+},
+"C2": {
+"ref": "wc:File:Master Humphrey's clock (1843) (14750591356).jpg",
+"credit": "Wikimedia Commons, Internet Archive Book Images, No restrictions",
+"info": "1820px"
+},
+"C3": {
+"ref": "wc:File:Sony Dream Machine, radio cassette recorder with LED alarm clock (cropped).jpg",
+"credit": "Wikimedia Commons, bobcat rock, CC BY-SA 2.0",
+"info": "1000px"
+},
+"C4": {
+"ref": "wc:File:Er Sumit captured clock tower Surkhet.jpg",
+"credit": "Wikimedia Commons, Sumitdahal54, CC BY-SA 4.0",
+"info": "2048px"
+},
+"C5": {
+"ref": "wc:File:20260210 Radiowecker Kuba Sweet-clock R27 (1970) Deutsches Technikmuseum Berlin anagoria.jpg",
+"credit": "Wikimedia Commons, anagoria, CC BY 3.0",
+"info": "10191px"
+},
+"C6": {
+"ref": "wc:File:Alnwick, early-morning snow - geograph.org.uk - 1715562.jpg",
+"credit": "Wikimedia Commons, John Sutton, CC BY-SA 2.0",
+"info": "1024px"
+},
+"C7": {
+"ref": "wc:File:Whoa! Queuing even in early morning. (15947438945).jpg",
+"credit": "Wikimedia Commons, Ryo FUKAsawa, CC BY 2.0",
+"info": "4000px"
+},
+"C8": {
+"ref": "wc:File:Eastgate in the early morning. (31530221552).jpg",
+"credit": "Wikimedia Commons, Phil Gayton from Totnes, UK, CC BY 2.0",
+"info": "5028px"
+}
+},
+"r34": {
+"V1": {
+"ref": "pv:27111",
+"credit": "Pixabay (adege)",
+"info": "41s"
+},
+"V2": {
+"ref": "pv:173522",
+"credit": "Pixabay (Kanenori)",
+"info": "10s"
+},
+"V3": {
+"ref": "pv:27268",
+"credit": "Pixabay (loilamtan)",
+"info": "30s"
+},
+"V4": {
+"ref": "pv:12127",
+"credit": "Pixabay (badzhoo)",
+"info": "7s"
+},
+"V5": {
+"ref": "pv:158349",
+"credit": "Pixabay (HieuNghiaMini)",
+"info": "16s"
+},
+"V6": {
+"ref": "pv:164360",
+"credit": "Pixabay (adege)",
+"info": "41s"
+},
+"V7": {
+"ref": "pv:202982",
+"credit": "Pixabay (Kanenori)",
+"info": "15s"
+},
+"V8": {
+"ref": "pv:152798",
+"credit": "Pixabay (ghasoub)",
+"info": "27s"
+},
+"I1": {
+"ref": "pi:6356637",
+"credit": "Pixabay (jpnanterre)",
+"info": "5143px"
+},
+"I2": {
+"ref": "pi:3243536",
+"credit": "Pixabay (jimthao)",
+"info": "6000px"
+},
+"I3": {
+"ref": "pi:7414680",
+"credit": "Pixabay (Decster1)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:7525151",
+"credit": "Pixabay (南风不竞)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:9342358",
+"credit": "Pixabay (Michael_Pointner)",
+"info": "5489px"
+},
+"I6": {
+"ref": "pi:8531779",
+"credit": "Pixabay (MARTINOPHUC)",
+"info": "3937px"
+},
+"I7": {
+"ref": "pi:6281973",
+"credit": "Pixabay (yamabon)",
+"info": "5568px"
+},
+"I8": {
+"ref": "pi:7227096",
+"credit": "Pixabay (gosiak1980)",
+"info": "3184px"
+},
+"C1": {
+"ref": "wc:File:Peter Purves Smith - Early Morning in Paris, 1938.jpg",
+"credit": "Wikimedia Commons, Peter Purves Smith, Public domain",
+"info": "1980px"
+},
+"C2": {
+"ref": "wc:File:Paris Rue Réaumur 2013.jpg",
+"credit": "Wikimedia Commons, JLPC, CC BY-SA 3.0",
+"info": "4785px"
+},
+"C3": {
+"ref": "wc:File:Boulevard Voltaire at 2am with the market setup for the morning, Paris 2009.jpg",
+"credit": "Wikimedia Commons, nate bolt, CC BY-SA 2.0",
+"info": "3888px"
+},
+"C4": {
+"ref": "wc:File:Morning Paris, Rue du Bac, September 2014.jpg",
+"credit": "Wikimedia Commons, Roman Boed from The Netherlands, CC BY 2.0",
+"info": "5952px"
+},
+"C5": {
+"ref": "wc:File:Early morning @ Paris (24894504973).jpg",
+"credit": "Wikimedia Commons, Guilhem Vellut from Paris, France, CC BY 2.0",
+"info": "3648px"
+},
+"C6": {
+"ref": "wc:File:Arc de triomphe du carrousel in Paris France.jpg",
+"credit": "Wikimedia Commons, Tim Adams, CC BY 3.0",
+"info": "3918px"
+},
+"C7": {
+"ref": "wc:File:Rainy Saturday morning in Paris, 17 August 2019.jpg",
+"credit": "Wikimedia Commons, Steve McDonald from West Hartford, CT, USA, CC BY 2.0",
+"info": "7895px"
+},
+"C8": {
+"ref": "wc:File:Paris at morning (51724082201).jpg",
+"credit": "Wikimedia Commons, Miguel Mendez, CC BY 2.0",
+"info": "7646px"
+}
+},
+"r35": {
+"V1": {
+"ref": "pv:43044",
+"credit": "Pixabay (xat-ch)",
+"info": "18s"
+},
+"V2": {
+"ref": "pv:121768",
+"credit": "Pixabay (adamixx)",
+"info": "10s"
+},
+"V3": {
+"ref": "pv:131818",
+"credit": "Pixabay (marcdraco)",
+"info": "32s"
+},
+"V4": {
+"ref": "pv:35672",
+"credit": "Pixabay (RoyBuri)",
+"info": "29s"
+},
+"V5": {
+"ref": "pv:43045",
+"credit": "Pixabay (xat-ch)",
+"info": "17s"
+},
+"V6": {
+"ref": "pv:35671",
+"credit": "Pixabay (RoyBuri)",
+"info": "21s"
+},
+"V7": {
+"ref": "pv:290776",
+"credit": "Pixabay (AVISOtaON)",
+"info": "21s"
+},
+"V8": {
+"ref": "pv:144221",
+"credit": "Pixabay (riverbraid)",
+"info": "21s"
+},
+"I1": {
+"ref": "pi:10335051",
+"credit": "Pixabay (Mindseyes)",
+"info": "3888px"
+},
+"I2": {
+"ref": "pi:5753374",
+"credit": "Pixabay (Franz26)",
+"info": "5100px"
+},
+"I3": {
+"ref": "pi:7966414",
+"credit": "Pixabay (RonaldPlett)",
+"info": "7650px"
+},
+"I4": {
+"ref": "pi:5342573",
+"credit": "Pixabay (troshkina-a)",
+"info": "3456px"
+},
+"I5": {
+"ref": "pi:5765800",
+"credit": "Pixabay (artellliii72)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:9430322",
+"credit": "Pixabay (Mollyroselee)",
+"info": "3500px"
+},
+"I7": {
+"ref": "pi:6560429",
+"credit": "Pixabay (zorrotran)",
+"info": "3464px"
+},
+"I8": {
+"ref": "pi:7441346",
+"credit": "Pixabay (matthiasboeckel)",
+"info": "6000px"
+},
+"C1": {
+"ref": "wc:File:Tractor plow fields cultivated.jpg",
+"credit": "Wikimedia Commons, U.S. Fish and Wildlife Service, Public domain",
+"info": "3000px"
+},
+"C2": {
+"ref": "wc:File:Tractor plowing fields (6484367199).jpg",
+"credit": "Wikimedia Commons, OSU Special Collections &amp; Archives : Commons, No restrictions",
+"info": "2000px"
+},
+"C3": {
+"ref": "wc:File:Tractor plowing the field.jpg",
+"credit": "Wikimedia Commons, Sally V, CC BY-SA 4.0",
+"info": "5472px"
+},
+"C4": {
+"ref": "wc:File:Boy plowing with a tractor at sunset in Don Det, Laos.jpg",
+"credit": "Wikimedia Commons, Basile Morin, CC BY-SA 4.0",
+"info": "5934px"
+},
+"C5": {
+"ref": "wc:File:John Deere tractor when plowing a field.webm",
+"credit": "Wikimedia Commons, Fiver, der Hellseher, CC BY-SA 4.0",
+"info": "1280px"
+},
+"C6": {
+"ref": "wc:File:Tractor plowing fields in Hämeenkyrö, Finland (May 2020).jpg",
+"credit": "Wikimedia Commons, Markus Säynevirta, CC BY-SA 4.0",
+"info": "5456px"
+},
+"C7": {
+"ref": "wc:File:Two farmers driving a tractor and towing a raft loaded with green rice sheaves to be planted in a paddy field of Vang Vieng Laos.jpg",
+"credit": "Wikimedia Commons, Basile Morin, CC BY-SA 4.0",
+"info": "5814px"
+},
+"C8": {
+"ref": "wc:File:Two farmers driving a tractor towing a raft loaded with green rice sheaves in a paddy field of Vang Vieng Laos.jpg",
+"credit": "Wikimedia Commons, Basile Morin, CC BY-SA 4.0",
+"info": "5372px"
+}
+},
+"r36": {
+"V1": {
+"ref": "pv:3768",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "57s"
+},
+"V2": {
+"ref": "pv:34855",
+"credit": "Pixabay (Danil_Shostak)",
+"info": "8s"
+},
+"V3": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V4": {
+"ref": "pv:164215",
+"credit": "Pixabay (KIMDAEJEUNG)",
+"info": "37s"
+},
+"V5": {
+"ref": "pv:26493",
+"credit": "Pixabay (StefWithAnF)",
+"info": "74s"
+},
+"V6": {
+"ref": "pv:14815",
+"credit": "Pixabay (TRAPHITHO)",
+"info": "27s"
+},
+"V7": {
+"ref": "pv:186709",
+"credit": "Pixabay (ghasoub)",
+"info": "10s"
+},
+"V8": {
+"ref": "pv:170912",
+"credit": "Pixabay (emredoganfilms)",
+"info": "9s"
+},
+"I1": {
+"ref": "pi:9642580",
+"credit": "Pixabay (AmbreVEGA)",
+"info": "6016px"
+},
+"I2": {
+"ref": "pi:9642579",
+"credit": "Pixabay (AmbreVEGA)",
+"info": "5646px"
+},
+"I3": {
+"ref": "pi:1824051",
+"credit": "Pixabay (padrinan)",
+"info": "5000px"
+},
+"I4": {
+"ref": "pi:21640",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "5000px"
+},
+"I5": {
+"ref": "pi:1239404",
+"credit": "Pixabay (Shutterbug26)",
+"info": "3504px"
+},
+"I6": {
+"ref": "pi:749838",
+"credit": "Pixabay (445693)",
+"info": "4272px"
+},
+"I7": {
+"ref": "pi:2928135",
+"credit": "Pixabay (Leo_65)",
+"info": "5184px"
+},
+"I8": {
+"ref": "pi:91483",
+"credit": "Pixabay (weinstock)",
+"info": "4912px"
+},
+"C1": {
+"ref": "wc:File:Roggenvollkornbrot.Kruemel.jpg",
+"credit": "Wikimedia Commons, Membeth, CC0",
+"info": "2472px"
+},
+"C2": {
+"ref": "wc:File:Sourdoughbreadcrumb.jpg",
+"credit": "Wikimedia Commons, Nleamy at en.wikipedia, CC BY 2.5",
+"info": "1600px"
+},
+"C3": {
+"ref": "wc:File:Focaccia with Crumb.jpg",
+"credit": "Wikimedia Commons, Fred Benenson, CC BY-SA 4.0",
+"info": "3024px"
+},
+"C4": {
+"ref": "wc:File:Raisin bread crumb shot (6274216810).jpg",
+"credit": "Wikimedia Commons, Jim Champion from Southampton, UK, CC BY-SA 2.0",
+"info": "2048px"
+},
+"C5": {
+"ref": "wc:File:Slices of sourdough bread.jpg",
+"credit": "Wikimedia Commons, Angel Ganev, CC BY 2.0",
+"info": "3436px"
+}
+},
+"c01": {
+"V1": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V2": {
+"ref": "pv:94003",
+"credit": "Pixabay (NickyPe)",
+"info": "20s"
+},
+"V3": {
+"ref": "pv:94004",
+"credit": "Pixabay (NickyPe)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V5": {
+"ref": "pv:40822",
+"credit": "Pixabay (AlexKopeykin)",
+"info": "8s"
+},
+"V6": {
+"ref": "pv:321986",
+"credit": "Pixabay (adege)",
+"info": "15s"
+},
+"V7": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"V8": {
+"ref": "pv:4871",
+"credit": "Pixabay (klimkin)",
+"info": "10s"
+},
+"I1": {
+"ref": "pi:7588752",
+"credit": "Pixabay (hansbenn)",
+"info": "4272px"
+},
+"I2": {
+"ref": "pi:7974363",
+"credit": "Pixabay (monk83)",
+"info": "5456px"
+},
+"I3": {
+"ref": "pi:7765384",
+"credit": "Pixabay (GildAix)",
+"info": "6016px"
+},
+"I4": {
+"ref": "pi:8007340",
+"credit": "Pixabay (johnNaturePhotos)",
+"info": "3536px"
+},
+"I5": {
+"ref": "pi:8184715",
+"credit": "Pixabay (dshap)",
+"info": "4881px"
+},
+"I6": {
+"ref": "pi:5282327",
+"credit": "Pixabay (congerdesign)",
+"info": "5304px"
+},
+"I7": {
+"ref": "pi:5709598",
+"credit": "Pixabay (LediK)",
+"info": "4032px"
+},
+"I8": {
+"ref": "pi:5290575",
+"credit": "Pixabay (congerdesign)",
+"info": "4828px"
+},
+"C1": {
+"ref": "wc:File:Victoria Mills, Ashford, roller mill.JPG",
+"credit": "Wikimedia Commons, M J Roots, CC BY 3.0",
+"info": "1416px"
+},
+"C2": {
+"ref": "wc:File:Former Roller Mill in Ether, North Carolina.jpg",
+"credit": "Wikimedia Commons, Indy beetle, CC0",
+"info": "3907px"
+},
+"C3": {
+"ref": "wc:File:Cana Roller Mill - DPLA - 3af295c92f629e1ac8ea7065d3fcfdc5.jpg",
+"credit": "Wikimedia Commons, auteur inconnu, Public domain",
+"info": "1972px"
+},
+"C4": {
+"ref": "wc:File:Troy Roller Mill Museum.jpg",
+"credit": "Wikimedia Commons, Indy beetle, CC0",
+"info": "1943px"
+},
+"C5": {
+"ref": "wc:File:Calbourne Mill 240623g.JPG",
+"credit": "Wikimedia Commons, Michael Roots, CC BY-SA 4.0",
+"info": "2304px"
+},
+"C6": {
+"ref": "wc:File:China Grove, North Carolina Roller Mill.jpg",
+"credit": "Wikimedia Commons, Indy beetle, CC0",
+"info": "3973px"
+},
+"C7": {
+"ref": "wc:File:Taylorsville Milling Company Roller Mill 13.jpg",
+"credit": "Wikimedia Commons, Heather Fearnbach, Public domain",
+"info": "1201px"
+},
+"C8": {
+"ref": "wc:File:OIC dongara royal steam roller flour mill 2.jpg",
+"credit": "Wikimedia Commons, User:Orderinchaos, CC BY-SA 3.0",
+"info": "1600px"
+}
+},
+"c02": {
+"V1": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V2": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V3": {
+"ref": "pv:137099",
+"credit": "Pixabay (MabelAmber)",
+"info": "26s"
+},
+"V4": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"V5": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V6": {
+"ref": "pv:207994",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "44s"
+},
+"V7": {
+"ref": "pv:207992",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "13s"
+},
+"V8": {
+"ref": "pv:207991",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "6s"
+},
+"I1": {
+"ref": "pi:826165",
+"credit": "Pixabay (aking1000)",
+"info": "3008px"
+},
+"I2": {
+"ref": "pi:5451502",
+"credit": "Pixabay (VGTFF)",
+"info": "5472px"
+},
+"I3": {
+"ref": "pi:7588752",
+"credit": "Pixabay (hansbenn)",
+"info": "4272px"
+},
+"I4": {
+"ref": "pi:5709598",
+"credit": "Pixabay (LediK)",
+"info": "4032px"
+},
+"I5": {
+"ref": "pi:7011305",
+"credit": "Pixabay (VoloshynaNastasya)",
+"info": "3720px"
+},
+"I6": {
+"ref": "pi:1807547",
+"credit": "Pixabay (sasint)",
+"info": "5000px"
+},
+"I7": {
+"ref": "pi:5086428",
+"credit": "Pixabay (jd210848)",
+"info": "3712px"
+},
+"I8": {
+"ref": "pi:2564808",
+"credit": "Pixabay (StockSnap)",
+"info": "5550px"
+},
+"C1": {
+"ref": "wc:File:De Bloemmolens van Diksmuide Plansifter van Henry Simon Ltd. - 372762 - onroerenderfgoed.jpg",
+"credit": "Wikimedia Commons, Vandevorst, Kris, CC BY 4.0",
+"info": "2480px"
+},
+"C2": {
+"ref": "wc:File:Alcalá de Henares (RPS 14-12-2022) Fábrica de harinas La Esperanza, plansichters dobles.png",
+"credit": "Wikimedia Commons, Raimundo Pastor y Pilar Pastor Sánchez., CC BY-SA 4.0",
+"info": "2718px"
+},
+"C3": {
+"ref": "wc:File:Plansifters.jpg",
+"credit": "Wikimedia Commons, Martin Krijger, CC BY-SA 4.0",
+"info": "3264px"
+},
+"C4": {
+"ref": "wc:File:Industries of War - Flour - PRODUCTION OF FLOUR AT PLANT OF CLEVELAND MILLING CO., CLEVELAND, OHIO. Sifter, grading reels, purifier and dust collectors in corn milling department - NARA - 31488360.jpg",
+"credit": "Wikimedia Commons, Unknown authorUnknown author or not provided, Public domain",
+"info": "8997px"
+},
+"C5": {
+"ref": "wc:File:Industries of War - Flour - PRODUCTION OF FLOUR AT PLANT OF CLEVELAND MILLING CO., CLEVELAND, OHIO. A section of the sifter floor, also called bolting floor, where the flour is extracted after the material is ground - NARA - 31488428.jpg",
+"credit": "Wikimedia Commons, Unknown authorUnknown author or not provided, Public domain",
+"info": "8997px"
+},
+"C6": {
+"ref": "wc:File:A flour sifter, Eling Tidal Mill.jpg",
+"credit": "Wikimedia Commons, Richard Avery, CC BY-SA 4.0",
+"info": "3000px"
+},
+"C7": {
+"ref": "wc:File:Verne-Schäfermeiers Mühle - Plansichter.jpg",
+"credit": "Wikimedia Commons, Ath, CC0",
+"info": "3648px"
+},
+"C8": {
+"ref": "wc:File:Verne-Schäfermeiers Mühle - Plansichter - 2.jpg",
+"credit": "Wikimedia Commons, Ath, CC0",
+"info": "3648px"
+}
+},
+"c03": {
+"V1": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"V4": {
+"ref": "pv:208477",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "11s"
+},
+"V5": {
+"ref": "pv:32937",
+"credit": "Pixabay (Stuck1)",
+"info": "15s"
+},
+"V6": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V7": {
+"ref": "pv:208347",
+"credit": "Pixabay (Kaffeesüchtig)",
+"info": "12s"
+},
+"V8": {
+"ref": "pv:148541",
+"credit": "Pixabay (Joko_Narimo)",
+"info": "5s"
+},
+"I1": {
+"ref": "pi:4618189",
+"credit": "Pixabay (happyveganfit)",
+"info": "5184px"
+},
+"I2": {
+"ref": "pi:5281457",
+"credit": "Pixabay (Peggy_Marco)",
+"info": "4898px"
+},
+"I3": {
+"ref": "pi:6723315",
+"credit": "Pixabay (Derekpics)",
+"info": "5815px"
+},
+"I4": {
+"ref": "pi:1834827",
+"credit": "Pixabay (Pexels)",
+"info": "5269px"
+},
+"I5": {
+"ref": "pi:814952",
+"credit": "Pixabay (jonathansautter)",
+"info": "5472px"
+},
+"I6": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I7": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I8": {
+"ref": "pi:5502254",
+"credit": "Pixabay (mgnorrisphotos)",
+"info": "5760px"
+}
+},
+"c04": {
+"V1": {
+"ref": "pv:1844",
+"credit": "Pixabay (bellergy)",
+"info": "28s"
+},
+"V2": {
+"ref": "pv:22555",
+"credit": "Pixabay (adege)",
+"info": "17s"
+},
+"V3": {
+"ref": "pv:15023",
+"credit": "Pixabay (adege)",
+"info": "29s"
+},
+"V4": {
+"ref": "pv:17869",
+"credit": "Pixabay (adege)",
+"info": "20s"
+},
+"V5": {
+"ref": "pv:24105",
+"credit": "Pixabay (adege)",
+"info": "29s"
+},
+"V6": {
+"ref": "pv:71457",
+"credit": "Pixabay (adege)",
+"info": "31s"
+},
+"V7": {
+"ref": "pv:23263",
+"credit": "Pixabay (adege)",
+"info": "33s"
+},
+"V8": {
+"ref": "pv:72763",
+"credit": "Pixabay (adege)",
+"info": "21s"
+},
+"I1": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I2": {
+"ref": "pi:943245",
+"credit": "Pixabay (ClickerHappy)",
+"info": "4227px"
+},
+"I3": {
+"ref": "pi:399286",
+"credit": "Pixabay (TiBine)",
+"info": "5184px"
+},
+"I4": {
+"ref": "pi:4840960",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "6720px"
+},
+"I5": {
+"ref": "pi:2132874",
+"credit": "Pixabay (Daria-Yakovleva)",
+"info": "5676px"
+},
+"I6": {
+"ref": "pi:2561",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4620px"
+},
+"I7": {
+"ref": "pi:6881348",
+"credit": "Pixabay (Mylene2401)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:1181189",
+"credit": "Pixabay (Oldmermaid)",
+"info": "3312px"
+},
+"C1": {
+"ref": "wc:File:Pain au levain dit à l'ancienne 02.jpg",
+"credit": "Wikimedia Commons, Zantastik, CC BY-SA 3.0",
+"info": "1844px"
+},
+"C2": {
+"ref": "wc:File:Levains naturels.jpg",
+"credit": "Wikimedia Commons, Yann Demarigny, CC BY-SA 3.0",
+"info": "1024px"
+},
+"C3": {
+"ref": "wc:File:YBC Levain Cracker.jpg",
+"credit": "Wikimedia Commons, Tokumeigakarinoaoshima, CC BY-SA 4.0",
+"info": "2560px"
+},
+"C4": {
+"ref": "wc:File:Levain - Yamazaki Biscuit Company.jpg",
+"credit": "Wikimedia Commons, Quercus acuta, CC0",
+"info": "2221px"
+},
+"C5": {
+"ref": "wc:File:Ho O Levain 20230305.jpg",
+"credit": "Wikimedia Commons, 江戸村のとくぞう, CC BY-SA 4.0",
+"info": "3500px"
+},
+"C6": {
+"ref": "wc:File:Levain Prime Cracker - Yamazaki Biscuit Company.jpg",
+"credit": "Wikimedia Commons, Quercus acuta, CC BY-SA 4.0",
+"info": "2573px"
+}
+},
+"c05": {
+"V1": {
+"ref": "pv:65278",
+"credit": "Pixabay (assadalit)",
+"info": "7s"
+},
+"V2": {
+"ref": "pv:258562",
+"credit": "Pixabay (SOÑA)",
+"info": "18s"
+},
+"V3": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:205890",
+"credit": "Pixabay (AlfLucio)",
+"info": "9s"
+},
+"V5": {
+"ref": "pv:215534",
+"credit": "Pixabay (julientromeur)",
+"info": "5s"
+},
+"V6": {
+"ref": "pv:43653",
+"credit": "Pixabay (aghyadnajjar)",
+"info": "13s"
+},
+"V7": {
+"ref": "pv:212705",
+"credit": "Pixabay (adege)",
+"info": "20s"
+},
+"V8": {
+"ref": "pv:140931",
+"credit": "Pixabay (Amina_Salim)",
+"info": "10s"
+},
+"I1": {
+"ref": "pi:1868396",
+"credit": "Pixabay (Pexels)",
+"info": "3999px"
+},
+"I2": {
+"ref": "pi:7034070",
+"credit": "Pixabay (congerdesign)",
+"info": "5734px"
+},
+"I3": {
+"ref": "pi:5164240",
+"credit": "Pixabay (webandi)",
+"info": "6000px"
+},
+"I4": {
+"ref": "pi:725873",
+"credit": "Pixabay (MorningbirdPhoto)",
+"info": "3879px"
+},
+"I5": {
+"ref": "pi:5571079",
+"credit": "Pixabay (webandi)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:5571077",
+"credit": "Pixabay (webandi)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:2885134",
+"credit": "Pixabay (jackmac34)",
+"info": "3872px"
+},
+"I8": {
+"ref": "pi:5569192",
+"credit": "Pixabay (webandi)",
+"info": "6000px"
+},
+"C1": {
+"ref": "wc:File:Compressed fresh yeast - 1.jpg",
+"credit": "Wikimedia Commons, Hellahulla, CC BY-SA 4.0",
+"info": "2000px"
+},
+"C2": {
+"ref": "wc:File:Bakers yeast membrane 2.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1899px"
+},
+"C3": {
+"ref": "wc:File:Bakers yeast membrane 1.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1908px"
+},
+"C4": {
+"ref": "wc:File:Bakers yeast membrane 3.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1919px"
+},
+"C5": {
+"ref": "wc:File:Bakers yeast membrane 5.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1917px"
+},
+"C6": {
+"ref": "wc:File:Bakers yeast membrane 4.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1901px"
+},
+"C7": {
+"ref": "wc:File:External face of bakers yeast membrane.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1788px"
+},
+"C8": {
+"ref": "wc:File:Bakers yeast wall-membrane2.jpg",
+"credit": "Wikimedia Commons, Tgru001, CC0",
+"info": "1941px"
+}
+},
+"c06": {
+"V1": {
+"ref": "pv:65278",
+"credit": "Pixabay (assadalit)",
+"info": "7s"
+},
+"V2": {
+"ref": "pv:24959",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V3": {
+"ref": "pv:24960",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V4": {
+"ref": "pv:31634",
+"credit": "Pixabay (Eartvideos)",
+"info": "60s"
+},
+"V5": {
+"ref": "pv:8880",
+"credit": "Pixabay (Positive_Images)",
+"info": "20s"
+},
+"V6": {
+"ref": "pv:120694",
+"credit": "Pixabay (Eartvideos)",
+"info": "30s"
+},
+"V7": {
+"ref": "pv:303458",
+"credit": "Pixabay (JetalProduções)",
+"info": "5s"
+},
+"V8": {
+"ref": "pv:382091",
+"credit": "Pixabay (Anothai_Bakery)",
+"info": "10s"
+},
+"I1": {
+"ref": "pi:2561",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4620px"
+},
+"I2": {
+"ref": "pi:1761197",
+"credit": "Pixabay (jackmac34)",
+"info": "3757px"
+},
+"I3": {
+"ref": "pi:1868925",
+"credit": "Pixabay (Pexels)",
+"info": "3264px"
+},
+"I4": {
+"ref": "pi:8503298",
+"credit": "Pixabay (Storme22k)",
+"info": "5599px"
+},
+"I5": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I6": {
+"ref": "pi:1743939",
+"credit": "Pixabay (Alexas_Fotos)",
+"info": "6000px"
+},
+"I7": {
+"ref": "pi:1378049",
+"credit": "Pixabay (Couleur)",
+"info": "3057px"
+},
+"I8": {
+"ref": "pi:6570934",
+"credit": "Pixabay (dimkatomson21)",
+"info": "5184px"
+},
+"C1": {
+"ref": "wc:File:Chopsticks in bowl.jpg",
+"credit": "Wikimedia Commons, John McComb from Oakland, CA, USA, CC BY 2.0",
+"info": "1896px"
+},
+"C2": {
+"ref": "wc:File:My new chopsticks and chopsticks rest that I bought in San Francisco.jpg",
+"credit": "Wikimedia Commons, Kim Navarre from Brooklyn, NY, CC BY-SA 2.0",
+"info": "4000px"
+},
+"C3": {
+"ref": "wc:File:Packed chopsticks taiwan restaurant.jpg",
+"credit": "Wikimedia Commons, Vincent Huang, CC BY 2.0",
+"info": "3202px"
+},
+"C4": {
+"ref": "wc:File:Eat with chopsticks Vietnam.jpg",
+"credit": "Wikimedia Commons, Peter van der Sluijs, CC BY-SA 3.0",
+"info": "1114px"
+},
+"C5": {
+"ref": "wc:File:Chopsticks, Toritcho, Montparnasse, Paris 001.jpg",
+"credit": "Wikimedia Commons, Guilhem Vellut from Paris, France, CC BY 2.0",
+"info": "5472px"
+},
+"C6": {
+"ref": "wc:File:Chopsticks on a childrens chopstick rest.jpg",
+"credit": "Wikimedia Commons, Flo2323, CC0",
+"info": "6240px"
+},
+"C7": {
+"ref": "wc:File:Exo-placement chopsticks-Ishida Proper chopsticks-open and closed.jpg",
+"credit": "Wikimedia Commons, Marcosticks, CC BY-SA 4.0",
+"info": "2048px"
+},
+"C8": {
+"ref": "wc:File:Exoskeleton chopsticks-Edison chopsticks.jpg",
+"credit": "Wikimedia Commons, Marcosticks, CC BY-SA 4.0",
+"info": "2048px"
+}
+},
+"c07": {
+"V1": {
+"ref": "pv:66",
+"credit": "Pixabay (DistillVideos)",
+"info": "20s"
+},
+"V2": {
+"ref": "pv:2336",
+"credit": "Pixabay (Life-Of-Vids)",
+"info": "61s"
+},
+"V3": {
+"ref": "pv:17176",
+"credit": "Pixabay (Citor3)",
+"info": "14s"
+},
+"V4": {
+"ref": "pv:17177",
+"credit": "Pixabay (Citor3)",
+"info": "51s"
+},
+"V5": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V6": {
+"ref": "pv:191429",
+"credit": "Pixabay (Kidysfoodproducts)",
+"info": "20s"
+},
+"V7": {
+"ref": "pv:11697",
+"credit": "Pixabay (XiaosKitchen)",
+"info": "21s"
+},
+"V8": {
+"ref": "pv:250784",
+"credit": "Pixabay (u_7xgcof5pvg)",
+"info": "12s"
+},
+"I1": {
+"ref": "pi:2436370",
+"credit": "Pixabay (Intuitivmedia)",
+"info": "5760px"
+},
+"I2": {
+"ref": "pi:1761272",
+"credit": "Pixabay (jackmac34)",
+"info": "3872px"
+},
+"I3": {
+"ref": "pi:2218232",
+"credit": "Pixabay (xmmr89x)",
+"info": "3872px"
+},
+"I4": {
+"ref": "pi:19669",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4928px"
+},
+"I5": {
+"ref": "pi:1870221",
+"credit": "Pixabay (KRiemer)",
+"info": "2272px"
+},
+"I6": {
+"ref": "pi:1875404",
+"credit": "Pixabay (KRiemer)",
+"info": "2272px"
+},
+"I7": {
+"ref": "pi:1870254",
+"credit": "Pixabay (KRiemer)",
+"info": "2272px"
+},
+"I8": {
+"ref": "pi:178320",
+"credit": "Pixabay (qrione)",
+"info": "4288px"
+},
+"C1": {
+"ref": "wc:File:Flaounes halved.jpg",
+"credit": "Wikimedia Commons, Alpha, CC BY-SA 2.0",
+"info": "2048px"
+}
+},
+"c08": {
+"V1": {
+"ref": "pv:138050",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V2": {
+"ref": "pv:138033",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V3": {
+"ref": "pv:1115",
+"credit": "Pixabay (SuperTomBob)",
+"info": "191s"
+},
+"V4": {
+"ref": "pv:215421",
+"credit": "Pixabay (Yago_Trillo)",
+"info": "15s"
+},
+"V5": {
+"ref": "pv:107242",
+"credit": "Pixabay (mootlak)",
+"info": "9s"
+},
+"V6": {
+"ref": "pv:54705",
+"credit": "Pixabay (OlivierDeFrance)",
+"info": "40s"
+},
+"V7": {
+"ref": "pv:2174",
+"credit": "Pixabay (Jahhoo)",
+"info": "50s"
+},
+"V8": {
+"ref": "pv:21800",
+"credit": "Pixabay (SAHN_VIT)",
+"info": "15s"
+},
+"I1": {
+"ref": "pi:4992402",
+"credit": "Pixabay (Roses_Street)",
+"info": "6016px"
+},
+"I2": {
+"ref": "pi:9641907",
+"credit": "Pixabay (ChiemSeherin)",
+"info": "5438px"
+},
+"I3": {
+"ref": "pi:2253624",
+"credit": "Pixabay (lightning-dani)",
+"info": "4608px"
+},
+"I4": {
+"ref": "pi:7414680",
+"credit": "Pixabay (Decster1)",
+"info": "6000px"
+},
+"I5": {
+"ref": "pi:7009337",
+"credit": "Pixabay (lecreusois)",
+"info": "6016px"
+},
+"I6": {
+"ref": "pi:6872275",
+"credit": "Pixabay (lgmedia04)",
+"info": "6141px"
+},
+"I7": {
+"ref": "pi:6700264",
+"credit": "Pixabay (Roses_Street)",
+"info": "3008px"
+},
+"I8": {
+"ref": "pi:4708255",
+"credit": "Pixabay (cgouache)",
+"info": "4608px"
+},
+"C1": {
+"ref": "wc:File:Pletzl rue des Rosiers Boulangerie Juive.jpg",
+"credit": "Wikimedia Commons, Djampa (talk · contribs), CC BY-SA 4.0",
+"info": "3264px"
+},
+"C2": {
+"ref": "wc:File:Pletzl rue des Rosiers Boulangerie Juive Vitrine.jpg",
+"credit": "Wikimedia Commons, Utilisateur:Djampa - User:Djampa, CC BY-SA 4.0",
+"info": "3264px"
+},
+"C3": {
+"ref": "wc:File:Pletzl rue des Rosiers Boulangerie Juive 191208.jpg",
+"credit": "Wikimedia Commons, Utilisateur:Djampa - User:Djampa, CC BY-SA 4.0",
+"info": "3264px"
+},
+"C4": {
+"ref": "wc:File:PA00088610 Boulangerie.jpg",
+"credit": "Wikimedia Commons, Aih2, CC BY-SA 3.0",
+"info": "4272px"
+},
+"C5": {
+"ref": "wc:File:Boulangerie 64 rue Saint-Dominique Paris 7e.jpg",
+"credit": "Wikimedia Commons, Moonik, CC BY-SA 3.0",
+"info": "4288px"
+},
+"C6": {
+"ref": "wc:File:Boulangerie, Rue du Pasteur-Wagner, Paris 2011.jpg",
+"credit": "Wikimedia Commons, ParisSharing, CC BY 2.0",
+"info": "2592px"
+},
+"C7": {
+"ref": "wc:File:Boulangerie Murciano, Rue des Rosiers, 75004 Paris 2008.jpg",
+"credit": "Wikimedia Commons, Jesús Gorriti from Madrid, Spain, CC BY-SA 2.0",
+"info": "4288px"
+},
+"C8": {
+"ref": "wc:File:Boulangerie Murciano, Paris June 2008.jpg",
+"credit": "Wikimedia Commons, Tim Sackton, CC BY-SA 2.0",
+"info": "2592px"
+}
+},
+"c09": {
+"V1": {
+"ref": "pv:25477",
+"credit": "Pixabay (luc_toutsimplement)",
+"info": "19s"
+},
+"V2": {
+"ref": "pv:47905",
+"credit": "Pixabay (WestNL)",
+"info": "38s"
+},
+"V3": {
+"ref": "pv:140354",
+"credit": "Pixabay (ClickingLoop)",
+"info": "9s"
+},
+"V4": {
+"ref": "pv:115473",
+"credit": "Pixabay (Matthias_Groeneveld)",
+"info": "59s"
+},
+"V5": {
+"ref": "pv:232562",
+"credit": "Pixabay (Qmnrd)",
+"info": "30s"
+},
+"V6": {
+"ref": "pv:35970",
+"credit": "Pixabay (luc_toutsimplement)",
+"info": "30s"
+},
+"V7": {
+"ref": "pv:83875",
+"credit": "Pixabay (SYG_Anime)",
+"info": "15s"
+},
+"V8": {
+"ref": "pv:50782",
+"credit": "Pixabay (luc_toutsimplement)",
+"info": "37s"
+},
+"I1": {
+"ref": "pi:4413073",
+"credit": "Pixabay (Michael_Kastelic)",
+"info": "3380px"
+},
+"I2": {
+"ref": "pi:5067173",
+"credit": "Pixabay (Tho-Ge)",
+"info": "3234px"
+},
+"I3": {
+"ref": "pi:5889581",
+"credit": "Pixabay (19645751)",
+"info": "7265px"
+},
+"I4": {
+"ref": "pi:4646952",
+"credit": "Pixabay (Anatolii_Maks)",
+"info": "6016px"
+},
+"I5": {
+"ref": "pi:1846050",
+"credit": "Pixabay (Pexels)",
+"info": "5184px"
+},
+"I6": {
+"ref": "pi:5163495",
+"credit": "Pixabay (Tumisu)",
+"info": "3000px"
+},
+"I7": {
+"ref": "pi:5011953",
+"credit": "Pixabay (Peggy_Marco)",
+"info": "6000px"
+},
+"I8": {
+"ref": "pi:2609115",
+"credit": "Pixabay (StockSnap)",
+"info": "3000px"
+},
+"C1": {
+"ref": "wc:File:2015 Hipermarket E.Leclerc w Kłodzku.JPG",
+"credit": "Wikimedia Commons, Jacek Halicki, CC BY-SA 4.0",
+"info": "3411px"
+},
+"C2": {
+"ref": "wc:File:Entrée E. Leclerc Beynost.JPG",
+"credit": "Wikimedia Commons, Benoît Prieur, CC0",
+"info": "3024px"
+},
+"C3": {
+"ref": "wc:File:Poissonnerie à E. Leclerc (Beynost).JPG",
+"credit": "Wikimedia Commons, Benoît Prieur, CC0",
+"info": "2491px"
+},
+"C4": {
+"ref": "wc:File:Hypermarché Leclerc Bellerive-sur-Allier.jpg",
+"credit": "Wikimedia Commons, TCY, CC BY 3.0",
+"info": "4032px"
+},
+"C5": {
+"ref": "wc:File:ELeclerc Cherbourg2.jpg",
+"credit": "Wikimedia Commons, Emilius123, CC BY-SA 4.0",
+"info": "4032px"
+},
+"C6": {
+"ref": "wc:File:ELeclerc Cherbourg3.jpg",
+"credit": "Wikimedia Commons, Emilius123, CC BY-SA 4.0",
+"info": "3024px"
+},
+"C7": {
+"ref": "wc:File:ELeclerc Cherbourg4.jpg",
+"credit": "Wikimedia Commons, Emilius123, CC BY-SA 4.0",
+"info": "3024px"
+},
+"C8": {
+"ref": "wc:File:Jastrzębie-Zdrój, wyburzanie E.Leclerc (2023).jpg",
+"credit": "Wikimedia Commons, Kamil Czaiński, CC BY-SA 4.0",
+"info": "8000px"
+}
+},
+"c10": {
+"V1": {
+"ref": "pv:24959",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V2": {
+"ref": "pv:24960",
+"credit": "Pixabay (julientromeur)",
+"info": "6s"
+},
+"V3": {
+"ref": "pv:189020",
+"credit": "Pixabay (choxyltd)",
+"info": "15s"
+},
+"V4": {
+"ref": "pv:3625",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "17s"
+},
+"V5": {
+"ref": "pv:44926",
+"credit": "Pixabay (MingMedia)",
+"info": "23s"
+},
+"V6": {
+"ref": "pv:4352",
+"credit": "Pixabay (jensb)",
+"info": "11s"
+},
+"V7": {
+"ref": "pv:182810",
+"credit": "Pixabay (choxyltd)",
+"info": "13s"
+},
+"V8": {
+"ref": "pv:136139",
+"credit": "Pixabay (Prime_Media_Hyderabad)",
+"info": "23s"
+},
+"I1": {
+"ref": "pi:1761197",
+"credit": "Pixabay (jackmac34)",
+"info": "3757px"
+},
+"I2": {
+"ref": "pi:1006164",
+"credit": "Pixabay (931527)",
+"info": "6000px"
+},
+"I3": {
+"ref": "pi:10478968",
+"credit": "Pixabay (52600603)",
+"info": "3000px"
+},
+"I4": {
+"ref": "pi:708186",
+"credit": "Pixabay (Efraimstochter)",
+"info": "5456px"
+},
+"I5": {
+"ref": "pi:1597868",
+"credit": "Pixabay (mp1746)",
+"info": "3504px"
+},
+"I6": {
+"ref": "pi:1761272",
+"credit": "Pixabay (jackmac34)",
+"info": "3872px"
+},
+"I7": {
+"ref": "pi:2218232",
+"credit": "Pixabay (xmmr89x)",
+"info": "3872px"
+},
+"I8": {
+"ref": "pi:1761219",
+"credit": "Pixabay (jackmac34)",
+"info": "3709px"
+},
+"C1": {
+"ref": "wc:File:Baguette with cheese.jpg",
+"credit": "Wikimedia Commons, DocteurCosmos, CC BY 3.0",
+"info": "2272px"
+},
+"C2": {
+"ref": "wc:File:Mie Baguette de tradition France.jpg",
+"credit": "Wikimedia Commons, DocteurCosmos, CC BY-SA 3.0",
+"info": "1476px"
+},
+"C3": {
+"ref": "wc:File:Baguette au charbon actif 01.jpg",
+"credit": "Wikimedia Commons, Anne Jea., CC BY-SA 4.0",
+"info": "3648px"
+},
+"C4": {
+"ref": "wc:File:Baguette au charbon actif 02.jpg",
+"credit": "Wikimedia Commons, Anne Jea., CC BY-SA 4.0",
+"info": "3648px"
+},
+"C5": {
+"ref": "wc:File:Brie de Meaux and french baguette.jpg",
+"credit": "Wikimedia Commons, LllC, CC BY-SA 4.0",
+"info": "1383px"
+},
+"C6": {
+"ref": "wc:File:040105 Brabyn 4640wc.jpg",
+"credit": "Wikimedia Commons, David Brabyn (davidbrabyn.com), CC BY-SA 4.0",
+"info": "1500px"
+},
+"C7": {
+"ref": "wc:File:Традиционално сервиран ајвар.jpg",
+"credit": "Wikimedia Commons, Mila Atkovska, CC BY-SA 4.0",
+"info": "3000px"
+},
+"C8": {
+"ref": "wc:File:Paris Baguette - 4758541890.jpg",
+"credit": "Wikimedia Commons, Chun Yip  So, CC BY 2.0",
+"info": "1614px"
+}
+},
+"c11": {
+"V1": {
+"ref": "pv:338956",
+"credit": "Pixabay (MrWashingt0n)",
+"info": "8s"
+},
+"V2": {
+"ref": "pv:338955",
+"credit": "Pixabay (MrWashingt0n)",
+"info": "8s"
+},
+"V3": {
+"ref": "pv:204291",
+"credit": "Pixabay (Natures_Embrace)",
+"info": "5s"
+},
+"V4": {
+"ref": "pv:204306",
+"credit": "Pixabay (Natures_Embrace)",
+"info": "14s"
+},
+"V5": {
+"ref": "pv:27453",
+"credit": "Pixabay (RoyBuri)",
+"info": "11s"
+},
+"V6": {
+"ref": "pv:166285",
+"credit": "Pixabay (Dimitri_K)",
+"info": "20s"
+},
+"V7": {
+"ref": "pv:349089",
+"credit": "Pixabay (MuhammadAhmad10)",
+"info": "15s"
+},
+"V8": {
+"ref": "pv:349091",
+"credit": "Pixabay (MuhammadAhmad10)",
+"info": "17s"
+},
+"I1": {
+"ref": "pi:1853262",
+"credit": "Pixabay (Pexels)",
+"info": "4608px"
+},
+"I2": {
+"ref": "pi:1863880",
+"credit": "Pixabay (3844328)",
+"info": "5812px"
+},
+"I3": {
+"ref": "pi:1905225",
+"credit": "Pixabay (PIX1861)",
+"info": "5456px"
+},
+"I4": {
+"ref": "pi:1730089",
+"credit": "Pixabay (AhmadArdity)",
+"info": "5184px"
+},
+"I5": {
+"ref": "pi:3087396",
+"credit": "Pixabay (geralt)",
+"info": "4555px"
+},
+"I6": {
+"ref": "pi:5475664",
+"credit": "Pixabay (Buffik)",
+"info": "4000px"
+},
+"I7": {
+"ref": "pi:1905224",
+"credit": "Pixabay (PIX1861)",
+"info": "5456px"
+},
+"I8": {
+"ref": "pi:5129770",
+"credit": "Pixabay (Tumisu)",
+"info": "5456px"
+},
+"C1": {
+"ref": "wc:File:Beursplein 5 (cropped and edited).jpg",
+"credit": "Wikimedia Commons, Bootuitjes, CC BY 2.0",
+"info": "4948px"
+},
+"C2": {
+"ref": "wc:File:Melanion Capital - Euronext Paris.jpg",
+"credit": "Wikimedia Commons, Melanioncapital, CC BY-SA 4.0",
+"info": "5760px"
+},
+"C3": {
+"ref": "wc:File:Market centre in Tokyo stock exchange.jpg",
+"credit": "Wikimedia Commons, ehnmark, CC BY 2.0",
+"info": "1000px"
+},
+"C4": {
+"ref": "wc:File:The General Manager (BP), India Post, Ms. Alka Jha and the VP, NSE, Shri T. Venkat Rao signing an MoU between India Post and National Stock Exchange, for deploying LCD TV Screens in select Post Offices across the country.jpg",
+"credit": "Wikimedia Commons, Ministry of Communications, GODL-India",
+"info": "2200px"
+},
+"C5": {
+"ref": "wc:File:Trading apps on an iPhone screen.jpg",
+"credit": "Wikimedia Commons, forextime.com, CC BY 2.0",
+"info": "4000px"
+},
+"C6": {
+"ref": "wc:File:NSE Building.jpg",
+"credit": "Wikimedia Commons, Indiatvnews, CC BY-SA 4.0",
+"info": "1200px"
+},
+"C7": {
+"ref": "wc:File:NSE Building 2.jpg",
+"credit": "Wikimedia Commons, BloombergQuint, CC BY-SA 4.0",
+"info": "1200px"
+},
+"C8": {
+"ref": "wc:File:Commodity Prices.webp",
+"credit": "Wikimedia Commons, Wikideas1, CC0",
+"info": "5371px"
+}
+},
+"c12": {
+"V1": {
+"ref": "pv:200157",
+"credit": "Pixabay (Pana68)",
+"info": "17s"
+},
+"V2": {
+"ref": "pv:784",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "23s"
+},
+"V3": {
+"ref": "pv:75700",
+"credit": "Pixabay (sodainua)",
+"info": "16s"
+},
+"V4": {
+"ref": "pv:207994",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "44s"
+},
+"V5": {
+"ref": "pv:207992",
+"credit": "Pixabay (NGUYENTHONG7997)",
+"info": "13s"
+},
+"V6": {
+"ref": "pv:63066",
+"credit": "Pixabay (AlexKopeykin)",
+"info": "22s"
+},
+"V7": {
+"ref": "pv:42040",
+"credit": "Pixabay (BreakDownPictures)",
+"info": "16s"
+},
+"V8": {
+"ref": "pv:80672",
+"credit": "Pixabay (NickyPe)",
+"info": "26s"
+},
+"I1": {
+"ref": "pi:1829678",
+"credit": "Pixabay (jpduretz)",
+"info": "2872px"
+},
+"I2": {
+"ref": "pi:923865",
+"credit": "Pixabay (StockSnap)",
+"info": "3872px"
+},
+"I3": {
+"ref": "pi:1761219",
+"credit": "Pixabay (jackmac34)",
+"info": "3709px"
+},
+"I4": {
+"ref": "pi:888894",
+"credit": "Pixabay (BRRT)",
+"info": "4447px"
+},
+"I5": {
+"ref": "pi:752931",
+"credit": "Pixabay (sferrario1968)",
+"info": "5184px"
+},
+"I6": {
+"ref": "pi:2574918",
+"credit": "Pixabay (SLPix)",
+"info": "3000px"
+},
+"I7": {
+"ref": "pi:753985",
+"credit": "Pixabay (sferrario1968)",
+"info": "5184px"
+},
+"I8": {
+"ref": "pi:648993",
+"credit": "Pixabay (gardenews)",
+"info": "4445px"
+},
+"C1": {
+"ref": "wc:File:Ravensburg Mehlsack und Obertor.jpg",
+"credit": "Wikimedia Commons, Photo: Andreas Praefcke, CC BY 3.0",
+"info": "2448px"
+},
+"C2": {
+"ref": "wc:File:Ravensburg Mehlsack Stadtkirche.jpg",
+"credit": "Wikimedia Commons, Daniel Hüneborg, CC BY 2.0",
+"info": "1280px"
+},
+"C3": {
+"ref": "wc:File:Mehlsack Ravensburg.jpg",
+"credit": "Wikimedia Commons, Roland Nonnenmacher, D-88287 Grünkraut, CC BY-SA 3.0",
+"info": "2592px"
+},
+"C4": {
+"ref": "wc:File:Merian Ravensburg Veitsburg.jpg",
+"credit": "Wikimedia Commons, Matthäus Merian, Public domain",
+"info": "2098px"
+},
+"C5": {
+"ref": "wc:File:Ravensburg Winter 2010.jpg",
+"credit": "Wikimedia Commons, Photo: Andreas Praefcke, CC BY 3.0",
+"info": "4288px"
+},
+"C6": {
+"ref": "wc:File:Ravensburg Mehlsack Eingang 01.jpg",
+"credit": "Wikimedia Commons, Photo: Andreas Praefcke, CC BY 3.0",
+"info": "2848px"
+},
+"C7": {
+"ref": "wc:File:Ravensburg Winter 2022 - von der Veitsburg aus gesehen - 2022-12-25.jpg",
+"credit": "Wikimedia Commons, Martinus KE, CC BY-SA 4.0",
+"info": "1600px"
+},
+"C8": {
+"ref": "wc:File:Blick von der Veitsburg auf Ravensburg mit dem Turm \"Mehlsack\" im Vordergrund (2025).jpg",
+"credit": "Wikimedia Commons, JoachimKohler-HB, CC BY-SA 4.0",
+"info": "4800px"
+}
+},
+"c13": {
+"V1": {
+"ref": "pv:315076",
+"credit": "Pixabay (camilatpb)",
+"info": "6s"
+},
+"V2": {
+"ref": "pv:317231",
+"credit": "Pixabay (camilatpb)",
+"info": "6s"
+},
+"V3": {
+"ref": "pv:1261",
+"credit": "Pixabay (Vimeo-Free-Videos)",
+"info": "61s"
+},
+"V4": {
+"ref": "pv:212404",
+"credit": "Pixabay (素君)",
+"info": "12s"
+},
+"V5": {
+"ref": "pv:191429",
+"credit": "Pixabay (Kidysfoodproducts)",
+"info": "20s"
+},
+"V6": {
+"ref": "pv:10339",
+"credit": "Pixabay (5239640)",
+"info": "13s"
+},
+"V7": {
+"ref": "pv:7093",
+"credit": "Pixabay (Hans)",
+"info": "30s"
+},
+"V8": {
+"ref": "pv:202877",
+"credit": "Pixabay (Kanenori)",
+"info": "12s"
+},
+"I1": {
+"ref": "pi:17318",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "3648px"
+},
+"I2": {
+"ref": "pi:173463",
+"credit": "Pixabay (Severinson)",
+"info": "2980px"
+},
+"I3": {
+"ref": "pi:2560939",
+"credit": "Pixabay (StockSnap)",
+"info": "6016px"
+},
+"I4": {
+"ref": "pi:3499578",
+"credit": "Pixabay (Engin_Akyurt)",
+"info": "5616px"
+},
+"I5": {
+"ref": "pi:4685323",
+"credit": "Pixabay (652234)",
+"info": "6000px"
+},
+"I6": {
+"ref": "pi:2548827",
+"credit": "Pixabay (pixel2013)",
+"info": "5184px"
+},
+"I7": {
+"ref": "pi:1971552",
+"credit": "Pixabay (Daria-Yakovleva)",
+"info": "5536px"
+},
+"I8": {
+"ref": "pi:380178",
+"credit": "Pixabay (cbaquiran)",
+"info": "3008px"
+},
+"C1": {
+"ref": "wc:File:Night in November at Bakery Square (3023034437).jpg",
+"credit": "Wikimedia Commons, pittsburghmetblogpics, CC BY 2.0",
+"info": "1280px"
+},
+"C2": {
+"ref": "wc:File:Chinatown By Night - Eastern Bakery (6844819649).jpg",
+"credit": "Wikimedia Commons, Gary Stevens, CC BY 2.0",
+"info": "3648px"
+},
+"C3": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 04.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "4000px"
+},
+"C4": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 07.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "4000px"
+},
+"C5": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 09.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "4000px"
+},
+"C6": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 08.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "3000px"
+},
+"C7": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 10.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "3000px"
+},
+"C8": {
+"ref": "wc:File:SZ 深圳 Shenzhen 龍崗 Longgang 植物園路 ZiWuYuan Road shop 麵包時間餅店 BreadTime Bakery night June 2024 R12S 11.jpg",
+"credit": "Wikimedia Commons, FuoNiua Chinggez, CC0",
+"info": "3000px"
+}
+},
+"c14": {
+"V1": {
+"ref": "pv:227128",
+"credit": "Pixabay (kurt_BID)",
+"info": "6s"
+},
+"V2": {
+"ref": "pv:1015",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "18s"
+},
+"V3": {
+"ref": "pv:14239",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "21s"
+},
+"V4": {
+"ref": "pv:8247",
+"credit": "Pixabay (Coverr-Free-Footage)",
+"info": "11s"
+},
+"V5": {
+"ref": "pv:82787",
+"credit": "Pixabay (shahfaisalkhan6676)",
+"info": "14s"
+},
+"V6": {
+"ref": "pv:82786",
+"credit": "Pixabay (shahfaisalkhan6676)",
+"info": "14s"
+},
+"V7": {
+"ref": "pv:356623",
+"credit": "Pixabay (klaatubaradanikto)",
+"info": "5s"
+},
+"V8": {
+"ref": "pv:8596",
+"credit": "Pixabay (AlekseiyPovar)",
+"info": "16s"
+},
+"I1": {
+"ref": "pi:2561",
+"credit": "Pixabay (PublicDomainPictures)",
+"info": "4620px"
+},
+"I2": {
+"ref": "pi:2132863",
+"credit": "Pixabay (Daria-Yakovleva)",
+"info": "5312px"
+},
+"I3": {
+"ref": "pi:5999097",
+"credit": "Pixabay (Massariello)",
+"info": "3000px"
+},
+"I4": {
+"ref": "pi:10478968",
+"credit": "Pixabay (52600603)",
+"info": "3000px"
+},
+"I5": {
+"ref": "pi:2408035",
+"credit": "Pixabay (mandarinMD)",
+"info": "4080px"
+},
+"I6": {
+"ref": "pi:5981241",
+"credit": "Pixabay (romjanaly)",
+"info": "6144px"
+},
+"I7": {
+"ref": "pi:10421756",
+"credit": "Pixabay (nvd9612)",
+"info": "5016px"
+},
+"I8": {
+"ref": "pi:1626105",
+"credit": "Pixabay (mp1746)",
+"info": "3888px"
+},
+"C1": {
+"ref": "wc:File:Baguette 02.jpg",
+"credit": "Wikimedia Commons, Johann from Munich, Germany, CC BY 2.0",
+"info": "1760px"
+},
+"C2": {
+"ref": "wc:File:Ham baguette at Black Horse Inn, Nuthurst, West Sussex England.jpg",
+"credit": "Wikimedia Commons, Acabashi, CC BY-SA 4.0",
+"info": "3500px"
+},
+"C3": {
+"ref": "wc:File:Deli Baguette Sandwich (Unsplash).jpg",
+"credit": "Wikimedia Commons, petradr petradr, CC0",
+"info": "2896px"
+},
+"C4": {
+"ref": "wc:File:Sandwichs classiques.jpg",
+"credit": "Wikimedia Commons, Boulanger: Nat / Photographer: Nat, CC BY-SA 4.0",
+"info": "4516px"
+},
+"C5": {
+"ref": "wc:File:Baguette de Milanesa.jpg",
+"credit": "Wikimedia Commons, Photo.MarioVG, CC BY-SA 4.0",
+"info": "1080px"
+},
+"C6": {
+"ref": "wc:File:Steak sandwich with onions and cheese on a toasted baguette - Massachusetts.jpg",
+"credit": "Wikimedia Commons, Daderot, CC0",
+"info": "2805px"
+},
+"C7": {
+"ref": "wc:File:Submarine sandwich sub subway.jpg",
+"credit": "Wikimedia Commons, Pixabay, CC0",
+"info": "5184px"
+},
+"C8": {
+"ref": "wc:File:Baguette and Classic Breakfast - Harrisons Of Hove.jpg",
+"credit": "Wikimedia Commons, Andy Li, CC0",
+"info": "3024px"
+}
+}
+}

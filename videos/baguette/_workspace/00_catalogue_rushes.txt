@@ -45,3 +45,17 @@ r15 aucun timelapse de pâte qui lève ; I4 pâtons ronds rouleau (vu)
 r16 I8 pâte levée dans torchon panier (OK levée) ; I6 boule de pâte sur bois ; V2 tas de farine + rouleau sombre 7s (OK farine) ; C1 dessin cellule (levure possible, schéma)
 r17 C2 boulangère passe pâte dans façonneuse à baguettes (OK MACHINE) ; C3 façonneuse à baguettes pâtons longs (OK) ; C4 pâtons de baguettes crus alignés sur plaque (OK) ; C5 apprentis montrent pâtons de baguettes (uniformes militaires) ; C7 apprentis façonnent baguettes ; C8 baguettes cuisent dans four sombre (OK cuisson) ; I4 baguette isolée fond noir (OK) ; I6 croûte baguettes macro ; V3 façonneuse tapis 9s
 r18 C5 balance de boulanger ancienne farinée (OK pesée) ; C1 laminoir industriel ancien N&B ; C3 boulangerie industrielle ancienne N&B ; C6 boulangers pâtons plaque
+c01 C5 intérieur moulin : rangée de broyeurs à cylindres en bois (OK MOULIN À CYLINDRES, flèche "Roller Floor") ; C1 intérieur minoterie tuyaux machines ; C6 façade « China Grove Roller Mills — flour » (OK minoterie)
+c02 C2 salle de broyeurs à cylindres alignés (OK roller mill hall) ; C1 plansichter armoire bois ; C3 plansichters bleus modernes (OK tamiseurs) ; C7/C8 intérieur moulin transmissions courroies ; C4/C5 photos d'archive « production of flour » 1918 ; V7 couteau coupe baguette sur planche sombre 13s (OK baguette coupée vidéo !) ; V6 couteau coupe pain 44s ; V8 main pose pain planche 6s ; I1 farine/sucre qui tombe en pluie dans gobelet fond noir
+c03 rien (gluten introuvable)
+c04 C1 mie de baguette alvéolée gros plan (OK alvéoles) ; C2 cuisinier verse liquide
+c05 C1 cube de levure fraîche dans son papier (OK LEVURE) ; I5 pâte levée dans cuve + cuillère bois (OK levée) ; I6 idem sans cuillère ; I8 surface pâte levée macro ; I2 mains façonnent boule ; I3 rouleau sur pâte ; V8 main jette farine dans bol 10s (OK) ; V1 tas de farine + rouleau 7s
+c06 V7 baguette sur bois sombre avec épis de blé, vidéo 5s (OK ACCROCHE baguette+blé) ; I8 baguettes dorées gros plan ; I6 croûte macro (= r02 I7)
+c07 I6 baguettes rustiques alignées gros plan ; I5/I7 rangées baguettes dorées (boulangerie) ; I3 baguettes + épis blé ; I4 chariot de plaques baguettes crues (OK industrie) ; V4 four à bois flammes 51s
+c08 C4 façade BOULANGERIE pâtisserie Paris angle vert (OK) ; C5 Le Moulin de la Vierge façade (OK) ; I3 kiosque boulangerie ; V8 Tour Eiffel ciel 15s (OK Paris vidéo) ; V6 Seine coucher soleil 40s ; V7 terrasse café Paris 50s
+c09 C4 façade hypermarché E.LECLERC (OK Leclerc) ; C5 E.Leclerc parking pluie ; C1 E.Leclerc entrepôt parking ; C2 logo Leclerc entrée ; V3 drapeau français flotte 9s
+c10 I5 trois baguettes croisées fond sombre (OK BELLE baguette) ; C1 main tient baguette tradition (OK) ; C2 mie macro ; I1 baguette sachet (= r02 I3) ; I6/I8 croûte gros plan
+c11 C8 graphique « Commodity Prices » wheat (archive) ; I4 tableau cours chiffres ; I2 écrans bourse ; V1/V2 graphiques chandeliers animés 8s
+c12 I2 baguette dans sac papier + petits pains farine fond noir (OK) ; I4 baguette sur papier kraft fond blanc ; I6 pain dans sachet ; V5 couteau coupe baguette planche (= c02 V7)
+c13 I1 enseigne néon Patisserie nuit ; I4 boulangerie nuit cliente vitrine ; V7 nuit lune 30s
+c14 C4 sandwichs baguette jambon fromage (OK jambon-beurre) ; C3 baguette jambon gros plan
