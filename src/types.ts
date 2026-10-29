@@ -22,6 +22,8 @@ export type Schema =
       source?: string; revele_a?: number}
   | {type: 'comparaison'; titre?: string; unite?: string; decimales?: number; heros?: 'a' | 'b'; source?: string;
       a: {label: string; valeur: number}; b: {label: string; valeur: number}}
+  | {type: 'decoupe'; titre?: string; total?: number; unite?: string; decimales?: number; parts: PartPrix[]; source?: string;
+      zone?: [number, number] /* début/fin de l'objet en % de largeur de l'image */; zone_y?: [number, number]; ratio?: number}
   | {type: 'liste'; titre?: string; elements: {texte: string; valeur?: string; heros?: boolean}[]; source?: string};
 
 export type Son = {nom: string; a: number; volume?: number}; // a = secondes dans la scène

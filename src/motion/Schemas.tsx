@@ -2,7 +2,7 @@
 // Ils expliquent ce qu'une caméra ne montre pas : un prix décomposé, des étapes, un ordre de grandeur.
 // Chaque schéma tient dans une boîte de largeur `l` ; tailles de texte selon la règle n°8.
 import React from 'react';
-import {AbsoluteFill, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Audio} from '@remotion/media';
 import type {Schema} from '../types';
 import {theme, clamp} from '../theme';
@@ -269,8 +269,94 @@ const Liste: React.FC<{s: Extract<Schema, {type: 'liste'}>; l: number; duree: nu
   );
 };
 
-export const SchemaAnime: React.FC<{s: Schema; l: number; duree: number}> = ({s, l, duree}) => {
+
+// ---------- LE pic visuel : l'objet réel découpé en tronçons proportionnels à « qui touche quoi » ----------
+const Decoupe: React.FC<{s: Extract<Schema, {type: 'decoupe'}>; l: number; duree: number; media?: string}> = ({s, l, duree, media}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const total = s.total ?? s.parts.reduce((a, p) => a + p.valeur, 0);
+  const dec = s.decimales ?? 2;
+  const unite = s.unite ?? ' €';
+  const [z0, z1] = s.zone ?? [3, 97];
+  const [y0, y1] = s.zone_y ?? [30, 70];
+  const ratio = s.ratio ?? 3;
+  const n = s.parts.length;
+  const espace = 40; // écart entre tronçons à la fin
+  const largeurUtile = l - espace * (n - 1);
+  const imgL = (largeurUtile * 100) / (z1 - z0); // largeur de l'image entière à cette échelle
+  const imgH = imgL / ratio;
+  const h = Math.min(260, Math.max(90, (imgH * (y1 - y0)) / 100)); // hauteur de la bande visible (l'objet)
+  const marge = Math.max(0, (h - (imgH * (y1 - y0)) / 100) / 2);
+  const t0 = 8;
+  const tCoupe = t0 + Math.round(fps * 0.9);
+  const tEcart = tCoupe + Math.round(fps * 0.5);
+  const ecart = Math.max(6, Math.min(Math.round(fps * 0.45), Math.floor((duree * 0.35) / n)));
+  const pObj = spring({frame: f - t0, fps, config: theme.ressort.doux});
+  const pEcart = spring({frame: f - tEcart, fps, config: {damping: 16, stiffness: 90, mass: 1}});
+  const coupes: number[] = [];
+  let acc = 0;
+  s.parts.forEach((p) => { coupes.push(acc / total); acc += p.valeur; });
+  // étiquettes : deux rangées quand les tronçons sont trop serrés
+  const centres = s.parts.map((p, i) => i * espace + largeurUtile * (coupes[i] + p.valeur / total / 2));
+  const rangs: number[] = [];
+  centres.forEach((c, i) => { rangs.push(i && c - centres[i - 1] < 240 && rangs[i - 1] === 0 ? 1 : 0); });
+  const haut = 190; // place pour deux rangées d'étiquettes au-dessus
+  return (
+    <div style={{width: l}}>
+      <Titre texte={s.titre} />
+      <div style={{position: 'relative', width: l, height: haut + h + 30}}>
+        {s.parts.map((p, i) => {
+          const a = coupes[i];
+          const b = coupes[i] + p.valeur / total;
+          const ga = z0 + (z1 - z0) * a;
+          const x = interpolate(pEcart, [0, 1], [largeurUtile * a, i * espace + largeurUtile * a]);
+          const lift = p.heros ? interpolate(pEcart, [0, 1], [0, -18]) : 0;
+          const pLab = spring({frame: f - tEcart - 6 - i * ecart, fps, config: theme.ressort.vif});
+          const larg = largeurUtile * (b - a);
+          const yLab = rangs[i] ? 0 : 92;
+          return (
+            <React.Fragment key={i}>
+              <div style={{position: 'absolute', left: x, top: haut + lift, width: larg, height: h, overflow: 'hidden', opacity: pObj,
+                filter: p.heros ? `drop-shadow(0 0 26px ${C.lueur})` : 'drop-shadow(0 18px 24px rgba(0,0,0,.6))'}}>
+                {media ? (
+                  <Img src={staticFile(media)} style={{position: 'absolute', width: imgL, height: imgH, maxWidth: 'none', left: -(imgL * ga) / 100, top: marge - (imgH * y0) / 100}} />
+                ) : (
+                  <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg,#E9B46A,#B9763A)'}} />
+                )}
+                {p.heros ? <div style={{position: 'absolute', inset: 0, background: C.heros, mixBlendMode: 'color', opacity: 0.8 * pEcart}} /> : null}
+              </div>
+              {/* trait qui relie l'étiquette au tronçon */}
+              <div style={{position: 'absolute', left: x + larg / 2 - 1, top: yLab + 84, width: 2, height: haut - yLab - 90 + lift, background: p.heros ? C.heros : C.accent, opacity: 0.7 * pLab}} />
+              <div style={{position: 'absolute', left: x + larg / 2, top: yLab, transform: `translateX(-50%) translateY(${interpolate(pLab, [0, 1], [14, 0])}px)`,
+                opacity: pLab, textAlign: 'center', whiteSpace: 'nowrap', background: 'rgba(11,14,20,0.78)', borderRadius: 14, padding: '6px 18px',
+                border: `2px solid ${p.heros ? C.heros : 'rgba(255,255,255,0.12)'}`}}>
+                <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: p.heros ? 50 : 42, lineHeight: 1.05, color: p.heros ? C.heros : C.texte,
+                  fontVariantNumeric: 'tabular-nums'}}>{nombre(p.valeur, dec)}{unite}</div>
+                <div style={{fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 26, color: C.texteDim, letterSpacing: '0.04em', textTransform: 'uppercase'}}>{p.label}</div>
+              </div>
+            </React.Fragment>
+          );
+        })}
+        <svg width={l} height={haut + h + 30} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible', opacity: 1 - pEcart}}>
+          {coupes.slice(1).map((c, i) => {
+            const x = largeurUtile * c;
+            const tr = interpolate(f - tCoupe - i * 4, [0, 10], [0, 1], {...clamp, easing: theme.courbe.sortie});
+            return <line key={i} x1={x} x2={x} y1={haut - 16} y2={haut - 16 + (h + 32) * tr} stroke={C.texte} strokeWidth={4} strokeDasharray="14 10" />;
+          })}
+        </svg>
+      </div>
+      <Source texte={s.source} debut={tEcart + n * ecart} />
+      {coupes.slice(1).map((_, i) => <Bruit key={`c${i}`} nom="tick" a={tCoupe + i * 4} volume={0.35} />)}
+      <Bruit nom="whoosh" a={tEcart} volume={0.3} />
+      {s.parts.map((p, i) => <Bruit key={i} nom={p.heros ? 'impact' : 'pop'} a={tEcart + 6 + i * ecart} volume={p.heros ? 0.45 : 0.2} />)}
+    </div>
+  );
+};
+
+export const SchemaAnime: React.FC<{s: Schema; l: number; duree: number; media?: string}> = ({s, l, duree, media}) => {
   switch (s.type) {
+    case 'decoupe':
+      return <Decoupe s={s} l={l} duree={duree} media={media} />;
     case 'decomposition':
       return <Decomposition s={s} l={l} duree={duree} />;
     case 'processus':

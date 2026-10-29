@@ -1,7 +1,7 @@
 // Transforme episodes/<slug>/montage.json + médias + voix en public/ep/<slug>/props.json (la timeline exacte).
 import fs from 'node:fs';
 import path from 'node:path';
-import {execFileSync} from 'node:child_process';
+import {execFileSync, spawnSync} from 'node:child_process';
 
 const slug = process.argv[2];
 if (!slug) throw new Error('Usage : node scripts/construire.mjs <slug>');
@@ -118,6 +118,25 @@ const scenes = montage.scenes.map((s, i) => {
     sons,
   };
 });
+
+// Schéma "decoupe" : l'objet réel est découpé en tronçons. On mesure l'image (ratio) et, si l'objet est posé sur
+// un fond sombre, on détecte tout seul sa boîte englobante (cropdetect) pour couper pile dans l'objet.
+for (const s of scenes) {
+  if (s.schema?.type !== 'decoupe' || !s.media || s.type !== 'image') continue;
+  const f = path.join('public', s.media);
+  const [w, h] = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', f]).toString().trim().split(',').map(Number);
+  s.schema = {...s.schema, ratio: w / h};
+  if (!s.schema.zone || !s.schema.zone_y) {
+    const err = spawnSync('ffmpeg', ['-hide_banner', '-loop', '1', '-t', '0.3', '-i', f, '-vf', 'cropdetect=limit=0.05:round=2:reset=0:skip=0', '-f', 'null', '-']).stderr.toString();
+    const m = [...err.matchAll(/crop=(\d+):(\d+):(\d+):(\d+)/g)].at(-1);
+    if (m) {
+      const [cw, ch, cx, cy] = m.slice(1).map(Number);
+      s.schema.zone ??= [(cx / w) * 100, ((cx + cw) / w) * 100];
+      s.schema.zone_y ??= [(cy / h) * 100, ((cy + ch) / h) * 100];
+      console.log(`✔ ${s.id} : objet détecté x ${s.schema.zone.map((v) => v.toFixed(1)).join('–')} %, y ${s.schema.zone_y.map((v) => v.toFixed(1)).join('–')} %`);
+    }
+  }
+}
 
 // Sound design automatique (règle n°7) : petit souffle à chaque changement de format,
 // riser qui monte dans la dernière seconde et demie avant chaque carte de chapitre.
