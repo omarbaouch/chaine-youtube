@@ -1,0 +1,2655 @@
+[
+ {
+  "id": "p001",
+  "partie": "00",
+  "format": "rush",
+  "texte": "Dans une baguette à un euro, le blé coûte… six centimes.",
+  "media_ref": "pv:303458",
+  "catalogue": "c06 V7",
+  "faits": [
+   "F01",
+   "F04"
+  ],
+  "couches": [
+   {
+    "type": "visee",
+    "x": 22,
+    "y": 30,
+    "l": 56,
+    "h": 34,
+    "a": 0.2
+   },
+   {
+    "type": "source",
+    "texte": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+    "a": 2.8
+   }
+  ],
+  "punch": {
+   "a": 3.2,
+   "texte": "6 CENTIMES"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 3.2,
+    "volume": 0.6
+   }
+  ]
+ },
+ {
+  "id": "p002",
+  "partie": "00",
+  "format": "ecran_partage",
+  "texte": "Six centimes. Une pièce de cinq, plus une de un.",
+  "media_ref": "wc:File:Euro coins 2.jpg",
+  "catalogue": "r26 C4",
+  "faits": [
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le blé d’une baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.06,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "blé contenu dans une baguette de 250 g",
+   "source": "OFPM 2026 (données 2025) : 0,24 €/kg × 0,25 kg",
+   "comparaison": "1 pièce de 5 c + 1 pièce de 1 c",
+   "revele_a": 0.6
+  }
+ },
+ {
+  "id": "p003",
+  "partie": "00",
+  "format": "mosaique",
+  "texte": "Alors, où passent les quatre-vingt-quatorze autres centimes ?",
+  "medias": [
+   {
+    "media_ref": "pv:203874",
+    "legende": "1,01 €"
+   },
+   {
+    "media_ref": "wc:File:Paid bill for coffee.jpg"
+   }
+  ],
+  "catalogue": [
+   "r26 V1",
+   "r26 C7"
+  ],
+  "faits": [
+   "F04"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 2.0,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p004",
+  "partie": "00",
+  "format": "rush",
+  "texte": "Et en France, on en vend six milliards par an.",
+  "media_ref": "wc:File:Baguettes, Paris, France - panoramio.jpg",
+  "catalogue": "r24 C7",
+  "faits": [
+   "F28"
+  ],
+  "surtitre": "CNBPF, dossier de presse 2025"
+ },
+ {
+  "id": "p005",
+  "partie": "00",
+  "format": "schema",
+  "texte": "Cent quatre-vingt-dix par seconde. Pendant que tu écoutes cette phrase.",
+  "media_ref": "pi:2609042",
+  "catalogue": "r27 I8",
+  "faits": [
+   "F28"
+  ],
+  "etiquette_schema": "Baguettes vendues en France",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 190,
+   "decimales": 0,
+   "suffixe": " / s",
+   "legende": "baguettes vendues en France",
+   "source": "CNBPF, dossier de presse 2025",
+   "comparaison": "≈ 6 milliards par an"
+  }
+ },
+ {
+  "id": "p006",
+  "partie": "00",
+  "format": "rush",
+  "texte": "Suivons une baguette, du champ jusqu'à ta bouche.",
+  "media_ref": "pi:2417533",
+  "catalogue": "r02 I1",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 52,
+    "y": 40,
+    "vers_x": 66,
+    "vers_y": 22,
+    "texte": "Baguette",
+    "a": 0.5
+   }
+  ]
+ },
+ {
+  "id": "p007",
+  "partie": "00",
+  "format": "mosaique",
+  "texte": "Le grain, le moulin, la pâte, le four. Puis la facture.",
+  "medias": [
+   {
+    "media_ref": "pv:122707",
+    "legende": "01 Le grain"
+   },
+   {
+    "media_ref": "wc:File:China Grove, North Carolina Roller Mill.jpg",
+    "legende": "02 Le moulin"
+   },
+   {
+    "media_ref": "pi:4433634",
+    "legende": "03 La pâte"
+   },
+   {
+    "media_ref": "wc:File:Baking Bread Communal Oven, 2011.jpg",
+    "legende": "04 Le four"
+   }
+  ],
+  "catalogue": [
+   "r04 V1",
+   "c01 C6",
+   "r13 I1",
+   "r21 C2"
+  ],
+  "sons": [
+   {
+    "nom": "whoosh",
+    "a": 0,
+    "volume": 0.35
+   }
+  ]
+ },
+ {
+  "id": "p008",
+  "partie": "01",
+  "format": "titre",
+  "media_ref": "pv:245681",
+  "catalogue": "r03 V5",
+  "numero": "01",
+  "titre": "Le grain",
+  "sous_titre": "Du champ au silo",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p009",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Tout commence avec un semoir, qui enterre des grains de blé.",
+  "media_ref": "pv:43044",
+  "catalogue": "r35 V1",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 45,
+    "vers_x": 64,
+    "vers_y": 24,
+    "texte": "Semoir",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p010",
+  "partie": "01",
+  "format": "mosaique",
+  "texte": "Des mois plus tard, les épis verts sont devenus dorés.",
+  "medias": [
+   {
+    "media_ref": "pv:42379",
+    "legende": "Épis verts"
+   },
+   {
+    "media_ref": "pv:17285",
+    "legende": "Blé mûr"
+   }
+  ],
+  "catalogue": [
+   "r03 V7",
+   "r03 V1"
+  ]
+ },
+ {
+  "id": "p011",
+  "partie": "01",
+  "format": "ecran_partage",
+  "texte": "En deux mille vingt-cinq, la France en a récolté trente-trois millions de tonnes.",
+  "media_ref": "pi:7363775",
+  "catalogue": "r04 I4",
+  "faits": [
+   "F22"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Récolte française 2025",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 33.3,
+   "decimales": 1,
+   "suffixe": " Mt",
+   "legende": "blé tendre récolté en France en 2025",
+   "source": "FranceAgriMer, Qualit@lim 2025",
+   "revele_a": 3.2
+  }
+ },
+ {
+  "id": "p012",
+  "partie": "01",
+  "format": "rush",
+  "texte": "La moissonneuse coupe, bat les épis, et ne garde que le grain.",
+  "media_ref": "pv:232561",
+  "catalogue": "r05 V1",
+  "couches": [
+   {
+    "type": "visee",
+    "x": 35,
+    "y": 30,
+    "l": 30,
+    "h": 34,
+    "a": 0.3
+   }
+  ]
+ },
+ {
+  "id": "p013",
+  "partie": "01",
+  "format": "schema",
+  "texte": "La paille ressort derrière, le grain monte dans un réservoir.",
+  "media_ref": "pv:86119",
+  "catalogue": "r05 V6",
+  "etiquette_schema": "Schéma : dans la moissonneuse",
+  "schema": {
+   "type": "processus",
+   "titre": "Dans la moissonneuse",
+   "etapes": [
+    "Couper",
+    "Battre",
+    "Séparer la paille",
+    "Grain au réservoir"
+   ],
+   "actif": 3
+  }
+ },
+ {
+  "id": "p014",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Une fois plein, il se vide dans une remorque.",
+  "media_ref": "pv:86122",
+  "catalogue": "r05 V8",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 55,
+    "y": 50,
+    "vers_x": 70,
+    "vers_y": 28,
+    "texte": "Grain de blé",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p015",
+  "partie": "01",
+  "format": "mosaique",
+  "texte": "Puis le grain part en camion, jusqu'aux silos.",
+  "medias": [
+   {
+    "media_ref": "pi:554521"
+   },
+   {
+    "media_ref": "wc:File:Grain hopper trailer.webp"
+   },
+   {
+    "media_ref": "pi:5434589",
+    "legende": "Silos"
+   }
+  ],
+  "catalogue": [
+   "r06 I1",
+   "r06 C7",
+   "r08 I2"
+  ]
+ },
+ {
+  "id": "p016",
+  "partie": "01",
+  "format": "ecran_partage",
+  "texte": "Combien de blé faut-il pour une seule baguette ?",
+  "media_ref": "pi:3534233",
+  "catalogue": "r07 I4",
+  "faits": [
+   "F19"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Blé dans une baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 270,
+   "decimales": 0,
+   "suffixe": " g",
+   "legende": "de blé pour une baguette de 250 g (environ)",
+   "source": "Calcul : recette GMP + CAP boulanger + taux d’extraction (01b §2.2)",
+   "comparaison": "Plus lourd que la baguette",
+   "revele_a": 3.4
+  }
+ },
+ {
+  "id": "p017",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Environ deux cent soixante-dix grammes. Plus lourd que la baguette elle-même !",
+  "media_ref": "wc:File:Wheat Grain (109321671).jpeg",
+  "catalogue": "r07 C8",
+  "faits": [
+   "F19"
+  ],
+  "punch": {
+   "a": 0.4,
+   "texte": "270 G"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 0.4,
+    "volume": 0.6
+   }
+  ]
+ },
+ {
+  "id": "p018",
+  "partie": "01",
+  "format": "schema",
+  "texte": "Elle, une fois cuite, pèse deux cent cinquante grammes.",
+  "media_ref": "pi:5153522",
+  "catalogue": "r03 I5",
+  "faits": [
+   "F13",
+   "F15",
+   "F19"
+  ],
+  "etiquette_schema": "Blé utilisé contre baguette cuite",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Plus de blé que de pain",
+   "unite": " g",
+   "decimales": 0,
+   "heros": "a",
+   "a": {
+    "label": "Blé utilisé",
+    "valeur": 270
+   },
+   "b": {
+    "label": "Baguette cuite",
+    "valeur": 250
+   },
+   "source": "Calcul 01b §2.2 ; UFC-Que Choisir 2025"
+  }
+ },
+ {
+  "id": "p019",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Et ce blé, il vaut combien ? Son prix se fixe à la tonne.",
+  "media_ref": "wc:File:Commodity Prices.webp",
+  "catalogue": "c11 C8",
+  "faits": [
+   "F20",
+   "F21"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 45,
+    "y": 40,
+    "vers_x": 62,
+    "vers_y": 22,
+    "texte": "Cours du blé (archive)",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p020",
+  "partie": "01",
+  "format": "ecran_partage",
+  "texte": "En deux mille vingt-cinq : environ deux cents euros la tonne.",
+  "media_ref": "pv:62390",
+  "catalogue": "r03 V6",
+  "faits": [
+   "F20"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Prix du blé tendre",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 201,
+   "decimales": 0,
+   "suffixe": " €/t",
+   "legende": "blé tendre, moyenne 2025 (rendu Rouen)",
+   "source": "DRAAF Centre-Val de Loire, bilan agricole 2025",
+   "revele_a": 2.0
+  }
+ },
+ {
+  "id": "p021",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Soit vingt centimes le kilo de blé.",
+  "media_ref": "pi:8487373",
+  "catalogue": "r07 I7",
+  "faits": [
+   "F20"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "0,20 € LE KILO",
+    "heros": "0,20 €",
+    "a": 0.8,
+    "position": "haut"
+   }
+  ]
+ },
+ {
+  "id": "p022",
+  "partie": "01",
+  "format": "schema",
+  "texte": "Ta baguette, elle, coûte quatre euros le kilo. Vingt fois plus cher.",
+  "media_ref": "pv:197946",
+  "catalogue": "r23 V8",
+  "faits": [
+   "F01",
+   "F20"
+  ],
+  "etiquette_schema": "Prix au kilo",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Le kilo",
+   "unite": " €",
+   "decimales": 2,
+   "heros": "b",
+   "a": {
+    "label": "Kilo de blé",
+    "valeur": 0.2
+   },
+   "b": {
+    "label": "Kilo de baguette",
+    "valeur": 4.05
+   },
+   "source": "DRAAF 2025 ; INSEE 2025"
+  },
+  "punch": {
+   "a": 3.0,
+   "texte": "× 20"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 3.0,
+    "volume": 0.6
+   }
+  ]
+ },
+ {
+  "id": "p023",
+  "partie": "01",
+  "format": "mosaique",
+  "texte": "Mais un grain de blé, c'est dur comme un caillou.",
+  "medias": [
+   {
+    "media_ref": "pi:7363769"
+   },
+   {
+    "media_ref": "wc:File:Wheat ear close-up in a field Bangladesh 03.jpg"
+   }
+  ],
+  "catalogue": [
+   "r04 I3",
+   "r04 C2"
+  ]
+ },
+ {
+  "id": "p024",
+  "partie": "01",
+  "format": "rush",
+  "texte": "Comment on en fait une poudre blanche, toute fine ?",
+  "media_ref": "pv:128126",
+  "catalogue": "r19 V7",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 1.6,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p025",
+  "partie": "02",
+  "format": "titre",
+  "media_ref": "wc:File:Victoria Mills, Ashford, roller mill.JPG",
+  "catalogue": "c01 C1",
+  "numero": "02",
+  "titre": "Le moulin",
+  "sous_titre": "Du grain à la farine",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p026",
+  "partie": "02",
+  "format": "mosaique",
+  "texte": "Pendant des siècles, l'eau ou le vent faisaient tourner des meules de pierre.",
+  "medias": [
+   {
+    "media_ref": "pi:5709598",
+    "legende": "Meule de pierre"
+   },
+   {
+    "media_ref": "pv:94003",
+    "legende": "Roue à aubes"
+   }
+  ],
+  "catalogue": [
+   "r09 I3",
+   "r09 V2"
+  ]
+ },
+ {
+  "id": "p027",
+  "partie": "02",
+  "format": "rush",
+  "texte": "Aujourd'hui, des cylindres d'acier écrasent le grain, étape par étape.",
+  "media_ref": "wc:File:Alcalá de Henares (RPS 14-12-2022) Fábrica de harinas La Esperanza, plansichters dobles.png",
+  "catalogue": "c02 C2",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 40,
+    "y": 55,
+    "vers_x": 58,
+    "vers_y": 30,
+    "texte": "Broyeurs à cylindres",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p028",
+  "partie": "02",
+  "format": "schema",
+  "texte": "Broyer un peu, tamiser, puis recommencer. Encore et encore.",
+  "media_ref": "wc:File:Industries of War - Flour - PRODUCTION OF FLOUR AT PLANT OF CLEVELAND MILLING CO., CLEVELAND, OHIO. Sifter, grading reels, purifier and dust collectors in corn milling department - NARA - 31488360.jpg",
+  "catalogue": "c02 C4",
+  "etiquette_schema": "Schéma : l'intérieur d'un moulin à cylindres",
+  "schema": {
+   "type": "processus",
+   "titre": "Au moulin",
+   "etapes": [
+    "Broyer",
+    "Tamiser",
+    "Rebroyer",
+    "Farine"
+   ],
+   "actif": 1
+  }
+ },
+ {
+  "id": "p029",
+  "partie": "02",
+  "format": "rush",
+  "texte": "Ces armoires sont des tamis géants, qui secouent la farine sans arrêt.",
+  "media_ref": "wc:File:Plansifters.jpg",
+  "catalogue": "c02 C3",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 45,
+    "vers_x": 66,
+    "vers_y": 22,
+    "texte": "Tamis géants",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p030",
+  "partie": "02",
+  "format": "ecran_partage",
+  "texte": "L'enveloppe du grain, le son, part d'un côté. La farine, de l'autre.",
+  "media_ref": "wc:File:De Bloemmolens van Diksmuide Plansifter van Henry Simon Ltd. - 372762 - onroerenderfgoed.jpg",
+  "catalogue": "c02 C1",
+  "faits": [
+   "F18"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : ce que fait le tamis",
+  "schema": {
+   "type": "liste",
+   "titre": "Au tamisage",
+   "elements": [
+    {
+     "texte": "Le son (l'enveloppe)",
+     "valeur": "écarté"
+    },
+    {
+     "texte": "La farine",
+     "valeur": "gardée",
+     "heros": true
+    }
+   ],
+   "source": "Taux d’extraction : OQLF ; Intercéréales 2021"
+  }
+ },
+ {
+  "id": "p031",
+  "partie": "02",
+  "format": "rush",
+  "texte": "Sur cent kilos de blé, on garde environ soixante-dix-huit kilos de farine.",
+  "media_ref": "pi:667768",
+  "catalogue": "r11 I3",
+  "faits": [
+   "F18"
+  ],
+  "surtitre": "Intercéréales 2021 (taux de la filière)",
+  "punch": {
+   "a": 3.4,
+   "texte": "78 KG"
+  }
+ },
+ {
+  "id": "p032",
+  "partie": "02",
+  "format": "schema",
+  "texte": "Pour ta baguette : environ deux cent dix grammes de farine.",
+  "faits": [
+   "F16"
+  ],
+  "etiquette_schema": "Farine dans une baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 210,
+   "decimales": 0,
+   "suffixe": " g",
+   "legende": "de farine dans une baguette de 250 g (environ)",
+   "source": "Calcul : recette GMP + CAP boulanger (01b §2.2)",
+   "comparaison": "Le reste : eau, sel, levure",
+   "revele_a": 2.2
+  }
+ },
+ {
+  "id": "p033",
+  "partie": "02",
+  "format": "mosaique",
+  "texte": "Pour la tradition, c'est souvent une farine T soixante-cinq.",
+  "medias": [
+   {
+    "media_ref": "pv:73847"
+   },
+   {
+    "media_ref": "pi:1528338",
+    "legende": "Farine de blé"
+   }
+  ],
+  "catalogue": [
+   "r12 V6",
+   "r11 I1"
+  ],
+  "faits": [
+   "F48"
+  ]
+ },
+ {
+  "id": "p034",
+  "partie": "02",
+  "format": "ecran_partage",
+  "texte": "Le T, c'est le taux de cendres : ce qui reste quand on la brûle.",
+  "media_ref": "wc:File:Baker sifting flour in a wooden bowl for making dough at a rustic kitchen.jpg",
+  "catalogue": "r10 C6",
+  "faits": [
+   "F48"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le type de farine",
+  "schema": {
+   "type": "liste",
+   "titre": "Taux de cendres",
+   "elements": [
+    {
+     "texte": "T55",
+     "valeur": "0,50 – 0,60 %"
+    },
+    {
+     "texte": "T65",
+     "valeur": "0,62 – 0,75 %",
+     "heros": true
+    }
+   ],
+   "source": "Cahier des charges Label Rouge LA 05/14 (JO du 29/01/2025)"
+  }
+ },
+ {
+  "id": "p035",
+  "partie": "02",
+  "format": "rush",
+  "texte": "Et le meunier, il touche combien, lui ?",
+  "media_ref": "wc:File:Bristol MMB «B1 CWS Flour Mills.jpg",
+  "catalogue": "r09 C1",
+  "faits": [
+   "F04"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 1.6,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p036",
+  "partie": "02",
+  "format": "schema",
+  "texte": "Sept centimes par baguette. Un peu plus que le blé lui-même.",
+  "media_ref": "wc:File:20240801 - Morristown Feed Mill-08 - 53953495737.jpg",
+  "catalogue": "r09 C8",
+  "faits": [
+   "F04"
+  ],
+  "etiquette_schema": "Marge brute du meunier, par baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.07,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "marge brute de la meunerie, par baguette",
+   "source": "OFPM 2026 (données 2025) : 0,27 €/kg × 0,25 kg",
+   "comparaison": "Le blé : 0,06 €",
+   "revele_a": 0.6
+  }
+ },
+ {
+  "id": "p037",
+  "partie": "02",
+  "format": "ecran_partage",
+  "texte": "C'est une marge brute, pas un bénéfice : elle fait tourner le moulin.",
+  "media_ref": "wc:File:Calbourne Mill 240623g.JPG",
+  "catalogue": "c01 C5",
+  "faits": [
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Marge brute ≠ bénéfice",
+  "schema": {
+   "type": "liste",
+   "titre": "7 centimes pour",
+   "elements": [
+    {
+     "texte": "Les machines"
+    },
+    {
+     "texte": "Les salaires du moulin"
+    },
+    {
+     "texte": "Marge brute, pas bénéfice",
+     "heros": true
+    }
+   ],
+   "source": "OFPM 2026"
+  }
+ },
+ {
+  "id": "p038",
+  "partie": "02",
+  "format": "mosaique",
+  "texte": "Farine plus eau : une pâte lourde et collante.",
+  "medias": [
+   {
+    "media_ref": "pv:65278",
+    "legende": "Farine"
+   },
+   {
+    "media_ref": "pi:1882395",
+    "legende": "Eau"
+   }
+  ],
+  "catalogue": [
+   "r16 V2",
+   "r10 I2"
+  ]
+ },
+ {
+  "id": "p039",
+  "partie": "02",
+  "format": "rush",
+  "texte": "Alors, d'où vient tout cet air dans la mie ?",
+  "media_ref": "wc:File:Sourdoughbreadcrumb.jpg",
+  "catalogue": "r36 C2",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 1.4,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p040",
+  "partie": "03",
+  "format": "titre",
+  "media_ref": "pv:140934",
+  "catalogue": "r20 V5",
+  "numero": "03",
+  "titre": "La pâte",
+  "sous_titre": "Une usine vivante",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p041",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Pour s'appeler tradition, une baguette suit un décret de mille neuf cent quatre-vingt-treize.",
+  "media_ref": "wc:File:Baguette with cheese.jpg",
+  "catalogue": "c10 C1",
+  "faits": [
+   "F32"
+  ],
+  "surtitre": "Décret n° 93-1074 du 13 septembre 1993"
+ },
+ {
+  "id": "p042",
+  "partie": "03",
+  "format": "schema",
+  "texte": "Farine, eau, sel, levure ou levain. Aucun additif, et jamais surgelée.",
+  "faits": [
+   "F32"
+  ],
+  "etiquette_schema": "Décret de 1993, article 2 (extrait)",
+  "schema": {
+   "type": "liste",
+   "titre": "Pain de tradition française",
+   "elements": [
+    {
+     "texte": "Farine de blé"
+    },
+    {
+     "texte": "Eau"
+    },
+    {
+     "texte": "Sel"
+    },
+    {
+     "texte": "Levure ou levain"
+    },
+    {
+     "texte": "Aucun additif, jamais surgelé",
+     "heros": true
+    }
+   ],
+   "source": "Décret n° 93-1074, art. 2"
+  }
+ },
+ {
+  "id": "p043",
+  "partie": "03",
+  "format": "ecran_partage",
+  "texte": "La recette type : un kilo de farine, six cent trente grammes d'eau.",
+  "media_ref": "pv:140931",
+  "catalogue": "c05 V8",
+  "faits": [
+   "F14"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Recette professionnelle type",
+  "schema": {
+   "type": "liste",
+   "titre": "Recette (farine T65)",
+   "elements": [
+    {
+     "texte": "Farine",
+     "valeur": "1 000 g"
+    },
+    {
+     "texte": "Eau",
+     "valeur": "630 g",
+     "heros": true
+    },
+    {
+     "texte": "Sel",
+     "valeur": "18 g"
+    },
+    {
+     "texte": "Levure",
+     "valeur": "15 g"
+    }
+   ],
+   "source": "Fiche technique Grands Moulins de Paris, réf. 00234"
+  }
+ },
+ {
+  "id": "p044",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Et ce petit cube : quinze grammes de levure fraîche.",
+  "media_ref": "wc:File:Compressed fresh yeast - 1.jpg",
+  "catalogue": "c05 C1",
+  "faits": [
+   "F14"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 48,
+    "y": 52,
+    "vers_x": 64,
+    "vers_y": 28,
+    "texte": "Levure fraîche",
+    "a": 0.4
+   }
+  ],
+  "punch": {
+   "a": 1.6,
+   "texte": "15 G"
+  }
+ },
+ {
+  "id": "p045",
+  "partie": "03",
+  "format": "mosaique",
+  "texte": "Direction le pétrin : son crochet brasse la pâte sans relâche.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Mixing Tara's Fried Dough.jpg",
+    "legende": "Le crochet"
+   },
+   {
+    "media_ref": "wc:File:Baking dough blender Diosna 1951 IMG 7656 cloppenburg museumsdorf.JPG",
+    "legende": "La cuve"
+   }
+  ],
+  "catalogue": [
+   "r13 C4",
+   "r13 C6"
+  ]
+ },
+ {
+  "id": "p046",
+  "partie": "03",
+  "format": "ecran_partage",
+  "texte": "Le gluten n'existe pas dans la farine. Il naît ici, au pétrissage.",
+  "media_ref": "wc:File:Female figurine kneading dough(?) MET GR690.jpg",
+  "catalogue": "r13 C8",
+  "faits": [
+   "F41"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : le réseau de gluten",
+  "schema": {
+   "type": "processus",
+   "titre": "Naissance du gluten",
+   "etapes": [
+    "Gliadines",
+    "Gluténines",
+    "+ eau + pétrissage",
+    "Réseau de gluten"
+   ],
+   "actif": 3,
+   "source": "CNRS Le Journal 2023 ; Wieser 2007"
+  }
+ },
+ {
+  "id": "p047",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Deux familles de protéines du blé s'accrochent entre elles.",
+  "media_ref": "pv:11563",
+  "catalogue": "r21 V7",
+  "faits": [
+   "F40"
+  ]
+ },
+ {
+  "id": "p048",
+  "partie": "03",
+  "format": "schema",
+  "texte": "Elles forment un filet élastique, qui se répare tout seul.",
+  "media_ref": "pi:4183076",
+  "catalogue": "r12 I7",
+  "faits": [
+   "F41"
+  ],
+  "etiquette_schema": "Schéma : un filet qui se répare",
+  "schema": {
+   "type": "processus",
+   "titre": "Le réseau de gluten",
+   "etapes": [
+    "Des liaisons cassent",
+    "Elles se reforment",
+    "Un filet auto-réparant"
+   ],
+   "actif": 2,
+   "source": "CNRS Le Journal, 28/08/2023"
+  }
+ },
+ {
+  "id": "p049",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Pendant ce temps, la levure se réveille : un champignon microscopique, vivant.",
+  "media_ref": "pi:5569192",
+  "catalogue": "c05 I8",
+  "faits": [
+   "F42"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 50,
+    "vers_x": 66,
+    "vers_y": 26,
+    "texte": "Bulles de gaz",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p050",
+  "partie": "03",
+  "format": "schema",
+  "texte": "Elle mange les sucres, et rejette du gaz carbonique et de l'alcool.",
+  "media_ref": "pi:5571077",
+  "catalogue": "c05 I6",
+  "faits": [
+   "F42"
+  ],
+  "etiquette_schema": "Schéma : la fermentation",
+  "schema": {
+   "type": "processus",
+   "titre": "La fermentation",
+   "etapes": [
+    "Sucres",
+    "Levure",
+    "Gaz carbonique",
+    "+ alcool"
+   ],
+   "actif": 2,
+   "source": "Universalis ; Planet-Vie (ENS)"
+  }
+ },
+ {
+  "id": "p051",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Le gluten piège ce gaz. Et la pâte gonfle.",
+  "media_ref": "pi:5571079",
+  "catalogue": "c05 I5",
+  "faits": [
+   "F41",
+   "F42"
+  ]
+ },
+ {
+  "id": "p052",
+  "partie": "03",
+  "format": "ecran_partage",
+  "texte": "Ce repos, c'est le pointage. Au froid, jusqu'à environ vingt-quatre heures.",
+  "media_ref": "pi:7395604",
+  "catalogue": "r16 I8",
+  "faits": [
+   "F43"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Pousse lente",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 24,
+   "decimales": 0,
+   "suffixe": " h",
+   "legende": "pousse lente, entre 8 et 12 °C (environ)",
+   "source": "Fiche CAP boulanger",
+   "comparaison": "Une journée entière",
+   "revele_a": 3.2
+  }
+ },
+ {
+  "id": "p053",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Puis le boulanger découpe la pâte, et pèse chaque morceau.",
+  "media_ref": "wc:File:US Navy 041206-N-5837R-029 Culinary Specialist 3rd Class Joshua Savoy spreads flour on his food preparation table before making peach cobbler dough for the crew of the Nimitz-class aircraft carrier USS Abraham Lincoln (CVN 72).jpg",
+  "catalogue": "r12 C2",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 55,
+    "vers_x": 66,
+    "vers_y": 30,
+    "texte": "Coupe-pâte",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p054",
+  "partie": "03",
+  "format": "ecran_partage",
+  "texte": "Trois cent cinquante grammes par pâton : une future baguette.",
+  "media_ref": "wc:File:Váhy na vážení těsta.jpg",
+  "catalogue": "r18 C5",
+  "faits": [
+   "F14",
+   "F15"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Poids d'un pâton",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 350,
+   "decimales": 0,
+   "suffixe": " g",
+   "legende": "de pâte crue par baguette",
+   "source": "Fiche GMP ; sujet CAP Boulanger",
+   "comparaison": "→ 250 g une fois cuite",
+   "revele_a": 0.4
+  }
+ },
+ {
+  "id": "p055",
+  "partie": "03",
+  "format": "mosaique",
+  "texte": "Chaque pâton est roulé en long, à la main ou à la machine.",
+  "medias": [
+   {
+    "media_ref": "pv:43653",
+    "legende": "À la main"
+   },
+   {
+    "media_ref": "wc:File:5 façonneuse à baguettes.jpg",
+    "legende": "À la façonneuse"
+   }
+  ],
+  "catalogue": [
+   "r28 V7",
+   "r17 C2"
+  ]
+ },
+ {
+  "id": "p056",
+  "partie": "03",
+  "format": "rush",
+  "texte": "Les pâtons se reposent encore, alignés sur une toile de lin.",
+  "media_ref": "wc:File:Early morning bread stop (5051823549).jpg",
+  "catalogue": "r28 C6",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 45,
+    "y": 60,
+    "vers_x": 62,
+    "vers_y": 36,
+    "texte": "Couche de lin",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p057",
+  "partie": "03",
+  "format": "ecran_partage",
+  "texte": "Pétrir, attendre, peser, façonner : c'est du temps de boulanger.",
+  "media_ref": "pi:4310465",
+  "catalogue": "r12 I4",
+  "cote": "gauche",
+  "etiquette_schema": "Les étapes de la pâte",
+  "schema": {
+   "type": "processus",
+   "titre": "Le temps de la pâte",
+   "etapes": [
+    "Pétrir",
+    "Pointage",
+    "Diviser",
+    "Façonner",
+    "Apprêt"
+   ],
+   "actif": 4,
+   "source": "Fiche CAP boulanger"
+  }
+ },
+ {
+  "id": "p058",
+  "partie": "03",
+  "format": "rush",
+  "texte": "La pâte est prête. Mais il manque un ingrédient secret.",
+  "media_ref": "wc:File:Baguette coocking - IMG 4272 (14160296194).jpg",
+  "catalogue": "r17 C4",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 2.4,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p059",
+  "partie": "03",
+  "format": "mosaique",
+  "texte": "Sans lui, ta baguette sortirait du four plate, la croûte terne.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Dough before stretching (15463325352).jpg"
+   },
+   {
+    "media_ref": "pi:725873"
+   }
+  ],
+  "catalogue": [
+   "r14 C2",
+   "r12 I6"
+  ],
+  "faits": [
+   "F46"
+  ]
+ },
+ {
+  "id": "p060",
+  "partie": "04",
+  "format": "titre",
+  "media_ref": "pv:2336",
+  "catalogue": "r21 V4",
+  "numero": "04",
+  "titre": "Le four",
+  "sous_titre": "240 °C",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p061",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Avant d'enfourner, le boulanger entaille chaque pâton d'un coup de lame.",
+  "media_ref": "pi:1614188",
+  "catalogue": "r19 I2",
+  "faits": [
+   "F47"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 45,
+    "vers_x": 66,
+    "vers_y": 22,
+    "texte": "Coup de lame",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p062",
+  "partie": "04",
+  "format": "ecran_partage",
+  "texte": "Des coupes longues et peu profondes, la lame tenue de biais.",
+  "media_ref": "wc:File:Sourdough Bread Loaf.jpg",
+  "catalogue": "r19 C3",
+  "faits": [
+   "F47"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : le bon coup de lame",
+  "schema": {
+   "type": "liste",
+   "titre": "Le coup de lame",
+   "elements": [
+    {
+     "texte": "Coupe longue"
+    },
+    {
+     "texte": "Peu profonde"
+    },
+    {
+     "texte": "Lame de biais",
+     "heros": true
+    }
+   ],
+   "source": "INBP, supplément technique n° 105 (2016)"
+  }
+ },
+ {
+  "id": "p063",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Dans le four, ces entailles s'ouvrent : ce sont les grignes.",
+  "media_ref": "wc:File:Home baked bread. Bake bread. Szreniawa.jpg",
+  "catalogue": "r21 C1",
+  "faits": [
+   "F47"
+  ],
+  "punch": {
+   "a": 2.8,
+   "texte": "LES GRIGNES"
+  }
+ },
+ {
+  "id": "p064",
+  "partie": "04",
+  "format": "schema",
+  "texte": "Le four chauffe à environ deux cent quarante degrés.",
+  "media_ref": "pv:17177",
+  "catalogue": "r22 V7",
+  "faits": [
+   "F14",
+   "F44"
+  ],
+  "etiquette_schema": "Température du four",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 240,
+   "decimales": 0,
+   "suffixe": " °C",
+   "legende": "four de boulanger",
+   "source": "Fiche technique Grands Moulins de Paris",
+   "comparaison": "± 20 °C selon le four",
+   "revele_a": 2.0
+  }
+ },
+ {
+  "id": "p065",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Et voici l'ingrédient secret : la buée. De la vapeur d'eau.",
+  "media_ref": "wc:File:Bread in the oven (5959009561).jpg",
+  "catalogue": "r20 C2",
+  "faits": [
+   "F46"
+  ],
+  "punch": {
+   "a": 2.4,
+   "texte": "LA BUÉE"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 2.4,
+    "volume": 0.6
+   }
+  ]
+ },
+ {
+  "id": "p066",
+  "partie": "04",
+  "format": "ecran_partage",
+  "texte": "Elle garde la croûte souple, pour que la baguette gonfle.",
+  "media_ref": "wc:File:Baguette Cooking - IMG 4276 (14180272263).jpg",
+  "catalogue": "r17 C8",
+  "faits": [
+   "F44",
+   "F46"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : le rôle de la buée",
+  "schema": {
+   "type": "processus",
+   "titre": "La buée",
+   "etapes": [
+    "Buée",
+    "Croûte souple",
+    "La baguette gonfle",
+    "Croûte fine et brillante"
+   ],
+   "actif": 2,
+   "source": "INBP n° 105 ; Innograin 2024"
+  }
+ },
+ {
+  "id": "p067",
+  "partie": "04",
+  "format": "schema",
+  "texte": "Sans buée, pain plat et croûte terne. Trop de buée : pas de grigne.",
+  "media_ref": "wc:File:Bread maker Qormi.jpg",
+  "catalogue": "r20 C5",
+  "faits": [
+   "F46"
+  ],
+  "etiquette_schema": "Le dosage de la buée",
+  "schema": {
+   "type": "liste",
+   "titre": "La buée",
+   "elements": [
+    {
+     "texte": "Sans buée",
+     "valeur": "pain plat, croûte terne"
+    },
+    {
+     "texte": "Trop de buée",
+     "valeur": "pas de grigne, croûte molle"
+    },
+    {
+     "texte": "Bonne dose",
+     "valeur": "croûte fine et brillante",
+     "heros": true
+    }
+   ],
+   "source": "INBP, supplément technique n° 105"
+  }
+ },
+ {
+  "id": "p068",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Vers cinquante degrés, la levure meurt. Ses bulles restent figées dans la mie.",
+  "media_ref": "wc:File:Pain au levain dit à l'ancienne 02.jpg",
+  "catalogue": "c04 C1",
+  "faits": [
+   "F43",
+   "F44"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 50,
+    "vers_x": 66,
+    "vers_y": 26,
+    "texte": "Bulles figées",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p069",
+  "partie": "04",
+  "format": "ecran_partage",
+  "texte": "Vers soixante-dix degrés, l'amidon se gélifie : la mie prend.",
+  "media_ref": "pi:749838",
+  "catalogue": "r36 I6",
+  "faits": [
+   "F44"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : dans la baguette qui cuit",
+  "schema": {
+   "type": "liste",
+   "titre": "Dans le four",
+   "elements": [
+    {
+     "texte": "50 °C",
+     "valeur": "la levure meurt"
+    },
+    {
+     "texte": "70 °C",
+     "valeur": "l'amidon se gélifie",
+     "heros": true
+    },
+    {
+     "texte": "100 °C",
+     "valeur": "surface, tant que l'eau s'évapore"
+    },
+    {
+     "texte": "130 °C",
+     "valeur": "la croûte dore"
+    }
+   ],
+   "source": "Innograin (Univ. de Valladolid), 2024"
+  }
+ },
+ {
+  "id": "p070",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Au-delà de cent trente degrés, la croûte dore.",
+  "media_ref": "pi:2472608",
+  "catalogue": "r23 I5",
+  "faits": [
+   "F44"
+  ],
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 45,
+    "vers_x": 66,
+    "vers_y": 22,
+    "texte": "Croûte",
+    "a": 0.4
+   }
+  ],
+  "punch": {
+   "a": 2.0,
+   "texte": "130 °C"
+  }
+ },
+ {
+  "id": "p071",
+  "partie": "04",
+  "format": "schema",
+  "texte": "C'est la réaction de Maillard : sucres, acides aminés et chaleur.",
+  "media_ref": "pi:1743939",
+  "catalogue": "r02 I7",
+  "faits": [
+   "F45"
+  ],
+  "etiquette_schema": "Schéma : la réaction de Maillard",
+  "schema": {
+   "type": "processus",
+   "titre": "Réaction de Maillard",
+   "etapes": [
+    "Sucres",
+    "Acides aminés",
+    "Chaleur",
+    "Croûte dorée et parfumée"
+   ],
+   "actif": 3,
+   "source": "Futura Sciences 2021 ; Innograin"
+  }
+ },
+ {
+  "id": "p072",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Elle donne à la croûte sa couleur et son parfum.",
+  "media_ref": "pi:1761219",
+  "catalogue": "r17 I6",
+  "faits": [
+   "F45"
+  ]
+ },
+ {
+  "id": "p073",
+  "partie": "04",
+  "format": "ecran_partage",
+  "texte": "Dans le four, chaque pâton perd environ cent grammes d'eau.",
+  "media_ref": "wc:File:Putting bread in the oven (5958998763).jpg",
+  "catalogue": "r20 C1",
+  "faits": [
+   "F15"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : l'eau qui s'évapore",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Avant / après cuisson",
+   "unite": " g",
+   "decimales": 0,
+   "heros": "b",
+   "a": {
+    "label": "Pâton cru",
+    "valeur": 350
+   },
+   "b": {
+    "label": "Baguette cuite",
+    "valeur": 250
+   },
+   "source": "Sujet CAP Boulanger (Éduscol)"
+  }
+ },
+ {
+  "id": "p074",
+  "partie": "04",
+  "format": "mosaique",
+  "texte": "Reste une baguette de deux cent cinquante grammes, qui craque en refroidissant.",
+  "medias": [
+   {
+    "media_ref": "pi:2436370"
+   },
+   {
+    "media_ref": "pi:1870254"
+   }
+  ],
+  "catalogue": [
+   "r20 I1",
+   "c07 I7"
+  ],
+  "faits": [
+   "F15"
+  ]
+ },
+ {
+  "id": "p075",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Mais ce four, il faut le payer.",
+  "media_ref": "pi:96512",
+  "catalogue": "r32 I6",
+  "couches": [
+   {
+    "type": "annotation",
+    "x": 50,
+    "y": 45,
+    "vers_x": 66,
+    "vers_y": 22,
+    "texte": "Compteur électrique",
+    "a": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p076",
+  "partie": "04",
+  "format": "schema",
+  "texte": "L'énergie : près de quatre virgule cinq pour cent du chiffre d'affaires d'une boulangerie.",
+  "media_ref": "pi:96863",
+  "catalogue": "r32 I1",
+  "faits": [
+   "F25"
+  ],
+  "etiquette_schema": "Énergie / chiffre d'affaires",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 4.48,
+   "decimales": 2,
+   "suffixe": " %",
+   "legende": "du chiffre d'affaires (données 2024)",
+   "source": "Observatoire Fiducial 2025",
+   "revele_a": 2.8
+  }
+ },
+ {
+  "id": "p077",
+  "partie": "04",
+  "format": "rush",
+  "texte": "Et toi, tu paies tout ça combien ? Et à qui ?",
+  "media_ref": "pi:3395872",
+  "catalogue": "r01 I7",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 1.8,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p078",
+  "partie": "05",
+  "format": "titre",
+  "media_ref": "pv:138315",
+  "catalogue": "r26 V3",
+  "numero": "05",
+  "titre": "La facture",
+  "sous_titre": "Qui touche quoi",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p079",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Pour suivre l'argent, il y a l'Observatoire de la formation des prix et des marges.",
+  "media_ref": "pi:7601802",
+  "catalogue": "r25 I3",
+  "faits": [
+   "F04"
+  ],
+  "surtitre": "OFPM, FranceAgriMer, rapport 2026"
+ },
+ {
+  "id": "p080",
+  "partie": "05",
+  "format": "ecran_partage",
+  "texte": "Il décortique la baguette courante, boulangeries et supermarchés confondus.",
+  "media_ref": "pi:2588182",
+  "catalogue": "r29 I7",
+  "faits": [
+   "F06"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Ce que mesure l'observatoire",
+  "schema": {
+   "type": "liste",
+   "titre": "Le périmètre",
+   "elements": [
+    {
+     "texte": "Baguette courante",
+     "valeur": "pas la tradition"
+    },
+    {
+     "texte": "Tous circuits",
+     "valeur": "boulangeries + supermarchés",
+     "heros": true
+    }
+   ],
+   "source": "OFPM 2026, section 7 « Pain »"
+  }
+ },
+ {
+  "id": "p081",
+  "partie": "05",
+  "format": "schema",
+  "texte": "Prix moyen en deux mille vingt-cinq : un euro et un centime.",
+  "media_ref": "wc:File:Dibre !.JPG",
+  "catalogue": "r24 C3",
+  "faits": [
+   "F01"
+  ],
+  "etiquette_schema": "Prix moyen de la baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 1.01,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "baguette de 250 g, moyenne 2025",
+   "source": "INSEE, série 000442615 (4,05 €/kg)",
+   "comparaison": "4,05 € le kilo",
+   "revele_a": 3.0
+  }
+ },
+ {
+  "id": "p082",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Coupons-la. Un morceau pour chaque maillon de la chaîne.",
+  "media_ref": "pv:207992",
+  "catalogue": "c02 V7",
+  "sons": [
+   {
+    "nom": "riser",
+    "a": 1.0,
+    "volume": 0.4
+   }
+  ]
+ },
+ {
+  "id": "p083",
+  "partie": "05",
+  "format": "ecran_partage",
+  "texte": "Le blé, on l'a vu : six centimes. Le meunier : sept.",
+  "media_ref": "pi:4357683",
+  "catalogue": "r07 I2",
+  "faits": [
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Les deux premiers morceaux",
+  "schema": {
+   "type": "liste",
+   "titre": "Par baguette",
+   "elements": [
+    {
+     "texte": "Blé",
+     "valeur": "0,06 €",
+     "heros": true
+    },
+    {
+     "texte": "Meunier",
+     "valeur": "0,07 €"
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+  }
+ },
+ {
+  "id": "p084",
+  "partie": "05",
+  "format": "mosaique",
+  "texte": "L'État prend sa TVA, cinq virgule cinq pour cent : cinq centimes.",
+  "medias": [
+   {
+    "media_ref": "pv:140354",
+    "legende": "TVA 5,5 %"
+   },
+   {
+    "media_ref": "pi:1642989",
+    "legende": "0,05 €"
+   }
+  ],
+  "catalogue": [
+   "c09 V3",
+   "r26 I8"
+  ],
+  "faits": [
+   "F04",
+   "F10"
+  ]
+ },
+ {
+  "id": "p085",
+  "partie": "05",
+  "format": "schema",
+  "texte": "Et tout ce qui se passe après le moulin ? Quatre-vingt-trois centimes.",
+  "media_ref": "wc:File:Bread-breakfast-baguette-sliced (24244220141).jpg",
+  "catalogue": "r24 C6",
+  "faits": [
+   "F04"
+  ],
+  "etiquette_schema": "Après le moulin, par baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.83,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "pour tout ce qui se passe après le moulin",
+   "source": "OFPM 2026 (données 2025) : 3,33 €/kg × 0,25 kg",
+   "comparaison": "artisans, usines, magasins",
+   "revele_a": 3.2
+  },
+  "sons": [
+   {
+    "nom": "riser",
+    "a": 1.4,
+    "volume": 0.4
+   },
+   {
+    "nom": "impact",
+    "a": 3.2,
+    "volume": 0.6
+   }
+  ],
+  "punch": {
+   "a": 3.2,
+   "texte": "83 CENTIMES"
+  }
+ },
+ {
+  "id": "p086",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Mets les morceaux bout à bout, et regarde ta baguette.",
+  "media_ref": "pi:1597868",
+  "catalogue": "c10 I5",
+  "sons": [
+   {
+    "nom": "whoosh",
+    "a": 2.0,
+    "volume": 0.35
+   }
+  ]
+ },
+ {
+  "id": "p087",
+  "partie": "05",
+  "format": "schema",
+  "texte": "Le blé, ce petit bout orange : à peine six pour cent du prix hors taxes.",
+  "media_ref": "pi:3277831",
+  "catalogue": "r17 I4",
+  "faits": [
+   "F04",
+   "F05"
+  ],
+  "etiquette_schema": "La baguette découpée selon qui touche quoi",
+  "schema": {
+   "type": "decomposition",
+   "titre": "Une baguette à 1,01 €",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06,
+     "heros": true
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+  },
+  "sons": [
+   {
+    "nom": "riser",
+    "a": 0.0,
+    "volume": 0.4
+   },
+   {
+    "nom": "impact",
+    "a": 1.2,
+    "volume": 0.6
+   }
+  ],
+  "punch": {
+   "a": 4.4,
+   "texte": "6 %"
+  },
+  "note_monteur": "PIC visuel : la vraie baguette (fond noir) est découpée en 4 tronçons proportionnels ; le tronçon blé s'écarte en orange."
+ },
+ {
+  "id": "p088",
+  "partie": "05",
+  "format": "ecran_partage",
+  "texte": "Après le moulin : près de quatre-vingt-sept pour cent.",
+  "media_ref": "pi:8503298",
+  "catalogue": "r25 I1",
+  "faits": [
+   "F05"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Part de l'aval",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 86.7,
+   "decimales": 1,
+   "suffixe": " %",
+   "legende": "part « après le moulin » du prix hors taxes",
+   "source": "OFPM 2026, graphique 172",
+   "revele_a": 1.6
+  }
+ },
+ {
+  "id": "p089",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Attention : ce n'est pas le bénéfice du boulanger.",
+  "media_ref": "wc:File:Bakery oven bread, 2013.jpg",
+  "catalogue": "r20 C4"
+ },
+ {
+  "id": "p090",
+  "partie": "05",
+  "format": "schema",
+  "texte": "C'est une marge brute. Elle paie les salaires, l'énergie, le loyer, la levure.",
+  "media_ref": "pi:1868925",
+  "catalogue": "r27 I2",
+  "faits": [
+   "F04"
+  ],
+  "etiquette_schema": "Ce que paient les 83 centimes",
+  "schema": {
+   "type": "liste",
+   "titre": "83 c de marge brute",
+   "elements": [
+    {
+     "texte": "Salaires"
+    },
+    {
+     "texte": "Énergie"
+    },
+    {
+     "texte": "Loyer"
+    },
+    {
+     "texte": "Sel, levure"
+    },
+    {
+     "texte": "Pas un bénéfice",
+     "heros": true
+    }
+   ],
+   "source": "OFPM 2026"
+  }
+ },
+ {
+  "id": "p091",
+  "partie": "05",
+  "format": "mosaique",
+  "texte": "Et elle concerne aussi les usines de pain et les supermarchés.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Early morning bread stop (5051829793).jpg",
+    "legende": "Artisans"
+   },
+   {
+    "media_ref": "wc:File:Jacob's biscuit factory (19137953022).jpg",
+    "legende": "Industrie"
+   },
+   {
+    "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 Breads etc.jpg",
+    "legende": "Supermarchés"
+   }
+  ],
+  "catalogue": [
+   "r28 C7",
+   "r18 C3",
+   "r30 C5"
+  ],
+  "faits": [
+   "F06"
+  ]
+ },
+ {
+  "id": "p092",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Regarde ce qui s'est passé en deux mille vingt-deux.",
+  "media_ref": "pv:338956",
+  "catalogue": "c11 V1",
+  "faits": [
+   "F07"
+  ]
+ },
+ {
+  "id": "p093",
+  "partie": "05",
+  "format": "schema",
+  "texte": "Le blé flambe : onze virgule quatre pour cent du prix hors taxes.",
+  "media_ref": "pi:1863880",
+  "catalogue": "c11 I2",
+  "faits": [
+   "F07"
+  ],
+  "etiquette_schema": "Part du blé en 2022",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 11.4,
+   "decimales": 1,
+   "suffixe": " %",
+   "legende": "part du blé dans le prix HT, 2022",
+   "source": "OFPM 2026, graphique 172",
+   "comparaison": "6,2 % en 2025",
+   "revele_a": 1.6
+  }
+ },
+ {
+  "id": "p094",
+  "partie": "05",
+  "format": "ecran_partage",
+  "texte": "Depuis, le blé a reculé : environ quatre centimes de moins par baguette.",
+  "media_ref": "pi:8844604",
+  "catalogue": "r04 I2",
+  "faits": [
+   "F07",
+   "F08",
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le blé dans une baguette",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Blé par baguette",
+   "unite": " €",
+   "decimales": 2,
+   "heros": "b",
+   "a": {
+    "label": "2022",
+    "valeur": 0.1
+   },
+   "b": {
+    "label": "2025",
+    "valeur": 0.06
+   },
+   "source": "OFPM 2026, graphique 171, ramené à 250 g"
+  }
+ },
+ {
+  "id": "p095",
+  "partie": "05",
+  "format": "rush",
+  "texte": "Mais la baguette, elle, a pris environ huit centimes.",
+  "media_ref": "pi:4054286",
+  "catalogue": "r27 I6",
+  "faits": [
+   "F08",
+   "F04"
+  ],
+  "punch": {
+   "a": 2.2,
+   "texte": "+ 8 CENTIMES"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 2.2,
+    "volume": 0.6
+   }
+  ],
+  "surtitre": "OFPM : 0,94 € (2022) → 1,01 € (2025)"
+ },
+ {
+  "id": "p096",
+  "partie": "05",
+  "format": "ecran_partage",
+  "texte": "Pourquoi ? L'observatoire pointe les coûts après le moulin : énergie, salaires.",
+  "media_ref": "pi:167969",
+  "catalogue": "r32 I5",
+  "faits": [
+   "F09"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "L'explication de l'observatoire",
+  "schema": {
+   "type": "liste",
+   "titre": "Les coûts de l’aval",
+   "elements": [
+    {
+     "texte": "Énergie",
+     "heros": true
+    },
+    {
+     "texte": "Salaires"
+    },
+    {
+     "texte": "Production"
+    }
+   ],
+   "source": "OFPM 2026"
+  }
+ },
+ {
+  "id": "p097",
+  "partie": "05",
+  "format": "mosaique",
+  "texte": "Alors, le boulanger roule sur l'or ? Regarde bien.",
+  "medias": [
+   {
+    "media_ref": "pi:400249"
+   },
+   {
+    "media_ref": "pv:9091"
+   }
+  ],
+  "catalogue": [
+   "r26 I2",
+   "r26 V6"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 1.6,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p098",
+  "partie": "06",
+  "format": "titre",
+  "media_ref": "wc:File:Paris at morning (51724082201).jpg",
+  "catalogue": "r34 C8",
+  "numero": "06",
+  "titre": "Ton euro",
+  "sous_titre": "Dans la caisse du boulanger",
+  "duree_min": 2.8,
+  "transition": "glissement"
+ },
+ {
+  "id": "p099",
+  "partie": "06",
+  "format": "rush",
+  "texte": "Une boulangerie reste ouverte en moyenne cinquante-six heures par semaine.",
+  "media_ref": "pi:3499578",
+  "catalogue": "c13 I4",
+  "faits": [
+   "F27"
+  ],
+  "surtitre": "Observatoire Fiducial 2026",
+  "punch": {
+   "a": 2.8,
+   "texte": "56 H"
+  }
+ },
+ {
+  "id": "p100",
+  "partie": "06",
+  "format": "mosaique",
+  "texte": "En boulangerie, la baguette coûte en moyenne un euro douze en deux mille vingt-six.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Austrian Hot Dog.jpg"
+   },
+   {
+    "media_ref": "wc:File:PA00088610 Boulangerie.jpg"
+   }
+  ],
+  "catalogue": [
+   "r02 C1",
+   "c08 C4"
+  ],
+  "faits": [
+   "F11"
+  ],
+  "surtitre": "Fiducial 2026, 400 points de vente"
+ },
+ {
+  "id": "p101",
+  "partie": "06",
+  "format": "schema",
+  "texte": "Appliquons les ratios moyens d'une boulangerie à cette baguette.",
+  "media_ref": "pi:17318",
+  "catalogue": "c13 I1",
+  "faits": [
+   "F24"
+  ],
+  "etiquette_schema": "Ratios Fiducial appliqués à une baguette (illustration)",
+  "schema": {
+   "type": "liste",
+   "titre": "Sur 1,06 € hors taxes",
+   "elements": [
+    {
+     "texte": "Salaires",
+     "valeur": "≈ 0,43 €"
+    },
+    {
+     "texte": "Matières",
+     "valeur": "≈ 0,33 €"
+    },
+    {
+     "texte": "Loyer",
+     "valeur": "≈ 0,06 €"
+    },
+    {
+     "texte": "Énergie",
+     "valeur": "≈ 0,05 €"
+    },
+    {
+     "texte": "Bénéfice net",
+     "valeur": "?",
+     "heros": true
+    }
+   ],
+   "source": "Observatoire Fiducial 2026 (résultats 2025), société à l’IS"
+  }
+ },
+ {
+  "id": "p102",
+  "partie": "06",
+  "format": "rush",
+  "texte": "D'abord les salaires : environ quarante-trois centimes. Le plus gros poste.",
+  "media_ref": "pi:8364737",
+  "catalogue": "r12 I1",
+  "faits": [
+   "F24"
+  ]
+ },
+ {
+  "id": "p103",
+  "partie": "06",
+  "format": "mosaique",
+  "texte": "Les matières, farine, beurre et compagnie : environ trente-trois centimes.",
+  "medias": [
+   {
+    "media_ref": "pv:784",
+    "legende": "Farine"
+   },
+   {
+    "media_ref": "wc:File:Baguette and butter curls.jpg",
+    "legende": "Beurre"
+   }
+  ],
+  "catalogue": [
+   "r11 V2",
+   "r24 C8"
+  ],
+  "faits": [
+   "F24"
+  ]
+ },
+ {
+  "id": "p104",
+  "partie": "06",
+  "format": "rush",
+  "texte": "Le loyer : environ six centimes. L'énergie : environ cinq.",
+  "media_ref": "wc:File:Boulangerie 64 rue Saint-Dominique Paris 7e.jpg",
+  "catalogue": "c08 C5",
+  "faits": [
+   "F24",
+   "F25"
+  ]
+ },
+ {
+  "id": "p105",
+  "partie": "06",
+  "format": "schema",
+  "texte": "Et le bénéfice net ? Environ trois centimes par baguette.",
+  "media_ref": "wc:File:French bread.JPG",
+  "catalogue": "r24 C2",
+  "faits": [
+   "F24"
+  ],
+  "etiquette_schema": "Bénéfice net, par baguette (illustration)",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.03,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "résultat net : 3 % (société à l’IS)",
+   "source": "Observatoire Fiducial 2026, appliqué à 1,06 € HT",
+   "comparaison": "La moitié du blé qu’elle contient",
+   "revele_a": 1.8
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 1.8,
+    "volume": 0.6
+   }
+  ]
+ },
+ {
+  "id": "p106",
+  "partie": "06",
+  "format": "ecran_partage",
+  "texte": "Attention, c'est une illustration : ces ratios incluent aussi viennoiserie et pâtisserie.",
+  "media_ref": "pi:677274",
+  "catalogue": "r29 I5",
+  "faits": [
+   "F24"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Pourquoi c’est une illustration",
+  "schema": {
+   "type": "liste",
+   "titre": "Les ratios couvrent",
+   "elements": [
+    {
+     "texte": "Pain"
+    },
+    {
+     "texte": "Viennoiserie"
+    },
+    {
+     "texte": "Pâtisserie"
+    },
+    {
+     "texte": "Toute l’activité",
+     "heros": true
+    }
+   ],
+   "source": "Observatoire Fiducial 2026"
+  }
+ },
+ {
+  "id": "p107",
+  "partie": "06",
+  "format": "rush",
+  "texte": "À son compte, le patron affiche onze pour cent. Mais sa paie est dedans.",
+  "media_ref": "wc:File:Kelmscott Manor, domestic outbuildings, Wooden shovel for taking bread in and out of the oven - geograph.org.uk - 5794755.jpg",
+  "catalogue": "r22 C1",
+  "faits": [
+   "F24"
+  ]
+ },
+ {
+  "id": "p108",
+  "partie": "06",
+  "format": "mosaique",
+  "texte": "Ce que tu paies surtout, ce sont des heures humaines. Souvent de nuit.",
+  "medias": [
+   {
+    "media_ref": "pv:21223"
+   },
+   {
+    "media_ref": "pv:75700"
+   }
+  ],
+  "catalogue": [
+   "r33 V2",
+   "r29 V8"
+  ],
+  "faits": [
+   "F27"
+  ]
+ },
+ {
+  "id": "p109",
+  "partie": "06",
+  "format": "rush",
+  "texte": "Pour savoir ce que coûtent vraiment les objets du quotidien, abonne-toi.",
+  "media_ref": "pi:1398259",
+  "catalogue": "r01 I1",
+  "couches": [
+   {
+    "type": "carton",
+    "texte": "ABONNE-TOI",
+    "a": 2.4
+   }
+  ]
+ },
+ {
+  "id": "p110",
+  "partie": "06",
+  "format": "ecran_partage",
+  "texte": "Et les boulangeries se raréfient : environ trente-cinq mille, contre cinquante-cinq mille en mille neuf cent soixante-dix.",
+  "media_ref": "pi:4992402",
+  "catalogue": "r29 I1",
+  "faits": [
+   "F30"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Boulangeries artisanales en France",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Nombre de boulangeries",
+   "unite": "",
+   "decimales": 0,
+   "heros": "b",
+   "a": {
+    "label": "1970",
+    "valeur": 55000
+   },
+   "b": {
+    "label": "2025",
+    "valeur": 35000
+   },
+   "source": "CNBPF 2025 ; AFP 2022"
+  }
+ },
+ {
+  "id": "p111",
+  "partie": "06",
+  "format": "rush",
+  "texte": "Puis, le onze janvier deux mille vingt-deux, une annonce secoue la filière.",
+  "media_ref": "wc:File:Hypermarché Leclerc Bellerive-sur-Allier.jpg",
+  "catalogue": "c09 C4",
+  "faits": [
+   "F34"
+  ],
+  "surtitre": "11 janvier 2022"
+ },
+ {
+  "id": "p112",
+  "partie": "06",
+  "format": "schema",
+  "texte": "Leclerc bloque sa baguette à vingt-neuf centimes maximum, pendant au moins quatre mois.",
+  "media_ref": "wc:File:Entrée E. Leclerc Beynost.JPG",
+  "catalogue": "c09 C2",
+  "faits": [
+   "F34"
+  ],
+  "etiquette_schema": "La baguette à 29 centimes",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.29,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "baguette de 250 g, prix maximum annoncé",
+   "source": "RMC, 11/01/2022 (via Pleinchamp)",
+   "comparaison": "Moyenne : 1,01 €",
+   "revele_a": 2.6
+  }
+ },
+ {
+  "id": "p113",
+  "partie": "06",
+  "format": "mosaique",
+  "texte": "Un concurrent s'aligne neuf jours après. La filière dénonce une opération démagogique.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Asda - bread aisle.jpg"
+   },
+   {
+    "media_ref": "pv:1735"
+   }
+  ],
+  "catalogue": [
+   "r30 C7",
+   "r30 V4"
+  ],
+  "faits": [
+   "F35"
+  ]
+ },
+ {
+  "id": "p114",
+  "partie": "06",
+  "format": "ecran_partage",
+  "texte": "Le secret ? Des pâtons faits en usine, surgelés, puis seulement cuits en magasin.",
+  "media_ref": "pi:19669",
+  "catalogue": "c07 I4",
+  "faits": [
+   "F36"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : la baguette premier prix",
+  "schema": {
+   "type": "processus",
+   "titre": "Premier prix",
+   "etapes": [
+    "Pâtons en usine",
+    "Surgelés",
+    "Cuits en magasin"
+   ],
+   "actif": 2,
+   "source": "UFC-Que Choisir, 2025"
+  }
+ },
+ {
+  "id": "p115",
+  "partie": "06",
+  "format": "rush",
+  "texte": "C'est aussi un prix d'appel, pour faire venir les clients.",
+  "media_ref": "pv:21117",
+  "catalogue": "r30 V1",
+  "faits": [
+   "F36"
+  ]
+ },
+ {
+  "id": "p116",
+  "partie": "06",
+  "format": "schema",
+  "texte": "L'enseigne dit ne pas vendre à perte. Aujourd'hui, le premier prix : vingt-huit centimes.",
+  "media_ref": "pi:3105629",
+  "catalogue": "r30 I8",
+  "faits": [
+   "F34",
+   "F37"
+  ],
+  "etiquette_schema": "Premier prix contre boulangerie",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Une baguette en 2026",
+   "unite": " €",
+   "decimales": 2,
+   "heros": "a",
+   "a": {
+    "label": "Premier prix, supermarché",
+    "valeur": 0.28
+   },
+   "b": {
+    "label": "Boulangerie",
+    "valeur": 1.12
+   },
+   "source": "UFC-Que Choisir 2026 ; Fiducial 2026"
+  }
+ },
+ {
+  "id": "p117",
+  "partie": "06",
+  "format": "rush",
+  "texte": "Alors, une baguette à vingt-huit centimes… qui la paie vraiment ?",
+  "media_ref": "pi:888894",
+  "catalogue": "c12 I4",
+  "faits": [
+   "F37"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "?",
+    "heros": "?",
+    "a": 2.2,
+    "position": "centre"
+   }
+  ]
+ },
+ {
+  "id": "p118",
+  "partie": "06",
+  "format": "mosaique",
+  "texte": "Le boulanger ? L'agriculteur ? Ou toi, sur le reste du caddie ?",
+  "medias": [
+   {
+    "media_ref": "pi:1868396",
+    "legende": "Le boulanger ?"
+   },
+   {
+    "media_ref": "pi:1530321",
+    "legende": "L'agriculteur ?"
+   },
+   {
+    "media_ref": "pi:2619380",
+    "legende": "Toi ?"
+   }
+  ],
+  "catalogue": [
+   "r28 I2",
+   "r07 I3",
+   "r30 I6"
+  ]
+ },
+ {
+  "id": "p119",
+  "partie": "06",
+  "format": "rush",
+  "texte": "La semaine prochaine, on suit l'argent du chocolat. Qui touche quoi sur une tablette ?",
+  "media_ref": "pi:2180330",
+  "catalogue": "r26 I4",
+  "couches": [
+   {
+    "type": "carton",
+    "texte": "PROCHAINE VIDÉO : LE CHOCOLAT",
+    "sous_texte": "Qui touche quoi sur une tablette ?",
+    "a": 0.4
+   }
+  ],
+  "note_monteur": "Aucun plan de chocolat dans le catalogue : carton texte seulement. Repérage Commons (cabosse, tablette) à faire, puis remplacer le fond."
+ },
+ {
+  "id": "p120",
+  "partie": "06",
+  "format": "titre",
+  "media_ref": "pi:6570934",
+  "catalogue": "c06 I8",
+  "titre": "Qui paie la baguette à 28 c ?",
+  "sous_titre": "Prochaine vidéo : le chocolat",
+  "duree_min": 3.0
+ }
+]
