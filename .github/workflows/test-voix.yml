@@ -4,7 +4,7 @@ name: Test voix
 on:
   push:
     branches: [main]
-    paths: ['tests/voix/**']
+    paths: ['tests/voix/**', 'scripts/traitement_audio.py']
   workflow_dispatch:
 
 permissions:
@@ -22,12 +22,12 @@ jobs:
       - name: Installer Pocket TTS (CPU)
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          pip install -q pocket-tts huggingface_hub --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install -q pocket-tts scipy huggingface_hub --extra-index-url https://download.pytorch.org/whl/cpu
       - name: Générer les extraits
         run: python tests/voix/generer.py
       - name: Publier
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "test-voix-${{ github.run_number }}" out/voix/*.mp3 out/voix/LISEZMOI.txt \
+          gh release create "test-voix-${{ github.run_number }}" out/voix/*.wav out/voix/LISEZMOI.txt \
             --title "🎙️ Test voix #${{ github.run_number }}" --notes "Écoute et choisis ta voix préférée." --prerelease

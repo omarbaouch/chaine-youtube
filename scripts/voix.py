@@ -8,7 +8,8 @@ Priorité pour chaque scène :
 
 Chaque voix IA passe par une chaîne de traitement "radio" réglée par mesure (scripts/analyse_voix.py) :
 coupe-bas, creux dans le "carton" (220/380 Hz), présence (2,7/4,3 kHz), sifflantes maîtrisées,
-compression douce, limiteur, puis normalisation en deux passes à -16 LUFS / -1,5 dBTP.
+débruitage, porte de bruit, compression douce, limiteur, normalisation en deux passes à -16 LUFS / -1,5 dBTP
+(voir scripts/traitement_audio.py).
 Écrit aussi <id>.json avec le minutage de chaque phrase (pour caler les sous-titres).
 """
 import hashlib
@@ -26,6 +27,7 @@ montage = json.load(open(os.path.join(dossier_ep, "montage.json"), encoding="utf
 reglages = montage.get("voix", {})
 moteur = os.environ.get("VOIX_MOTEUR", reglages.get("moteur", "pocket"))
 modele_nom = reglages.get("modele", "french_24l")
+etapes = int(reglages.get("etapes", 5))  # étapes de calcul Pocket TTS : plus = moins de défauts, plus lent
 locuteur = reglages.get("locuteur", "estelle")
 temperature = float(reglages.get("temperature", 0.3))  # plus haut = plus expressif, moins stable
 pause_phrase = float(reglages.get("pause_phrase", 0.22))
@@ -35,42 +37,13 @@ os.makedirs(sortie, exist_ok=True)
 os.makedirs(cache, exist_ok=True)
 SR = 48000
 
-# Égalisation mesurée sur la voix Pocket TTS (voir scripts/analyse_voix.py) — à refaire si on change de voix.
-EGALISATION_IA = ",".join([
-    "highpass=f=85:poles=2",
-    "equalizer=f=220:t=q:w=1.4:g=-2",
-    "equalizer=f=380:t=q:w=1.2:g=-4",
-    "equalizer=f=2700:t=q:w=0.8:g=4",
-    "equalizer=f=4300:t=q:w=1.0:g=2.5",
-    "equalizer=f=7000:t=q:w=1.2:g=-1.5",
-    "lowpass=f=11500:poles=2",
-    "deesser=i=0.6:m=0.6:f=0.5",
-])
-EGALISATION_MICRO = "highpass=f=80:poles=2,afftdn=nr=10:nf=-45,equalizer=f=300:t=q:w=1.2:g=-2,deesser=i=0.4:m=0.5:f=0.5"
-DYNAMIQUE = "acompressor=threshold=-26dB:ratio=2.2:attack=10:release=160:knee=6:makeup=2,alimiter=limit=0.84:attack=3:release=60:level=disabled"
-
-
-def ffmpeg(*args):
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *args], check=True)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from traitement_audio import EGALISATION_IA, EGALISATION_MICRO, ffmpeg, traiter  # noqa: E402
 
 
 def duree(path):
     with wave.open(path) as w:
         return w.getnframes() / w.getframerate()
-
-
-def traiter(src, dest, egalisation):
-    """EQ + dynamique, puis normalisation EBU R128 en deux passes (linéaire : ne déforme pas la voix)."""
-    tmp = dest + ".pre.wav"
-    ffmpeg("-i", src, "-af", f"{egalisation},{DYNAMIQUE}", "-ar", str(SR), "-ac", "1", tmp)
-    mesure = subprocess.run(["ffmpeg", "-nostats", "-i", tmp, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
-                            capture_output=True, text=True).stderr
-    m = json.loads(mesure[mesure.rindex("{"):mesure.rindex("}") + 1])
-    ffmpeg("-i", tmp, "-af",
-           f"loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
-           f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
-           "-ar", str(SR), "-ac", "1", dest)
-    os.remove(tmp)
 
 
 def phrases(texte):
@@ -95,7 +68,7 @@ def modele():
         from pocket_tts import TTSModel
 
         print(f"Chargement de Pocket TTS ({modele_nom}, voix {locuteur})…", flush=True)
-        _modele = TTSModel.load_model(language=modele_nom, temp=temperature)
+        _modele = TTSModel.load_model(language=modele_nom, temp=temperature, sampler_decode_steps=etapes)
         _etat = _modele.get_state_for_audio_prompt(locuteur)
     return _modele, _etat
 
@@ -125,7 +98,7 @@ for s in montage["scenes"]:
         continue
     segments, fichiers, t = [], [], 0.0
     for p in phrases(texte):
-        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, p]).encode()).hexdigest()[:16]
+        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, etapes, p]).encode()).hexdigest()[:16]
         brut = os.path.join(cache, f"{cle}.wav")
         if not os.path.exists(brut):
             synthese(p, brut + ".tmp.wav")
