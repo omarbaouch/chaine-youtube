@@ -1,0 +1,119 @@
+{
+ "titre": "Repérage baguette c",
+ "scenes": [
+  {
+   "id": "c01",
+   "recherche": [
+    "Walzenstuhl",
+    "roller mill flour",
+    "minoterie",
+    "flour mill interior"
+   ]
+  },
+  {
+   "id": "c02",
+   "recherche": [
+    "Mühle Mehl Sieb",
+    "plansifter",
+    "flour sifter mill",
+    "Plansichter"
+   ]
+  },
+  {
+   "id": "c03",
+   "recherche": [
+    "gluten dough stretch",
+    "windowpane test dough",
+    "gluten"
+   ]
+  },
+  {
+   "id": "c04",
+   "recherche": [
+    "dough rising timelapse",
+    "bread dough proofing timelapse",
+    "levain"
+   ]
+  },
+  {
+   "id": "c05",
+   "recherche": [
+    "baker's yeast",
+    "Saccharomyces cerevisiae",
+    "fresh yeast block"
+   ]
+  },
+  {
+   "id": "c06",
+   "recherche": [
+    "scoring baguette",
+    "grigne baguette",
+    "baguette dough scoring"
+   ]
+  },
+  {
+   "id": "c07",
+   "recherche": [
+    "baguettes oven bakery",
+    "four boulangerie baguettes",
+    "baguettes sortie du four"
+   ]
+  },
+  {
+   "id": "c08",
+   "recherche": [
+    "boulangerie Paris",
+    "boulanger baguettes",
+    "French baker"
+   ]
+  },
+  {
+   "id": "c09",
+   "recherche": [
+    "E.Leclerc",
+    "hypermarché Leclerc",
+    "supermarché France pain"
+   ]
+  },
+  {
+   "id": "c10",
+   "recherche": [
+    "baguette tradition",
+    "baguette de tradition",
+    "baguettes Paris"
+   ]
+  },
+  {
+   "id": "c11",
+   "recherche": [
+    "Euronext",
+    "stock exchange trading screen",
+    "commodity price chart"
+   ]
+  },
+  {
+   "id": "c12",
+   "recherche": [
+    "flour bag",
+    "sac de farine",
+    "Mehlsack"
+   ]
+  },
+  {
+   "id": "c13",
+   "recherche": [
+    "bakery night",
+    "boulangerie nuit",
+    "baker at night"
+   ]
+  },
+  {
+   "id": "c14",
+   "recherche": [
+    "baguette sandwich",
+    "jambon beurre",
+    "eating baguette"
+   ]
+  }
+ ]
+}

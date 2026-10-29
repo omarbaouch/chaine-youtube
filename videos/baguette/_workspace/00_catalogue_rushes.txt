@@ -1,0 +1,47 @@
+# Catalogue repérage (code planche -> description) ; OK = utilisable règle 1
+r19 V7 épi de blé seul sur fond noir, vidéo 40s (OK épi)
+r19 I2 3 pâtons allongés blancs scarifiés sur plaque perforée, main (OK pâte avant cuisson)
+r19 I3 pains boules scarifiés en croix dans panier
+r19 C3 pain levain grigne sur grille ; C4 scarification motifs feuilles (gros plan)
+r19 V1 couteau coupe un pain (pas baguette)
+r20 I1 baguettes dorées empilées sur toile devant four briques (OK BAGUETTE)
+r20 C1 boulanger tire une plaque du four ; C2 pains dans four éclairé ; C4 boulanger devant four à chariot + rack de pains ; C5 boulanger pelle four à bois tas de pains
+r20 V5 mains dans farine/pâte 14s ; I5 pâtons ronds farinés
+r21 V7 pétrissage à la main sur planche farinée 57s (OK pétrir)
+r21 I8 boulanger souriant planche de pains devant four à bois ; C1 homme enfourne avec pelle four briques ; C2 pâte enfournée pelle four à bois flammes
+r21 V4 flammes sur fond noir 61s (chaleur)
+r22 V1 façonneuse/laminoir à pâte, tapis de boulangerie 9s (machine de boulangerie)
+r22 V7 four à bois flammes 51s ; V5 feu de bois ; C1 pelle à four devant four à bois
+r23 I5 baguettes croûte dorée gros plan (OK baguette croûte) ; I7 baguettes dans panier osier ; C1 deux baguettes sur bois clair (OK) ; C4 mie alvéolée macro ; C7 pain long blanc fond blanc
+r23 V8 champ de céréales/herbes hautes 55s
+r24 C7 baguettes en sachets papier dans panier, gros plan (OK BAGUETTES boulangerie) ; C3 baguettes en panier coin boulangerie ; C2 tranches de baguette mie panier ; C6 main prend tranche de pain ; I2 panier pains dont baguettes ; C8 tranches baguette + beurre
+r25 I1 cuisinier coupe baguettes au couteau sur planche (OK couper baguette) ; I3 baguettes + baguette tranchée sur bois (OK) ; I4 baguette + pince sur planche ; I5 baguette beurre sur planche ; V5 couteau tranche un pain (vidéo 21s, pain pas baguette)
+r26 V1 pièces d'euro tombent sur table ralenti 7s (OK pièces) ; V3 tas de pièces euro 27s ; V7 pièces tombent dans boîte 10s ; V6 pièce qui roule silhouette 12s ; I2 pièce 1 euro gros plan fond blanc (OK 1 €) ; I3 20 centimes ; I7 10 centimes ; I1 tas pièces dorées ; I4 piles de pièces croissantes ; C4 pièces centimes sur table ; C7 ticket + pièces ; I8 caisse + pièces + billets
+r27 I6 vitrine boulangerie viennoiseries + panier baguettes (OK boulangerie) ; I2 boulangerie comptoir pains, vendeurs ; I8 café/boulangerie clients ; I4 vitrine viennoiseries étiquettes ; V6 étale pâte rouleau 61s ; V5 compteur 6:40 noir (608s) ; V2 chrono 00:40
+r28 V7 main façonne pâton sur plan fariné, sombre 13s (OK façonnage) ; V8 façonneuse tapis (= r22 V1 ?) ; V3 mains pâte flou ; I2 pétrit pâte sur table farinée ; I4 boulanger coupe baguettes couteau (= r25 I1 ?) ; I5 boulanger farine pain levain ; I8 comptoir boulangerie vendeurs ; C6 boulanger façonne pâtons sur couche lin (OK) ; C7 étagères à pains boutique ; V6 nuit étoilée lac 13s
+r29 I1 façade BOULANGERIE pâtisserie rouge (OK boulangerie française) ; I7 baguettes en caisse vitrine étiquette BAGUETTE (OK) ; I5 vitrine viennoiseries ; V8 main roule pâte 16s ; V3 lumière nuit vitre pluie 33s ; V1 foule vue du dessus N&B
+r30 I6 allée supermarché ; C2 rayon pains de mie supermarché étiquettes prix ; C5 bacs pains supermarché ; C7 rayon pains emballés ; V4 caddies supermarché 18s ; V1 caisse supermarché 6s ; I8 rayon supermarché large
+r31 I5 anciennes machines vertes à cylindres, moulin désaffecté (moulin probable) ; C4 portail usine de pain russe ; rien d'usine de pain moderne
+r32 I6 compteur électrique ABB roues chiffrées gros plan (OK énergie) ; I5 prise wattmètre posée sur billet de 20 € (OK coût énergie) ; I4 rangée compteurs ; I1 compteurs kWh ; V8 techniciens poste électrique coucher soleil 25s
+r33 V2 réveil sur parquet 61s (OK réveil) ; V3 idem ; I3 réveil doré ; I4 réveil digital lumineux nuit ; C1 radio-réveil 6:37 ; I7 réveil noir bureau
+r34 I1 Tour Eiffel sous arche pont Bir-Hakeim matin (OK Paris) ; C4 toits de Paris (OK) ; C8 toits de Paris crépuscule (OK nuit) ; C7 rue parisienne pavée pluie ; C5 rue nuit voitures ; C2 boulevard Paris vide
+r35 V1 semoir vu du dessus 18s (OK semis) ; V3 tracteur laboure champ drone 32s (OK) ; V2 plaine agricole drone 10s ; I2 tracteur charrue ciel ; I8 tracteur déchaumeur ; C1 tracteur
+r36 I6 mie alvéolée blanche gros plan (OK alvéoles) ; C2 mie avec gros trou sur fond noir (OK) ; C5 tranches pain alvéolé ; I1 pain levain coupé mie ; I7 ciabatta coupée ; I4 mie macro ; V2 mécanisme montre 8s
+r01 I1 baguette + croissant + café petit-déj (OK baguette) ; I7 baguette blanche sur table vue de dessus tasses (OK) ; I3 pains + baguette + sac de grain ; I4 panier pains épis de blé fond noir ; C3 baguette coupée sandwich sur planche couteau (OK) ; C8 deux baguettes croisées (= r23 C1) ; I6 baguette céréales ; V2 couteau tranche pain 21s (récurrent, pas baguette)
+r02 I1 jeune femme mord baguette devant Tour Eiffel (OK icône) ; I3 baguette dans sachet papier gros plan (OK) ; I5 boulanger coupe baguettes (= r25 I1) ; I6 baguettes sur toile (= r20 I1) ; I7 croûte baguette macro ; C7 enfant marche avec baguette rue ; C8 baguette dans sac à dos rue ; C1 main tient baguette
+r03 V1 champ de blé doré au vent 28s (OK blé) ; V7 épis blé vert ciel bleu contre-plongée 15s (OK) ; V5 coucher soleil blé 23s ; V6 soleil à travers épis 10s ; V4 blé vert 28s ; I5 champ de blé mûr nuages (OK) ; I8 champ blé ciel gris ; C8 champ blé chemin ; C4 champ + éoliennes ; I1 éoliennes + blé
+r04 V1 champ de blé ciel bleu 22s (OK) ; V5 blé doré gros plan au vent 28s (OK) ; I4 épi de blé courbé sur ciel (OK épi) ; I3 épi blé mûr macro ; I2 épi seul fond flou ; I5 épis ; C2 épi barbu macro ; C3 épi
+r05 V1 moissonneuse vue drone de dessus poussière 19s (OK MOISSON) ; V6 moissonneuse drone face 20s (OK) ; V8 moissonneuse vide grain dans remorque drone 20s (OK) ; V2 moissonneuse vallée 59s ; I1 moissonneuse face blé ; I3 moissonneuse New Holland ; I7 moissonneuse décharge dans remorque tracteur drone ; C3 vis à grain déverse blé (OK grain) ; C5 moissonneuse déverse dans camion
+r06 I1 grain qui tombe dans benne camion (OK grain) ; I7 moissonneuse déverse dans tracteur ; I8 mains grains (avoine ? douteux) ; C3 camion + moissonneuse ; C7 camion déchargement grain silo ; C4 camion basculé déchargement silo ; V7 épi fond noir (= r19 V7)
+r07 I4 paume avec grains de blé + épi (OK grains main) ; I3 main caresse épis ; I7 mains de paysan égrènent un épi contre-jour (OK) ; I2 mains dans blé ; C8 grains de blé macro (OK grains) ; V2 main dans blé 10s ; V1 mains pétrissent pâte fond sombre 31s (OK pétrissage) ; I5 mains pétrissent pâte ; V7 champ blé bleuets 41s
+r08 I2 silos métal usine (OK silo) ; I5 silos sous ciel bleu ; I6 rangée silos + convoyeur ; C1 silos alignés ; I8 grand silo ; I1 cuves numérotées
+r09 I3 trémie à farine au-dessus d'une meule (OK moulin farine) ; I8 meule de pierre ; I4 moulin Castleford « stoneground flour » au bord de l'eau ; V2 roue à aubes moulin 20s ; I1/I2 moulin à vent ; C1 grand bâtiment de minoterie béton ; C8 intérieur vieux moulin
+r10 C7 boulanger tamise farine au tamis (OK farine qui tombe) ; C6 tamis bois farine qui tombe (OK) ; I6 pâtons ronds + rouleau ; I2 goutte d'eau tombe (eau) ; V6 pluie sur eau
+r11 I1 farine dans tissu sur épis de blé (OK farine) ; I2 idem variante ; I3 entrepôt sacs de farine dans vieux moulin (OK sacs) ; V2 sac de toile suspendu corde moulin 23s (sac de farine/grain qui monte) ; V3 main étale pâte 16s
+r12 V6 main laisse tomber farine/poudre 14s (OK farine dans la main) ; V2 main tapote pâton fariné sombre 13s ; V8 main étale pâte 16s ; I2 main jette farine fond noir (OK) ; I4 mains pétrissent pâte fond sombre ; I6 mains sur longue pâte (pâton long ≈ baguette) ; I7 mains farinées pétrissent ; C2 boulanger coupe pâte coupe-pâte (OK boulanger) ; I1 boulanger tient pain croix
+r13 C4 pétrin mécanique crochet dans cuve avec pâte (OK PÉTRIN) ; C5 vieux pétrin à bras cuve pâte ; C6/C7 cuve pétrin jaune ; C2 batteur professionnel ; I1 pâte dans cuve pétrin vue dessus (OK) ; I6 boulanger boule pâtons ; I3 pétrir dans bol ; I5 mains pétrissent ; C8 pâte étirée qui pend (gluten?)
+r14 C2 pâte étalée longue sur tissu fariné ; I1 cuisinier étire nouille ; rien de gluten propre
+r15 aucun timelapse de pâte qui lève ; I4 pâtons ronds rouleau (vu)
+r16 I8 pâte levée dans torchon panier (OK levée) ; I6 boule de pâte sur bois ; V2 tas de farine + rouleau sombre 7s (OK farine) ; C1 dessin cellule (levure possible, schéma)
+r17 C2 boulangère passe pâte dans façonneuse à baguettes (OK MACHINE) ; C3 façonneuse à baguettes pâtons longs (OK) ; C4 pâtons de baguettes crus alignés sur plaque (OK) ; C5 apprentis montrent pâtons de baguettes (uniformes militaires) ; C7 apprentis façonnent baguettes ; C8 baguettes cuisent dans four sombre (OK cuisson) ; I4 baguette isolée fond noir (OK) ; I6 croûte baguettes macro ; V3 façonneuse tapis 9s
+r18 C5 balance de boulanger ancienne farinée (OK pesée) ; C1 laminoir industriel ancien N&B ; C3 boulangerie industrielle ancienne N&B ; C6 boulangers pâtons plaque
