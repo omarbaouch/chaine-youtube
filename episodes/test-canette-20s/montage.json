@@ -1,0 +1,59 @@
+{
+ "titre": "Test 20 s : combien vaut l'aluminium d'une canette ?",
+ "format": {"largeur": 1920, "hauteur": 1080, "fps": 30},
+ "transition_defaut": "fondu",
+ "duree_transition": 10,
+ "voix": {"modele": "french_24l", "locuteur": "estelle", "etapes": 5, "pause_phrase": 0.18},
+ "musique": {"fichier": "../../public/sfx/nappe.wav", "volume": 0.22},
+ "sous_titres": {"actifs": true, "mots_par_ligne": 4},
+ "scenes": [
+  {
+   "id": "p1", "type": "video", "media_ref": "pi:3984776", "zoom": "avant", "respiration": 0.25,
+   "texte": "Devine combien vaut l'aluminium de cette canette.",
+   "couches": [
+    {"type": "visee", "x": 30, "y": 18, "l": 32, "h": 60, "a": 0.2},
+    {"type": "annotation", "x": 46, "y": 48, "vers_x": 66, "vers_y": 24, "texte": "Aluminium : ?", "a": 0.9}
+   ]
+  },
+  {
+   "id": "p2", "type": "video", "media_ref": "pi:2065901", "zoom": "arriere", "respiration": 0.2,
+   "texte": "Une bande d'aluminium entre d'un côté.",
+   "couches": [
+    {"type": "etiquette", "numero": "01", "texte": "LA MATIÈRE", "a": 0.1},
+    {"type": "annotation", "x": 50, "y": 55, "vers_x": 63, "vers_y": 32, "texte": "Bande d'aluminium ≈ 0,3 mm", "a": 0.5}
+   ]
+  },
+  {
+   "id": "p3", "type": "video", "media_ref": "wc:File:Taiwan Beer aluminum cans making flow diagram at TTL Jhunan Brewery Museum 20151017.jpg", "zoom": "avant", "transition": "glissement", "respiration": 0.25,
+   "texte": "De l'autre, des canettes sortent à la chaîne, à toute vitesse.",
+   "couches": [
+    {"type": "etiquette", "numero": "02", "texte": "LA FABRICATION", "a": 0.1},
+    {"type": "annotation", "x": 30, "y": 30, "vers_x": 12, "vers_y": 64, "texte": "Un disque…", "a": 0.6},
+    {"type": "annotation", "x": 88, "y": 28, "vers_x": 70, "vers_y": 64, "texte": "… une canette", "a": 1.4}
+   ]
+  },
+  {
+   "id": "p4", "type": "video", "media_ref": "wc:File:12-ounce Aluminum Soda Can (32569592188).jpg", "zoom": "avant", "transition": "coupe", "respiration": 0.35,
+   "texte": "Le métal d'une canette ? Environ quatre centimes. De dollar.",
+   "couches": [
+    {"type": "flash", "a": 0},
+    {"type": "compteur", "vers": 0.04, "decimales": 2, "prefixe": "≈ ", "suffixe": " $", "legende": "valeur de l'aluminium", "position": "droite",
+     "source": "Adam S. Hersh (Economic Policy Institute), via CNN, 2 mars 2025 — cours de l'aluminium début 2025", "a": 1.1}
+   ]
+  },
+  {
+   "id": "p5", "type": "video", "media_ref": "pi:3105631", "zoom": "arriere", "respiration": 0.3,
+   "texte": "Alors, où passe tout le reste de ce que tu paies ?",
+   "couches": [
+    {"type": "mots", "texte": "Où va le reste ?", "heros": "reste", "position": "haut", "a": 0.6}
+   ]
+  },
+  {
+   "id": "p6", "type": "video", "media_ref": "pv:12564", "zoom": "avant", "respiration": 1.2,
+   "texte": "On suit l'argent, centime par centime.",
+   "couches": [
+    {"type": "carton", "texte": "On suit l'argent", "sous_texte": "La vidéo complète arrive bientôt", "a": 1.6}
+   ]
+  }
+ ]
+}

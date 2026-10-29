@@ -43,12 +43,12 @@ async function commons(q) {
 
 function vignette(c, code, dest) {
   const texte = `${code} · ${c.info}`.replace(/[':]/g, ' ');
-  const filtre = `scale=480:270:force_original_aspect_ratio=increase,crop=480:270${POLICE ? `,drawtext=fontfile=${POLICE}:text='${texte}':x=8:y=8:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.7` : ''}`;
+  const filtre = `scale=480:270:force_original_aspect_ratio=increase,crop=480:270,format=yuvj420p${POLICE ? `,drawtext=fontfile=${POLICE}:text='${texte}':x=8:y=8:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.7` : ''}`;
   const args = c.video ? ['-ss', String(Math.max(0.5, (c.duree ?? 6) / 3))] : [];
   try {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...args, '-user_agent', UA['User-Agent'], '-i', c.apercu, '-frames:v', '1', '-vf', filtre, dest], {timeout: 90000});
   } catch {
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'color=c=black:s=480x270', '-frames:v', '1', dest]);
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'color=c=black:s=480x270', '-frames:v', '1', '-pix_fmt', 'yuvj420p', dest]);
   }
 }
 
