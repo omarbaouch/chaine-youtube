@@ -3,6 +3,16 @@
 Slug : `baguette` · Rôle : seo-optimizer · Date : 30/10/2026
 Entrées : brief stratège, script final, fact-check, `episodes/baguette/sources.md`, `montage.json`, `baguette-credits.txt` (144 médias, aucun doublon d'URL).
 
+## 0. Titre final (arbitrage du relecteur, 30/10/2026)
+
+**Prix de la baguette : où va vraiment ton euro ?** (47 caractères)
+
+- Ni le n°1 tel quel, ni « Combien coûte VRAIMENT une baguette ? » tel quel. Le designer a raison sur le fond : la miniature dit déjà « LE BLÉ ? 6 CENTIMES » ; le titre n°1 le redit, et on gâche la moitié de l'espace de clic.
+- Le SEO a raison sur le mot-clé : le brief exige « prix de la baguette » dans le titre. Il est en tête.
+- Le titre pose la question, la miniature donne le premier morceau de réponse (6 c de blé sur 1 €), l'accroche enchaîne mot pour mot : « Dans une baguette à un euro, le blé coûte… six centimes. Alors, où passent les quatre-vingt-quatorze autres centimes ? » (0:00-0:08). Promesse posée en 8 s, tenue dans les parties 05 et 06.
+- « Ton euro » = le « 1 € » de la miniature, l'« un euro » de l'accroche et le chapitre 06 « Ton euro ». Pas de 1,01 € dans le titre : on évite deux prix différents entre titre (1,01) et miniature (1).
+- Réserve pour un test A/B après 48 h si le taux de clic est faible : « Combien coûte vraiment une baguette ? » (sans majuscules criardes).
+
 ## 1. Titres (classés)
 
 1. **Prix de la baguette : 1,01 €… dont 6 centimes de blé** (51 caractères) — RECOMMANDÉ
@@ -12,7 +22,7 @@ Entrées : brief stratège, script final, fact-check, `episodes/baguette/sources
 3. **Combien coûte vraiment une baguette ? Du champ au comptoir** (59 caractères)
    Requête de recherche directe, titre du script ; moins de tension. CTR estimé : moyen.
 
-Miniature associée au n°1 : « 6 c » en orange sur la baguette, pas de répétition du titre mot pour mot.
+Miniature livrée (`miniature.jpg`) : « LE BLÉ ? 6 CENTIMES » + pastille « 1 € » sur la baguette. Avec elle, le titre n°1 répète « 6 centimes de blé » mot pour mot : voir le titre final ci-dessus.
 
 ## 2. Description (à coller telle quelle dans YouTube Studio, 4536 caractères sur 5 000 autorisés)
 
@@ -23,12 +33,12 @@ Dans cette vidéo, on voit comment est fabriquée la baguette : la moisson, le m
 
 Chapitres :
 00:00 Une baguette à 1 €, 6 centimes de blé
-00:25 01 Le grain
-01:30 02 Le moulin
-02:31 03 La pâte
-03:54 04 Le four
+00:29 01 Le grain
+01:29 02 Le moulin
+02:28 03 La pâte
+03:55 04 Le four
 05:07 05 La facture : le prix de la baguette décortiqué
-06:30 06 Ton euro : combien gagne le boulanger ?
+06:28 06 Ton euro : combien gagne le boulanger ?
 
 Sources principales :
 - OFPM / FranceAgriMer, rapport 2026, section Pain : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/12_2026_section_7_pain_v3.pdf
@@ -65,17 +75,17 @@ Note : la liste complète des crédits avec liens fait plus de 12 000 caractère
 
 ## 3. Chapitres
 
-Calcul : mots de chaque scène de `montage.json` à 2,5 mots/s, 3 s par carte titre, puis la parole recalée pour tomber sur 493,9 s (facteur 0,926 ; la voix va un peu plus vite que 2,5 mots/s). Chaque chapitre démarre sur sa carte titre.
+Mesuré sur le MP4 rendu (`baguette.mp4`, 493,9 s) par le relecteur le 30/10/2026 : chaque horodatage tombe sur l'apparition de la carte titre (l'estimation précédente était décalée de 4 s pour 01 et de 3 s pour 03).
 
 00:00 Une baguette à 1 €, 6 centimes de blé
-00:25 01 Le grain
-01:30 02 Le moulin
-02:31 03 La pâte
-03:54 04 Le four
+00:29 01 Le grain
+01:29 02 Le moulin
+02:28 03 La pâte
+03:55 04 Le four
 05:07 05 La facture : le prix de la baguette décortiqué
-06:30 06 Ton euro : combien gagne le boulanger ?
+06:28 06 Ton euro : combien gagne le boulanger ?
 
-À vérifier sur le MP4 final : si une carte titre tombe à plus de 2 s de ces valeurs, corriger l'horodatage (cartes p008, p025, p040, p060, p078, p098).
+Si la vidéo est re-rendue, revérifier ces six cartes (p008, p025, p040, p060, p078, p098) : les changements faits depuis le rendu (p100, p103) ne touchent ni le texte ni la durée, donc les horodatages ne devraient pas bouger.
 
 ## 4. Tags, catégorie, langue
 
@@ -244,6 +254,14 @@ Crédits complets (2/2) — Pixabay (licence Pixabay) :
 - igorovsyannykov : pixabay.com/photos/aisle-background-buy-clean-food-3105629/
 - BRRT : pixabay.com/photos/bread-panini-food-fresh-breakfast-888894/
 - dimkatomson21 : pixabay.com/photos/bread-baguettes-loaves-6570934/
+
+### Si la vidéo est re-rendue avec le `montage.json` actuel (modifié à 15:46, après le rendu de 15:40)
+
+Les crédits ci-dessus correspondent au MP4 de 15:40. Après un nouveau rendu, remplacer :
+- p100 : « Kai Brinker (CC BY-SA 2.5) : commons.wikimedia.org/wiki/File:Austrian_Hot_Dog.jpg » → « StockSnap : pixabay.com/photos/id-923865/ » (à mettre dans le commentaire 3, Pixabay ; lien exact dans le `credits.txt` de la release) ;
+- p103 : « Vimeo-Free-Videos : pixabay.com/videos/id-784/ » → « Landon Heredia (domaine public) : commons.wikimedia.org/wiki/File:Chef_sifting_flour.jpg » (commentaire 2, Commons) ;
+- dans la description, retirer « Kai Brinker » (CC BY-SA 2.5) et « Vimeo-Free-Videos », ajouter « Landon Heredia » en domaine public.
+Prendre le `credits.txt` de la nouvelle release comme référence.
 
 ## 7. Cartes et écran de fin
 
