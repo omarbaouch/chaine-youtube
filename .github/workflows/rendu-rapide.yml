@@ -56,13 +56,22 @@ jobs:
           pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-voix.txt
       - name: Cache des voix et du modèle
         if: steps.quoi.outputs.episode != ''
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: |
             .cache/voix
             ~/.cache/huggingface
           key: voix-${{ hashFiles('episodes/**/montage.json', 'assets/voix/**') }}
           restore-keys: voix-
+      - name: Cache des rushes déjà téléchargés
+        if: steps.quoi.outputs.episode != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            public/ep/${{ steps.quoi.outputs.episode }}/media
+            public/ep/${{ steps.quoi.outputs.episode }}/credits.txt
+          key: rushes-${{ steps.quoi.outputs.episode }}-${{ github.run_id }}
+          restore-keys: rushes-${{ steps.quoi.outputs.episode }}-
       - name: Rushes, voix, timeline
         id: timeline
         if: steps.quoi.outputs.episode != ''
@@ -79,14 +88,30 @@ jobs:
           frames=$(node -e "const p=require('./public/ep/$ep/props.json');const t=p.scenes.filter((s,i)=>i&&s.transition!=='coupe').length;console.log(p.scenes.reduce((a,s)=>a+s.duree,0)-t*p.dureeTransition)")
           echo "frames=$frames" >> "$GITHUB_OUTPUT"
           du -sh public/ep/$ep
-      - uses: actions/upload-artifact@v4
-        if: steps.quoi.outputs.episode != ''
+      - name: Sauver le cache des rushes
+        if: always() && steps.quoi.outputs.episode != ''
+        uses: actions/cache/save@v4
         with:
-          name: prepa
           path: |
-            public/ep
-            public/sfx
-          retention-days: 2
+            public/ep/${{ steps.quoi.outputs.episode }}/media
+            public/ep/${{ steps.quoi.outputs.episode }}/credits.txt
+          key: rushes-${{ steps.quoi.outputs.episode }}-${{ github.run_id }}
+      - name: Sauver le cache des voix
+        if: always() && steps.quoi.outputs.episode != ''
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache/voix
+            ~/.cache/huggingface
+          key: voix-${{ hashFiles('episodes/**/montage.json', 'assets/voix/**') }}-${{ github.run_id }}
+      # Transfert entre machines par une Release temporaire (le quota d'artefacts Actions est partagé et plein)
+      - name: Transférer la prépa
+        if: steps.quoi.outputs.episode != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tar -czf prepa.tgz public/ep public/sfx
+          gh release create "tmp-rendu-${{ github.run_id }}" prepa.tgz --target "${{ github.sha }}" --title "tmp rendu ${{ github.run_id }}" --notes "temporaire, supprimé à la fin du rendu" --prerelease
 
   tranche:
     needs: prepa
@@ -101,8 +126,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: {node-version: 22, cache: npm}
-      - uses: actions/download-artifact@v4
-        with: {name: prepa, path: public}
+      - name: Récupérer la prépa
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "tmp-rendu-${{ github.run_id }}" -p prepa.tgz && tar -xzf prepa.tgz && rm prepa.tgz
       - name: Rendu de la tranche
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
@@ -115,8 +142,10 @@ jobs:
           echtl=""; [ "${{ needs.prepa.outputs.mode }}" = "brouillon" ] && echtl="--scale=0.5"
           npx remotion render src/index.ts Episode "out/tranche-$n.mkv" "--props=public/ep/$ep/props.json" --frames=$debut-$fin \
             --codec=h264-mkv --audio-codec=pcm-16 --enforce-audio-track --crf=18 $echtl --concurrency=100%
-      - uses: actions/upload-artifact@v4
-        with: {name: 'tranche-${{ matrix.n }}', path: 'out/tranche-${{ matrix.n }}.mkv', retention-days: 2}
+      - name: Envoyer la tranche
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "tmp-rendu-${{ github.run_id }}" "out/tranche-${{ matrix.n }}.mkv" --clobber
 
   assemblage:
     needs: [prepa, tranche]
@@ -126,10 +155,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: {node-version: 22, cache: npm}
-      - uses: actions/download-artifact@v4
-        with: {name: prepa, path: public}
-      - uses: actions/download-artifact@v4
-        with: {pattern: 'tranche-*', path: out, merge-multiple: true}
+      - name: Récupérer prépa et tranches
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p out
+          gh release download "tmp-rendu-${{ github.run_id }}" -p prepa.tgz && tar -xzf prepa.tgz && rm prepa.tgz
+          gh release download "tmp-rendu-${{ github.run_id }}" -p 'tranche-*.mkv' -D out
       - name: Son complet, assemblage, mastering
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
@@ -159,3 +191,8 @@ jobs:
           fichiers=$(ls out/$ep*.mp4 out/$ep*-planche.jpg out/$ep-credits.txt 2>/dev/null)
           gh release create "$tag" $fichiers --target "${{ github.sha }}" --title "🎬 $ep ($mode) #${{ github.run_number }}" \
             --notes "Rendu parallèle de episodes/$ep — commit ${{ github.sha }}" --prerelease
+      - name: Nettoyer la Release temporaire
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete "tmp-rendu-${{ github.run_id }}" --yes --cleanup-tag || true
