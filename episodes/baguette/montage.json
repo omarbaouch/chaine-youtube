@@ -1571,7 +1571,15 @@
       "valeur": 0.05
      }
     ],
-    "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+    "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+    "zone": [
+     9.5,
+     93.4
+    ],
+    "zone_y": [
+     36,
+     64
+    ]
    },
    "sons": [
     {
@@ -2126,8 +2134,5 @@
    "type": "titre"
   }
  ],
- "rushes_a_refaire": [
-  "p100-1",
-  "p103-1"
- ]
+ "rushes_a_refaire": []
 }
