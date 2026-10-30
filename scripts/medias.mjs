@@ -138,6 +138,14 @@ function fauxRush(s, dest) {
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `testsrc2=size=1920x1080:rate=30,colorchannelmixer=.5:0:0:0:0:.5:0:0:0:0:.5,drawbox=c=${c}@0.6:t=fill`, '-t', '8', '-pix_fmt', 'yuv420p', dest]);
 }
 
+// Cache des rushes : un fichier <id>.ref garde la référence du média ; si le montage change de média, on retélécharge.
+const refPath = (id) => path.join(sortie, `${id}.ref`);
+// Ancien cache sans .ref : on fait confiance, sauf pour les ids listés dans montage.rushes_a_refaire.
+const aRefaire = new Set(montage.rushes_a_refaire ?? []);
+const memeRef = (id, cle) => !aRefaire.has(id) && (!fs.existsSync(refPath(id)) || fs.readFileSync(refPath(id), 'utf8') === String(cle));
+const noterRef = (id, cle) => fs.writeFileSync(refPath(id), String(cle));
+const purger = (id) => { for (const f of fs.readdirSync(sortie)) if (f.startsWith(`${id}.`) && !f.endsWith('.ref')) fs.rmSync(path.join(sortie, f)); };
+
 // Médias multiples (mosaïque, écran partagé) : "medias": [{"media_ref": "pv:…", "legende": "…"}, {"fichier": "…"}]
 // → public/ep/<slug>/media/<id>-1.ext, <id>-2.ext…
 for (const s of montage.scenes) {
@@ -145,8 +153,11 @@ for (const s of montage.scenes) {
 }
 for (const s of montage.scenes) {
   for (const m of s.medias ?? []) {
-    const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${m._id}.`));
-    if (existant) { console.log(`↺ ${m._id} : déjà téléchargé`); continue; }
+    const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${m._id}.`) && !f.endsWith('.ref'));
+    const cle = m.fichier ?? m.media_ref ?? '';
+    if (existant && memeRef(m._id, cle)) { console.log(`↺ ${m._id} : déjà téléchargé`); continue; }
+    if (existant) purger(m._id);
+    noterRef(m._id, cle);
     if (m.fichier) {
       const src = path.join(dossierEp, m.fichier);
       fs.copyFileSync(src, path.join(sortie, `${m._id}${path.extname(src).toLowerCase()}`));
@@ -163,7 +174,10 @@ for (const s of montage.scenes) {
 }
 
 for (const s of montage.scenes) {
-  const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${s.id}.`));
+  let existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${s.id}.`) && !f.endsWith('.ref'));
+  const cle = s.fichier ?? s.media_ref ?? s.pixabay_id ?? JSON.stringify(s.recherche ?? '');
+  if (existant && !memeRef(s.id, cle)) { purger(s.id); existant = undefined; }
+  if (s.recherche || s.pixabay_id || s.media_ref || s.fichier) noterRef(s.id, cle);
   if (s.fichier) {
     const src = path.join(dossierEp, s.fichier);
     const dest = path.join(sortie, `${s.id}${path.extname(src).toLowerCase()}`);

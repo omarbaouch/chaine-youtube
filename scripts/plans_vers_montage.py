@@ -41,7 +41,7 @@ montage = {
     "sous_titres": {"actifs": True, "mots_par_ligne": 4},
     "scenes": scenes,
 }
-for k in ("voix", "musique", "etalonnage", "transition_defaut", "duree_transition"):
+for k in ("voix", "musique", "etalonnage", "transition_defaut", "duree_transition", "rushes_a_refaire"):
     if k in base:
         montage[k] = base[k]
 json.dump(montage, open(f"episodes/{slug}/montage.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)

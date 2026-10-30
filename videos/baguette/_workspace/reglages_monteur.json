@@ -1,6 +1,10 @@
 {
  "_episode": {
-  "titre": "La baguette : 1 € payé, 6 centimes de blé"
+  "titre": "La baguette : 1 € payé, 6 centimes de blé",
+  "rushes_a_refaire": [
+   "p100-1",
+   "p103-1"
+  ]
  },
  "p042": {
   "media_ref": "wc:File:EdibleSalt.jpg"

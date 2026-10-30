@@ -60,7 +60,7 @@ function lignes(mots) {
 }
 
 const dossierMedia = path.join(pub, 'media');
-const fichiersMedia = fs.existsSync(dossierMedia) ? fs.readdirSync(dossierMedia) : [];
+const fichiersMedia = fs.existsSync(dossierMedia) ? fs.readdirSync(dossierMedia).filter((f) => !f.endsWith('.ref')) : [];
 const estImage = (f) => /\.(jpe?g|png|webp)$/i.test(f);
 
 const formatDe = (s, media, medias) => {
