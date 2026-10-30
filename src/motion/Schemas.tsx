@@ -166,7 +166,7 @@ const Chiffre: React.FC<{s: Extract<Schema, {type: 'chiffre'}>; l: number}> = ({
   const revele = s.revele_a !== undefined ? Math.round(s.revele_a * fps) : 6;
   const pLeg = useEntree(0, theme.ressort.doux);
   const pNum = spring({frame: f - revele, fps, config: theme.ressort.rebond});
-  const montee = spring({frame: f - revele, fps, config: {damping: 30, stiffness: 70, mass: 1}});
+  const montee = spring({frame: f - revele, fps, config: {damping: 26, stiffness: 150, mass: 0.8}});
   const pComp = useEntree(revele + 22, theme.ressort.doux);
   const attente = s.revele_a !== undefined && f < revele;
   const pulse = 1 + 0.05 * Math.sin(f / 5);
@@ -214,7 +214,7 @@ const Comparaison: React.FC<{s: Extract<Schema, {type: 'comparaison'}>; l: numbe
     <div style={{width: l}}>
       <Titre texte={s.titre} />
       {lignes.map((li) => {
-        const e = spring({frame: f - li.d, fps, config: {damping: 26, stiffness: 70, mass: 1}});
+        const e = spring({frame: f - li.d, fps, config: {damping: 24, stiffness: 140, mass: 0.8}});
         const estHeros = li.k === heros;
         const larg = Math.max(10, ((l - zoneValeur - 20) * li.valeur) / max);
         return (
@@ -258,7 +258,7 @@ const Liste: React.FC<{s: Extract<Schema, {type: 'liste'}>; l: number; duree: nu
             </div>
             <div style={{flex: 1, fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 42, color: el.heros ? C.texte : C.texte, lineHeight: 1.12}}>{el.texte}</div>
             {el.valeur ? (
-              <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 48, color: el.heros ? C.heros : C.texte, whiteSpace: 'nowrap'}}>{el.valeur}</div>
+              <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: el.valeur.length > 14 ? 34 : 48, color: el.heros ? C.heros : C.texte, maxWidth: '55%', textAlign: 'right', lineHeight: 1.1}}>{el.valeur}</div>
             ) : null}
           </div>
         );

@@ -1802,10 +1802,12 @@
    "texte": "En boulangerie, la baguette coûte en moyenne un euro douze en deux mille vingt-six.",
    "medias": [
     {
-     "media_ref": "wc:File:Austrian Hot Dog.jpg"
+     "media_ref": "pi:923865",
+     "legende": "Baguette"
     },
     {
-     "media_ref": "wc:File:PA00088610 Boulangerie.jpg"
+     "media_ref": "wc:File:PA00088610 Boulangerie.jpg",
+     "legende": "Boulangerie"
     }
    ],
    "surtitre": "Fiducial 2026, 400 points de vente"
@@ -1857,7 +1859,7 @@
    "texte": "Les matières, farine, beurre et compagnie : environ trente-trois centimes.",
    "medias": [
     {
-     "media_ref": "pv:784",
+     "media_ref": "wc:File:Chef sifting flour.jpg",
      "legende": "Farine"
     },
     {

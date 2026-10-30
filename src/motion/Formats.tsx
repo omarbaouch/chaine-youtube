@@ -53,7 +53,7 @@ export const CarteMedia: React.FC<{m: Media; x: number; y: number; l: number; h:
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const p = spring({frame: f - debut, fps, config: theme.ressort.doux});
-  const volet = interpolate(f - debut, [0, 20], [100, 0], {...clamp, easing: theme.courbe.sortie});
+  const volet = interpolate(f - debut, [0, 12], [100, 0], {...clamp, easing: theme.courbe.sortie});
   const flotte = Math.sin((f + k * 17) / 26) * 4;
   return (
     <div style={{position: 'absolute', left: x, top: y + flotte, width: l, height: h, borderRadius: 26, overflow: 'hidden',
@@ -156,9 +156,9 @@ export const PlanMosaique: React.FC<{scene: Scene}> = ({scene}) => {
       <FondVivant />
       {scene.medias.slice(0, 4).map((m, i) => {
         const [x, y, l, h] = cases[i];
-        return <CarteMedia key={i} m={m} x={x} y={y} l={l} h={h} debut={4 + i * ecart} duree={scene.duree} sens={i % 2 ? -1 : 1} k={i} />;
+        return <CarteMedia key={i} m={m} x={x} y={y} l={l} h={h} debut={i * ecart} duree={scene.duree} sens={i % 2 ? -1 : 1} k={i} />;
       })}
-      {scene.medias.slice(0, 4).map((_, i) => <Bruit key={i} nom="whoosh" a={4 + i * ecart} volume={0.18} />)}
+      {scene.medias.slice(0, 4).map((_, i) => <Bruit key={i} nom="whoosh" a={i * ecart} volume={0.18} />)}
     </AbsoluteFill>
   );
 };

@@ -68,7 +68,7 @@ const MotPunch: React.FC<{texte: string; a: number}> = ({texte, a}) => {
   const sortie = interpolate(f, [debut + fps * 1.4, debut + fps * 1.8], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.courbe.entree});
   if (sortie <= 0) return null;
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 215, opacity: sortie}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 300, opacity: sortie}}>
       <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 130, color: theme.couleurs.heros, textTransform: 'uppercase',
         letterSpacing: '-0.03em', background: 'rgba(11,14,20,0.78)', padding: '6px 40px', borderRadius: 24, whiteSpace: 'nowrap',
         boxShadow: `0 0 60px ${theme.couleurs.lueur}`, opacity: interpolate(p, [0, 0.3], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),

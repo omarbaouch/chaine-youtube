@@ -127,14 +127,22 @@ for (const s of scenes) {
   const [w, h] = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', f]).toString().trim().split(',').map(Number);
   s.schema = {...s.schema, ratio: w / h};
   if (!s.schema.zone || !s.schema.zone_y) {
-    const err = spawnSync('ffmpeg', ['-hide_banner', '-loop', '1', '-t', '0.3', '-i', f, '-vf', 'cropdetect=limit=0.05:round=2:reset=0:skip=0', '-f', 'null', '-']).stderr.toString();
-    const m = [...err.matchAll(/crop=(\d+):(\d+):(\d+):(\d+)/g)].at(-1);
-    if (m) {
-      const [cw, ch, cx, cy] = m.slice(1).map(Number);
-      s.schema.zone ??= [(cx / w) * 100, ((cx + cw) / w) * 100];
-      s.schema.zone_y ??= [(cy / h) * 100, ((cy + ch) / h) * 100];
-      console.log(`✔ ${s.id} : objet détecté x ${s.schema.zone.map((v) => v.toFixed(1)).join('–')} %, y ${s.schema.zone_y.map((v) => v.toFixed(1)).join('–')} %`);
-    }
+    // profil de luminance (image réduite à 320 px) : l'objet = ce qui ressort nettement du fond
+    const W = 320, H = Math.max(2, Math.round((320 * h) / w));
+    const brut = spawnSync('ffmpeg', ['-v', 'error', '-i', f, '-vf', `scale=${W}:${H},format=gray`, '-f', 'rawvideo', '-']).stdout;
+    const col = new Float64Array(W), lig = new Float64Array(H);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const v = brut[y * W + x]; col[x] += v / H; lig[y] += v / W; }
+    const bornes = (t) => {
+      const tri = [...t].sort((a, b) => a - b), fond = tri[Math.floor(t.length * 0.05)], max = tri[t.length - 1];
+      const seuil = fond + 0.3 * (max - fond);
+      let a = 0, b = t.length - 1;
+      while (a < b && t[a] < seuil) a++;
+      while (b > a && t[b] < seuil) b--;
+      return [(a / t.length) * 100, ((b + 1) / t.length) * 100];
+    };
+    s.schema.zone ??= bornes(col);
+    s.schema.zone_y ??= bornes(lig);
+    console.log(`✔ ${s.id} : objet détecté x ${s.schema.zone.map((v) => v.toFixed(1)).join('–')} %, y ${s.schema.zone_y.map((v) => v.toFixed(1)).join('–')} %`);
   }
 }
 
