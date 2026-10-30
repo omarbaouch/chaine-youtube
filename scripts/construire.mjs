@@ -130,18 +130,27 @@ for (const s of scenes) {
     // profil de luminance (image réduite à 320 px) : l'objet = ce qui ressort nettement du fond
     const W = 320, H = Math.max(2, Math.round((320 * h) / w));
     const brut = spawnSync('ffmpeg', ['-v', 'error', '-i', f, '-vf', `scale=${W}:${H},format=gray`, '-f', 'rawvideo', '-']).stdout;
-    const col = new Float64Array(W), lig = new Float64Array(H);
-    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const v = brut[y * W + x]; col[x] += v / H; lig[y] += v / W; }
-    const bornes = (t) => {
-      const tri = [...t].sort((a, b) => a - b), fond = tri[Math.floor(t.length * 0.05)], max = tri[t.length - 1];
-      const seuil = fond + 0.3 * (max - fond);
-      let a = 0, b = t.length - 1;
-      while (a < b && t[a] < seuil) a++;
-      while (b > a && t[b] < seuil) b--;
-      return [(a / t.length) * 100, ((b + 1) / t.length) * 100];
+    const px = (x, y) => brut[y * W + x];
+    // fond = médiane des pixels du bord de l'image (marche sur fond noir comme sur fond clair)
+    const bord = [];
+    for (let x = 0; x < W; x++) bord.push(px(x, 0), px(x, H - 1));
+    for (let y = 0; y < H; y++) bord.push(px(0, y), px(W - 1, y));
+    bord.sort((u, v) => u - v);
+    const fond = bord[Math.floor(bord.length / 2)];
+    const objet = (x, y) => Math.abs(px(x, y) - fond) > 38;
+    const etendue = (n, frac, seuil) => {
+      let a = 0, b = n - 1;
+      while (a < b && frac(a) < seuil) a++;
+      while (b > a && frac(b) < seuil) b--;
+      return [a, b + 1];
     };
-    s.schema.zone ??= bornes(col);
-    s.schema.zone_y ??= bornes(lig);
+    const fracLigne = (y) => { let c = 0; for (let x = 0; x < W; x++) c += objet(x, y); return c / W; };
+    const [ya, yb] = etendue(H, fracLigne, 0.2);
+    const fracCol = (x) => { let c = 0; for (let y = ya; y < yb; y++) c += objet(x, y); return c / Math.max(1, yb - ya); };
+    const [xa, xb] = etendue(W, fracCol, 0.35);
+    const zoneX = [(xa / W) * 100, (xb / W) * 100], zoneY = [(ya / H) * 100, (yb / H) * 100];
+    s.schema.zone ??= zoneX;
+    s.schema.zone_y ??= zoneY;
     console.log(`✔ ${s.id} : objet détecté x ${s.schema.zone.map((v) => v.toFixed(1)).join('–')} %, y ${s.schema.zone_y.map((v) => v.toFixed(1)).join('–')} %`);
   }
 }
