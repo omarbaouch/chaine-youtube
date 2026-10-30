@@ -19,6 +19,27 @@ const dejaPris = new Set();
 const motsParSeconde = 2.6;
 const dureeVoulue = (s) => Math.max(s.duree_min ?? 0, (s.texte ? s.texte.split(/\s+/).length / motsParSeconde : 3) + 1);
 
+// Pixabay limite le débit (HTTP 429) : on espace les appels et on réessaie avec une attente croissante.
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+const fetchBrut = globalThis.fetch;
+let dernier = 0;
+globalThis.fetch = async (url, opts) => {
+  for (let essai = 0; ; essai++) {
+    const attente = dernier + 700 - Date.now();
+    if (attente > 0) await pause(attente);
+    dernier = Date.now();
+    const r = await fetchBrut(url, opts);
+    if ((r.status === 429 || r.status >= 500) && essai < 8) {
+      const ra = parseFloat(r.headers.get('retry-after') ?? '');
+      const ms = Number.isFinite(ra) ? ra * 1000 : Math.min(60000, 4000 * 2 ** essai);
+      console.warn(`  … ${r.status}, nouvel essai dans ${(ms / 1000).toFixed(0)} s`);
+      await pause(ms);
+      continue;
+    }
+    return r;
+  }
+};
+
 async function telecharger(url, dest) {
   const r = await fetch(url);
   if (!r.ok) throw new Error(`Téléchargement impossible (${r.status}) : ${url}`);
