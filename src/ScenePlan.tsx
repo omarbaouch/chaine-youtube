@@ -15,10 +15,11 @@ const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
   const p = frame / Math.max(1, scene.duree);
   const ease = Easing.inOut(Easing.quad)(Math.min(1, p));
   // Zoom lent "Ken Burns" : donne de la vie même à un plan fixe.
-  const amplitude = scene.type === 'image' ? 0.14 : 0.07;
+  const estImg = !!scene.media && /\.(jpe?g|png|webp)$/i.test(scene.media);
+  const amplitude = estImg ? 0.14 : 0.07;
   const scale =
     scene.zoom === 'aucun' ? 1.02 : scene.zoom === 'arriere' ? 1 + amplitude * (1 - ease) + 0.02 : 1.02 + amplitude * ease;
-  const derive = scene.type === 'image' ? interpolate(ease, [0, 1], [-1.5, 1.5]) : 0;
+  const derive = estImg ? interpolate(ease, [0, 1], [-1.5, 1.5]) : 0;
   const style: React.CSSProperties = {
     width: '100%',
     height: '100%',
@@ -30,7 +31,7 @@ const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
     const angle = 120 + frame * 0.3;
     return <AbsoluteFill style={{background: `linear-gradient(${angle}deg, #0b0f1a, #1b2a4a 55%, #3a1c4a)`}} />;
   }
-  if (scene.type === 'image') {
+  if (estImg) {
     return <Img src={staticFile(scene.media)} style={{...style, objectFit: 'cover'}} />;
   }
   return (

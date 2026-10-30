@@ -86,7 +86,7 @@ const EtiquetteSchema: React.FC<{texte?: string}> = ({texte}) => {
 // Fond d'un plan "dessiné" : rush flouté et sombre si on en a un (on garde le lien avec le réel), sinon fond vivant.
 const FondPlan: React.FC<{scene: Scene}> = ({scene}) => {
   if (scene.schema?.type === 'decoupe') return <FondVivant />;
-  const m = scene.media ? {src: scene.media, image: scene.type === 'image'} : scene.medias[0];
+  const m = scene.media ? {src: scene.media, image: /\.(jpe?g|png|webp)$/i.test(scene.media)} : scene.medias[0];
   return (
     <>
       <FondVivant />
@@ -104,7 +104,7 @@ export const PlanSchema: React.FC<{scene: Scene}> = ({scene}) => (
     <FondPlan scene={scene} />
     <EtiquetteSchema texte={scene.etiquetteSchema} />
     <AbsoluteFill style={{left: 150, right: 150, top: 140, bottom: 270, width: 'auto', height: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      {scene.schema ? <SchemaAnime s={scene.schema} l={1620} duree={scene.duree} media={scene.type === 'image' ? scene.media : undefined} /> : null}
+      {scene.schema ? <SchemaAnime s={scene.schema} l={1620} duree={scene.duree} media={scene.media && /\.(jpe?g|png|webp)$/i.test(scene.media) ? scene.media : undefined} /> : null}
     </AbsoluteFill>
   </AbsoluteFill>
 );
@@ -112,7 +112,7 @@ export const PlanSchema: React.FC<{scene: Scene}> = ({scene}) => (
 export const PlanEcranPartage: React.FC<{scene: Scene}> = ({scene}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const m = scene.medias[0] ?? (scene.media ? {src: scene.media, image: scene.type === 'image'} : undefined);
+  const m = scene.medias[0] ?? (scene.media ? {src: scene.media, image: /\.(jpe?g|png|webp)$/i.test(scene.media)} : undefined);
   const gauche = (scene.cote ?? 'gauche') === 'gauche';
   const xMedia = gauche ? 80 : 1000;
   const xSchema = gauche ? 1000 : 80;

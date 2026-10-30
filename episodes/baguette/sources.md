@@ -59,3 +59,4 @@ Consultées le 29/10/2026. Les identifiants F01… renvoient au tableau de `vide
 38. INBP, supplément technique n° 105 « Défauts des pains » (juin 2016) [F46, F47] : https://www.inbp.com/wp-content/uploads/2020/03/2016-01-supplement-technique-inbp-defauts-des-pains.pdf
 
 
+
