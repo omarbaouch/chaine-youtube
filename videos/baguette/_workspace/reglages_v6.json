@@ -1,0 +1,188 @@
+{
+ "_episode": {
+  "titre": "La baguette : 1 € payé, 6 centimes de blé",
+  "rushes_a_refaire": [],
+  "voix": {
+   "moteur": "edge",
+   "locuteur": "fr-FR-VivienneMultilingualNeural",
+   "debit": "+5%",
+   "pause_phrase": 0.15,
+   "voix_secondaires": {
+    "sceptique": "fr-FR-HenriNeural"
+   }
+  },
+  "musique": {
+   "fichier": "../../public/sfx/musique-enquete.wav",
+   "volume": 0.22
+  },
+  "respiration": 0.15,
+  "musiques": {
+   "tension": "public/musique/tension.mp3",
+   "emotion": "public/musique/emotion.mp3",
+   "revelation": "public/musique/revelation.mp3",
+   "leger": "public/musique/leger.mp3"
+  }
+ },
+ "_avant": [
+  {
+   "id": "o01",
+   "format": "schema",
+   "media_ref": "pi:3277831",
+   "etiquette_schema": "Qui touche quoi sur ta baguette",
+   "texte": "Cette baguette, je vais la couper en quatre. Un morceau pour chaque personne que tu paies vraiment.",
+   "schema": {
+    "type": "decoupe",
+    "titre": "Ta baguette, coupée en quatre",
+    "total": 1.01,
+    "unite": " €",
+    "decimales": 2,
+    "parts": [
+     {
+      "label": "Blé",
+      "valeur": 0.06,
+      "heros": true
+     },
+     {
+      "label": "Meunier",
+      "valeur": 0.07
+     },
+     {
+      "label": "Après le moulin",
+      "valeur": 0.83
+     },
+     {
+      "label": "TVA",
+      "valeur": 0.05
+     }
+    ],
+    "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+    "zone": [
+     9.5,
+     93.4
+    ],
+    "zone_y": [
+     36,
+     64
+    ]
+   },
+   "ambiance": "tension"
+  },
+  {
+   "id": "o02",
+   "format": "titre",
+   "type": "titre",
+   "titre": "Combien coûte vraiment une baguette ?",
+   "sous_titre": "Du champ à ta main, centime par centime",
+   "media_ref": "pv:21800",
+   "duree_min": 2.4,
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.2,
+     "volume": 0.6
+    },
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension"
+  }
+ ],
+ "_plans": "videos/baguette/plans_v2.json",
+ "p042": {
+  "media_ref": "wc:File:EdibleSalt.jpg"
+ },
+ "p087": {
+  "schema": {
+   "type": "decoupe",
+   "titre": "Une baguette à 1,01 €",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06,
+     "heros": true
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+   "zone": [
+    9.5,
+    93.4
+   ],
+   "zone_y": [
+    36,
+    64
+   ]
+  }
+ },
+ "p119": {
+  "media_ref": "pi:1312524",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "Prochaine vidéo : le chocolat",
+    "heros": "chocolat",
+    "position": "haut",
+    "a": 0.3
+   }
+  ]
+ },
+ "p100": {
+  "medias": [
+   {
+    "media_ref": "pi:923865",
+    "legende": "Baguette"
+   },
+   {
+    "media_ref": "wc:File:PA00088610 Boulangerie.jpg",
+    "legende": "Boulangerie"
+   }
+  ]
+ },
+ "p103": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Chef sifting flour.jpg",
+    "legende": "Farine"
+   },
+   {
+    "media_ref": "wc:File:Baguette and butter curls.jpg",
+    "legende": "Beurre"
+   }
+  ]
+ },
+ "p021": {
+  "media_ref": "pv:45657"
+ },
+ "p058": {
+  "media_ref": "pv:205890"
+ },
+ "p077": {
+  "media_ref": "pv:51722"
+ },
+ "p019": {
+  "media_ref": "pv:338955"
+ },
+ "p107": {
+  "media_ref": "pv:1261"
+ },
+ "p102": {
+  "media_ref": "pv:49549"
+ }
+}
