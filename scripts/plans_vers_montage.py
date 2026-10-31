@@ -7,8 +7,8 @@ import json
 import sys
 
 slug = sys.argv[1]
-plans = json.load(open(f"videos/{slug}/plans.json", encoding="utf-8"))
 reglages = json.load(open(sys.argv[2], encoding="utf-8")) if len(sys.argv) > 2 else {}
+plans = json.load(open(reglages.get("_plans", f"videos/{slug}/plans.json"), encoding="utf-8"))
 
 GARDER = {"id", "format", "texte", "media_ref", "medias", "fichier", "schema", "etiquette_schema", "cote", "couches", "surtitre",
           "punch", "transition", "sons", "numero", "titre", "sous_titre", "duree_min", "zoom", "vitesse", "debut_media",
@@ -41,7 +41,7 @@ montage = {
     "sous_titres": {"actifs": True, "mots_par_ligne": 4},
     "scenes": scenes,
 }
-for k in ("voix", "musique", "musiques", "etalonnage", "transition_defaut", "duree_transition", "rushes_a_refaire", "respiration"):
+for k in ("voix", "musique", "musiques", "musiques_titres", "etalonnage", "transition_defaut", "duree_transition", "rushes_a_refaire", "respiration"):
     if k in base:
         montage[k] = base[k]
 json.dump(montage, open(f"episodes/{slug}/montage.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)

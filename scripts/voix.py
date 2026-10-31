@@ -81,10 +81,7 @@ def synthese(texte, dest, qui=None):
         mp3 = dest + ".mp3"
         for essai in range(5):
             try:
-                try:
-                    dire(texte, voix_edge, mp3, reglages.get("debit", "+8%"), lang=True)
-                except Exception:
-                    dire(texte, voix_edge, mp3, reglages.get("debit", "+8%"), lang=False)
+                dire(texte, voix_edge, mp3, reglages.get("debit", "+8%"), lang=False)  # <lang> refusé par le serveur : xml:lang='fr-FR' suffit
                 break
             except Exception as e:  # coupure réseau passagère : on réessaie
                 print(f"  edge-tts : {e}, nouvel essai", flush=True)
