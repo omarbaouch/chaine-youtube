@@ -3,7 +3,7 @@ name: Échantillons de voix (studio-b)
 on:
   push:
     branches: [studio-b]
-    paths: ['tests/voix-b/**']
+    paths: ['tests/voix-b/**', 'scripts/voix_edge.py']
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
       - name: Outils
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
-          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu pocket-tts scipy huggingface_hub piper-tts edge-tts kokoro soundfile "misaki[fr]" || pip install -q --extra-index-url https://download.pytorch.org/whl/cpu pocket-tts scipy huggingface_hub piper-tts edge-tts soundfile
+          pip install -q edge-tts
       - name: Générer
         run: python tests/voix-b/generer.py
       - name: Publier
