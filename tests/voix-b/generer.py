@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Test prononciation « centimes » avec Vivienne : avant / après forçage du français."""
-import asyncio, os, subprocess, sys
+"""Vivienne (multilingue) bascule en anglais sur les phrases courtes isolées (« Six centimes. »).
+Test : 1) Vivienne, phrase courte isolée ; 2) Vivienne, phrase courte rattachée ; 3) Denise (100 % français) ; 4) Henri (sceptique)."""
+import os, sys
 sys.path.insert(0, "scripts")
-import edge_tts
-TEXTE = "Dans cette baguette à un euro, le blé coûte… six centimes. Six centimes. Le meunier : sept centimes."
-V = "fr-FR-VivienneMultilingualNeural"
-os.makedirs("out/voix", exist_ok=True)
-asyncio.run(edge_tts.Communicate(TEXTE, V, rate="+8%").save("out/voix/A-avant.mp3")); print("✔ A")
 import voix_edge
-voix_edge.dire(TEXTE, V, "out/voix/B-francais-force.mp3", lang=False); print("✔ B")
-for f in sorted(os.listdir("out/voix")):
-    d = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f"out/voix/{f}"], capture_output=True, text=True).stdout.strip()
-    print(f, d, os.path.getsize(f"out/voix/{f}"))
+os.makedirs("out/voix", exist_ok=True)
+T1 = "Dans cette baguette à un euro, le blé coûte… six centimes. Six centimes. Le meunier : sept centimes."
+T2 = "Dans cette baguette à un euro, le blé coûte… six centimes. Oui, six petits centimes, pas un de plus. Et le meunier ? Sept centimes."
+for nom, voix, t in [("1-vivienne-phrase-courte", "fr-FR-VivienneMultilingualNeural", T1),
+                     ("2-vivienne-phrase-rattachee", "fr-FR-VivienneMultilingualNeural", T2),
+                     ("3-denise-100pc-francais", "fr-FR-DeniseNeural", T1),
+                     ("4-henri-sceptique", "fr-FR-HenriNeural", "Attends… quatre-vingt-trois centimes pour le boulanger ? Il se gave, non ?")]:
+    voix_edge.dire(t, voix, f"out/voix/{nom}.mp3", "+5%", lang=False); print("✔", nom)
