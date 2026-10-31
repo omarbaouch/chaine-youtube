@@ -1,0 +1,49 @@
+=== TITRE ===
+Prix de la baguette : qui a pris tes 94 centimes ?
+
+=== DESCRIPTION (copier tout le bloc) ===
+Tu paies ta baguette environ 1 €. Le blé dedans ? 6 centimes. Alors qui a pris les 94 autres centimes ?
+On mène l'enquête avec quatre suspects : l'agriculteur, le meunier, l'État… et le boulanger. Chiffres officiels à l'appui, du champ jusqu'au comptoir.
+
+Dans cette vidéo : comment est fabriquée la baguette (moisson, moulin à cylindres, gluten, levure, four), la vraie décomposition de son prix (6 c de blé, 7 c de meunerie, 5 c de TVA, 83 c après le moulin), ce que gagne vraiment un boulanger, l'histoire d'Alexandra Faure, boulangère à Valdahon, face à sa facture d'électricité, et la baguette à 29 centimes de Leclerc : qui la paie vraiment ?
+
+Chapitres :
+{CHAPITRES}
+
+Sources principales :
+- OFPM / FranceAgriMer, rapport 2026, section Pain : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/12_2026_section_7_pain_v3.pdf
+- INSEE, prix moyen du pain baguette : https://www.insee.fr/fr/statistiques/serie/000442615
+- Fiducial, Observatoire 2026 de la boulangerie : https://www.fiducial.fr/Boulangeries-Patisseries-Chocolateries/blog/observatoire-fiducial-boulangerie-patisserie/observatoire-fiducial-2026-boulangerie-patisserie
+- UFC-Que Choisir, prix de la baguette (2026) : https://www.quechoisir.org/actualite-prix-de-la-baguette-des-ecarts-faramineux-n177006/
+- macommune.info, la boulangère de Valdahon (18/11/2022) : https://www.macommune.info/crise-energetique-une-boulangere-de-valdahon-crie-son-desespoir-sur-les-reseaux-sociaux
+- Brut, la détresse d'une boulangère (30/11/2022) : https://www.brut.media/fr/news/hausse-des-prix-de-l-electricite-la-detresse-d-une-boulangere-6842f8d6-a535-4c2e-a9e4-795b66b8cc5a
+- 24matins, Julien Pedussel (02/01/2023) : https://www.24matins.fr/la-detresse-dun-boulanger-face-a-la-hausse-de-lelectricite-si-je-paye-ma-facture-je-ferme-a-la-fin-du-mois-temoignages-1349816
+- Europe 1, manifestation des boulangers (janvier 2023) : https://www.europe1.fr/societe/on-ne-demande-qua-bosser-les-artisans-boulangers-pris-a-la-gorge-manifesteront-lundi-a-paris-4162755
+- Europe 1, colère contre la baguette à 29 c : https://www.europe1.fr/societe/colere-des-boulangers-et-meuniers-contre-la-baguette-demagogique-de-leclerc-4087518
+- Pleinchamp, la baguette Leclerc à 0,29 € (2022) : https://www.pleinchamp.com/actualite/boulangerie-le-prix-de-la-baguette-de-pain-bloque-a-0-29-euro-pendant-quatre-mois-chez-leclerc
+- Décret n° 93-1074 (pain de tradition française) : https://faolex.fao.org/docs/pdf/fra198412.pdf
+Les chiffres « par baguette » sont rapportés à 250 g à partir des données OFPM au kilo. Le bénéfice du boulanger est une moyenne de toute la boutique (Fiducial).
+
+Musique : Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0
+{MUSIQUE}
+
+Crédits images et vidéos :
+{CREDITS}
+
+Liste complète des médias, avec liens : premiers commentaires sous la vidéo.
+Voix off générée par synthèse vocale.
+
+=== TAGS (champ « Tags », séparés par des virgules) ===
+prix de la baguette, combien coûte une baguette, prix baguette 2026, coût de fabrication baguette, prix du pain, décomposition prix baguette, qui gagne quoi sur une baguette, combien gagne un boulanger, marge boulanger, baguette 29 centimes Leclerc, boulangerie facture électricité, boulangère Valdahon, comment est fabriquée la baguette, fabrication du pain, boulangerie, prix du blé, le vrai prix, combien ça coûte
+
+=== RÉGLAGES ===
+Miniature : miniature.jpg
+Public : non, ce n'est pas conçu pour les enfants
+Contenu modifié ou synthétique : NON (aucune image réaliste générée par IA)
+Catégorie : Science et technologie
+Langue de la vidéo : français
+Visibilité : Publique (ou Programmer)
+Fiche de fin (20 dernières secondes) : élément « Abonnement » + « Meilleure vidéo pour le spectateur »
+
+=== COMMENTAIRE À ÉPINGLER ===
+Une baguette à 28 centimes au supermarché : bonne affaire… ou c'est quelqu'un d'autre qui paie la différence ? Et chez toi, ta baguette coûte combien ? Donne ta ville et ton prix 👇

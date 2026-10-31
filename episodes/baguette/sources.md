@@ -62,3 +62,10 @@ Consultées le 29/10/2026. Les identifiants F01… renvoient au tableau de `vide
 
 
 
+
+## Histoires humaines (v6)
+- macommune.info, boulangère de Valdahon (18/11/2022) : https://www.macommune.info/crise-energetique-une-boulangere-de-valdahon-crie-son-desespoir-sur-les-reseaux-sociaux
+- Brut, « la détresse d'une boulangère » (30/11/2022) : https://www.brut.media/fr/news/hausse-des-prix-de-l-electricite-la-detresse-d-une-boulangere-6842f8d6-a535-4c2e-a9e4-795b66b8cc5a
+- 24matins, Julien Pedussel (02/01/2023) : https://www.24matins.fr/la-detresse-dun-boulanger-face-a-la-hausse-de-lelectricite-si-je-paye-ma-facture-je-ferme-a-la-fin-du-mois-temoignages-1349816
+- Europe 1, manifestation du 23/01/2023 : https://www.europe1.fr/societe/on-ne-demande-qua-bosser-les-artisans-boulangers-pris-a-la-gorge-manifesteront-lundi-a-paris-4162755
+- Europe 1, colère contre la baguette à 29 c : https://www.europe1.fr/societe/colere-des-boulangers-et-meuniers-contre-la-baguette-demagogique-de-leclerc-4087518

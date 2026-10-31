@@ -748,7 +748,8 @@
    "format": "rush",
    "texte": "Il ne reste donc qu'un seul suspect, et franchement, depuis le début, tout l'accuse.",
    "media_ref": "pv:11563",
-   "ambiance": "tension"
+   "ambiance": "tension",
+   "debut_media": 1.2
   },
   {
    "id": "p143b",
