@@ -99,6 +99,36 @@ const N = (s) => Math.round(s * SR);
   for (let i = 0; i < n; i++) { const t = i / n; ph += (2 * Math.PI * (760 - 420 * t)) / SR; L[i] = Math.sin(ph) * Math.exp(-t * 8); }
   ecrire('pop', L);
 }
+{ // craque : croûte de pain qui craque (rafales de petits clics secs)
+  const n = N(1.4), L = new Float32Array(n), R = new Float32Array(n), hp = biquad(), hp2 = biquad();
+  for (let k = 0; k < 90; k++) {
+    const t0 = Math.floor(Math.pow(Math.random(), 1.6) * (n - N(0.03)));
+    const amp = 0.3 + Math.random() * 0.7, pan = Math.random();
+    for (let i = 0; i < N(0.012); i++) { const v = rnd() * amp * Math.exp(-i / (SR * 0.0025)); L[t0 + i] += v * (1 - pan * 0.6); R[t0 + i] += v * (0.4 + pan * 0.6); }
+  }
+  for (let i = 0; i < n; i++) { L[i] = hp(L[i], 'bp', 3800, 0.6); R[i] = hp2(R[i], 'bp', 3800, 0.6); }
+  ecrire('craque', L, R);
+}
+{ // four : souffle chaud et grave d'un four qu'on ouvre (bruit filtré + grondement)
+  const d = 3, n = N(d), L = new Float32Array(n), R = new Float32Array(n), lp = biquad(), lp2 = biquad();
+  for (let i = 0; i < n; i++) {
+    const t = i / SR, env = Math.min(1, t / 0.4) * Math.min(1, (d - t) / 0.8);
+    const g = Math.sin(2 * Math.PI * 55 * t) * 0.25 + Math.sin(2 * Math.PI * 82 * t) * 0.12;
+    L[i] = (lp(rnd(), 'lp', 600) * 1.4 + g) * env; R[i] = (lp2(rnd(), 'lp', 650) * 1.4 + g) * env;
+  }
+  ecrire('four', L, R);
+}
+{ // caisse : tiroir-caisse (clac métallique + ding)
+  const n = N(1.6), L = new Float32Array(n), R = new Float32Array(n), bp = biquad();
+  for (let i = 0; i < n; i++) {
+    const t = i / SR;
+    const clac = bp(rnd(), 'bp', 2200, 1.2) * Math.exp(-t * 35) * 1.2;
+    const t2 = Math.max(0, t - 0.12);
+    const ding = t > 0.12 ? (Math.sin(2 * Math.PI * 2093 * t2) + 0.5 * Math.sin(2 * Math.PI * 4186 * t2) + 0.3 * Math.sin(2 * Math.PI * 3136 * t2)) * Math.exp(-t2 * 2.8) * 0.5 : 0;
+    L[i] = clac + ding; R[i] = clac * 0.9 + ding;
+  }
+  ecrire('caisse', L, R);
+}
 { // nappe : ambiance sombre et douce (ré mineur), 20 s, fondu entrée/sortie
   const d = 20, n = N(d), L = new Float32Array(n), R = new Float32Array(n), lpL = biquad(), lpR = biquad();
   const notes = [73.42, 110, 146.83, 174.61, 220];

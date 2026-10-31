@@ -128,7 +128,7 @@ export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalon
       ) : null}
       {scene.sousTitres.length ? (
         <Sequence from={scene.voixDebut} name="Sous-titres">
-          <SousTitres lignes={scene.sousTitres} />
+          <SousTitres lignes={scene.sousTitres} sceptique={scene.qui === 'sceptique'} />
         </Sequence>
       ) : null}
     </AbsoluteFill>

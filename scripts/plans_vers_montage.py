@@ -12,7 +12,7 @@ reglages = json.load(open(sys.argv[2], encoding="utf-8")) if len(sys.argv) > 2 e
 
 GARDER = {"id", "format", "texte", "media_ref", "medias", "fichier", "schema", "etiquette_schema", "cote", "couches", "surtitre",
           "punch", "transition", "sons", "numero", "titre", "sous_titre", "duree_min", "zoom", "vitesse", "debut_media",
-          "respiration", "avant_voix", "type"}
+          "respiration", "avant_voix", "type", "voix", "ambiance"}
 scenes = [dict(x) for x in reglages.get("_avant", [])]
 for p in plans:
     s = {k: v for k, v in p.items() if k in GARDER}
@@ -41,7 +41,7 @@ montage = {
     "sous_titres": {"actifs": True, "mots_par_ligne": 4},
     "scenes": scenes,
 }
-for k in ("voix", "musique", "etalonnage", "transition_defaut", "duree_transition", "rushes_a_refaire", "respiration"):
+for k in ("voix", "musique", "musiques", "etalonnage", "transition_defaut", "duree_transition", "rushes_a_refaire", "respiration"):
     if k in base:
         montage[k] = base[k]
 json.dump(montage, open(f"episodes/{slug}/montage.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)

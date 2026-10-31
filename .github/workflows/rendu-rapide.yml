@@ -80,6 +80,7 @@ jobs:
         run: |
           ep="${{ steps.quoi.outputs.episode }}"
           node scripts/musique.mjs
+          python3 scripts/musique_libre.py "$ep" || echo "musique libre indisponible : musique générée"
           node scripts/sfx.mjs > /dev/null
           node scripts/medias.mjs "$ep"
           python3 scripts/voix.py "$ep"
@@ -110,7 +111,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tar -czf prepa.tgz public/ep public/sfx
+          tar -czf prepa.tgz public/ep public/sfx $( [ -d public/musique ] && echo public/musique )
           gh release create "tmp-rendu-${{ github.run_id }}" prepa.tgz --target "${{ github.sha }}" --title "tmp rendu ${{ github.run_id }}" --notes "temporaire, supprimé à la fin du rendu" --prerelease
 
   tranche:
@@ -180,7 +181,7 @@ jobs:
           ffmpeg -y -loglevel error -i out/video.mp4 -i out/son.wav -map 0:v -map 1:a -c:v copy \
             -af "loudnorm=I=-14:TP=-1.5:LRA=9" -c:a aac -b:a 192k -ar 48000 -shortest "out/$nom.mp4"
           node scripts/planche.mjs "$ep" "out/$nom.mp4"
-          [ -f "public/ep/$ep/credits.txt" ] && cp "public/ep/$ep/credits.txt" "out/$ep-credits.txt"
+          cat public/ep/$ep/credits-musique.txt public/ep/$ep/credits.txt 2>/dev/null | awk '!vu[$0]++' > "out/$ep-credits.txt"
           ls -la out
       - name: Publier (onglet Releases)
         env:

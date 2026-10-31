@@ -117,6 +117,8 @@ const scenes = montage.scenes.map((s, i) => {
     cote: s.cote,
     punch: s.punch,
     sons,
+    qui: s.voix,
+    ambiance: s.ambiance,
   };
 });
 
@@ -174,6 +176,33 @@ const voixPlages = [];
   });
 }
 scenes.forEach((s) => delete s.segments);
+// Musique par ambiance (champ "ambiance" des scènes) : un morceau par ambiance, fondus enchaînés entre segments.
+// montage.musiques = {"tension": "public/musique/tension.mp3", ...} (fichiers téléchargés par scripts/musique_libre.py)
+let musiques;
+if (montage.musiques && scenes.some((s) => s.ambiance)) {
+  const debuts = [];
+  { let t = 0; scenes.forEach((s, i) => { if (i && s.transition !== 'coupe') t -= dureeTransition; debuts.push(t); t += s.duree; }); }
+  const segs = [];
+  let cour = null;
+  scenes.forEach((s, i) => {
+    const amb = s.ambiance ?? cour?.amb ?? Object.keys(montage.musiques)[0];
+    if (!cour || amb !== cour.amb) { cour = {amb, de: debuts[i]}; segs.push(cour); }
+    cour.a = debuts[i] + s.duree;
+  });
+  // segments trop courts (< 20 s) absorbés par le précédent : la musique ne doit pas zapper
+  const fus = [];
+  for (const g of segs) { if (fus.length && g.a - g.de < 20 * fps) fus.at(-1).a = g.a; else fus.push({...g}); }
+  for (let i = 1; i < fus.length; i++) fus[i].de = fus[i - 1].a;
+  const decal = {};
+  musiques = fus.filter((g) => montage.musiques[g.amb]).map((g) => {
+    const src = montage.musiques[g.amb].replace(/^public\//, '');
+    const off = decal[g.amb] ?? 0; // on reprend le morceau là où on l'avait laissé
+    decal[g.amb] = off + (g.a - g.de);
+    return {src, de: g.de, a: g.a, decalage: off};
+  });
+  console.log('musique :', musiques.map((m) => `${path.basename(m.src)} ${(m.de / fps).toFixed(0)}-${(m.a / fps).toFixed(0)} s`).join(' | '));
+}
+
 
 // Règle n°6 : jamais deux plans consécutifs du même format.
 const doublons = scenes.filter((s, i) => i && s.format === scenes[i - 1].format).map((s) => s.id);
@@ -192,6 +221,7 @@ const props = {
   etalonnage: {contraste: 1.08, saturation: 1.1, luminosite: 1, ...(montage.etalonnage ?? {})},
   grain: montage.grain ?? true,
   voixPlages,
+  musiques,
   scenes,
 };
 fs.writeFileSync(path.join(pub, 'props.json'), JSON.stringify(props, null, 1));

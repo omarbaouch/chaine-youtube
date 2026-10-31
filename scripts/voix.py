@@ -73,7 +73,8 @@ def modele():
     return _modele, _etat
 
 
-def synthese(texte, dest):
+def synthese(texte, dest, qui=None):
+    voix_edge = (reglages.get("voix_secondaires", {}) or {}).get(qui, locuteur) if qui else locuteur
     if moteur == "edge":
         # Voix neuronale Microsoft Edge (choix d'Omar du 31/10/2026 : Vivienne). Gratuite, conditions d'usage à surveiller.
         import asyncio
@@ -81,7 +82,7 @@ def synthese(texte, dest):
         mp3 = dest + ".mp3"
         for essai in range(5):
             try:
-                asyncio.run(edge_tts.Communicate(texte, locuteur, rate=reglages.get("debit", "+8%")).save(mp3))
+                asyncio.run(edge_tts.Communicate(texte, voix_edge, rate=reglages.get("debit", "+8%")).save(mp3))
                 break
             except Exception as e:  # coupure réseau passagère : on réessaie
                 print(f"  edge-tts : {e}, nouvel essai", flush=True)
@@ -113,10 +114,11 @@ for s in montage["scenes"]:
         continue
     segments, fichiers, t = [], [], 0.0
     for p in phrases(texte):
-        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, etapes, reglages.get("debit"), p]).encode()).hexdigest()[:16]
+        qui = s.get("voix")
+        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, etapes, reglages.get("debit"), qui, p]).encode()).hexdigest()[:16]
         brut = os.path.join(cache, f"{cle}.wav")
         if not os.path.exists(brut):
-            synthese(p, brut + ".tmp.wav")
+            synthese(p, brut + ".tmp.wav", qui)
             ffmpeg("-i", brut + ".tmp.wav", "-ar", str(SR), "-ac", "1", brut)
             os.remove(brut + ".tmp.wav")
         d = duree(brut)

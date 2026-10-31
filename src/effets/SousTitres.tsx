@@ -7,7 +7,7 @@ const C = theme.couleurs;
 
 // Sous-titres "style YouTubeur" (règle n°8) : 78 px, MAJUSCULES, contour noir ;
 // le mot prononcé passe sur une pastille orange (texte foncé) qui glisse de mot en mot.
-export const SousTitres: React.FC<{lignes: Ligne[]}> = ({lignes}) => {
+export const SousTitres: React.FC<{lignes: Ligne[]; sceptique?: boolean}> = ({lignes, sceptique}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const ligne = lignes.find((l) => frame >= l.debut && frame < l.fin);
@@ -43,8 +43,8 @@ export const SousTitres: React.FC<{lignes: Ligne[]}> = ({lignes}) => {
                 display: 'inline-block',
                 padding: '0 14px',
                 borderRadius: 14,
-                background: actif ? C.heros : 'transparent',
-                color: actif ? '#0B0E14' : C.texte,
+                background: actif ? (sceptique ? C.accent : C.heros) : 'transparent',
+                color: actif ? '#0B0E14' : sceptique ? C.accent : C.texte,
                 WebkitTextStroke: actif ? '0px transparent' : '10px rgba(0,0,0,.9)',
                 paintOrder: 'stroke fill',
                 textShadow: actif ? 'none' : '0 6px 18px rgba(0,0,0,.55)',

@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, staticFile, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, staticFile, useVideoConfig} from 'remotion';
 import {Audio} from '@remotion/media';
 import {TransitionSeries, linearTiming} from '@remotion/transitions';
 import {fade} from '@remotion/transitions/fade';
@@ -42,6 +42,35 @@ const Musique: React.FC<{src: string; volume: number; plages?: [number, number][
   );
 };
 
+const MusiquesAmbiance: React.FC<{liste: NonNullable<EpisodeProps['musiques']>; volume: number; plages?: [number, number][]}> = ({liste, volume, plages = []}) => {
+  const {fps} = useVideoConfig();
+  const fondu = Math.round(fps * 1.5);
+  const rampe = Math.round(fps * 0.35);
+  const sousVoix = (f: number) => {
+    let k = 0;
+    for (const [a, b] of plages) {
+      if (f < a - rampe) break;
+      if (f <= b + rampe) k = Math.max(k, Math.min(1, (f - (a - rampe)) / rampe, (b + rampe - f) / rampe));
+    }
+    return k;
+  };
+  return (
+    <>
+      {liste.map((m, i) => {
+        const de = Math.max(0, m.de - (i ? fondu : 0));
+        const duree = m.a - de + (i < liste.length - 1 ? fondu : 0);
+        return (
+          <Sequence key={i} from={de} durationInFrames={duree} layout="none" name={`Musique ${m.src}`}>
+            <Audio src={staticFile(m.src)} loop trimBefore={m.decalage} volume={(f) =>
+              volume * interpolate(f, [0, fondu, duree - fondu, duree], [i ? 0 : 1, 1, 1, i < liste.length - 1 ? 0 : 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})
+              * (1 - 0.55 * sousVoix(de + f))} />
+          </Sequence>
+        );
+      })}
+    </>
+  );
+};
+
 export const Episode: React.FC<EpisodeProps> = (props) => {
   const {scenes, dureeTransition, musique, grain} = props;
   const items: React.ReactNode[] = [];
@@ -65,7 +94,7 @@ export const Episode: React.FC<EpisodeProps> = (props) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       <TransitionSeries>{items}</TransitionSeries>
-      {musique ? <Musique src={musique.src} volume={musique.volume} plages={props.voixPlages} /> : null}
+      {props.musiques?.length ? <MusiquesAmbiance liste={props.musiques} volume={musique?.volume ?? 0.2} plages={props.voixPlages} /> : musique ? <Musique src={musique.src} volume={musique.volume} plages={props.voixPlages} /> : null}
       {grain ? <Grain /> : null}
     </AbsoluteFill>
   );

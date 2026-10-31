@@ -24,6 +24,10 @@ export type Schema =
       a: {label: string; valeur: number}; b: {label: string; valeur: number}}
   | {type: 'decoupe'; titre?: string; total?: number; unite?: string; decimales?: number; parts: PartPrix[]; source?: string;
       zone?: [number, number] /* début/fin de l'objet en % de largeur de l'image */; zone_y?: [number, number]; ratio?: number}
+  | {type: 'devine'; question: string; choix: string[]; bonne?: number; secondes?: number}
+  | {type: 'suspect'; nom: string; accusation?: string; verdict?: string | null; numero?: string}
+  | {type: 'piece'; titre?: string; total?: number; unite?: string; decimales?: number; parts: PartPrix[]; source?: string}
+  | {type: 'loupe'; points: {x: number; y: number; texte: string; a?: number}[]; zoom?: number}
   | {type: 'liste'; titre?: string; elements: {texte: string; valeur?: string; heros?: boolean}[]; source?: string};
 
 export type Son = {nom: string; a: number; volume?: number}; // a = secondes dans la scène
@@ -52,6 +56,8 @@ export type Scene = {
   cote?: 'gauche' | 'droite'; // ecran_partage : côté du média réel
   punch?: {a: number; texte?: string}; // règle n°7 : emphase cinétique (zoom + impact)
   sons: Son[];
+  qui?: string; // 'sceptique' = 2e voix
+  ambiance?: string;
 };
 
 // Couches animées, écrites dans montage.json (champ "couches" d'une scène). "a" = début en secondes dans la scène.
@@ -72,7 +78,8 @@ export type EpisodeProps = {
   hauteur: number;
   dureeTransition: number; // frames
   musique?: {src: string; volume: number};
-  voixPlages?: [number, number][]; // frames globales où la voix parle (la musique se baisse)
+  voixPlages?: [number, number][];
+  musiques?: {src: string; de: number; a: number; decalage: number}[]; // musique par ambiance // frames globales où la voix parle (la musique se baisse)
   etalonnage: {contraste: number; saturation: number; luminosite: number};
   grain: boolean;
   scenes: Scene[];

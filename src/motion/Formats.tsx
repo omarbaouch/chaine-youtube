@@ -6,7 +6,7 @@ import {Video} from '@remotion/media';
 import type {Media, Scene} from '../types';
 import {theme, clamp} from '../theme';
 import {FondVivant} from './Couches';
-import {SchemaAnime, Bruit} from './Schemas';
+import {SchemaAnime, Bruit, Loupe} from './Schemas';
 
 const C = theme.couleurs;
 
@@ -85,7 +85,7 @@ const EtiquetteSchema: React.FC<{texte?: string}> = ({texte}) => {
 
 // Fond d'un plan "dessiné" : rush flouté et sombre si on en a un (on garde le lien avec le réel), sinon fond vivant.
 const FondPlan: React.FC<{scene: Scene}> = ({scene}) => {
-  if (scene.schema?.type === 'decoupe') return <FondVivant />;
+  if (scene.schema && ['decoupe', 'piece', 'suspect', 'devine'].includes(scene.schema.type)) return <FondVivant />;
   const m = scene.media ? {src: scene.media, image: /\.(jpe?g|png|webp)$/i.test(scene.media)} : scene.medias[0];
   return (
     <>
@@ -99,7 +99,12 @@ const FondPlan: React.FC<{scene: Scene}> = ({scene}) => {
   );
 };
 
-export const PlanSchema: React.FC<{scene: Scene}> = ({scene}) => (
+export const PlanSchema: React.FC<{scene: Scene}> = ({scene}) => scene.schema?.type === 'loupe' ? (
+  <AbsoluteFill>
+    <Loupe s={scene.schema} duree={scene.duree} media={scene.media && /\.(jpe?g|png|webp)$/i.test(scene.media) ? scene.media : undefined} />
+    <EtiquetteSchema texte={scene.etiquetteSchema} />
+  </AbsoluteFill>
+) : (
   <AbsoluteFill>
     <FondPlan scene={scene} />
     <EtiquetteSchema texte={scene.etiquetteSchema} />

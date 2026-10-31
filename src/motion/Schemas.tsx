@@ -352,10 +352,189 @@ const Decoupe: React.FC<{s: Extract<Schema, {type: 'decoupe'}>; l: number; duree
   );
 };
 
+
+// ---------- DEVINETTE : 3 choix, compte à rebours, puis la bonne réponse s'allume ----------
+const Devine: React.FC<{s: Extract<Schema, {type: 'devine'}>; l: number; duree: number}> = ({s, l, duree}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const sec = s.secondes ?? 3;
+  const t0 = 8;
+  const tRev = Math.min(duree - Math.round(fps * 0.9), t0 + sec * fps + 6);
+  const pQ = spring({frame: f, fps, config: theme.ressort.doux});
+  const reste = Math.max(0, Math.ceil(sec - (f - t0) / fps));
+  const enCours = f >= t0 && f < tRev;
+  const tick = (f - t0) % fps;
+  const pouls = enCours ? 1 + 0.12 * Math.exp(-tick / 5) : 1;
+  const revele = f >= tRev;
+  const lettres = ['A', 'B', 'C', 'D'];
+  return (
+    <div style={{width: l, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 64, color: C.texte, textAlign: 'center', lineHeight: 1.1, maxWidth: l,
+        opacity: pQ, transform: `translateY(${interpolate(pQ, [0, 1], [24, 0])}px)`}}>{s.question}</div>
+      <div style={{display: 'flex', gap: 36, marginTop: 50}}>
+        {s.choix.map((c, i) => {
+          const e = spring({frame: f - 4 - i * 4, fps, config: theme.ressort.rebond});
+          const bon = revele && i === s.bonne;
+          const faux = revele && i !== s.bonne;
+          return (
+            <div key={i} style={{minWidth: 280, padding: '26px 34px', borderRadius: 22, textAlign: 'center', opacity: e * (faux ? 0.35 : 1),
+              transform: `scale(${interpolate(e, [0, 1], [0.7, 1]) * (bon ? 1.12 : 1)})`,
+              background: bon ? C.heros : 'rgba(11,14,20,0.75)', border: `3px solid ${bon ? C.heros : C.accent}`,
+              boxShadow: bon ? `0 0 60px ${C.lueur}` : '0 20px 40px rgba(0,0,0,.4)'}}>
+              <div style={{fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 30, color: bon ? C.fond : C.accent}}>{lettres[i]}</div>
+              <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 72, color: bon ? C.fond : C.texte, lineHeight: 1.05}}>{c}</div>
+            </div>
+          );
+        })}
+      </div>
+      <div style={{marginTop: 50, height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        {enCours ? (
+          <div style={{width: 140, height: 140, borderRadius: 70, border: `6px solid ${C.heros}`, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            transform: `scale(${pouls})`, fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 84, color: C.heros}}>{reste}</div>
+        ) : f < t0 ? null : (
+          <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 56, color: C.heros}}>Réponse {lettres[s.bonne ?? 0]}</div>
+        )}
+      </div>
+      {Array.from({length: sec}).map((_, k) => <Bruit key={k} nom="tick" a={t0 + k * fps} volume={0.5} />)}
+      <Bruit nom="impact" a={tRev} volume={0.55} />
+    </div>
+  );
+};
+
+// ---------- FICHE SUSPECT (avec photo réelle) puis verdict tamponné ----------
+const Suspect: React.FC<{s: Extract<Schema, {type: 'suspect'}>; l: number; media?: string}> = ({s, l, media}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const pF = spring({frame: f, fps, config: theme.ressort.doux});
+  const tT = Math.round(fps * 0.9);
+  const pT = spring({frame: f - tT, fps, config: {damping: 9, stiffness: 220, mass: 0.6}});
+  const coupable = s.verdict && /coupable/i.test(s.verdict);
+  const couleurTampon = coupable ? '#FF3B3B' : C.accent;
+  return (
+    <div style={{width: l, display: 'flex', gap: 60, alignItems: 'center', opacity: pF, transform: `translateY(${interpolate(pF, [0, 1], [30, 0])}px) rotate(${interpolate(pF, [0, 1], [-2, -1])}deg)`}}>
+      <div style={{width: 520, height: 600, borderRadius: 12, overflow: 'hidden', background: '#222', boxShadow: '0 40px 80px rgba(0,0,0,.6)', border: '10px solid #E9E4D8', flexShrink: 0, position: 'relative'}}>
+        {media ? <Img src={staticFile(media)} style={{width: '100%', height: '100%', objectFit: 'cover', filter: s.verdict ? 'none' : 'grayscale(0.7) contrast(1.1)'}} /> : null}
+        {s.numero ? <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,.75)', padding: '10px 18px', fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 30, color: C.texte, letterSpacing: '0.2em'}}>SUSPECT N° {s.numero}</div> : null}
+      </div>
+      <div style={{flex: 1, position: 'relative'}}>
+        <div style={{fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 34, letterSpacing: '0.25em', color: C.accent}}>{s.verdict ? 'VERDICT' : 'SUSPECT'}</div>
+        <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 110, color: C.texte, lineHeight: 1, marginTop: 10, textTransform: 'uppercase'}}>{s.nom}</div>
+        {s.accusation && !s.verdict ? <div style={{fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 52, color: C.heros, marginTop: 30, opacity: spring({frame: f - 10, fps, config: theme.ressort.doux})}}>{s.accusation}</div> : null}
+        {s.verdict ? (
+          <div style={{marginTop: 40, display: 'inline-block', padding: '14px 34px', border: `8px solid ${couleurTampon}`, borderRadius: 14, color: couleurTampon,
+            fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 64, textTransform: 'uppercase', letterSpacing: '0.05em', maxWidth: l - 620,
+            opacity: f >= tT ? 1 : 0, transform: `scale(${interpolate(pT, [0, 1], [2.4, 1])}) rotate(-8deg)`, background: 'rgba(11,14,20,.6)'}}>{s.verdict}</div>
+        ) : null}
+      </div>
+      {s.verdict ? <Bruit nom="impact" a={tT} volume={0.7} /> : <Bruit nom="metal" a={2} volume={0.25} />}
+    </div>
+  );
+};
+
+// ---------- PIÈCE : la vraie pièce découpée en parts de camembert qui s'écartent ----------
+const Piece: React.FC<{s: Extract<Schema, {type: 'piece'}>; l: number; duree: number; media?: string}> = ({s, l, duree, media}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const total = s.total ?? s.parts.reduce((a, p) => a + p.valeur, 0);
+  const R = 300;
+  const n = s.parts.length;
+  const tEcart = Math.round(fps * 0.9);
+  const ecart = Math.max(6, Math.min(Math.round(fps * 0.5), Math.floor((duree * 0.4) / n)));
+  const pIn = spring({frame: f, fps, config: theme.ressort.doux});
+  let a0 = -Math.PI / 2;
+  const parts = s.parts.map((p, i) => {
+    const ang = (p.valeur / total) * Math.PI * 2;
+    const r = {p, i, a: a0, b: a0 + ang, mid: a0 + ang / 2};
+    a0 += ang;
+    return r;
+  });
+  const arc = (a: number, b: number) => {
+    const large = b - a > Math.PI ? 1 : 0;
+    return `M ${R} ${R} L ${R + R * Math.cos(a)} ${R + R * Math.sin(a)} A ${R} ${R} 0 ${large} 1 ${R + R * Math.cos(b)} ${R + R * Math.sin(b)} Z`;
+  };
+  return (
+    <div style={{width: l, display: 'flex', alignItems: 'center', gap: 70}}>
+      <div style={{position: 'relative', width: 2 * R, height: 2 * R, flexShrink: 0, transform: `scale(${interpolate(pIn, [0, 1], [0.6, 1])}) rotate(${interpolate(pIn, [0, 1], [-30, 0])}deg)`, opacity: pIn}}>
+        {parts.map(({p, i, a, b, mid}) => {
+          const e = spring({frame: f - tEcart - i * ecart, fps, config: theme.ressort.vif});
+          const d = (p.heros ? 70 : 34) * e;
+          const id = `pc${i}`;
+          return (
+            <svg key={i} width={2 * R} height={2 * R} style={{position: 'absolute', inset: 0, overflow: 'visible', transform: `translate(${Math.cos(mid) * d}px, ${Math.sin(mid) * d}px)`,
+              filter: p.heros ? `drop-shadow(0 0 30px ${C.lueur})` : 'drop-shadow(0 16px 24px rgba(0,0,0,.6))'}}>
+              <defs><clipPath id={id}><path d={arc(a, b)} /></clipPath></defs>
+              {media ? <image href={staticFile(media)} x={0} y={0} width={2 * R} height={2 * R} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${id})`} /> : <path d={arc(a, b)} fill="#C9A44A" />}
+              {p.heros ? <path d={arc(a, b)} fill={C.heros} opacity={0.65 * e} style={{mixBlendMode: 'color'}} /> : null}
+              <path d={arc(a, b)} fill="none" stroke="rgba(0,0,0,.6)" strokeWidth={3} />
+            </svg>
+          );
+        })}
+      </div>
+      <div style={{flex: 1}}>
+        <Titre texte={s.titre} />
+        {parts.map(({p, i}) => {
+          const e = spring({frame: f - tEcart - i * ecart - 3, fps, config: theme.ressort.vif});
+          return (
+            <div key={i} style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 30, padding: '10px 0', opacity: e,
+              transform: `translateX(${interpolate(e, [0, 1], [30, 0])}px)`, borderBottom: '1px solid rgba(255,255,255,.08)'}}>
+              <span style={{fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 40, color: p.heros ? C.texte : C.texteDim}}>{p.label}</span>
+              <span style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: p.heros ? 64 : 46, color: p.heros ? C.heros : C.texte, fontVariantNumeric: 'tabular-nums'}}>
+                {nombre(p.valeur, s.decimales ?? 2)}{s.unite ?? ' €'}</span>
+            </div>
+          );
+        })}
+        <Source texte={s.source} debut={tEcart + n * ecart} />
+      </div>
+      {parts.map(({p, i}) => <Bruit key={i} nom={p.heros ? 'impact' : 'pop'} a={tEcart + i * ecart} volume={p.heros ? 0.45 : 0.2} />)}
+    </div>
+  );
+};
+
+// ---------- LOUPE : une loupe ronde se déplace sur la vraie photo et grossit des détails ----------
+export const Loupe: React.FC<{s: Extract<Schema, {type: 'loupe'}>; media?: string; duree: number}> = ({s, media, duree}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const z = s.zoom ?? 2.5;
+  const W = 1920, H = 1080, r = 210;
+  const pts = s.points.map((p, i) => ({...p, t: Math.round((p.a ?? 0.6 + i * ((duree / fps - 1) / Math.max(1, s.points.length))) * fps)}));
+  let x = pts[0].x, y = pts[0].y;
+  for (let i = 0; i < pts.length; i++) {
+    const avant = i ? pts[i - 1] : pts[0];
+    const k = interpolate(f, [pts[i].t - 14, pts[i].t], [0, 1], {...clamp, easing: theme.courbe.entreSortie});
+    if (f >= pts[i].t - 14) { x = avant.x + (pts[i].x - avant.x) * k; y = avant.y + (pts[i].y - avant.y) * k; }
+  }
+  const cx = (x / 100) * W, cy = (y / 100) * H;
+  const pIn = spring({frame: f - pts[0].t + 10, fps, config: theme.ressort.rebond});
+  const actif = [...pts].reverse().find((p) => f >= p.t);
+  const pLab = actif ? spring({frame: f - actif.t, fps, config: theme.ressort.vif}) : 0;
+  return (
+    <AbsoluteFill>
+      {media ? <Img src={staticFile(media)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.55) saturate(0.9)'}} /> : null}
+      <div style={{position: 'absolute', left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, borderRadius: r, overflow: 'hidden', transform: `scale(${pIn})`,
+        border: `6px solid ${C.texte}`, boxShadow: `0 0 0 4px ${C.heros}, 0 30px 80px rgba(0,0,0,.7)`}}>
+        {media ? <Img src={staticFile(media)} style={{position: 'absolute', width: W * z, height: H * z, maxWidth: 'none', objectFit: 'cover', left: -(cx * z - r), top: -(cy * z - r)}} /> : null}
+      </div>
+      <div style={{position: 'absolute', left: cx + r * 0.75, top: cy + r * 0.75, width: 70, height: 26, borderRadius: 13, background: C.texte, transform: 'rotate(45deg)', transformOrigin: 'left center', opacity: pIn}} />
+      {actif ? (
+        <div style={{position: 'absolute', ...(cx > W / 2 ? {right: W - cx + r + 30} : {left: cx + r + 30}), top: cy - 40, opacity: pLab,
+          transform: `translateY(${interpolate(pLab, [0, 1], [16, 0])}px)`, padding: '14px 26px', borderRadius: 14, background: 'rgba(11,14,20,0.9)',
+          borderLeft: `6px solid ${C.heros}`, fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 44, color: C.texte, maxWidth: 700}}>{actif.texte}</div>
+      ) : null}
+      {pts.map((p, i) => <Bruit key={i} nom="pop" a={p.t} volume={0.3} />)}
+    </AbsoluteFill>
+  );
+};
+
 export const SchemaAnime: React.FC<{s: Schema; l: number; duree: number; media?: string}> = ({s, l, duree, media}) => {
   switch (s.type) {
     case 'decoupe':
       return <Decoupe s={s} l={l} duree={duree} media={media} />;
+    case 'devine':
+      return <Devine s={s} l={l} duree={duree} />;
+    case 'suspect':
+      return <Suspect s={s} l={l} media={media} />;
+    case 'piece':
+      return <Piece s={s} l={l} duree={duree} media={media} />;
     case 'decomposition':
       return <Decomposition s={s} l={l} duree={duree} />;
     case 'processus':

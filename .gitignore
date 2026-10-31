@@ -5,3 +5,4 @@ out/
 __pycache__/
 *.tmp.wav
 public/sfx/musique-*.wav
+public/musique/
