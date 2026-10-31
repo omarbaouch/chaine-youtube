@@ -86,6 +86,12 @@ const scenes = montage.scenes.map((s, i) => {
   const dVoix = aVoix ? Math.ceil(dureeAudio(voixWav) * fps) : 0;
   const minimum = Math.round((s.duree_min ?? (s.type === 'titre' ? 2.5 : 2)) * fps);
   const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? montage.respiration ?? 0.35) * fps), dureeTransition * 2 + 2);
+  // Devinette lue par la voix : le compte à rebours démarre quand la voix a fini de poser la question.
+  if (s.schema?.type === 'devine') {
+    const depart = voixDebut + dVoix + Math.round(0.2 * fps);
+    s.schema = {...s.schema, depart: depart / fps};
+  }
+  const dureeDevine = s.schema?.type === 'devine' ? Math.round((s.schema.depart + (s.schema.secondes ?? 3) + 1.6) * fps) : 0;
   const segments = aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
   const sousTitres = s.sous_titres === false || montage.sous_titres?.actifs === false ? [] : lignes(minuterMots(segments));
   const transition = i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu');
@@ -96,7 +102,7 @@ const scenes = montage.scenes.map((s, i) => {
     id: s.id,
     type: media && estImage(media) && s.type !== 'titre' ? 'image' : s.type ?? 'video',
     format: formatDe(s, media, medias),
-    duree,
+    duree: Math.max(duree, dureeDevine),
     media: media ? `ep/${slug}/media/${media}` : undefined,
     medias,
     voix: aVoix ? `ep/${slug}/voix/${s.id}.wav` : undefined,

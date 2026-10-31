@@ -354,7 +354,8 @@
      "volume": 0.3
     }
    ],
-   "ambiance": "tension"
+   "ambiance": "tension",
+   "texte": "Alors, à ton avis… combien vaut le blé d'une baguette ? Tu as trois secondes pour choisir."
   },
   {
    "id": "p016",
@@ -565,7 +566,8 @@
      "volume": 0.3
     }
    ],
-   "ambiance": "tension"
+   "ambiance": "tension",
+   "texte": "Alors, à ton avis… combien garde le meunier sur ta baguette ? Tu as trois secondes pour choisir."
   },
   {
    "id": "p036",
@@ -1082,7 +1084,8 @@
      "volume": 0.3
     }
    ],
-   "ambiance": "tension"
+   "ambiance": "tension",
+   "texte": "Alors, à ton avis… combien gagne vraiment le boulanger, en bénéfice net, sur une baguette ? Tu as trois secondes."
   },
   {
    "id": "p105",
@@ -1637,7 +1640,8 @@
      "volume": 0.3
     }
    ],
-   "ambiance": "tension"
+   "ambiance": "tension",
+   "texte": "Alors, à ton avis… combien de fois moins cher qu'en boulangerie, cette baguette de supermarché ? Tu as trois secondes."
   },
   {
    "id": "p115",

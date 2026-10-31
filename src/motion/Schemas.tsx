@@ -358,7 +358,7 @@ const Devine: React.FC<{s: Extract<Schema, {type: 'devine'}>; l: number; duree: 
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const sec = s.secondes ?? 3;
-  const t0 = 8;
+  const t0 = s.depart !== undefined ? Math.round(s.depart * fps) : 8; // après la voix
   const tRev = Math.min(duree - Math.round(fps * 0.9), t0 + sec * fps + 6);
   const pQ = spring({frame: f, fps, config: theme.ressort.doux});
   const reste = Math.max(0, Math.ceil(sec - (f - t0) / fps));

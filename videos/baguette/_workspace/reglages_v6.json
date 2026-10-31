@@ -184,5 +184,17 @@
  },
  "p102": {
   "media_ref": "pv:49549"
+ },
+ "p127b": {
+  "texte": "Alors, à ton avis… combien vaut le blé d'une baguette ? Tu as trois secondes pour choisir."
+ },
+ "p133b": {
+  "texte": "Alors, à ton avis… combien garde le meunier sur ta baguette ? Tu as trois secondes pour choisir."
+ },
+ "p155b": {
+  "texte": "Alors, à ton avis… combien gagne vraiment le boulanger, en bénéfice net, sur une baguette ? Tu as trois secondes."
+ },
+ "p174b": {
+  "texte": "Alors, à ton avis… combien de fois moins cher qu'en boulangerie, cette baguette de supermarché ? Tu as trois secondes."
  }
 }
