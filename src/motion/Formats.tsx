@@ -158,7 +158,6 @@ export const PlanMosaique: React.FC<{scene: Scene}> = ({scene}) => {
         const [x, y, l, h] = cases[i];
         return <CarteMedia key={i} m={m} x={x} y={y} l={l} h={h} debut={i * ecart} duree={scene.duree} sens={i % 2 ? -1 : 1} k={i} />;
       })}
-      {scene.medias.slice(0, 4).map((_, i) => <Bruit key={i} nom="whoosh" a={i * ecart} volume={0.18} />)}
     </AbsoluteFill>
   );
 };
@@ -202,7 +201,6 @@ export const CarteChapitre: React.FC<{scene: Scene}> = ({scene}) => {
           </div>
         ) : null}
       </AbsoluteFill>
-      <Bruit nom="whoosh" a={0} volume={0.35} />
       <Bruit nom="impact" a={8} volume={0.3} />
     </AbsoluteFill>
   );

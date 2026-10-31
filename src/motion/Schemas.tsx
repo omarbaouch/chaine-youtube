@@ -347,7 +347,6 @@ const Decoupe: React.FC<{s: Extract<Schema, {type: 'decoupe'}>; l: number; duree
       </div>
       <Source texte={s.source} debut={tEcart + n * ecart} />
       {coupes.slice(1).map((_, i) => <Bruit key={`c${i}`} nom="tick" a={tCoupe + i * 4} volume={0.35} />)}
-      <Bruit nom="whoosh" a={tEcart} volume={0.3} />
       {s.parts.map((p, i) => <Bruit key={i} nom={p.heros ? 'impact' : 'pop'} a={tEcart + 6 + i * ecart} volume={p.heros ? 0.45 : 0.2} />)}
     </div>
   );

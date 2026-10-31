@@ -89,8 +89,9 @@ const scenes = montage.scenes.map((s, i) => {
   const segments = aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
   const sousTitres = s.sous_titres === false || montage.sous_titres?.actifs === false ? [] : lignes(minuterMots(segments));
   const transition = i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu');
-  const sons = [...(s.sons ?? [])];
-  if (transition === 'glissement' || transition === 'balayage') sons.push({nom: 'whoosh', a: 0, volume: 0.35});
+  // retour d'Omar (31/10/2026) : le souffle « whoosh » (le « shiiit ») est banni partout
+  const sons = (s.sons ?? []).filter((x) => x.nom !== 'whoosh');
+  // (plus de souffle « whoosh » sur les transitions : retour d'Omar du 31/10/2026)
   return {
     id: s.id,
     type: media && estImage(media) && s.type !== 'titre' ? 'image' : s.type ?? 'video',
@@ -158,8 +159,6 @@ for (const s of scenes) {
 // Sound design automatique (règle n°7) : petit souffle à chaque changement de format,
 // riser qui monte dans la dernière seconde et demie avant chaque carte de chapitre.
 scenes.forEach((s, i) => {
-  if (i && s.format !== scenes[i - 1].format && s.format !== 'titre' && !s.sons.some((x) => x.a < 0.3))
-    s.sons.push({nom: 'whoosh', a: 0, volume: 0.12});
   if (scenes[i + 1]?.format === 'titre' && s.duree > fps * 2)
     s.sons.push({nom: 'riser', a: Math.max(0, s.duree / fps - 1.6), volume: 0.22});
 });
