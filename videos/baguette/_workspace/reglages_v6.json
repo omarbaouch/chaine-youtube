@@ -196,5 +196,22 @@
  },
  "p174b": {
   "texte": "Alors, à ton avis… combien de fois moins cher qu'en boulangerie, cette baguette de supermarché ? Tu as trois secondes."
+ },
+ "p162b": {
+  "texte": "Dans sa vidéo, elle lâche cette phrase, désespérée : « Là, c'est le coup de grâce. »",
+  "schema": {
+   "type": "liste",
+   "titre": "Alexandra Faure",
+   "elements": [
+    {
+     "texte": "« Là, c'est le coup de grâce »",
+     "heros": true
+    },
+    {
+     "texte": "« Je suis désespérée de ce qui va se passer dans les mois qui arrivent »"
+    }
+   ],
+   "source": "Brut, 30/11/2022"
+  }
  }
 }

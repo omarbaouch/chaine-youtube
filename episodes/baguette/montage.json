@@ -1333,7 +1333,7 @@
   {
    "id": "p162b",
    "format": "ecran_partage",
-   "texte": "Dans sa vidéo, elle lâche cette phrase : « On ne survivra pas, surtout si l'État ne nous aide pas. »",
+   "texte": "Dans sa vidéo, elle lâche cette phrase, désespérée : « Là, c'est le coup de grâce. »",
    "media_ref": "pi:4840960",
    "cote": "gauche",
    "etiquette_schema": "Alexandra Faure, 17 novembre 2022",
@@ -1342,11 +1342,14 @@
     "titre": "Alexandra Faure",
     "elements": [
      {
-      "texte": "« On ne survivra pas, surtout si l'État ne nous aide pas »",
+      "texte": "« Là, c'est le coup de grâce »",
       "heros": true
+     },
+     {
+      "texte": "« Je suis désespérée de ce qui va se passer dans les mois qui arrivent »"
      }
     ],
-    "source": "macommune.info, 18/11/2022"
+    "source": "Brut, 30/11/2022"
    },
    "couches": [
     {
