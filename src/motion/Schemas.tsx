@@ -463,7 +463,13 @@ const Piece: React.FC<{s: Extract<Schema, {type: 'piece'}>; l: number; duree: nu
             <svg key={i} width={2 * R} height={2 * R} style={{position: 'absolute', inset: 0, overflow: 'visible', transform: `translate(${Math.cos(mid) * d}px, ${Math.sin(mid) * d}px)`,
               filter: p.heros ? `drop-shadow(0 0 30px ${C.lueur})` : 'drop-shadow(0 16px 24px rgba(0,0,0,.6))'}}>
               <defs><clipPath id={id}><path d={arc(a, b)} /></clipPath></defs>
-              {media ? <image href={staticFile(media)} x={0} y={0} width={2 * R} height={2 * R} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${id})`} /> : <path d={arc(a, b)} fill="#C9A44A" />}
+              {media ? (() => {
+                // l'objet détecté (la pièce) remplit exactement le cercle
+                const [z0, z1] = s.zone ?? [0, 100], [y0, y1] = s.zone_y ?? [0, 100], ratio = s.ratio ?? 1;
+                const iw = (2 * R * 100) / Math.max(1, z1 - z0), ih = iw / ratio;
+                const ix = -(iw * z0) / 100, iy = -(ih * y0) / 100 + (2 * R - (ih * (y1 - y0)) / 100) / 2;
+                return <image href={staticFile(media)} x={ix} y={iy} width={iw} height={ih} preserveAspectRatio="none" clipPath={`url(#${id})`} />;
+              })() : <path d={arc(a, b)} fill="#C9A44A" />}
               {p.heros ? <path d={arc(a, b)} fill={C.heros} opacity={0.65 * e} style={{mixBlendMode: 'color'}} /> : null}
               <path d={arc(a, b)} fill="none" stroke="rgba(0,0,0,.6)" strokeWidth={3} />
             </svg>

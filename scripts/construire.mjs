@@ -125,7 +125,7 @@ const scenes = montage.scenes.map((s, i) => {
 // Schéma "decoupe" : l'objet réel est découpé en tronçons. On mesure l'image (ratio) et, si l'objet est posé sur
 // un fond sombre, on détecte tout seul sa boîte englobante (cropdetect) pour couper pile dans l'objet.
 for (const s of scenes) {
-  if (s.schema?.type !== 'decoupe' || !s.media || s.type !== 'image') continue;
+  if (!['decoupe', 'piece'].includes(s.schema?.type) || !s.media || s.type !== 'image') continue;
   const f = path.join('public', s.media);
   const [w, h] = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', f]).toString().trim().split(',').map(Number);
   s.schema = {...s.schema, ratio: w / h};

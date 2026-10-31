@@ -26,7 +26,8 @@ export type Schema =
       zone?: [number, number] /* début/fin de l'objet en % de largeur de l'image */; zone_y?: [number, number]; ratio?: number}
   | {type: 'devine'; question: string; choix: string[]; bonne?: number; secondes?: number}
   | {type: 'suspect'; nom: string; accusation?: string; verdict?: string | null; numero?: string}
-  | {type: 'piece'; titre?: string; total?: number; unite?: string; decimales?: number; parts: PartPrix[]; source?: string}
+  | {type: 'piece'; titre?: string; total?: number; unite?: string; decimales?: number; parts: PartPrix[]; source?: string;
+      zone?: [number, number]; zone_y?: [number, number]; ratio?: number}
   | {type: 'loupe'; points: {x: number; y: number; texte: string; a?: number}[]; zoom?: number}
   | {type: 'liste'; titre?: string; elements: {texte: string; valeur?: string; heros?: boolean}[]; source?: string};
 
