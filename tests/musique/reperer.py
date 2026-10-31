@@ -21,6 +21,15 @@ AMB = {
  "revelation": ["Epic", "Dramatic", "Intense", "Heroic", "Triumphant"],
  "leger": ["Bright", "Light", "Uplifting", "Playful", "Grooving", "Mysterious"],
 }
+def duree(p):
+    v = str(p.get("length", "0") or "0")
+    try:
+        parts = [float(x) for x in v.split(":")]
+        t = 0
+        for x in parts: t = t * 60 + x
+        return t
+    except ValueError:
+        return 0
 def tags(p):
     return " ".join(str(p.get(k, "")) for k in ("feel", "genre", "instruments", "description")).lower()
 choix = {}
@@ -28,7 +37,7 @@ for amb, mots in AMB.items():
     cand = [p for p in pieces if any(m.lower() in str(p.get("feel", "")).lower() for m in mots)]
     # durée longue (boucle facile), pas trop de percussions agressives pour l'émotion
     def score(p):
-        d = float(p.get("length", 0) or 0)
+        d = duree(p)
         s = min(d, 300) / 60
         t = tags(p)
         if amb == "emotion" and "piano" in t: s += 3
