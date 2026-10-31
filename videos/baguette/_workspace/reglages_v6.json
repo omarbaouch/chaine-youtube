@@ -8,7 +8,7 @@
    "debit": "+5%",
    "pause_phrase": 0.15,
    "voix_secondaires": {
-    "sceptique": "fr-FR-HenriNeural"
+    "sceptique": "fr-FR-RemyMultilingualNeural"
    }
   },
   "musique": {

@@ -47,6 +47,18 @@ def duree(path):
 
 
 def phrases(texte):
+    if moteur == "edge":
+        # Voix multilingue : une phrase isolée de moins de 6 mots peut basculer en anglais (retour d'Omar).
+        # On synthétise tout le plan d'un coup et on rattache les phrases courtes à la précédente par une virgule.
+        morceaux = re.split(r"(?<=[.!?…])\s+", texte.strip())
+        sortie = []
+        for m in morceaux:
+            if sortie and len(re.findall(r"\w+", m)) < 6 and sortie[-1][-1:] in ".!":
+                sortie[-1] = sortie[-1][:-1] + ", " + m[0].lower() + m[1:]
+            else:
+                sortie.append(m)
+        return [" ".join(sortie)]
+
     morceaux = re.split(r"(?<=[.!?…])\s+", texte.strip())
     resultat = []
     for m in morceaux:  # coupe les phrases très longues sur les virgules (le modèle reste plus naturel)
