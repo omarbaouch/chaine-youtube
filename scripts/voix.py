@@ -91,13 +91,20 @@ def synthese(texte, dest, qui=None):
         # Voix neuronale Microsoft Edge (choix d'Omar du 31/10/2026 : Vivienne). Gratuite, conditions d'usage à surveiller.
         from voix_edge import dire
         mp3 = dest + ".mp3"
-        for essai in range(5):
+        import time
+        time.sleep(1.2)  # Microsoft limite le débit : on espace les appels
+        for essai in range(12):
             try:
                 dire(texte, voix_edge, mp3, reglages.get("debit", "+8%"), lang=False)  # <lang> refusé par le serveur : xml:lang='fr-FR' suffit
-                break
-            except Exception as e:  # coupure réseau passagère : on réessaie
-                print(f"  edge-tts : {e}, nouvel essai", flush=True)
-                import time; time.sleep(3 * (essai + 1))
+                if os.path.exists(mp3) and os.path.getsize(mp3) > 1000:
+                    break
+                raise RuntimeError("fichier audio vide")
+            except Exception as e:  # limite de débit ou coupure : attente croissante (jusqu'à 90 s)
+                attente = min(90, 5 * 2 ** min(essai, 5))
+                print(f"  edge-tts : {e}, nouvel essai dans {attente} s", flush=True)
+                time.sleep(attente)
+        else:
+            raise RuntimeError(f"Voix Edge indisponible après 12 essais : {texte[:60]}")
         ffmpeg("-i", mp3, "-ar", str(SR), "-ac", "1", dest)
         os.remove(mp3)
         return
