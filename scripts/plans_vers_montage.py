@@ -12,7 +12,7 @@ plans = json.load(open(reglages.get("_plans", f"videos/{slug}/plans.json"), enco
 
 GARDER = {"id", "format", "texte", "media_ref", "medias", "fichier", "schema", "etiquette_schema", "cote", "couches", "surtitre",
           "punch", "transition", "sons", "numero", "titre", "sous_titre", "duree_min", "zoom", "vitesse", "debut_media",
-          "respiration", "avant_voix", "type", "voix", "ambiance"}
+          "respiration", "avant_voix", "type", "voix", "ambiance", "temoignage"}
 scenes = [dict(x) for x in reglages.get("_avant", [])]
 for p in plans:
     s = {k: v for k, v in p.items() if k in GARDER}

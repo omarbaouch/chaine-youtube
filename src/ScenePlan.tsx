@@ -8,8 +8,9 @@ import {theme} from './theme';
 import {Bruit} from './motion/Schemas';
 import {CarteChapitre, PlanEcranPartage, PlanMosaique, PlanSchema} from './motion/Formats';
 import {CouchesScene} from './motion/Couches2';
+import {BandeauTemoin} from './effets/BandeauTemoin';
 
-const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
+const Fond: React.FC<{scene: Scene; flou?: boolean; son?: boolean}> = ({scene, flou, son}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const p = frame / Math.max(1, scene.duree);
@@ -42,8 +43,9 @@ const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
     <Video
       name={`Rush ${scene.id}`}
       src={staticFile(scene.media)}
-      muted
-      loop
+      muted={!son}
+      volume={son ? (f: number) => interpolate(f, [0, 6, scene.duree - 8, scene.duree], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : undefined}
+      loop={!son}
       objectFit="cover"
       playbackRate={scene.vitesse}
       trimBefore={Math.round(scene.debutMedia * fps)}
@@ -93,6 +95,13 @@ const Contenu: React.FC<{scene: Scene; filtre: string}> = ({scene, filtre}) => {
       return <PlanEcranPartage scene={scene} />;
     case 'mosaique':
       return <PlanMosaique scene={scene} />;
+    case 'temoignage':
+      // une vraie personne parle : son d'origine, image à peine zoomée (pas de Ken Burns marqué sur un visage)
+      return (
+        <AbsoluteFill style={{filter: filtre}}>
+          <Fond scene={{...scene, zoom: 'aucun'}} son />
+        </AbsoluteFill>
+      );
     default:
       return (
         <>
@@ -118,6 +127,7 @@ export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalon
       {/* dégradé bas pour la lisibilité des sous-titres */}
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 62%, rgba(0,0,0,.6) 100%)', pointerEvents: 'none'}} />
       {scene.surtitre ? <Surtitre texte={scene.surtitre} /> : null}
+      {scene.temoin ? <BandeauTemoin temoin={scene.temoin} /> : null}
       {scene.punch?.texte ? <MotPunch texte={scene.punch.texte} a={scene.punch.a} /> : null}
       {scene.punch ? <Bruit nom="impact" a={Math.round(scene.punch.a * fps) - 1} volume={0.5} /> : null}
       {scene.sons.map((s, i) => <Bruit key={i} nom={s.nom} a={Math.round(s.a * fps)} volume={s.volume ?? 0.45} />)}

@@ -64,6 +64,7 @@ const fichiersMedia = fs.existsSync(dossierMedia) ? fs.readdirSync(dossierMedia)
 const estImage = (f) => /\.(jpe?g|png|webp)$/i.test(f);
 
 const formatDe = (s, media, medias) => {
+  if (s.temoignage) return 'temoignage';
   if (s.format) return s.format;
   if (s.type === 'titre') return 'titre';
   if (medias.length > 1) return 'mosaique';
@@ -81,7 +82,7 @@ const scenes = montage.scenes.map((s, i) => {
       return {src: `ep/${slug}/media/${f}`, image: estImage(f), legende: s.medias?.[k]?.legende};
     });
   const voixWav = path.join(pub, 'voix', `${s.id}.wav`);
-  const aVoix = fs.existsSync(voixWav);
+  const aVoix = !s.temoignage && fs.existsSync(voixWav);
   const voixDebut = aVoix ? Math.round((s.avant_voix ?? (i === 0 ? 0.15 : 0.3)) * fps) : 0;
   const dVoix = aVoix ? Math.ceil(dureeAudio(voixWav) * fps) : 0;
   const minimum = Math.round((s.duree_min ?? (s.type === 'titre' ? 2.5 : 2)) * fps);
@@ -92,7 +93,12 @@ const scenes = montage.scenes.map((s, i) => {
     s.schema = {...s.schema, depart: depart / fps};
   }
   const dureeDevine = s.schema?.type === 'devine' ? Math.round((s.schema.depart + (s.schema.secondes ?? 3) + 1.6) * fps) : 0;
-  const segments = aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
+  // Témoignage : une vraie personne parle (son d'origine du clip). Durée = extrait [debut_media, fin] ; sous-titres = citation.
+  const tem = s.temoignage;
+  const dClip = tem ? Math.max(1, (tem.fin ?? (s.debut_media ?? 0) + 8) - (s.debut_media ?? 0)) : 0;
+  const segments = tem
+    ? (tem.citation ? [{texte: tem.citation, debut: tem.parole_debut ?? 0.2, fin: tem.parole_fin ?? dClip - 0.2}] : [])
+    : aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
   const sousTitres = s.sous_titres === false || montage.sous_titres?.actifs === false ? [] : lignes(minuterMots(segments));
   const transition = i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu');
   // retour d'Omar (31/10/2026) : le souffle « whoosh » (le « shiiit ») est banni partout
@@ -102,7 +108,7 @@ const scenes = montage.scenes.map((s, i) => {
     id: s.id,
     type: media && estImage(media) && s.type !== 'titre' ? 'image' : s.type ?? 'video',
     format: formatDe(s, media, medias),
-    duree: Math.max(duree, dureeDevine),
+    duree: tem ? Math.round((dClip + 0.3) * fps) : Math.max(duree, dureeDevine),
     media: media ? `ep/${slug}/media/${media}` : undefined,
     medias,
     voix: aVoix ? `ep/${slug}/voix/${s.id}.wav` : undefined,
@@ -125,6 +131,7 @@ const scenes = montage.scenes.map((s, i) => {
     sons,
     qui: s.voix,
     ambiance: s.ambiance,
+    temoin: tem ? {nom: tem.nom, role: tem.role, source: tem.source} : undefined,
   };
 });
 

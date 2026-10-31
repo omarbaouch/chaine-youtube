@@ -49,7 +49,8 @@ Briques prêtes (`src/motion/`, exemple complet `src/tests/Canette.tsx`) :
 Placer annotations et visées SUR l'objet visible dans le rush (vérifier sa position dans la planche, ne pas deviner).
 
 ## Règle n°4 — Voix et son
-- Voix : Pocket TTS (Kyutai), modèle `french_24l`, voix `estelle`, **5 étapes de calcul**. Accent validé par Omar.
+- **Remplacé par la règle n°9 (31/10/2026) : la voix est Edge Vivienne.** Pocket TTS ne sert plus qu'en secours.
+- (Historique) Pocket TTS (Kyutai), modèle `french_24l`, voix `estelle`, 5 étapes de calcul.
 - Chaîne de traitement : `scripts/traitement_audio.py` (coupe-bas, débruiteur `afftdn` qui retire les sifflements
   constants du modèle, creux 220/380 Hz, clarté +2,5/+1,5 dB max, dé-esseur, porte de bruit, compression douce,
   limiteur, -16 LUFS en deux passes). Ne jamais remonter la clarté de plus de ~3 dB : ça fait ressortir les artefacts.
@@ -117,3 +118,64 @@ des images, des fois une composition d'un peu de tout. Je veux que celui qui voi
   l'adapter à nos briques (objet réel d'abord, règle n°1). Sons : `references/sound-design.md`.
 - `.claude/skills/emotional-narrative/` (MIT) : principes d'animation pensés pour l'émotion (anticipation, timing, silence).
   À relire avant chaque moment fort (révélation, histoire humaine).
+
+## Règle n°11 — La recette qui a marché (vidéo baguette v6, publiée le 01/11/2026)
+Omar veut de l'**émotion** (références : Léo Duff, Money Radar), pas « un enchaînement de paroles, ta ta ta ».
+- **Structure enquête** : une question d'argent simple (« qui a pris tes 94 centimes ? »), des **suspects** présentés un par un
+  (fiche `suspect` + verdict tamponné INNOCENT / COUPABLE ?), une partie **« La vérité »** qui renverse l'idée reçue.
+- **Ouverture choc 10–15 s** (règle n°9) : l'objet réel découpé en morceaux proportionnels (`decoupe`), puis carte titre.
+- **Une vraie personne au centre** : une histoire humaine vérifiée (Alexandra Faure, boulangère, facture d'électricité),
+  annoncée au début (« je te garde ce qu'elle a dit pour la fin ») et racontée à la fin : boucle ouverte + pic émotionnel.
+- **Voix du sceptique** (`"voix": "sceptique"`, Edge Rémy, sous-titres bleus) : il dit tout haut l'idée reçue
+  (« c'est le boulanger qui garde tout ! »), la narratrice lui répond. Ça casse la monotonie.
+- **Devinettes** (`devine`) lues par la voix, compte à rebours de 3 s APRÈS la question, puis révélation avec impact.
+- **Musique par ambiance** (Kevin MacLeod, CC-BY, `scripts/musique_libre.py`) : tension / émotion / révélation / léger,
+  fondus enchaînés, baissée sous la voix. Crédits obligatoires dans la description.
+- Fin : question ouverte (« qui paie la baguette à 28 c ? ») + annonce de la vidéo suivante.
+
+## Règle n°12 — Pièges techniques déjà rencontrés (ne pas les refaire)
+| Problème | Cause | Solution en place |
+|---|---|---|
+| « centimes » lu en anglais | Vivienne Multilingual bascule en anglais sur les phrases très courtes | `voix.py` fusionne les phrases de moins de 6 mots ; le script évite les phrases isolées de 1–3 mots |
+| « No audio was received » (Edge) | limite de débit | 1,2 s entre appels + reprises exponentielles (`voix_edge.py`) |
+| Mauvais rush servi (hot-dog pour « baguette ») | cache de rushes par id de scène | fichier `.ref` par scène + `rushes_a_refaire` dans `_episode` |
+| Découpe à côté de l'objet | détection automatique ratée | fixer `zone` / `zone_y` à la main après avoir regardé l'image |
+| Tranche plantée « Cannot render video x.jpg » | photo traitée comme vidéo | détection par extension partout |
+| Quota d'artefacts GitHub plein | — | transfert entre machines par Release temporaire `tmp-rendu-<run>` |
+| Écran noir 0,6 s en début de plan | le rush source démarre par un fondu au noir | `blackdetect` sur le rendu final, puis `debut_media` +1 s |
+| Citation non retrouvée | citation reprise sans source primaire | ne JAMAIS mettre une phrase entre guillemets sans l'article qui la cite (date + média) |
+| Pixabay HTTP 429 | trop de requêtes | espacement 700 ms + reprises |
+Contrôle final obligatoire : `ebur128` (-14 LUFS, crête ≤ -1 dBTP), `blackdetect`, planches toutes les 3 s regardées.
+
+## Règle n°13 — Témoignages : de vraies personnes qui parlent (demande d'Omar, 01/11/2026)
+Format `temoignage` : un vrai clip d'une personne qui parle, **son d'origine**, bandeau nom / rôle / source, sous-titres de la citation,
+voix off coupée et musique baissée pendant l'extrait.
+```jsonc
+{"id": "p160", "fichier": "medias/alexandra.mp4", "debut_media": 12.4, "texte": "",
+ "temoignage": {"nom": "Alexandra Faure", "role": "Boulangère à Valdahon", "source": "Brut, 30/11/2022",
+   "citation": "Là, c'est le coup de grâce.", "fin": 15.6, "parole_debut": 0.3, "parole_fin": 2.9}}
+```
+Sources autorisées (sinon Content ID / droits d'auteur → vidéo bloquée ou démonétisée) :
+1. **Omar ou ses proches filmés au téléphone** (micro-trottoir, artisan rencontré, avec son accord) → `fichier`. Le meilleur.
+2. **Vidéos sous licence libre** : Wikimedia Commons (`wc:File:…webm`, son conservé), YouTube filtré « Creative Commons »
+   (CC-BY : créditer l'auteur). Déposer le clip dans `episodes/<slug>/medias/`.
+3. **Jamais** un extrait de chaîne télé ou de média (Brut, BFM, Europe 1…) ni la vidéo Facebook d'un particulier sans son accord écrit.
+   Pour ces histoires : raconter avec la voix off + citation écrite à l'écran (`ecran_partage`), comme dans la baguette.
+Un témoignage dure 3 à 12 s, un seul par partie ; on l'annonce (« écoute ce qu'elle dit ») et on réagit juste après.
+
+## Règle n°14 — Publication (chaîne « Le Vrai Prix »)
+- Kit dans `videos/<slug>/_workspace/06_publication_*.txt` : titre ≤ 60 caractères avec le mot-clé au début, description < 5 000
+  (mot-clé dans la 1re phrase, chapitres mesurés SUR LE RENDU FINAL, sources, crédits musique + médias, « voix off générée par synthèse »),
+  tags < 500, commentaire-question à épingler.
+- Publication programmée par **Metricool** (MCP, marque 7787709, chaîne YouTube connectée) : il lui faut un **lien public** du MP4.
+  Le dépôt public `omarbaouch/le-vrai-prix-medias` sert à ça : y pousser `videos/<slug>/video.partNN` (morceaux de 90 Mo, `split -b 90M`)
+  + `miniature.jpg` + `credits.txt` ; son workflow recolle et publie la Release `<slug>`
+  (`https://github.com/omarbaouch/le-vrai-prix-medias/releases/download/<slug>/<slug>.mp4`).
+- Heure par défaut : **18h (heure de Paris)**. La miniature personnalisée ne passe que si la chaîne est validée par téléphone ;
+  Omar épingle lui-même le commentaire.
+
+## Règle n°15 — Branches et équipe
+- Le travail de cette instance vit sur la branche **`studio-b`** (rendu `.github/workflows/rendu-rapide.yml` sur 6 machines).
+  `main` (l'autre instance) n'a plus bougé depuis le 29/10 et est entièrement inclus dans `studio-b`.
+- Omar a demandé de ne plus faire de passe de fact-checking séparée (trop lente) : vérifier soi-même chaque chiffre
+  et chaque citation à la source pendant l'écriture, et le noter dans `episodes/<slug>/sources.md`.

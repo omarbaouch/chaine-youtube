@@ -118,7 +118,7 @@ async function telechargerRef(s) {
       const brut = path.join(sortie, `${s.id}.source`);
       const rr = await fetch(ii.url, {headers: UA});
       fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
-      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, '-an', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
       fs.rmSync(brut);
     } else {
       const rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});

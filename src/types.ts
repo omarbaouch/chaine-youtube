@@ -10,7 +10,10 @@ export type Ligne = {debut: number; fin: number; mots: Mot[]};
 //  mosaique      : 2 à 4 médias réels qui entrent l'un après l'autre
 //  schema        : animation SVG/HTML pure (sur fond vivant ou rush flouté)
 //  titre         : carte de chapitre
-export type Format = 'rush' | 'ecran_partage' | 'mosaique' | 'schema' | 'titre';
+//  temoignage    : une vraie personne parle (son d'origine), bandeau nom / rôle / source
+export type Format = 'rush' | 'ecran_partage' | 'mosaique' | 'schema' | 'titre' | 'temoignage';
+
+export type Temoin = {nom: string; role?: string; source?: string};
 
 export type Media = {src: string; image: boolean; legende?: string};
 
@@ -58,6 +61,7 @@ export type Scene = {
   punch?: {a: number; texte?: string}; // règle n°7 : emphase cinétique (zoom + impact)
   sons: Son[];
   qui?: string; // 'sceptique' = 2e voix
+  temoin?: Temoin; // format temoignage
   ambiance?: string;
 };
 
