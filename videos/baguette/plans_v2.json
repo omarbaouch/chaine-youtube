@@ -1,0 +1,2023 @@
+[
+ {
+  "id": "p001",
+  "partie": "A1",
+  "format": "rush",
+  "texte": "Ce matin, tu as posé une pièce d'un euro sur le comptoir, sans même y penser.",
+  "media_ref": "pv:203874",
+  "catalogue": "r26 V1",
+  "faits": [
+   "F01"
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p002",
+  "partie": "A1",
+  "format": "schema",
+  "texte": "Dans cette pièce, le blé de ta baguette ne pèse que… six petits centimes.",
+  "media_ref": "pi:400249",
+  "catalogue": "r26 I2",
+  "faits": [
+   "F04"
+  ],
+  "etiquette_schema": "Ta pièce d'un euro, découpée comme ta baguette",
+  "schema": {
+   "type": "piece",
+   "titre": "Ta pièce, coupée en quatre",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06,
+     "heros": true
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 3.0,
+    "volume": 0.5
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p003",
+  "partie": "A1",
+  "format": "ecran_partage",
+  "texte": "Alors voilà ma question : où sont passés les quatre-vingt-quatorze autres centimes ?",
+  "media_ref": "wc:File:Baguette with cheese.jpg",
+  "catalogue": "c10 C1",
+  "faits": [
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Ce qui ne va pas au blé",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.94,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "sur ta pièce d'un euro",
+   "comparaison": "1 € − 6 c de blé",
+   "revele_a": 2.6,
+   "source": "OFPM 2026 (données 2025)"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p004",
+  "partie": "A1",
+  "format": "mosaique",
+  "texte": "Attends, c'est évident : c'est le boulanger qui garde tout le reste pour lui, non ?",
+  "medias": [
+   {
+    "media_ref": "pi:1868925"
+   },
+   {
+    "media_ref": "wc:File:Dibre !.JPG"
+   }
+  ],
+  "catalogue": [
+   "r27 I2",
+   "r24 C3"
+  ],
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p005",
+  "partie": "A1",
+  "format": "schema",
+  "texte": "Ce n'est pas rien : en France, on achète cent quatre-vingt-dix baguettes chaque seconde.",
+  "media_ref": "pi:2609042",
+  "catalogue": "r27 I8",
+  "faits": [
+   "F28"
+  ],
+  "etiquette_schema": "Baguettes vendues en France",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 190,
+   "decimales": 0,
+   "suffixe": " / s",
+   "legende": "baguettes vendues en France",
+   "source": "CNBPF, dossier de presse 2025",
+   "comparaison": "≈ 6 milliards par an"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p006",
+  "partie": "A1",
+  "format": "rush",
+  "texte": "Moi, j'ai voulu vérifier : quatre suspects, et un seul indice, ta baguette.",
+  "media_ref": "pv:303458",
+  "catalogue": "c06 V7",
+  "punch": {
+   "a": 2.4,
+   "texte": "4 SUSPECTS"
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 2.4,
+    "volume": 0.5
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p008",
+  "partie": "A1",
+  "format": "titre",
+  "media_ref": "pv:245681",
+  "catalogue": "r03 V5",
+  "numero": "01",
+  "titre": "Les suspects",
+  "sous_titre": "Qui a pris tes 94 centimes ?",
+  "duree_min": 2.8,
+  "ambiance": "tension"
+ },
+ {
+  "id": "p122b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Mais avant de suivre l'argent, je dois te présenter une femme qui va nous accompagner.",
+  "media_ref": "pi:3499578",
+  "catalogue": "c13 I4",
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Image d'illustration",
+    "a": 0.4
+   }
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p123b",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Elle s'appelle Alexandra Faure, et elle tient une boulangerie à Valdahon, dans le Doubs.",
+  "media_ref": "pi:17318",
+  "catalogue": "c13 I1",
+  "faits": [
+   "H1a"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le témoin",
+  "schema": {
+   "type": "liste",
+   "titre": "Le témoin",
+   "elements": [
+    {
+     "texte": "Alexandra Faure",
+     "heros": true
+    },
+    {
+     "texte": "Boulangère à Valdahon (Doubs)"
+    },
+    {
+     "texte": "Vidéo publiée le 17 novembre 2022"
+    }
+   ],
+   "source": "macommune.info, 18/11/2022 ; Brut, 30/11/2022"
+  },
+  "note_monteur": "Image d'illustration (pas de photo libre d'Alexandra Faure) : l'écrire à l'écran.",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p124b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Le dix-sept novembre deux mille vingt-deux, elle publie une vidéo de détresse.",
+  "media_ref": "pv:11722",
+  "catalogue": "r29 V3",
+  "faits": [
+   "H1b"
+  ],
+  "surtitre": "17 novembre 2022",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p125b",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Ce qu'elle dit dans cette vidéo, je te le garde pour la fin : c'est la clé de l'enquête.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Early morning bread stop (5051823549).jpg",
+    "legende": "Le fournil, avant l'aube"
+   },
+   {
+    "media_ref": "pv:65278"
+   }
+  ],
+  "catalogue": [
+   "r28 C6",
+   "r16 V2"
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p126b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Premier suspect : celui qui sème, attend des mois, et moissonne, l'agriculteur.",
+  "media_ref": "pi:8487373",
+  "catalogue": "r07 I7",
+  "etiquette_schema": "Suspect n° 1",
+  "schema": {
+   "type": "suspect",
+   "nom": "L'agriculteur",
+   "accusation": "Il garde combien ?",
+   "numero": "01"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p009",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Tout commence avec un semoir, qui enterre des grains de blé, rang après rang.",
+  "media_ref": "pv:43044",
+  "catalogue": "r35 V1",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p010",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Des mois plus tard, les épis verts sont devenus dorés, et la moissonneuse peut entrer.",
+  "medias": [
+   {
+    "media_ref": "pv:42379"
+   },
+   {
+    "media_ref": "pv:17285"
+   }
+  ],
+  "catalogue": [
+   "r04 V5"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p012",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Elle coupe les tiges, elle bat les épis, et elle ne garde que le grain.",
+  "media_ref": "pv:232561",
+  "catalogue": "r05 V1",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p127b",
+  "partie": "A2",
+  "format": "schema",
+  "media_ref": "wc:File:Wheat Grain (109321671).jpeg",
+  "catalogue": "r07 C8",
+  "duree_min": 5,
+  "etiquette_schema": "À toi de deviner",
+  "schema": {
+   "type": "devine",
+   "question": "Combien vaut le blé d'une baguette ?",
+   "choix": [
+    "2 c",
+    "6 c",
+    "20 c"
+   ],
+   "bonne": 1,
+   "secondes": 3
+  },
+  "sons": [
+   {
+    "nom": "tick",
+    "a": 1.5,
+    "volume": 0.3
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p016",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "La bonne réponse, c'est six centimes, pour environ deux cent soixante-dix grammes de blé.",
+  "media_ref": "pi:3534233",
+  "catalogue": "r07 I4",
+  "faits": [
+   "F04",
+   "F19"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le blé d'une baguette",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.06,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "pour environ 270 g de blé",
+   "comparaison": "1 pièce de 5 c + 1 pièce de 1 c",
+   "revele_a": 0.6,
+   "source": "OFPM 2026 (0,24 €/kg × 0,25 kg) ; calcul 01b §2.2"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p128b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Seulement six centimes pour tout ce travail ? Alors c'est lui, la vraie victime de l'histoire !",
+  "media_ref": "pv:131818",
+  "catalogue": "r35 V3",
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p020",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Victime, peut-être, mais pas voleur : en deux mille vingt-cinq, son blé valait environ deux cents euros la tonne.",
+  "media_ref": "pv:62390",
+  "faits": [
+   "F20"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "Prix du blé en 2025",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 201,
+   "decimales": 0,
+   "suffixe": " €/t",
+   "legende": "blé tendre, moyenne 2025 (rendu Rouen)",
+   "source": "DRAAF Centre-Val de Loire, bilan agricole 2025",
+   "revele_a": 2.0
+  },
+  "ambiance": "leger"
+ },
+ {
+  "id": "p087",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Sur ma baguette coupée, son morceau orange ne pèse que six centimes, sur un euro.",
+  "media_ref": "pi:3277831",
+  "faits": [
+   "F04",
+   "F05"
+  ],
+  "etiquette_schema": "Retour de la baguette coupée : la part du blé",
+  "schema": {
+   "type": "decoupe",
+   "titre": "Une baguette à 1,01 €",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06,
+     "heros": true
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+   "zone": [
+    9.5,
+    93.4
+   ],
+   "zone_y": [
+    36,
+    64
+   ]
+  },
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 1.2,
+    "volume": 0.5
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p014",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Six centimes, c'est juste le prix de son blé, au cours du marché.",
+  "media_ref": "pv:86122",
+  "catalogue": "r05 V8",
+  "faits": [
+   "F20"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p129b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Premier suspect, l'agriculteur : il ne vole personne, il est donc innocent.",
+  "media_ref": "pi:4357683",
+  "catalogue": "r07 I2",
+  "etiquette_schema": "Verdict n° 1",
+  "schema": {
+   "type": "suspect",
+   "nom": "L'agriculteur",
+   "accusation": "Il garde combien ?",
+   "numero": "01",
+   "verdict": "Innocent"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p130b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Mais entre le champ et ta baguette, ce grain dur comme un caillou doit devenir farine.",
+  "media_ref": "pv:73847",
+  "catalogue": "r12 V6",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p131b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Deuxième suspect, celui qui transforme le grain en poudre blanche : le meunier.",
+  "media_ref": "wc:File:Calbourne Mill 240623g.JPG",
+  "catalogue": "c01 C5",
+  "etiquette_schema": "Suspect n° 2",
+  "schema": {
+   "type": "suspect",
+   "nom": "Le meunier",
+   "accusation": "Il garde combien ?",
+   "numero": "02"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p027",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Dans son moulin, des cylindres de métal écrasent le grain, étape par étape, encore et encore.",
+  "media_ref": "wc:File:Alcalá de Henares (RPS 14-12-2022) Fábrica de harinas La Esperanza, plansichters dobles.png",
+  "catalogue": "c02 C2",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p132b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Ces armoires sont des tamis géants : le son part d'un côté, la farine de l'autre.",
+  "media_ref": "wc:File:Plansifters.jpg",
+  "catalogue": "c02 C3",
+  "etiquette_schema": "Loupe : les tamis du moulin",
+  "schema": {
+   "type": "loupe",
+   "zoom": 2.5,
+   "points": [
+    {
+     "x": 38,
+     "y": 45,
+     "texte": "Tamis géant",
+     "a": 0.6
+    },
+    {
+     "x": 62,
+     "y": 60,
+     "texte": "Le son d'un côté, la farine de l'autre",
+     "a": 2.8
+    }
+   ]
+  },
+  "note_monteur": "Caler x/y des points de loupe sur la planche (photo Plansifters.jpg).",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p031",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Sur cent kilos de blé, il ressort environ soixante-dix-huit kilos de farine, prête à partir.",
+  "medias": [
+   {
+    "media_ref": "pi:5709598"
+   },
+   {
+    "media_ref": "wc:File:Baker sifting flour in a wooden bowl for making dough at a rustic kitchen.jpg"
+   }
+  ],
+  "catalogue": [
+   "r09 I3",
+   "r10 C6"
+  ],
+  "faits": [
+   "F18"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p133b",
+  "partie": "A2",
+  "format": "schema",
+  "media_ref": "wc:File:Victoria Mills, Ashford, roller mill.JPG",
+  "catalogue": "c01 C1",
+  "duree_min": 5,
+  "etiquette_schema": "À toi de deviner",
+  "schema": {
+   "type": "devine",
+   "question": "Combien garde le meunier sur ta baguette ?",
+   "choix": [
+    "1 c",
+    "7 c",
+    "25 c"
+   ],
+   "bonne": 1,
+   "secondes": 3
+  },
+  "sons": [
+   {
+    "nom": "tick",
+    "a": 1.5,
+    "volume": 0.3
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p036",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Sept centimes par baguette, un centime de plus que l'agriculteur, et c'est une marge brute.",
+  "media_ref": "pv:784",
+  "catalogue": "r11 V2",
+  "faits": [
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "La part du meunier",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.07,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "marge brute de la meunerie, par baguette",
+   "comparaison": "Le blé : 0,06 €",
+   "revele_a": 0.6,
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p134b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Marge brute, marge nette, franchement, pour moi, c'est exactement la même chose !",
+  "media_ref": "pi:667768",
+  "catalogue": "r11 I3",
+  "voix": "sceptique",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p037",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Non, et c'est là que tout se joue : une marge brute doit encore payer le moulin, l'électricité, les salaires.",
+  "media_ref": "wc:File:China Grove, North Carolina Roller Mill.jpg",
+  "catalogue": "c01 C6",
+  "faits": [
+   "F06"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "Ce que paie une marge brute",
+  "schema": {
+   "type": "liste",
+   "titre": "Une marge brute paie…",
+   "elements": [
+    {
+     "texte": "Le moulin"
+    },
+    {
+     "texte": "L'électricité",
+     "heros": true
+    },
+    {
+     "texte": "Les salaires"
+    },
+    {
+     "texte": "Le bénéfice, s'il en reste"
+    }
+   ],
+   "source": "OFPM (définition de la marge brute)"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p135b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Retiens bien ce mot, électricité : Alexandra va le découvrir de la pire des façons.",
+  "media_ref": "pv:159678",
+  "catalogue": "r32 V8",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p136b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Sept centimes pour faire tourner tout ça : deuxième suspect, innocent lui aussi.",
+  "media_ref": "pi:1528338",
+  "catalogue": "r11 I1",
+  "etiquette_schema": "Verdict n° 2",
+  "schema": {
+   "type": "suspect",
+   "nom": "Le meunier",
+   "accusation": "Il garde combien ?",
+   "numero": "02",
+   "verdict": "Innocent"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p137b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Il manque encore presque tout l'argent, et je connais quelqu'un qui se sert à chaque achat.",
+  "media_ref": "pv:138315",
+  "catalogue": "r26 V3",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p138b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Troisième suspect, celui qui ne pétrit jamais rien, mais qui passe à chaque caisse : l'État.",
+  "media_ref": "pi:1642989",
+  "catalogue": "r26 I8",
+  "etiquette_schema": "Suspect n° 3",
+  "schema": {
+   "type": "suspect",
+   "nom": "L'État",
+   "accusation": "Il prend combien ?",
+   "numero": "03"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p139b",
+  "partie": "A2",
+  "format": "rush",
+  "media_ref": "pv:21117",
+  "catalogue": "r30 V1",
+  "duree_min": 2.5,
+  "sons": [
+   {
+    "nom": "caisse",
+    "a": 0.2,
+    "volume": 0.7
+   }
+  ],
+  "note_monteur": "SILENCE : pas de voix, musique baissée, son réel seul. Bip de caisse réel, ticket qui sort.",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p084",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Sa T V A sur le pain, c'est cinq virgule cinq pour cent, soit… cinq centimes par baguette.",
+  "media_ref": "wc:File:Paid bill for coffee.jpg",
+  "catalogue": "r26 C7",
+  "faits": [
+   "F10",
+   "F04"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "La part de l'État",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.05,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "TVA à 5,5 % sur une baguette",
+   "revele_a": 2.6,
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p141b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Sur ma baguette coupée, sa part est la plus petite des quatre : l'État est innocent aussi.",
+  "media_ref": "pi:3277831",
+  "faits": [
+   "F04"
+  ],
+  "etiquette_schema": "Retour de la baguette coupée : la part de l'État",
+  "schema": {
+   "type": "decoupe",
+   "titre": "Une baguette à 1,01 €",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05,
+     "heros": true
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+   "zone": [
+    9.5,
+    93.4
+   ],
+   "zone_y": [
+    36,
+    64
+   ]
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p142b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Il ne reste donc qu'un seul suspect, et franchement, depuis le début, tout l'accuse.",
+  "media_ref": "pv:11563",
+  "catalogue": "r21 V7",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p143b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Quatrième suspect : celui à qui tu tends ta pièce tous les matins, le boulanger.",
+  "media_ref": "pi:10542331",
+  "catalogue": "r21 I8",
+  "etiquette_schema": "Suspect n° 4",
+  "schema": {
+   "type": "suspect",
+   "nom": "Le boulanger",
+   "accusation": "Il garde combien ?",
+   "numero": "04"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p144b",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Tu vois, je te l'avais dit, c'est forcément le boulanger qui empoche tout le magot !",
+  "medias": [
+   {
+    "media_ref": "pi:2588182"
+   },
+   {
+    "media_ref": "pi:4054286"
+   }
+  ],
+  "catalogue": [
+   "r29 I7",
+   "r27 I6"
+  ],
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p145b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Sur ma baguette coupée, le morceau d'après le moulin est énorme : quatre-vingt-trois centimes.",
+  "media_ref": "pi:3277831",
+  "faits": [
+   "F04",
+   "F06"
+  ],
+  "etiquette_schema": "Retour de la baguette coupée : après le moulin",
+  "schema": {
+   "type": "decoupe",
+   "titre": "Une baguette à 1,01 €",
+   "total": 1.01,
+   "unite": " €",
+   "decimales": 2,
+   "parts": [
+    {
+     "label": "Blé",
+     "valeur": 0.06
+    },
+    {
+     "label": "Meunier",
+     "valeur": 0.07
+    },
+    {
+     "label": "Après le moulin",
+     "valeur": 0.83,
+     "heros": true
+    },
+    {
+     "label": "TVA",
+     "valeur": 0.05
+    }
+   ],
+   "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+   "zone": [
+    9.5,
+    93.4
+   ],
+   "zone_y": [
+    36,
+    64
+   ]
+  },
+  "sons": [
+   {
+    "nom": "riser",
+    "a": 0.0,
+    "volume": 0.3
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p146b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Quatre-vingt-trois centimes, contre six pour le blé : tout semble désigner le même homme.",
+  "media_ref": "pi:2436370",
+  "catalogue": "r20 I1",
+  "faits": [
+   "F04"
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p147b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Alors, est-ce que le boulanger est coupable ? Pour le savoir, suivons-le pendant toute une nuit.",
+  "media_ref": "pi:8364737",
+  "catalogue": "r12 I1",
+  "etiquette_schema": "Verdict provisoire",
+  "schema": {
+   "type": "suspect",
+   "nom": "Le boulanger",
+   "accusation": "Il garde combien ?",
+   "numero": "04",
+   "verdict": "Coupable ?"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p148b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Tout commence avant l'aube, avec de la farine, de l'eau, du sel et de la levure.",
+  "media_ref": "pv:140934",
+  "catalogue": "r20 V5",
+  "faits": [
+   "F14"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p042",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Pour une tradition, la loi n'autorise rien d'autre : aucun additif, et jamais de surgélation.",
+  "media_ref": "wc:File:EdibleSalt.jpg",
+  "faits": [
+   "F32"
+  ],
+  "etiquette_schema": "Décret de 1993, article 2 (extrait)",
+  "schema": {
+   "type": "liste",
+   "titre": "Pain de tradition française",
+   "elements": [
+    {
+     "texte": "Farine de blé"
+    },
+    {
+     "texte": "Eau"
+    },
+    {
+     "texte": "Sel"
+    },
+    {
+     "texte": "Levure ou levain"
+    },
+    {
+     "texte": "Aucun additif, jamais surgelé",
+     "heros": true
+    }
+   ],
+   "source": "Décret n° 93-1074, art. 2"
+  },
+  "ambiance": "leger"
+ },
+ {
+  "id": "p045",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Direction le pétrin : son crochet brasse la pâte, et c'est là que naît le gluten.",
+  "media_ref": "wc:File:Mixing Tara's Fried Dough.jpg",
+  "catalogue": "r13 C4",
+  "faits": [
+   "F41"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p049",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Pendant ce temps, la levure se réveille, elle mange les sucres et rejette du gaz.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Compressed fresh yeast - 1.jpg",
+    "legende": "Levure fraîche"
+   },
+   {
+    "media_ref": "pi:5571079"
+   }
+  ],
+  "catalogue": [
+   "c05 C1",
+   "c05 I5"
+  ],
+  "faits": [
+   "F42"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p051",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Ce gaz reste piégé dans le filet de gluten, et toute la pâte se met à gonfler.",
+  "media_ref": "pi:7395604",
+  "catalogue": "r16 I8",
+  "faits": [
+   "F40",
+   "F42"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p054",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Le boulanger découpe la pâte, et il pèse chaque morceau : trois cent cinquante grammes.",
+  "media_ref": "wc:File:Váhy na vážení těsta.jpg",
+  "catalogue": "r18 C5",
+  "faits": [
+   "F14",
+   "F15"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Un pâton",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 350,
+   "decimales": 0,
+   "suffixe": " g",
+   "legende": "de pâte crue pour une baguette",
+   "comparaison": "250 g une fois cuite",
+   "revele_a": 2.8,
+   "source": "Fiche GMP 00234 ; CAP boulanger"
+  },
+  "ambiance": "leger"
+ },
+ {
+  "id": "p055",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Chaque pâton est roulé en long, à la main, ou dans une façonneuse comme celle-ci.",
+  "medias": [
+   {
+    "media_ref": "pv:43653"
+   },
+   {
+    "media_ref": "wc:File:5 façonneuse à baguettes.jpg",
+    "legende": "Façonneuse à baguettes"
+   }
+  ],
+  "catalogue": [
+   "r28 V7",
+   "r17 C2"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p149b",
+  "partie": "A2",
+  "format": "rush",
+  "media_ref": "wc:File:Home baked bread. Bake bread. Szreniawa.jpg",
+  "catalogue": "r21 C1",
+  "duree_min": 2.5,
+  "sons": [
+   {
+    "nom": "four",
+    "a": 0.2,
+    "volume": 0.7
+   }
+  ],
+  "note_monteur": "SILENCE : pas de voix, musique baissée, son réel seul. Porte du four, pelle qui glisse.",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p061",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Un coup de lame sur chaque pâton, et direction le four, à environ deux cent quarante degrés.",
+  "media_ref": "wc:File:Baguette Cooking - IMG 4276 (14180272263).jpg",
+  "catalogue": "r17 C8",
+  "faits": [
+   "F44",
+   "F47"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "Le four",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 240,
+   "decimales": 0,
+   "suffixe": " °C",
+   "legende": "température du four (± 20 °C)",
+   "revele_a": 3.0,
+   "source": "Fiche GMP 00234"
+  },
+  "ambiance": "leger"
+ },
+ {
+  "id": "p150b",
+  "partie": "A2",
+  "format": "schema",
+  "texte": "Chacun de ces trous, c'est une bulle de gaz de la levure, prisonnière de la mie.",
+  "media_ref": "pi:749838",
+  "catalogue": "r36 I6",
+  "faits": [
+   "F42",
+   "F44"
+  ],
+  "etiquette_schema": "Loupe : la mie",
+  "schema": {
+   "type": "loupe",
+   "zoom": 2.5,
+   "points": [
+    {
+     "x": 42,
+     "y": 44,
+     "texte": "Une bulle de gaz de la levure",
+     "a": 0.6
+    },
+    {
+     "x": 60,
+     "y": 58,
+     "texte": "La mie prend vers 70 °C",
+     "a": 3.0
+    }
+   ]
+  },
+  "note_monteur": "Caler x/y des points sur deux alvéoles visibles de la photo.",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p151b",
+  "partie": "A2",
+  "format": "rush",
+  "media_ref": "pv:207992",
+  "catalogue": "c02 V7",
+  "duree_min": 2.5,
+  "sons": [
+   {
+    "nom": "craque",
+    "a": 0.2,
+    "volume": 0.7
+   }
+  ],
+  "note_monteur": "SILENCE : pas de voix, musique baissée, son réel seul. Croûte qui craque sous le couteau, en gros plan sonore.",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p152b",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Pétrir, attendre, peser, façonner, cuire : chaque baguette a coûté des heures de boulanger.",
+  "medias": [
+   {
+    "media_ref": "wc:File:Bakery oven bread, 2013.jpg"
+   },
+   {
+    "media_ref": "wc:File:Putting bread in the oven (5958998763).jpg"
+   }
+  ],
+  "catalogue": [
+   "r20 C4",
+   "r20 C1"
+  ],
+  "faits": [
+   "F27"
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p153b",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "J'ai donc cherché son énorme bénéfice, celui qui cachait nos quatre-vingt-trois centimes.",
+  "media_ref": "pv:75700",
+  "catalogue": "r29 V8",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p154b",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Il vend sa baguette plus d'un euro, il doit bien gagner trente centimes dessus !",
+  "medias": [
+   {
+    "media_ref": "wc:File:Boulangerie 64 rue Saint-Dominique Paris 7e.jpg"
+   },
+   {
+    "media_ref": "pi:677274"
+   }
+  ],
+  "catalogue": [
+   "c08 C5",
+   "r29 I5"
+  ],
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p155b",
+  "partie": "A2",
+  "format": "schema",
+  "media_ref": "pi:725873",
+  "catalogue": "r12 I6",
+  "duree_min": 5,
+  "etiquette_schema": "À toi de deviner",
+  "schema": {
+   "type": "devine",
+   "question": "Bénéfice net du boulanger sur une baguette ?",
+   "choix": [
+    "3 c",
+    "15 c",
+    "30 c"
+   ],
+   "bonne": 0,
+   "secondes": 3
+  },
+  "sons": [
+   {
+    "nom": "tick",
+    "a": 1.5,
+    "volume": 0.3
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p105",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Et pourtant, c'est complètement faux : sur ce calcul, il reste environ trois centimes par baguette.",
+  "media_ref": "pv:17176",
+  "catalogue": "r22 V5",
+  "faits": [
+   "F24",
+   "F11"
+  ],
+  "punch": {
+   "a": 1.0,
+   "texte": "FAUX"
+  },
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Fiducial 2026 : résultat net 3 % (à l'IS), appliqué à 1,12 € ; illustration",
+    "a": 2.0
+   }
+  ],
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 1.0,
+    "volume": 0.6
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p101",
+  "partie": "A2",
+  "format": "ecran_partage",
+  "texte": "Le plus gros morceau, ce sont les salaires : environ quarante-trois centimes, loin devant les matières.",
+  "media_ref": "wc:File:French bread.JPG",
+  "faits": [
+   "F24",
+   "F25",
+   "F11"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Ta baguette en boulangerie",
+  "schema": {
+   "type": "liste",
+   "titre": "Baguette à 1,12 € (≈ 1,06 € HT)",
+   "elements": [
+    {
+     "texte": "Salaires",
+     "valeur": "≈ 43 c",
+     "heros": true
+    },
+    {
+     "texte": "Matières",
+     "valeur": "≈ 33 c"
+    },
+    {
+     "texte": "Loyer",
+     "valeur": "≈ 6 c"
+    },
+    {
+     "texte": "Énergie",
+     "valeur": "≈ 5 c"
+    },
+    {
+     "texte": "Bénéfice net",
+     "valeur": "≈ 3 c"
+    }
+   ],
+   "source": "Fiducial 2026 (résultats 2025, 400 boulangeries) ; énergie : Fiducial 2025 ; ratios de toute la boutique"
+  },
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p106",
+  "partie": "A2",
+  "format": "rush",
+  "texte": "Ce sont des moyennes de toute la boutique, viennoiseries comprises, mais l'ordre de grandeur est là.",
+  "media_ref": "pi:2472608",
+  "catalogue": "r23 I5",
+  "faits": [
+   "F24"
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p109",
+  "partie": "A2",
+  "format": "mosaique",
+  "texte": "Si tu veux savoir ce que coûtent vraiment les objets du quotidien, abonne-toi.",
+  "medias": [
+   {
+    "media_ref": "pi:1398259"
+   },
+   {
+    "media_ref": "pi:2417533"
+   }
+  ],
+  "catalogue": [
+   "r01 I1",
+   "r02 I1"
+  ],
+  "couches": [
+   {
+    "type": "carton",
+    "texte": "ABONNE-TOI",
+    "a": 2.4
+   }
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p098",
+  "partie": "A3",
+  "format": "titre",
+  "media_ref": "wc:File:Paris at morning (51724082201).jpg",
+  "catalogue": "r34 C8",
+  "numero": "02",
+  "titre": "La vérité",
+  "sous_titre": "Où sont passés tes 94 centimes",
+  "duree_min": 2.8,
+  "sons": [
+   {
+    "nom": "impact",
+    "a": 0.2,
+    "volume": 0.5
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p156b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Alors, qui a pris tes quatre-vingt-quatorze centimes ? Je crois que j'ai enfin la réponse.",
+  "media_ref": "pv:21223",
+  "catalogue": "r33 V2",
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p108",
+  "partie": "A3",
+  "format": "mosaique",
+  "texte": "Personne ne les a volés : ce que tu paies d'abord, ce sont des heures humaines, souvent la nuit.",
+  "medias": [
+   {
+    "media_ref": "pi:974682"
+   },
+   {
+    "media_ref": "pv:7093"
+   }
+  ],
+  "catalogue": [
+   "r33 I4",
+   "c13 V7"
+  ],
+  "faits": [
+   "F24"
+  ],
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "DES HEURES HUMAINES",
+    "heros": "HUMAINES",
+    "position": "centre",
+    "a": 2.6
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p099",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Une boulangerie reste ouverte en moyenne cinquante-six heures par semaine, et le fournil s'allume bien avant.",
+  "media_ref": "wc:File:Bread maker Qormi.jpg",
+  "catalogue": "r20 C5",
+  "faits": [
+   "F27"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Une semaine de boulangerie",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 56,
+   "decimales": 0,
+   "suffixe": " h",
+   "legende": "d'ouverture par semaine, en moyenne",
+   "revele_a": 2.6,
+   "source": "Fiducial 2026"
+  },
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p157b",
+  "partie": "A3",
+  "format": "schema",
+  "texte": "Notre suspect numéro quatre n'a rien volé : il a travaillé toute la nuit.",
+  "media_ref": "wc:File:US Navy 041206-N-5837R-029 Culinary Specialist 3rd Class Joshua Savoy spreads flour on his food preparation table before making peach cobbler dough for the crew of the Nimitz-class aircraft carrier USS Abraham Lincoln (CVN 72).jpg",
+  "catalogue": "r12 C2",
+  "etiquette_schema": "Verdict n° 4",
+  "schema": {
+   "type": "suspect",
+   "nom": "Le boulanger",
+   "accusation": "Il garde combien ?",
+   "numero": "04",
+   "verdict": "Innocent"
+  },
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p158b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Maintenant, je peux enfin te raconter ce qu'Alexandra Faure a dit dans sa vidéo.",
+  "media_ref": "pv:21222",
+  "catalogue": "r33 V3",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p159b",
+  "partie": "A3",
+  "format": "schema",
+  "texte": "Sur sa facture, le kilowattheure d'hiver passait de près de quatorze à plus de cinquante-sept centimes.",
+  "media_ref": "pi:96512",
+  "catalogue": "r32 I6",
+  "faits": [
+   "H1d"
+  ],
+  "etiquette_schema": "Loupe : le compteur d'Alexandra (illustration)",
+  "schema": {
+   "type": "loupe",
+   "zoom": 2.5,
+   "points": [
+    {
+     "x": 45,
+     "y": 45,
+     "texte": "Février 2022 : 13,72 c le kWh",
+     "a": 0.8
+    },
+    {
+     "x": 58,
+     "y": 52,
+     "texte": "Annoncé : 57,34 c le kWh",
+     "a": 3.6
+    }
+   ]
+  },
+  "note_monteur": "Points sur les roues chiffrées du compteur. Source à l'écran : Brut, 30/11/2022.",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p160b",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Sa facture d'électricité passait d'environ mille cinq cents à trois mille cinq cents euros par mois.",
+  "media_ref": "pi:167969",
+  "catalogue": "r32 I5",
+  "faits": [
+   "H1c"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "La facture d'Alexandra",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Électricité, par mois",
+   "unite": " €",
+   "decimales": 0,
+   "heros": "b",
+   "a": {
+    "label": "Avant",
+    "valeur": 1500
+   },
+   "b": {
+    "label": "Dès janvier 2023",
+    "valeur": 3500
+   },
+   "source": "macommune.info, 18/11/2022"
+  },
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p161b",
+  "partie": "A3",
+  "format": "rush",
+  "media_ref": "pv:17177",
+  "catalogue": "r22 V7",
+  "duree_min": 2.5,
+  "sons": [
+   {
+    "nom": "four",
+    "a": 0.2,
+    "volume": 0.7
+   }
+  ],
+  "note_monteur": "SILENCE : pas de voix, musique baissée, son réel seul. Flammes du four, souffle grave. Laisser le chiffre résonner.",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p162b",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Dans sa vidéo, elle lâche cette phrase : « On ne survivra pas, surtout si l'État ne nous aide pas. »",
+  "media_ref": "pi:4840960",
+  "catalogue": "r28 I5",
+  "faits": [
+   "H1"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Alexandra Faure, 17 novembre 2022",
+  "schema": {
+   "type": "liste",
+   "titre": "Alexandra Faure",
+   "elements": [
+    {
+     "texte": "« On ne survivra pas, surtout si l'État ne nous aide pas »",
+     "heros": true
+    }
+   ],
+   "source": "macommune.info, 18/11/2022"
+  },
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Image d'illustration",
+    "a": 0.4
+   }
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p163b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Elle n'a qu'à augmenter le prix de sa baguette de quelques centimes, voilà tout !",
+  "media_ref": "wc:File:Baguettes, Paris, France - panoramio.jpg",
+  "catalogue": "r24 C7",
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p164b",
+  "partie": "A3",
+  "format": "mosaique",
+  "texte": "Elle y a pensé, et sa réponse tombe : « On ne peut pas répercuter le prix de l'électricité sur une baguette. »",
+  "medias": [
+   {
+    "media_ref": "pi:1597868"
+   },
+   {
+    "media_ref": "wc:File:Baguettes - stonesoup.jpg"
+   }
+  ],
+  "catalogue": [
+   "c10 I5",
+   "r23 C1"
+  ],
+  "faits": [
+   "H1f"
+  ],
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Alexandra Faure, macommune.info, 18/11/2022",
+    "a": 1.0
+   }
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p165b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Elle ajoute une phrase toute simple, « c'est toutes mes économies », et tout est dit.",
+  "media_ref": "pi:2180330",
+  "catalogue": "r26 I4",
+  "faits": [
+   "H1"
+  ],
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Brut, 30/11/2022",
+    "a": 1.0
+   }
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p166b",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Elle n'est pas seule : dans l'Oise, la facture de Julien Pedussel passe de mille à dix mille euros.",
+  "media_ref": "pi:7776176",
+  "catalogue": "r32 I4",
+  "faits": [
+   "H2a"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le Fournil de Rieux (Oise)",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Facture d'électricité",
+   "unite": " €",
+   "decimales": 0,
+   "heros": "b",
+   "a": {
+    "label": "Avant",
+    "valeur": 1000
+   },
+   "b": {
+    "label": "Deux mois plus tard",
+    "valeur": 10000
+   },
+   "source": "Oise Hebdo, via 24matins, 02/01/2023"
+  },
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p167b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Dix mille euros d'électricité pour une seule boulangerie, franchement, ça me paraît impossible !",
+  "media_ref": "pv:2336",
+  "catalogue": "r21 V4",
+  "voix": "sceptique",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p169b",
+  "partie": "A3",
+  "format": "mosaique",
+  "texte": "Il l'a pourtant déclaré à la presse, et le vingt-trois janvier, des boulangers manifestent devant le ministère des Finances.",
+  "medias": [
+   {
+    "media_ref": "pi:6356637",
+    "legende": "Paris"
+   },
+   {
+    "media_ref": "pi:96863"
+   }
+  ],
+  "catalogue": [
+   "r34 I1",
+   "r32 I1"
+  ],
+  "faits": [
+   "H3a",
+   "H3b"
+  ],
+  "surtitre": "Paris, 23 janvier 2023",
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p170b",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Parmi eux, Mickaël Michelot, boulanger dans le Rhône : « Nous on ne demande qu'à bosser, à faire notre boulot. »",
+  "media_ref": "pi:1868396",
+  "catalogue": "r28 I2",
+  "faits": [
+   "H3"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "Mickaël Michelot, boulanger à Orliénas (Rhône)",
+  "schema": {
+   "type": "liste",
+   "titre": "Mickaël Michelot",
+   "elements": [
+    {
+     "texte": "« Nous on ne demande qu'à bosser, à faire notre boulot »",
+     "heros": true
+    }
+   ],
+   "source": "Europe 1, 22/01/2023"
+  },
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Image d'illustration",
+    "a": 0.4
+   }
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p171b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Voilà où part l'essentiel de ton euro : dans des heures de travail, souvent la nuit, et dans l'énergie.",
+  "media_ref": "wc:File:Bread in the oven (5959009561).jpg",
+  "catalogue": "r20 C2",
+  "faits": [
+   "F24",
+   "F25"
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p110",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Depuis mille neuf cent soixante-dix, environ quatre cents boulangeries ferment chaque année, en moyenne.",
+  "media_ref": "pi:4992402",
+  "catalogue": "r29 I1",
+  "faits": [
+   "F30"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Les boulangeries disparaissent",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Nombre de boulangeries",
+   "unite": "",
+   "decimales": 0,
+   "heros": "b",
+   "a": {
+    "label": "1970",
+    "valeur": 55000
+   },
+   "b": {
+    "label": "2025",
+    "valeur": 35000
+   },
+   "source": "CNBPF 2025 ; AFP 2022"
+  },
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p111",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Dix mois avant sa vidéo, le onze janvier deux mille vingt-deux, une annonce avait secoué la filière.",
+  "media_ref": "wc:File:Hypermarché Leclerc Bellerive-sur-Allier.jpg",
+  "catalogue": "c09 C4",
+  "faits": [
+   "F34"
+  ],
+  "surtitre": "11 janvier 2022",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p112",
+  "partie": "A3",
+  "format": "schema",
+  "texte": "Leclerc bloque sa baguette à vingt-neuf centimes maximum, pendant au moins quatre mois.",
+  "media_ref": "wc:File:Entrée E. Leclerc Beynost.JPG",
+  "catalogue": "c09 C2",
+  "faits": [
+   "F34"
+  ],
+  "etiquette_schema": "L'annonce de Leclerc",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 0.29,
+   "decimales": 2,
+   "suffixe": " €",
+   "legende": "baguette de 250 g, prix maximum annoncé",
+   "source": "RMC, 11/01/2022 (via Pleinchamp)",
+   "comparaison": "Moyenne : 1,01 €",
+   "revele_a": 2.6
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p172b",
+  "partie": "A3",
+  "format": "rush",
+  "media_ref": "pv:1735",
+  "catalogue": "r30 V4",
+  "duree_min": 2.5,
+  "sons": [
+   {
+    "nom": "caisse",
+    "a": 0.2,
+    "volume": 0.7
+   }
+  ],
+  "note_monteur": "SILENCE : pas de voix, musique baissée, son réel seul. Bip de caisse, caddies.",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p113",
+  "partie": "A3",
+  "format": "mosaique",
+  "texte": "La filière dénonce une opération démagogique, et le président des meuniers la juge même honteuse.",
+  "medias": [
+   {
+    "media_ref": "wc:File:ELeclerc Cherbourg2.jpg"
+   },
+   {
+    "media_ref": "wc:File:Asda - bread aisle.jpg"
+   }
+  ],
+  "catalogue": [
+   "c09 C5",
+   "r30 C7"
+  ],
+  "faits": [
+   "F35",
+   "H4a"
+  ],
+  "couches": [
+   {
+    "type": "source",
+    "texte": "Europe 1, 12/01/2022",
+    "a": 1.0
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p173b",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Moi, une baguette à vingt-neuf centimes, je dis merci, c'est bon pour mon portefeuille !",
+  "media_ref": "pi:2619380",
+  "catalogue": "r30 I6",
+  "voix": "sceptique",
+  "ambiance": "leger"
+ },
+ {
+  "id": "p116",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Leclerc affirme y garder une marge, et en mars deux mille vingt-six, le premier prix tombe à vingt-huit centimes.",
+  "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 Breads etc.jpg",
+  "catalogue": "r30 C5",
+  "faits": [
+   "F34",
+   "F37",
+   "F11"
+  ],
+  "cote": "gauche",
+  "etiquette_schema": "Le prix le plus bas",
+  "schema": {
+   "type": "comparaison",
+   "titre": "Une baguette en 2026",
+   "unite": " €",
+   "decimales": 2,
+   "heros": "a",
+   "a": {
+    "label": "Le moins cher en supermarché",
+    "valeur": 0.28
+   },
+   "b": {
+    "label": "Moyenne en boulangerie",
+    "valeur": 1.12
+   },
+   "source": "UFC-Que Choisir (mars 2026) ; Fiducial 2026"
+  },
+  "ambiance": "tension"
+ },
+ {
+  "id": "p114",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "En supermarché, souvent, les pâtons arrivent surgelés et sont seulement cuits sur place.",
+  "media_ref": "pi:19669",
+  "catalogue": "c07 I4",
+  "faits": [
+   "F36"
+  ],
+  "couches": [
+   {
+    "type": "source",
+    "texte": "UFC-Que Choisir, 2025 et 2026",
+    "a": 1.0
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p174b",
+  "partie": "A3",
+  "format": "schema",
+  "media_ref": "pi:3105629",
+  "catalogue": "r30 I8",
+  "duree_min": 5,
+  "etiquette_schema": "À toi de deviner",
+  "schema": {
+   "type": "devine",
+   "question": "Combien de fois moins cher qu'en boulangerie ?",
+   "choix": [
+    "2 fois",
+    "4 fois",
+    "10 fois"
+   ],
+   "bonne": 1,
+   "secondes": 3
+  },
+  "sons": [
+   {
+    "nom": "tick",
+    "a": 1.5,
+    "volume": 0.3
+   }
+  ],
+  "ambiance": "tension"
+ },
+ {
+  "id": "p115",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "Quatre fois moins cher qu'en boulangerie, en moyenne, pour un pain qui porte le même nom.",
+  "media_ref": "wc:File:BreadSupermarket.jpg",
+  "catalogue": "r30 C2",
+  "faits": [
+   "F37",
+   "F11"
+  ],
+  "punch": {
+   "a": 0.8,
+   "texte": "÷ 4"
+  },
+  "couches": [
+   {
+    "type": "source",
+    "texte": "0,28 € (UFC-Que Choisir, mars 2026) contre 1,12 € (Fiducial 2026)",
+    "a": 1.5
+   }
+  ],
+  "ambiance": "revelation"
+ },
+ {
+  "id": "p117",
+  "partie": "A3",
+  "format": "ecran_partage",
+  "texte": "Alors, cette baguette à vingt-huit centimes, qui la paie vraiment ? L'agriculteur, le boulanger, ou toi, sur le reste du caddie ?",
+  "media_ref": "wc:File:Tractor plow fields cultivated.jpg",
+  "catalogue": "r35 C1",
+  "faits": [
+   "F37"
+  ],
+  "cote": "droite",
+  "etiquette_schema": "La question qui reste",
+  "schema": {
+   "type": "liste",
+   "titre": "Qui paie la baguette à 28 c ?",
+   "elements": [
+    {
+     "texte": "L'agriculteur ?"
+    },
+    {
+     "texte": "Le boulanger ?"
+    },
+    {
+     "texte": "Toi, sur le reste du caddie ?",
+     "heros": true
+    }
+   ]
+  },
+  "note_monteur": "Question ouverte (fact-check : ne pas y répondre par « vendue à perte »).",
+  "ambiance": "tension"
+ },
+ {
+  "id": "p118",
+  "partie": "A3",
+  "format": "mosaique",
+  "texte": "Je n'ai pas de réponse simple, mais demain, regarde ta pièce d'un euro autrement.",
+  "medias": [
+   {
+    "media_ref": "pv:9091"
+   },
+   {
+    "media_ref": "pi:1353420"
+   }
+  ],
+  "catalogue": [
+   "r26 V6",
+   "r26 I1"
+  ],
+  "ambiance": "emotion"
+ },
+ {
+  "id": "p119",
+  "partie": "A3",
+  "format": "rush",
+  "texte": "La semaine prochaine, on suit l'argent du chocolat : sur une tablette, qui touche quoi ?",
+  "media_ref": "pi:1312524",
+  "couches": [
+   {
+    "type": "mots",
+    "texte": "Prochaine vidéo : le chocolat",
+    "heros": "chocolat",
+    "position": "haut",
+    "a": 0.3
+   }
+  ],
+  "ambiance": "leger"
+ },
+ {
+  "id": "p120",
+  "partie": "A3",
+  "format": "titre",
+  "media_ref": "pi:6570934",
+  "catalogue": "c06 I8",
+  "titre": "Qui paie la baguette à 28 c ?",
+  "sous_titre": "Prochaine vidéo : le chocolat",
+  "duree_min": 3.0,
+  "ambiance": "leger"
+ }
+]
