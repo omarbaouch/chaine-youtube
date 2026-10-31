@@ -106,6 +106,8 @@ Jamais une vidéo nue avec des sous-titres, jamais du dessin seul : chaque plan 
 {"id": "p10", "format": "schema", "media_ref": "pv:789" /* fond flouté, facultatif */, "etiquette_schema": "Coût réel", "texte": "…",
  "schema": {"type": "chiffre", "valeur": 0.05, "decimales": 2, "suffixe": " €", "legende": "…", "comparaison": "Moins qu'un…",
    "revele_a": 2.4 /* « ? » jusqu'à 2,4 s puis impact */, "source": "…"}}
+{"id": "p12", "fichier": "medias/temoin.mp4", "debut_media": 12, "texte": "", "temoignage": {"nom": "…", "role": "…", "source": "…",
+   "citation": "…", "fin": 18}}   // vraie personne qui parle, son d'origine (règle n°13 : sources libres ou filmées par Omar)
 {"id": "p11", "format": "titre", "numero": "02", "titre": "La fabrication", "sous_titre": "…", "media_ref": "pv:…", "duree_min": 2.8}
 ```
 Types de `schema` : `decomposition` (barre de prix), `processus` (`etapes`, `actif`), `chiffre`, `comparaison` (`a`, `b`, `heros`),
