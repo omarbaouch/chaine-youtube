@@ -110,3 +110,10 @@ des images, des fois une composition d'un peu de tout. Je veux que celui qui voi
 - **Intro obligatoire :** ouverture choc de 10 à 15 s qui montre le moment fort de la vidéo en avant-première, puis une carte titre animée avec un impact.
 - **Ennui :** pas plus d'un tiers de photos fixes ; privilégier les vraies vidéos. Une photo bouge toujours (zoom et panoramique marqués).
   Les respirations sont courtes (0,15 s) et la musique reste présente (0,2 sous la voix, baissée automatiquement).
+
+## Règle n°10 — Bibliothèques de mouvement installées (31/10/2026)
+- `.claude/skills/video-shotcraft/` (Apache 2.0) : 124 « cartes de plans » cinématiques Remotion (caméra, ouverture, transitions,
+  typographie, effets d'impact, données). Avant d'écrire une scène animée, piocher une carte dans `references/shots/` et
+  l'adapter à nos briques (objet réel d'abord, règle n°1). Sons : `references/sound-design.md`.
+- `.claude/skills/emotional-narrative/` (MIT) : principes d'animation pensés pour l'émotion (anticipation, timing, silence).
+  À relire avant chaque moment fort (révélation, histoire humaine).
