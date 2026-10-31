@@ -101,3 +101,12 @@ des images, des fois une composition d'un peu de tout. Je veux que celui qui voi
 - Il parle depuis son téléphone : réponses courtes, une question à la fois, fichiers envoyés plutôt que décrits.
 - Pas d'attente bloquante longue : pousser sur GitHub, programmer une vérification (send_later) et rendre la main.
 - Tout doit rester gratuit (GitHub Actions, Pixabay, Pocket TTS, Remotion licence individuelle).
+
+## Règle n°9 — Retours d'Omar sur la vidéo baguette (31/10/2026)
+- **Voix :** les voix de synthèse « robotisées » (Pocket TTS, Piper, Kokoro) sont refusées. Voix choisie par Omar :
+  Microsoft Edge `fr-FR-VivienneMultilingualNeural` (`"voix": {"moteur": "edge", "locuteur": "fr-FR-VivienneMultilingualNeural", "debit": "+8%"}`).
+  Gratuite, mais ses conditions d'utilisation pour une chaîne monétisée sont floues : à surveiller. La vraie solution reste la voix d'Omar.
+- **Bruitages :** plus aucun « whoosh » (le « shiiit shiiit » répété). Les impacts et les risers restent rares et discrets.
+- **Intro obligatoire :** ouverture choc de 10 à 15 s qui montre le moment fort de la vidéo en avant-première, puis une carte titre animée avec un impact.
+- **Ennui :** pas plus d'un tiers de photos fixes ; privilégier les vraies vidéos. Une photo bouge toujours (zoom et panoramique marqués).
+  Les respirations sont courtes (0,15 s) et la musique reste présente (0,2 sous la voix, baissée automatiquement).

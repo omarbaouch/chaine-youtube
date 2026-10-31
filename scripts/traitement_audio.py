@@ -24,6 +24,8 @@ EGALISATION_IA = ",".join([
     "lowpass=f=11500:poles=2",
     "deesser=i=0.6:m=0.6:f=0.5",
 ])
+# Voix neuronale déjà propre (Edge) : seulement un coupe-bas et une légère présence.
+EGALISATION_NEURONALE = "highpass=f=70:poles=2,equalizer=f=3000:t=q:w=1.0:g=1"
 EGALISATION_MICRO = "highpass=f=80:poles=2,afftdn=nr=10:nf=-45:tn=1,equalizer=f=300:t=q:w=1.2:g=-2,deesser=i=0.4:m=0.5:f=0.5"
 DYNAMIQUE = ",".join([
     "agate=threshold=0.012:ratio=6:attack=4:release=140:range=0.06:knee=3",

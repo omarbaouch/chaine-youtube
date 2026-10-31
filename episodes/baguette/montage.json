@@ -8,15 +8,14 @@
  "transition_defaut": "coupe",
  "duree_transition": 8,
  "voix": {
-  "modele": "french_24l",
-  "locuteur": "estelle",
-  "etapes": 5,
-  "temperature": 0.3,
-  "pause_phrase": 0.2
+  "moteur": "edge",
+  "locuteur": "fr-FR-VivienneMultilingualNeural",
+  "debit": "+8%",
+  "pause_phrase": 0.12
  },
  "musique": {
   "fichier": "../../public/sfx/musique-enquete.wav",
-  "volume": 0.14
+  "volume": 0.2
  },
  "etalonnage": {
   "contraste": 1.06,
@@ -29,6 +28,69 @@
   "mots_par_ligne": 4
  },
  "scenes": [
+  {
+   "id": "o01",
+   "format": "schema",
+   "media_ref": "pi:3277831",
+   "etiquette_schema": "Qui touche quoi sur ta baguette",
+   "texte": "Cette baguette, je vais la couper en quatre. Un morceau pour chaque personne que tu paies vraiment.",
+   "schema": {
+    "type": "decoupe",
+    "titre": "Ta baguette, coupée en quatre",
+    "total": 1.01,
+    "unite": " €",
+    "decimales": 2,
+    "parts": [
+     {
+      "label": "Blé",
+      "valeur": 0.06,
+      "heros": true
+     },
+     {
+      "label": "Meunier",
+      "valeur": 0.07
+     },
+     {
+      "label": "Après le moulin",
+      "valeur": 0.83
+     },
+     {
+      "label": "TVA",
+      "valeur": 0.05
+     }
+    ],
+    "source": "OFPM 2026, données 2025, baguette courante tous circuits, ramené à 250 g",
+    "zone": [
+     9.5,
+     93.4
+    ],
+    "zone_y": [
+     36,
+     64
+    ]
+   }
+  },
+  {
+   "id": "o02",
+   "format": "titre",
+   "type": "titre",
+   "titre": "Combien coûte vraiment une baguette ?",
+   "sous_titre": "Du champ à ta main, centime par centime",
+   "media_ref": "pv:21800",
+   "duree_min": 2.4,
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.2,
+     "volume": 0.6
+    },
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.3
+    }
+   ]
+  },
   {
    "id": "p001",
    "format": "rush",
@@ -179,7 +241,7 @@
    "numero": "01",
    "titre": "Le grain",
    "sous_titre": "Du champ au silo",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -362,7 +424,7 @@
    "id": "p019",
    "format": "rush",
    "texte": "Et ce blé, il vaut combien ? Son prix se fixe à la tonne.",
-   "media_ref": "wc:File:Commodity Prices.webp",
+   "media_ref": "pv:338955",
    "couches": [
     {
      "type": "annotation",
@@ -396,7 +458,7 @@
    "id": "p021",
    "format": "rush",
    "texte": "Soit vingt centimes le kilo de blé.",
-   "media_ref": "pi:8487373",
+   "media_ref": "pv:45657",
    "couches": [
     {
      "type": "mots",
@@ -476,7 +538,7 @@
    "numero": "02",
    "titre": "Le moulin",
    "sous_titre": "Du grain à la farine",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -730,7 +792,7 @@
    "numero": "03",
    "titre": "La pâte",
    "sous_titre": "Une usine vivante",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -1035,7 +1097,7 @@
    "id": "p058",
    "format": "rush",
    "texte": "La pâte est prête. Mais il manque un ingrédient secret.",
-   "media_ref": "wc:File:Baguette coocking - IMG 4272 (14160296194).jpg",
+   "media_ref": "pv:205890",
    "couches": [
     {
      "type": "mots",
@@ -1066,7 +1128,7 @@
    "numero": "04",
    "titre": "Le four",
    "sous_titre": "240 °C",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -1372,7 +1434,7 @@
    "id": "p077",
    "format": "rush",
    "texte": "Et toi, tu paies tout ça combien ? Et à qui ?",
-   "media_ref": "pi:3395872",
+   "media_ref": "pv:51722",
    "couches": [
     {
      "type": "mots",
@@ -1390,7 +1452,7 @@
    "numero": "05",
    "titre": "La facture",
    "sous_titre": "Qui touche quoi",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -1789,7 +1851,7 @@
    "numero": "06",
    "titre": "Ton euro",
    "sous_titre": "Dans la caisse du boulanger",
-   "duree_min": 2.8,
+   "duree_min": 2.2,
    "transition": "glissement",
    "type": "titre"
   },
@@ -1859,7 +1921,7 @@
    "id": "p102",
    "format": "rush",
    "texte": "D'abord les salaires : environ quarante-trois centimes. Le plus gros poste.",
-   "media_ref": "pi:8364737"
+   "media_ref": "pv:49549"
   },
   {
    "id": "p103",
@@ -1938,7 +2000,7 @@
    "id": "p107",
    "format": "rush",
    "texte": "À son compte, le patron affiche onze pour cent. Mais sa paie est dedans.",
-   "media_ref": "wc:File:Kelmscott Manor, domestic outbuildings, Wooden shovel for taking bread in and out of the oven - geograph.org.uk - 5794755.jpg"
+   "media_ref": "pv:1261"
   },
   {
    "id": "p108",
@@ -2130,9 +2192,10 @@
    "media_ref": "pi:6570934",
    "titre": "Qui paie la baguette à 28 c ?",
    "sous_titre": "Prochaine vidéo : le chocolat",
-   "duree_min": 3.0,
+   "duree_min": 2.2,
    "type": "titre"
   }
  ],
- "rushes_a_refaire": []
+ "rushes_a_refaire": [],
+ "respiration": 0.15
 }

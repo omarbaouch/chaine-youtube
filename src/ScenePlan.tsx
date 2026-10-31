@@ -16,14 +16,18 @@ const Fond: React.FC<{scene: Scene; flou?: boolean}> = ({scene, flou}) => {
   const ease = Easing.inOut(Easing.quad)(Math.min(1, p));
   // Zoom lent "Ken Burns" : donne de la vie même à un plan fixe.
   const estImg = !!scene.media && /\.(jpe?g|png|webp)$/i.test(scene.media);
-  const amplitude = estImg ? 0.14 : 0.07;
+  // Photos : mouvement plus ample (retour d'Omar « on s'ennuie ») — zoom marqué + panoramique en diagonale.
+  const amplitude = estImg ? 0.24 : 0.08;
+  const p2 = estImg ? Math.min(1, frame / Math.max(1, scene.duree)) : ease; // vitesse constante : la photo ne "s'arrête" jamais
   const scale =
-    scene.zoom === 'aucun' ? 1.02 : scene.zoom === 'arriere' ? 1 + amplitude * (1 - ease) + 0.02 : 1.02 + amplitude * ease;
-  const derive = estImg ? interpolate(ease, [0, 1], [-1.5, 1.5]) : 0;
+    scene.zoom === 'aucun' ? 1.06 : scene.zoom === 'arriere' ? 1.04 + amplitude * (1 - p2) : 1.04 + amplitude * p2;
+  const sens = scene.id.charCodeAt(scene.id.length - 1) % 2 ? 1 : -1;
+  const derive = estImg ? interpolate(p2, [0, 1], [-3.5 * sens, 3.5 * sens]) : 0;
+  const deriveY = estImg ? interpolate(p2, [0, 1], [1.5, -1.5]) : 0;
   const style: React.CSSProperties = {
     width: '100%',
     height: '100%',
-    transform: `scale(${scale}) translateX(${derive}%)`,
+    transform: `scale(${scale}) translate(${derive}%, ${deriveY}%)`,
     filter: flou ? 'blur(18px) brightness(0.45)' : undefined,
   };
   if (!scene.media) {

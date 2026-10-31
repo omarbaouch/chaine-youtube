@@ -85,7 +85,7 @@ const scenes = montage.scenes.map((s, i) => {
   const voixDebut = aVoix ? Math.round((s.avant_voix ?? (i === 0 ? 0.15 : 0.3)) * fps) : 0;
   const dVoix = aVoix ? Math.ceil(dureeAudio(voixWav) * fps) : 0;
   const minimum = Math.round((s.duree_min ?? (s.type === 'titre' ? 2.5 : 2)) * fps);
-  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? 0.35) * fps), dureeTransition * 2 + 2);
+  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? montage.respiration ?? 0.35) * fps), dureeTransition * 2 + 2);
   const segments = aVoix ? JSON.parse(fs.readFileSync(voixWav.replace(/\.wav$/, '.json'), 'utf8')).segments : [];
   const sousTitres = s.sous_titres === false || montage.sous_titres?.actifs === false ? [] : lignes(minuterMots(segments));
   const transition = i === 0 ? 'coupe' : (s.transition ?? montage.transition_defaut ?? 'fondu');

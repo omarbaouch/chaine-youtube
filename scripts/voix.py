@@ -38,7 +38,7 @@ os.makedirs(cache, exist_ok=True)
 SR = 48000
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from traitement_audio import EGALISATION_IA, EGALISATION_MICRO, ffmpeg, traiter  # noqa: E402
+from traitement_audio import EGALISATION_IA, EGALISATION_MICRO, EGALISATION_NEURONALE, ffmpeg, traiter  # noqa: E402
 
 
 def duree(path):
@@ -74,6 +74,21 @@ def modele():
 
 
 def synthese(texte, dest):
+    if moteur == "edge":
+        # Voix neuronale Microsoft Edge (choix d'Omar du 31/10/2026 : Vivienne). Gratuite, conditions d'usage à surveiller.
+        import asyncio
+        import edge_tts
+        mp3 = dest + ".mp3"
+        for essai in range(5):
+            try:
+                asyncio.run(edge_tts.Communicate(texte, locuteur, rate=reglages.get("debit", "+8%")).save(mp3))
+                break
+            except Exception as e:  # coupure réseau passagère : on réessaie
+                print(f"  edge-tts : {e}, nouvel essai", flush=True)
+                import time; time.sleep(3 * (essai + 1))
+        ffmpeg("-i", mp3, "-ar", str(SR), "-ac", "1", dest)
+        os.remove(mp3)
+        return
     if moteur == "silence":
         ffmpeg("-f", "lavfi", "-i", f"anullsrc=r={SR}:cl=mono", "-t", f"{max(0.6, len(texte.split()) / 2.6):.2f}", dest)
         return
@@ -98,7 +113,7 @@ for s in montage["scenes"]:
         continue
     segments, fichiers, t = [], [], 0.0
     for p in phrases(texte):
-        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, etapes, p]).encode()).hexdigest()[:16]
+        cle = hashlib.sha1(json.dumps([moteur, modele_nom, locuteur, temperature, etapes, reglages.get("debit"), p]).encode()).hexdigest()[:16]
         brut = os.path.join(cache, f"{cle}.wav")
         if not os.path.exists(brut):
             synthese(p, brut + ".tmp.wav")
@@ -122,6 +137,8 @@ for s in montage["scenes"]:
     ffmpeg("-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", brut_scene)
     if moteur == "silence":
         shutil.copy(brut_scene, dest)
+    elif moteur == "edge":
+        traiter(brut_scene, dest, EGALISATION_NEURONALE)
     else:
         traiter(brut_scene, dest, EGALISATION_IA)
     json.dump({"segments": segments}, open(dest[:-4] + ".json", "w"), ensure_ascii=False)
