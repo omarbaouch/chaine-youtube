@@ -1,0 +1,19 @@
+name: Repérage musique (studio-b)
+on:
+  push:
+    branches: [studio-b]
+    paths: ['tests/musique/**']
+permissions:
+  contents: write
+jobs:
+  musique:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repérer
+        run: python3 tests/musique/reperer.py
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "musique-b-${{ github.run_number }}" out/musique/* --target "${{ github.sha }}" --title "🎵 Repérage musique #${{ github.run_number }}" --notes "Incompetech (Kevin MacLeod, CC-BY 4.0)" --prerelease
