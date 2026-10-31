@@ -1,0 +1,30 @@
+name: Échantillons de voix (studio-b)
+
+on:
+  push:
+    branches: [studio-b]
+    paths: ['tests/voix-b/**']
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu pocket-tts scipy huggingface_hub piper-tts edge-tts kokoro soundfile "misaki[fr]" || pip install -q --extra-index-url https://download.pytorch.org/whl/cpu pocket-tts scipy huggingface_hub piper-tts edge-tts soundfile
+      - name: Générer
+        run: python tests/voix-b/generer.py
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "voix-b-${{ github.run_number }}" out/voix/* --target "${{ github.sha }}" \
+            --title "🎙️ Échantillons de voix #${{ github.run_number }}" --notes "Même phrase, plusieurs voix." --prerelease
