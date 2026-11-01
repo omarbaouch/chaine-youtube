@@ -1,0 +1,55 @@
+{
+ "titre": "Test v2 : formats variés + rétention",
+ "format": {"largeur": 1920, "hauteur": 1080, "fps": 30},
+ "transition_defaut": "fondu",
+ "duree_transition": 8,
+ "voix": {"modele": "french_24l", "locuteur": "estelle", "etapes": 5, "pause_phrase": 0.16},
+ "musique": {"fichier": "../../public/sfx/nappe.wav", "volume": 0.22},
+ "sous_titres": {"actifs": true, "mots_par_ligne": 3},
+ "scenes": [
+  {
+   "id": "p1", "format": "rush", "type": "video", "media_ref": "pi:3984776", "zoom": "avant", "respiration": 0.2,
+   "texte": "Devine combien vaut l'aluminium de cette canette.",
+   "couches": [
+    {"type": "visee", "x": 30, "y": 18, "l": 32, "h": 60, "a": 0.15},
+    {"type": "zoom_punch", "a": 1.3},
+    {"type": "annotation", "x": 46, "y": 48, "vers_x": 64, "vers_y": 22, "texte": "Aluminium : ?", "a": 1.4}
+   ]
+  },
+  {
+   "id": "p2", "format": "ecran_partage", "type": "video", "media_ref": "pi:2065901", "cote": "gauche", "legende": "Bobines d'aluminium", "respiration": 0.25,
+   "texte": "Une bande d'aluminium entre d'un côté.",
+   "schema": {"type": "comparaison", "titre": "Épaisseur de la tôle",
+    "items": [{"label": "Tôle à canette", "valeur": 0.3, "unite": "mm", "heros": true}, {"label": "Papier (80 g)", "valeur": 0.1, "unite": "mm"}],
+    "source": "alcircle.com (tôle de corps de canette : 0,25 à 0,30 mm)"}
+  },
+  {
+   "id": "p3", "format": "mosaique", "type": "video", "etapes": true, "transition": "glissement", "respiration": 0.3,
+   "medias": ["wc:File:Taiwan Beer aluminum cans making flow diagram at TTL Jhunan Brewery Museum 20151017.jpg", "pi:6902965", "wc:File:12-ounce Aluminum Soda Can (32167233397).jpg"],
+   "legendes": ["Emboutie", "Fermée", "Prête"],
+   "texte": "De l'autre, des canettes sortent à la chaîne, à toute vitesse."
+  },
+  {
+   "id": "p4", "format": "schema", "type": "video", "transition": "coupe", "respiration": 0.5,
+   "texte": "Le métal d'une canette ? Environ quatre centimes. De dollar.",
+   "schema": {"type": "chiffre", "valeur": 0.04, "decimales": 2, "prefixe": "≈ ", "suffixe": " $", "legende": "Valeur de l'aluminium d'une canette",
+    "source": "Adam S. Hersh (Economic Policy Institute), via CNN, 2 mars 2025 — cours début 2025"},
+   "couches": [{"type": "son", "src": "riser", "a": 0, "volume": 0.45}, {"type": "son", "src": "impact", "a": 1.55, "volume": 0.6}]
+  },
+  {
+   "id": "p5", "format": "rush", "type": "video", "media_ref": "pi:3105631", "zoom": "arriere", "respiration": 0.3,
+   "texte": "Alors, où passe tout le reste de ce que tu paies ?",
+   "couches": [{"type": "mots", "texte": "Où va le reste ?", "heros": "reste", "position": "haut", "a": 0.5}, {"type": "zoom_punch", "a": 1.6}]
+  },
+  {
+   "id": "p6", "format": "schema", "type": "video", "respiration": 0.3,
+   "texte": "On suit l'argent, centime par centime.",
+   "schema": {"type": "processus", "titre": "Le trajet de ton argent",
+    "etapes": [{"label": "Usine", "icone": "usine"}, {"label": "Transport", "icone": "camion"}, {"label": "Magasin", "icone": "magasin"}, {"label": "Toi", "icone": "piece"}]}
+  },
+  {
+   "id": "p7", "format": "rush", "type": "video", "media_ref": "pv:12564", "zoom": "avant", "duree_min": 2.6, "transition": "coupe",
+   "couches": [{"type": "carton", "texte": "La suite arrive", "sous_texte": "Abonne-toi pour ne pas la rater", "a": 0.2}]
+  }
+ ]
+}
