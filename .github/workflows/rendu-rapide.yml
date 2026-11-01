@@ -4,10 +4,10 @@ name: Rendu rapide (parallèle)
 # 1) prépa : rushes + voix + timeline + rushes allégés → artefact
 # 2) 6 tranches d'images rendues en parallèle (vidéo muette)
 # 3) assemblage : tranches bout à bout + piste son complète + mastering -14 LUFS → Release
-# Se lance au push sur la branche studio-b qui touche episodes/** ([brouillon] dans le message = 540p).
+# Se lance au push sur main (ou studio-b) qui touche episodes/** ([brouillon] dans le message = 540p).
 on:
   push:
-    branches: [studio-b]
+    branches: [main, studio-b]
     paths: ['episodes/**']
 
 permissions:

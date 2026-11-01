@@ -37,7 +37,7 @@ en mode autonome : on décide, on journalise la décision, on continue. Exceptio
   dans `videos/<slug>/appels/<etape>.json` ; résultats dans `videos/<slug>/resultats/`, médias dans la Release
   `studio-<slug>-<etape>-N`.
 - En cas de conflit : 1) règles d'Omar (`monteur-chaine`), 2) ce fichier, 3) OpenMontage, 4) Harness.
-  Voix = `pocket_tts` ; tout gratuit (budget 0 $) ; ce qu'on voit = ce qu'on dit.
+  Voix = Edge Vivienne (règle n°9 de `monteur-chaine`) ; tout gratuit (budget 0 $) ; ce qu'on voit = ce qu'on dit.
 
 ## Thème et ton de la chaîne
 - Thème : **« Comment c'est fait, et combien ça coûte vraiment »** — l'ingénierie cachée des objets du quotidien, angle argent
@@ -50,8 +50,8 @@ en mode autonome : on décide, on journalise la décision, on continue. Exceptio
 2. `scripts/produire.sh <slug> [--brouillon]` enchaîne :
    rushes (`scripts/medias.mjs`, Pixabay) → voix (`scripts/voix.py`, Pocket TTS + traitement radio) → timeline (`scripts/construire.mjs`)
    → rendu Remotion (`src/`) → planche de contrôle `out/<slug>*-planche.jpg`.
-3. Sur GitHub, chaque push qui touche `episodes/**` lance `.github/workflows/rendu.yml` qui publie le MP4,
-   la planche et les crédits dans l'onglet **Releases**. Commit avec `[brouillon]` = rendu 540p rapide.
+3. Sur GitHub, chaque push sur `main` qui touche `episodes/**` lance `.github/workflows/rendu-rapide.yml` (6 machines en parallèle,
+   mastering -14 LUFS) qui publie le MP4, la planche et les crédits dans l'onglet **Releases**. Commit avec `[brouillon]` = rendu 540p rapide.
 4. Le PC d'Omar n'est jamais nécessaire : tout tourne sur GitHub Actions.
 
 ### Dans une session cloud Claude (sans accès Pixabay ni au modèle de voix)

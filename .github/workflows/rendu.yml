@@ -3,9 +3,7 @@ name: Rendu vidéo
 # Se lance tout seul quand un épisode change (episodes/<slug>/...), ou à la main depuis l'onglet Actions.
 # Message de commit contenant [brouillon] → rendu rapide 540p pour relire le montage.
 on:
-  push:
-    branches: [main]
-    paths: ['episodes/**']
+  # (01/11/2026) remplacé par rendu-rapide.yml (6 machines) : ce rendu sur une seule machine ne se lance plus qu'à la main
   workflow_dispatch:
     inputs:
       episode:

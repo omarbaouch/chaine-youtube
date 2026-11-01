@@ -175,7 +175,7 @@ Un témoignage dure 3 à 12 s, un seul par partie ; on l'annonce (« écoute ce 
   Omar épingle lui-même le commentaire.
 
 ## Règle n°15 — Branches et équipe
-- Le travail de cette instance vit sur la branche **`studio-b`** (rendu `.github/workflows/rendu-rapide.yml` sur 6 machines).
-  `main` (l'autre instance) n'a plus bougé depuis le 29/10 et est entièrement inclus dans `studio-b`.
+- **`main` est la seule version officielle** (décision d'Omar, 01/11/2026) : le travail de `studio-b` y a été recopié.
+  On travaille sur `main` ; le rendu `.github/workflows/rendu-rapide.yml` (6 machines) se lance à chaque push sur `episodes/**`.
 - Omar a demandé de ne plus faire de passe de fact-checking séparée (trop lente) : vérifier soi-même chaque chiffre
   et chaque citation à la source pendant l'écriture, et le noter dans `episodes/<slug>/sources.md`.
