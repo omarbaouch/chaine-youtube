@@ -1,0 +1,37 @@
+name: Test voix C (voix plus naturelle)
+
+# Compare la voix actuelle, une version Edge « naturelle » (débit, hauteur, pauses, respirations, traitement studio)
+# et Chatterbox Multilingual (MIT) en français. Publie les extraits dans Releases.
+on:
+  push:
+    branches: [main]
+    paths: ['tests/voix-c/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts || echo "installation chatterbox impossible"
+      - name: Générer
+        run: python tests/voix-c/generer.py
+      - name: Publier
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "voix-c-${{ github.run_number }}" out/voix/* --target "${{ github.sha }}" \
+            --title "🎙️ Voix plus naturelle #${{ github.run_number }}" \
+            --notes "Même accroche, 5 versions. Écoute la 1 (actuelle), puis la 2 et la 5." --prerelease
