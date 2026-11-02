@@ -1,0 +1,35 @@
+name: Test voix D (intonation continue)
+
+# Compare la voix actuelle, une version Edge « naturelle » (débit, hauteur, pauses, respirations, traitement studio)
+# et Chatterbox Multilingual (MIT) en français. Publie les extraits dans Releases.
+on:
+  push:
+    branches: [main]
+    paths: ['tests/voix-d/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts
+      - name: Générer
+        run: python tests/voix-d/generer.py
+      - name: Publier
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "voix-d-${{ github.run_number }}" out/voix/* --target "${{ github.sha }}" \
+            --title "🎙️ Voix plus naturelle #${{ github.run_number }}" \
+            --notes "Même accroche, intonation continue : A, B, C." --prerelease
