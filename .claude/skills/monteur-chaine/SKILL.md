@@ -89,6 +89,23 @@ des images, des fois une composition d'un peu de tout. Je veux que celui qui voi
 | Son qui prépare | riser avant une révélation, une demi-seconde de silence juste avant le chiffre clé, impact pile dessus |
 | Pic et fin (peak-end) | le plus beau moment visuel à la révélation ; la fin laisse une question ouverte vers la vidéo suivante |
 
+## Règle n°7 bis — Rétention fondée sur la recherche (demande d'Omar, 02/11/2026) — PRIORITAIRE sur les n°7, 9 et 11
+Constat sur la baguette (02/11) : environ 30 à 60 s regardées en moyenne sur 8 min. Cause probable vue sur la planche :
+la réponse (6 c / 7 c / 83 c / 5 c) est montrée dès 2 s et redite à 16 s ; image noire à 0 s ; carte titre à 6 s ;
+digression à 26–30 s ; écran sombre « Partie 01 » à 36 s. Ne jamais refaire ça.
+
+| Résultat de recherche | Règle de montage obligatoire |
+|---|---|
+| Fossé d'information (Loewenstein 1994) : la curiosité naît d'un manque perçu, et elle est maximale quand on a une intuition sans être sûr (étude IRMf 2009) | L'accroche pose LA question et donne un indice, jamais la réponse. Aucun chiffre-réponse avant sa révélation prévue. L'« avant-première » de la règle n°9 montre l'objet et la question (« ? »), pas le résultat. |
+| Curiosité et mémoire (Gruber, Gelman, Ranganath, *Neuron* 2014) : en état de curiosité, le circuit de la récompense (dopamine) et l'hippocampe s'activent ; on retient la réponse ET ce qu'on voit pendant l'attente | Chaque révélation est précédée d'une attente active de 20 à 60 s, remplie d'images fortes. On pose la question suivante AVANT de répondre à la précédente (boucles imbriquées). |
+| Intuition avant réponse : la curiosité culmine quand le spectateur a une idée | Les devinettes (2 c / 6 c / 20 c) arrivent tôt (avant 20 s), le spectateur choisit, la réponse vient plus tard. |
+| Rythme des coupes (Lang et al. 2000) : plus de coupes dans une même scène → plus d'éveil, d'attention et de mémoire, sans surcharge | Une coupe toutes les 2 à 4 s dans les 60 premières secondes, puis 3 à 6 s. Jamais d'écran vide, noir ou sombre sans voix. |
+| Principes de Mayer (multimédia) : cohérence (couper le superflu), signalement (mettre en valeur l'essentiel), contiguïté temporelle (l'image au moment où on en parle), voix humaine plutôt que voix de synthèse | Supprimer toute digression (ex. « baguettes vendues par seconde »). Une seule info en valeur par image. La meilleure amélioration possible : la voix d'Omar (`episodes/<slug>/voix/`). |
+| YouTube (aide officielle) : le taux à 30 s mesure si l'intro tient la promesse du titre et de la miniature ; avancer les meilleurs moments | Les 30 premières secondes reprennent mot pour mot la promesse de la miniature. Première image = image forte dès la frame 0. Aucune carte titre ni « Partie 01 » avant 30 s. |
+
+Contrôle avant rendu (à consigner dans `05_review_report.md`) : 1) aucune réponse chiffrée avant sa révélation ; 2) frame 0 non noire ;
+3) pas de carte avant 30 s ; 4) au moins 2 questions ouvertes à 30 s ; 5) aucune séquence de plus de 6 s sans changement d'image.
+
 ## Règle n°8 — Typographie et couleurs (retour d'Omar : tailles et couleurs des polices)
 - Échelle unique (1920×1080) : titres 140–170 px (Montserrat 900) ; mots clés plein écran 120 px ; chiffres 110–150 px ;
   sous-titres 78 px (Montserrat 900, MAJUSCULES, contour noir) ; étiquettes d'étape 34 px ; annotations 36 px ;
