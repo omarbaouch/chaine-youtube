@@ -157,6 +157,24 @@ def versions_chatterbox():
         if nom.startswith("4"):
             finaliser(brut, "5-chatterbox-naturelle", True)
 
+    # 6 et 7 : la voix d'Omar (enregistrement de référence fourni le 02/11/2026)
+    ref_omar = os.path.join(os.path.dirname(__file__), "omar_reference.wav")
+    if os.path.exists(ref_omar):
+        for nom, exag, cfg in [("6-voix-omar", 0.5, 0.5), ("7-voix-omar-expressive", 0.65, 0.35)]:
+            morceaux = []
+            for i, p in enumerate(ps):
+                wav = model.generate(p, language_id="fr", audio_prompt_path=ref_omar, exaggeration=exag, cfg_weight=cfg)
+                chemin = os.path.join(TMP, f"{nom}-{i}.wav")
+                ta.save(chemin, wav, model.sr)
+                r = chemin[:-4] + "-24k.wav"
+                sh("ffmpeg", "-y", "-i", chemin, "-ar", "24000", "-ac", "1", r)
+                morceaux.append(r)
+                s = os.path.join(TMP, f"{nom}-s{i}.wav"); silence(s, pause_naturelle(p)); morceaux.append(s)
+                print(nom, i + 1, "/", len(ps), flush=True)
+            brut = os.path.join(TMP, nom + ".wav")
+            concat(morceaux, brut)
+            finaliser(brut, nom, True)
+
 
 asyncio.run(versions_edge())
 try:
