@@ -83,10 +83,19 @@ const scenes = montage.scenes.map((s, i) => {
     });
   const voixWav = path.join(pub, 'voix', `${s.id}.wav`);
   const aVoix = !s.temoignage && fs.existsSync(voixWav);
-  const voixDebut = aVoix ? Math.round((s.avant_voix ?? (i === 0 ? 0.15 : 0.3)) * fps) : 0;
+  // Voix « continue » (bloc lu d'un seul souffle, voix.py) : la respiration naturelle est déjà dans le morceau.
+  // On n'ajoute que ce qu'il faut pour que deux plans ne se chevauchent pas pendant un fondu.
+  const voixJson = voixWav.replace(/\.wav$/, '.json');
+  const continu = aVoix && fs.existsSync(voixJson) && JSON.parse(fs.readFileSync(voixJson, 'utf8')).continu === true;
+  const fonduAvant = i > 0 && (s.transition ?? montage.transition_defaut ?? 'fondu') !== 'coupe';
+  const suivant = montage.scenes[i + 1];
+  const fonduApres = suivant && (suivant.transition ?? montage.transition_defaut ?? 'fondu') !== 'coupe';
+  const avantDefaut = continu ? (fonduAvant ? dureeTransition / 2 / fps : 0) : (i === 0 ? 0.15 : 0.3);
+  const respDefaut = continu ? (fonduApres ? dureeTransition / 2 / fps : 0.02) : (montage.respiration ?? 0.35);
+  const voixDebut = aVoix ? Math.round((s.avant_voix ?? avantDefaut) * fps) : 0;
   const dVoix = aVoix ? Math.ceil(dureeAudio(voixWav) * fps) : 0;
   const minimum = Math.round((s.duree_min ?? (s.type === 'titre' ? 2.5 : 2)) * fps);
-  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? montage.respiration ?? 0.35) * fps), dureeTransition * 2 + 2);
+  const duree = Math.max(minimum, voixDebut + dVoix + Math.round((s.respiration ?? respDefaut) * fps), dureeTransition * 2 + 2);
   // Devinette lue par la voix : le compte à rebours démarre quand la voix a fini de poser la question.
   if (s.schema?.type === 'devine') {
     const depart = voixDebut + dVoix + Math.round(0.2 * fps);

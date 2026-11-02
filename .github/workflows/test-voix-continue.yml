@@ -1,0 +1,34 @@
+name: Test voix continue (lecture d'un seul souffle)
+
+on:
+  push:
+    branches: [main]
+    paths: ['tests/voix-continue/**', 'episodes/test-voix-continue/**', 'scripts/voix.py', 'scripts/voix_edge.py']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts scipy
+      - name: Voix plan par plan (ancienne méthode)
+        run: python scripts/voix.py test-voix-plan-par-plan && python tests/voix-continue/assembler.py test-voix-plan-par-plan 1-avant-plan-par-plan
+      - name: Voix d'un seul souffle (nouvelle méthode)
+        run: python scripts/voix.py test-voix-continue && python tests/voix-continue/assembler.py test-voix-continue 2-apres-un-seul-souffle
+      - name: Publier
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "voix-continue-${{ github.run_number }}" out/voix/* --target "${{ github.sha }}" \
+            --title "🎙️ Voix d'un seul souffle #${{ github.run_number }}" --notes "1 = avant, 2 = après. Même texte, mêmes plans." --prerelease

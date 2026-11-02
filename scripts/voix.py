@@ -118,8 +118,115 @@ def synthese(texte, dest, qui=None):
     scipy.io.wavfile.write(dest, m.sample_rate, audio.numpy())
 
 
+def _norm(t):
+    return re.sub(r"[\W_]+", "", t.lower())
+
+
+def aligner(morceaux, mots):
+    """Rattache chaque mot minuté au morceau de texte qui le contient (par le compte des lettres).
+    Renvoie [(debut_premier_mot, fin_dernier_mot)] par morceau, ou None si l'alignement n'est pas fiable."""
+    cibles, acc = [], 0
+    for m in morceaux:
+        acc += len(_norm(m))
+        cibles.append(acc)
+    total_mots = sum(len(_norm(w["texte"])) for w in mots)
+    if not mots or abs(total_mots - acc) > 0.08 * max(acc, 1):
+        return None
+    bornes, avant, k = [[None, None] for _ in morceaux], 0, 0
+    for w in mots:
+        while k < len(cibles) - 1 and avant >= cibles[k]:
+            k += 1
+        if bornes[k][0] is None:
+            bornes[k][0] = w["debut"]
+        bornes[k][1] = w["fin"]
+        avant += len(_norm(w["texte"]))
+    if any(b[0] is None for b in bornes):
+        return None
+    return bornes
+
+
+def blocs_continus():
+    """Regroupe les plans voisins lus par la même voix en blocs d'environ 120 mots maximum, lus d'un seul souffle.
+    Coupe un bloc sur : plan sans texte (cartes titre), témoignage, voix d'Omar, changement de voix, devinette."""
+    blocs, cur, mots_cur, qui_cur = [], [], 0, None
+    def fermer():
+        nonlocal cur, mots_cur
+        if cur:
+            blocs.append(cur)
+        cur, mots_cur = [], 0
+    for s in montage["scenes"]:
+        texte = (s.get("texte") or "").strip()
+        perso = any(os.path.exists(os.path.join(dossier_ep, "voix", f"{s['id']}.{e}")) for e in ("wav", "mp3", "m4a", "ogg"))
+        if not texte or perso or s.get("temoignage"):
+            fermer(); continue
+        n = len(texte.split())
+        if cur and (s.get("voix") != qui_cur or mots_cur + n > 120):
+            fermer()
+        cur.append(s); mots_cur += n; qui_cur = s.get("voix")
+        if (s.get("schema") or {}).get("type") == "devine":
+            fermer()
+    fermer()
+    return blocs
+
+
+pre_rendus = {}
+if moteur == "edge" and reglages.get("continu", True):
+    from voix_edge import dire_avec_mots
+    import time
+    for bloc in blocs_continus():
+        qui = bloc[0].get("voix")
+        voix_bloc = (reglages.get("voix_secondaires", {}) or {}).get(qui, locuteur) if qui else locuteur
+        texte_bloc = " ".join(s["texte"].strip() for s in bloc)
+        cle = hashlib.sha1(json.dumps(["bloc-v1", voix_bloc, reglages.get("debit_continu", "+6%"), texte_bloc]).encode()).hexdigest()[:16]
+        mp3, meta = os.path.join(cache, f"{cle}.mp3"), os.path.join(cache, f"{cle}.mots.json")
+        if not (os.path.exists(mp3) and os.path.exists(meta)):
+            for essai in range(8):
+                try:
+                    time.sleep(1.2)
+                    mots = dire_avec_mots(texte_bloc, voix_bloc, mp3, reglages.get("debit_continu", "+6%"))
+                    if os.path.getsize(mp3) > 1000 and mots:
+                        json.dump(mots, open(meta, "w"), ensure_ascii=False)
+                        break
+                    raise RuntimeError("audio ou minutage vide")
+                except Exception as e:
+                    attente = min(90, 5 * 2 ** min(essai, 5))
+                    print(f"  edge-tts (bloc) : {e}, nouvel essai dans {attente} s", flush=True)
+                    time.sleep(attente)
+            else:
+                print("  bloc abandonné, lecture plan par plan", flush=True)
+                continue
+        mots = json.load(open(meta))
+        bornes = aligner([s["texte"] for s in bloc], mots)
+        if bornes is None:
+            print(f"  alignement incertain pour {bloc[0]['id']}…{bloc[-1]['id']} : lecture plan par plan", flush=True)
+            continue
+        wav_bloc = os.path.join(cache, f"{cle}.wav")
+        if not os.path.exists(wav_bloc):
+            ffmpeg("-i", mp3, "-ar", str(SR), "-ac", "1", wav_bloc)
+        fin_audio = duree(wav_bloc)
+        for k, s in enumerate(bloc):
+            # coupe au milieu du silence entre deux plans : chaque plan garde la moitié de la respiration naturelle
+            debut = 0.0 if k == 0 else (bornes[k - 1][1] + bornes[k][0]) / 2
+            fin = fin_audio if k == len(bloc) - 1 else (bornes[k][1] + bornes[k + 1][0]) / 2
+            morceau = os.path.join(cache, f"{cle}-{k}.wav")
+            ffmpeg("-i", wav_bloc, "-af", f"atrim=start={debut:.3f}:end={fin:.3f},asetpts=PTS-STARTPTS", morceau)
+            # sous-titres : minutage réel de chaque phrase du plan
+            phr = [p for p in re.split(r"(?<=[.!?…])\s+", s["texte"].strip()) if p]
+            mots_plan = [w for w in mots if w["debut"] >= debut - 1e-3 and w["fin"] <= fin + 1e-3]
+            bp = aligner(phr, mots_plan)
+            segments = ([{"texte": p, "debut": max(0.0, b[0] - debut), "fin": b[1] - debut} for p, b in zip(phr, bp)]
+                        if bp else [{"texte": s["texte"].strip(), "debut": bornes[k][0] - debut, "fin": bornes[k][1] - debut}])
+            pre_rendus[s["id"]] = (morceau, segments)
+        print(f"✔ bloc {bloc[0]['id']}…{bloc[-1]['id']} : {len(bloc)} plan(s) lus d'un seul souffle ({fin_audio:.1f} s)", flush=True)
+
 for s in montage["scenes"]:
     sid, texte = s["id"], (s.get("texte") or "").strip()
+    if sid in pre_rendus:
+        morceau, segments = pre_rendus[sid]
+        dest = os.path.join(sortie, f"{sid}.wav")
+        traiter(morceau, dest, EGALISATION_NEURONALE)
+        json.dump({"segments": segments, "continu": True}, open(dest[:-4] + ".json", "w"), ensure_ascii=False)
+        continue
     perso = next((os.path.join(dossier_ep, "voix", f"{sid}.{ext}") for ext in ("wav", "mp3", "m4a", "ogg")
                   if os.path.exists(os.path.join(dossier_ep, "voix", f"{sid}.{ext}"))), None)
     dest = os.path.join(sortie, f"{sid}.wav")

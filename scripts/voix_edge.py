@@ -23,3 +23,23 @@ _c.mkssml = _mkssml
 def dire(texte, voix, dest_mp3, debit="+8%", lang=True):
     _MODE["lang"] = lang
     asyncio.run(edge_tts.Communicate(texte, voix, rate=debit).save(dest_mp3))
+
+
+def dire_avec_mots(texte, voix, dest_mp3, debit="+6%", lang=False, hauteur="+0Hz"):
+    """Lit tout un bloc d'un seul souffle et renvoie le minutage de chaque mot (secondes).
+    Une seule lecture = une intonation qui suit le sens d'une phrase à l'autre (retour d'Omar du 02/11/2026)."""
+    _MODE["lang"] = lang
+    mots = []
+
+    async def _run():
+        com = edge_tts.Communicate(texte, voix, rate=debit, pitch=hauteur, boundary="WordBoundary")
+        with open(dest_mp3, "wb") as f:
+            async for m in com.stream():
+                if m["type"] == "audio":
+                    f.write(m["data"])
+                elif m["type"] == "WordBoundary":
+                    debut = m["offset"] / 1e7
+                    mots.append({"texte": m["text"], "debut": debut, "fin": debut + m["duration"] / 1e7})
+
+    asyncio.run(_run())
+    return mots

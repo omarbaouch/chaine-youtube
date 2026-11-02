@@ -1,0 +1,64 @@
+{
+ "titre": "Test voix continue",
+ "format": {
+  "largeur": 1920,
+  "hauteur": 1080,
+  "fps": 30
+ },
+ "transition_defaut": "coupe",
+ "duree_transition": 8,
+ "respiration": 0.15,
+ "voix": {
+  "moteur": "edge",
+  "locuteur": "fr-FR-VivienneMultilingualNeural",
+  "debit": "+5%",
+  "pause_phrase": 0.15,
+  "voix_secondaires": {
+   "sceptique": "fr-FR-RemyMultilingualNeural"
+  }
+ },
+ "scenes": [
+  {
+   "id": "p01",
+   "type": "video",
+   "texte": "Tu achètes une tablette de chocolat à deux euros."
+  },
+  {
+   "id": "p02",
+   "type": "video",
+   "texte": "Le cacao dedans ? Presque rien."
+  },
+  {
+   "id": "p03",
+   "type": "video",
+   "texte": "Alors, devine. Qui garde l'argent…"
+  },
+  {
+   "id": "p04",
+   "type": "video",
+   "texte": "le planteur en Côte d'Ivoire, l'usine, ou le supermarché ?"
+  },
+  {
+   "id": "p05",
+   "type": "video",
+   "texte": "C'est forcément le supermarché !",
+   "voix": "sceptique"
+  },
+  {
+   "id": "p06",
+   "type": "video",
+   "texte": "Moi aussi, je pensais connaître la réponse."
+  },
+  {
+   "id": "p07",
+   "type": "video",
+   "texte": "Je me trompais complètement.",
+   "transition": "fondu"
+  },
+  {
+   "id": "p08",
+   "type": "video",
+   "texte": "Pour comprendre, il faut remonter jusqu'à l'arbre. Un cacaoyer, en Côte d'Ivoire, à six mille kilomètres de ton supermarché."
+  }
+ ]
+}
