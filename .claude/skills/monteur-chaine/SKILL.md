@@ -129,6 +129,12 @@ Contrôle avant rendu (à consigner dans `05_review_report.md`) : 1) aucune rép
 - **Ennui :** pas plus d'un tiers de photos fixes ; privilégier les vraies vidéos. Une photo bouge toujours (zoom et panoramique marqués).
   Les respirations sont courtes (0,15 s) et la musique reste présente (0,2 sous la voix, baissée automatiquement).
 
+- **Voix d'un seul souffle (02/11/2026, choix d'Omar : Edge, la plus naturelle possible)** : `scripts/voix.py` lit les plans voisins
+  par blocs d'environ 120 mots en UN appel Edge, puis découpe au mot près (minutage WordBoundary). L'intonation suit le sens et les
+  pauses ne s'additionnent plus. Ne pas désactiver (`"continu": false` seulement pour déboguer). Pour en profiter :
+  transitions `coupe` entre plans d'un même passage (un fondu impose 0,13 s de marge de chaque côté) ; écrire pour l'oreille :
+  virgules pour respirer, « … » pour le suspense, phrases de 6 à 18 mots ; réglage `"debit_continu": "+6%"`, hauteur neutre.
+
 ## Règle n°10 — Bibliothèques de mouvement installées (31/10/2026)
 - `.claude/skills/video-shotcraft/` (Apache 2.0) : 124 « cartes de plans » cinématiques Remotion (caméra, ouverture, transitions,
   typographie, effets d'impact, données). Avant d'écrire une scène animée, piocher une carte dans `references/shots/` et
