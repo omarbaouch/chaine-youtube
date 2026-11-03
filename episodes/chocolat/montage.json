@@ -10,7 +10,8 @@
  "voix": {
   "moteur": "edge",
   "locuteur": "fr-FR-VivienneMultilingualNeural",
-  "debit": "+5%",
+  "debit": "+0%",
+  "debit_continu": "+0%",
   "pause_phrase": 0.15,
   "voix_secondaires": {
    "sceptique": "fr-FR-RemyMultilingualNeural"
@@ -47,7 +48,14 @@
    "ambiance": "tension",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 84
+   "extrait": 84,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p002",
@@ -225,7 +233,7 @@
   {
    "id": "p009",
    "format": "rush",
-   "texte": "de Laurent, planteur de cacao depuis trente ans.",
+   "texte": "de Laurent, planteur de cacao depuis trente ans, en Côte d'Ivoire.",
    "couches": [
     {
      "type": "source",
@@ -236,7 +244,14 @@
    "ambiance": "emotion",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 4
+   "extrait": 4,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p010",
@@ -284,7 +299,14 @@
    "ambiance": "leger",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 0
+   "extrait": 0,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p013",
@@ -305,7 +327,14 @@
    "ambiance": "leger",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 20
+   "extrait": 20,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p014",
@@ -347,7 +376,7 @@
      "Amer"
     ],
     "bonne": 2,
-    "secondes": 3
+    "secondes": 2
    },
    "sons": [
     {
@@ -400,7 +429,13 @@
    "ambiance": "leger",
    "transition": "coupe",
    "media_ref": "wc:File:Cocoa Fermentation.webm",
-   "extrait": 0
+   "extrait": 0,
+   "recadre": [
+    0.05,
+    0.05,
+    0.8
+   ],
+   "extrait_duree": 6
   },
   {
    "id": "p019",
@@ -410,7 +445,13 @@
    "ambiance": "leger",
    "transition": "coupe",
    "media_ref": "wc:File:Cocoa Fermentation.webm",
-   "extrait": 16
+   "extrait": 16,
+   "recadre": [
+    0.05,
+    0.05,
+    0.8
+   ],
+   "extrait_duree": 6
   },
   {
    "id": "p020",
@@ -439,12 +480,24 @@
     {
      "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
      "extrait": 52,
-     "legende": "Étalées au soleil"
+     "legende": "Étalées au soleil",
+     "extrait_duree": 3.5,
+     "recadre": [
+      0.18,
+      0,
+      0.82
+     ]
     },
     {
      "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
      "extrait": 84.5,
-     "legende": "Retournées à la main"
+     "legende": "Retournées à la main",
+     "extrait_duree": 3.5,
+     "recadre": [
+      0.18,
+      0,
+      0.82
+     ]
     }
    ],
    "ambiance": "leger",
@@ -462,12 +515,13 @@
     "suffixe": " %",
     "legende": "d'humidité après séchage",
     "comparaison": "≈ 60 % avant",
-    "revele_a": 2.8,
+    "revele_a": 1.8,
     "source": "World Cocoa Foundation ; ICCO"
    },
    "ambiance": "leger",
    "transition": "coupe",
-   "media_ref": "pi:7026842"
+   "media_ref": "pi:7026842",
+   "duree_min": 4.2
   },
   {
    "id": "p023",
@@ -476,7 +530,14 @@
    "ambiance": "leger",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 204
+   "extrait": 204,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p024",
@@ -493,7 +554,7 @@
      "10"
     ],
     "bonne": 1,
-    "secondes": 3
+    "secondes": 2
    },
    "sons": [
     {
@@ -524,7 +585,14 @@
    "ambiance": "revelation",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 199
+   "extrait": 201,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p026",
@@ -562,8 +630,8 @@
     "type": "chiffre",
     "valeur": 2800,
     "decimales": 0,
-    "suffixe": " F CFA/kg",
-    "legende": "prix garanti au planteur ivoirien, record",
+    "suffixe": " F CFA",
+    "legende": "le kilo : prix garanti au planteur ivoirien, record",
     "comparaison": "≈ 4,27 € le kilo",
     "revele_a": 0.6,
     "source": "Financial Afrik, 02/10/2025"
@@ -709,7 +777,14 @@
    "ambiance": "revelation",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 48
+   "extrait": 48,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p038",
@@ -1055,7 +1130,7 @@
      "37 c"
     ],
     "bonne": 2,
-    "secondes": 3
+    "secondes": 2
    },
    "sons": [
     {
@@ -1158,7 +1233,13 @@
    "transition": "fondu",
    "ambiance": "tension",
    "media_ref": "wc:File:A-la-rencontre-des-acteurs-de-la-filiere-cacao-realisatrice-mansita-konate-wiki-loves-africa-cote-divoire-fan-club.webm",
-   "extrait": 15
+   "extrait": 15,
+   "recadre": [
+    0.1,
+    0,
+    0.8
+   ],
+   "extrait_duree": 4
   },
   {
    "id": "p064",
@@ -1215,12 +1296,13 @@
     "suffixe": " %",
     "legende": "chocolats de Pâques, sur un an (2026)",
     "comparaison": "Le cacao, lui, en chute",
-    "revele_a": 3.6,
+    "revele_a": 2.2,
     "source": "UFC-Que Choisir, 01/04/2026"
    },
    "ambiance": "tension",
    "transition": "coupe",
-   "media_ref": "pv:69021"
+   "media_ref": "pv:69021",
+   "duree_min": 4.4
   },
   {
    "id": "p067",
@@ -1357,7 +1439,7 @@
      "20 %"
     ],
     "bonne": 2,
-    "secondes": 3
+    "secondes": 2
    },
    "sons": [
     {
@@ -1559,7 +1641,14 @@
    "ambiance": "revelation",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 68
+   "extrait": 68,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p082",
@@ -1825,7 +1914,7 @@
      "50 c"
     ],
     "bonne": 1,
-    "secondes": 3
+    "secondes": 2
    },
    "sons": [
     {
@@ -1858,7 +1947,14 @@
    "ambiance": "revelation",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 44
+   "extrait": 44,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p096",
@@ -1899,7 +1995,14 @@
    "ambiance": "revelation",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 40
+   "extrait": 40,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p098",
@@ -1955,12 +2058,13 @@
     "suffixe": " $/t",
     "legende": "cours du cacao, 2 novembre 2026",
     "comparaison": "Plus bas : 2 846 $ (2 mars 2026)",
-    "revele_a": 3.4,
+    "revele_a": 2.0,
     "source": "Trading Economics, 02/11/2026"
    },
    "ambiance": "tension",
    "transition": "coupe",
-   "media_ref": "pv:349091"
+   "media_ref": "pv:349091",
+   "duree_min": 4.4
   },
   {
    "id": "p101",
@@ -2092,7 +2196,14 @@
    "ambiance": "emotion",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 168
+   "extrait": 167.5,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p108",
@@ -2131,7 +2242,14 @@
    "ambiance": "emotion",
    "transition": "coupe",
    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-   "extrait": 28
+   "extrait": 28,
+   "extrait_duree": 3.5,
+   "recadre": [
+    0.18,
+    0,
+    0.82
+   ],
+   "vitesse": 0.8
   },
   {
    "id": "p110",
@@ -2146,7 +2264,7 @@
    ],
    "ambiance": "emotion",
    "transition": "coupe",
-   "media_ref": "wc:File:Farmer's cottage.jpg"
+   "media_ref": "wc:File:Cocoa seeds being dried.jpg"
   },
   {
    "id": "p111",
@@ -2161,12 +2279,13 @@
     "suffixe": " kg",
     "legende": "de cacao pour un sac d'engrais (22 000 F CFA)",
     "comparaison": "à 1 200 F CFA le kilo",
-    "revele_a": 3.6,
+    "revele_a": 2.2,
     "source": "AFP, 26/01/2026 ; calcul"
    },
    "ambiance": "emotion",
    "transition": "coupe",
-   "media_ref": "wc:File:Forest fertilizer.JPG"
+   "media_ref": "wc:File:Forest fertilizer.JPG",
+   "duree_min": 4.6
   },
   {
    "id": "p112",

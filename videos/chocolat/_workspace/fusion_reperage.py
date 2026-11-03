@@ -11,7 +11,7 @@ try:
 except FileNotFoundError: pass
 corr=json.load(open(R+'videos/chocolat/_workspace/corrections_monteur.json'))
 reg={"_episode":{"titre":"Chocolat : le cacao s'effondre, ta tablette non",
-  "voix":{"moteur":"edge","locuteur":"fr-FR-VivienneMultilingualNeural","debit":"+5%","pause_phrase":0.15,"voix_secondaires":{"sceptique":"fr-FR-RemyMultilingualNeural"}},
+  "voix":{"moteur":"edge","locuteur":"fr-FR-VivienneMultilingualNeural","debit":"+0%","debit_continu":"+0%","pause_phrase":0.15,"voix_secondaires":{"sceptique":"fr-FR-RemyMultilingualNeural"}},
   "musique":{"fichier":"../../public/sfx/musique-enquete.wav","volume":0.22},"respiration":0.15,
   "musiques":{"tension":"public/musique/tension.mp3","emotion":"public/musique/emotion.mp3","revelation":"public/musique/revelation.mp3","leger":"public/musique/leger.mp3"},
   "rushes_a_refaire":[]}}

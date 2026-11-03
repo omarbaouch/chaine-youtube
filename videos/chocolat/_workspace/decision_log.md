@@ -11,3 +11,12 @@
 - p080 : pas de tablette entière sur fond uni → barre de décomposition au lieu de la découpe.
 - p018 : texte « en tas ou dans des caisses » pour coller à la vidéo de fermentation en caisse.
 - Doublons de photos supprimés (passages VOA à la place).
+## Contrôle du rendu n°1 (chocolat-final-rapide-18, 7:22) → corrections
+- Fiches suspect vides quand le média est une vidéo → Suspect accepte la vidéo (Schemas.tsx, Formats.tsx).
+- Compteurs coupés avant la fin (p022, p066, p100, p111) → revele_a avancé + duree_min.
+- « 2 800 F CFA/kg » coupé (p028) → unité raccourcie.
+- Sous-titres/logos incrustés (fermentation, VOA, reportage CI) → nouveau champ "recadre" (crop 16:9) ; passages VOA limités à 3,5 s ("extrait_duree") + vitesse 0,8 pour ne jamais montrer un interviewé qu'on prendrait pour Laurent.
+- p110 « pas de toit » montrait une case avec toit → fèves qui sèchent.
+- Carte titre à 0:27,7 (< 30 s) → voix au débit naturel (+0 %) + p009 complété (« en Côte d'Ivoire »).
+- Devinettes : compte à rebours 2 s au lieu de 3 (moins de temps sans changement d'image).
+- Son rendu n°1 : -13,9 LUFS, crête -1,2 dBTP, aucun noir détecté → OK.

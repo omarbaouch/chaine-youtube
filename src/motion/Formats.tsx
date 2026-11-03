@@ -109,7 +109,7 @@ export const PlanSchema: React.FC<{scene: Scene}> = ({scene}) => scene.schema?.t
     <FondPlan scene={scene} />
     <EtiquetteSchema texte={scene.etiquetteSchema} />
     <AbsoluteFill style={{left: 150, right: 150, top: 140, bottom: 270, width: 'auto', height: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      {scene.schema ? <SchemaAnime s={scene.schema} l={1620} duree={scene.duree} media={scene.media && /\.(jpe?g|png|webp)$/i.test(scene.media) ? scene.media : undefined} /> : null}
+      {scene.schema ? <SchemaAnime s={scene.schema} l={1620} duree={scene.duree} media={scene.media && (/\.(jpe?g|png|webp)$/i.test(scene.media) || scene.schema.type === 'suspect') ? scene.media : undefined} /> : null}
     </AbsoluteFill>
   </AbsoluteFill>
 );

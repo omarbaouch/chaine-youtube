@@ -3,7 +3,7 @@
 // Chaque schéma tient dans une boîte de largeur `l` ; tailles de texte selon la règle n°8.
 import React from 'react';
 import {AbsoluteFill, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Audio} from '@remotion/media';
+import {Audio, Video} from '@remotion/media';
 import type {Schema} from '../types';
 import {theme, clamp} from '../theme';
 
@@ -413,7 +413,9 @@ const Suspect: React.FC<{s: Extract<Schema, {type: 'suspect'}>; l: number; media
   return (
     <div style={{width: l, display: 'flex', gap: 60, alignItems: 'center', opacity: pF, transform: `translateY(${interpolate(pF, [0, 1], [30, 0])}px) rotate(${interpolate(pF, [0, 1], [-2, -1])}deg)`}}>
       <div style={{width: 520, height: 600, borderRadius: 12, overflow: 'hidden', background: '#222', boxShadow: '0 40px 80px rgba(0,0,0,.6)', border: '10px solid #E9E4D8', flexShrink: 0, position: 'relative'}}>
-        {media ? <Img src={staticFile(media)} style={{width: '100%', height: '100%', objectFit: 'cover', filter: s.verdict ? 'none' : 'grayscale(0.7) contrast(1.1)'}} /> : null}
+        {media ? (/\.(jpe?g|png|webp)$/i.test(media)
+          ? <Img src={staticFile(media)} style={{width: '100%', height: '100%', objectFit: 'cover', filter: s.verdict ? 'none' : 'grayscale(0.7) contrast(1.1)'}} />
+          : <Video src={staticFile(media)} muted loop objectFit="cover" style={{width: '100%', height: '100%', filter: s.verdict ? 'none' : 'grayscale(0.7) contrast(1.1)'}} />) : null}
         {s.numero ? <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,.75)', padding: '10px 18px', fontFamily: theme.polices.titre, fontWeight: 800, fontSize: 30, color: C.texte, letterSpacing: '0.2em'}}>SUSPECT N° {s.numero}</div> : null}
       </div>
       <div style={{flex: 1, position: 'relative'}}>

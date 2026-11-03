@@ -4,7 +4,8 @@
   "voix": {
    "moteur": "edge",
    "locuteur": "fr-FR-VivienneMultilingualNeural",
-   "debit": "+5%",
+   "debit": "+0%",
+   "debit_continu": "+0%",
    "pause_phrase": 0.15,
    "voix_secondaires": {
     "sceptique": "fr-FR-RemyMultilingualNeural"
@@ -25,7 +26,14 @@
  },
  "p001": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 84
+  "extrait": 84,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p002": {
   "media_ref": "wc:File:Chocolate in Japan (5137097169).jpg"
@@ -69,7 +77,14 @@
  },
  "p009": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 4
+  "extrait": 4,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p010": {
   "media_ref": "pi:6938440"
@@ -79,11 +94,25 @@
  },
  "p012": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 0
+  "extrait": 0,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p013": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 20
+  "extrait": 20,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p014": {
   "media_ref": "pi:4724654"
@@ -101,18 +130,41 @@
   ]
  },
  "p016": {
-  "media_ref": "pi:1529746"
+  "media_ref": "pi:1529746",
+  "schema": {
+   "type": "devine",
+   "question": "Le goût d'une graine fraîche ?",
+   "choix": [
+    "Sucré",
+    "Chocolat",
+    "Amer"
+   ],
+   "bonne": 2,
+   "secondes": 2
+  }
  },
  "p017": {
   "media_ref": "pi:1282894"
  },
  "p018": {
   "media_ref": "wc:File:Cocoa Fermentation.webm",
-  "extrait": 0
+  "extrait": 0,
+  "recadre": [
+   0.05,
+   0.05,
+   0.8
+  ],
+  "extrait_duree": 6
  },
  "p019": {
   "media_ref": "wc:File:Cocoa Fermentation.webm",
-  "extrait": 16
+  "extrait": 16,
+  "recadre": [
+   0.05,
+   0.05,
+   0.8
+  ],
+  "extrait_duree": 6
  },
  "p020": {
   "media_ref": "pi:7026841"
@@ -122,28 +174,76 @@
    {
     "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
     "extrait": 52,
-    "legende": "Étalées au soleil"
+    "legende": "Étalées au soleil",
+    "extrait_duree": 3.5,
+    "recadre": [
+     0.18,
+     0,
+     0.82
+    ]
    },
    {
     "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
     "extrait": 84.5,
-    "legende": "Retournées à la main"
+    "legende": "Retournées à la main",
+    "extrait_duree": 3.5,
+    "recadre": [
+     0.18,
+     0,
+     0.82
+    ]
    }
   ]
  },
  "p022": {
-  "media_ref": "pi:7026842"
+  "media_ref": "pi:7026842",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 7.5,
+   "decimales": 1,
+   "suffixe": " %",
+   "legende": "d'humidité après séchage",
+   "comparaison": "≈ 60 % avant",
+   "revele_a": 1.8,
+   "source": "World Cocoa Foundation ; ICCO"
+  },
+  "duree_min": 4.2
  },
  "p023": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 204
+  "extrait": 204,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p024": {
-  "media_ref": "pi:6554305"
+  "media_ref": "pi:6554305",
+  "schema": {
+   "type": "devine",
+   "question": "Combien de cabosses pour une tablette ?",
+   "choix": [
+    "½",
+    "≈ 2",
+    "10"
+   ],
+   "bonne": 1,
+   "secondes": 2
+  }
  },
  "p025": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 199
+  "extrait": 201,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p026": {
   "medias": [
@@ -161,7 +261,17 @@
   "media_ref": "wc:File:Weighing cocoa.jpg"
  },
  "p028": {
-  "media_ref": "pi:2430200"
+  "media_ref": "pi:2430200",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 2800,
+   "decimales": 0,
+   "suffixe": " F CFA",
+   "legende": "le kilo : prix garanti au planteur ivoirien, record",
+   "comparaison": "≈ 4,27 € le kilo",
+   "revele_a": 0.6,
+   "source": "Financial Afrik, 02/10/2025"
+  }
  },
  "p029": {
   "media_ref": "pi:3247447"
@@ -198,7 +308,14 @@
  },
  "p037": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 48
+  "extrait": 48,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p038": {
   "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. Chocolate manufacturing department, Wallace & Co. Machine for cracking and removing shells from cocoa beans after roasting - NARA - 31486420.jpg"
@@ -317,7 +434,18 @@
   "media_ref": "wc:File:HallorenSchokoladenfabrik2.jpg"
  },
  "p058": {
-  "media_ref": "pi:1814134"
+  "media_ref": "pi:1814134",
+  "schema": {
+   "type": "devine",
+   "question": "Sur 1 €, combien pour la marque ?",
+   "choix": [
+    "12 c",
+    "25 c",
+    "37 c"
+   ],
+   "bonne": 2,
+   "secondes": 2
+  }
  },
  "p059": {
   "media_ref": "pi:3422350"
@@ -333,7 +461,13 @@
  },
  "p063": {
   "media_ref": "wc:File:A-la-rencontre-des-acteurs-de-la-filiere-cacao-realisatrice-mansita-konate-wiki-loves-africa-cote-divoire-fan-club.webm",
-  "extrait": 15
+  "extrait": 15,
+  "recadre": [
+   0.1,
+   0,
+   0.8
+  ],
+  "extrait_duree": 4
  },
  "p064": {
   "medias": [
@@ -349,7 +483,19 @@
   "media_ref": "pi:9472605"
  },
  "p066": {
-  "media_ref": "pv:69021"
+  "media_ref": "pv:69021",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 4,
+   "decimales": 0,
+   "prefixe": "+",
+   "suffixe": " %",
+   "legende": "chocolats de Pâques, sur un an (2026)",
+   "comparaison": "Le cacao, lui, en chute",
+   "revele_a": 2.2,
+   "source": "UFC-Que Choisir, 01/04/2026"
+  },
+  "duree_min": 4.4
  },
  "p067": {
   "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 cashier checkout e.jpg"
@@ -373,7 +519,18 @@
   "media_ref": "wc:File:Various euro coins.jpg"
  },
  "p074": {
-  "media_ref": "pi:6777052"
+  "media_ref": "pi:6777052",
+  "schema": {
+   "type": "devine",
+   "question": "TVA d'une tablette au lait ?",
+   "choix": [
+    "5,5 %",
+    "10 %",
+    "20 %"
+   ],
+   "bonne": 2,
+   "secondes": 2
+  }
  },
  "p075": {
   "media_ref": "wc:File:2019-11-28 14 28 05 An unwrapped bar of Gertrude Hawk Chocolates Milk Chocolate Caramel in the Parkway Village section of Ewing Township, Mercer County, New Jersey.jpg"
@@ -444,7 +601,14 @@
  },
  "p081": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 68
+  "extrait": 68,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p082": {
   "media_ref": "pv:1735"
@@ -499,18 +663,43 @@
   "media_ref": "wc:File:Dark chocolate bar.jpg"
  },
  "p094": {
-  "media_ref": "wc:File:Cocoa pod.jpg"
+  "media_ref": "wc:File:Cocoa pod.jpg",
+  "schema": {
+   "type": "devine",
+   "question": "Combien pour le planteur ?",
+   "choix": [
+    "3 c",
+    "13 c",
+    "50 c"
+   ],
+   "bonne": 1,
+   "secondes": 2
+  }
  },
  "p095": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 44
+  "extrait": 44,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p096": {
   "media_ref": "pi:2430115"
  },
  "p097": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 40
+  "extrait": 40,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p098": {
   "medias": [
@@ -526,7 +715,19 @@
   "media_ref": "wc:File:Cocoa bean storage & packing building in São Tomé, early 1900s.png"
  },
  "p100": {
-  "media_ref": "pv:349091"
+  "media_ref": "pv:349091",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 5394,
+   "decimales": 0,
+   "prefixe": "≈ ",
+   "suffixe": " $/t",
+   "legende": "cours du cacao, 2 novembre 2026",
+   "comparaison": "Plus bas : 2 846 $ (2 mars 2026)",
+   "revele_a": 2.0,
+   "source": "Trading Economics, 02/11/2026"
+  },
+  "duree_min": 4.4
  },
  "p101": {
   "media_ref": "wc:File:Cocoa farmer David Kebu Jnr holding fermenting cocoa beans. (10687048615).jpg"
@@ -566,7 +767,14 @@
  },
  "p107": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 168
+  "extrait": 167.5,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p108": {
   "medias": [
@@ -582,13 +790,32 @@
  },
  "p109": {
   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
-  "extrait": 28
+  "extrait": 28,
+  "extrait_duree": 3.5,
+  "recadre": [
+   0.18,
+   0,
+   0.82
+  ],
+  "vitesse": 0.8
  },
  "p110": {
-  "media_ref": "wc:File:Farmer's cottage.jpg"
+  "media_ref": "wc:File:Cocoa seeds being dried.jpg"
  },
  "p111": {
-  "media_ref": "wc:File:Forest fertilizer.JPG"
+  "media_ref": "wc:File:Forest fertilizer.JPG",
+  "schema": {
+   "type": "chiffre",
+   "valeur": 18,
+   "decimales": 0,
+   "prefixe": "≈ ",
+   "suffixe": " kg",
+   "legende": "de cacao pour un sac d'engrais (22 000 F CFA)",
+   "comparaison": "à 1 200 F CFA le kilo",
+   "revele_a": 2.2,
+   "source": "AFP, 26/01/2026 ; calcul"
+  },
+  "duree_min": 4.6
  },
  "p112": {
   "media_ref": "pi:2427493"

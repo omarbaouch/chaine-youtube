@@ -98,6 +98,7 @@ async function telechargerRef(s) {
   const [src, ...reste] = s.media_ref.split(':');
   // "extrait": secondes de début d'un passage précis d'un long reportage Commons (planches scripts/planche_commons.mjs) ; 30 s gardées
   const cleRush = s.extrait != null ? `${s.media_ref}@${s.extrait}` : s.media_ref;
+  const suffixe = JSON.stringify([s.extrait_duree, s.recadre]);
   if (dejaPris.has(cleRush)) console.warn(`⚠ ${s.id} : ${cleRush} déjà utilisé dans ce montage (règle : un rush ne sert qu'une fois)`);
   dejaPris.add(cleRush);
   const id = reste.join(':');
@@ -120,7 +121,10 @@ async function telechargerRef(s) {
       const brut = path.join(sortie, `${s.id}.source`);
       const rr = await fetch(ii.url, {headers: UA});
       fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
-      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...(s.extrait != null ? ['-ss', String(s.extrait), '-t', '30'] : []), '-i', brut, ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...(s.extrait != null ? ['-ss', String(s.extrait), '-t', String(s.extrait_duree ?? 30)] : []), '-i', brut,
+        // "recadre": [x, y, taille] en fractions : garde un cadre 16:9 (enlève logos et sous-titres incrustés d'origine)
+        ...(s.recadre ? ['-vf', `crop=iw*${s.recadre[2]}:ih*${s.recadre[2]}:iw*${s.recadre[0]}:ih*${s.recadre[1]},scale=1920:1080`] : []),
+        ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
       fs.rmSync(brut);
     } else {
       const rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});
@@ -156,7 +160,7 @@ for (const s of montage.scenes) {
 for (const s of montage.scenes) {
   for (const m of s.medias ?? []) {
     const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${m._id}.`) && !f.endsWith('.ref'));
-    const cle = (m.fichier ?? m.media_ref ?? '') + (m.extrait != null ? `@${m.extrait}` : '');
+    const cle = (m.fichier ?? m.media_ref ?? '') + (m.extrait != null ? `@${m.extrait}` : '') + (m.recadre || m.extrait_duree ? JSON.stringify([m.extrait_duree, m.recadre]) : '');
     if (existant && memeRef(m._id, cle)) { console.log(`↺ ${m._id} : déjà téléchargé`); continue; }
     if (existant) purger(m._id);
     noterRef(m._id, cle);
@@ -171,13 +175,13 @@ for (const s of montage.scenes) {
       } else fauxRush({id: m._id}, path.join(sortie, `${m._id}.mp4`));
       continue;
     }
-    await telechargerRef({id: m._id, media_ref: m.media_ref, extrait: m.extrait});
+    await telechargerRef({id: m._id, media_ref: m.media_ref, extrait: m.extrait, extrait_duree: m.extrait_duree, recadre: m.recadre});
   }
 }
 
 for (const s of montage.scenes) {
   let existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${s.id}.`) && !f.endsWith('.ref'));
-  const cle = (s.fichier ?? s.media_ref ?? s.pixabay_id ?? JSON.stringify(s.recherche ?? '')) + (s.extrait != null ? `@${s.extrait}` : '');
+  const cle = (s.fichier ?? s.media_ref ?? s.pixabay_id ?? JSON.stringify(s.recherche ?? '')) + (s.extrait != null ? `@${s.extrait}` : '') + (s.recadre || s.extrait_duree ? JSON.stringify([s.extrait_duree, s.recadre]) : '');
   if (existant && !memeRef(s.id, cle)) { purger(s.id); existant = undefined; }
   if (s.recherche || s.pixabay_id || s.media_ref || s.fichier) noterRef(s.id, cle);
   if (s.fichier) {
