@@ -86,24 +86,35 @@ fins = debuts[1:] + [TOTAL]
 
 
 # ---------- 2. Rushes ----------
+MOTS_VIDES = {"close", "up", "of", "the", "a", "an", "in", "on", "with", "and", "shot", "view", "4k", "hd"}
+
+
 def pixabay(requete, deja):
+    """Rush le plus PERTINENT (règle n°1 : ce qu'on voit = ce qu'on dit) : on garde l'ordre de pertinence de Pixabay
+    et on exige que les mots-clés du sujet figurent dans les tags du rush. Vertical = simple départage."""
     cle = os.environ.get("PIXABAY_API_KEY")
     if not cle:
         raise RuntimeError("PIXABAY_API_KEY manquante")
     import requests
-    for q in [requete, " ".join(requete.split()[:2])]:
-        r = requests.get("https://pixabay.com/api/videos/", params={"key": cle, "q": q, "per_page": 30,
-                                                                    "safesearch": "true"}, timeout=30)
-        r.raise_for_status()
-        hits = [h for h in r.json().get("hits", []) if h["id"] not in deja]
-        if not hits:
+    mots_q = [m for m in re.findall(r"[a-z]+", requete.lower()) if m not in MOTS_VIDES]
+    r = requests.get("https://pixabay.com/api/videos/", params={"key": cle, "q": requete, "per_page": 20,
+                                                                "safesearch": "true"}, timeout=30)
+    r.raise_for_status()
+    meilleurs = []
+    for rang, h in enumerate(r.json().get("hits", [])):
+        if h["id"] in deja:
             continue
-        # préférence : vidéo verticale, puis la plus regardée
-        hits.sort(key=lambda h: (-(h["videos"]["medium"]["height"] > h["videos"]["medium"]["width"]), -h.get("downloads", 0)))
-        h = hits[0]
-        v = h["videos"].get("large") if h["videos"].get("large", {}).get("url") else h["videos"]["medium"]
-        return h["id"], v["url"], f"Pixabay {h['id']} — {h.get('user', '')} — {h.get('pageURL', '')}"
-    return None
+        tags = h.get("tags", "").lower()
+        score = sum(1 for m in mots_q if m in tags or m.rstrip("s") in tags)
+        vertical = h["videos"]["medium"]["height"] > h["videos"]["medium"]["width"]
+        meilleurs.append((-score, rang - (2 if vertical else 0), h))
+    meilleurs.sort(key=lambda x: (x[0], x[1]))
+    if not meilleurs or -meilleurs[0][0] < max(1, len(mots_q) // 2):
+        return None
+    h = meilleurs[0][2]
+    v = h["videos"].get("large") if h["videos"].get("large", {}).get("url") else h["videos"]["medium"]
+    print(f"  rush « {requete} » → {h['id']} ({h.get('tags')})", flush=True)
+    return h["id"], v["url"], f"Pixabay {h['id']} — {h.get('user', '')} — {h.get('pageURL', '')}"
 
 
 segments, credits, deja = [], [], set()
@@ -119,9 +130,16 @@ for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin"
             sh("ffmpeg", "-y", "-f", "lavfi", "-i", f"testsrc2=size=1280x720:rate=30:duration=6", "-vf",
                f"hue=h={teinte}", "-pix_fmt", "yuv420p", f)
         else:
-            trouve = pixabay(q, deja)
+            trouve = None
+            for essai in [q] + [x for x in req if x != q]:
+                trouve = pixabay(essai, deja)
+                if trouve:
+                    break
+            if not trouve and segments:  # rien de pertinent : on prolonge le plan précédent plutôt que d'en montrer un hors sujet
+                segments[-1]["duree"] += d / n
+                continue
             if not trouve:
-                trouve = pixabay(req[0], deja) or pixabay("city street", deja)
+                raise RuntimeError(f"Aucun rush pertinent pour {req}")
             pid, url, cred = trouve
             deja.add(pid); credits.append(cred)
             import requests
@@ -201,10 +219,16 @@ if fiche.get("fin"):
     ass.append(f"Dialogue: 3,{ts(bornes[-1][0])},{ts(TOTAL)},Fin,,0,0,0,,"
                f"{{\\pos({W // 2},780)\\fscx80\\fscy80\\t(0,160,\\fscx100\\fscy100)}}ABONNE-TOI 🔔".replace(" 🔔", ""))
 # sous-titres : 3 mots max, le mot dit en jaune, petit rebond
-groupes, cur = [], []
+coupures, n_l = set(), 0
+for tok in texte_complet.split():
+    n_l += len(_norm(tok))
+    if re.search(r"[.!?,:;…]$", tok):
+        coupures.add(n_l)
+groupes, cur, n_l = [], [], 0
 for w in mots:
     cur.append(w)
-    if len(cur) == 3 or re.search(r"[.!?,:;…]$", w["texte"]):
+    n_l += len(_norm(w["texte"]))
+    if len(cur) == 3 or n_l in coupures:
         groupes.append(cur); cur = []
 if cur:
     groupes.append(cur)
