@@ -86,6 +86,8 @@ fins = debuts[1:] + [TOTAL]
 
 
 # ---------- 2. Rushes ----------
+EXCLUS = ("green screen", "greenscreen", "chroma", "cartoon", "animated", "animation", "3d", "ai generated",
+          "illustration", "drawing", "render", "clipart", "background loop")
 MOTS_VIDES = {"close", "up", "of", "the", "a", "an", "in", "on", "with", "and", "shot", "view", "4k", "hd"}
 
 
@@ -97,19 +99,19 @@ def pixabay(requete, deja):
         raise RuntimeError("PIXABAY_API_KEY manquante")
     import requests
     mots_q = [m for m in re.findall(r"[a-z]+", requete.lower()) if m not in MOTS_VIDES]
-    r = requests.get("https://pixabay.com/api/videos/", params={"key": cle, "q": requete, "per_page": 20,
+    r = requests.get("https://pixabay.com/api/videos/", params={"key": cle, "q": requete, "per_page": 40,
                                                                 "safesearch": "true"}, timeout=30)
     r.raise_for_status()
     meilleurs = []
     for rang, h in enumerate(r.json().get("hits", [])):
-        if h["id"] in deja:
-            continue
         tags = h.get("tags", "").lower()
+        if h["id"] in deja or any(x in tags for x in EXCLUS):
+            continue
         score = sum(1 for m in mots_q if m in tags or m.rstrip("s") in tags)
         vertical = h["videos"]["medium"]["height"] > h["videos"]["medium"]["width"]
         meilleurs.append((-score, rang - (2 if vertical else 0), h))
     meilleurs.sort(key=lambda x: (x[0], x[1]))
-    if not meilleurs or -meilleurs[0][0] < max(1, len(mots_q) // 2):
+    if not meilleurs or -meilleurs[0][0] < len(mots_q):  # tous les mots-clés doivent être dans les tags
         return None
     h = meilleurs[0][2]
     v = h["videos"].get("large") if h["videos"].get("large", {}).get("url") else h["videos"]["medium"]

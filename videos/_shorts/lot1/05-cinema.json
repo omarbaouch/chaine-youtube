@@ -6,37 +6,39 @@
   {
    "texte": "Quand tu paies ta place de cinéma, ton argent part où ?",
    "recherche": [
-    "cinema audience",
-    "movie theater seats"
+    "cinema seats",
+    "movie theater"
    ]
   },
   {
    "texte": "En moyenne, un ticket rapporte sept euros quarante-deux, d'après le C N C.",
    "recherche": [
-    "cinema ticket",
-    "cinema entrance"
+    "cinema",
+    "movie theater"
    ],
    "chiffre": "7,42 €"
   },
   {
    "texte": "D'abord, la TVA : environ trente-neuf centimes.",
    "recherche": [
-    "cash register payment"
+    "cash register",
+    "payment card"
    ],
    "chiffre": "0,39 €"
   },
   {
    "texte": "Ensuite, une taxe qui finance le cinéma français : soixante-quinze centimes.",
    "recherche": [
-    "film camera set",
-    "film shooting"
+    "film camera",
+    "movie set"
    ],
    "chiffre": "0,75 €"
   },
   {
    "texte": "Le reste est coupé en deux, à peu près : une moitié pour la salle, l'autre pour le film.",
    "recherche": [
-    "cinema projector light"
+    "cinema projector",
+    "film projector"
    ],
    "chiffre": "≈ 50 / 50",
    "chiffre_mot": "deux"
@@ -44,7 +46,7 @@
   {
    "texte": "Et le plein tarif, lui, atteint en moyenne onze euros trente.",
    "recherche": [
-    "popcorn cinema"
+    "popcorn"
    ],
    "chiffre": "11,30 €"
   }
@@ -55,5 +57,8 @@
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
  "description": "Ton ticket de ciné : qui touche quoi ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• https://www.quechoisir.org/enquete-salles-obscures-les-prix-font-leur-cinema-n175090/\n• https://www.cnc.fr/cinema/etudes-et-rapports/la-taxe-sur-les-entrees-en-salles-de-spectacles-cinematographiques-tsa_211700\n\n#shorts #prix #argent #consommation",
- "commentaire": "Tu aurais dit combien ? 👇"
+ "commentaire": "Tu aurais dit combien ? 👇",
+ "recherche_fin": [
+  "movie theater"
+ ]
 }

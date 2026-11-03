@@ -6,14 +6,15 @@
   {
    "texte": "Ton jean coûte cent euros. D'après les O N G, l'ouvrière qui l'a cousu touche combien ?",
    "recherche": [
-    "jeans denim close up",
-    "jeans store"
+    "jeans",
+    "denim"
    ]
   },
   {
    "texte": "La moitié du prix part au magasin et à la TVA.",
    "recherche": [
-    "clothing store shopping"
+    "clothing store",
+    "shopping clothes"
    ],
    "chiffre": "50 €",
    "chiffre_mot": "moitié"
@@ -21,8 +22,8 @@
   {
    "texte": "Un quart pour la marque : création, pub et bénéfices.",
    "recherche": [
-    "fashion photoshoot",
-    "fashion model"
+    "fashion model",
+    "fashion"
    ],
    "chiffre": "25 €",
    "chiffre_mot": "quart"
@@ -38,8 +39,8 @@
   {
    "texte": "Et pour les salaires de ceux qui le fabriquent ? Environ un euro. Un pour cent.",
    "recherche": [
-    "sewing machine hands",
-    "seamstress sewing"
+    "sewing machine",
+    "sewing"
    ],
    "chiffre": "≈ 1 €",
    "chiffre_mot": "environ"
@@ -51,5 +52,8 @@
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
  "description": "Ton jean : combien pour l'ouvrière ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Répartition selon l'ONG AchACT : https://www.ecoconso.be/fr/node/1979/printable/pdf\n• https://cleanclothes.org/faq/price\n\n#shorts #prix #argent #consommation",
- "commentaire": "Tu aurais dit combien ? 👇"
+ "commentaire": "Tu aurais dit combien ? 👇",
+ "recherche_fin": [
+  "jeans"
+ ]
 }

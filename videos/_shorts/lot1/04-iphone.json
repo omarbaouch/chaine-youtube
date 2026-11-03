@@ -6,8 +6,8 @@
   {
    "texte": "L'iPhone dix-sept Pro Max, un téraoctet, coûte mille neuf cent soixante-dix-neuf euros en France. Mais ses pièces, elles, valent combien ?",
    "recherche": [
-    "smartphone in hand close up",
-    "new phone unboxing"
+    "smartphone hand",
+    "iphone"
    ],
    "chiffre": "1 979 €",
    "chiffre_mot": "mille"
@@ -15,29 +15,30 @@
   {
    "texte": "Le cabinet Counterpoint a estimé le prix de tous ses composants.",
    "recherche": [
-    "circuit board electronics"
+    "circuit board",
+    "motherboard"
    ]
   },
   {
    "texte": "Résultat : environ cinq cent cinquante dollars. À peu près un tiers du prix.",
    "recherche": [
-    "microchip close up",
-    "semiconductor"
+    "microchip",
+    "processor chip"
    ],
    "chiffre": "≈ 550 $"
   },
   {
    "texte": "Attention : ça ne compte ni l'assemblage, ni la recherche, ni la pub, ni la TVA.",
    "recherche": [
-    "electronics factory assembly",
-    "engineer laboratory"
+    "factory workers",
+    "assembly line"
    ]
   },
   {
    "texte": "Et pour l'iPhone dix-huit Pro Max, l'estimation grimpe entre huit cent cinquante et neuf cents dollars, à cause de la mémoire.",
    "recherche": [
-    "computer memory chip",
-    "smartphone repair"
+    "memory chip",
+    "computer chip"
    ],
    "chiffre": "850 à 900 $"
   }
@@ -49,5 +50,8 @@
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
  "description": "Un iphone coûte combien à fabriquer ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Estimations Counterpoint : https://www.counterpointresearch.com/en/insights/infographic-iphone-17promax-and-iphone-18promax-e-bom-cost-comparison/\n• https://biz.heraldcorp.com/article/10805256\n• Prix France : https://alloforfait.fr/actualites/146724-prix-des-iphone-17-air-et-pro-apple-renouvelle-sa-gamme-jusqua-2479-e.html\n\n#shorts #prix #argent #consommation",
- "commentaire": "Tu aurais dit combien ? 👇"
+ "commentaire": "Tu aurais dit combien ? 👇",
+ "recherche_fin": [
+  "smartphone hand"
+ ]
 }

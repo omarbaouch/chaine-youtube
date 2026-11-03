@@ -6,21 +6,22 @@
   {
    "texte": "Dans ta canette de soda sucré, il y a une taxe que tu ne vois pas. Elle fait combien ?",
    "recherche": [
-    "soda can cold",
-    "cola can ice"
+    "soda can",
+    "cola"
    ]
   },
   {
    "texte": "En France, la taxe soda dépend du sucre ajouté.",
    "recherche": [
-    "sugar cubes"
+    "sugar cubes",
+    "sugar"
    ]
   },
   {
    "texte": "Au-delà de huit kilos de sucre par hectolitre, c'est trente-cinq euros soixante-trois par hectolitre.",
    "recherche": [
-    "soda pouring glass",
-    "soft drink bottles"
+    "soda",
+    "cola glass"
    ],
    "chiffre": "35,63 €/hl",
    "chiffre_mot": "trente"
@@ -28,15 +29,16 @@
   {
    "texte": "Pour une canette classique de trente-trois centilitres, ça fait environ douze centimes.",
    "recherche": [
-    "opening soda can"
+    "soda can",
+    "can opening"
    ],
    "chiffre": "≈ 0,12 €"
   },
   {
    "texte": "Et l'emballage ? Aux États-Unis, une canette vide coûte moins de quatre centimes de dollar à fabriquer.",
    "recherche": [
-    "aluminum cans factory",
-    "cans production line"
+    "aluminum cans",
+    "cans factory"
    ],
    "chiffre": "< 0,04 $"
   }
@@ -47,5 +49,8 @@
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
  "description": "Ta canette : combien de taxe sucre ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Barème 2026 : https://selectra.info/assurance/actualites/marche/taxe-soda-bareme-coca-cola-combien-et-ou-va-argent\n• https://abc17news.com/money/cnn-business-consumer/2025/03/02/why-trumps-aluminum-tariffs-wont-raise-the-price-of-your-can-of-coke/\n\n#shorts #prix #argent #consommation",
- "commentaire": "Tu aurais dit combien ? 👇"
+ "commentaire": "Tu aurais dit combien ? 👇",
+ "recherche_fin": [
+  "cola"
+ ]
 }

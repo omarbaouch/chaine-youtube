@@ -6,21 +6,23 @@
   {
    "texte": "L'eau en bouteille coûte combien de fois plus cher que l'eau du robinet ? Accroche-toi.",
    "recherche": [
-    "water bottles supermarket",
-    "plastic water bottles"
+    "water bottles",
+    "plastic bottles"
    ]
   },
   {
    "texte": "Au robinet, en France, un mètre cube coûte en moyenne quatre euros quatre-vingt-neuf, assainissement compris.",
    "recherche": [
-    "water tap running kitchen"
+    "water tap",
+    "faucet water"
    ],
    "chiffre": "4,89 € le m³"
   },
   {
    "texte": "Un mètre cube, c'est mille litres. Ton litre d'eau du robinet coûte donc un demi-centime.",
    "recherche": [
-    "filling glass of water tap"
+    "glass water",
+    "water tap"
    ],
    "chiffre": "0,005 €/L",
    "chiffre_mot": "demi"
@@ -28,16 +30,16 @@
   {
    "texte": "En bouteille, c'est environ trente centimes le litre en moyenne.",
    "recherche": [
-    "mineral water bottle",
-    "drinking water bottle"
+    "water bottle",
+    "drinking water"
    ],
    "chiffre": "≈ 0,30 €/L"
   },
   {
    "texte": "Soit environ soixante fois plus cher. Et jusqu'à trois cents fois pour les marques les plus chères.",
    "recherche": [
-    "water bottle pouring glass",
-    "bottled water"
+    "water bottles",
+    "pouring water"
    ],
    "chiffre": "×60 à ×300",
    "chiffre_mot": "soixante"
@@ -49,5 +51,8 @@
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
  "description": "L'eau en bouteille : combien de fois plus chère ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Prix de l'eau au 01/01/2025 (rapport SISPEA 2026) : https://ofb.gouv.fr/sites/ofb-gouv-fr/files/2026-07/cp_sispea_2024_0.pdf\n• https://selectra.info/energie/actualites/marche/eau-bouteille-robinet-prix-canicule-2026\n\n#shorts #prix #argent #consommation",
- "commentaire": "Tu aurais dit combien ? 👇"
+ "commentaire": "Tu aurais dit combien ? 👇",
+ "recherche_fin": [
+  "water tap"
+ ]
 }
