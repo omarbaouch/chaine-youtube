@@ -1,0 +1,63 @@
+name: Shorts verticaux
+
+# Fabrique les Shorts autonomes d'un lot (videos/_shorts/<lot>/*.json) : voix Edge, rushes Pixabay, sous-titres mot à mot.
+# Les MP4 et planches sont publiés dans la Release « shorts-<lot> ».
+on:
+  push:
+    branches: [main]
+    paths: ['videos/_shorts/**.json']
+  workflow_dispatch:
+    inputs:
+      lot: {description: "Nom du lot (ex. lot1)", required: true}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shorts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  shorts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Quel lot ?
+        id: quoi
+        run: |
+          if [ -n "${{ github.event.inputs.lot }}" ]; then lot="${{ github.event.inputs.lot }}"; else
+            avant="${{ github.event.before }}"; git cat-file -e "$avant" 2>/dev/null || avant="HEAD~1"
+            lot="$(git diff --name-only "$avant" "${{ github.sha }}" -- videos/_shorts | grep '\.json$' | cut -d/ -f3 | sort -u | head -1)"
+          fi
+          echo "lot=$lot" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Outils
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts requests
+          node scripts/musique.mjs
+      - name: Fabriquer les Shorts
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          echo "Lot : ${{ steps.quoi.outputs.lot }}"
+          ok=0; ko=0
+          for f in videos/_shorts/${{ steps.quoi.outputs.lot }}/*.json; do
+            echo "::group::$f"
+            if python scripts/short_vertical.py "$f"; then ok=$((ok+1)); else ko=$((ko+1)); echo "✘ $f"; fi
+            echo "::endgroup::"
+          done
+          echo "Réussis : $ok · échecs : $ko"
+          [ "$ok" -gt 0 ]
+      - name: Publier dans la Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="shorts-${{ steps.quoi.outputs.lot }}"
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --title "Shorts ${{ steps.quoi.outputs.lot }}" --notes "Shorts verticaux autonomes" --prerelease
+          gh release upload "$tag" out/shorts/* --clobber

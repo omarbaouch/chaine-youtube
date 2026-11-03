@@ -1,0 +1,51 @@
+{
+ "id": "03-capsules",
+ "titre": "Ton café en capsule, tu le paies combien au kilo ? #shorts",
+ "accroche": "TON CAFÉ EN CAPSULE : COMBIEN LE KILO ?",
+ "plans": [
+  {
+   "texte": "Ton café en capsule, tu sais combien tu le paies au kilo ?",
+   "recherche": [
+    "coffee capsule machine",
+    "espresso machine coffee"
+   ]
+  },
+  {
+   "texte": "Une capsule Nespresso Arpeggio, c'est quarante-quatre centimes la tasse.",
+   "recherche": [
+    "espresso cup pouring"
+   ],
+   "chiffre": "0,44 €"
+  },
+  {
+   "texte": "Mais rapporté au kilo de café, ça fait quatre-vingt-trois euros.",
+   "recherche": [
+    "coffee beans close up"
+   ],
+   "chiffre": "83 €/kg"
+  },
+  {
+   "texte": "Un bon café moulu de supermarché, c'est environ vingt-trois euros le kilo. Trois fois et demie moins cher.",
+   "recherche": [
+    "ground coffee",
+    "coffee filter"
+   ],
+   "chiffre": "23 €/kg"
+  },
+  {
+   "texte": "À trois cafés par jour, les capsules te coûtent quatre cent quatre-vingt-deux euros par an. Le filtre, cent soixante-seize.",
+   "recherche": [
+    "coffee maker kitchen",
+    "drinking coffee morning"
+   ],
+   "chiffre": "482 € / 176 €"
+  }
+ ],
+ "sources": [
+  "Prix relevés en août 2026 : https://selectra.info/energie/actualites/marche/cafe-capsules-cout-par-tasse-face-cafetiere-filtre",
+  "https://graindexpert.fr/blog/capsule-nespresso-prix"
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "description": "Ton café en capsule : combien le kilo ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Prix relevés en août 2026 : https://selectra.info/energie/actualites/marche/cafe-capsules-cout-par-tasse-face-cafetiere-filtre\n• https://graindexpert.fr/blog/capsule-nespresso-prix\n\n#shorts #prix #argent #consommation",
+ "commentaire": "Tu aurais dit combien ? 👇"
+}

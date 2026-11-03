@@ -1,0 +1,52 @@
+{
+ "id": "06-timbre",
+ "titre": "Le timbre a pris combien depuis 2011 ? #shorts",
+ "accroche": "LE TIMBRE : COMBIEN EN 2026 ?",
+ "plans": [
+  {
+   "texte": "Envoyer une simple lettre, ça coûte combien aujourd'hui ?",
+   "recherche": [
+    "letter envelope mailbox",
+    "writing letter"
+   ]
+  },
+  {
+   "texte": "La lettre verte a été créée en deux mille onze, à cinquante-sept centimes.",
+   "recherche": [
+    "postage stamp envelope"
+   ],
+   "chiffre": "0,57 €"
+  },
+  {
+   "texte": "Au premier janvier deux mille vingt-six, elle est passée à un euro cinquante-deux.",
+   "recherche": [
+    "envelope letters pile"
+   ],
+   "chiffre": "1,52 €",
+   "chiffre_mot": "un"
+  },
+  {
+   "texte": "Presque trois fois plus cher en quinze ans.",
+   "recherche": [
+    "mailbox"
+   ],
+   "chiffre": "×2,7",
+   "chiffre_mot": "trois"
+  },
+  {
+   "texte": "Et une lettre recommandée ? Six euros onze.",
+   "recherche": [
+    "post office parcel",
+    "postman delivery"
+   ],
+   "chiffre": "6,11 €"
+  }
+ ],
+ "sources": [
+  "Tarifs La Poste 2026 : https://www.lapostegroupe.com/assets/media/le-groupe-laposte/aIeE8FGsbswqTWUN_CPLaPoste-Tarifscourriercolis2026_.pdf",
+  "https://en.wikipedia.org/wiki/Evolution_of_stamp_prices_in_France"
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "description": "Le timbre : combien en 2026 ?\nChaque jour, le vrai prix d'un truc que tu achètes.\n\nSources :\n• Tarifs La Poste 2026 : https://www.lapostegroupe.com/assets/media/le-groupe-laposte/aIeE8FGsbswqTWUN_CPLaPoste-Tarifscourriercolis2026_.pdf\n• https://en.wikipedia.org/wiki/Evolution_of_stamp_prices_in_France\n\n#shorts #prix #argent #consommation",
+ "commentaire": "Tu aurais dit combien ? 👇"
+}
