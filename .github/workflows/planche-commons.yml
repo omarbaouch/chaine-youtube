@@ -1,0 +1,40 @@
+name: Planches Commons (vidéos)
+
+# Images horodatées de reportages vidéo libres (Wikimedia Commons) pour y choisir des passages précis.
+on:
+  workflow_dispatch:
+    inputs:
+      requetes:
+        description: 'Requêtes séparées par |'
+        required: false
+        default: ''
+      refs:
+        description: 'wc:File:… séparés par |'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  planches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Planches
+        env:
+          REQ: ${{ inputs.requetes }}
+          REFS: ${{ inputs.refs }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          node scripts/planche_commons.mjs out/commons "$REQ" "$REFS"
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "commons-${{ github.run_number }}" out/commons/*.jpg out/commons/index.json --target "${{ github.sha }}" \
+            --title "🎞️ Planches Commons #${{ github.run_number }}" --notes "Images horodatées de vidéos Commons" --prerelease
