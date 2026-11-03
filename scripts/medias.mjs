@@ -96,8 +96,10 @@ async function chercherImage(s) {
 const UA = {'User-Agent': 'chaine-youtube-medias/1.0 (github.com/omarbaouch/chaine-youtube)'};
 async function telechargerRef(s) {
   const [src, ...reste] = s.media_ref.split(':');
-  if (dejaPris.has(s.media_ref)) console.warn(`⚠ ${s.id} : ${s.media_ref} déjà utilisé dans ce montage (règle : un rush ne sert qu'une fois)`);
-  dejaPris.add(s.media_ref);
+  // "extrait": secondes de début d'un passage précis d'un long reportage Commons (planches scripts/planche_commons.mjs) ; 30 s gardées
+  const cleRush = s.extrait != null ? `${s.media_ref}@${s.extrait}` : s.media_ref;
+  if (dejaPris.has(cleRush)) console.warn(`⚠ ${s.id} : ${cleRush} déjà utilisé dans ce montage (règle : un rush ne sert qu'une fois)`);
+  dejaPris.add(cleRush);
   const id = reste.join(':');
   if (src === 'pv') {
     const c = await videoParId(id);
@@ -118,7 +120,7 @@ async function telechargerRef(s) {
       const brut = path.join(sortie, `${s.id}.source`);
       const rr = await fetch(ii.url, {headers: UA});
       fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
-      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...(s.extrait != null ? ['-ss', String(s.extrait), '-t', '30'] : []), '-i', brut, ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
       fs.rmSync(brut);
     } else {
       const rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});
@@ -154,7 +156,7 @@ for (const s of montage.scenes) {
 for (const s of montage.scenes) {
   for (const m of s.medias ?? []) {
     const existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${m._id}.`) && !f.endsWith('.ref'));
-    const cle = m.fichier ?? m.media_ref ?? '';
+    const cle = (m.fichier ?? m.media_ref ?? '') + (m.extrait != null ? `@${m.extrait}` : '');
     if (existant && memeRef(m._id, cle)) { console.log(`↺ ${m._id} : déjà téléchargé`); continue; }
     if (existant) purger(m._id);
     noterRef(m._id, cle);
@@ -164,18 +166,18 @@ for (const s of montage.scenes) {
       continue;
     }
     if (!CLE) {
-      if (/^(pi|wc):/.test(m.media_ref ?? '') && !/\.(webm|ogv|mp4)$/i.test(m.media_ref)) {
+      if (/^(pi|wc):/.test(m.media_ref ?? '') && !/\.(webm|ogv|mp4|mpg)$/i.test(m.media_ref)) {
         execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1920x1080', '-frames:v', '1', path.join(sortie, `${m._id}.jpg`)]);
       } else fauxRush({id: m._id}, path.join(sortie, `${m._id}.mp4`));
       continue;
     }
-    await telechargerRef({id: m._id, media_ref: m.media_ref});
+    await telechargerRef({id: m._id, media_ref: m.media_ref, extrait: m.extrait});
   }
 }
 
 for (const s of montage.scenes) {
   let existant = fs.readdirSync(sortie).find((f) => f.startsWith(`${s.id}.`) && !f.endsWith('.ref'));
-  const cle = s.fichier ?? s.media_ref ?? s.pixabay_id ?? JSON.stringify(s.recherche ?? '');
+  const cle = (s.fichier ?? s.media_ref ?? s.pixabay_id ?? JSON.stringify(s.recherche ?? '')) + (s.extrait != null ? `@${s.extrait}` : '');
   if (existant && !memeRef(s.id, cle)) { purger(s.id); existant = undefined; }
   if (s.recherche || s.pixabay_id || s.media_ref || s.fichier) noterRef(s.id, cle);
   if (s.fichier) {
@@ -194,7 +196,7 @@ for (const s of montage.scenes) {
     await telechargerRef(s);
     continue;
   }
-  const estImage = s.type === 'image' || (/^(pi|wc):/.test(s.media_ref ?? '') && !/\.(webm|ogv|mp4)$/i.test(s.media_ref));
+  const estImage = s.type === 'image' || (/^(pi|wc):/.test(s.media_ref ?? '') && !/\.(webm|ogv|mp4|mpg)$/i.test(s.media_ref));
   if (!CLE) {
     console.warn(`⚠ ${s.id} : pas de PIXABAY_API_KEY → faux rush de test`);
     if (estImage) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1920x1080', '-frames:v', '1', path.join(sortie, `${s.id}.jpg`)]);

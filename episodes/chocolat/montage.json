@@ -1,0 +1,2328 @@
+{
+ "titre": "Chocolat : le cacao s'effondre, ta tablette non",
+ "format": {
+  "largeur": 1920,
+  "hauteur": 1080,
+  "fps": 30
+ },
+ "transition_defaut": "coupe",
+ "duree_transition": 8,
+ "voix": {
+  "moteur": "edge",
+  "locuteur": "fr-FR-VivienneMultilingualNeural",
+  "debit": "+5%",
+  "pause_phrase": 0.15,
+  "voix_secondaires": {
+   "sceptique": "fr-FR-RemyMultilingualNeural"
+  }
+ },
+ "musique": {
+  "fichier": "../../public/sfx/musique-enquete.wav",
+  "volume": 0.22
+ },
+ "etalonnage": {
+  "contraste": 1.06,
+  "saturation": 1.08,
+  "luminosite": 1
+ },
+ "grain": true,
+ "sous_titres": {
+  "actifs": true,
+  "mots_par_ligne": 4
+ },
+ "scenes": [
+  {
+   "id": "p001",
+   "format": "rush",
+   "texte": "Le prix du cacao s'est effondré depuis son record.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "LE CACAO S'EFFONDRE",
+     "heros": "S'EFFONDRE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 84
+  },
+  {
+   "id": "p002",
+   "format": "ecran_partage",
+   "texte": "Mais ta tablette, au rayon, elle, n'a pas baissé.",
+   "cote": "gauche",
+   "etiquette_schema": "Depuis le record du cacao",
+   "schema": {
+    "type": "liste",
+    "titre": "Depuis le record",
+    "elements": [
+     {
+      "texte": "Le cacao",
+      "valeur": "↓ en chute"
+     },
+     {
+      "texte": "Ta tablette",
+      "valeur": "pas de baisse",
+      "heros": true
+     }
+    ],
+    "source": "Cours ICE (Trading Economics, 02/11/2026) ; UFC-Que Choisir, 01/04/2026"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Chocolate in Japan (5137097169).jpg"
+  },
+  {
+   "id": "p003",
+   "format": "rush",
+   "texte": "Alors, une seule question : qui a pris la différence ?",
+   "punch": {
+    "a": 2.4,
+    "texte": "QUI ?"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 2.4,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:1312524"
+  },
+  {
+   "id": "p004",
+   "format": "mosaique",
+   "texte": "Facile, c'est le cacao qui rend le chocolat si cher !",
+   "voix": "sceptique",
+   "medias": [
+    {
+     "media_ref": "pi:824086",
+     "legende": "Le cacao"
+    },
+    {
+     "media_ref": "pi:4727134",
+     "legende": "Le chocolat"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p005",
+   "format": "schema",
+   "texte": "Devine : sur une tablette à deux euros soixante, combien pour le planteur ?",
+   "etiquette_schema": "À toi de deviner (réponse dans « La vérité »)",
+   "duree_min": 4.6,
+   "schema": {
+    "type": "liste",
+    "titre": "Combien pour le planteur ?",
+    "elements": [
+     {
+      "texte": "A",
+      "valeur": "3 c ?"
+     },
+     {
+      "texte": "B",
+      "valeur": "13 c ?"
+     },
+     {
+      "texte": "C",
+      "valeur": "50 c ?"
+     }
+    ],
+    "source": "Tablette noire 70 %, grande marque, ≈ 2,60 € (Que Choisir, mai 2026) · réponse plus tard"
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 3.4,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 4.0,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:2424452"
+  },
+  {
+   "id": "p006",
+   "format": "rush",
+   "texte": "On va suivre une fève, de l'arbre jusqu'à ta main.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Kokoo.mpg",
+   "extrait": 0
+  },
+  {
+   "id": "p007",
+   "format": "mosaique",
+   "texte": "Cinq suspects, une graine amère, et une tablette qui claque.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Cracked fresh cocoa bean. (10690323016).jpg",
+     "legende": "Une graine amère"
+    },
+    {
+     "media_ref": "pi:2554",
+     "legende": "Une tablette qui claque"
+    }
+   ],
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "5 SUSPECTS",
+     "heros": "5",
+     "position": "haut",
+     "a": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p008",
+   "format": "ecran_partage",
+   "texte": "Et à la fin, je te lirai les mots",
+   "cote": "gauche",
+   "etiquette_schema": "Le témoin",
+   "schema": {
+    "type": "liste",
+    "titre": "Le témoin",
+    "elements": [
+     {
+      "texte": "Laurent",
+      "heros": true
+     },
+     {
+      "texte": "Planteur de cacao depuis 1996"
+     },
+     {
+      "texte": "Côte d'Ivoire"
+     }
+    ],
+    "source": "AFP, 26/01/2026 (reprise Le360 Afrique)"
+   },
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "pi:5394185"
+  },
+  {
+   "id": "p009",
+   "format": "rush",
+   "texte": "de Laurent, planteur de cacao depuis trente ans.",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 4
+  },
+  {
+   "id": "p010",
+   "format": "titre",
+   "texte": "",
+   "type": "titre",
+   "titre": "Le cacao s'effondre. Ta tablette, non.",
+   "sous_titre": "Qui a pris la différence ?",
+   "duree_min": 2.2,
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.3
+    },
+    {
+     "nom": "impact",
+     "a": 0.2,
+     "volume": 0.6
+    }
+   ],
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "pi:6938440"
+  },
+  {
+   "id": "p011",
+   "format": "schema",
+   "texte": "Premier suspect : celui qui fait pousser le cacao.",
+   "etiquette_schema": "Suspect n° 1",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le planteur",
+    "accusation": "Il garde combien ?",
+    "numero": "01"
+   },
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "pi:452911"
+  },
+  {
+   "id": "p012",
+   "format": "rush",
+   "texte": "Tout commence sur un arbre d'Afrique de l'Ouest, le cacaoyer.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 0
+  },
+  {
+   "id": "p013",
+   "format": "ecran_partage",
+   "texte": "Ses fruits, les cabosses, poussent directement sur le tronc.",
+   "cote": "gauche",
+   "etiquette_schema": "Une cabosse",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 380,
+    "decimales": 0,
+    "prefixe": "≈ ",
+    "suffixe": " g",
+    "legende": "une cabosse de 15 à 20 cm",
+    "revele_a": 1.6,
+    "source": "CNUCED, profil produit cacao"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 20
+  },
+  {
+   "id": "p014",
+   "format": "rush",
+   "texte": "On les cueille, puis on les ouvre à la machette.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:4724654"
+  },
+  {
+   "id": "p015",
+   "format": "mosaique",
+   "texte": "Dedans, trente à quarante graines, enrobées d'une pulpe blanche et sucrée.",
+   "medias": [
+    {
+     "media_ref": "pi:10427626",
+     "legende": "30 à 40 graines"
+    },
+    {
+     "media_ref": "pi:2422040",
+     "legende": "La pulpe blanche"
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p016",
+   "format": "schema",
+   "texte": "Alors, à ton avis… une graine fraîche, elle a quel goût ?",
+   "etiquette_schema": "À toi de deviner",
+   "duree_min": 5,
+   "schema": {
+    "type": "devine",
+    "question": "Le goût d'une graine fraîche ?",
+    "choix": [
+     "Sucré",
+     "Chocolat",
+     "Amer"
+    ],
+    "bonne": 2,
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.5,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:1529746"
+  },
+  {
+   "id": "p017",
+   "format": "rush",
+   "texte": "Amère, très amère : à ce stade, aucun goût de chocolat.",
+   "punch": {
+    "a": 0.4,
+    "texte": "AMÈRE"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.4,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:1282894"
+  },
+  {
+   "id": "p018",
+   "format": "ecran_partage",
+   "texte": "Le goût naît ensuite, en tas ou dans des caisses, sous des feuilles de bananier.",
+   "cote": "droite",
+   "etiquette_schema": "Chez le planteur",
+   "schema": {
+    "type": "processus",
+    "titre": "Chez le planteur",
+    "etapes": [
+     "Cueillir",
+     "Écabosser",
+     "Fermenter",
+     "Sécher"
+    ],
+    "actif": 2,
+    "source": "ICCO ; World Cocoa Foundation"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa Fermentation.webm",
+   "extrait": 0
+  },
+  {
+   "id": "p019",
+   "format": "rush",
+   "texte": "Pendant environ cinq jours, ça fermente,",
+   "surtitre": "≈ 5 jours de fermentation",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa Fermentation.webm",
+   "extrait": 16
+  },
+  {
+   "id": "p020",
+   "format": "schema",
+   "texte": "et la masse chauffe jusqu'à quarante-cinq degrés.",
+   "etiquette_schema": "La fermentation",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 45,
+    "decimales": 0,
+    "suffixe": " °C",
+    "legende": "dans le tas qui fermente (40 à 45 °C)",
+    "comparaison": "Sans fermentation, pas de goût de chocolat",
+    "revele_a": 1.8,
+    "source": "ICCO ; World Cocoa Foundation"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:7026841"
+  },
+  {
+   "id": "p021",
+   "format": "mosaique",
+   "texte": "Ensuite, les fèves sèchent au soleil, de cinq à sept jours.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+     "extrait": 52,
+     "legende": "Étalées au soleil"
+    },
+    {
+     "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+     "extrait": 84.5,
+     "legende": "Retournées à la main"
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p022",
+   "format": "schema",
+   "texte": "Leur humidité tombe d'environ soixante à sept et demi pour cent.",
+   "etiquette_schema": "Le séchage",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 7.5,
+    "decimales": 1,
+    "suffixe": " %",
+    "legende": "d'humidité après séchage",
+    "comparaison": "≈ 60 % avant",
+    "revele_a": 2.8,
+    "source": "World Cocoa Foundation ; ICCO"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:7026842"
+  },
+  {
+   "id": "p023",
+   "format": "rush",
+   "texte": "Voilà la matière première de ta tablette : des fèves sèches.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 204
+  },
+  {
+   "id": "p024",
+   "format": "schema",
+   "texte": "Alors, à ton avis… combien de cabosses faut-il pour une seule tablette ?",
+   "etiquette_schema": "À toi de deviner",
+   "duree_min": 5,
+   "schema": {
+    "type": "devine",
+    "question": "Combien de cabosses pour une tablette ?",
+    "choix": [
+     "½",
+     "≈ 2",
+     "10"
+    ],
+    "bonne": 1,
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.5,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:6554305"
+  },
+  {
+   "id": "p025",
+   "format": "rush",
+   "texte": "À peu près deux, pour les soixante-dix grammes de cacao d'une tablette noire.",
+   "punch": {
+    "a": 0.5,
+    "texte": "≈ 2 CABOSSES"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.5,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 199
+  },
+  {
+   "id": "p026",
+   "format": "mosaique",
+   "texte": "Leur prix, en Côte d'Ivoire, c'est l'État qui le fixe.",
+   "medias": [
+    {
+     "media_ref": "pv:24672",
+     "legende": "Côte d'Ivoire"
+    },
+    {
+     "media_ref": "wc:File:Plateau 2010, Abidjan.jpg",
+     "legende": "Abidjan"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p027",
+   "format": "rush",
+   "texte": "Le premier octobre deux mille vingt-cinq, il annonce un prix record.",
+   "surtitre": "1er octobre 2025",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Weighing cocoa.jpg"
+  },
+  {
+   "id": "p028",
+   "format": "ecran_partage",
+   "texte": "Deux mille huit cents francs C F A le kilo, environ quatre euros vingt-sept.",
+   "cote": "gauche",
+   "etiquette_schema": "Prix garanti au planteur",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 2800,
+    "decimales": 0,
+    "suffixe": " F CFA/kg",
+    "legende": "prix garanti au planteur ivoirien, record",
+    "comparaison": "≈ 4,27 € le kilo",
+    "revele_a": 0.6,
+    "source": "Financial Afrik, 02/10/2025"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.6,
+     "volume": 0.45
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:2430200"
+  },
+  {
+   "id": "p029",
+   "format": "rush",
+   "texte": "Avec un prix record pareil, le planteur doit s'en mettre plein les poches !",
+   "voix": "sceptique",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:3247447"
+  },
+  {
+   "id": "p030",
+   "format": "mosaique",
+   "texte": "Attends un peu : ce record va durer à peine cinq mois.",
+   "medias": [
+    {
+     "media_ref": "pi:2870691",
+     "legende": "Octobre 2025"
+    },
+    {
+     "media_ref": "pi:2608928",
+     "legende": "… et après ?"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p031",
+   "format": "schema",
+   "texte": "Premier suspect, le planteur : son verdict, je le garde pour la vérité.",
+   "etiquette_schema": "Verdict n° 1",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le planteur",
+    "accusation": "Il garde combien ?",
+    "numero": "01",
+    "verdict": "À suivre"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:6761956"
+  },
+  {
+   "id": "p032",
+   "format": "rush",
+   "texte": "Maintenant, ces fèves doivent traverser l'océan, et ça se paie.",
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "pv:237249"
+  },
+  {
+   "id": "p033",
+   "format": "schema",
+   "texte": "Deuxième suspect, un duo : le négociant qui exporte, et le broyeur.",
+   "etiquette_schema": "Suspect n° 2",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le négociant et le broyeur",
+    "accusation": "Ils gardent combien ?",
+    "numero": "02"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:23008"
+  },
+  {
+   "id": "p034",
+   "format": "rush",
+   "texte": "Le négociant collecte les sacs, les transporte, et les charge au port.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:6959638"
+  },
+  {
+   "id": "p035",
+   "format": "ecran_partage",
+   "texte": "Sur chaque kilo exporté, l'État ivoirien prélève aussi ses taxes.",
+   "cote": "gauche",
+   "etiquette_schema": "Du planteur au bateau",
+   "schema": {
+    "type": "processus",
+    "titre": "Du planteur au bateau",
+    "etapes": [
+     "Collecte",
+     "Transport",
+     "Taxes",
+     "Port"
+    ],
+    "actif": 2,
+    "source": "BASIC 2020 (données 2018)"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:129250"
+  },
+  {
+   "id": "p036",
+   "format": "rush",
+   "texte": "Imagine un euro dépensé en chocolat noir : combien en garde le négociant ?",
+   "surtitre": "Étude BASIC · données 2018",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:138315"
+  },
+  {
+   "id": "p037",
+   "format": "ecran_partage",
+   "texte": "Environ sept centimes, dont presque deux centimes de taxes pour l'État ivoirien.",
+   "cote": "droite",
+   "etiquette_schema": "La part du négociant",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 0.07,
+    "decimales": 2,
+    "suffixe": " €",
+    "legende": "pour le négociant, sur 1 € de chocolat noir",
+    "comparaison": "dont ≈ 0,02 € de taxes ivoiriennes",
+    "revele_a": 1.2,
+    "source": "BASIC 2020, données 2018, tablette noire (9,32 €/kg), ramené à 1 €"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 48
+  },
+  {
+   "id": "p038",
+   "format": "rush",
+   "texte": "En Europe, le broyeur prend le relais, et là, tout commence à chauffer.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. Chocolate manufacturing department, Wallace & Co. Machine for cracking and removing shells from cocoa beans after roasting - NARA - 31486420.jpg"
+  },
+  {
+   "id": "p039",
+   "format": "mosaique",
+   "texte": "D'abord, on torréfie les fèves, un peu comme du café.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Chocolat menier torrefaction.jpg",
+     "legende": "Torréfaction"
+    },
+    {
+     "media_ref": "pi:7001846",
+     "legende": "Fèves grillées"
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p040",
+   "format": "schema",
+   "texte": "On les décortique, puis on les broie en pâte liquide : la masse de cacao.",
+   "etiquette_schema": "Schéma : les étapes du broyeur",
+   "schema": {
+    "type": "processus",
+    "titre": "Chez le broyeur",
+    "etapes": [
+     "Torréfier",
+     "Concasser",
+     "Broyer",
+     "Presser"
+    ],
+    "actif": 2,
+    "source": "World Cocoa Foundation"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:71743"
+  },
+  {
+   "id": "p041",
+   "format": "ecran_partage",
+   "texte": "On la presse ensuite : d'un côté le beurre de cacao, de l'autre la poudre.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:10353275",
+   "cote": "gauche",
+   "etiquette_schema": "Schéma : ce que sort la presse",
+   "schema": {
+    "type": "processus",
+    "titre": "La presse",
+    "etapes": [
+     "Masse de cacao",
+     "Presse",
+     "Beurre de cacao",
+     "Poudre de cacao"
+    ],
+    "actif": 2,
+    "source": "World Cocoa Foundation, transformation du cacao"
+   }
+  },
+  {
+   "id": "p042",
+   "format": "rush",
+   "texte": "Pour tout ce travail, le broyeur garde environ six centimes.",
+   "couches": [
+    {
+     "type": "compteur",
+     "vers": 6,
+     "decimales": 0,
+     "suffixe": " c",
+     "legende": "pour le broyeur, sur 1 €",
+     "source": "BASIC 2020, données 2018, tablette noire (9,32 €/kg), ramené à 1 €",
+     "a": 1.6,
+     "position": "droite"
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20040726913).jpg"
+  },
+  {
+   "id": "p043",
+   "format": "schema",
+   "texte": "Sept et six centimes, c'est trop peu : ce duo n'est pas notre voleur.",
+   "etiquette_schema": "Verdict n° 2",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le négociant et le broyeur",
+    "accusation": "Ils gardent combien ?",
+    "numero": "02",
+    "verdict": "Innocents"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pv:129181"
+  },
+  {
+   "id": "p044",
+   "format": "rush",
+   "texte": "À ce stade, ton chocolat n'est qu'une pâte amère qui gratte la langue.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Untempered chocolate.jpg"
+  },
+  {
+   "id": "p045",
+   "format": "mosaique",
+   "texte": "Ce qui le rend fondant vient de Suisse, d'un homme dont tu connais le nom.",
+   "medias": [
+    {
+     "media_ref": "pv:29773",
+     "legende": "Suisse"
+    },
+    {
+     "media_ref": "wc:File:Peik cocolade-fabrik - no-nb digifoto 20160208 00312 NB NS 000594J.jpg",
+     "legende": "Une fabrique de chocolat"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p046",
+   "format": "schema",
+   "texte": "Troisième suspect : la marque, celle qui signe l'emballage.",
+   "etiquette_schema": "Suspect n° 3",
+   "schema": {
+    "type": "suspect",
+    "nom": "La marque",
+    "accusation": "Il garde combien ?",
+    "numero": "03"
+   },
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "pi:2201991"
+  },
+  {
+   "id": "p047",
+   "format": "rush",
+   "texte": "Notre inventeur, c'est Rodolphe Lindt, à Berne, en mille huit cent soixante-dix-neuf.",
+   "surtitre": "Berne, 1879",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:7033"
+  },
+  {
+   "id": "p048",
+   "format": "ecran_partage",
+   "texte": "Sa machine brasse la pâte longtemps, et elle devient fondante.",
+   "cote": "gauche",
+   "etiquette_schema": "Le conchage",
+   "schema": {
+    "type": "liste",
+    "titre": "Le conchage",
+    "elements": [
+     {
+      "texte": "Rodolphe Lindt, Berne",
+      "valeur": "1879"
+     },
+     {
+      "texte": "Brasser la pâte",
+      "valeur": "des heures à des jours",
+      "heros": true
+     }
+    ],
+    "source": "Chocosuisse ; World Cocoa Foundation"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Hershey Conche.jpg"
+  },
+  {
+   "id": "p049",
+   "format": "rush",
+   "texte": "Ça s'appelle le conchage, et ça dure de quelques heures à plusieurs jours.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20661800155).jpg"
+  },
+  {
+   "id": "p050",
+   "format": "mosaique",
+   "texte": "On y ajoute le sucre : les autres ingrédients ne pèsent qu'environ deux centimes.",
+   "medias": [
+    {
+     "media_ref": "pi:1514247",
+     "legende": "Le sucre"
+    },
+    {
+     "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. A machine for mixing sugar with chocolate, in a big chocolate factory - NARA - 31486440.jpg",
+     "legende": "Le mélange"
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p051",
+   "format": "rush",
+   "texte": "Reste l'étape la plus délicate : le tempérage, une affaire de degrés.",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Chocolate Tempering Machine.jpg"
+  },
+  {
+   "id": "p052",
+   "format": "schema",
+   "texte": "On chauffe vers cinquante degrés, on refroidit, puis on remonte vers trente et un.",
+   "etiquette_schema": "Schéma : la courbe du tempérage",
+   "schema": {
+    "type": "processus",
+    "titre": "Le tempérage (chocolat noir)",
+    "etapes": [
+     "Chauffer ≈ 50 °C",
+     "Refroidir ≈ 27 °C",
+     "Remonter ≈ 31 °C"
+    ],
+    "actif": 2,
+    "source": "theGIST (Université de Glasgow), 2015"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:98283"
+  },
+  {
+   "id": "p053",
+   "format": "ecran_partage",
+   "texte": "Le beurre de cacao peut cristalliser de six façons,",
+   "cote": "droite",
+   "etiquette_schema": "Le beurre de cacao",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 6,
+    "decimales": 0,
+    "legende": "formes de cristaux possibles",
+    "revele_a": 1.6,
+    "source": "theGIST (Université de Glasgow), 2015"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:3317143"
+  },
+  {
+   "id": "p054",
+   "format": "schema",
+   "texte": "et une seule est la bonne, la forme cinq.",
+   "etiquette_schema": "Schéma : les cristaux du beurre de cacao",
+   "schema": {
+    "type": "liste",
+    "titre": "6 formes de cristaux",
+    "elements": [
+     {
+      "texte": "Formes I à IV",
+      "valeur": "molles, ternes"
+     },
+     {
+      "texte": "Forme V",
+      "valeur": "brillante, cassante",
+      "heros": true
+     },
+     {
+      "texte": "Forme VI",
+      "valeur": "voile blanc"
+     }
+    ],
+    "source": "theGIST (Université de Glasgow), 2015"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:2562840"
+  },
+  {
+   "id": "p055",
+   "format": "rush",
+   "texte": "C'est elle qui rend ta tablette brillante, et qui lui donne ce clac.",
+   "couches": [
+    {
+     "type": "flash",
+     "a": 3.2
+    }
+   ],
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 3.2,
+     "volume": 0.45
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pv:385685"
+  },
+  {
+   "id": "p056",
+   "format": "mosaique",
+   "texte": "Ensuite, on coule dans des moules, on refroidit, on démoule, et on emballe.",
+   "medias": [
+    {
+     "media_ref": "pi:1934",
+     "legende": "Moulage"
+    },
+    {
+     "media_ref": "pi:6935995",
+     "legende": "Démoulage"
+    },
+    {
+     "media_ref": "wc:File:Industries of War - Cocoa - INDUSTRIES OF WAR. Wrapping machines at work in a big chocolate factory where chocolate bars, the kind sent to France for the soldiers at the front, are made. The exceptional value of (...) - NARA - 31487943.jpg",
+     "legende": "Emballage"
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p057",
+   "format": "rush",
+   "texte": "Usines, salaires, emballages : tout ce savoir-faire, la marque le facture.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:HallorenSchokoladenfabrik2.jpg"
+  },
+  {
+   "id": "p058",
+   "format": "schema",
+   "texte": "Alors, à ton avis… sur un euro de chocolat noir, combien pour la marque ?",
+   "etiquette_schema": "À toi de deviner",
+   "duree_min": 5,
+   "schema": {
+    "type": "devine",
+    "question": "Sur 1 €, combien pour la marque ?",
+    "choix": [
+     "12 c",
+     "25 c",
+     "37 c"
+    ],
+    "bonne": 2,
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.5,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:1814134"
+  },
+  {
+   "id": "p059",
+   "format": "rush",
+   "texte": "Trente-sept centimes, de loin le plus gros morceau vu jusqu'ici.",
+   "couches": [
+    {
+     "type": "compteur",
+     "vers": 37,
+     "decimales": 0,
+     "suffixe": " c",
+     "legende": "pour la marque, sur 1 €",
+     "source": "BASIC 2020, données 2018, tablette noire (9,32 €/kg), ramené à 1 €",
+     "a": 0.3,
+     "position": "droite"
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:3422350"
+  },
+  {
+   "id": "p060",
+   "format": "ecran_partage",
+   "texte": "Mais sa vraie marge, une fois tout payé, c'est environ neuf centimes.",
+   "cote": "gauche",
+   "etiquette_schema": "Les 37 c de la marque",
+   "schema": {
+    "type": "decomposition",
+    "titre": "Les 37 c de la marque",
+    "unite": " c",
+    "decimales": 0,
+    "parts": [
+     {
+      "label": "Coûts",
+      "valeur": 25.3
+     },
+     {
+      "label": "Taxes",
+      "valeur": 2.3
+     },
+     {
+      "label": "Marge",
+      "valeur": 9.4,
+      "heros": true
+     }
+    ],
+    "source": "BASIC 2020, données 2018 (marge 0,88 €/kg sur 9,32 €/kg)"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Workers in a chocolate wrapping room.jpg"
+  },
+  {
+   "id": "p061",
+   "format": "schema",
+   "texte": "La marque prend le plus gros morceau : je la note coupable, pour l'instant.",
+   "etiquette_schema": "Verdict n° 3",
+   "schema": {
+    "type": "suspect",
+    "nom": "La marque",
+    "accusation": "Il garde combien ?",
+    "numero": "03",
+    "verdict": "Coupable ?"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:183543"
+  },
+  {
+   "id": "p062",
+   "format": "rush",
+   "texte": "Mais elle n'est pas seule à se servir sur ta tablette.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:143479"
+  },
+  {
+   "id": "p063",
+   "format": "schema",
+   "texte": "Quatrième suspect : celui qui met ta tablette en rayon, le supermarché.",
+   "etiquette_schema": "Suspect n° 4",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le supermarché",
+    "accusation": "Il garde combien ?",
+    "numero": "04"
+   },
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "wc:File:A-la-rencontre-des-acteurs-de-la-filiere-cacao-realisatrice-mansita-konate-wiki-loves-africa-cote-divoire-fan-club.webm",
+   "extrait": 15
+  },
+  {
+   "id": "p064",
+   "format": "mosaique",
+   "texte": "Le cacao a baissé, donc ma tablette va forcément baisser, c'est logique !",
+   "voix": "sceptique",
+   "medias": [
+    {
+     "media_ref": "pi:7024552"
+    },
+    {
+     "media_ref": "pv:21117"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p065",
+   "format": "rush",
+   "texte": "Pourtant, en quatre ans, les chocolats de Pâques ont grimpé de trente-six pour cent.",
+   "punch": {
+    "a": 0.6,
+    "texte": "+36 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.6,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 01/04/2026 · inflation : +14 %",
+     "a": 1.4
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:9472605"
+  },
+  {
+   "id": "p066",
+   "format": "schema",
+   "texte": "Et à Pâques deux mille vingt-six, malgré la chute du cacao, encore quatre pour cent.",
+   "etiquette_schema": "Pâques 2026",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 4,
+    "decimales": 0,
+    "prefixe": "+",
+    "suffixe": " %",
+    "legende": "chocolats de Pâques, sur un an (2026)",
+    "comparaison": "Le cacao, lui, en chute",
+    "revele_a": 3.6,
+    "source": "UFC-Que Choisir, 01/04/2026"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:69021"
+  },
+  {
+   "id": "p067",
+   "format": "rush",
+   "texte": "Et sur un euro, le supermarché garde environ trente-deux centimes, hors taxes.",
+   "couches": [
+    {
+     "type": "compteur",
+     "vers": 32,
+     "decimales": 0,
+     "suffixe": " c",
+     "legende": "pour le supermarché, sur 1 € (hors TVA)",
+     "source": "BASIC 2020, données 2018, tablette noire (9,32 €/kg), ramené à 1 € ; TVA 5,5 % retirée",
+     "a": 1.4,
+     "position": "droite"
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 cashier checkout e.jpg"
+  },
+  {
+   "id": "p068",
+   "format": "ecran_partage",
+   "texte": "Dont environ huit centimes de vraie marge, presque autant que la marque.",
+   "cote": "droite",
+   "etiquette_schema": "Les 32 c du supermarché",
+   "schema": {
+    "type": "decomposition",
+    "titre": "Les 32 c du supermarché",
+    "unite": " c",
+    "decimales": 0,
+    "parts": [
+     {
+      "label": "Coûts",
+      "valeur": 21.0
+     },
+     {
+      "label": "Autres taxes",
+      "valeur": 2.3
+     },
+     {
+      "label": "Marge",
+      "valeur": 8.4,
+      "heros": true
+     }
+    ],
+    "source": "BASIC 2020, données 2018 (marge 0,78 €/kg) ; TVA retirée par calcul"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Confectionery aisle with Norwegian chocolate bars from Freia, Nidar, etc. in REMA 1000 Supermarket, Osøyro, Hordaland, Norway 2018-03-19.jpg"
+  },
+  {
+   "id": "p069",
+   "format": "schema",
+   "texte": "Quatrième suspect, le supermarché : lui aussi, je le note coupable, pour l'instant.",
+   "etiquette_schema": "Verdict n° 4",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le supermarché",
+    "accusation": "Il garde combien ?",
+    "numero": "04",
+    "verdict": "Coupable ?"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:4730"
+  },
+  {
+   "id": "p070",
+   "format": "rush",
+   "texte": "Reste un dernier suspect, discret, qui se sert à chaque passage en caisse.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:5610295"
+  },
+  {
+   "id": "p071",
+   "format": "schema",
+   "texte": "Cinquième suspect : l'État français, avec sa T V A.",
+   "etiquette_schema": "Suspect n° 5",
+   "schema": {
+    "type": "suspect",
+    "nom": "L'État français",
+    "accusation": "Il prend combien ?",
+    "numero": "05"
+   },
+   "transition": "fondu",
+   "ambiance": "tension",
+   "media_ref": "wc:File:Ministere de l'Economie et des Finance - Paris, France - panoramio.jpg"
+  },
+  {
+   "id": "p072",
+   "format": "rush",
+   "texte": "Sur le chocolat noir, la T V A est de cinq virgule cinq pour cent.",
+   "surtitre": "TVA 5,5 %",
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pi:2224998"
+  },
+  {
+   "id": "p073",
+   "format": "ecran_partage",
+   "texte": "Sur notre euro, ça fait environ cinq centimes pour l'État français.",
+   "cote": "gauche",
+   "etiquette_schema": "La part de l'État français",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 0.05,
+    "decimales": 2,
+    "suffixe": " €",
+    "legende": "TVA sur 1 € de chocolat noir",
+    "comparaison": "Taxes ivoiriennes : ≈ 0,02 €",
+    "revele_a": 2.4,
+    "source": "Calcul TVA 5,5 % (CGI art. 278-0 bis) ; BASIC 2020"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Various euro coins.jpg"
+  },
+  {
+   "id": "p074",
+   "format": "schema",
+   "texte": "Alors, à ton avis… et ta tablette au lait, elle est taxée à combien ?",
+   "etiquette_schema": "À toi de deviner",
+   "duree_min": 5,
+   "schema": {
+    "type": "devine",
+    "question": "TVA d'une tablette au lait ?",
+    "choix": [
+     "5,5 %",
+     "10 %",
+     "20 %"
+    ],
+    "bonne": 2,
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.5,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:6777052"
+  },
+  {
+   "id": "p075",
+   "format": "rush",
+   "texte": "Vingt pour cent pour la plupart des tablettes au lait, comme une console de jeux.",
+   "punch": {
+    "a": 0.5,
+    "texte": "20 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.5,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:2019-11-28 14 28 05 An unwrapped bar of Gertrude Hawk Chocolates Milk Chocolate Caramel in the Parkway Village section of Ewing Township, Mercer County, New Jersey.jpg"
+  },
+  {
+   "id": "p076",
+   "format": "ecran_partage",
+   "texte": "Le noir, lui, compte comme un produit de base, au même taux que le pain.",
+   "cote": "droite",
+   "etiquette_schema": "La TVA du chocolat",
+   "schema": {
+    "type": "comparaison",
+    "titre": "TVA en France",
+    "unite": " %",
+    "decimales": 1,
+    "heros": "b",
+    "a": {
+     "label": "Chocolat noir",
+     "valeur": 5.5
+    },
+    "b": {
+     "label": "La plupart des tablettes au lait",
+     "valeur": 20
+    },
+    "source": "CGI art. 278-0 bis ; question AN n° 99374 (JO 06/12/2016)"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:14239"
+  },
+  {
+   "id": "p077",
+   "format": "schema",
+   "texte": "L'État français prend trois fois plus que l'État ivoirien, mais sa part reste petite.",
+   "etiquette_schema": "Verdict n° 5",
+   "schema": {
+    "type": "suspect",
+    "nom": "L'État français",
+    "accusation": "Il prend combien ?",
+    "numero": "05",
+    "verdict": "Petit joueur"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Élysée Palace Sep. 2017 (1).jpg"
+  },
+  {
+   "id": "p078",
+   "format": "mosaique",
+   "texte": "Si tu aimes suivre l'argent des objets du quotidien, abonne-toi, ça m'aide vraiment.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2697.webm",
+     "extrait": 0
+    },
+    {
+     "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2703.webm",
+     "extrait": 0
+    }
+   ],
+   "couches": [
+    {
+     "type": "carton",
+     "texte": "ABONNE-TOI",
+     "a": 2.4
+    }
+   ],
+   "ambiance": "leger",
+   "transition": "coupe"
+  },
+  {
+   "id": "p079",
+   "format": "titre",
+   "texte": "",
+   "type": "titre",
+   "titre": "La vérité",
+   "sous_titre": "Qui a pris la différence ?",
+   "duree_min": 2.2,
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.2,
+     "volume": 0.5
+    }
+   ],
+   "transition": "fondu",
+   "ambiance": "revelation",
+   "media_ref": "pv:12669"
+  },
+  {
+   "id": "p080",
+   "format": "schema",
+   "texte": "Sur un euro, il ne reste qu'un morceau pour celui qui fait pousser le cacao.",
+   "etiquette_schema": "Ton euro de chocolat noir, découpé",
+   "schema": {
+    "type": "decomposition",
+    "titre": "1 € de chocolat noir (2018)",
+    "total": 100,
+    "unite": " c",
+    "decimales": 0,
+    "parts": [
+     {
+      "label": "Marque",
+      "valeur": 37
+     },
+     {
+      "label": "Supermarché",
+      "valeur": 32
+     },
+     {
+      "label": "TVA",
+      "valeur": 5
+     },
+     {
+      "label": "Négociant",
+      "valeur": 7
+     },
+     {
+      "label": "Broyeur",
+      "valeur": 6
+     },
+     {
+      "label": "Sucre…",
+      "valeur": 2
+     },
+     {
+      "label": "Planteur",
+      "valeur": 11,
+      "heros": true
+     }
+    ],
+    "source": "BASIC 2020, données 2018, tablette noire ; TVA 5,5 % calculée"
+   },
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.35
+    },
+    {
+     "nom": "impact",
+     "a": 4.2,
+     "volume": 0.55
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:567234"
+  },
+  {
+   "id": "p081",
+   "format": "rush",
+   "texte": "Onze centimes, pour des mois de travail sous le soleil.",
+   "punch": {
+    "a": 0.4,
+    "texte": "11 c"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.4,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 68
+  },
+  {
+   "id": "p082",
+   "format": "ecran_partage",
+   "texte": "Marques et supermarchés captent soixante-dix pour cent de la valeur,",
+   "cote": "gauche",
+   "etiquette_schema": "Qui capte la valeur",
+   "schema": {
+    "type": "liste",
+    "titre": "Marques + supermarchés",
+    "elements": [
+     {
+      "texte": "Part de la valeur",
+      "valeur": "70 %",
+      "heros": true
+     },
+     {
+      "texte": "Part des marges",
+      "valeur": "?"
+     }
+    ],
+    "source": "BASIC 2020 (moyenne, données 2018)"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pv:1735"
+  },
+  {
+   "id": "p083",
+   "format": "schema",
+   "texte": "et quatre-vingt-dix pour cent des marges.",
+   "etiquette_schema": "Qui capte les marges",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 90,
+    "decimales": 0,
+    "suffixe": " %",
+    "legende": "des marges vont aux marques et aux supermarchés",
+    "comparaison": "Pays producteurs : moins de 7,5 %",
+    "revele_a": 0.4,
+    "source": "BASIC 2020 (moyenne, données 2018)"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.4,
+     "volume": 0.45
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pi:5202138"
+  },
+  {
+   "id": "p084",
+   "format": "mosaique",
+   "texte": "Ça, c'était en deux mille dix-huit ! Depuis, les planteurs ont touché des prix records !",
+   "voix": "sceptique",
+   "medias": [
+    {
+     "media_ref": "wc:File:A cocoa farm in Ghana.jpg"
+    },
+    {
+     "media_ref": "pv:5372"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p085",
+   "format": "rush",
+   "texte": "Exact : fin deux mille vingt-quatre, le cacao s'envole.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:2475758"
+  },
+  {
+   "id": "p086",
+   "format": "schema",
+   "texte": "Plus de douze mille neuf cents dollars la tonne, cinq fois sa moyenne d'avant.",
+   "etiquette_schema": "Cours mondial du cacao (New York)",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 12900,
+    "decimales": 0,
+    "prefixe": "> ",
+    "suffixe": " $/t",
+    "legende": "record du cacao, décembre 2024",
+    "comparaison": "Moyenne 2012-2022 : ≈ 2 525 $/t",
+    "revele_a": 1.0,
+    "source": "Barchart, 23/10/2026 ; Trading Economics ; Coface"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 1.0,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pv:204306"
+  },
+  {
+   "id": "p087",
+   "format": "ecran_partage",
+   "texte": "Puis il dégringole : le deux mars deux mille vingt-six, deux mille huit cent quarante-six dollars.",
+   "cote": "droite",
+   "etiquette_schema": "Cours mondial du cacao (New York)",
+   "schema": {
+    "type": "comparaison",
+    "titre": "Cacao, dollars la tonne",
+    "unite": " $",
+    "decimales": 0,
+    "heros": "b",
+    "a": {
+     "label": "Record, déc. 2024",
+     "valeur": 12900
+    },
+    "b": {
+     "label": "2 mars 2026",
+     "valeur": 2846
+    },
+    "source": "Barchart via Yahoo Finance, 23/10/2026"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "pv:166289"
+  },
+  {
+   "id": "p088",
+   "format": "rush",
+   "texte": "Deux jours plus tard, la Côte d'Ivoire baisse le prix de ses planteurs.",
+   "surtitre": "4 mars 2026",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:133938"
+  },
+  {
+   "id": "p089",
+   "format": "ecran_partage",
+   "texte": "De deux mille huit cents à mille deux cents francs C F A le kilo.",
+   "cote": "gauche",
+   "etiquette_schema": "Prix garanti au planteur ivoirien",
+   "schema": {
+    "type": "comparaison",
+    "titre": "Prix au planteur, F CFA le kilo",
+    "unite": "",
+    "decimales": 0,
+    "heros": "b",
+    "a": {
+     "label": "Octobre 2025",
+     "valeur": 2800
+    },
+    "b": {
+     "label": "Depuis mars 2026",
+     "valeur": 1200
+    },
+    "source": "Financial Afrik, 02/10/2025 ; RFI via AllAfrica, 04/03/2026"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 2.6,
+     "volume": 0.5
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Hands holding cocoa beans.jpg"
+  },
+  {
+   "id": "p090",
+   "format": "rush",
+   "texte": "Moins cinquante-sept pour cent d'un coup,",
+   "punch": {
+    "a": 0.6,
+    "texte": "−57 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.6,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Portrait of cocoa farmer David Kebu Jnr at his farm east of Honiara. (10714443693).jpg"
+  },
+  {
+   "id": "p091",
+   "format": "mosaique",
+   "texte": "pour une filière qui fait vivre environ cinq millions de personnes.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Abidjan.JPG",
+     "legende": "Côte d'Ivoire"
+    },
+    {
+     "media_ref": "wc:File:USDA Ghana 2015-11-16 001.jpg",
+     "legende": "≈ 5 millions de personnes"
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe"
+  },
+  {
+   "id": "p092",
+   "format": "schema",
+   "texte": "Le ministre de l'Agriculture l'assume : ce sont les cours mondiaux qui l'obligent.",
+   "etiquette_schema": "Bruno Nabagné Koné, ministre ivoirien de l'Agriculture",
+   "schema": {
+    "type": "liste",
+    "titre": "Le ministre, 4 mars 2026",
+    "elements": [
+     {
+      "texte": "« Les cours du cacao sur le marché international nous obligent à procéder à un réajustement. »",
+      "heros": true
+     }
+    ],
+    "source": "RFI via AllAfrica, 04/03/2026"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Le Plateau depuis le Pont ADO – Abidjan.jpg"
+  },
+  {
+   "id": "p093",
+   "format": "rush",
+   "texte": "Reprends ta tablette noire du début, et refaisons le calcul.",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Dark chocolate bar.jpg"
+  },
+  {
+   "id": "p094",
+   "format": "schema",
+   "texte": "Alors, ta réponse du début : combien touche le planteur sur cette tablette ?",
+   "etiquette_schema": "La devinette du début",
+   "duree_min": 5,
+   "schema": {
+    "type": "devine",
+    "question": "Combien pour le planteur ?",
+    "choix": [
+     "3 c",
+     "13 c",
+     "50 c"
+    ],
+    "bonne": 1,
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.5,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa pod.jpg"
+  },
+  {
+   "id": "p095",
+   "format": "ecran_partage",
+   "texte": "Environ treize centimes : soixante-dix grammes de cacao, à mille deux cents francs le kilo.",
+   "cote": "gauche",
+   "etiquette_schema": "Le calcul",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 0.13,
+    "decimales": 2,
+    "prefixe": "≈ ",
+    "suffixe": " €",
+    "legende": "pour le planteur, sur une tablette à ≈ 2,60 €",
+    "comparaison": "70 g × 1,83 €/kg",
+    "revele_a": 0.5,
+    "source": "Calcul : 70 g de cacao (F50) × prix bord champ ivoirien (RFI 04/03/2026 ; Financial Afrik 02/10/2025), tablette ≈ 2,60 € (Que Choisir, mai 2026)"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 44
+  },
+  {
+   "id": "p096",
+   "format": "rush",
+   "texte": "Au prix record, c'était environ trente centimes : il a perdu plus de la moitié.",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "pi:2430115"
+  },
+  {
+   "id": "p097",
+   "format": "schema",
+   "texte": "Sa part du prix passe d'environ onze à cinq pour cent seulement.",
+   "etiquette_schema": "La part du planteur",
+   "schema": {
+    "type": "comparaison",
+    "titre": "Part du planteur, tablette à ≈ 2,60 €",
+    "unite": " %",
+    "decimales": 0,
+    "heros": "b",
+    "a": {
+     "label": "Au prix record (oct. 2025)",
+     "valeur": 11
+    },
+    "b": {
+     "label": "Depuis mars 2026",
+     "valeur": 5
+    },
+    "source": "Calcul : 70 g de cacao (F50) × prix bord champ ivoirien (RFI 04/03/2026 ; Financial Afrik 02/10/2025), tablette ≈ 2,60 € (Que Choisir, mai 2026)"
+   },
+   "ambiance": "revelation",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 40
+  },
+  {
+   "id": "p098",
+   "format": "mosaique",
+   "texte": "Les industriels ont acheté leur cacao au prix fort, il faut bien l'écouler !",
+   "voix": "sceptique",
+   "medias": [
+    {
+     "media_ref": "wc:File:Bagging Cocoa seeds.jpg"
+    },
+    {
+     "media_ref": "pi:6938015"
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe"
+  },
+  {
+   "id": "p099",
+   "format": "ecran_partage",
+   "texte": "C'est leur défense, et elle est en partie vraie : le cacao s'achète à l'avance.",
+   "cote": "gauche",
+   "etiquette_schema": "La défense de l'industrie",
+   "schema": {
+    "type": "liste",
+    "titre": "Syndicat du chocolat",
+    "elements": [
+     {
+      "texte": "« Le cacao destiné à Pâques 2026 a été acheté il y a de nombreux mois »",
+      "heros": true
+     },
+     {
+      "texte": "Achats à terme",
+      "valeur": "6 mois à 1 an"
+     }
+    ],
+    "source": "UFC-Que Choisir, 01/04/2026 ; RTBF, 01/04/2026"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa bean storage & packing building in São Tomé, early 1900s.png"
+  },
+  {
+   "id": "p100",
+   "format": "schema",
+   "texte": "Mais début novembre, le cacao est déjà remonté vers cinq mille quatre cents dollars.",
+   "etiquette_schema": "Cours mondial du cacao (New York)",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 5394,
+    "decimales": 0,
+    "prefixe": "≈ ",
+    "suffixe": " $/t",
+    "legende": "cours du cacao, 2 novembre 2026",
+    "comparaison": "Plus bas : 2 846 $ (2 mars 2026)",
+    "revele_a": 3.4,
+    "source": "Trading Economics, 02/11/2026"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pv:349091"
+  },
+  {
+   "id": "p101",
+   "format": "rush",
+   "texte": "Et le prix du planteur ivoirien, lui, est resté bloqué à mille deux cents francs.",
+   "surtitre": "Campagne 2026-2027 : 1 200 F CFA/kg",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa farmer David Kebu Jnr holding fermenting cocoa beans. (10687048615).jpg"
+  },
+  {
+   "id": "p102",
+   "format": "mosaique",
+   "texte": "Quand le cacao monte, ta tablette monte. Quand il baisse, c'est le planteur qui baisse.",
+   "medias": [
+    {
+     "media_ref": "pi:2329249",
+     "legende": "Ta tablette"
+    },
+    {
+     "media_ref": "wc:File:A farmer prunes a cocoa tree at a plantation in Deli Serdang North Sumatra (8289793323).jpg",
+     "legende": "Le planteur"
+    }
+   ],
+   "ambiance": "revelation",
+   "transition": "coupe"
+  },
+  {
+   "id": "p103",
+   "format": "schema",
+   "texte": "Premier suspect, le planteur : pas coupable, c'est lui qui a encaissé la baisse.",
+   "etiquette_schema": "Verdict n° 1",
+   "schema": {
+    "type": "suspect",
+    "nom": "Le planteur",
+    "accusation": "Il garde combien ?",
+    "numero": "01",
+    "verdict": "Victime"
+   },
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Cocoa nursery.jpg"
+  },
+  {
+   "id": "p104",
+   "format": "ecran_partage",
+   "texte": "Je peux enfin te lire les mots de Laurent Koné, cinquante-quatre ans.",
+   "cote": "gauche",
+   "etiquette_schema": "Le témoin",
+   "schema": {
+    "type": "liste",
+    "titre": "Laurent Koné, 54 ans",
+    "elements": [
+     {
+      "texte": "Planteur depuis 1996"
+     },
+     {
+      "texte": "Près de Guiglo, ouest ivoirien"
+     },
+     {
+      "texte": "Une bâche en guise de toit",
+      "heros": true
+     }
+    ],
+    "source": "AFP, 26/01/2026 (reprise Le360 Afrique)"
+   },
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "transition": "fondu",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:The village of Kakoya (Koya), Sierra Leone (West Africa) (2118689384).jpg"
+  },
+  {
+   "id": "p105",
+   "format": "rush",
+   "texte": "Il vit près de Guiglo, dans l'ouest du pays, dans une maison en torchis.",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Mud Brick House (21148182184).jpg"
+  },
+  {
+   "id": "p106",
+   "format": "mosaique",
+   "texte": "Pas d'électricité, et une simple bâche en guise de toit.",
+   "medias": [
+    {
+     "media_ref": "pi:4357650",
+     "legende": "Image d'illustration"
+    },
+    {
+     "media_ref": "wc:File:Houses at the Peul Bande village of Ibel in southeast Senegal (West Africa) (2206042333).jpg",
+     "legende": "Image d'illustration"
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe"
+  },
+  {
+   "id": "p107",
+   "format": "rush",
+   "texte": "En janvier deux mille vingt-six, au moment du prix record,",
+   "surtitre": "Janvier 2026 · prix record : 2 800 F CFA/kg",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 168
+  },
+  {
+   "id": "p108",
+   "format": "mosaique",
+   "texte": "il témoigne auprès de l'Agence France-Presse.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Ghanaian Cocoa Farmer on Phone.jpg",
+     "legende": "Image d'illustration"
+    },
+    {
+     "media_ref": "wc:File:Uche nabo village Umuchu.jpg",
+     "legende": "Image d'illustration"
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe"
+  },
+  {
+   "id": "p109",
+   "format": "ecran_partage",
+   "texte": "« J'ai commencé à planter en mille neuf cent quatre-vingt-seize, et jusqu'à présent,",
+   "cote": "gauche",
+   "etiquette_schema": "Laurent Koné, AFP, 26 janvier 2026",
+   "schema": {
+    "type": "liste",
+    "titre": "Laurent Koné",
+    "elements": [
+     {
+      "texte": "« J'ai commencé à planter en 1996 et jusqu'à présent je n'ai pas de toit car il n'y a pas l'argent »",
+      "heros": true
+     }
+    ],
+    "source": "AFP, 26/01/2026 (reprise Le360 Afrique, La Gazette France)"
+   },
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+   "extrait": 28
+  },
+  {
+   "id": "p110",
+   "format": "rush",
+   "texte": "je n'ai pas de toit, car il n'y a pas l'argent. »",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Farmer's cottage.jpg"
+  },
+  {
+   "id": "p111",
+   "format": "schema",
+   "texte": "Un sac d'engrais coûte vingt-deux mille francs, soit dix-huit kilos de cacao aujourd'hui.",
+   "etiquette_schema": "Le prix d'un sac d'engrais",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 18,
+    "decimales": 0,
+    "prefixe": "≈ ",
+    "suffixe": " kg",
+    "legende": "de cacao pour un sac d'engrais (22 000 F CFA)",
+    "comparaison": "à 1 200 F CFA le kilo",
+    "revele_a": 3.6,
+    "source": "AFP, 26/01/2026 ; calcul"
+   },
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Forest fertilizer.JPG"
+  },
+  {
+   "id": "p112",
+   "format": "rush",
+   "texte": "Et six semaines après ses mots, son prix était coupé de plus de moitié.",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Image d'illustration",
+     "a": 0.4
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "pi:2427493"
+  },
+  {
+   "id": "p113",
+   "format": "ecran_partage",
+   "texte": "Et il a cette phrase : « Je ne veux pas que mes enfants soient planteurs comme moi. »",
+   "cote": "droite",
+   "etiquette_schema": "Laurent Koné, AFP, 26 janvier 2026",
+   "schema": {
+    "type": "liste",
+    "titre": "Laurent Koné",
+    "elements": [
+     {
+      "texte": "« Je ne veux pas que mes enfants soient planteurs comme moi »",
+      "heros": true
+     },
+     {
+      "texte": "« parce que c'est une souffrance »"
+     }
+    ],
+    "source": "AFP, 26/01/2026 (reprise Le360 Afrique, La Gazette France)"
+   },
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "wc:File:Farmer David Kebu Jnr, son Snider Kebu and Cocoa Research Officer walk though Kebu farm, east of Honiara. (10694926153).jpg"
+  },
+  {
+   "id": "p114",
+   "format": "rush",
+   "texte": "« Parce que c'est une souffrance », ajoute-t-il, tout simplement.",
+   "ambiance": "emotion",
+   "transition": "coupe",
+   "media_ref": "pv:88683"
+  },
+  {
+   "id": "p115",
+   "format": "mosaique",
+   "texte": "",
+   "duree_min": 2.5,
+   "medias": [
+    {
+     "media_ref": "pi:4469210"
+    },
+    {
+     "media_ref": "pi:6554303"
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe"
+  },
+  {
+   "id": "p116",
+   "format": "schema",
+   "texte": "Alors, qui a pris la différence ? Les achats à terme, ou les marges ?",
+   "etiquette_schema": "La question qui reste",
+   "schema": {
+    "type": "liste",
+    "titre": "Qui a pris la différence ?",
+    "elements": [
+     {
+      "texte": "Les achats à terme ?"
+     },
+     {
+      "texte": "Les marges ?"
+     },
+     {
+      "texte": "À toi de juger",
+      "heros": true
+     }
+    ],
+    "source": "BASIC 2020 ; Syndicat du chocolat via UFC-Que Choisir, 01/04/2026"
+   },
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:7476669"
+  },
+  {
+   "id": "p117",
+   "format": "rush",
+   "texte": "Et la prochaine fois que le cacao baissera, tu crois que ton rayon suivra ?",
+   "ambiance": "tension",
+   "transition": "coupe",
+   "media_ref": "pi:2619380"
+  },
+  {
+   "id": "p118",
+   "format": "mosaique",
+   "texte": "Dis-le moi en commentaire, et regarde ta prochaine tablette un peu autrement.",
+   "medias": [
+    {
+     "media_ref": "pi:1277002"
+    },
+    {
+     "media_ref": "pv:149477"
+    }
+   ],
+   "ambiance": "emotion",
+   "transition": "coupe"
+  },
+  {
+   "id": "p119",
+   "format": "ecran_partage",
+   "texte": "Dans une prochaine vidéo, on ouvre une brique de lait U H T.",
+   "cote": "droite",
+   "etiquette_schema": "Prochaine enquête",
+   "schema": {
+    "type": "liste",
+    "titre": "Prochaine enquête",
+    "elements": [
+     {
+      "texte": "La brique de lait UHT",
+      "heros": true
+     },
+     {
+      "texte": "Qui touche quoi ?"
+     }
+    ],
+    "source": "Prochaine enquête (date non fixée)"
+   },
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "wc:File:-2019-09-07 UHT milk and specialist milk, Coop, Cromer.JPG"
+  },
+  {
+   "id": "p120",
+   "format": "titre",
+   "texte": "",
+   "type": "titre",
+   "titre": "Qui a pris la différence ?",
+   "sous_titre": "Prochaine enquête : le lait UHT",
+   "duree_min": 2.2,
+   "ambiance": "leger",
+   "transition": "coupe",
+   "media_ref": "pv:129723"
+  }
+ ],
+ "musiques": {
+  "tension": "public/musique/tension.mp3",
+  "emotion": "public/musique/emotion.mp3",
+  "revelation": "public/musique/revelation.mp3",
+  "leger": "public/musique/leger.mp3"
+ },
+ "rushes_a_refaire": [],
+ "respiration": 0.15
+}

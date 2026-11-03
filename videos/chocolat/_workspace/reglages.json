@@ -1,0 +1,634 @@
+{
+ "_episode": {
+  "titre": "Chocolat : le cacao s'effondre, ta tablette non",
+  "voix": {
+   "moteur": "edge",
+   "locuteur": "fr-FR-VivienneMultilingualNeural",
+   "debit": "+5%",
+   "pause_phrase": 0.15,
+   "voix_secondaires": {
+    "sceptique": "fr-FR-RemyMultilingualNeural"
+   }
+  },
+  "musique": {
+   "fichier": "../../public/sfx/musique-enquete.wav",
+   "volume": 0.22
+  },
+  "respiration": 0.15,
+  "musiques": {
+   "tension": "public/musique/tension.mp3",
+   "emotion": "public/musique/emotion.mp3",
+   "revelation": "public/musique/revelation.mp3",
+   "leger": "public/musique/leger.mp3"
+  },
+  "rushes_a_refaire": []
+ },
+ "p001": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 84
+ },
+ "p002": {
+  "media_ref": "wc:File:Chocolate in Japan (5137097169).jpg"
+ },
+ "p003": {
+  "media_ref": "pi:1312524"
+ },
+ "p004": {
+  "medias": [
+   {
+    "media_ref": "pi:824086",
+    "legende": "Le cacao"
+   },
+   {
+    "media_ref": "pi:4727134",
+    "legende": "Le chocolat"
+   }
+  ]
+ },
+ "p005": {
+  "media_ref": "pi:2424452"
+ },
+ "p006": {
+  "media_ref": "wc:File:Kokoo.mpg",
+  "extrait": 0
+ },
+ "p007": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Cracked fresh cocoa bean. (10690323016).jpg",
+    "legende": "Une graine amère"
+   },
+   {
+    "media_ref": "pi:2554",
+    "legende": "Une tablette qui claque"
+   }
+  ]
+ },
+ "p008": {
+  "media_ref": "pi:5394185"
+ },
+ "p009": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 4
+ },
+ "p010": {
+  "media_ref": "pi:6938440"
+ },
+ "p011": {
+  "media_ref": "pi:452911"
+ },
+ "p012": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 0
+ },
+ "p013": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 20
+ },
+ "p014": {
+  "media_ref": "pi:4724654"
+ },
+ "p015": {
+  "medias": [
+   {
+    "media_ref": "pi:10427626",
+    "legende": "30 à 40 graines"
+   },
+   {
+    "media_ref": "pi:2422040",
+    "legende": "La pulpe blanche"
+   }
+  ]
+ },
+ "p016": {
+  "media_ref": "pi:1529746"
+ },
+ "p017": {
+  "media_ref": "pi:1282894"
+ },
+ "p018": {
+  "media_ref": "wc:File:Cocoa Fermentation.webm",
+  "extrait": 0
+ },
+ "p019": {
+  "media_ref": "wc:File:Cocoa Fermentation.webm",
+  "extrait": 16
+ },
+ "p020": {
+  "media_ref": "pi:7026841"
+ },
+ "p021": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+    "extrait": 52,
+    "legende": "Étalées au soleil"
+   },
+   {
+    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+    "extrait": 84.5,
+    "legende": "Retournées à la main"
+   }
+  ]
+ },
+ "p022": {
+  "media_ref": "pi:7026842"
+ },
+ "p023": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 204
+ },
+ "p024": {
+  "media_ref": "pi:6554305"
+ },
+ "p025": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 199
+ },
+ "p026": {
+  "medias": [
+   {
+    "media_ref": "pv:24672",
+    "legende": "Côte d'Ivoire"
+   },
+   {
+    "media_ref": "wc:File:Plateau 2010, Abidjan.jpg",
+    "legende": "Abidjan"
+   }
+  ]
+ },
+ "p027": {
+  "media_ref": "wc:File:Weighing cocoa.jpg"
+ },
+ "p028": {
+  "media_ref": "pi:2430200"
+ },
+ "p029": {
+  "media_ref": "pi:3247447"
+ },
+ "p030": {
+  "medias": [
+   {
+    "media_ref": "pi:2870691",
+    "legende": "Octobre 2025"
+   },
+   {
+    "media_ref": "pi:2608928",
+    "legende": "… et après ?"
+   }
+  ]
+ },
+ "p031": {
+  "media_ref": "pi:6761956"
+ },
+ "p032": {
+  "media_ref": "pv:237249"
+ },
+ "p033": {
+  "media_ref": "pv:23008"
+ },
+ "p034": {
+  "media_ref": "pi:6959638"
+ },
+ "p035": {
+  "media_ref": "pv:129250"
+ },
+ "p036": {
+  "media_ref": "pv:138315"
+ },
+ "p037": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 48
+ },
+ "p038": {
+  "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. Chocolate manufacturing department, Wallace & Co. Machine for cracking and removing shells from cocoa beans after roasting - NARA - 31486420.jpg"
+ },
+ "p039": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Chocolat menier torrefaction.jpg",
+    "legende": "Torréfaction"
+   },
+   {
+    "media_ref": "pi:7001846",
+    "legende": "Fèves grillées"
+   }
+  ]
+ },
+ "p040": {
+  "media_ref": "pv:71743"
+ },
+ "p041": {
+  "medias": null,
+  "format": "ecran_partage",
+  "media_ref": "pi:10353275",
+  "cote": "gauche",
+  "etiquette_schema": "Schéma : ce que sort la presse",
+  "schema": {
+   "type": "processus",
+   "titre": "La presse",
+   "etapes": [
+    "Masse de cacao",
+    "Presse",
+    "Beurre de cacao",
+    "Poudre de cacao"
+   ],
+   "actif": 2,
+   "source": "World Cocoa Foundation, transformation du cacao"
+  }
+ },
+ "p042": {
+  "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20040726913).jpg"
+ },
+ "p043": {
+  "media_ref": "pv:129181"
+ },
+ "p044": {
+  "media_ref": "wc:File:Untempered chocolate.jpg"
+ },
+ "p045": {
+  "medias": [
+   {
+    "media_ref": "pv:29773",
+    "legende": "Suisse"
+   },
+   {
+    "media_ref": "wc:File:Peik cocolade-fabrik - no-nb digifoto 20160208 00312 NB NS 000594J.jpg",
+    "legende": "Une fabrique de chocolat"
+   }
+  ]
+ },
+ "p046": {
+  "media_ref": "pi:2201991"
+ },
+ "p047": {
+  "media_ref": "pv:7033"
+ },
+ "p048": {
+  "media_ref": "wc:File:Hershey Conche.jpg"
+ },
+ "p049": {
+  "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20661800155).jpg"
+ },
+ "p050": {
+  "medias": [
+   {
+    "media_ref": "pi:1514247",
+    "legende": "Le sucre"
+   },
+   {
+    "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. A machine for mixing sugar with chocolate, in a big chocolate factory - NARA - 31486440.jpg",
+    "legende": "Le mélange"
+   }
+  ]
+ },
+ "p051": {
+  "media_ref": "wc:File:Chocolate Tempering Machine.jpg"
+ },
+ "p052": {
+  "media_ref": "pv:98283"
+ },
+ "p053": {
+  "media_ref": "pi:3317143"
+ },
+ "p054": {
+  "media_ref": "pi:2562840"
+ },
+ "p055": {
+  "media_ref": "pv:385685"
+ },
+ "p056": {
+  "medias": [
+   {
+    "media_ref": "pi:1934",
+    "legende": "Moulage"
+   },
+   {
+    "media_ref": "pi:6935995",
+    "legende": "Démoulage"
+   },
+   {
+    "media_ref": "wc:File:Industries of War - Cocoa - INDUSTRIES OF WAR. Wrapping machines at work in a big chocolate factory where chocolate bars, the kind sent to France for the soldiers at the front, are made. The exceptional value of (...) - NARA - 31487943.jpg",
+    "legende": "Emballage"
+   }
+  ]
+ },
+ "p057": {
+  "media_ref": "wc:File:HallorenSchokoladenfabrik2.jpg"
+ },
+ "p058": {
+  "media_ref": "pi:1814134"
+ },
+ "p059": {
+  "media_ref": "pi:3422350"
+ },
+ "p060": {
+  "media_ref": "wc:File:Workers in a chocolate wrapping room.jpg"
+ },
+ "p061": {
+  "media_ref": "pi:183543"
+ },
+ "p062": {
+  "media_ref": "pv:143479"
+ },
+ "p063": {
+  "media_ref": "wc:File:A-la-rencontre-des-acteurs-de-la-filiere-cacao-realisatrice-mansita-konate-wiki-loves-africa-cote-divoire-fan-club.webm",
+  "extrait": 15
+ },
+ "p064": {
+  "medias": [
+   {
+    "media_ref": "pi:7024552"
+   },
+   {
+    "media_ref": "pv:21117"
+   }
+  ]
+ },
+ "p065": {
+  "media_ref": "pi:9472605"
+ },
+ "p066": {
+  "media_ref": "pv:69021"
+ },
+ "p067": {
+  "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 cashier checkout e.jpg"
+ },
+ "p068": {
+  "media_ref": "wc:File:Confectionery aisle with Norwegian chocolate bars from Freia, Nidar, etc. in REMA 1000 Supermarket, Osøyro, Hordaland, Norway 2018-03-19.jpg"
+ },
+ "p069": {
+  "media_ref": "pv:4730"
+ },
+ "p070": {
+  "media_ref": "pi:5610295"
+ },
+ "p071": {
+  "media_ref": "wc:File:Ministere de l'Economie et des Finance - Paris, France - panoramio.jpg"
+ },
+ "p072": {
+  "media_ref": "pi:2224998"
+ },
+ "p073": {
+  "media_ref": "wc:File:Various euro coins.jpg"
+ },
+ "p074": {
+  "media_ref": "pi:6777052"
+ },
+ "p075": {
+  "media_ref": "wc:File:2019-11-28 14 28 05 An unwrapped bar of Gertrude Hawk Chocolates Milk Chocolate Caramel in the Parkway Village section of Ewing Township, Mercer County, New Jersey.jpg"
+ },
+ "p076": {
+  "media_ref": "pv:14239"
+ },
+ "p077": {
+  "media_ref": "wc:File:Élysée Palace Sep. 2017 (1).jpg"
+ },
+ "p078": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2697.webm",
+    "extrait": 0
+   },
+   {
+    "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2703.webm",
+    "extrait": 0
+   }
+  ]
+ },
+ "p079": {
+  "media_ref": "pv:12669"
+ },
+ "p080": {
+  "media_ref": "pi:567234",
+  "schema": {
+   "type": "decomposition",
+   "titre": "1 € de chocolat noir (2018)",
+   "total": 100,
+   "unite": " c",
+   "decimales": 0,
+   "parts": [
+    {
+     "label": "Marque",
+     "valeur": 37
+    },
+    {
+     "label": "Supermarché",
+     "valeur": 32
+    },
+    {
+     "label": "TVA",
+     "valeur": 5
+    },
+    {
+     "label": "Négociant",
+     "valeur": 7
+    },
+    {
+     "label": "Broyeur",
+     "valeur": 6
+    },
+    {
+     "label": "Sucre…",
+     "valeur": 2
+    },
+    {
+     "label": "Planteur",
+     "valeur": 11,
+     "heros": true
+    }
+   ],
+   "source": "BASIC 2020, données 2018, tablette noire ; TVA 5,5 % calculée"
+  },
+  "etiquette_schema": "Ton euro de chocolat noir, découpé"
+ },
+ "p081": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 68
+ },
+ "p082": {
+  "media_ref": "pv:1735"
+ },
+ "p083": {
+  "media_ref": "pi:5202138"
+ },
+ "p084": {
+  "medias": [
+   {
+    "media_ref": "wc:File:A cocoa farm in Ghana.jpg"
+   },
+   {
+    "media_ref": "pv:5372"
+   }
+  ]
+ },
+ "p085": {
+  "media_ref": "pi:2475758"
+ },
+ "p086": {
+  "media_ref": "pv:204306"
+ },
+ "p087": {
+  "media_ref": "pv:166289"
+ },
+ "p088": {
+  "media_ref": "pv:133938"
+ },
+ "p089": {
+  "media_ref": "wc:File:Hands holding cocoa beans.jpg"
+ },
+ "p090": {
+  "media_ref": "wc:File:Portrait of cocoa farmer David Kebu Jnr at his farm east of Honiara. (10714443693).jpg"
+ },
+ "p091": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Abidjan.JPG",
+    "legende": "Côte d'Ivoire"
+   },
+   {
+    "media_ref": "wc:File:USDA Ghana 2015-11-16 001.jpg",
+    "legende": "≈ 5 millions de personnes"
+   }
+  ]
+ },
+ "p092": {
+  "media_ref": "wc:File:Le Plateau depuis le Pont ADO – Abidjan.jpg"
+ },
+ "p093": {
+  "media_ref": "wc:File:Dark chocolate bar.jpg"
+ },
+ "p094": {
+  "media_ref": "wc:File:Cocoa pod.jpg"
+ },
+ "p095": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 44
+ },
+ "p096": {
+  "media_ref": "pi:2430115"
+ },
+ "p097": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 40
+ },
+ "p098": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Bagging Cocoa seeds.jpg"
+   },
+   {
+    "media_ref": "pi:6938015"
+   }
+  ]
+ },
+ "p099": {
+  "media_ref": "wc:File:Cocoa bean storage & packing building in São Tomé, early 1900s.png"
+ },
+ "p100": {
+  "media_ref": "pv:349091"
+ },
+ "p101": {
+  "media_ref": "wc:File:Cocoa farmer David Kebu Jnr holding fermenting cocoa beans. (10687048615).jpg"
+ },
+ "p102": {
+  "medias": [
+   {
+    "media_ref": "pi:2329249",
+    "legende": "Ta tablette"
+   },
+   {
+    "media_ref": "wc:File:A farmer prunes a cocoa tree at a plantation in Deli Serdang North Sumatra (8289793323).jpg",
+    "legende": "Le planteur"
+   }
+  ]
+ },
+ "p103": {
+  "media_ref": "wc:File:Cocoa nursery.jpg"
+ },
+ "p104": {
+  "media_ref": "wc:File:The village of Kakoya (Koya), Sierra Leone (West Africa) (2118689384).jpg"
+ },
+ "p105": {
+  "media_ref": "wc:File:Mud Brick House (21148182184).jpg"
+ },
+ "p106": {
+  "medias": [
+   {
+    "media_ref": "pi:4357650",
+    "legende": "Image d'illustration"
+   },
+   {
+    "media_ref": "wc:File:Houses at the Peul Bande village of Ibel in southeast Senegal (West Africa) (2206042333).jpg",
+    "legende": "Image d'illustration"
+   }
+  ]
+ },
+ "p107": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 168
+ },
+ "p108": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Ghanaian Cocoa Farmer on Phone.jpg",
+    "legende": "Image d'illustration"
+   },
+   {
+    "media_ref": "wc:File:Uche nabo village Umuchu.jpg",
+    "legende": "Image d'illustration"
+   }
+  ]
+ },
+ "p109": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 28
+ },
+ "p110": {
+  "media_ref": "wc:File:Farmer's cottage.jpg"
+ },
+ "p111": {
+  "media_ref": "wc:File:Forest fertilizer.JPG"
+ },
+ "p112": {
+  "media_ref": "pi:2427493"
+ },
+ "p113": {
+  "media_ref": "wc:File:Farmer David Kebu Jnr, son Snider Kebu and Cocoa Research Officer walk though Kebu farm, east of Honiara. (10694926153).jpg"
+ },
+ "p114": {
+  "media_ref": "pv:88683"
+ },
+ "p115": {
+  "medias": [
+   {
+    "media_ref": "pi:4469210"
+   },
+   {
+    "media_ref": "pi:6554303"
+   }
+  ]
+ },
+ "p116": {
+  "media_ref": "pi:7476669"
+ },
+ "p117": {
+  "media_ref": "pi:2619380"
+ },
+ "p118": {
+  "medias": [
+   {
+    "media_ref": "pi:1277002"
+   },
+   {
+    "media_ref": "pv:149477"
+   }
+  ]
+ },
+ "p119": {
+  "media_ref": "wc:File:-2019-09-07 UHT milk and specialist milk, Coop, Cromer.JPG"
+ },
+ "p120": {
+  "media_ref": "pv:129723"
+ }
+}

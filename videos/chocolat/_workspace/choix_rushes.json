@@ -1,0 +1,559 @@
+{
+ "p001": {
+  "media_ref": "pi:7001846",
+  "pourquoi": "tas de fèves de cacao torréfiées, gros plan (aucune vidéo cacao : V = café, abstrait)"
+ },
+ "p002": {
+  "media_ref": "wc:File:Chocolate in Japan (5137097169).jpg",
+  "pourquoi": "rayon de tablettes de chocolat en magasin ; logos petits, à flouter si gênant"
+ },
+ "p003": {
+  "media_ref": "pi:1312524",
+  "pourquoi": "tablette de chocolat noir dans son alu, carrés nets"
+ },
+ "p008": {
+  "media_ref": "pi:5394185",
+  "pourquoi": "mains de planteur ouvrant une cabosse à la machette, sans visage"
+ },
+ "p009": {
+  "media_ref": "wc:File:Cocoa farmer David Kebu Jnr holding the finished product, dried cocoa beans ready for export. (10687070725).jpg",
+  "pourquoi": "mains d'un planteur pleines de fèves séchées, sans visage"
+ },
+ "p010": {
+  "media_ref": "pi:6938440",
+  "pourquoi": "tablettes de chocolat noir sur fond sombre (fond flouté)"
+ },
+ "p011": {
+  "media_ref": "pi:452911",
+  "pourquoi": "planteur tenant une cabosse jaune sur l'arbre"
+ },
+ "p019": {
+  "media_ref": "wc:File:Fermentation of cacao seeds.jpg",
+  "pourquoi": "fèves fraîches en caisse de fermentation sous feuilles de bananier. NB : C2 wc:File:Cocoa Fermentation.webm (vidéo) absente de la planche, non vérifiable"
+ },
+ "p020": {
+  "media_ref": "pi:7026841",
+  "pourquoi": "fèves de cacao en fermentation, gros plan (tags fermentation, Ghana)"
+ },
+ "p021": {
+  "medias": [
+   "wc:File:Medium close up image of David Kebu Jnr holding cocoa beans drying in the sun. (10703178735).jpg",
+   "wc:File:Cocoa seeds being dried.jpg"
+  ],
+  "pourquoi": "1) fèves qui sèchent au soleil en main ; 2) fèves étalées au sol remuées au pied/à la main — aucun râteau visible : changer la légende 2 en « Retournées à la main »"
+ },
+ "p022": {
+  "media_ref": "pi:7026842",
+  "pourquoi": "lit de fèves de cacao étalées qui sèchent (fond flouté)"
+ },
+ "p023": {
+  "media_ref": "pi:6347192",
+  "pourquoi": "fèves de cacao sèches et bol blanc, très lisible"
+ },
+ "p024": {
+  "media_ref": "pi:6554305",
+  "pourquoi": "tas de cabosses récoltées dans l'herbe (fond flouté)"
+ },
+ "p025": {
+  "media_ref": "wc:File:Raymond Vava holding a cracked open cocoa pod. (10716454435).jpg",
+  "pourquoi": "mains tenant une cabosse ouverte, pulpe blanche visible"
+ },
+ "p027": {
+  "media_ref": "wc:File:Weighing cocoa.jpg",
+  "pourquoi": "balance de pesée et sacs de cacao en jute ; un sac porte un marquage, le recadrer"
+ },
+ "p028": {
+  "media_ref": "pi:2430200",
+  "pourquoi": "deux mains pleines de fèves de cacao, gros plan"
+ },
+ "p029": {
+  "media_ref": "pi:3247447",
+  "pourquoi": "planteuse souriante, bras chargés de cabosses, plantation"
+ },
+ "p031": {
+  "media_ref": "pi:6761956",
+  "pourquoi": "cabosses mûres sur la branche, plantation (fond flouté ; pris hors liste p031, ses candidats = riz, thé, café)"
+ },
+ "p032": {
+  "media_ref": "pv:237249",
+  "pourquoi": "cargo naviguant en pleine mer calme, vidéo 18 s"
+ },
+ "p033": {
+  "media_ref": "pv:23008",
+  "pourquoi": "port à conteneurs et cargo à quai, vidéo 20 s (export)"
+ },
+ "p034": {
+  "media_ref": "pi:6959638",
+  "pourquoi": "ouvrier charge des sacs de jute sur un pick-up depuis l'entrepôt ; tags café mais contenu invisible, sacs génériques"
+ },
+ "p037": {
+  "media_ref": "pi:2870691",
+  "pourquoi": "sacs de jute de fèves de cacao empilés (Ghana)"
+ },
+ "p038": {
+  "media_ref": "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. Chocolate manufacturing department, Wallace & Co. Machine for cracking and removing shells from cocoa beans after roasting - NARA - 31486420.jpg",
+  "pourquoi": "usine de chocolat ancienne : machine qui concasse les fèves torréfiées"
+ },
+ "p039": {
+  "medias": [
+   "wc:File:Chocolat menier torrefaction.jpg",
+   "pi:7001846"
+  ],
+  "pourquoi": "salle de torréfaction Menier, puis fèves de cacao grillées"
+ },
+ "p040": {
+  "media_ref": "pv:71743",
+  "pourquoi": "chocolat liquide versé (fond flouté, évoque la pâte)"
+ },
+ "p045": {
+  "medias": [
+   "pv:29773",
+   "wc:File:Peik cocolade-fabrik - no-nb digifoto 20160208 00312 NB NS 000594J.jpg"
+  ],
+  "pourquoi": "village suisse enneigé avec drapeau suisse, puis ouvrières d'une fabrique de chocolat ancienne"
+ },
+ "p046": {
+  "media_ref": "pi:2201991",
+  "pourquoi": "tablette de lait dans son emballage alu, fond blanc"
+ },
+ "p047": {
+  "media_ref": "pv:7033",
+  "pourquoi": "timelapse de Berne, cathédrale au coucher du soleil"
+ },
+ "p048": {
+  "media_ref": "wc:File:Hershey Conche.jpg",
+  "pourquoi": "vraie conche à chocolat (machine à rouleau, Hershey)"
+ },
+ "p050": {
+  "medias": [
+   "pi:1514247",
+   "wc:File:Industries of War - Candy - INDUSTRIES OF WAR. A machine for mixing sugar with chocolate, in a big chocolate factory - NARA - 31486440.jpg"
+  ],
+  "pourquoi": "tas de sucre qui tombe, puis machine qui mélange sucre et chocolat"
+ },
+ "p051": {
+  "media_ref": "wc:File:Chocolate Tempering Machine.jpg",
+  "pourquoi": "tempéreuse à chocolat : cuve de chocolat fondu"
+ },
+ "p052": {
+  "media_ref": "pv:98283",
+  "pourquoi": "chocolat fondu qui éclabousse (fond flouté, rendu 3D réaliste)"
+ },
+ "p054": {
+  "media_ref": "pi:2562840",
+  "pourquoi": "carrés de chocolat noir brillants empilés, fond noir"
+ },
+ "p055": {
+  "media_ref": "pv:385685",
+  "pourquoi": "tablette de chocolat noir cassée empilée, vidéo 8 s"
+ },
+ "p057": {
+  "media_ref": "wc:File:HallorenSchokoladenfabrik2.jpg",
+  "pourquoi": "ouvrières en charlotte dans une chocolaterie moderne (Halloren)"
+ },
+ "p058": {
+  "media_ref": "pi:1814134",
+  "pourquoi": "tour de tablettes de chocolat empilées (fond flouté)"
+ },
+ "p059": {
+  "media_ref": "pi:3422350",
+  "pourquoi": "gros tas de tablettes noir, lait, blanc empilées"
+ },
+ "p060": {
+  "media_ref": "wc:File:Workers in a chocolate wrapping room.jpg",
+  "pourquoi": "salle d'emballage de chocolaterie, ouvrières en rang"
+ },
+ "p061": {
+  "media_ref": "pi:183543",
+  "pourquoi": "tablettes de chocolat noir cassées, sans marque visible"
+ },
+ "p062": {
+  "media_ref": "pv:143479",
+  "pourquoi": "vue aérienne : camion dans un dépôt logistique"
+ },
+ "p063": {
+  "media_ref": "pv:1735",
+  "pourquoi": "chariots de supermarché, clients qui passent"
+ },
+ "p064": {
+  "medias": [
+   "pi:7024552",
+   "pv:21117"
+  ],
+  "pourquoi": "cliente au rayon confiseries, puis caisses de supermarché"
+ },
+ "p065": {
+  "media_ref": "pi:9472605",
+  "pourquoi": "lapins de Pâques en chocolat emballés or, en rayon"
+ },
+ "p078": {
+  "medias": [
+   "pi:1312524",
+   "pv:98283"
+  ],
+  "pourquoi": "Tablette dans son alu, puis chocolat fondu qui éclabousse"
+ },
+ "p079": {
+  "media_ref": "pv:12669",
+  "pourquoi": "Chocolats en gros plan, fond de carte titre"
+ },
+ "p081": {
+  "media_ref": "pi:3247447",
+  "pourquoi": "Planteuse africaine portant des cabosses, plantation de cacao"
+ },
+ "p082": {
+  "media_ref": "pv:1735",
+  "pourquoi": "Chariots de supermarché alignés, clients en magasin"
+ },
+ "p092": {
+  "media_ref": "wc:File:Le Plateau depuis le Pont ADO – Abidjan.jpg",
+  "pourquoi": "Tours du Plateau d'Abidjan de nuit, lagune"
+ },
+ "p093": {
+  "media_ref": "wc:File:Dark chocolate bar.jpg",
+  "pourquoi": "Tablette noire déballée sur son papier alu"
+ },
+ "p094": {
+  "media_ref": "wc:File:Cocoa pod.jpg",
+  "pourquoi": "Cabosses de cacao rouges accrochées au tronc"
+ },
+ "p105": {
+  "media_ref": "wc:File:Mud Brick House (21148182184).jpg",
+  "pourquoi": "Maison en briques de terre, village tropical"
+ },
+ "p109": {
+  "media_ref": "pi:5394185",
+  "pourquoi": "Mains ouvrant une cabosse de cacao, sans visage"
+ },
+ "p117": {
+  "media_ref": "pi:2619380",
+  "pourquoi": "Rayon de supermarché, allée pleine de produits"
+ },
+ "p118": {
+  "medias": [
+   "pi:1277002",
+   "pv:149477"
+  ],
+  "pourquoi": "Tablette ouverte, puis femme qui croque du chocolat"
+ },
+ "p119": {
+  "media_ref": "wc:File:-2019-09-07 UHT milk and specialist milk, Coop, Cromer.JPG",
+  "pourquoi": "Rayon de briques de lait UHT en magasin"
+ },
+ "p120": {
+  "media_ref": "pv:129723",
+  "pourquoi": "Lait versé dans un verre, fond de titre"
+ },
+ "p004": {
+  "medias": [
+   "pi:824086",
+   "pi:4727134"
+  ],
+  "pourquoi": "sac de jute CACAO, puis carrés de chocolat"
+ },
+ "p005": {
+  "media_ref": "pi:2424452",
+  "pourquoi": "fond : cabosse jaune sur tronc, Ghana"
+ },
+ "p006": {
+  "media_ref": "pi:1529742",
+  "pourquoi": "cabosse mûre pendue à une branche de cacaoyer"
+ },
+ "p007": {
+  "medias": [
+   "wc:File:Cracked fresh cocoa bean. (10690323016).jpg",
+   "pi:2554"
+  ],
+  "pourquoi": "fève fraîche ouverte en main, tablette cassée"
+ },
+ "p012": {
+  "media_ref": "wc:File:Cacao fruit in Côte d'Ivoire (11).JPG",
+  "pourquoi": "cacaoyer en Côte d'Ivoire, cabosses vertes"
+ },
+ "p013": {
+  "media_ref": "pi:4078633",
+  "pourquoi": "cabosses orange poussant directement sur le tronc"
+ },
+ "p014": {
+  "media_ref": "pi:4724654",
+  "pourquoi": "cabosse ouverte en deux, lame posée au-dessus"
+ },
+ "p015": {
+  "medias": [
+   "pi:10427626",
+   "pi:2422040"
+  ],
+  "pourquoi": "cabosse pleine de graines, pulpe blanche en main"
+ },
+ "p016": {
+  "media_ref": "pi:1529746",
+  "pourquoi": "fond flou : cabosse orange sur l'arbre"
+ },
+ "p017": {
+  "media_ref": "pi:1282894",
+  "pourquoi": "fèves de cacao brutes sur bois blanc"
+ },
+ "p018": {
+  "ko": true,
+  "nouvelles_requetes": [
+   "cocoa beans fermenting heap covered banana leaves",
+   "cocoa bean fermentation wooden box farmer Ghana",
+   "farmer covering cocoa beans with banana leaves"
+  ],
+  "pourquoi": "aucun tas de fèves sous feuilles de bananier libre ; repli possible pv:136466 (bananiers seuls, sans cacao)"
+ },
+ "p035": {
+  "media_ref": "pv:129250",
+  "pourquoi": "vidéo : grues portuaires et porte-conteneurs à l'aube"
+ },
+ "p036": {
+  "media_ref": "pv:138315",
+  "pourquoi": "vidéo : tas de pièces en euros"
+ },
+ "p043": {
+  "media_ref": "pv:129181",
+  "pourquoi": "fond vidéo : cargo au coucher de soleil"
+ },
+ "p044": {
+  "media_ref": "wc:File:Untempered chocolate.jpg",
+  "pourquoi": "pâte de chocolat granuleuse non tempérée en bac"
+ },
+ "p066": {
+  "media_ref": "pv:69021",
+  "pourquoi": "vidéo : figurines de Pâques en chocolat, panier d'œufs"
+ },
+ "p067": {
+  "media_ref": "wc:File:REMA 1000 Supermarket interior grocery store Tønsberg, Norway 2017-11-03 cashier checkout e.jpg",
+  "pourquoi": "caisse de supermarché avec présentoir de chocolats"
+ },
+ "p068": {
+  "media_ref": "wc:File:Confectionery aisle with Norwegian chocolate bars from Freia, Nidar, etc. in REMA 1000 Supermarket, Osøyro, Hordaland, Norway 2018-03-19.jpg",
+  "pourquoi": "rayon de tablettes de chocolat en supermarché"
+ },
+ "p069": {
+  "media_ref": "pv:4730",
+  "pourquoi": "fond vidéo : clients dans un magasin alimentaire"
+ },
+ "p070": {
+  "media_ref": "pi:5610295",
+  "pourquoi": "imprimante de caisse qui sort un ticket"
+ },
+ "p071": {
+  "media_ref": "wc:File:Ministere de l'Economie et des Finance - Paris, France - panoramio.jpg",
+  "pourquoi": "fond : ministère des Finances, Bercy, Paris"
+ },
+ "p072": {
+  "media_ref": "pi:2224998",
+  "pourquoi": "chocolat noir haché en gros morceaux"
+ },
+ "p073": {
+  "media_ref": "wc:File:Various euro coins.jpg",
+  "pourquoi": "quelques centimes d'euro dans une main"
+ },
+ "p074": {
+  "media_ref": "pi:6777052",
+  "pourquoi": "fond : morceaux de tablettes lait, noir, blanc"
+ },
+ "p075": {
+  "media_ref": "wc:File:2019-11-28 14 28 05 An unwrapped bar of Gertrude Hawk Chocolates Milk Chocolate Caramel in the Parkway Village section of Ewing Township, Mercer County, New Jersey.jpg",
+  "pourquoi": "tablette de chocolat au lait entière, déballée"
+ },
+ "p076": {
+  "media_ref": "pv:14239",
+  "pourquoi": "vidéo : on tranche un pain sur planche"
+ },
+ "p083": {
+  "media_ref": "pi:5202138",
+  "pourquoi": "Chariot dans un rayon de supermarché (fond flouté)"
+ },
+ "p084": {
+  "medias": [
+   "wc:File:A cocoa farm in Ghana.jpg",
+   "pv:5372"
+  ],
+  "pourquoi": "Planteur sur fèves au Ghana ; courbe et pièces qui montent"
+ },
+ "p085": {
+  "media_ref": "pi:2475758",
+  "pourquoi": "Fèves de cacao et carrés de chocolat"
+ },
+ "p086": {
+  "media_ref": "pv:204306",
+  "pourquoi": "Écran boursier bleu, cours qui défilent (vidéo)"
+ },
+ "p087": {
+  "media_ref": "pv:166289",
+  "pourquoi": "Barres rouges qui dégringolent (vidéo)"
+ },
+ "p088": {
+  "media_ref": "pv:133938",
+  "pourquoi": "Drapeau ivoirien qui flotte (vidéo, l'État décide)"
+ },
+ "p089": {
+  "media_ref": "wc:File:Hands holding cocoa beans.jpg",
+  "pourquoi": "Mains pleines de fèves de cacao séchées"
+ },
+ "p090": {
+  "media_ref": "wc:File:Portrait of cocoa farmer David Kebu Jnr at his farm east of Honiara. (10714443693).jpg",
+  "pourquoi": "Planteur debout dans sa cacaoyère, plan large"
+ },
+ "p095": {
+  "media_ref": "pi:1282894",
+  "pourquoi": "Une poignée de fèves de cacao"
+ },
+ "p096": {
+  "media_ref": "pi:2430115",
+  "pourquoi": "Planteuse étale les fèves de cacao au séchage"
+ },
+ "p097": {
+  "media_ref": "pi:1529746",
+  "pourquoi": "Cabosse de cacao sur l'arbre (fond flouté)"
+ },
+ "p098": {
+  "medias": [
+   "wc:File:Bagging Cocoa seeds.jpg",
+   "pi:6938015"
+  ],
+  "pourquoi": "Ensachage de fèves en entrepôt ; tablettes de chocolat noir"
+ },
+ "p099": {
+  "media_ref": "wc:File:Cocoa bean storage & packing building in São Tomé, early 1900s.png",
+  "pourquoi": "Entrepôt de stockage de cacao (photo historique)"
+ },
+ "p100": {
+  "media_ref": "pv:349091",
+  "pourquoi": "Homme suit des cours sur ordinateur (vidéo, fond flouté)"
+ },
+ "p101": {
+  "media_ref": "wc:File:Cocoa farmer David Kebu Jnr holding fermenting cocoa beans. (10687048615).jpg",
+  "pourquoi": "Main de planteur pleine de fèves fraîches"
+ },
+ "p102": {
+  "medias": [
+   "pi:2329249",
+   "wc:File:A farmer prunes a cocoa tree at a plantation in Deli Serdang North Sumatra (8289793323).jpg"
+  ],
+  "pourquoi": "Tablette de chocolat ; planteur taille un cacaoyer"
+ },
+ "p103": {
+  "media_ref": "wc:File:Cocoa nursery.jpg",
+  "pourquoi": "Planteurs au travail dans une pépinière de cacaoyers"
+ },
+ "p104": {
+  "media_ref": "wc:File:The village of Kakoya (Koya), Sierra Leone (West Africa) (2118689384).jpg",
+  "pourquoi": "Village rural d'Afrique de l'Ouest, sans visage"
+ },
+ "p110": {
+  "media_ref": "wc:File:Farmer's cottage.jpg",
+  "pourquoi": "Cabane de planteur en terre, cacaoyère, séchoirs"
+ },
+ "p111": {
+  "media_ref": "wc:File:Forest fertilizer.JPG",
+  "pourquoi": "Gros sacs d'engrais empilés (fond flouté)"
+ },
+ "p112": {
+  "media_ref": "pi:2427493",
+  "pourquoi": "Tas de fèves de cacao au séchage"
+ },
+ "p113": {
+  "media_ref": "wc:File:Farmer David Kebu Jnr, son Snider Kebu and Cocoa Research Officer walk though Kebu farm, east of Honiara. (10694926153).jpg",
+  "pourquoi": "Planteur et son fils marchent dans la cacaoyère"
+ },
+ "p114": {
+  "media_ref": "pv:88683",
+  "pourquoi": "Herbes en contre-jour au soleil couchant, ambiance"
+ },
+ "p115": {
+  "medias": [
+   "pi:4469210",
+   "pi:6554303"
+  ],
+  "pourquoi": "Cabosses rouges ; cabosses pendues à l'arbre"
+ },
+ "p116": {
+  "media_ref": "pi:7476669",
+  "pourquoi": "Morceaux de chocolat noir (fond flouté)"
+ },
+ "p026": {
+  "medias": [
+   "pv:24672",
+   "wc:File:Plateau 2010, Abidjan.jpg"
+  ],
+  "pourquoi": "drapeau ivoirien qui flotte (gardé), puis tours du Plateau d'Abidjan sur la lagune"
+ },
+ "p030": {
+  "medias": [
+   "pi:2870691",
+   "pi:2608928"
+  ],
+  "pourquoi": "sacs de jute de cacao empilés (gardé), puis sacs marqués « CACAO » (marquage de plantation, pas une marque de produit)"
+ },
+ "p041": {
+  "medias": [
+   "pi:380702",
+   "pi:10353275"
+  ],
+  "pourquoi": "moins faux possible : 1) blocs jaune pâle (chocolat blanc, visuellement proche du beurre de cacao) ; 2) table de cacao : bol de poudre de cacao (en haut à gauche, à annoter), cabosses, fèves. Aucun vrai beurre ni vraie poudre isolés dans le stock"
+ },
+ "p042": {
+  "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20040726913).jpg",
+  "pourquoi": "vraie salle de broyeurs à cacao, photo de 1907 (rangée de moulins) ; recadrer pour masquer le texte du livre en haut à droite et en bas"
+ },
+ "p049": {
+  "media_ref": "wc:File:Cocoa and chocolate, a short history of their production and use (1907) (20661800155).jpg",
+  "pourquoi": "moins faux : machines de chocolaterie (1907) qui brassent la pâte, ouvriers ; pas une conche moderne identifiée, surtitre conseillé « Chocolaterie, 1907 »"
+ },
+ "p053": {
+  "media_ref": "pi:3317143",
+  "pourquoi": "moins faux : chocolat fondu sur un fouet + carrés de chocolat (le beurre de cacao qui va cristalliser) ; aucun beurre de cacao pur disponible"
+ },
+ "p056": {
+  "medias": [
+   "pi:1934",
+   "pi:6935995",
+   "wc:File:Industries of War - Cocoa - INDUSTRIES OF WAR. Wrapping machines at work in a big chocolate factory where chocolate bars, the kind sent to France for the soldiers at the front, are made. The exceptional value of (...) - NARA - 31487943.jpg"
+  ],
+  "pourquoi": "1) Moulage : chocolat fondu lisse (ce qu'on coule, pas de moule visible) ; 2) Démoulage : tablettes noires brillantes empilées (sorties de moule) ; 3) Emballage : machines d'emballage NARA (gardé)"
+ },
+ "p077": {
+  "media_ref": "wc:File:Élysée Palace Sep. 2017 (1).jpg",
+  "pourquoi": "Palais de l'Élysée, façade, drapeaux tricolores visibles ; visiteurs petits, de loin"
+ },
+ "p080": {
+  "media_ref": "pi:567234",
+  "zone": [
+   10,
+   88
+  ],
+  "zone_y": [
+   35,
+   69
+  ],
+  "pourquoi": "secours de choix-C : tablette sur fond blanc, entamée, vue 3/4 (mesure sur vignette recadrée 16:9 au centre). Rien de plus propre : la Hershey entière (wc) porte le logo sur chaque carré"
+ },
+ "p091": {
+  "medias": [
+   "wc:File:Abidjan.JPG",
+   "wc:File:USDA Ghana 2015-11-16 001.jpg"
+  ],
+  "pourquoi": "1) Abidjan vue d'en haut (Côte d'Ivoire) ; 2) groupe de planteurs tenant des cabosses (Ghana, illustration ; une responsable américaine au centre, ne pas la nommer)"
+ },
+ "p106": {
+  "medias": [
+   "pi:4357650",
+   "wc:File:Houses at the Peul Bande village of Ibel in southeast Senegal (West Africa) (2206042333).jpg"
+  ],
+  "pourquoi": "moins faux : 1) village rural africain (Kivu) vu d'en haut, toits de tôle/bâche ; 2) cases d'un village ouest-africain au crépuscule, sans électricité. Aucune vraie bâche-toit trouvée"
+ },
+ "p107": {
+  "media_ref": "wc:File:Theobroma cacao 455112042.jpg",
+  "pourquoi": "cacaoyère en sous-bois, arbres avec cabosses orange ; personne à l'image (ok pour Laurent)"
+ },
+ "p108": {
+  "medias": [
+   "wc:File:Ghanaian Cocoa Farmer on Phone.jpg",
+   "wc:File:Uche nabo village Umuchu.jpg"
+  ],
+  "pourquoi": "1) planteur au téléphone, visage coupé au-dessus de la bouche (il témoigne) ; 2) chemin de terre rouge d'un village ouest-africain, deux personnes de dos"
+ }
+}

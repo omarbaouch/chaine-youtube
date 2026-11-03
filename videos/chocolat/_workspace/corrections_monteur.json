@@ -1,0 +1,153 @@
+{
+ "p080": {
+  "schema": {
+   "type": "decomposition",
+   "titre": "1 € de chocolat noir (2018)",
+   "total": 100,
+   "unite": " c",
+   "decimales": 0,
+   "parts": [
+    {
+     "label": "Marque",
+     "valeur": 37
+    },
+    {
+     "label": "Supermarché",
+     "valeur": 32
+    },
+    {
+     "label": "TVA",
+     "valeur": 5
+    },
+    {
+     "label": "Négociant",
+     "valeur": 7
+    },
+    {
+     "label": "Broyeur",
+     "valeur": 6
+    },
+    {
+     "label": "Sucre…",
+     "valeur": 2
+    },
+    {
+     "label": "Planteur",
+     "valeur": 11,
+     "heros": true
+    }
+   ],
+   "source": "BASIC 2020, données 2018, tablette noire ; TVA 5,5 % calculée"
+  },
+  "etiquette_schema": "Ton euro de chocolat noir, découpé"
+ },
+ "p001": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 84
+ },
+ "p006": {
+  "media_ref": "wc:File:Kokoo.mpg",
+  "extrait": 0
+ },
+ "p012": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 0
+ },
+ "p013": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 20
+ },
+ "p009": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 4
+ },
+ "p019": {
+  "media_ref": "wc:File:Cocoa Fermentation.webm",
+  "extrait": 16
+ },
+ "p018": {
+  "media_ref": "wc:File:Cocoa Fermentation.webm",
+  "extrait": 0
+ },
+ "p023": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 204
+ },
+ "p025": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 199
+ },
+ "p107": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 168
+ },
+ "p081": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 68
+ },
+ "p097": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 40
+ },
+ "p095": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 44
+ },
+ "p037": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 48
+ },
+ "p109": {
+  "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+  "extrait": 28
+ },
+ "p063": {
+  "media_ref": "wc:File:A-la-rencontre-des-acteurs-de-la-filiere-cacao-realisatrice-mansita-konate-wiki-loves-africa-cote-divoire-fan-club.webm",
+  "extrait": 15
+ },
+ "p021": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+    "extrait": 52,
+    "legende": "Étalées au soleil"
+   },
+   {
+    "media_ref": "wc:File:Production de cacao ivorienne VOA 01000000-0aff-0242-01e6-08db257d93df 720p.webm",
+    "extrait": 84.5,
+    "legende": "Retournées à la main"
+   }
+  ]
+ },
+ "p078": {
+  "medias": [
+   {
+    "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2697.webm",
+    "extrait": 0
+   },
+   {
+    "media_ref": "wc:File:Elite Factory in Nazareth Illit MVI 2703.webm",
+    "extrait": 0
+   }
+  ]
+ },
+ "p041": {
+  "format": "ecran_partage",
+  "media_ref": "pi:10353275",
+  "cote": "gauche",
+  "medias": null,
+  "etiquette_schema": "Schéma : ce que sort la presse",
+  "schema": {
+   "type": "processus",
+   "titre": "La presse",
+   "etapes": [
+    "Masse de cacao",
+    "Presse",
+    "Beurre de cacao",
+    "Poudre de cacao"
+   ],
+   "actif": 2,
+   "source": "World Cocoa Foundation, transformation du cacao"
+  }
+ }
+}
