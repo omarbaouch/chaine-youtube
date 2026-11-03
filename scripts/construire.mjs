@@ -218,7 +218,10 @@ if (montage.musiques && scenes.some((s) => s.ambiance)) {
   const decal = {};
   musiques = fus.filter((g) => montage.musiques[g.amb]).map((g) => {
     const src = montage.musiques[g.amb].replace(/^public\//, '');
-    const off = decal[g.amb] ?? 0; // on reprend le morceau là où on l'avait laissé
+    // on reprend le morceau là où on l'avait laissé, modulo sa durée (sinon Remotion refuse de boucler : « empty range »)
+    const fichier = path.join('public', src);
+    const dMorceau = fs.existsSync(fichier) ? Math.floor(dureeAudio(fichier) * fps) : 0;
+    const off = dMorceau > fps ? (decal[g.amb] ?? 0) % dMorceau : 0;
     decal[g.amb] = off + (g.a - g.de);
     return {src, de: g.de, a: g.a, decalage: off};
   });

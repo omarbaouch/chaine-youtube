@@ -1,0 +1,1 @@
+- 03/11/2026 : rendu v2 relancé après correction du bouclage de la musique (décalage > durée du morceau).
