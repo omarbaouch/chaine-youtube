@@ -130,8 +130,17 @@ Lire `etude-retention.md` (14 études + données YouTube) avant d'écrire. Les c
 - La musique annonce l'émotion une seconde avant l'image (E11) : montée de tension avant chaque révélation, coupure nette (0,5 s de silence)
   juste avant le chiffre clé, impact pile dessus. Changer d'ambiance à chaque partie ; jamais la même nappe plate du début à la fin.
 - Voix lue d'un seul souffle (règle 9), intonation qui monte sur les questions ; la voix d'Omar si possible (E13).
+**Emballage (titre, miniature, publication)**
+- YouTube recommande au temps de visionnage, pas au clic (E15) : la miniature et le titre promettent exactement ce que montrent les
+  30 premières secondes. Jamais de promesse que la vidéo ne tient pas.
+- Titre (E17) : un problème, une perte ou une injustice concrète (« ta tablette n'a pas baissé »), un chiffre vrai, moins de 60 caractères.
+- Pour chaque vidéo : 3 titres et 3 textes de miniature (à générer par Omar avec ChatGPT/Gemini), pour le Test & Compare de YouTube (E16).
+- Régularité : une vidéo par semaine, même jour, même heure (E15, fraîcheur).
+**Sous-titres et voix**
+- Sous-titres toujours (E19), mot actif sur pastille, 3 à 4 mots par ligne. Voix posée, plus lente sur les chiffres (E20).
 **Fin**
-- Dès que la grande question est tranchée : 20 s maximum, une dernière question ouverte et l'annonce de la vidéo suivante (pic-fin).
+- Le plus beau moment visuel à la révélation (E18 : on se souvient du pic et de la fin). Dès que la grande question est tranchée :
+  20 s maximum, une dernière question ouverte et l'annonce de la vidéo suivante.
 **Boucle analytics (avant chaque nouvelle vidéo)**
 - Lire `bmo-studio-link/stats/LEVRAIPRIX/dernier.md` : intro (part restante à 30 s), segments plats, pics, creux, rétention relative.
 - Pour chaque creux de la vidéo précédente : retrouver la phrase et le plan à cet instant, écrire la cause probable dans

@@ -23,6 +23,23 @@ Cette fiche sépare ce qui est **prouvé** (études publiées), ce qui est **mes
 | E13 | Craig & Schroeder, 2017 et 2019 | Une voix de synthèse moderne fait apprendre autant qu'une voix humaine ; mais la voix humaine est jugée plus **humaine et engageante**. | La voix Edge (lue d'un seul souffle) suffit pour comprendre ; la voix d'Omar ferait gagner en attachement. |
 | E14 | Principes de Mayer (multimédia) | Couper le superflu, signaler l'essentiel, image synchronisée avec la parole. | Une seule info mise en valeur par image ; l'image montre exactement ce que dit la voix (règle n°1). |
 
+
+## 1 bis. Les autres aspects de la vidéo (ajout du 03/11/2026, demande d'Omar : « tous les aspects »)
+
+| # | Aspect | Étude / source | Ce qu'on en tire |
+|---|---|---|---|
+| E15 | Ce que YouTube récompense | Covington, Adams & Sargin (Google), « Deep Neural Networks for YouTube Recommendations », 2016 | Le classement des recommandations vise le **temps de visionnage attendu**, pas le clic : « classer par taux de clic favorise les vidéos trompeuses ». Les vidéos **récentes** sont favorisées. → Une miniature qui ment fait cliquer puis partir : elle tue la vidéo. Publier régulièrement. |
+| E16 | Test A/B officiel | Aide YouTube « Test & Compare » | YouTube teste jusqu'à 3 titres et/ou miniatures et choisit le gagnant au **temps de visionnage**, pas aux clics (vidéos longues, sur ordinateur). → Préparer 3 miniatures et 3 titres pour chaque vidéo. |
+| E17 | Titres | Robertson et al., *Nature Human Behaviour*, 2023 (105 000 titres Upworthy, 370 millions d'affichages) | Chaque mot **négatif** augmente les clics d'environ 2,3 %, chaque mot positif les baisse d'environ 1 % ; la tristesse augmente un peu les clics, la joie et la peur les baissent. → Titres qui pointent un problème, une perte, une injustice (« ta tablette n'a pas baissé »), sans mentir. |
+| E18 | Fin et souvenir | Méta-analyse du « pic-fin », *Organizational Behavior and Human Decision Processes*, 2022 (174 effets) | Le souvenir d'une expérience dépend fortement du **moment le plus fort et de la fin** (r = 0,58) ; la durée compte presque pas. → Le plus beau moment visuel à la révélation, et une fin forte et courte : c'est ce qui donne envie d'en voir une autre. |
+| E19 | Sous-titres | Adaptly × Refinery29, 2015 (vidéo Facebook) | Avec sous-titres : plus de vidéos regardées en entier et plus de partages (gains modestes). Une partie du public regarde sans le son. → Sous-titres toujours, mot actif mis en valeur, lisibles sur téléphone. |
+| E20 | Débit de la voix | *Journal of Advertising Research*, 2020 (publicités audio) | Un débit plus posé marche mieux que de tasser l'information. → Débit naturel (Edge +6 %), ralentir sur les chiffres et les révélations, accélérer dans les énumérations. |
+
+## 3 bis. Ce qu'on ne peut pas automatiser (à faire par Omar dans YouTube Studio)
+- **Test & Compare** des miniatures et titres (sur ordinateur) : l'API YouTube ne le permet pas.
+- **Écran de fin** et **fiches** : pas d'API ; à ajouter à la main (ou réutiliser un modèle d'écran de fin).
+- **Épingler** le premier commentaire : pas d'API.
+
 ## 2. Ce que YouTube mesure (aide officielle et Analytics)
 
 - **Intro** : part des spectateurs encore là à 30 s. Si elle est faible, l'intro ne tient pas la promesse du titre et de la miniature.
@@ -59,4 +76,10 @@ Cette fiche sépare ce qui est **prouvé** (études publiées), ce qui est **mes
 - Guo, Kim & Rubin 2014 : https://pg.ucsd.edu/publications/edX-MOOC-video-production-and-engagement_LAS-2014.txt
 - Voix de synthèse (Craig & Schroeder) : https://www.doi.org/10.1007/s10639-022-11255-6
 - Mayer : https://services.dartmouth.edu/TDClient/1806/Portal/KB/PrintArticle?ID=171655
+- Covington et al. 2016 (YouTube) : https://blog.acolyer.org/2016/09/19/deep-neural-networks-for-youtube-recommendations/
+- Test & Compare : https://support.google.com/youtube/answer/16391400
+- Robertson et al. 2023 : https://www.niemanlab.org/2023/03/negative-words-in-news-headlines-generate-more-clicks-but-sad-words-are-more-effective-than-angry-or-scary-ones/
+- Méta-analyse pic-fin 2022 : https://ideas.repec.org/a/eee/jobhdp/v170y2022ics0749597822000334.html
+- Sous-titres (Adaptly × Refinery29) : https://www.mediapost.com/publications/article/262470
+- Débit de voix (JAR 2020) : https://www.warc.com/newsandopinion/news/how-speech-delivery-speed-impacts-audio-ads/43304
 - YouTube, rétention : https://support.google.com/youtube/answer/1715160 ; https://www.creatorhandbook.net/youtube-revised-retention-analytics-with-key-moments/
