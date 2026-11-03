@@ -1,0 +1,1 @@
+Les fichiers .json de ce dossier sont envoyés sur YouTube par .github/workflows/publier-youtube.yml (voir scripts/publier_youtube.py).

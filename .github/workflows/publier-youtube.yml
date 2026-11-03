@@ -1,0 +1,36 @@
+name: Publier sur YouTube (BMO Studio Link)
+
+# Envoie chaque fichier publications/*.json sur YouTube via l'API officielle, puis le range dans publications/fait/.
+on:
+  push:
+    branches: [main]
+    paths: ['publications/*.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publier-youtube
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q google-api-python-client google-auth requests
+      - name: Publier
+        env:
+          SECRETS_JSON: ${{ toJSON(secrets) }}
+        run: python scripts/publier_youtube.py
+      - name: Ranger les fichiers envoyés
+        if: always()
+        run: |
+          git config user.name "BMO Studio Link"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A publications
+          git diff --cached --quiet || (git commit -m "Publications envoyées sur YouTube [skip ci]" && git pull --rebase && git push)
