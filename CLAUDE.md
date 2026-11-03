@@ -151,6 +151,10 @@ Couche `source` : `{"type": "source", "texte": "…"}`. Musique : `scripts/musiq
 Publication sur YouTube par le dépôt central **omarbaouch/bmo-studio-link** (API YouTube, appli « BMO Studio Link ») : voir la règle n°14
 de `monteur-chaine`. Plus de Metricool (décision d'Omar du 03/11/2026). Statistiques : `bmo-studio-link/stats/LEVRAIPRIX/dernier.md`.
 
+## Étude de marché
+Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/etude-marche.md` (positionnement, calendrier
+des sujets, règles Shorts → abonnés).
+
 ## Prochaine vidéo (décision d'Omar du 03/11/2026)
 Vidéo du mardi 10/11/2026 : **l'essence** — le vrai prix d'un litre à la pompe (pétrole brut, raffinage, transport,
 marge de la station, taxes : TICPE et TVA), angle actualité « surtout en ce moment ». Chiffres du jour vérifiés
