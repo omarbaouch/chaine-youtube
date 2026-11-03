@@ -35,16 +35,16 @@ for (const titre of titres) {
     const j = await api({action: 'query', titles: titre, prop: 'imageinfo|videoinfo', iiprop: 'url|mime|size|extmetadata', viprop: 'url|size|mime|derivatives'});
     const ii = Object.values(j.query.pages)[0].imageinfo?.[0];
     if (!ii || !ii.mime.startsWith('video/')) continue;
-    const duree = ii.duration ?? 0;
-    if (duree && duree < 8) continue;
-    const pas = Math.max(3, Math.ceil((duree || 120) / 60));
-    n++;
-    const code = `F${n}`;
+    const code = `F${n + 1}`;
     const dest = path.join(sortie, `${code}.jpg`);
     const txt = POLICE ? `,drawtext=fontfile=${POLICE}:text='%{pts\\:hms}':x=6:y=6:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.7` : '';
     const brut = path.join(sortie, `${code}.source`);
     const r = await fetch(ii.url, {headers: UA});
     fs.writeFileSync(brut, Buffer.from(await r.arrayBuffer()));
+    const duree = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', brut]).toString().trim()) || 0;
+    if (duree < 8) { fs.rmSync(brut); continue; }
+    const pas = Math.max(2, Math.ceil(duree / 60));
+    n++;
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, '-vf', `fps=1/${pas},scale=320:180:force_original_aspect_ratio=increase,crop=320:180,setpts=PTS*${pas}${txt},tile=6x10:padding=3:color=0x222222`, '-frames:v', '1', dest], {timeout: 600000});
     fs.rmSync(brut);
     const m = ii.extmetadata ?? {};
