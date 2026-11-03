@@ -16,20 +16,32 @@ fs.mkdirSync(sortie, {recursive: true});
 const POLICE = ['/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', '/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf'].find((f) => fs.existsSync(f));
 const tous = {};
 
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+// Limites de débit (Pixabay 100 req/min, Commons) : 800 ms entre appels + reprises croissantes sur 429
+async function lireJson(url, opts = {}) {
+  for (let essai = 0; essai < 6; essai++) {
+    await pause(800);
+    const r = await fetch(url, opts);
+    const t = await r.text();
+    if (r.status === 429 || t.startsWith('[ERROR 429]') || t.startsWith('You are making too many')) { await pause(5000 * 2 ** essai); continue; }
+    return JSON.parse(t);
+  }
+  throw new Error('429 persistant');
+}
 async function pixabayVideos(q) {
-  const r = await fetch(`https://pixabay.com/api/videos/?${new URLSearchParams({key: CLE, q, per_page: '12', safesearch: 'true'})}`);
-  return ((await r.json()).hits ?? []).map((h) => ({ref: `pv:${h.id}`, apercu: (h.videos.medium ?? h.videos.small).url, video: true, duree: h.duration,
+  const j = await lireJson(`https://pixabay.com/api/videos/?${new URLSearchParams({key: CLE, q, per_page: '12', safesearch: 'true'})}`);
+  return (j.hits ?? []).map((h) => ({ref: `pv:${h.id}`, apercu: (h.videos.medium ?? h.videos.small).url, video: true, duree: h.duration,
     info: `${h.duration}s`, tags: h.tags, credit: `Pixabay (${h.user})`}));
 }
 async function pixabayPhotos(q) {
-  const r = await fetch(`https://pixabay.com/api/?${new URLSearchParams({key: CLE, q, per_page: '12', safesearch: 'true', image_type: 'photo', orientation: 'horizontal'})}`);
-  return ((await r.json()).hits ?? []).map((h) => ({ref: `pi:${h.id}`, apercu: h.webformatURL, video: false, info: `${h.imageWidth}px`, tags: h.tags, credit: `Pixabay (${h.user})`}));
+  const j = await lireJson(`https://pixabay.com/api/?${new URLSearchParams({key: CLE, q, per_page: '12', safesearch: 'true', image_type: 'photo', orientation: 'horizontal'})}`);
+  return (j.hits ?? []).map((h) => ({ref: `pi:${h.id}`, apercu: h.webformatURL, video: false, info: `${h.imageWidth}px`, tags: h.tags, credit: `Pixabay (${h.user})`}));
 }
 async function commons(q) {
   const p = new URLSearchParams({action: 'query', generator: 'search', gsrsearch: q, gsrnamespace: '6', gsrlimit: '12', prop: 'imageinfo',
     iiprop: 'url|size|mime|extmetadata', iiurlwidth: '960', format: 'json', origin: '*'});
-  const r = await fetch(`https://commons.wikimedia.org/w/api.php?${p}`, {headers: UA});
-  const pages = Object.values((await r.json()).query?.pages ?? {});
+  const j = await lireJson(`https://commons.wikimedia.org/w/api.php?${p}`, {headers: UA});
+  const pages = Object.values(j.query?.pages ?? {});
   return pages
     .map((pg) => ({pg, ii: pg.imageinfo?.[0]}))
     .filter(({ii}) => ii && /^(image\/(jpeg|png|webp)|video\/)/.test(ii.mime) && (ii.width ?? 0) >= 1000)
