@@ -70,15 +70,17 @@ for (const s of montage.scenes) {
   const vus = new Set();
   const groupes = {V: [], I: [], C: []};
   for (const q of requetes) {
-    for (const [cle, fn] of [['V', pixabayVideos], ['I', pixabayPhotos], ['C', commons]]) {
+    // "videos_seulement": true → vidéos Pixabay + vidéos Commons (filetype:video), sans photos
+    const sources = s.videos_seulement ? [['V', pixabayVideos], ['C', (x) => commons(`${x} filetype:video`)]] : [['V', pixabayVideos], ['I', pixabayPhotos], ['C', commons]];
+    for (const [cle, fn] of sources) {
       try {
         for (const c of await fn(q)) if (!vus.has(c.ref)) { vus.add(c.ref); groupes[cle].push({...c, q}); }
       } catch (e) { console.warn(`  ${cle} "${q}" : ${e.message}`); }
     }
   }
   // 8 vidéos, 8 photos, 8 Commons au maximum → planche de 24 vignettes
-  const choix = [...groupes.V.slice(0, 8).map((c, i) => ({...c, code: `V${i + 1}`})), ...groupes.I.slice(0, 8).map((c, i) => ({...c, code: `I${i + 1}`})),
-    ...groupes.C.slice(0, 8).map((c, i) => ({...c, code: `C${i + 1}`}))];
+  const choix = [...groupes.V.slice(0, s.videos_seulement ? 12 : 8).map((c, i) => ({...c, code: `V${i + 1}`})), ...groupes.I.slice(0, 8).map((c, i) => ({...c, code: `I${i + 1}`})),
+    ...groupes.C.slice(0, s.videos_seulement ? 12 : 8).map((c, i) => ({...c, code: `C${i + 1}`}))];
   const tmp = fs.mkdtempSync(path.join(sortie, `.${s.id}-`));
   choix.forEach((c, i) => vignette(c, c.code, path.join(tmp, `${String(i).padStart(2, '0')}.jpg`)));
   if (choix.length) {
