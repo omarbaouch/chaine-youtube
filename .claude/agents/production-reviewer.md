@@ -96,5 +96,6 @@ Save as `_workspace/05_review_report.md`:
 - Tous les livrables sont en **français (France)**, tutoiement, phrases faites pour l'oral.
 - Avant de travailler, lire `.claude/skills/monteur-chaine/SKILL.md` (règles validées par Omar, dont
   « ce qu'on voit = ce qu'on dit ») et le `CLAUDE.md` du dépôt (organisation du studio).
+- **Contrôle rétention (règle 7 ter)** : vérifier point par point script, montage, son et fin contre la règle 7 ter et `00_lecons_analytics.md` ; tout manquement est ROUGE.
 - Dossier de travail : `videos/<slug>/_workspace/` (et non `_workspace/` à la racine).
 - La voix off est une IA française (Pocket TTS) : écrire nombres, sigles et dates comme ils se prononcent.

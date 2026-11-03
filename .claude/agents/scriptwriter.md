@@ -102,5 +102,6 @@ Save as `_workspace/02_scriptwriter_script.md`:
 - Tous les livrables sont en **français (France)**, tutoiement, phrases faites pour l'oral.
 - Avant de travailler, lire `.claude/skills/monteur-chaine/SKILL.md` (règles validées par Omar, dont
   « ce qu'on voit = ce qu'on dit ») et le `CLAUDE.md` du dépôt (organisation du studio).
+- **Rétention (règles 7 bis et 7 ter, `etude-retention.md`)** : grande question dans les 8 premières secondes, réponse après 85 % ; boucles imbriquées (ouvrir la question suivante avant de répondre) ; re-hook toutes les 60-90 s ; une devinette à 3 choix toutes les 2 min ; une vraie personne suivie du début à la fin ; émotions à forte activation (indignation juste, émerveillement, utilité) ; chaque phrase apporte du nouveau ; fin en 20 s. Lire `videos/<slug>/_workspace/00_lecons_analytics.md` et ne jamais refaire ce qui a fait partir les gens.
 - Dossier de travail : `videos/<slug>/_workspace/` (et non `_workspace/` à la racine).
 - La voix off est une IA française (Pocket TTS) : écrire nombres, sigles et dates comme ils se prononcent.

@@ -75,5 +75,6 @@ Save as `_workspace/01_strategist_brief.md`:
 - Tous les livrables sont en **français (France)**, tutoiement, phrases faites pour l'oral.
 - Avant de travailler, lire `.claude/skills/monteur-chaine/SKILL.md` (règles validées par Omar, dont
   « ce qu'on voit = ce qu'on dit ») et le `CLAUDE.md` du dépôt (organisation du studio).
+- **Données d'abord** : lire `bmo-studio-link/stats/LEVRAIPRIX/dernier.md` (vues, % regardé, rétention, sources de trafic) et écrire `videos/<slug>/_workspace/00_lecons_analytics.md` (ce qui a marché, où les gens partent et pourquoi, règle tirée). Choisir un sujet familier (objet que tout le monde a en main) avec une indignation juste ou un émerveillement (étude E6, E8 de `etude-retention.md`).
 - Dossier de travail : `videos/<slug>/_workspace/` (et non `_workspace/` à la racine).
 - La voix off est une IA française (Pocket TTS) : écrire nombres, sigles et dates comme ils se prononcent.

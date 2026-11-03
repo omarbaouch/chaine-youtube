@@ -106,6 +106,38 @@ digression à 26–30 s ; écran sombre « Partie 01 » à 36 s. Ne jamais refai
 Contrôle avant rendu (à consigner dans `05_review_report.md`) : 1) aucune réponse chiffrée avant sa révélation ; 2) frame 0 non noire ;
 3) pas de carte avant 30 s ; 4) au moins 2 questions ouvertes à 30 s ; 5) aucune séquence de plus de 6 s sans changement d'image.
 
+## Règle n°7 ter — Scotcher le spectateur jusqu'à la fin (étude du 03/11/2026, `etude-retention.md`) — OBLIGATOIRE
+Lire `etude-retention.md` (14 études + données YouTube) avant d'écrire. Les codes E1…E14 renvoient aux études.
+**Script**
+- Structure d'enquête (E3) : une grande question posée dans les 8 premières secondes, réponse finale après 85 % de la vidéo. Entre les deux,
+  les suspects/pistes sont éliminés un par un ; un retournement par partie, de plus en plus fort.
+- Boucles imbriquées (E2, E4) : on n'ouvre jamais un « trou » sans suspense. Avant de répondre à une question, on en ouvre une nouvelle.
+  Re-hook toutes les 60-90 s (« et ce n'est même pas le plus fou »).
+- Devinettes à 3 choix où le spectateur a une intuition (E5), avec le compte à rebours ; au moins une toutes les 2 minutes.
+- Émotions à forte activation (E6) : indignation juste, émerveillement devant la fabrication, utilité concrète (« comment payer moins »).
+  La tristesse seulement par touches courtes, jamais en dernier.
+- Une vraie personne qu'on suit du début à la fin (E8) : présentée avant 60 s, sa situation revient au milieu, son dénouement à la fin.
+- Vitesse (E7) : chaque phrase apporte du nouveau ; zéro répétition, zéro détour ; le dernier tiers va plus vite que le premier.
+- Ton de copain qui raconte (E12), tutoiement, phrases de 6 à 18 mots.
+**Montage**
+- Chaque plan impose à tous de regarder la même chose au même moment (E1) : un seul point d'intérêt, en mouvement ou mis en valeur.
+- Rythme « respiration » (E9, E10) : séries de plans de 1,5 à 3 s dans l'action, puis un plan de 4 à 6 s pour une révélation ou une émotion.
+  Jamais plus de 6 s sans changement visuel.
+- Schémas qui se construisent à l'écran, élément par élément, en même temps que la voix (E12, E14).
+- Un visage humain aux moments clés (témoin, planteur, boulangère) (E11).
+- L'image de la miniature apparaît dans les 5 premières secondes.
+**Son**
+- La musique annonce l'émotion une seconde avant l'image (E11) : montée de tension avant chaque révélation, coupure nette (0,5 s de silence)
+  juste avant le chiffre clé, impact pile dessus. Changer d'ambiance à chaque partie ; jamais la même nappe plate du début à la fin.
+- Voix lue d'un seul souffle (règle 9), intonation qui monte sur les questions ; la voix d'Omar si possible (E13).
+**Fin**
+- Dès que la grande question est tranchée : 20 s maximum, une dernière question ouverte et l'annonce de la vidéo suivante (pic-fin).
+**Boucle analytics (avant chaque nouvelle vidéo)**
+- Lire `bmo-studio-link/stats/LEVRAIPRIX/dernier.md` : intro (part restante à 30 s), segments plats, pics, creux, rétention relative.
+- Pour chaque creux de la vidéo précédente : retrouver la phrase et le plan à cet instant, écrire la cause probable dans
+  `videos/<slug>/_workspace/00_lecons_analytics.md`, et la règle appliquée pour ne pas la refaire. Refaire davantage ce qui fait les pics.
+- Shorts : garder les formats des Shorts qui dépassent la moyenne de la chaîne (sujet, devinette, durée), abandonner les autres.
+
 ## Règle n°8 — Typographie et couleurs (retour d'Omar : tailles et couleurs des polices)
 - Échelle unique (1920×1080) : titres 140–170 px (Montserrat 900) ; mots clés plein écran 120 px ; chiffres 110–150 px ;
   sous-titres 78 px (Montserrat 900, MAJUSCULES, contour noir) ; étiquettes d'étape 34 px ; annotations 36 px ;
