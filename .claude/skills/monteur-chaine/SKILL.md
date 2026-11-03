@@ -190,13 +190,25 @@ Un témoignage dure 3 à 12 s, un seul par partie ; on l'annonce (« écoute ce 
 - Kit dans `videos/<slug>/_workspace/06_publication_*.txt` : titre ≤ 60 caractères avec le mot-clé au début, description < 5 000
   (mot-clé dans la 1re phrase, chapitres mesurés SUR LE RENDU FINAL, sources, crédits musique + médias, « voix off générée par synthèse »),
   tags < 500, commentaire-question à épingler.
-- Publication programmée par **Metricool** (MCP, marque 7787709, chaîne YouTube connectée) : il lui faut un **lien public** du MP4.
-  Le dépôt public `omarbaouch/le-vrai-prix-medias` sert à ça : y pousser `videos/<slug>/video.partNN` (morceaux de 90 Mo, `split -b 90M`)
-  + `miniature.jpg` + `credits.txt` ; son workflow recolle et publie la Release `<slug>`
-  (`https://github.com/omarbaouch/le-vrai-prix-medias/releases/download/<slug>/<slug>.mp4`).
-- Heure par défaut : **18h (heure de Paris)**. La miniature personnalisée ne passe que si la chaîne est validée par téléphone ;
-  Omar épingle lui-même le commentaire.
-
+- Publication par **BMO Studio Link** (décision d'Omar du 03/11/2026 : plus de Metricool). Dépôt central `omarbaouch/bmo-studio-link`
+  (API YouTube officielle, appli Google « BMO Studio Link ») : déposer `publications/<date>-<nom>.json` sur `main` (format dans son README :
+  `chaine` = `LEVRAIPRIX`, `video_url`, `titre`, `description`, `tags`, `categorie` 27, `miniature_url`, `commentaire`, `publier_le`, `playlist`).
+  Le workflow envoie, met la miniature, poste le premier commentaire, ajoute à la playlist et range la fiche dans `publications/fait/` avec le lien.
+  Ne jamais écrire ni afficher les clés : elles sont dans les secrets de ce dépôt.
+- Il faut un **lien public** du MP4 : le dépôt public `omarbaouch/le-vrai-prix-medias` sert à ça. Y pousser `videos/<slug>/video.partNN`
+  (morceaux de 90 Mo, `split -b 90m`, UN morceau par push sinon le proxy coupe) + `miniature.jpg` + `credits.txt` ; son workflow recolle et
+  publie la Release `<slug>` (`https://github.com/omarbaouch/le-vrai-prix-medias/releases/download/<slug>/<slug>.mp4`).
+  Les Shorts (< 100 Mo) vont dans `shorts/<slug>/` et se lisent en `https://raw.githubusercontent.com/omarbaouch/le-vrai-prix-medias/main/shorts/<slug>/<fichier>.mp4`.
+- **Shorts à chaque sortie** : 4 extraits verticaux de 15 à 30 s (une devinette posée puis tranchée, un chiffre choc), coupés sur des silences,
+  titre en haut sur 2 lignes (blanc + orange, 64-78 px), « La vidéo complète est en lien sous ce Short » en bas ; description et premier
+  commentaire avec le lien de la vidéo longue ; même `playlist` que la vidéo. Rythme : vidéo à 18 h (ou l'heure dite par Omar), Shorts le
+  lendemain à 8 h, 12 h 30 et 18 h, puis le surlendemain à 12 h 30.
+- **Statistiques** : `bmo-studio-link/stats/LEVRAIPRIX/dernier.md` (mis à jour chaque jour à 6 h : vues, durée moyenne, % regardé, sources
+  de trafic, courbe de rétention). Le lire AVANT d'écrire une nouvelle vidéo et corriger ce qui fait partir les gens (règle n°7 bis).
+- Miniature : la meilleure jusqu'ici (chocolat) est une image générée par Omar avec ChatGPT/Gemini à partir d'un texte écrit par Claude :
+  photo hyperréaliste très contrastée, un objet + une main, une grosse question en blanc (un mot en jaune), un chiffre choc sur pastille rouge.
+  Proposer ce texte à Omar ; à défaut, composer à partir d'une image du rendu. Aucune marque, aucun chiffre faux (vérifier, arrondir honnêtement).
+- Tant que Google n'a pas audité l'appli, une vidéo peut être repassée en privé par YouTube : le signaler à Omar s'il le faut.
 ## Règle n°15 — Branches et équipe
 - **`main` est la seule version officielle** (décision d'Omar, 01/11/2026) : le travail de `studio-b` y a été recopié.
   On travaille sur `main` ; le rendu `.github/workflows/rendu-rapide.yml` (6 machines) se lance à chaque push sur `episodes/**`.

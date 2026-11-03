@@ -147,5 +147,9 @@ Couche `source` : `{"type": "source", "texte": "…"}`. Musique : `scripts/musiq
 - Cocher la mention « contenu modifié ou synthétique » si une image réaliste générée par IA pourrait tromper.
 - Crédits Pixabay : `credits.txt` dans la release, à coller en description (facultatif mais recommandé).
 
+## Publication et statistiques
+Publication sur YouTube par le dépôt central **omarbaouch/bmo-studio-link** (API YouTube, appli « BMO Studio Link ») : voir la règle n°14
+de `monteur-chaine`. Plus de Metricool (décision d'Omar du 03/11/2026). Statistiques : `bmo-studio-link/stats/LEVRAIPRIX/dernier.md`.
+
 ## Ne pas committer
 `node_modules/`, `public/ep/`, `out/`, `.cache/` (déjà dans `.gitignore`).
