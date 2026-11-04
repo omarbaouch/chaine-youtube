@@ -1,0 +1,59 @@
+{
+ "id": "e02-station",
+ "titre": "Ta station gagne combien sur ton litre ? #shorts",
+ "accroche": "TA STATION GAGNE COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Ta station gagne combien sur ton litre de gazole ?",
+   "medias": [
+    "pi:2665795",
+    "pi:1839760"
+   ]
+  },
+  {
+   "texte": "Le gazole est à deux euros trente-sept en moyenne.",
+   "medias": [
+    "wc:File:Gasoline petrol and diesel fuel pump prices on display at the Taiwan CPC Caogang Gas Station on 14 January 2021.jpg"
+   ],
+   "chiffre": "2,37 €",
+   "chiffre_mot": "deux"
+  },
+  {
+   "texte": "Transport, dépôts, livraison et station : vingt-quatre centimes.",
+   "medias": [
+    "pi:5291980",
+    "wc:File:Munich Airport FJS – fuel storage tanks aerial view 2014.jpg"
+   ],
+   "chiffre": "0,24 €",
+   "chiffre_mot": "vingt"
+  },
+  {
+   "texte": "Mais sa marge nette, une fois tout payé ? Souvent un à deux centimes.",
+   "medias": [
+    "pi:8626683",
+    "pi:4978824"
+   ],
+   "chiffre": "1 à 2 c",
+   "chiffre_mot": "souvent"
+  },
+  {
+   "texte": "Sur ton plein de cinquante litres : à peine un euro.",
+   "medias": [
+    "pv:159710",
+    "pv:200682"
+   ],
+   "chiffre": "≈ 1 €",
+   "chiffre_mot": "peine"
+  }
+ ],
+ "medias_fin": [
+  "pi:175122"
+ ],
+ "sources": [
+  "Prix et taxes (DGEC, semaine du 30/10/2026) : https://www.connaissancedesenergies.org/fiche-pedagogique/structuration-des-prix-de-l-essence-et-du-gazole-france",
+  "Calcul : 50 L × 1 à 2 c = 0,50 à 1 €"
+ ],
+ "quand": "2026-11-06T16:00:00+01:00",
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "commentaire": "Tu paies ton litre combien en ce moment ? 👇 La vidéo complète : https://youtu.be/uuPNNWSVZEQ"
+}

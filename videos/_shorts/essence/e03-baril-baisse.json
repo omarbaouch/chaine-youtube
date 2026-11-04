@@ -1,0 +1,58 @@
+{
+ "id": "e03-baril-baisse",
+ "titre": "Le baril baisse… pourquoi pas ton plein ? #shorts",
+ "accroche": "LE BARIL BAISSE. PAS TON PLEIN ?",
+ "plans": [
+  {
+   "texte": "Le baril baisse. Pourquoi pas ton plein ?",
+   "medias": [
+    "pi:1744734",
+    "wc:File:Pump Jack at the Lost Hills Oil Field In Central California.jpg"
+   ]
+  },
+  {
+   "texte": "Si le baril perd dix pour cent, ton litre ne baisse que de huit centimes.",
+   "medias": [
+    "pv:166289",
+    "pi:5925098"
+   ],
+   "chiffre": "≈ 8 c",
+   "chiffre_mot": "huit"
+  },
+  {
+   "texte": "La faute à une taxe fixe : soixante et un centimes par litre, quoi qu'il arrive.",
+   "medias": [
+    "pi:331992",
+    "pv:9728"
+   ],
+   "chiffre": "0,61 €",
+   "chiffre_mot": "soixante"
+  },
+  {
+   "texte": "Deux semaines après le record de septembre, le gazole n'avait baissé que de deux virgule huit centimes.",
+   "medias": [
+    "pi:206098",
+    "pi:2157211"
+   ],
+   "chiffre": "2,8 c",
+   "chiffre_mot": "deux virgule"
+  },
+  {
+   "texte": "Les prix montent comme une fusée… et redescendent comme une plume.",
+   "medias": [
+    "pv:23882",
+    "pv:109373"
+   ]
+  }
+ ],
+ "medias_fin": [
+  "pi:6999638"
+ ],
+ "sources": [
+  "Prix et taxes (DGEC, semaine du 30/10/2026) : https://www.connaissancedesenergies.org/fiche-pedagogique/structuration-des-prix-de-l-essence-et-du-gazole-france",
+  "Kelwatt, octobre 2026 : https://www.kelwatt.fr/actu/baisse-petrole-prix-carburants-pompe-octobre-2026"
+ ],
+ "quand": "2026-11-05T08:00:00+01:00",
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "commentaire": "Tu paies ton litre combien en ce moment ? 👇 La vidéo complète : https://youtu.be/uuPNNWSVZEQ"
+}

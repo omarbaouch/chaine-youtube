@@ -1,0 +1,59 @@
+{
+ "id": "e04-ormuz",
+ "titre": "Ton plein se joue à 5 000 km d'ici ? #shorts",
+ "accroche": "TON PLEIN SE JOUE À 5 000 KM ?",
+ "plans": [
+  {
+   "texte": "Ton plein se joue dans un détroit, à cinq mille kilomètres d'ici.",
+   "medias": [
+    "pi:629472",
+    "pi:4426675"
+   ]
+  },
+  {
+   "texte": "Ormuz : un cinquième du pétrole mondial y passe.",
+   "medias": [
+    "pv:7338"
+   ],
+   "chiffre": "1/5",
+   "chiffre_mot": "cinquième"
+  },
+  {
+   "texte": "Fin février, l'Iran le ferme. Le trafic des pétroliers chute de quatre-vingt-dix pour cent.",
+   "medias": [
+    "pv:23544",
+    "pi:654867"
+   ],
+   "chiffre": "− 90 %",
+   "chiffre_mot": "quatre"
+  },
+  {
+   "texte": "Le baril passe de soixante et onze à plus de cent douze dollars.",
+   "medias": [
+    "pi:5989284",
+    "pi:5117014"
+   ],
+   "chiffre": "71 → 112 $",
+   "chiffre_mot": "soixante"
+  },
+  {
+   "texte": "Et mi-septembre, le gazole bat son record : deux euros trente-huit.",
+   "medias": [
+    "wc:File:Gas station attendant.jpg",
+    "pv:159708"
+   ],
+   "chiffre": "2,38 €",
+   "chiffre_mot": "deux"
+  }
+ ],
+ "medias_fin": [
+  "wc:File:Gasoline petrol and diesel fuel pump prices on display at the Taiwan CPC Caogang Gas Station on 14 January 2021.jpg"
+ ],
+ "sources": [
+  "Selectra, 30/06/2026 : https://selectra.info/energie/actualites/marche/detroit-hormuz-choc-petrolier-2026",
+  "Kelwatt, octobre 2026 : https://www.kelwatt.fr/actu/baisse-petrole-prix-carburants-pompe-octobre-2026"
+ ],
+ "quand": "2026-11-06T08:00:00+01:00",
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "commentaire": "Tu paies ton litre combien en ce moment ? 👇 La vidéo complète : https://youtu.be/uuPNNWSVZEQ"
+}
