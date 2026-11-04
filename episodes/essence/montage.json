@@ -43,7 +43,7 @@
    "id": "p001",
    "format": "rush",
    "texte": "Le baril de pétrole baisse depuis des semaines.",
-   "recherche": "oil pump jack sunset",
+   "media_ref": "pi:1744734",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -54,59 +54,47 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:43629"
+   ]
   },
   {
    "id": "p002",
    "format": "rush",
-   "texte": "Mais à la pompe, ton plein, lui, ne baisse presque pas.",
-   "recherche": "refueling car gas station",
+   "texte": "Mais ton plein, lui, ne baisse presque pas.",
+   "media_ref": "pi:6999638",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
     {
      "type": "mots",
-     "texte": "TON PLEIN ?",
-     "heros": "PLEIN",
+     "texte": "TON PLEIN, NON",
+     "heros": "NON",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:6999638"
+   ]
   },
   {
    "id": "p003",
-   "format": "schema",
-   "texte": "Fin octobre, le gazole est à deux euros trente-sept le litre, en moyenne.",
-   "etiquette_schema": "Le chiffre",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 2.371,
-    "decimales": 3,
-    "suffixe": " €",
-    "legende": "le litre de gazole, fin octobre 2026",
-    "revele_a": 1.8,
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026",
-    "comparaison": "Il y a un an : 1,70 €"
-   },
+   "format": "rush",
+   "texte": "Fin octobre, le gazole est à deux euros trente-sept le litre.",
+   "media_ref": "wc:File:Gasoline petrol and diesel fuel pump prices on display at the Taiwan CPC Caogang Gas Station on 14 January 2021.jpg",
    "transition": "coupe",
    "ambiance": "tension",
-   "sons": [
+   "couches": [
     {
-     "nom": "impact",
-     "a": 1.8,
-     "volume": 0.5
+     "type": "mots",
+     "texte": "GAZOLE : 2,37 €",
+     "heros": "2,37 €",
+     "position": "haut",
+     "a": 0.2
     }
-   ],
-   "recherche": "fuel pump nozzle",
-   "media_ref": "pi:2157211"
+   ]
   },
   {
    "id": "p004",
    "format": "rush",
-   "texte": "Il y a un an, il était à un euro soixante-dix.",
-   "recherche": "gas station night",
+   "texte": "Il y a un an, un euro soixante-dix.",
+   "media_ref": "pv:159708",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -117,59 +105,117 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:159708"
+   ]
   },
   {
    "id": "p005",
    "format": "rush",
-   "texte": "Alors, sur ton plein, qui prend quoi ? Aujourd'hui, on démonte un litre, centime par centime.",
-   "recherche": "fuel tank cap car",
+   "texte": "Alors, qui garde la différence ?",
+   "media_ref": "pi:2157211",
    "transition": "coupe",
    "ambiance": "tension",
    "punch": {
-    "a": 1.2,
+    "a": 0.8,
     "texte": "QUI ?"
    },
    "sons": [
     {
      "nom": "impact",
-     "a": 1.2,
-     "volume": 0.5
+     "a": 0.8,
+     "volume": 0.6
     }
-   ],
-   "media_ref": "pi:510560"
+   ]
   },
   {
    "id": "p006",
    "format": "rush",
-   "texte": "Et à la fin, il y a un chiffre que presque personne ne connaît : ce que gagne vraiment la station.",
-   "recherche": "gas station attendant",
+   "texte": "Quatre suspects : le pétrole, le raffineur, l'État… et ta station.",
+   "media_ref": "wc:File:Gas station attendant.jpg",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
     {
      "type": "mots",
-     "texte": "LA STATION GAGNE COMBIEN ?",
-     "heros": "COMBIEN ?",
+     "texte": "4 SUSPECTS",
+     "heros": "4 SUSPECTS",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "wc:File:Gas station attendant.jpg"
+   ]
   },
   {
    "id": "p007",
-   "format": "titre",
-   "type": "titre",
+   "format": "schema",
+   "texte": "Première devinette. Sur ton plein de cinquante litres, combien pour l'État ? Vingt, trente-cinq, ou cinquante euros ?",
+   "etiquette_schema": "Réponse avec le suspect n° 3",
+   "media_ref": "pv:268220",
+   "schema": {
+    "type": "liste",
+    "titre": "Ton plein de 50 L : combien pour l'État ?",
+    "elements": [
+     {
+      "texte": "A",
+      "valeur": "20 € ?"
+     },
+     {
+      "texte": "B",
+      "valeur": "35 € ?"
+     },
+     {
+      "texte": "C",
+      "valeur": "50 € ?"
+     }
+    ],
+    "source": "Réponse plus loin dans la vidéo"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "duree_min": 4.6,
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 3.0,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 3.6,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "p008",
+   "format": "rush",
+   "texte": "Garde ta réponse. On commence par le suspect le plus loin, à cinq mille kilomètres d'ici.",
+   "media_ref": "pi:629472",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "À 5 000 KM D'ICI",
+     "heros": "5 000 KM",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p009",
+   "format": "schema",
    "texte": "",
-   "numero": "01",
-   "titre": "Un litre, quatre morceaux",
-   "sous_titre": "Où part ton euro à la pompe",
-   "recherche": "fuel pump close up",
+   "etiquette_schema": "Suspect n° 1",
    "duree_min": 2.6,
+   "schema": {
+    "type": "suspect",
+    "nom": "Le pétrole",
+    "accusation": "A-t-il fait flamber ton plein ?",
+    "numero": "01"
+   },
    "transition": "fondu",
    "ambiance": "tension",
+   "media_ref": "pi:5117014",
    "sons": [
     {
      "nom": "riser",
@@ -178,159 +224,16 @@
     },
     {
      "nom": "impact",
-     "a": 0.2,
+     "a": 0.3,
      "volume": 0.6
     }
-   ],
-   "media_ref": "pi:5925098"
-  },
-  {
-   "id": "p008",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "texte": "Un litre de gazole à la pompe, c'est quatre morceaux.",
-   "etiquette_schema": "Prix à la pompe : 2,37 €",
-   "schema": {
-    "type": "decomposition",
-    "titre": "1 litre de gazole",
-    "unite": " €",
-    "parts": [
-     {
-      "label": "Pétrole + raffinage",
-      "valeur": 1.126
-     },
-     {
-      "label": "Transport + station",
-      "valeur": 0.242
-     },
-     {
-      "label": "Accise",
-      "valeur": 0.608
-     },
-     {
-      "label": "TVA",
-      "valeur": 0.395
-     }
-    ],
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
-   },
-   "recherche": "gas station pump",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "media_ref": "pi:1914310"
-  },
-  {
-   "id": "p009",
-   "format": "rush",
-   "texte": "D'abord, le pétrole et son raffinage : un euro treize. Presque la moitié du prix.",
-   "recherche": "oil refinery",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "1,13 €  ·  47 %",
-     "heros": "1,13 €",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:67364"
+   ]
   },
   {
    "id": "p010",
    "format": "rush",
-   "texte": "Ensuite, le transport jusqu'à la station, et la station elle-même : vingt-quatre centimes.",
-   "recherche": "fuel tanker truck",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "0,24 €",
-     "heros": "0,24 €",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:384053"
-  },
-  {
-   "id": "p011",
-   "format": "schema",
-   "texte": "Et les taxes : environ un euro par litre. Quarante-deux pour cent du prix.",
-   "etiquette_schema": "Le chiffre",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 1.003,
-    "decimales": 2,
-    "suffixe": " €",
-    "legende": "de taxes par litre de gazole",
-    "revele_a": 1.4,
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026",
-    "comparaison": "42 % du prix"
-   },
-   "transition": "coupe",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 1.4,
-     "volume": 0.5
-    }
-   ],
-   "recherche": "euro coins",
-   "media_ref": "pv:138315"
-  },
-  {
-   "id": "p012",
-   "format": "rush",
-   "texte": "Mais pourquoi tout ça a autant grimpé cette année ? Pour comprendre, il faut aller voir un détroit, à cinq mille kilomètres d'ici.",
-   "recherche": "oil tanker ship sea",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "POURQUOI ?",
-     "heros": "POURQUOI ?",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:629472"
-  },
-  {
-   "id": "p013",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "02",
-   "titre": "Le détroit qui fait ton prix",
-   "sous_titre": "Ormuz, 2026",
-   "recherche": "oil tanker aerial",
-   "duree_min": 2.6,
-   "transition": "fondu",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
-    }
-   ],
-   "media_ref": "pi:4426675"
-  },
-  {
-   "id": "p014",
-   "format": "rush",
    "texte": "Le détroit d'Ormuz, entre l'Iran et la péninsule arabique.",
-   "recherche": "oil tanker",
+   "media_ref": "pi:4426675",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -341,14 +244,13 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:5117014"
+   ]
   },
   {
-   "id": "p015",
+   "id": "p011",
    "format": "rush",
    "texte": "Normalement, près d'un cinquième du pétrole mondial passe par là.",
-   "recherche": "tanker ship ocean",
+   "media_ref": "pv:7338",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -359,14 +261,30 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:7338"
+   ]
   },
   {
-   "id": "p016",
+   "id": "p012",
    "format": "rush",
-   "texte": "Fin février deux mille vingt-six, l'Iran le ferme. Le trafic chute de plus de quatre-vingt-dix pour cent.",
-   "recherche": "cargo ship port",
+   "texte": "Fin février deux mille vingt-six, l'Iran le ferme.",
+   "media_ref": "pv:23544",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "FIN FÉVRIER 2026",
+     "heros": "FERMÉ",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p013",
+   "format": "rush",
+   "texte": "Le trafic des pétroliers chute de plus de quatre-vingt-dix pour cent.",
+   "media_ref": "pi:654867",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -377,14 +295,14 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:23544"
+   ]
   },
   {
-   "id": "p017",
+   "id": "p014",
    "format": "ecran_partage",
    "texte": "Le baril de Brent passe d'environ soixante et onze dollars à plus de cent douze, le vingt mars.",
    "etiquette_schema": "Trois semaines",
+   "media_ref": "pi:5989284",
    "schema": {
     "type": "liste",
     "titre": "Le baril de Brent",
@@ -401,17 +319,15 @@
     ],
     "source": "Selectra, 30/06/2026"
    },
-   "recherche": "oil barrels",
    "transition": "coupe",
    "ambiance": "tension",
-   "cote": "gauche",
-   "media_ref": "pi:5989284"
+   "cote": "gauche"
   },
   {
-   "id": "p018",
+   "id": "p015",
    "format": "rush",
-   "texte": "Environ soixante pour cent de hausse, en trois semaines.",
-   "recherche": "stock market chart",
+   "texte": "Soixante pour cent de hausse, en trois semaines.",
+   "media_ref": "pv:166289",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
@@ -422,16 +338,111 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:166289"
+   ]
+  },
+  {
+   "id": "p016",
+   "format": "rush",
+   "texte": "Début novembre, il est encore autour de cent quatre dollars.",
+   "media_ref": "pv:43629",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "3 NOV. : ≈ 104 $",
+     "heros": "104 $",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p017",
+   "format": "rush",
+   "texte": "Verdict pour le pétrole : coupable de la hausse. Mais il a baissé depuis, et pas ton plein.",
+   "media_ref": "wc:File:Pump Jack at the Lost Hills Oil Field In Central California.jpg",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "COUPABLE… EN PARTIE",
+     "heros": "EN PARTIE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p018",
+   "format": "rush",
+   "texte": "Et ce n'est même pas le plus fou. Le deuxième suspect, presque personne ne le connaît.",
+   "media_ref": "pv:67364",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "SUSPECT N° 2 ?",
+     "heros": "N° 2",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
   },
   {
    "id": "p019",
+   "format": "schema",
+   "texte": "",
+   "etiquette_schema": "Suspect n° 2",
+   "duree_min": 2.6,
+   "schema": {
+    "type": "suspect",
+    "nom": "Le raffineur",
+    "accusation": "Celui qui transforme le pétrole",
+    "numero": "02"
+   },
+   "transition": "fondu",
+   "ambiance": "emotion",
+   "media_ref": "pv:330501",
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.3
+    },
+    {
+     "nom": "impact",
+     "a": 0.3,
+     "volume": 0.6
+    }
+   ]
+  },
+  {
+   "id": "p020",
    "format": "rush",
-   "texte": "Et pour le gazole, c'est pire. Des raffineries du Golfe sont touchées, et l'Europe manque de diesel.",
-   "recherche": "oil refinery night",
+   "texte": "Le pétrole brut, ta voiture ne peut pas l'utiliser. Il faut le raffiner, en gazole ou en essence.",
+   "media_ref": "pi:3613522",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "emotion",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "BRUT → GAZOLE",
+     "heros": "GAZOLE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p021",
+   "format": "rush",
+   "texte": "Or cette année, des raffineries du Golfe ont été touchées. Et l'Europe manque de diesel.",
+   "media_ref": "pi:3613526",
+   "transition": "coupe",
+   "ambiance": "emotion",
    "couches": [
     {
      "type": "mots",
@@ -440,14 +451,14 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:330501"
+   ]
   },
   {
-   "id": "p020",
+   "id": "p022",
    "format": "ecran_partage",
-   "texte": "La marge des raffineurs explose : quarante euros la tonne en février, deux cent trente-cinq en septembre.",
+   "texte": "Résultat : la marge des raffineurs explose. Quarante euros la tonne en février… deux cent trente-cinq en septembre.",
    "etiquette_schema": "Six fois plus",
+   "media_ref": "pv:343874",
    "schema": {
     "type": "liste",
     "titre": "Marge de raffinage (la tonne)",
@@ -460,27 +471,21 @@
       "texte": "Septembre",
       "valeur": "235 €",
       "heros": true
-     },
-     {
-      "texte": "Début octobre",
-      "valeur": "≈ 125 €"
      }
     ],
     "source": "Kelwatt d'après la DGEC, octobre 2026"
    },
-   "recherche": "refinery industrial",
    "transition": "coupe",
-   "ambiance": "tension",
-   "cote": "gauche",
-   "media_ref": "pi:3613522"
+   "ambiance": "emotion",
+   "cote": "gauche"
   },
   {
-   "id": "p021",
+   "id": "p023",
    "format": "rush",
-   "texte": "Mi-septembre, le gazole bat son record : deux euros trente-huit le litre.",
-   "recherche": "gas station price sign",
+   "texte": "Six fois plus. Mi-septembre, le gazole bat son record : deux euros trente-huit.",
+   "media_ref": "pi:206098",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "emotion",
    "couches": [
     {
      "type": "mots",
@@ -489,258 +494,15 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:1744734"
-  },
-  {
-   "id": "p022",
-   "format": "rush",
-   "texte": "Le pétrole, on n'y peut rien. Mais il y a un morceau du prix qui, lui, ne bouge jamais.",
-   "recherche": "car driving road",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "IL NE BOUGE JAMAIS",
-     "heros": "JAMAIS",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:2165"
-  },
-  {
-   "id": "p023",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "03",
-   "titre": "Les taxes",
-   "sous_titre": "Une taxe… sur une taxe",
-   "recherche": "euro banknotes",
-   "duree_min": 2.6,
-   "transition": "fondu",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
-    }
-   ],
-   "media_ref": "pv:133501"
+   ]
   },
   {
    "id": "p024",
-   "format": "schema",
-   "texte": "D'abord l'accise, l'ancienne T I C P E : soixante et un centimes par litre de gazole.",
-   "etiquette_schema": "Le chiffre",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 0.608,
-    "decimales": 3,
-    "suffixe": " €",
-    "legende": "d'accise par litre de gazole",
-    "revele_a": 1.8,
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
-   },
-   "transition": "coupe",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 1.8,
-     "volume": 0.5
-    }
-   ],
-   "recherche": "fuel nozzle",
-   "media_ref": "pi:331992"
-  },
-  {
-   "id": "p025",
    "format": "rush",
-   "texte": "C'est un montant fixe. Que le baril monte ou baisse, elle ne change pas.",
-   "recherche": "oil barrels",
+   "texte": "Voilà pourquoi le gazole coûte plus cher que le sans plomb, alors qu'il est moins taxé.",
+   "media_ref": "pi:4267357",
    "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "MONTANT FIXE",
-     "heros": "FIXE",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "wc:File:Oil barrels, buildings, and rail vehicles near the Changhua Roundhouse.jpg"
-  },
-  {
-   "id": "p026",
-   "format": "rush",
-   "texte": "Ensuite, la TVA : vingt pour cent. Et elle se calcule aussi sur l'accise.",
-   "recherche": "cash register",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "TVA 20 %",
-     "heros": "20 %",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:9728"
-  },
-  {
-   "id": "p027",
-   "format": "rush",
-   "texte": "Oui : tu paies une taxe sur une taxe.",
-   "recherche": "receipt paper",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "punch": {
-    "a": 0.9,
-    "texte": "TAXE SUR TAXE"
-   },
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 0.9,
-     "volume": 0.5
-    }
-   ],
-   "media_ref": "pv:13691"
-  },
-  {
-   "id": "p028",
-   "format": "ecran_partage",
-   "texte": "Au total, un euro de taxes par litre de gazole. Et sur le sans plomb, presque la moitié du prix.",
-   "etiquette_schema": "Accise + TVA",
-   "schema": {
-    "type": "liste",
-    "titre": "Taxes par litre",
-    "elements": [
-     {
-      "texte": "Gazole",
-      "valeur": "1,00 € · 42 %"
-     },
-     {
-      "texte": "Sans plomb 95",
-      "valeur": "1,02 € · 49 %",
-      "heros": true
-     }
-    ],
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
-   },
-   "recherche": "gas station",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "cote": "gauche",
-   "media_ref": "pv:175"
-  },
-  {
-   "id": "p029",
-   "format": "rush",
-   "texte": "Sur un plein de cinquante litres, ça fait environ cinquante euros pour l'État.",
-   "recherche": "euro banknotes counting",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "≈ 50 € POUR L'ÉTAT",
-     "heros": "50 €",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:268220"
-  },
-  {
-   "id": "p030",
-   "format": "rush",
-   "texte": "Et cette taxe fixe a un effet bizarre : elle amortit les baisses.",
-   "recherche": "oil pump jack",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "ELLE AMORTIT LES BAISSES",
-     "heros": "BAISSES",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "wc:File:Pump Jack at the Lost Hills Oil Field In Central California.jpg"
-  },
-  {
-   "id": "p031",
-   "format": "schema",
-   "texte": "Si le baril perd dix pour cent, ton litre ne baisse que d'environ huit centimes.",
-   "etiquette_schema": "Le chiffre",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 7.7,
-    "decimales": 1,
-    "suffixe": " c",
-    "legende": "de baisse à la pompe pour un baril à − 10 %",
-    "revele_a": 2.0,
-    "source": "Kelwatt, octobre 2026",
-    "comparaison": "− 3,3 % seulement"
-   },
-   "transition": "coupe",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 2.0,
-     "volume": 0.5
-    }
-   ],
-   "recherche": "fuel pump",
-   "media_ref": "pv:343874"
-  },
-  {
-   "id": "p032",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "04",
-   "titre": "Diesel contre essence",
-   "sous_titre": "Pourquoi le gazole coûte plus cher",
-   "recherche": "diesel truck",
-   "duree_min": 2.6,
-   "transition": "fondu",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
-    }
-   ],
-   "media_ref": "pi:3578297"
-  },
-  {
-   "id": "p033",
-   "format": "rush",
-   "texte": "Tu as remarqué ? En ce moment, le gazole est plus cher que le sans plomb.",
-   "recherche": "gas station pumps",
-   "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "emotion",
    "couches": [
     {
      "type": "mots",
@@ -749,32 +511,14 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:4267357"
+   ]
   },
   {
-   "id": "p034",
-   "format": "rush",
-   "texte": "Pourtant, il est moins taxé : soixante et un centimes d'accise, contre soixante-sept pour le sans plomb.",
-   "recherche": "fuel nozzle close",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "ACCISE : 0,61 € CONTRE 0,67 €",
-     "heros": "0,61 €",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:162948"
-  },
-  {
-   "id": "p035",
+   "id": "p025",
    "format": "ecran_partage",
-   "texte": "La différence vient du produit lui-même : un euro treize pour le gazole raffiné, contre soixante-dix-neuf centimes pour l'essence.",
+   "texte": "Le gazole raffiné coûte un euro treize le litre, contre soixante-dix-neuf centimes pour l'essence.",
    "etiquette_schema": "Le produit",
+   "media_ref": "pi:4471304",
    "schema": {
     "type": "liste",
     "titre": "Pétrole + raffinage, par litre",
@@ -791,62 +535,117 @@
     ],
     "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
    },
-   "recherche": "diesel engine",
    "transition": "coupe",
-   "ambiance": "tension",
-   "cote": "gauche",
-   "media_ref": "pi:4471304"
+   "ambiance": "emotion",
+   "cote": "gauche"
   },
   {
-   "id": "p036",
+   "id": "p026",
    "format": "rush",
-   "texte": "C'est le diesel qui manque en Europe. Et ce qui manque, coûte plus cher.",
-   "recherche": "truck highway",
+   "texte": "Ce qui manque coûte plus cher. Début octobre, la marge est redescendue vers cent vingt-cinq euros. Mais lentement.",
+   "media_ref": "pi:3578297",
+   "transition": "coupe",
+   "ambiance": "emotion",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "≈ 125 € / TONNE",
+     "heros": "125 €",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p027",
+   "format": "rush",
+   "texte": "Verdict pour le raffineur : coupable en partie.",
+   "media_ref": "pi:302563",
+   "transition": "coupe",
+   "ambiance": "emotion",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "COUPABLE EN PARTIE",
+     "heros": "EN PARTIE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p028",
+   "format": "schema",
+   "texte": "Nouvelle devinette. Ta station, elle garde combien par litre ? Un centime, dix centimes, ou trente ?",
+   "etiquette_schema": "Réponse avec le suspect n° 4",
+   "media_ref": "wc:File:A Spinx gas station and convenience store in Highlands, North Carolina 01.jpg",
+   "schema": {
+    "type": "liste",
+    "titre": "La station garde combien par litre ?",
+    "elements": [
+     {
+      "texte": "A",
+      "valeur": "1 c ?"
+     },
+     {
+      "texte": "B",
+      "valeur": "10 c ?"
+     },
+     {
+      "texte": "C",
+      "valeur": "30 c ?"
+     }
+    ],
+    "source": "Réponse plus loin dans la vidéo"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "duree_min": 4.6,
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 3.0,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 3.6,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "p029",
+   "format": "rush",
+   "texte": "Retiens ta réponse. Avant elle, il y a le suspect qui se sert à chaque litre, sans jamais bouger.",
+   "media_ref": "pv:133501",
    "transition": "coupe",
    "ambiance": "tension",
    "couches": [
     {
      "type": "mots",
-     "texte": "CE QUI MANQUE COÛTE PLUS CHER",
-     "heros": "CHER",
+     "texte": "IL NE BOUGE JAMAIS",
+     "heros": "JAMAIS",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:53582"
+   ]
   },
   {
-   "id": "p037",
-   "format": "rush",
-   "texte": "Bon. Et la station, dans tout ça ? Elle se gave ?",
-   "recherche": "gas station convenience store",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "punch": {
-    "a": 1.4,
-    "texte": "ELLE SE GAVE ?"
-   },
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 1.4,
-     "volume": 0.5
-    }
-   ],
-   "media_ref": "wc:File:A Spinx gas station and convenience store in Highlands, North Carolina 01.jpg"
-  },
-  {
-   "id": "p038",
-   "format": "titre",
-   "type": "titre",
+   "id": "p030",
+   "format": "schema",
    "texte": "",
-   "numero": "05",
-   "titre": "La station se gave ?",
-   "sous_titre": "Ce qu'elle gagne vraiment",
-   "recherche": "gas station night",
+   "etiquette_schema": "Suspect n° 3",
    "duree_min": 2.6,
+   "schema": {
+    "type": "suspect",
+    "nom": "L'État",
+    "accusation": "Il se sert à chaque litre",
+    "numero": "03"
+   },
    "transition": "fondu",
    "ambiance": "tension",
+   "media_ref": "pv:9728",
    "sons": [
     {
      "nom": "riser",
@@ -855,19 +654,270 @@
     },
     {
      "nom": "impact",
-     "a": 0.2,
+     "a": 0.3,
      "volume": 0.6
     }
+   ]
+  },
+  {
+   "id": "p031",
+   "format": "schema",
+   "texte": "D'abord l'accise, l'ancienne T I C P E : soixante et un centimes par litre de gazole.",
+   "etiquette_schema": "Le chiffre",
+   "media_ref": "pi:331992",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 0.608,
+    "decimales": 3,
+    "suffixe": " €",
+    "legende": "d'accise par litre de gazole",
+    "revele_a": 2.2,
+    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 1.0000000000000002,
+     "volume": 0.35
+    },
+    {
+     "nom": "impact",
+     "a": 2.2,
+     "volume": 0.6
+    }
+   ]
+  },
+  {
+   "id": "p032",
+   "format": "rush",
+   "texte": "C'est un montant fixe. Que le baril monte ou baisse, elle ne change pas.",
+   "media_ref": "wc:File:Oil barrels, buildings, and rail vehicles near the Changhua Roundhouse.jpg",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "MONTANT FIXE",
+     "heros": "FIXE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p033",
+   "format": "rush",
+   "texte": "Ensuite la TVA : vingt pour cent. Et elle se calcule aussi sur l'accise.",
+   "media_ref": "pv:138315",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "TVA 20 %",
+     "heros": "20 %",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p034",
+   "format": "rush",
+   "texte": "Oui : tu paies une taxe sur une taxe.",
+   "media_ref": "pv:13691",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "punch": {
+    "a": 0.9,
+    "texte": "TAXE SUR TAXE"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.9,
+     "volume": 0.6
+    }
+   ]
+  },
+  {
+   "id": "p035",
+   "format": "ecran_partage",
+   "texte": "Au total, un euro de taxes par litre de gazole. Et sur le sans plomb, presque la moitié du prix.",
+   "etiquette_schema": "Accise + TVA",
+   "media_ref": "pv:175",
+   "schema": {
+    "type": "liste",
+    "titre": "Taxes par litre",
+    "elements": [
+     {
+      "texte": "Gazole",
+      "valeur": "1,00 € · 42 %"
+     },
+     {
+      "texte": "Sans plomb 95",
+      "valeur": "1,02 € · 49 %",
+      "heros": true
+     }
+    ],
+    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "cote": "gauche"
+  },
+  {
+   "id": "p036",
+   "format": "schema",
+   "texte": "Alors, ta réponse du début ? Sur ton plein de cinquante litres, l'État prend…",
+   "etiquette_schema": "Ta réponse ?",
+   "duree_min": 4.5,
+   "media_ref": "pi:8272496",
+   "schema": {
+    "type": "devine",
+    "question": "Ton plein : combien pour l'État ?",
+    "choix": [
+     "20 €",
+     "35 €",
+     "50 €"
+    ],
+    "bonne": 2,
+    "secondes": 2
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.2,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 1.8,
+     "volume": 0.3
+    }
    ],
-   "media_ref": "pi:1839760"
+   "transition": "coupe",
+   "ambiance": "revelation"
+  },
+  {
+   "id": "p037",
+   "format": "rush",
+   "texte": "Environ cinquante euros. Plus de quarante pour cent de ton plein.",
+   "media_ref": "pi:2954372",
+   "transition": "coupe",
+   "ambiance": "revelation",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "≈ 50 € POUR L'ÉTAT",
+     "heros": "50 €",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p038",
+   "format": "schema",
+   "texte": "Et cette taxe fixe amortit les baisses. Si le baril perd dix pour cent, ton litre ne baisse que d'environ huit centimes.",
+   "etiquette_schema": "Le chiffre",
+   "media_ref": "pi:5925098",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 7.7,
+    "decimales": 1,
+    "suffixe": " c",
+    "legende": "de baisse à la pompe pour un baril à − 10 %",
+    "revele_a": 3.4,
+    "source": "Kelwatt, octobre 2026",
+    "comparaison": "− 3,3 % seulement"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 2.2,
+     "volume": 0.35
+    },
+    {
+     "nom": "impact",
+     "a": 3.4,
+     "volume": 0.6
+    }
+   ]
   },
   {
    "id": "p039",
    "format": "rush",
-   "texte": "Transport, stockage, livraison, et la station : vingt-quatre centimes par litre de gazole.",
-   "recherche": "fuel tanker truck road",
+   "texte": "Verdict pour l'État : il ne fait pas monter le prix. Mais il freine la baisse.",
+   "media_ref": "pv:2165",
    "transition": "coupe",
    "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "IL FREINE LA BAISSE",
+     "heros": "FREINE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p040",
+   "format": "rush",
+   "texte": "Reste le suspect qu'on accuse tous. Celui que tu vois chaque semaine.",
+   "media_ref": "pi:1839760",
+   "transition": "coupe",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "SUSPECT N° 4 ?",
+     "heros": "N° 4",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p041",
+   "format": "schema",
+   "texte": "",
+   "etiquette_schema": "Suspect n° 4",
+   "duree_min": 2.6,
+   "schema": {
+    "type": "suspect",
+    "nom": "Ta station",
+    "accusation": "Elle se gave ?",
+    "numero": "04"
+   },
+   "transition": "fondu",
+   "ambiance": "leger",
+   "media_ref": "pi:2665795",
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.3
+    },
+    {
+     "nom": "impact",
+     "a": 0.3,
+     "volume": 0.6
+    }
+   ]
+  },
+  {
+   "id": "p042",
+   "format": "rush",
+   "texte": "Transport, dépôts, livraison, et la station : vingt-quatre centimes par litre de gazole.",
+   "media_ref": "pi:5291980",
+   "transition": "coupe",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -876,61 +926,96 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:5291980"
+   ]
   },
   {
-   "id": "p040",
+   "id": "p043",
    "format": "rush",
-   "texte": "Ça paie les camions-citernes, les dépôts, les salariés, les pompes.",
-   "recherche": "fuel storage tanks",
+   "texte": "Ça paie les camions-citernes, les cuves, les salariés, les pompes.",
+   "media_ref": "wc:File:Munich Airport FJS – fuel storage tanks aerial view 2014.jpg",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
-     "texte": "CAMIONS · DÉPÔTS · SALARIÉS",
-     "heros": "DÉPÔTS",
+     "texte": "CAMIONS · CUVES · SALARIÉS",
+     "heros": "CUVES",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:3267895"
+   ]
   },
   {
-   "id": "p041",
+   "id": "p044",
    "format": "schema",
-   "texte": "Et la marge nette de la station, une fois tout payé ? Souvent un à deux centimes par litre.",
+   "texte": "Et sa marge, une fois tout payé ? Ta réponse : un, dix ou trente centimes ?",
+   "etiquette_schema": "Ta réponse ?",
+   "duree_min": 4.5,
+   "media_ref": "pi:8626683",
+   "schema": {
+    "type": "devine",
+    "question": "La station garde combien par litre ?",
+    "choix": [
+     "1 c",
+     "10 c",
+     "30 c"
+    ],
+    "bonne": 0,
+    "secondes": 2
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.2,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 1.8,
+     "volume": 0.3
+    }
+   ],
+   "transition": "coupe",
+   "ambiance": "revelation"
+  },
+  {
+   "id": "p045",
+   "format": "schema",
+   "texte": "Souvent un à deux centimes par litre. Pas plus.",
    "etiquette_schema": "Le chiffre",
+   "media_ref": "pi:162948",
    "schema": {
     "type": "chiffre",
     "valeur": 2,
     "decimales": 0,
     "suffixe": " c",
-    "legende": "de marge nette, au plus",
-    "revele_a": 2.2,
+    "legende": "de marge nette par litre, au plus",
+    "revele_a": 1.0,
     "source": "Connaissance des Énergies, 03/11/2026",
-    "comparaison": "Souvent 1 à 2 centimes par litre"
+    "comparaison": "Souvent 1 à 2 centimes"
    },
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "revelation",
    "sons": [
     {
+     "nom": "riser",
+     "a": 0,
+     "volume": 0.35
+    },
+    {
      "nom": "impact",
-     "a": 2.2,
-     "volume": 0.5
+     "a": 1.0,
+     "volume": 0.6
     }
-   ],
-   "recherche": "gas station",
-   "media_ref": "pi:8626683"
+   ]
   },
   {
-   "id": "p042",
+   "id": "p046",
    "format": "rush",
    "texte": "Leclerc affirme même ne gagner qu'environ un centime par litre. C'est sa déclaration.",
-   "recherche": "supermarket parking",
+   "media_ref": "wc:File:T&T Supermarket parking lot, Vancouver, British Columbia (2009-07-27).jpg",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -939,16 +1024,32 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "wc:File:T&T Supermarket parking lot, Vancouver, British Columbia (2009-07-27).jpg"
+   ]
   },
   {
-   "id": "p043",
+   "id": "p047",
    "format": "rush",
-   "texte": "Donc ce n'est pas la station qui fait ton prix. Mais alors, pourquoi la baisse traîne autant ?",
-   "recherche": "traffic jam",
+   "texte": "Verdict pour la station : non coupable.",
+   "media_ref": "wc:File:Gas station attendants peer over their \"out of gas\" sign in Portland - NARA - 555434.jpg",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "NON COUPABLE",
+     "heros": "NON COUPABLE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p048",
+   "format": "rush",
+   "texte": "Alors si personne ne se gave, pourquoi la baisse traîne autant ? La réponse arrive.",
+   "media_ref": "pv:140078",
+   "transition": "coupe",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -957,202 +1058,49 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:140078"
+   ]
   },
   {
-   "id": "p044",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "06",
-   "titre": "La fusée et la plume",
-   "sous_titre": "Pourquoi les prix baissent si lentement",
-   "recherche": "rocket launch",
-   "duree_min": 2.6,
-   "transition": "fondu",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
-    }
-   ],
-   "media_ref": "pv:236"
-  },
-  {
-   "id": "p045",
+   "id": "p048b",
    "format": "rush",
-   "texte": "Les spécialistes ont un nom pour ça : la fusée et la plume.",
-   "recherche": "rocket launch",
+   "texte": "Mais d'abord, trois gestes pour payer moins.",
+   "media_ref": "pi:727162",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
-     "texte": "LA FUSÉE…",
-     "heros": "FUSÉE",
+     "texte": "3 GESTES POUR PAYER MOINS",
+     "heros": "3 GESTES",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:23882"
-  },
-  {
-   "id": "p046",
-   "format": "rush",
-   "texte": "Les prix montent comme une fusée… et redescendent comme une plume.",
-   "recherche": "feather falling",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "…ET LA PLUME",
-     "heros": "PLUME",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pv:109373"
-  },
-  {
-   "id": "p047",
-   "format": "rush",
-   "texte": "Première raison : les stations vendent des stocks achetés plus cher. La baisse met des jours, voire des semaines, à arriver.",
-   "recherche": "fuel storage tanks aerial",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "1 · LES STOCKS",
-     "heros": "STOCKS",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "wc:File:Munich Airport FJS – fuel storage tanks aerial view 2014.jpg"
-  },
-  {
-   "id": "p048",
-   "format": "rush",
-   "texte": "Deuxième raison : les marges de raffinage sont restées hautes. La baisse du baril ne passe qu'en partie.",
-   "recherche": "oil refinery",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "2 · LE RAFFINAGE",
-     "heros": "RAFFINAGE",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:3613526"
+   ]
   },
   {
    "id": "p049",
    "format": "rush",
-   "texte": "Troisième raison : le pétrole se paie en dollars. Quand l'euro baisse, il efface une partie de la baisse.",
-   "recherche": "dollar banknotes",
+   "texte": "Un : compare avant de faire le plein.",
+   "media_ref": "pi:7292033",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
-     "texte": "3 · LE DOLLAR",
-     "heros": "DOLLAR",
+     "texte": "1 · COMPARE",
+     "heros": "COMPARE",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:208082"
+   ]
   },
   {
-   "id": "p050",
-   "format": "schema",
-   "texte": "Résultat : deux semaines après son record, le gazole n'avait baissé que de deux virgule huit centimes.",
-   "etiquette_schema": "Le chiffre",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 2.8,
-    "decimales": 1,
-    "suffixe": " c",
-    "legende": "de baisse en deux semaines après le record",
-    "revele_a": 2.6,
-    "source": "Kelwatt d'après la DGEC, octobre 2026"
-   },
-   "transition": "coupe",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 2.6,
-     "volume": 0.5
-    }
-   ],
-   "recherche": "gas station price",
-   "media_ref": "pi:206098"
-  },
-  {
-   "id": "p051",
+   "id": "p049b",
    "format": "rush",
-   "texte": "Début octobre, les pays du G7 ont annoncé cent millions de barils de réserve sur le marché. Pour calmer les prix.",
-   "recherche": "oil barrels storage",
+   "texte": "Le site officiel prix-carburants point gouv point fr donne le prix de chaque station, en direct.",
+   "media_ref": "pi:695164",
    "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "100 MILLIONS DE BARILS",
-     "heros": "100 MILLIONS",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:302563"
-  },
-  {
-   "id": "p052",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "07",
-   "titre": "Comment payer moins",
-   "sous_titre": "Trois gestes qui marchent",
-   "recherche": "car dashboard",
-   "duree_min": 2.6,
-   "transition": "fondu",
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
-    }
-   ],
-   "media_ref": "pv:4053"
-  },
-  {
-   "id": "p053",
-   "format": "rush",
-   "texte": "Un : compare. Le site officiel prix-carburants point gouv point fr donne le prix de chaque station, en direct.",
-   "recherche": "smartphone hand map",
-   "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -1161,34 +1109,15 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:695164"
+   ]
   },
   {
-   "id": "p054",
+   "id": "p050",
    "format": "rush",
-   "texte": "Ça prend dix secondes, avant de faire le plein.",
-   "recherche": "gas station refueling",
+   "texte": "Deux : les prix plafonnés. Total bloque le gazole à deux euros vingt-cinq pour tout le monde.",
+   "media_ref": "pv:35190",
    "transition": "coupe",
-   "ambiance": "tension",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "10 SECONDES",
-     "heros": "10 SECONDES",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:175122"
-  },
-  {
-   "id": "p055",
-   "format": "rush",
-   "texte": "Deux : regarde les prix plafonnés. Total, par exemple, bloque le gazole à deux euros vingt-cinq pour tout le monde.",
-   "recherche": "gas station",
-   "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -1197,16 +1126,15 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:35190"
+   ]
   },
   {
-   "id": "p056",
+   "id": "p051",
    "format": "rush",
-   "texte": "Et un euro quatre-vingt-dix-neuf pour ses clients d'électricité ou de gaz, jusqu'à deux mille litres par an.",
-   "recherche": "car refueling",
+   "texte": "Et à un euro quatre-vingt-dix-neuf pour ses clients d'électricité ou de gaz, jusqu'à deux mille litres par an.",
+   "media_ref": "pi:175122",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -1215,16 +1143,32 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:2954372"
+   ]
   },
   {
-   "id": "p057",
+   "id": "p052",
    "format": "rush",
-   "texte": "Trois : lève le pied sur l'autoroute. Selon l'ADEME, dix kilomètres-heure de moins, c'est un à trois litres économisés tous les cinq cents kilomètres.",
-   "recherche": "highway driving",
+   "texte": "Trois : lève le pied sur l'autoroute.",
+   "media_ref": "pv:1101",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "3 · LÈVE LE PIED",
+     "heros": "LÈVE LE PIED",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p052b",
+   "format": "rush",
+   "texte": "Selon l'ADEME, dix kilomètres-heure de moins, c'est un à trois litres gardés tous les cinq cents kilomètres.",
+   "media_ref": "pv:184734",
+   "transition": "coupe",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
@@ -1233,146 +1177,263 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:1101"
+   ]
   },
   {
-   "id": "p058",
+   "id": "p053",
    "format": "rush",
-   "texte": "De cent trente à cent dix, tu peux donc garder jusqu'à six litres sur un long trajet. Soit plus de dix euros.",
-   "recherche": "highway road",
+   "texte": "De cent trente à cent dix, jusqu'à six litres sur un long trajet.",
+   "media_ref": "pv:23232",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "leger",
    "couches": [
     {
      "type": "mots",
-     "texte": "JUSQU'À 6 L ÉCONOMISÉS",
+     "texte": "JUSQU'À 6 L",
      "heros": "6 L",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:23232"
+   ]
   },
   {
-   "id": "p059",
+   "id": "p054",
+   "format": "schema",
+   "texte": "Dernière devinette. Deux semaines après le record de septembre, le gazole avait baissé de combien ? Trois, dix, ou vingt centimes ?",
+   "etiquette_schema": "Réponse juste après",
+   "media_ref": "pi:4978824",
+   "schema": {
+    "type": "liste",
+    "titre": "Deux semaines après le record : la baisse ?",
+    "elements": [
+     {
+      "texte": "A",
+      "valeur": "3 c ?"
+     },
+     {
+      "texte": "B",
+      "valeur": "10 c ?"
+     },
+     {
+      "texte": "C",
+      "valeur": "20 c ?"
+     }
+    ],
+    "source": "Réponse plus loin dans la vidéo"
+   },
+   "transition": "coupe",
+   "ambiance": "tension",
+   "duree_min": 4.6,
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 3.0,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 3.6,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "p055",
    "format": "titre",
    "type": "titre",
    "texte": "",
-   "numero": "08",
+   "numero": "",
    "titre": "La vérité",
-   "sous_titre": "Ton plein de 50 litres",
-   "recherche": "gas station night",
-   "duree_min": 2.6,
+   "sous_titre": "Qui garde la différence ?",
+   "media_ref": "pv:236",
+   "duree_min": 2.4,
    "transition": "fondu",
-   "ambiance": "tension",
+   "ambiance": "revelation",
    "sons": [
     {
      "nom": "riser",
      "a": 0,
-     "volume": 0.3
+     "volume": 0.35
     },
     {
      "nom": "impact",
-     "a": 0.2,
-     "volume": 0.6
+     "a": 0.25,
+     "volume": 0.7
     }
-   ],
-   "media_ref": "pi:2665795"
+   ]
   },
   {
-   "id": "p060",
+   "id": "p056",
    "format": "rush",
-   "texte": "Reprenons ton plein de cinquante litres de gazole : cent dix-huit euros cinquante-cinq.",
-   "recherche": "car refueling close up",
+   "texte": "Les spécialistes ont un nom pour ça : la fusée et la plume.",
+   "media_ref": "pv:23882",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "revelation",
    "couches": [
     {
      "type": "mots",
-     "texte": "TON PLEIN : 118,55 €",
-     "heros": "118,55 €",
+     "texte": "LA FUSÉE…",
+     "heros": "FUSÉE",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:4978824"
+   ]
   },
   {
-   "id": "p061",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "texte": "Cinquante-six euros pour le pétrole et le raffinage. Douze pour le transport et la station. Et cinquante pour l'État.",
-   "etiquette_schema": "Qui prend quoi",
-   "schema": {
-    "type": "decomposition",
-    "titre": "Ton plein de 50 L",
-    "unite": " €",
-    "parts": [
-     {
-      "label": "Pétrole + raffinage",
-      "valeur": 56.3
-     },
-     {
-      "label": "Transport + station",
-      "valeur": 12.1
-     },
-     {
-      "label": "Taxes (État)",
-      "valeur": 50.15,
-      "heros": true
-     }
-    ],
-    "source": "DGEC / Connaissance des Énergies, semaine du 30/10/2026 (calcul ×50)"
-   },
-   "recherche": "gas station pump",
-   "transition": "coupe",
-   "ambiance": "tension",
-   "media_ref": "pi:8272496"
-  },
-  {
-   "id": "p062",
+   "id": "p057",
    "format": "rush",
-   "texte": "Et la station, celle qu'on accuse ? Entre cinquante centimes et un euro, sur tout ton plein.",
-   "recherche": "gas station attendant",
+   "texte": "Les prix montent comme une fusée… et redescendent comme une plume.",
+   "media_ref": "pv:109373",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "revelation",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "…ET LA PLUME",
+     "heros": "PLUME",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p058",
+   "format": "schema",
+   "texte": "Ta réponse ? Deux semaines après le record, la baisse était de…",
+   "etiquette_schema": "Ta réponse ?",
+   "duree_min": 4.5,
+   "media_ref": "pi:1914310",
+   "schema": {
+    "type": "devine",
+    "question": "La baisse en deux semaines",
+    "choix": [
+     "3 c",
+     "10 c",
+     "20 c"
+    ],
+    "bonne": 0,
+    "secondes": 2
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 1.2,
+     "volume": 0.3
+    },
+    {
+     "nom": "tick",
+     "a": 1.8,
+     "volume": 0.3
+    }
+   ],
+   "transition": "coupe",
+   "ambiance": "revelation"
+  },
+  {
+   "id": "p059",
+   "format": "rush",
+   "texte": "Deux virgule huit centimes. Seulement.",
+   "media_ref": "pv:4053",
+   "transition": "coupe",
+   "ambiance": "revelation",
    "punch": {
-    "a": 2.0,
-    "texte": "≈ 1 €"
+    "a": 0.5,
+    "texte": "2,8 c"
    },
    "sons": [
     {
      "nom": "impact",
-     "a": 2.0,
-     "volume": 0.5
+     "a": 0.5,
+     "volume": 0.7
     }
-   ],
-   "media_ref": "wc:File:Gas station attendants peer over their \"out of gas\" sign in Portland - NARA - 555434.jpg"
+   ]
+  },
+  {
+   "id": "p060",
+   "format": "rush",
+   "texte": "Pourquoi ? Les stations écoulent des stocks achetés plus cher. Les raffineurs gardent des marges hautes.",
+   "media_ref": "pv:53582",
+   "transition": "coupe",
+   "ambiance": "revelation",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "STOCKS · RAFFINAGE",
+     "heros": "STOCKS",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p061",
+   "format": "rush",
+   "texte": "Le pétrole se paie en dollars, et l'euro a baissé. Et la taxe fixe, elle, ne baisse jamais.",
+   "media_ref": "pv:208082",
+   "transition": "coupe",
+   "ambiance": "revelation",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "DOLLAR · TAXE FIXE",
+     "heros": "TAXE FIXE",
+     "position": "haut",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "p062",
+   "format": "ecran_partage",
+   "texte": "Reprends ton plein de cinquante litres : cent dix-huit euros cinquante-cinq. Cinquante-six pour le pétrole et le raffinage. Douze pour le transport et la station. Et cinquante pour l'État.",
+   "etiquette_schema": "La vérité",
+   "media_ref": "pv:159710",
+   "schema": {
+    "type": "liste",
+    "titre": "Ton plein de 50 L : 118,55 €",
+    "elements": [
+     {
+      "texte": "Pétrole + raffinage",
+      "valeur": "56,30 €"
+     },
+     {
+      "texte": "Transport + station",
+      "valeur": "12,10 €"
+     },
+     {
+      "texte": "État (taxes)",
+      "valeur": "50,15 €",
+      "heros": true
+     }
+    ],
+    "source": "DGEC / Connaissance des Énergies, 30/10/2026 (calcul × 50)"
+   },
+   "transition": "coupe",
+   "ambiance": "revelation",
+   "cote": "gauche"
   },
   {
    "id": "p063",
    "format": "rush",
-   "texte": "Le vrai prix de ton plein, il se joue dans un détroit au bout du monde… et dans les caisses de l'État.",
-   "recherche": "oil tanker sunset",
+   "texte": "Personne ne vole la différence. Elle redescend, mais comme une plume. Et la part de l'État, elle, reste.",
+   "media_ref": "pv:200682",
    "transition": "coupe",
-   "ambiance": "tension",
+   "ambiance": "revelation",
    "couches": [
     {
      "type": "mots",
-     "texte": "ORMUZ + L'ÉTAT",
-     "heros": "L'ÉTAT",
+     "texte": "ELLE REDESCEND… LENTEMENT",
+     "heros": "LENTEMENT",
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pi:654867"
+   ]
   },
   {
    "id": "p064",
    "format": "rush",
-   "texte": "Si tu aimes savoir où part ton argent, abonne-toi. La semaine prochaine : le vrai prix de ton chauffage, cet hiver.",
-   "recherche": "heating radiator",
+   "texte": "Abonne-toi si tu veux savoir où part ton argent. La semaine prochaine : le vrai prix de ton chauffage.",
+   "media_ref": "pv:112514",
    "transition": "coupe",
    "ambiance": "leger",
    "couches": [
@@ -1383,14 +1444,13 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "pv:112514"
+   ]
   },
   {
    "id": "p065",
    "format": "rush",
    "texte": "Et toi, tu paies ton litre combien, en ce moment ? Dis-le en commentaire.",
-   "recherche": "fuel pump price display",
+   "media_ref": "pi:510560",
    "transition": "coupe",
    "ambiance": "leger",
    "couches": [
@@ -1401,8 +1461,7 @@
      "position": "haut",
      "a": 0.2
     }
-   ],
-   "media_ref": "wc:File:Gasoline petrol and diesel fuel pump prices on display at the Taiwan CPC Caogang Gas Station on 14 January 2021.jpg"
+   ]
   }
  ]
 }
