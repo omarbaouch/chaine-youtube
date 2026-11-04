@@ -1,0 +1,63 @@
+{
+ "id": "c01-planteur",
+ "titre": "Ta tablette de chocolat : combien pour le planteur ? #shorts",
+ "accroche": "TA TABLETTE : COMBIEN POUR LE PLANTEUR ?",
+ "plans": [
+  {
+   "texte": "Ta tablette de chocolat noir de grande marque coûte environ deux euros soixante. Devine combien touche celui qui a récolté le cacao.",
+   "recherche": [
+    "chocolate bar",
+    "dark chocolate"
+   ],
+   "chiffre": "2,60 €",
+   "chiffre_mot": "deux"
+  },
+  {
+   "texte": "Dedans, il y a au moins soixante-dix grammes de cacao.",
+   "recherche": [
+    "cocoa beans",
+    "cacao beans"
+   ],
+   "chiffre": "70 g",
+   "chiffre_mot": "soixante"
+  },
+  {
+   "texte": "En Côte d'Ivoire, le planteur est payé mille deux cents francs C F A le kilo. Soit un euro quatre-vingt-trois.",
+   "recherche": [
+    "cocoa farmer",
+    "cocoa pods"
+   ],
+   "chiffre": "1,83 €/kg",
+   "chiffre_mot": "soit"
+  },
+  {
+   "texte": "Pour ta tablette, ça fait treize centimes. Cinq pour cent du prix.",
+   "recherche": [
+    "cocoa pod",
+    "cocoa harvest"
+   ],
+   "chiffre": "0,13 €",
+   "chiffre_mot": "treize"
+  },
+  {
+   "texte": "Il y a un an, au prix record, il touchait trente centimes. Le cacao a baissé. Ta tablette, non.",
+   "recherche": [
+    "chocolate bar",
+    "chocolate"
+   ],
+   "chiffre": "0,30 € → 0,13 €",
+   "chiffre_mot": "trente"
+  }
+ ],
+ "recherche_fin": [
+  "dark chocolate"
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "sources": [
+  "Prix au planteur 1 200 FCFA/kg (04/03/2026) : https://fr.allafrica.com/stories/202603050107.html",
+  "Record 2 800 FCFA/kg (01/10/2025) : https://www.financialafrik.com/2025/10/02/cote-divoire-le-prix-bord-champ-du-cacao-pour-la-nouvelle-campagne-fixe-a-2800-fcfa-kg/",
+  "Tablette noire 70 % de grande marque ≈ 2,60 € (mai 2026) : https://www.connexionfrance.com/news/well-known-supermarket-chocolate-named-best-in-france/790526",
+  "Calcul : 70 g de cacao × 1,83 €/kg ≈ 0,13 € (1 € = 655,957 FCFA)"
+ ],
+ "commentaire": "Tu aurais dit combien ? 👇 Abonne-toi : chaque jour, un nouveau vrai prix."
+}
