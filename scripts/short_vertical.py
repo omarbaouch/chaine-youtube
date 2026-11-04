@@ -60,6 +60,12 @@ else:
     sys.path.insert(0, str(RACINE / "scripts"))
     from voix_edge import dire_avec_mots
     mots = dire_avec_mots(texte_complet, VOIX, str(voix_mp3), debit=fiche.get("debit", "+10%"), lang=False)
+if mots and mots[0]["debut"] > 0.06:
+    decal = mots[0]["debut"] - 0.03
+    brut = tmp / "voix-brute.mp3"; voix_mp3.rename(brut)
+    sh("ffmpeg", "-y", "-ss", f"{decal:.3f}", "-i", brut, "-c:a", "libmp3lame", "-q:a", "2", voix_mp3)
+    for w in mots:
+        w["debut"] -= decal; w["fin"] -= decal
 duree_voix = duree(voix_mp3)
 
 # bornes de chaque morceau (par le compte des lettres, comme scripts/voix.py)
@@ -247,11 +253,15 @@ ass = [
     f"Style: Sous,{POLICE},100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,7,3,5,90,90,0,1",
     f"Style: Bandeau,{POLICE},82,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,90,90,240,1",
     f"Style: Chiffre,{POLICE},210,&H0000D7FF,&H0000D7FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,10,6,5,60,60,0,1",
+    f"Style: Accroche,{POLICE},112,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,30,0,5,70,70,0,1",
     f"Style: Fin,{POLICE},90,&H00FFFFFF,&H00FFFFFF,&H000000FF,&H000000FF,-1,0,0,0,100,100,0,0,3,22,0,5,80,80,0,1",
     "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
 ]
 # bandeau du haut : visible dès la 1re image, tout le Short
-ass.append(f"Dialogue: 2,{ts(0)},{ts(TOTAL)},Bandeau,,0,0,0,,{esc(fiche['accroche'])}")
+FIN_ACCROCHE = min(1.6, fins[0] - 0.2)
+ass.append(f"Dialogue: 4,{ts(0)},{ts(FIN_ACCROCHE)},Accroche,,0,0,0,,"
+           f"{{\\pos({W // 2},820)\\fscx118\\fscy118\\t(0,120,\\fscx100\\fscy100)}}{esc(fiche['accroche'])}")
+ass.append(f"Dialogue: 2,{ts(FIN_ACCROCHE)},{ts(TOTAL)},Bandeau,,0,0,0,,{esc(fiche['accroche'])}")
 # chiffres chocs : apparaissent quand la voix dit le nombre (premier mot-nombre du plan, ou "chiffre_mot")
 NOMBRES = re.compile(r"^(z[ée]ro|une?|deux|trois|quatre|cinq|six|sept|huit|neuf|dix|onze|douze|treize|quatorze|quinze|seize|"
                      r"vingt|trente|quarante|cinquante|soixante|cent|cents|mille|moiti[ée]|quart|tiers|\d)", re.I)
@@ -307,6 +317,9 @@ musique = RACINE / "public" / "sfx" / "musique-enquete.wav"
 entrees = ["-i", str(image), "-i", str(voix_mp3)]
 filtres, mix, n_in = [], ["[1:a]volume=1.0,adelay=0|0[v]"], 2
 labels = ["[v]"]
+if (sfx / "impact.wav").exists():  # impact dès la 1re image, avec la carte d'accroche
+    entrees += ["-i", str(sfx / "impact.wav")]
+    mix.append(f"[{n_in}:a]volume=0.45[i{n_in}]"); labels.append(f"[i{n_in}]"); n_in += 1
 for s in segments[1:]:
     if (sfx / "whoosh.wav").exists():
         entrees += ["-i", str(sfx / "whoosh.wav")]

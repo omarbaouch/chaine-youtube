@@ -57,3 +57,13 @@ Réserve : eau en bouteille, capsules de café, jean, iPhone, canette, cigarette
 4. **Vidéo associée** (vidéo longue) sur chaque Short : geste d'Omar dans l'appli YouTube Studio.
 5. **Vidéo longue 6–8 min**, sortie le mardi 18 h, avant le pic d'intérêt de l'actualité.
 6. Objectif fin novembre : **100 abonnés**, un Short > 10 000 vues. Mesurer chaque matin (`bmo-studio-link/stats`).
+
+## 7. Engagement des Shorts (point d'Omar du 04/11/2026)
+Mesure de YouTube Studio : « ont continué de regarder » contre « ont balayé ». Chaîne au 04/11 : **24,4 %** (28 j, surtout l'ancien
+format découpé de la vidéo longue). Repère Galloway : sous 60 %, un Short ne décolle presque jamais ; les meilleurs font 70–90 %.
+Objectif : **60 % minimum**. Règles :
+1. 1re image = la question en très gros au centre + l'objet + un impact sonore (carte d'accroche automatique dans `short_vertical.py`).
+2. La voix démarre à 0 s (silence de tête coupé). 1re phrase : 8 mots max, une question d'argent.
+3. Durée 15–25 s. Un chiffre choc toutes les 3–5 s, un plan toutes les ~3 s.
+4. Jamais la réponse avant la fin ; la dernière phrase relance (boucle).
+5. Chaque lundi : relever le % par Short (Studio → Contenu → Short → « ont continué de regarder ») et garder les sujets au-dessus de 60 %.
