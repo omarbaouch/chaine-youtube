@@ -119,14 +119,54 @@ def pixabay(requete, deja):
     return h["id"], v["url"], f"Pixabay {h['id']} — {h.get('user', '')} — {h.get('pageURL', '')}"
 
 
+def media_choisi(ref, f):
+    """Média repéré à la main : "pv:<id>" vidéo Pixabay, "pi:<id>" photo Pixabay, "wc:File:…" Wikimedia Commons.
+    Renvoie (fichier, est_image, crédit)."""
+    import requests
+    if ref.startswith(("pv:", "pi:")):
+        cle = os.environ.get("PIXABAY_API_KEY")
+        api = "videos/" if ref.startswith("pv:") else ""
+        h = requests.get(f"https://pixabay.com/api/{api}", params={"key": cle, "id": ref[3:]}, timeout=30).json()["hits"][0]
+        if ref.startswith("pv:"):
+            v = h["videos"].get("large") if h["videos"].get("large", {}).get("url") else h["videos"]["medium"]
+            url, image = v["url"], False
+        else:
+            url, image = h.get("largeImageURL") or h["webformatURL"], True
+        cred = f"Pixabay {h['id']} — {h.get('user', '')} — {h.get('pageURL', '')}"
+    else:
+        titre = ref[3:]
+        r = requests.get("https://commons.wikimedia.org/w/api.php", timeout=30, headers={"User-Agent": "LeVraiPrix/1.0"},
+                         params={"action": "query", "titles": titre, "prop": "imageinfo", "iiprop": "url|extmetadata",
+                                 "iiurlwidth": 1600, "format": "json"}).json()
+        info = next(iter(r["query"]["pages"].values()))["imageinfo"][0]
+        url, image = info.get("thumburl") or info["url"], True
+        meta = info.get("extmetadata", {})
+        cred = f"Wikimedia Commons — {titre} — {meta.get('Artist', {}).get('value', '')[:80]} — {meta.get('LicenseShortName', {}).get('value', '')}"
+    f = f.with_suffix(".jpg" if image else ".mp4")
+    with requests.get(url, stream=True, timeout=120, headers={"User-Agent": "LeVraiPrix/1.0"}) as r:
+        r.raise_for_status()
+        with open(f, "wb") as o:
+            for b in r.iter_content(1 << 20):
+                o.write(b)
+    print(f"  média choisi {ref}", flush=True)
+    return f, image, cred
+
+
 segments, credits, deja = [], [], set()
-for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin", fiche["plans"][0]["recherche"])}] if fiche.get("fin") else [])):
+for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin", fiche["plans"][0]["recherche"]),
+                                           "medias": fiche.get("medias_fin", [])}] if fiche.get("fin") else [])):
     d = fins[i] - debuts[i]
     n = max(1, math.ceil(d / MAX_PLAN))
-    req = p["recherche"] if isinstance(p["recherche"], list) else [p["recherche"]]
+    req = p.get("recherche") or []
+    req = req if isinstance(req, list) else [req]
     for j in range(n):
-        q = req[j % len(req)]
+        q = req[j % len(req)] if req else None
         f = tmp / f"rush-{i}-{j}.mp4"
+        if p.get("medias") and not TEST:
+            f, est_image, cred = media_choisi(p["medias"][j % len(p["medias"])], f)
+            credits.append(cred)
+            segments.append({"fichier": f, "image": est_image, "debut": debuts[i] + j * d / n, "duree": d / n, "plan": i})
+            continue
         if TEST:
             teinte = (i * 3 + j) * 37 % 360
             sh("ffmpeg", "-y", "-f", "lavfi", "-i", f"testsrc2=size=1280x720:rate=30:duration=6", "-vf",
@@ -157,15 +197,20 @@ parts = []
 for s_i, s in enumerate(segments):
     out = tmp / f"seg-{s_i}.mp4"
     dr = s["duree"]
-    src_d = duree(s["fichier"])
-    ss = max(0.0, min(src_d - dr - 0.1, src_d * 0.25))
-    vitesse = "1" if src_d - ss >= dr else f"{(src_d - ss) / dr:.3f}"
+    if s.get("image"):
+        src_d, ss, vitesse = dr, 0.0, "1"
+        entree = ["-loop", "1", "-framerate", str(FPS), "-i", s["fichier"]]
+    else:
+        src_d = duree(s["fichier"])
+        ss = max(0.0, min(src_d - dr - 0.1, src_d * 0.25))
+        vitesse = "1" if src_d - ss >= dr else f"{(src_d - ss) / dr:.3f}"
+        entree = ["-ss", f"{ss:.2f}", "-i", s["fichier"]]
     sens = 1 if s_i % 2 == 0 else -1
-    z0, z1 = (1.0, 1.08) if sens > 0 else (1.08, 1.0)
+    z0, z1 = ((1.0, 1.08) if sens > 0 else (1.08, 1.0)) if not s.get("image") else ((1.0, 1.15) if sens > 0 else (1.15, 1.0))
     vf = (f"setpts=PTS/{vitesse},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"scale=w='{W}*({z0}+({z1}-{z0})*t/{dr:.3f})':h=-2:eval=frame,crop={W}:{H},"
           f"eq=contrast=1.06:saturation=1.12,fps={FPS},format=yuv420p")
-    sh("ffmpeg", "-y", "-ss", f"{ss:.2f}", "-i", s["fichier"], "-t", f"{dr:.3f}", "-an", "-vf", vf,
+    sh("ffmpeg", "-y", *entree, "-t", f"{dr:.3f}", "-an", "-vf", vf,
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out)
     parts.append(out)
 liste = tmp / "liste.txt"

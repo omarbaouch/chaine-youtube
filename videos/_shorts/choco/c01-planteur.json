@@ -10,7 +10,11 @@
     "dark chocolate"
    ],
    "chiffre": "2,60 €",
-   "chiffre_mot": "deux"
+   "chiffre_mot": "deux",
+   "medias": [
+    "pi:1312524",
+    "pi:6938440"
+   ]
   },
   {
    "texte": "Dedans, il y a au moins soixante-dix grammes de cacao.",
@@ -19,7 +23,11 @@
     "cacao beans"
    ],
    "chiffre": "70 g",
-   "chiffre_mot": "soixante"
+   "chiffre_mot": "soixante",
+   "medias": [
+    "pi:7001846",
+    "pi:7026841"
+   ]
   },
   {
    "texte": "En Côte d'Ivoire, le planteur est payé mille deux cents francs C F A le kilo. Soit un euro quatre-vingt-trois.",
@@ -28,7 +36,11 @@
     "cocoa pods"
    ],
    "chiffre": "1,83 €/kg",
-   "chiffre_mot": "soit"
+   "chiffre_mot": "soit",
+   "medias": [
+    "pi:452911",
+    "pi:5394185"
+   ]
   },
   {
    "texte": "Pour ta tablette, ça fait treize centimes. Cinq pour cent du prix.",
@@ -37,7 +49,11 @@
     "cocoa harvest"
    ],
    "chiffre": "0,13 €",
-   "chiffre_mot": "treize"
+   "chiffre_mot": "treize",
+   "medias": [
+    "wc:File:Cocoa farmer David Kebu Jnr holding the finished product, dried cocoa beans ready for export. (10687070725).jpg",
+    "pi:7026842"
+   ]
   },
   {
    "texte": "Il y a un an, au prix record, il touchait trente centimes. Le cacao a baissé. Ta tablette, non.",
@@ -46,7 +62,11 @@
     "chocolate"
    ],
    "chiffre": "0,30 € → 0,13 €",
-   "chiffre_mot": "trente"
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:12669",
+    "pi:1277002"
+   ]
   }
  ],
  "recherche_fin": [
@@ -59,5 +79,8 @@
   "Tablette noire 70 % de grande marque ≈ 2,60 € (mai 2026) : https://www.connexionfrance.com/news/well-known-supermarket-chocolate-named-best-in-france/790526",
   "Calcul : 70 g de cacao × 1,83 €/kg ≈ 0,13 € (1 € = 655,957 FCFA)"
  ],
- "commentaire": "Tu aurais dit combien ? 👇 Abonne-toi : chaque jour, un nouveau vrai prix."
+ "commentaire": "Tu aurais dit combien ? 👇 Abonne-toi : chaque jour, un nouveau vrai prix.",
+ "medias_fin": [
+  "pv:326912"
+ ]
 }
