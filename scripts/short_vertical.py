@@ -159,7 +159,7 @@ def media_choisi(ref, f):
 
 
 segments, credits, deja = [], [], set()
-for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin", fiche["plans"][0]["recherche"]),
+for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin", fiche["plans"][0].get("recherche", [])),
                                            "medias": fiche.get("medias_fin", [])}] if fiche.get("fin") else [])):
     d = fins[i] - debuts[i]
     n = max(1, math.ceil(d / MAX_PLAN))
