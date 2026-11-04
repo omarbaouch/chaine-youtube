@@ -203,7 +203,7 @@ for s_i, s in enumerate(segments):
     dr = s["duree"]
     if s.get("image"):
         src_d, ss, vitesse = dr, 0.0, "1"
-        entree = ["-loop", "1", "-framerate", str(FPS), "-t", f"{dr + 0.2:.3f}", "-i", s["fichier"]]
+        entree = ["-loop", "1", "-framerate", str(FPS), "-i", s["fichier"]]
     else:
         src_d = duree(s["fichier"])
         ss = max(0.0, min(src_d - dr - 0.1, src_d * 0.25))
@@ -214,7 +214,7 @@ for s_i, s in enumerate(segments):
     vf = (f"setpts=PTS/{vitesse},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"scale=w='{W}*({z0}+({z1}-{z0})*t/{dr:.3f})':h=-2:eval=frame,crop={W}:{H},"
           f"eq=contrast=1.06:saturation=1.12,fps={FPS},format=yuv420p")
-    sh("ffmpeg", "-y", *entree, "-t", f"{dr:.3f}", "-an", "-vf", vf,
+    sh("ffmpeg", "-y", *entree, "-frames:v", str(max(1, round(dr * FPS))), "-an", "-vf", vf,
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-video_track_timescale", "15360", "-r", str(FPS), out)
     parts.append(out)
 liste = tmp / "liste.txt"
