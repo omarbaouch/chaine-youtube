@@ -215,12 +215,15 @@ for s_i, s in enumerate(segments):
           f"scale=w='{W}*({z0}+({z1}-{z0})*t/{dr:.3f})':h=-2:eval=frame,crop={W}:{H},"
           f"eq=contrast=1.06:saturation=1.12,fps={FPS},format=yuv420p")
     sh("ffmpeg", "-y", *entree, "-t", f"{dr:.3f}", "-an", "-vf", vf,
-       "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out)
+       "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-video_track_timescale", "15360", "-r", str(FPS), out)
     parts.append(out)
 liste = tmp / "liste.txt"
 liste.write_text("".join(f"file '{p}'\n" for p in parts))
 image = tmp / "image.mp4"
-sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", liste, "-c", "copy", image)
+# ré-encodage avec horloge remise à zéro : des segments photo et vidéo n'ont pas la même base de temps,
+# une simple copie peut créer des sauts d'horodatage (ffmpeg duplique alors des images pendant des heures)
+sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", liste, "-vf", f"setpts=N/({FPS}*TB)", "-r", str(FPS),
+   "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", image)
 
 
 # ---------- 4. Texte à l'écran (ASS) ----------
