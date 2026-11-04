@@ -32,7 +32,7 @@ tmp = Path(tempfile.mkdtemp(prefix=f"short-{fiche['id']}-"))
 
 
 def sh(*cmd):
-    r = subprocess.run([str(c) for c in cmd], capture_output=True, text=True)
+    r = subprocess.run([str(c) for c in cmd], capture_output=True, text=True, timeout=600)
     if r.returncode:
         raise RuntimeError(f"{cmd[0]} a échoué :\n{r.stderr[-3000:]}")
     return r.stdout
@@ -162,8 +162,12 @@ for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin"
     for j in range(n):
         q = req[j % len(req)] if req else None
         f = tmp / f"rush-{i}-{j}.mp4"
-        if p.get("medias") and not TEST:
-            f, est_image, cred = media_choisi(p["medias"][j % len(p["medias"])], f)
+        if p.get("medias"):
+            if TEST:
+                f = f.with_suffix(".jpg"); est_image, cred = True, "test"
+                sh("ffmpeg", "-y", "-f", "lavfi", "-i", "testsrc2=size=1280x853", "-frames:v", "1", f)
+            else:
+                f, est_image, cred = media_choisi(p["medias"][j % len(p["medias"])], f)
             credits.append(cred)
             segments.append({"fichier": f, "image": est_image, "debut": debuts[i] + j * d / n, "duree": d / n, "plan": i})
             continue
@@ -199,7 +203,7 @@ for s_i, s in enumerate(segments):
     dr = s["duree"]
     if s.get("image"):
         src_d, ss, vitesse = dr, 0.0, "1"
-        entree = ["-loop", "1", "-framerate", str(FPS), "-i", s["fichier"]]
+        entree = ["-loop", "1", "-framerate", str(FPS), "-t", f"{dr + 0.2:.3f}", "-i", s["fichier"]]
     else:
         src_d = duree(s["fichier"])
         ss = max(0.0, min(src_d - dr - 0.1, src_d * 0.25))
