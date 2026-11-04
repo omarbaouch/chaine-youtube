@@ -217,12 +217,15 @@ for s_i, s in enumerate(segments):
     sh("ffmpeg", "-y", *entree, "-frames:v", str(max(1, round(dr * FPS))), "-an", "-vf", vf,
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-video_track_timescale", "15360", "-r", str(FPS), out)
     parts.append(out)
-liste = tmp / "liste.txt"
-liste.write_text("".join(f"file '{p}'\n" for p in parts))
 image = tmp / "image.mp4"
-# ré-encodage avec horloge remise à zéro : des segments photo et vidéo n'ont pas la même base de temps,
-# une simple copie peut créer des sauts d'horodatage (ffmpeg duplique alors des images pendant des heures)
-sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", liste, "-vf", f"setpts=N/({FPS}*TB)", "-r", str(FPS),
+# filtre concat (et pas le démuxeur) : photos et vidéos n'ont pas toujours les mêmes paramètres (plage de couleurs, SAR),
+# le démuxeur s'arrêtait alors au premier changement
+entrees_img = []
+for p_ in parts:
+    entrees_img += ["-i", str(p_)]
+graphe = "".join(f"[{k}:v]setsar=1,format=yuv420p,fps={FPS}[s{k}];" for k in range(len(parts)))
+graphe += "".join(f"[s{k}]" for k in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=0[v]"
+sh("ffmpeg", "-y", *entrees_img, "-filter_complex", graphe, "-map", "[v]", "-r", str(FPS),
    "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", image)
 
 
@@ -326,6 +329,9 @@ sh("ffmpeg", "-y", *entrees, "-filter_complex", vf + ";" + ";".join(mix), "-map"
    "-t", f"{TOTAL:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
    "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", SORTIE)
 
+d_img = float(sh("ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", SORTIE).strip())
+if d_img < TOTAL - 0.5:
+    raise RuntimeError(f"Image trop courte : {d_img:.1f} s pour {TOTAL:.1f} s de son")
 (sortie_dir / f"{fiche['id']}-credits.txt").write_text("\n".join(credits) + "\n", encoding="utf-8")
 # planche : 6 images pour le contrôle
 planche = sortie_dir / f"{fiche['id']}-planche.jpg"
