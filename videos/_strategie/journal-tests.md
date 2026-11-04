@@ -11,3 +11,7 @@ Seuil de décision : au moins 3 Shorts par variante, sinon « à confirmer ».
 | T3 | 04/11 | Les sujets « porte-monnaie de tous les jours » battent les sujets lointains | Pain, essence | Chocolat, meunier | Pain 656/425/340 vues ; chocolat découpé < 10, mais chocolat plein écran 94 en 2 h : l'écart venait surtout du format | À retester, format égal (plein écran des deux côtés) |
 
 Repère : engagement Shorts de la chaîne au 04/11 = 24,4 % ont continué de regarder (objectif ≥ 60 %).
+
+Relevé du 04/11 21 h 38 (3 abonnés, 2 061 vues) : chocolat planteur plein écran 560 vues en 11 h (2e meilleur Short) ; plein d'essence 168 en 15 h ;
+iPhone plein écran 4 vues en 10 h (échec malgré le format) ; capsules 0 en 40 min ; vidéo essence 1 vue en 2 h. Piste T4 : l'angle « injustice / qui se fait avoir »
+(planteur, État, boulanger) bat l'angle « curiosité produit » (iPhone, fève) — à tester sur 3 Shorts de chaque.
