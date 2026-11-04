@@ -1,0 +1,55 @@
+{
+ "id": "c05-negociant",
+ "titre": "Le négociant garde combien sur ta tablette de chocolat ? #shorts",
+ "accroche": "LE NÉGOCIANT GARDE COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Entre le planteur et l'usine, le négociant garde combien ?",
+   "medias": [
+    "pi:6959638",
+    "pv:237249"
+   ]
+  },
+  {
+   "texte": "L'étude BASIC prend une tablette noire à quatre-vingt-treize centimes, en deux mille dix-huit.",
+   "chiffre": "0,93 €",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "pi:1814134"
+   ]
+  },
+  {
+   "texte": "Le négociant collecte les sacs, les transporte, et les charge au port.",
+   "medias": [
+    "wc:File:Bagging Cocoa seeds.jpg",
+    "pv:23008"
+   ]
+  },
+  {
+   "texte": "Sa part : six centimes huit. Dont un centime six de taxes pour la Côte d'Ivoire.",
+   "chiffre": "6,8 c",
+   "chiffre_mot": "six",
+   "medias": [
+    "pv:129250",
+    "wc:File:Weighing cocoa.jpg"
+   ]
+  },
+  {
+   "texte": "Le planteur touchait dix centimes et demi. Et la marque ? Trente-quatre centimes et demi.",
+   "chiffre": "34,5 c",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pi:2201991",
+    "pi:183543"
+   ]
+  }
+ ],
+ "medias_fin": [
+  "pi:1934"
+ ],
+ "sources": [
+  "BASIC, chaîne de valeur du cacao en France (données 2018) : https://lebasic.com/v2/content/uploads/2020/06/Chaine-de-valeur-cacao-France_Resume-executif_FR.pdf"
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "commentaire": "Tu aurais dit combien ? 👇 L'enquête complète : https://www.youtube.com/watch?v=x0onZIENQZk"
+}

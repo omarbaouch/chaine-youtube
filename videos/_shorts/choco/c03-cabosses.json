@@ -1,0 +1,58 @@
+{
+ "id": "c03-cabosses",
+ "titre": "Combien de cabosses pour UNE tablette de chocolat ? #shorts",
+ "accroche": "COMBIEN DE CABOSSES POUR UNE TABLETTE ?",
+ "plans": [
+  {
+   "texte": "Combien de cabosses faut-il pour une seule tablette ?",
+   "medias": [
+    "wc:File:Cocoa pod.jpg",
+    "pi:6554305"
+   ]
+  },
+  {
+   "texte": "Une cabosse, c'est le fruit du cacaoyer. Environ trois cent quatre-vingts grammes.",
+   "chiffre": "380 g",
+   "chiffre_mot": "environ",
+   "medias": [
+    "pi:4724654",
+    "pi:10427626"
+   ]
+  },
+  {
+   "texte": "Dedans, trente à quarante graines. Une fois séchées, ça fait à peu près quarante grammes.",
+   "chiffre": "≈ 40 g",
+   "chiffre_mot": "ça",
+   "medias": [
+    "pi:2422040",
+    "pi:7026842"
+   ]
+  },
+  {
+   "texte": "Ta tablette noire contient au moins soixante-dix grammes de cacao.",
+   "chiffre": "70 g",
+   "chiffre_mot": "soixante",
+   "medias": [
+    "pi:6938440"
+   ]
+  },
+  {
+   "texte": "Donc, à peu près deux cabosses par tablette. Et un arbre en donne vingt à quatre-vingts par an.",
+   "chiffre": "≈ 2 cabosses",
+   "chiffre_mot": "deux",
+   "medias": [
+    "pi:452911",
+    "wc:File:A cocoa farm in Ghana.jpg"
+   ]
+  }
+ ],
+ "medias_fin": [
+  "pv:12669"
+ ],
+ "sources": [
+  "CNUCED, profil produit cacao : https://unctad.org/node/4935",
+  "Calcul : 70 g ÷ 40 g de fèves sèches par cabosse ≈ 2"
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "commentaire": "Tu aurais dit combien ? 👇 L'enquête complète : https://www.youtube.com/watch?v=x0onZIENQZk"
+}
