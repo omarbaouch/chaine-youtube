@@ -29,3 +29,16 @@ Le choc vient du CONTRASTE et des VRAIS chiffres, jamais d'un mensonge (E15 : un
 - Règle 1 : tout ce qu'on dit, on le montre en vrai. Les plans « bijou » viennent de vrais rushes (Pixabay/Commons), pas de dessins.
 - Règle 8 : orange #FF6B2C pour le chiffre héros, blanc pour le reste ; aucune marque sur la miniature.
 - Ton neutre : on montre l'écart, on n'accuse personne sans preuve.
+
+## « Comme si c'était Netflix » (précision d'Omar, 06/11/2026 21 h 14)
+Codes du documentaire Netflix à appliquer, sans casser les règles 7 bis (rien qui fasse partir avant 30 s) et 8 (lisible sur téléphone) :
+- **Cold open (0-30 s)** : on entre au milieu de l'action, le moment le plus fort en avant-première (la balance, le plateau de bijoutier),
+  la question posée dans la 1re seconde. Aucune présentation.
+- **Générique d'épisode à ~30 s** : carte sobre sur noir « LE VRAI PRIX — Épisode 4 : La capsule », 2,5 s, nappe grave + impact unique.
+- **Chapitres** : cartes noires minimalistes « Chapitre 1 — Le bijou », « Chapitre 2 — Le champ »… (numéro bleu acier, titre blanc).
+- **Image cinéma** : bandes noires 2,39:1 discrètes dans le monde « bijou » seulement ; mouvements lents (poussée avant, travelling),
+  faible profondeur de champ, étalonnage marqué par monde (doré/contrasté vs froid/désaturé), grain.
+- **Faits sur noir** : pour les chiffres les plus lourds, écran noir, une phrase blanche, le chiffre en orange, silence, puis la voix.
+- **Témoins** : bandeau nom / rôle / source en bas à gauche, typographie sobre (règle 13 pour les sources autorisées).
+- **Musique de film** : nappes graves, cordes, montées lentes, et de vrais silences avant les révélations ; jamais une boucle plate.
+- **Retenue** : moins de textes empilés à l'écran, un seul élément fort par plan ; c'est le rythme, le son et l'étalonnage qui font « Netflix ».
