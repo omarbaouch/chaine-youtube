@@ -3,6 +3,7 @@
 //  - scène avec "recherche" : cherche et télécharge un rush gratuit sur Pixabay (clé PIXABAY_API_KEY)
 // Sans clé (ex. test local), un faux rush est généré pour pouvoir quand même tester le montage.
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 
@@ -118,14 +119,17 @@ async function telechargerRef(s) {
     const ii = pg.imageinfo[0];
     const m = ii.extmetadata ?? {};
     if (ii.mime.startsWith('video/')) {
-      const brut = path.join(sortie, `${s.id}.source`);
-      const rr = await fetch(ii.url, {headers: UA});
-      fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
+      // une seule copie de chaque reportage Commons, même s'il sert à plusieurs plans (extraits différents)
+      const brut = path.join(os.tmpdir(), 'commons-' + id.replace(/[^A-Za-z0-9]+/g, '_').slice(0, 120) + '.source');
+      if (!fs.existsSync(brut) || fs.statSync(brut).size < 10000) {
+        const rr = await fetch(ii.url, {headers: UA});
+        if (!rr.ok) throw new Error(`Vidéo Commons ${id} : HTTP ${rr.status}`);
+        fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
+      }
       execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...(s.extrait != null ? ['-ss', String(s.extrait), '-t', String(s.extrait_duree ?? 30)] : []), '-i', brut,
         // "recadre": [x, y, taille] en fractions : garde un cadre 16:9 (enlève logos et sous-titres incrustés d'origine)
         ...(s.recadre ? ['-vf', `crop=iw*${s.recadre[2]}:ih*${s.recadre[2]}:iw*${s.recadre[0]}:ih*${s.recadre[1]},scale=1920:1080`] : []),
         ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
-      fs.rmSync(brut);
     } else {
       // la miniature Commons échoue parfois (« Too many thumbnail requests ») : on vérifie que c'est bien une image,
       // sinon on prend l'original et on le réduit à 2400 px

@@ -1,5 +1,5 @@
 {
- "titre": "Capsule de café : combien tu la paies au kilo, et qui garde l'argent",
+ "titre": "Capsule de café : combien tu la paies au kilo ?",
  "format": {
   "largeur": 1920,
   "hauteur": 1080,
@@ -10,8 +10,8 @@
  "voix": {
   "moteur": "edge",
   "locuteur": "fr-FR-VivienneMultilingualNeural",
-  "debit": "+0%",
-  "debit_continu": "+0%",
+  "debit": "+4%",
+  "debit_continu": "+4%",
   "pause_phrase": 0.15,
   "voix_secondaires": {
    "sceptique": "fr-FR-RemyMultilingualNeural"
@@ -40,11 +40,12 @@
  "respiration": 0.15,
  "scenes": [
   {
-   "id": "c001",
+   "id": "v001",
    "format": "rush",
-   "look": "bijou",
-   "ambiance": "tension",
    "texte": "Ton café en capsule, tu le paies combien au kilo ?",
+   "ambiance": "tension",
+   "media_ref": "pi:8006955",
+   "look": "bijou",
    "couches": [
     {
      "type": "mots",
@@ -58,18 +59,19 @@
     {
      "nom": "metal",
      "a": 0.05,
-     "volume": 0.5
+     "volume": 0.55
     }
    ],
-   "media_ref": "pi:8006955",
    "transition": "coupe"
   },
   {
-   "id": "c002",
+   "id": "v002",
    "format": "schema",
-   "texte": "Vingt euros, soixante euros, ou cent vingt euros ? Choisis, et garde ta réponse.",
+   "texte": "Vingt euros ? Soixante ? Cent vingt ? Garde ta réponse.",
+   "ambiance": "tension",
+   "media_ref": "pi:1833013",
    "etiquette_schema": "À toi de deviner",
-   "duree_min": 5,
+   "duree_min": 3.6,
    "schema": {
     "type": "liste",
     "titre": "Ton café en capsule : combien au kilo ?",
@@ -87,150 +89,90 @@
       "valeur": "120 € ?"
      }
     ],
-    "source": "Réponse plus loin dans la vidéo"
+    "source": "Réponse plus loin"
    },
-   "ambiance": "tension",
    "sons": [
     {
      "nom": "tick",
-     "a": 1.5,
+     "a": 1.4,
      "volume": 0.3
     },
     {
      "nom": "tick",
-     "a": 2.1,
+     "a": 2.0,
      "volume": 0.3
     }
    ],
-   "media_ref": "wc:File:Capsules Nespresso 2007.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c003",
+   "id": "v003",
    "format": "rush",
-   "look": "champ",
+   "texte": "Pour la trouver, on va faire le chemin de ta capsule… à l'envers.",
    "ambiance": "tension",
-   "texte": "Parce que le café qu'il y a dedans…",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "LE CAFÉ DEDANS",
-     "heros": "DEDANS",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:1474601",
-   "transition": "coupe"
-  },
-  {
-   "id": "c004",
-   "format": "schema",
-   "ambiance": "tension",
-   "etiquette_schema": "À la bourse",
-   "texte": "à la bourse, il ne vaut presque rien.",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 3,
-    "decimales": 0,
-    "suffixe": " c",
-    "legende": "le café vert de ta capsule, à la bourse",
-    "revele_a": 99
-   },
-   "media_ref": "pi:1863880",
-   "transition": "coupe"
-  },
-  {
-   "id": "c005",
-   "format": "ecran_partage",
-   "look": "champ",
-   "cote": "gauche",
-   "ambiance": "tension",
-   "etiquette_schema": "Qui garde la différence ?",
-   "texte": "Alors, entre le champ et ta tasse, qui garde la différence ?",
-   "schema": {
-    "type": "processus",
-    "titre": "Qui garde la différence ?",
-    "etapes": [
-     "Le champ",
-     "?",
-     "Ta tasse"
-    ],
-    "actif": 1
-   },
-   "media_ref": "pi:2540278",
-   "transition": "coupe"
-  },
-  {
-   "id": "c006",
-   "format": "mosaique",
-   "voix": "sceptique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Coffee Cravings.jpg"
-    },
-    {
-     "media_ref": "pi:4418922"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Facile ! Avec les prix records, ce sont les producteurs qui s'enrichissent !",
-   "transition": "coupe"
-  },
-  {
-   "id": "c007",
-   "format": "rush",
+   "media_ref": "pv:4882",
    "look": "bijou",
-   "ambiance": "tension",
-   "texte": "Pas si vite. Cette petite capsule cache une histoire incroyable.",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0.4,
-     "volume": 0.3
-    }
-   ],
-   "media_ref": "wc:File:Colorful Nestlé Nescafé cans.JPG",
    "transition": "coupe"
   },
   {
-   "id": "c008",
-   "format": "mosaique",
-   "medias": [
-    {
-     "legende": "Rome",
-     "media_ref": "wc:File:Piazza sant eustachio 051211-03.JPG"
-    },
-    {
-     "media_ref": "wc:File:Pulling a triple espresso shot with a naked portafilter.jpg"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Un ingénieur suisse, un café de Rome, et le secret d'un barista.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c009",
+   "id": "v004",
    "format": "rush",
+   "texte": "De ta cuisine…",
    "ambiance": "tension",
-   "texte": "Son histoire finit d'une façon que personne n'attend. Je te la garde pour la fin.",
-   "punch": {
-    "a": 3.4,
-    "texte": "POUR LA FIN"
-   },
-   "media_ref": "pv:3158",
+   "media_ref": "pv:31672",
    "transition": "coupe"
   },
   {
-   "id": "c010",
+   "id": "v005",
+   "format": "rush",
+   "texte": "…jusqu'à la main qui a cueilli ton café, à des milliers de kilomètres.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+   "extrait": 492,
+   "extrait_duree": 5,
+   "recadre": [
+    0.06,
+    0.08,
+    0.8
+   ],
+   "look": "champ",
+   "transition": "coupe"
+  },
+  {
+   "id": "v006",
+   "format": "rush",
+   "texte": "Sur la route, un homme qui a inventé ta capsule… et qu'on a poussé dehors.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Macro Espresso Process.webm",
+   "extrait": 22,
+   "extrait_duree": 6,
+   "look": "bijou",
+   "transition": "coupe"
+  },
+  {
+   "id": "v007",
+   "format": "rush",
+   "texte": "Et une question : sur tes quarante-cinq centimes, qui garde quoi ?",
+   "ambiance": "tension",
+   "media_ref": "pv:203874",
+   "punch": {
+    "a": 2.6,
+    "texte": "QUI GARDE QUOI ?"
+   },
+   "transition": "coupe"
+  },
+  {
+   "id": "v008",
    "format": "titre",
    "type": "titre",
    "texte": "",
    "numero": "",
    "titre": "La capsule",
    "sous_titre": "Le Vrai Prix · Épisode 4",
-   "duree_min": 2.6,
-   "ambiance": "tension",
+   "media_ref": "pv:80138",
+   "duree_min": 3.0,
+   "ambiance": "emotion",
+   "look": "bijou",
    "sons": [
     {
      "nom": "riser",
@@ -239,457 +181,63 @@
     },
     {
      "nom": "impact",
-     "a": 0.25,
+     "a": 0.3,
      "volume": 0.7
     }
    ],
-   "look": "bijou",
-   "media_ref": "pv:3125",
    "transition": "coupe"
   },
   {
-   "id": "c011",
+   "id": "v009",
    "format": "rush",
-   "ambiance": "emotion",
-   "surtitre": "Rome, 1975",
-   "texte": "Rome, mille neuf cent soixante-quinze. Éric Favre travaille chez Nestlé, au service emballage.",
-   "media_ref": "pi:433415",
-   "transition": "coupe"
-  },
-  {
-   "id": "c012",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Caffè Sant'Eustachio.JPG",
-     "legende": "Le Sant'Eustachio, à Rome"
-    },
-    {
-     "media_ref": "pi:1591429"
-    }
-   ],
-   "ambiance": "emotion",
-   "texte": "Avec sa femme, Anna-Maria, il fréquente le Sant'Eustachio, un café près du Panthéon.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c013",
-   "format": "rush",
+   "texte": "Première étape : ta cuisine. Une capsule, quarante-cinq centimes.",
+   "ambiance": "tension",
+   "media_ref": "wc:File:Machine Nespresso professionnelle -10.JPG",
    "look": "bijou",
-   "ambiance": "emotion",
-   "texte": "Son espresso attire les clients. Favre veut savoir pourquoi, et il interroge le personnel.",
    "couches": [
     {
-     "type": "mots",
-     "texte": "POURQUOI CE GOÛT ?",
-     "heros": "POURQUOI",
-     "position": "haut",
+     "type": "etiquette",
+     "numero": "01",
+     "texte": "TA CUISINE",
      "a": 0.2
     }
    ],
-   "media_ref": "pi:604600",
-   "transition": "coupe"
-  },
-  {
-   "id": "c014",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Vintage Coffee Machine, Bar in Prague - 9116.jpg"
-    },
-    {
-     "media_ref": "wc:File:Vintage Coffee Machine, Bar in Prague - 9104.jpg"
-    }
-   ],
-   "ambiance": "emotion",
-   "texte": "Le barista, Eugenio, finit par lui livrer son secret.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c015",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "emotion",
-   "etiquette_schema": "Le secret du barista",
-   "texte": "Il actionne le levier plusieurs fois, par petits coups. Ça fait entrer de l'air.",
-   "schema": {
-    "type": "processus",
-    "titre": "Le secret d'Eugenio",
-    "etapes": [
-     "Levier, par petits coups",
-     "De l'air",
-     "Plus d'arômes"
-    ],
-    "actif": 1,
-    "source": "House of Switzerland (DFAE)"
-   },
-   "media_ref": "wc:File:PavoniEspressomaschine.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c016",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "emotion",
-   "texte": "Pour Favre, c'est de la chimie : l'oxydation fait ressortir les arômes.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "L'AIR = LES ARÔMES",
-     "heros": "ARÔMES",
-     "position": "haut",
-     "a": 0.2
-    },
-    {
-     "type": "source",
-     "texte": "Éric Favre, House of Switzerland",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "pv:134",
-   "transition": "coupe"
-  },
-  {
-   "id": "c017",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "pi:815309"
-    },
-    {
-     "media_ref": "wc:File:Dolcegusto capsule w annotations.jpg"
-    }
-   ],
-   "ambiance": "emotion",
-   "texte": "Son idée : une capsule qui garde de l'air à l'intérieur, avant que l'eau la traverse.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c018",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "emotion",
-   "texte": "Il le dira plus tard : « Je n'ai pas inventé une capsule, j'ai inventé une formule. »",
-   "couches": [
-    {
-     "type": "carton",
-     "texte": "« J'AI INVENTÉ UNE FORMULE »",
-     "sous_texte": "Éric Favre · OMPI Magazine, 2010",
-     "a": 1.2
-    }
-   ],
-   "media_ref": "wc:File:Vertuo Pods Pair.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c019",
-   "format": "mosaique",
-   "medias": [
-    {
-     "legende": "5 g de café moulu",
-     "media_ref": "pi:2912113"
-    },
-    {
-     "legende": "Aluminium",
-     "media_ref": "wc:File:Nespresso-capsules AB-01.jpg"
-    }
-   ],
-   "ambiance": "leger",
-   "texte": "Dedans : cinq grammes de café moulu, enfermés dans de l'aluminium.",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "Nespresso (FAQ)",
-     "a": 1.0
-    }
-   ],
-   "transition": "coupe"
-  },
-  {
-   "id": "c020",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "leger",
-   "texte": "Le métal le protège de l'air, de la lumière et de l'humidité.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "AIR · LUMIÈRE · HUMIDITÉ",
-     "heros": "AIR",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:3841386",
-   "transition": "coupe"
-  },
-  {
-   "id": "c021",
-   "format": "ecran_partage",
-   "cote": "droite",
-   "ambiance": "leger",
-   "etiquette_schema": "Dans la machine",
-   "texte": "La machine perce la capsule. L'eau chaude la traverse sous pression, et le café coule.",
-   "schema": {
-    "type": "processus",
-    "titre": "Dans la machine",
-    "etapes": [
-     "Percer",
-     "Eau chaude sous pression",
-     "Le café coule"
-    ],
-    "actif": 2
-   },
    "sons": [
     {
      "nom": "metal",
-     "a": 0.4,
-     "volume": 0.5
+     "a": 0.05,
+     "volume": 0.55
     }
    ],
-   "media_ref": "wc:File:Machine Nespresso professionnelle -10.JPG",
    "transition": "coupe"
   },
   {
-   "id": "c022",
+   "id": "v010",
    "format": "rush",
-   "ambiance": "leger",
-   "surtitre": "1986",
-   "texte": "Nespresso sort en mille neuf cent quatre-vingt-six, d'abord pour les bureaux et les hôtels.",
-   "media_ref": "wc:File:SGI Indigo2 High Impact workstation, next to an SGI Espressigo.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c023",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "pi:5475921"
-    },
-    {
-     "media_ref": "pi:4428014"
-    }
-   ],
+   "texte": "Dedans, cinq grammes de café. Il en faut deux cents pour faire un kilo.",
    "ambiance": "tension",
-   "texte": "Présenté comme un produit de luxe… ça ne prend pas. C'est un échec.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "UN ÉCHEC",
-     "heros": "ÉCHEC",
-     "position": "centre",
-     "a": 2.2
-    }
-   ],
-   "transition": "coupe"
-  },
-  {
-   "id": "c024",
-   "format": "rush",
-   "ambiance": "leger",
-   "surtitre": "1988",
-   "texte": "Deux ans plus tard, la marque change de cible : les particuliers aisés, chez eux.",
-   "media_ref": "wc:File:Woman makes coffee in modern kitchen while standing by window.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c025",
-   "format": "mosaique",
-   "medias": [
-    {
-     "legende": "Nestlé, Vevey",
-     "media_ref": "wc:File:Nestle Vevey 2014.jpg"
-    },
-    {
-     "media_ref": "pv:3595"
-    }
-   ],
-   "ambiance": "emotion",
-   "texte": "Et l'inventeur ? En mille neuf cent quatre-vingt-onze, alors que Nespresso a encore du mal, il est poussé vers la sortie.",
-   "surtitre": "1991",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "House of Switzerland (DFAE)",
-     "a": 2.0
-    }
-   ],
-   "transition": "coupe"
-  },
-  {
-   "id": "c027",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "tension",
-   "texte": "Mais le vrai coup de génie de cette capsule, ce n'est pas la technique. C'est son prix.",
+   "media_ref": "pi:8460651",
    "punch": {
-    "a": 4.2,
-    "texte": "SON PRIX"
+    "a": 3.2,
+    "texte": "200 CAPSULES"
    },
-   "media_ref": "pi:6031578",
-   "transition": "coupe"
-  },
-  {
-   "id": "c028",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "01",
-   "titre": "Le prix au kilo",
-   "sous_titre": "Combien tu paies vraiment",
-   "duree_min": 2.6,
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.35
-    },
-    {
-     "nom": "impact",
-     "a": 0.25,
-     "volume": 0.7
-    }
-   ],
-   "media_ref": "pi:3105629",
-   "transition": "coupe"
-  },
-  {
-   "id": "c029",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "tension",
-   "texte": "Une capsule Nespresso Original coûte entre trente-neuf et quarante-neuf centimes.",
    "couches": [
     {
-     "type": "mots",
-     "texte": "0,39 À 0,49 €",
-     "heros": "0,49 €",
-     "position": "haut",
-     "a": 0.2
-    },
-    {
      "type": "source",
-     "texte": "graindexpert, 04/11/2026",
+     "texte": "Nespresso (FAQ) : 5 g par capsule",
      "a": 0.6
     }
    ],
-   "media_ref": "wc:File:Nespresso accessories.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c030",
+   "id": "v011",
    "format": "schema",
-   "texte": "Devinette. Un kilo de café en capsules, ça fait combien de capsules ? Cinquante, deux cents, ou mille ?",
-   "etiquette_schema": "À toi de deviner",
-   "duree_min": 5,
-   "schema": {
-    "type": "liste",
-    "titre": "1 kg de café = combien de capsules ?",
-    "elements": [
-     {
-      "texte": "A",
-      "valeur": "50 ?"
-     },
-     {
-      "texte": "B",
-      "valeur": "200 ?"
-     },
-     {
-      "texte": "C",
-      "valeur": "1 000 ?"
-     }
-    ],
-    "source": "Réponse plus loin dans la vidéo"
-   },
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "tick",
-     "a": 1.5,
-     "volume": 0.3
-    },
-    {
-     "nom": "tick",
-     "a": 2.1,
-     "volume": 0.3
-    }
-   ],
-   "media_ref": "wc:File:Nespresso capsules.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c031",
-   "format": "rush",
-   "ambiance": "tension",
-   "texte": "Garde ta réponse en tête… et imagine le tas que ça fait.",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0.3,
-     "volume": 0.3
-    }
-   ],
-   "media_ref": "pi:8460651",
-   "transition": "coupe"
-  },
-  {
-   "id": "c032",
-   "format": "schema",
-   "texte": "Ta réponse ? Pour un kilo de café, il faut…",
-   "etiquette_schema": "Ta réponse ?",
-   "duree_min": 4.5,
-   "schema": {
-    "type": "devine",
-    "question": "1 kg de café = combien de capsules ?",
-    "choix": [
-     "50",
-     "200",
-     "1 000"
-    ],
-    "bonne": 1,
-    "secondes": 2
-   },
-   "sons": [
-    {
-     "nom": "tick",
-     "a": 1.2,
-     "volume": 0.3
-    },
-    {
-     "nom": "tick",
-     "a": 1.8,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 2.6,
-     "volume": 0.7
-    }
-   ],
-   "ambiance": "tension",
-   "media_ref": "wc:File:Coffee Pour Over Setup.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c033",
-   "format": "rush",
-   "look": "bijou",
+   "texte": "Alors, ta réponse ?",
    "ambiance": "revelation",
-   "texte": "Deux cents capsules. Chacune contient cinq grammes de café.",
-   "punch": {
-    "a": 0.4,
-    "texte": "200 CAPSULES"
-   },
-   "media_ref": "pi:1833013",
-   "transition": "coupe"
-  },
-  {
-   "id": "c034",
-   "format": "schema",
-   "texte": "Alors, ta réponse du tout début : ton café en capsule, au kilo, c'est…",
+   "media_ref": "pi:3841386",
    "etiquette_schema": "Ta réponse ?",
-   "duree_min": 4.5,
+   "duree_min": 4.2,
    "schema": {
     "type": "devine",
     "question": "Ton café en capsule, au kilo ?",
@@ -704,550 +252,329 @@
    "sons": [
     {
      "nom": "tick",
-     "a": 1.2,
+     "a": 1.0,
      "volume": 0.3
     },
     {
      "nom": "tick",
-     "a": 1.8,
+     "a": 1.6,
      "volume": 0.3
     },
     {
      "nom": "impact",
-     "a": 2.6,
+     "a": 2.4,
      "volume": 0.7
     }
    ],
-   "ambiance": "tension",
-   "media_ref": "wc:File:Nespresso-capsules AB-02.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c035",
+   "id": "v012",
    "format": "rush",
+   "texte": "Près de soixante euros le kilo, en moyenne. Trois fois le prix du même café en grains.",
    "ambiance": "revelation",
-   "texte": "En moyenne, près de soixante euros le kilo, d'après les relevés d'UFC-Que Choisir.",
+   "media_ref": "pv:20910",
    "couches": [
     {
-     "type": "mots",
-     "texte": "≈ 60 € LE KILO",
-     "heros": "60 €",
-     "position": "haut",
-     "a": 0.2
-    },
-    {
-     "type": "source",
-     "texte": "UFC-Que Choisir, 08/12/2025",
-     "a": 0.6
+     "type": "compteur",
+     "vers": 60,
+     "decimales": 0,
+     "suffixe": " €/kg",
+     "legende": "les capsules, en moyenne",
+     "source": "UFC-Que Choisir, 08/12/2025",
+     "a": 0.3,
+     "position": "centre"
     }
    ],
-   "media_ref": "pi:2619380",
    "transition": "coupe"
   },
   {
-   "id": "c036",
-   "format": "schema",
-   "ambiance": "revelation",
-   "etiquette_schema": "La plus connue",
-   "texte": "Et la marque la plus connue ? Deux cents fois quarante-cinq centimes… quatre-vingt-dix euros le kilo.",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 90,
-    "decimales": 0,
-    "suffixe": " €",
-    "legende": "le kilo, en capsules à 0,45 €",
-    "comparaison": "200 capsules × 0,45 €",
-    "revele_a": 3.6,
-    "source": "Calcul d'après graindexpert (prix) et Nespresso (5 g)"
-   },
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0.5,
-     "volume": 0.35
-    },
-    {
-     "nom": "impact",
-     "a": 3.6,
-     "volume": 0.7
-    }
-   ],
-   "media_ref": "wc:File:Nespresso Boutique Mannheim O6.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c037",
-   "format": "ecran_partage",
-   "cote": "droite",
-   "ambiance": "revelation",
-   "etiquette_schema": "Le même café",
-   "texte": "Le même café en grains ou moulu ? Autour de vingt euros le kilo. Trois fois moins.",
-   "schema": {
-    "type": "comparaison",
-    "titre": "Prix moyen au kilo",
-    "unite": " €",
-    "decimales": 0,
-    "heros": "b",
-    "a": {
-     "label": "Grains ou moulu",
-     "valeur": 20
-    },
-    "b": {
-     "label": "Capsules",
-     "valeur": 60
-    },
-    "source": "UFC-Que Choisir, 08/12/2025"
-   },
-   "media_ref": "pv:4948",
-   "transition": "coupe"
-  },
-  {
-   "id": "c038",
+   "id": "v013",
    "format": "mosaique",
+   "texte": "Bah, c'est le prix du génie ! Une invention pareille, ça se paie !",
+   "ambiance": "tension",
+   "medias": [
+    {
+     "media_ref": "pv:31383"
+    },
+    {
+     "media_ref": "wc:File:Vertuo Pods Pair.jpg"
+    }
+   ],
    "voix": "sceptique",
-   "medias": [
-    {
-     "media_ref": "pi:2458194"
-    },
-    {
-     "media_ref": "pv:80134"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Normal, c'est plus pratique ! Et puis le café a flambé, tout le monde le sait !",
    "transition": "coupe"
   },
   {
-   "id": "c039",
+   "id": "v014",
    "format": "rush",
-   "look": "champ",
+   "texte": "Une invention de génie, oui. Mais son inventeur a eu un drôle de destin.",
    "ambiance": "emotion",
-   "texte": "C'est vrai, il a flambé. Mais pour comprendre, il faut quitter la cuisine… et partir au champ.",
-   "punch": {
-    "a": 4.4,
-    "texte": "AU CHAMP"
-   },
-   "media_ref": "wc:File:Coffee drying panama.jpg",
+   "media_ref": "wc:File:PavoniEspressomaschine.jpg",
+   "look": "bijou",
    "transition": "coupe"
   },
   {
-   "id": "c040",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "02",
-   "titre": "Le champ",
-   "sous_titre": "Là où pousse ton café",
-   "duree_min": 2.6,
-   "ambiance": "emotion",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.35
-    },
-    {
-     "nom": "impact",
-     "a": 0.25,
-     "volume": 0.7
-    }
-   ],
-   "look": "champ",
-   "media_ref": "wc:File:View from the coffee farm.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c041",
+   "id": "v015",
    "format": "rush",
-   "look": "champ",
+   "texte": "Rome, mille neuf cent soixante-quinze. Éric Favre, ingénieur chez Nestlé, y passe du temps avec sa femme, Anna-Maria.",
    "ambiance": "emotion",
-   "texte": "Le café pousse sur des arbustes, sous les tropiques. Son fruit s'appelle une cerise.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "LA CERISE DE CAFÉ",
-     "heros": "CERISE",
-     "position": "haut",
-     "a": 0.2
-    }
-   ],
-   "media_ref": "pi:7599090",
+   "media_ref": "wc:File:Flight over Rome 184729.webm",
+   "extrait": 10,
+   "extrait_duree": 7,
+   "surtitre": "Rome, 1975",
    "transition": "coupe"
   },
   {
-   "id": "c042",
+   "id": "v016",
    "format": "mosaique",
+   "texte": "Ils ont leurs habitudes dans un café, près du Panthéon : le Sant'Eustachio.",
+   "ambiance": "emotion",
    "medias": [
     {
-     "legende": "La cerise",
-     "media_ref": "wc:File:Coffee cherries on white background.png"
+     "media_ref": "wc:File:Pantheon, Rome 123028.webm",
+     "extrait": 8,
+     "extrait_duree": 4
     },
     {
-     "legende": "Deux graines",
-     "media_ref": "wc:File:Coffee Beans Drying in the Sun (4261209148).jpg"
+     "media_ref": "wc:File:Caffè Sant'Eustachio.JPG",
+     "legende": "Le Sant'Eustachio"
     }
    ],
-   "ambiance": "emotion",
-   "texte": "Dedans, deux graines. Ce sont elles, tes grains de café.",
    "transition": "coupe"
   },
   {
-   "id": "c042b",
-   "format": "schema",
-   "texte": "Devinette express. Le Brésil, premier producteur, fait quelle part du café mondial ? Dix, vingt-cinq, ou quarante pour cent ?",
-   "etiquette_schema": "Ta réponse ?",
-   "duree_min": 4.5,
-   "schema": {
-    "type": "devine",
-    "question": "Le Brésil : quelle part du café mondial ?",
-    "choix": [
-     "10 %",
-     "25 %",
-     "40 %"
-    ],
-    "bonne": 2,
-    "secondes": 2
-   },
+   "id": "v017",
+   "format": "rush",
+   "texte": "Favre veut prouver à sa femme qu'il peut faire l'espresso parfait.",
+   "ambiance": "emotion",
+   "media_ref": "pv:35871",
+   "look": "bijou",
+   "transition": "coupe"
+  },
+  {
+   "id": "v018",
+   "format": "mosaique",
+   "texte": "Il interroge le personnel. Et le barista, Eugenio, finit par lui montrer son geste.",
+   "ambiance": "emotion",
+   "medias": [
+    {
+     "media_ref": "pi:604600"
+    },
+    {
+     "media_ref": "wc:File:Vintage Coffee Machine, Bar in Prague - 9116.jpg"
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v019",
+   "format": "rush",
+   "texte": "Il actionne le levier par petits coups. De l'air entre dans l'eau… et le goût change tout.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Macro Espresso Process.webm",
+   "extrait": 34,
+   "extrait_duree": 7,
+   "look": "bijou",
+   "transition": "coupe"
+  },
+  {
+   "id": "v020",
+   "format": "rush",
+   "texte": "Favre a son idée : enfermer ce secret dans une capsule.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Vertuo Pods Pair.jpg",
+   "look": "bijou",
    "sons": [
     {
-     "nom": "tick",
-     "a": 1.2,
-     "volume": 0.3
-    },
-    {
-     "nom": "tick",
-     "a": 1.8,
-     "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 2.6,
-     "volume": 0.7
+     "nom": "metal",
+     "a": 0.05,
+     "volume": 0.55
     }
    ],
-   "ambiance": "emotion",
-   "media_ref": "wc:File:Vista do conjunto original da fazenda Boa Vista, Bananal.png",
    "transition": "coupe"
   },
   {
-   "id": "c043",
+   "id": "v021",
    "format": "rush",
-   "look": "champ",
+   "texte": "Il le résumera ainsi : « Je n'ai pas inventé une capsule, j'ai inventé une formule. »",
    "ambiance": "emotion",
-   "texte": "Environ quarante pour cent, loin devant le Viêt Nam.",
+   "media_ref": "pv:44802",
+   "look": "bijou",
    "couches": [
     {
-     "type": "mots",
-     "texte": "BRÉSIL ≈ 40 %",
-     "heros": "40 %",
-     "position": "haut",
-     "a": 0.2
-    },
+     "type": "carton",
+     "texte": "« J'AI INVENTÉ UNE FORMULE »",
+     "sous_texte": "Éric Favre · OMPI Magazine, 2010",
+     "a": 1.4
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v022",
+   "format": "rush",
+   "texte": "Mille neuf cent quatre-vingt-six : Nespresso sort, d'abord pour les bureaux. C'est un échec.",
+   "ambiance": "tension",
+   "media_ref": "wc:File:SGI Indigo2 High Impact workstation, next to an SGI Espressigo.jpg",
+   "surtitre": "1986",
+   "punch": {
+    "a": 4.0,
+    "texte": "ÉCHEC"
+   },
+   "transition": "coupe"
+  },
+  {
+   "id": "v023",
+   "format": "rush",
+   "texte": "Mille neuf cent quatre-vingt-onze : Nespresso peine encore. Éric Favre est poussé vers la sortie.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Nestle Vevey 2014.jpg",
+   "surtitre": "1991",
+   "couches": [
     {
      "type": "source",
-     "texte": "AFP, 04/07/2025",
+     "texte": "House of Switzerland (DFAE)",
+     "a": 0.8
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v024",
+   "format": "rush",
+   "texte": "Il quitte l'entreprise avant que sa capsule ne devienne un succès mondial.",
+   "ambiance": "emotion",
+   "media_ref": "pv:3158",
+   "couches": [
+    {
+     "type": "carton",
+     "texte": "POUSSÉ DEHORS",
+     "sous_texte": "",
      "a": 0.6
     }
    ],
-   "media_ref": "wc:File:Fazenda Boa Vista, Mococa-SP, Vladimir Benincasa 2.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c044",
-   "format": "ecran_partage",
-   "look": "champ",
-   "cote": "gauche",
-   "ambiance": "emotion",
-   "etiquette_schema": "Au champ",
-   "texte": "Les cerises sont cueillies, souvent à la main, puis séchées au soleil.",
-   "schema": {
-    "type": "processus",
-    "titre": "Au champ",
-    "etapes": [
-     "Cueillir",
-     "Sécher",
-     "Décortiquer"
-    ],
-    "actif": 1
-   },
-   "media_ref": "pi:2561246",
+   "id": "v025",
+   "format": "rush",
+   "texte": "Garde son nom en tête. La fin de son histoire répond à notre question.",
+   "ambiance": "tension",
+   "media_ref": "pv:79636",
+   "look": "bijou",
    "transition": "coupe"
   },
   {
-   "id": "c045",
-   "format": "mosaique",
-   "medias": [
+   "id": "v026",
+   "format": "rush",
+   "texte": "On remonte le chemin. Avant ton magasin, ton café a traversé l'océan.",
+   "ambiance": "tension",
+   "media_ref": "pv:129250",
+   "couches": [
     {
-     "legende": "Séchage",
-     "media_ref": "pi:2744210"
-    },
-    {
-     "legende": "Le café vert",
-     "media_ref": "pi:625693"
+     "type": "etiquette",
+     "numero": "02",
+     "texte": "LE PORT",
+     "a": 0.2
     }
    ],
-   "ambiance": "emotion",
-   "texte": "On les décortique, et on obtient le café vert : un grain encore cru.",
    "transition": "coupe"
   },
   {
-   "id": "c046",
+   "id": "v027",
+   "format": "mosaique",
+   "texte": "Il voyage en sacs de jute. Il arrive cru : c'est du café vert.",
+   "ambiance": "tension",
+   "medias": [
+    {
+     "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+     "extrait": 156,
+     "extrait_duree": 5,
+     "recadre": [
+      0.06,
+      0.08,
+      0.8
+     ]
+    },
+    {
+     "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+     "extrait": 480,
+     "extrait_duree": 5,
+     "recadre": [
+      0.06,
+      0.08,
+      0.8
+     ]
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v028",
    "format": "rush",
-   "look": "champ",
-   "ambiance": "emotion",
-   "texte": "Il voyage en sacs de jute, en bateau, jusqu'aux torréfacteurs du monde entier.",
-   "media_ref": "wc:File:NP coffee sacks (5867722798).jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c047",
-   "format": "schema",
+   "texte": "Son prix se joue à la bourse de New York. En deux mille vingt-cinq, il a doublé.",
    "ambiance": "tension",
-   "etiquette_schema": "Le prix du café vert",
-   "texte": "Son prix se fixe en bourse, à New York, en dollars la livre.",
-   "schema": {
-    "type": "processus",
-    "titre": "Le prix du café vert",
-    "etapes": [
-     "Le champ",
-     "Le port",
-     "La bourse de New York"
-    ],
-    "actif": 2
-   },
-   "media_ref": "wc:File:Coffee sacks.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c048",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "tension",
-   "etiquette_schema": "Café vert (arabica)",
-   "texte": "Début deux mille vingt-quatre, moins de deux dollars. En deux mille vingt-cinq, plus de quatre !",
-   "schema": {
-    "type": "liste",
-    "titre": "Café vert, la livre",
-    "elements": [
-     {
-      "texte": "Début 2024",
-      "valeur": "< 2 $"
-     },
-     {
-      "texte": "2025 (record)",
-      "valeur": "> 4 $",
-      "heros": true
-     }
-    ],
-    "source": "UFC-Que Choisir 2025 ; AFP 2025"
-   },
-   "media_ref": "pv:338955",
-   "transition": "coupe"
-  },
-  {
-   "id": "c049",
-   "format": "rush",
-   "look": "champ",
-   "ambiance": "tension",
-   "texte": "Le prix double. Les marchés ont peur de manquer de café.",
+   "media_ref": "pv:88697",
+   "couches": [
+    {
+     "type": "etiquette",
+     "numero": "03",
+     "texte": "LA BOURSE",
+     "a": 0.2
+    }
+   ],
    "punch": {
-    "a": 0.5,
+    "a": 4.2,
     "texte": "× 2"
    },
-   "media_ref": "pi:1905225",
    "transition": "coupe"
   },
   {
-   "id": "c050",
+   "id": "v029",
    "format": "mosaique",
+   "texte": "Tu vois ! Voilà pourquoi ta capsule est si chère !",
+   "ambiance": "tension",
    "medias": [
     {
-     "media_ref": "wc:File:How good is your coffee?.jpg"
+     "media_ref": "pv:120177"
     },
     {
-     "media_ref": "wc:File:Preparing for coffee shipment.jpg"
+     "media_ref": "pv:21117"
     }
    ],
-   "ambiance": "tension",
-   "texte": "Un chercheur du Cirad le dit : pas de pénurie, mais « cela a inquiété les marchés ».",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "Guillaume David (Cirad), UFC-Que Choisir, 08/12/2025",
-     "a": 1.0
-    }
-   ],
-   "transition": "coupe"
-  },
-  {
-   "id": "c051",
-   "format": "rush",
-   "ambiance": "tension",
-   "texte": "Et en magasin, en un an, le prix du café grimpe de dix-huit pour cent.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "+ 18 % EN UN AN",
-     "heros": "+ 18 %",
-     "position": "haut",
-     "a": 0.2
-    },
-    {
-     "type": "source",
-     "texte": "UFC-Que Choisir, 08/12/2025",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "wc:File:Aisle in L Intermarche supermarket in Quebec City.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c052",
-   "format": "mosaique",
    "voix": "sceptique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Coffee-cherry-picker-san-marcos-tarrazu-costa-rica.jpg"
-    },
-    {
-     "media_ref": "pi:1005464"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Tu vois ! Avec des prix pareils, les producteurs se sont enrichis !",
    "transition": "coupe"
   },
   {
-   "id": "c053",
+   "id": "v030",
    "format": "rush",
-   "look": "champ",
-   "ambiance": "emotion",
-   "texte": "Regarde plutôt sur vingt ans. Une étude du BASIC a suivi l'argent du café.",
-   "media_ref": "pi:2347989",
-   "transition": "coupe"
-  },
-  {
-   "id": "c054",
-   "format": "ecran_partage",
-   "look": "champ",
-   "cote": "droite",
-   "ambiance": "emotion",
-   "etiquette_schema": "Sur vingt ans",
-   "texte": "La part du prix qui reste dans les pays producteurs passe de vingt-quatre à seize pour cent.",
-   "schema": {
-    "type": "comparaison",
-    "titre": "Part restée dans les pays producteurs",
-    "unite": " %",
-    "decimales": 0,
-    "heros": "b",
-    "a": {
-     "label": "Milieu des années 1990",
-     "valeur": 24
-    },
-    "b": {
-     "label": "2017",
-     "valeur": 16
-    },
-    "source": "BASIC / Max Havelaar / Commerce Équitable France, 2018"
-   },
-   "media_ref": "wc:File:Female coffee farmer in Ethiopia (5762538117).jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c055",
-   "format": "rush",
-   "look": "champ",
-   "ambiance": "emotion",
-   "texte": "Au Pérou et en Éthiopie, les caféiculteurs gagnaient vingt pour cent de moins qu'en deux mille cinq.",
-   "punch": {
-    "a": 2.6,
-    "texte": "− 20 %"
-   },
-   "couches": [
-    {
-     "type": "source",
-     "texte": "BASIC 2018 (revenus 2017 vs 2005)",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "wc:File:Wild Coffee in Ethiopia.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c056",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "pi:2996350"
-    },
-    {
-     "media_ref": "wc:File:Sacks of arabica coffee.JPG"
-    }
-   ],
+   "texte": "Sauf que depuis, il a perdu trente et un pour cent en un an.",
    "ambiance": "tension",
-   "texte": "Et le record n'a pas duré. Le Brésil attend une récolte record.",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "BFM Bourse / Tradingsat, 21/06/2026",
-     "a": 1.0
-    }
-   ],
-   "transition": "coupe"
-  },
-  {
-   "id": "c057",
-   "format": "ecran_partage",
-   "cote": "droite",
-   "ambiance": "tension",
-   "etiquette_schema": "Café vert aujourd'hui",
-   "texte": "Aujourd'hui, le café vert est retombé à deux dollars quatre-vingts. Moins trente et un pour cent en un an.",
-   "schema": {
-    "type": "chiffre",
-    "valeur": -31,
-    "decimales": 0,
-    "suffixe": " %",
-    "legende": "café vert (arabica) en un an",
-    "comparaison": "2,80 $ la livre le 6 novembre 2026",
-    "revele_a": 3.4,
-    "source": "Trading Economics, 06/11/2026"
-   },
-   "sons": [
-    {
-     "nom": "impact",
-     "a": 3.4,
-     "volume": 0.6
-    }
-   ],
    "media_ref": "pv:166289",
-   "transition": "coupe"
-  },
-  {
-   "id": "c058",
-   "format": "rush",
-   "ambiance": "tension",
-   "texte": "Ton prix en rayon va-t-il suivre ? Surveille bien ton prix au kilo.",
+   "punch": {
+    "a": 2.2,
+    "texte": "− 31 %"
+   },
    "couches": [
     {
-     "type": "mots",
-     "texte": "ÇA VA SUIVRE ?",
-     "heros": "SUIVRE",
-     "position": "haut",
-     "a": 0.2
+     "type": "source",
+     "texte": "Trading Economics, 06/11/2026",
+     "a": 0.5
     }
    ],
-   "media_ref": "pi:4052658",
    "transition": "coupe"
   },
   {
-   "id": "c059",
+   "id": "v031",
    "format": "schema",
-   "texte": "Nouvelle devinette. Le café vert de ta capsule, au prix de la bourse, vaut combien ? Trois, dix, ou vingt centimes ?",
+   "texte": "Alors devine : le café vert de ta capsule, au prix de la bourse… il vaut combien ?",
+   "ambiance": "tension",
+   "media_ref": "pi:625693",
    "etiquette_schema": "À toi de deviner",
-   "duree_min": 5,
+   "duree_min": 4.0,
    "schema": {
     "type": "liste",
-    "titre": "Le café vert d'une capsule vaut…",
+    "titre": "Le café de ta capsule vaut…",
     "elements": [
      {
       "texte": "A",
@@ -1262,100 +589,123 @@
       "valeur": "20 c ?"
      }
     ],
-    "source": "Réponse plus loin dans la vidéo"
+    "source": "Réponse au champ"
    },
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "tick",
-     "a": 1.5,
-     "volume": 0.3
-    },
-    {
-     "nom": "tick",
-     "a": 2.1,
-     "volume": 0.3
-    }
-   ],
-   "media_ref": "pi:2508128",
    "transition": "coupe"
   },
   {
-   "id": "c060",
+   "id": "v032",
    "format": "rush",
-   "ambiance": "tension",
-   "texte": "Garde ta réponse. Parce qu'avant ta tasse, ce grain cru doit encore passer au feu.",
-   "media_ref": "pi:1044387",
-   "transition": "coupe"
-  },
-  {
-   "id": "c061",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "03",
-   "titre": "Les gagnants",
-   "sous_titre": "Qui garde la différence ?",
-   "duree_min": 2.6,
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.35
-    },
-    {
-     "nom": "impact",
-     "a": 0.25,
-     "volume": 0.7
-    }
-   ],
-   "media_ref": "pi:1369780",
-   "transition": "coupe"
-  },
-  {
-   "id": "c062",
-   "format": "rush",
-   "ambiance": "leger",
-   "texte": "D'abord, la torréfaction : vers deux cents degrés, le grain vert devient brun et parfumé.",
+   "texte": "Dernière étape. Le début de tout.",
+   "ambiance": "emotion",
+   "media_ref": "pv:198288",
+   "look": "champ",
    "couches": [
     {
-     "type": "mots",
-     "texte": "≈ 200 °C",
-     "heros": "200 °C",
-     "position": "haut",
+     "type": "etiquette",
+     "numero": "04",
+     "texte": "LE CHAMP",
      "a": 0.2
     }
    ],
-   "media_ref": "pi:8406187",
-   "transition": "coupe"
-  },
-  {
-   "id": "c063",
-   "format": "mosaique",
-   "medias": [
+   "sons": [
     {
-     "legende": "Moudre",
-     "media_ref": "wc:File:2013 Antique sample roasting machine Vits Munchen.jpg"
-    },
-    {
-     "legende": "Sceller",
-     "media_ref": "wc:File:Nespresso paper pods (2024).jpg"
+     "nom": "riser",
+     "a": 0.2,
+     "volume": 0.3
     }
    ],
-   "ambiance": "leger",
-   "texte": "Puis on le moud, on le dose, et on le scelle dans sa capsule.",
    "transition": "coupe"
   },
   {
-   "id": "c064",
+   "id": "v033",
+   "format": "rush",
+   "texte": "Ton café, c'est la graine d'une cerise. Elle mûrit sur un arbuste, sous les tropiques.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+   "extrait": 396,
+   "extrait_duree": 6,
+   "recadre": [
+    0.06,
+    0.08,
+    0.8
+   ],
+   "look": "champ",
+   "transition": "coupe"
+  },
+  {
+   "id": "v034",
+   "format": "rush",
+   "texte": "On la cueille souvent à la main.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Antiga plantação de café em São Paulo atrai visitantes.webm",
+   "extrait": 48,
+   "extrait_duree": 5,
+   "recadre": [
+    0.03,
+    0.05,
+    0.7
+   ],
+   "look": "champ",
+   "transition": "coupe"
+  },
+  {
+   "id": "v035",
+   "format": "mosaique",
+   "texte": "Puis on la sèche au soleil, on la trie, on la décortique.",
+   "ambiance": "emotion",
+   "medias": [
+    {
+     "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+     "extrait": 48,
+     "extrait_duree": 4,
+     "recadre": [
+      0.06,
+      0.08,
+      0.8
+     ]
+    },
+    {
+     "media_ref": "pv:52515"
+    }
+   ],
+   "look": "champ",
+   "transition": "coupe"
+  },
+  {
+   "id": "v036",
+   "format": "rush",
+   "texte": "Au Brésil, premier producteur du monde, Henrique Sloper cultive du café.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+   "extrait": 70,
+   "extrait_duree": 6,
+   "recadre": [
+    0.06,
+    0.08,
+    0.8
+   ],
+   "look": "champ",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Images : Context (Thomson Reuters Foundation), CC BY-SA 4.0",
+     "a": 0.6
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v037",
    "format": "schema",
-   "texte": "Alors, ta réponse ? Le café vert d'une capsule vaut…",
+   "texte": "Ta réponse ? Le café de ta capsule vaut…",
+   "ambiance": "revelation",
+   "media_ref": "wc:File:Coffee Beans Drying in the Sun (4261209148).jpg",
    "etiquette_schema": "Ta réponse ?",
-   "duree_min": 4.5,
+   "duree_min": 4.2,
    "schema": {
     "type": "devine",
-    "question": "Le café vert d'une capsule ?",
+    "question": "Le café vert de ta capsule ?",
     "choix": [
      "3 c",
      "10 c",
@@ -1367,492 +717,127 @@
    "sons": [
     {
      "nom": "tick",
-     "a": 1.2,
+     "a": 1.0,
      "volume": 0.3
     },
     {
      "nom": "tick",
-     "a": 1.8,
+     "a": 1.6,
      "volume": 0.3
-    },
-    {
-     "nom": "impact",
-     "a": 2.6,
-     "volume": 0.7
     }
    ],
-   "ambiance": "tension",
-   "media_ref": "pi:4465656",
    "transition": "coupe"
   },
   {
-   "id": "c065",
-   "format": "ecran_partage",
-   "look": "champ",
-   "cote": "gauche",
+   "id": "v038",
+   "format": "rush",
+   "texte": "Trois centimes. Cinq grammes de café vert, au prix de la bourse.",
    "ambiance": "revelation",
-   "etiquette_schema": "Le chiffre",
-   "texte": "Environ trois centimes. Cinq grammes, à cinq euros cinquante le kilo de café vert.",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 3,
-    "decimales": 0,
-    "suffixe": " c",
-    "legende": "de café vert dans ta capsule",
-    "comparaison": "5 g × 5,53 € le kilo (bourse du 06/11/2026)",
-    "revele_a": 1.0,
-    "source": "Calcul : ICE arabica 2,80 $/lb ; 1 € = 1,117 $"
-   },
-   "media_ref": "wc:File:Hand holding coffee cherries.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c066",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "tension",
-   "texte": "Sur une capsule à quarante-cinq centimes, il en reste donc quarante-deux. Qui les garde ?",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "42 c : QUI ?",
-     "heros": "QUI ?",
-     "position": "haut",
-     "a": 0.2
-    }
+   "media_ref": "wc:File:Antiga plantação de café em São Paulo atrai visitantes.webm",
+   "extrait": 63,
+   "extrait_duree": 5,
+   "recadre": [
+    0.03,
+    0.05,
+    0.7
    ],
-   "media_ref": "wc:File:Nespresso-capsules AB-03.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c067",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "tension",
-   "etiquette_schema": "Gagnant n° 1",
-   "texte": "Premier gagnant, discret : l'État. Avec une TVA à cinq virgule cinq pour cent, environ deux centimes.",
-   "schema": {
-    "type": "chiffre",
-    "valeur": 2,
-    "decimales": 0,
-    "suffixe": " c",
-    "legende": "de TVA (5,5 %) par capsule",
-    "revele_a": 3.0,
-    "source": "Code général des impôts, art. 278-0 bis"
-   },
-   "media_ref": "wc:File:Paid bill for coffee.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c068",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Coffee roasting machine, The Roastery, Coaltown Coffee, Ammanford, Wales.jpg"
-    },
-    {
-     "media_ref": "pi:2542942"
-    },
-    {
-     "media_ref": "pi:3105631"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Restent environ quarante centimes : torréfaction, aluminium, transport, publicité, magasin… et les marges.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c069",
-   "format": "schema",
-   "texte": "Dernière devinette. Torréfacteurs et magasins, ensemble, gardent quelle part du prix ? Trente, soixante, ou quatre-vingt-cinq pour cent ?",
-   "etiquette_schema": "À toi de deviner",
-   "duree_min": 5,
-   "schema": {
-    "type": "liste",
-    "titre": "Torréfacteurs + magasins : quelle part ?",
-    "elements": [
-     {
-      "texte": "A",
-      "valeur": "30 % ?"
-     },
-     {
-      "texte": "B",
-      "valeur": "60 % ?"
-     },
-     {
-      "texte": "C",
-      "valeur": "85 % ?"
-     }
-    ],
-    "source": "Réponse plus loin dans la vidéo"
-   },
-   "ambiance": "tension",
-   "sons": [
-    {
-     "nom": "tick",
-     "a": 1.5,
-     "volume": 0.3
-    },
-    {
-     "nom": "tick",
-     "a": 2.1,
-     "volume": 0.3
-    }
-   ],
-   "media_ref": "wc:File:Vegetable oils etc. aisle in Meny Supermarket in Bergen Storsenter Shopping Mall, Bergen, Norway 2017-10-23 b.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c070",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "tension",
-   "texte": "Garde ta réponse. Regarde d'abord qui vend tout ce café.",
-   "media_ref": "wc:File:Paris 16 mars 2019 nespresso.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c071",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "tension",
-   "etiquette_schema": "Le marché français",
-   "texte": "En France, trois groupes font quatre-vingt-un pour cent du marché : Nestlé, J D E et Lavazza.",
-   "schema": {
-    "type": "liste",
-    "titre": "Le café en France",
-    "elements": [
-     {
-      "texte": "Nestlé",
-      "valeur": "34 %",
-      "heros": true
-     },
-     {
-      "texte": "JDE",
-      "valeur": "30 %"
-     },
-     {
-      "texte": "Lavazza",
-      "valeur": "17 %"
-     }
-    ],
-    "source": "BASIC / Max Havelaar, 2018"
-   },
-   "media_ref": "wc:File:Vegetable oils etc. aisle in Meny Supermarket in Bergen Storsenter Shopping Mall, Bergen, Norway 2017-10-23 a.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c072",
-   "format": "rush",
-   "ambiance": "tension",
-   "texte": "Et les capsules pèsent lourd : un milliard quatre cents millions d'euros en France, en deux mille dix-huit.",
-   "punch": {
-    "a": 2.6,
-    "texte": "1,4 MILLIARD €"
-   },
-   "couches": [
-    {
-     "type": "source",
-     "texte": "Nielsen, cité par Moneyvox (2019)",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "pi:7850299",
-   "transition": "coupe"
-  },
-  {
-   "id": "c073",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Automatic produce-bagging machine that uses factory-roll polyethylene net tubing (1973) (20324440706).jpg"
-    },
-    {
-     "media_ref": "wc:File:Nespresso Avenches 2.jpg"
-    }
-   ],
-   "ambiance": "tension",
-   "texte": "Jusqu'en deux mille douze, des brevets protègent les capsules de la marque inventée par Favre.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c074",
-   "format": "rush",
-   "ambiance": "tension",
-   "surtitre": "2011",
-   "texte": "Dès deux mille onze, des concurrents lancent des capsules compatibles. Nestlé les attaque en justice.",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "Swissinfo, 05/10/2011",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "pi:3577254",
-   "transition": "coupe"
-  },
-  {
-   "id": "c075",
-   "format": "ecran_partage",
-   "cote": "droite",
-   "ambiance": "leger",
-   "etiquette_schema": "Aujourd'hui",
-   "texte": "Résultat aujourd'hui : une compatible de marque distributeur coûte vingt-cinq à trente centimes.",
-   "schema": {
-    "type": "liste",
-    "titre": "Prix d'une capsule",
-    "elements": [
-     {
-      "texte": "Compatible distributeur",
-      "valeur": "0,25–0,30 €",
-      "heros": true
-     },
-     {
-      "texte": "Nespresso Original",
-      "valeur": "0,39–0,49 €"
-     }
-    ],
-    "source": "graindexpert, 04/11/2026"
-   },
-   "media_ref": "wc:File:Nespresso store à Dakar 01.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c076",
-   "format": "titre",
-   "type": "titre",
-   "texte": "",
-   "numero": "04",
-   "titre": "Payer moins",
-   "sous_titre": "Trois gestes",
-   "duree_min": 2.6,
-   "ambiance": "leger",
-   "sons": [
-    {
-     "nom": "riser",
-     "a": 0,
-     "volume": 0.35
-    },
-    {
-     "nom": "impact",
-     "a": 0.25,
-     "volume": 0.7
-    }
-   ],
-   "media_ref": "pv:80138",
-   "transition": "coupe"
-  },
-  {
-   "id": "c077",
-   "format": "rush",
-   "ambiance": "leger",
-   "texte": "Un : regarde le prix au kilo sur l'étiquette du rayon. Il est affiché, c'est obligatoire.",
-   "punch": {
-    "a": 1.0,
-    "texte": "1 · LE PRIX AU KILO"
-   },
-   "media_ref": "wc:File:Moscow, Paveletskaya Plaza Nov.2023 - cheapest coffee.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c078",
-   "format": "schema",
-   "ambiance": "leger",
-   "etiquette_schema": "Au kilo",
-   "texte": "Deux : les compatibles. Environ cinquante euros le kilo, contre soixante-dix à quatre-vingt-dix pour l'originale.",
-   "schema": {
-    "type": "liste",
-    "titre": "2 · Le prix au kilo",
-    "elements": [
-     {
-      "texte": "Compatibles distributeur",
-      "valeur": "45–55 €",
-      "heros": true
-     },
-     {
-      "texte": "Nespresso Original",
-      "valeur": "70–90 €"
-     }
-    ],
-    "source": "graindexpert, 04/11/2026"
-   },
-   "media_ref": "wc:File:Farbige Nespresso-Kaffeekapseln.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c079",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "leger",
-   "etiquette_schema": "La capsule réutilisable",
-   "texte": "Trois : la capsule réutilisable. Tu la remplis toi-même de café moulu.",
-   "schema": {
-    "type": "processus",
-    "titre": "3 · Réutilisable",
-    "etapes": [
-     "Capsule vide",
-     "Ton café moulu",
-     "Dans la machine"
-    ],
-    "actif": 1
-   },
-   "media_ref": "pi:3457587",
-   "transition": "coupe"
-  },
-  {
-   "id": "c080",
-   "format": "rush",
-   "ambiance": "leger",
-   "texte": "Avec un café à vingt euros le kilo, ta tasse revient à dix centimes.",
+   "look": "champ",
    "couches": [
     {
      "type": "compteur",
-     "vers": 10,
+     "vers": 3,
      "decimales": 0,
      "suffixe": " c",
-     "legende": "la tasse (5 g de café à 20 € le kilo)",
-     "source": "Calcul ; prix moyen UFC-Que Choisir 2025",
+     "legende": "le café vert de ta capsule",
+     "source": "ICE arabica 2,80 $/lb (06/11/2026), 1 € = 1,117 $",
      "a": 0.4,
      "position": "centre"
     }
    ],
-   "media_ref": "pi:206142",
-   "transition": "coupe"
-  },
-  {
-   "id": "c081",
-   "format": "mosaique",
-   "medias": [
+   "sons": [
     {
-     "media_ref": "wc:File:Coffee capsules in Nespresso provided recycling bag.jpg"
-    },
-    {
-     "media_ref": "wc:File:NEA recycling bins, Orchard Road.JPG"
-    }
-   ],
-   "ambiance": "leger",
-   "texte": "Et les capsules vides ? Dans la plupart des villes, elles vont désormais au bac jaune.",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "IFOP / ARCA, février 2024 ; vérifie les consignes de ta commune",
-     "a": 1.0
+     "nom": "impact",
+     "a": 0.4,
+     "volume": 0.7
     }
    ],
    "transition": "coupe"
   },
   {
-   "id": "c082",
+   "id": "v039",
    "format": "rush",
+   "texte": "Et ces trois centimes, le caféiculteur ne les touche même pas en entier.",
    "ambiance": "emotion",
-   "texte": "Avant la réponse, la fin promise. Éric Favre, l'inventeur poussé dehors ?",
-   "media_ref": "wc:File:Mumac - Ricostruzione di un bancone.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c083",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "pi:2049822"
-    },
-    {
-     "media_ref": "wc:File:Coffee capsules Starbucks.jpg"
-    }
+   "media_ref": "wc:File:Antiga plantação de café em São Paulo atrai visitantes.webm",
+   "extrait": 57,
+   "extrait_duree": 5,
+   "recadre": [
+    0.03,
+    0.05,
+    0.7
    ],
-   "ambiance": "emotion",
-   "surtitre": "Monodor, 1991",
-   "texte": "Il fonde sa propre entreprise, Monodor. Et elle fabrique… des capsules, pour d'autres.",
-   "couches": [
-    {
-     "type": "source",
-     "texte": "OMPI Magazine, 2010",
-     "a": 1.0
-    }
-   ],
+   "look": "champ",
    "transition": "coupe"
   },
   {
-   "id": "c084",
-   "format": "ecran_partage",
-   "cote": "gauche",
-   "ambiance": "emotion",
-   "etiquette_schema": "Sous licence Monodor",
-   "texte": "Pour Lavazza en deux mille, et pour Migros, en Suisse, en deux mille quatre.",
-   "schema": {
-    "type": "liste",
-    "titre": "Capsules sous licence",
-    "elements": [
-     {
-      "texte": "Lavazza",
-      "valeur": "2000"
-     },
-     {
-      "texte": "Migros (Delizio)",
-      "valeur": "2004"
-     }
-    ],
-    "source": "OMPI Magazine, 2010"
-   },
-   "media_ref": "wc:File:Migros türk.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c085",
+   "id": "v040",
    "format": "rush",
+   "texte": "Sur vingt ans, la part du prix restée dans les pays producteurs est passée de vingt-quatre à seize pour cent.",
    "ambiance": "emotion",
-   "surtitre": "2003",
-   "texte": "Avec Nestlé, ce sont des années de bataille sur les brevets, jusqu'à un accord en deux mille trois.",
+   "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
+   "extrait": 120,
+   "extrait_duree": 8,
+   "recadre": [
+    0.06,
+    0.08,
+    0.8
+   ],
+   "look": "champ",
    "punch": {
     "a": 5.0,
-    "texte": "ACCORD EN 2003"
+    "texte": "24 % → 16 %"
    },
    "couches": [
     {
      "type": "source",
-     "texte": "House of Switzerland (DFAE)",
-     "a": 0.6
+     "texte": "BASIC / Max Havelaar, 2018",
+     "a": 0.8
     }
    ],
-   "media_ref": "pi:3665164",
    "transition": "coupe"
   },
   {
-   "id": "c086",
-   "format": "mosaique",
-   "medias": [
-    {
-     "media_ref": "wc:File:Morning black American coffee.jpg"
-    },
-    {
-     "media_ref": "wc:File:Espresso BW 1.jpg"
-    },
-    {
-     "media_ref": "wc:File:Espresso shot.jpg"
-    }
-   ],
+   "id": "v041",
+   "format": "rush",
+   "texte": "Au Pérou et en Éthiopie, en deux mille dix-sept, les caféiculteurs gagnaient vingt pour cent de moins qu'en deux mille cinq.",
    "ambiance": "emotion",
-   "texte": "Il écrira : « De toutes mes erreurs, celle que je regrette le plus, c'est d'avoir mis si longtemps à faire les autres. »",
+   "media_ref": "wc:File:Wild Coffee in Ethiopia.jpg",
+   "look": "champ",
    "couches": [
     {
-     "type": "carton",
-     "texte": "« MIS SI LONGTEMPS À FAIRE LES AUTRES »",
-     "sous_texte": "Éric Favre, 2014 · House of Switzerland (traduit)",
-     "a": 3.0
+     "type": "source",
+     "texte": "BASIC 2018, repris par la RTBF",
+     "a": 0.8
     }
    ],
+   "punch": {
+    "a": 5.2,
+    "texte": "− 20 %"
+   },
    "transition": "coupe"
   },
   {
-   "id": "c087",
+   "id": "v042",
    "format": "titre",
    "type": "titre",
    "texte": "",
    "numero": "",
    "titre": "La vérité",
    "sous_titre": "Qui garde la différence ?",
+   "media_ref": "pv:3122",
    "duree_min": 2.6,
    "ambiance": "revelation",
+   "look": "bijou",
    "sons": [
     {
      "nom": "riser",
@@ -1865,16 +850,44 @@
      "volume": 0.7
     }
    ],
-   "look": "bijou",
-   "media_ref": "pv:3122",
    "transition": "coupe"
   },
   {
-   "id": "c088",
+   "id": "v043",
+   "format": "rush",
+   "texte": "Quarante-cinq centimes payés. Trois pour le café. Où partent les quarante-deux autres ?",
+   "ambiance": "revelation",
+   "media_ref": "wc:File:Nespresso-capsules AB-03.jpg",
+   "look": "bijou",
+   "punch": {
+    "a": 4.4,
+    "texte": "42 c ?"
+   },
+   "transition": "coupe"
+  },
+  {
+   "id": "v044",
+   "format": "rush",
+   "texte": "Deux centimes pour l'État : la TVA du café, à cinq virgule cinq pour cent.",
+   "ambiance": "revelation",
+   "media_ref": "wc:File:Paid bill for coffee.jpg",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Code général des impôts, art. 278-0 bis",
+     "a": 0.8
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v045",
    "format": "schema",
-   "texte": "Ta réponse ? Torréfacteurs et magasins, ensemble, gardent…",
-   "etiquette_schema": "Ta réponse ?",
-   "duree_min": 4.5,
+   "texte": "Et le reste ? Torréfacteurs et magasins gardent… trente, soixante, ou quatre-vingt-cinq pour cent ?",
+   "ambiance": "revelation",
+   "media_ref": "wc:File:Nespressotab.jpg",
+   "etiquette_schema": "La dernière devinette",
+   "duree_min": 4.6,
    "schema": {
     "type": "devine",
     "question": "Torréfacteurs + magasins : quelle part ?",
@@ -1889,52 +902,51 @@
    "sons": [
     {
      "nom": "tick",
-     "a": 1.2,
+     "a": 1.0,
      "volume": 0.3
     },
     {
      "nom": "tick",
-     "a": 1.8,
+     "a": 1.6,
      "volume": 0.3
     },
     {
      "nom": "impact",
-     "a": 2.6,
+     "a": 2.4,
      "volume": 0.7
     }
    ],
-   "ambiance": "revelation",
-   "media_ref": "wc:File:Extra (Coop supermarket) Bergen Storsenter Norway 2017-11-16 snacks aisle distorted panorama.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c089",
+   "id": "v046",
    "format": "rush",
-   "look": "bijou",
+   "texte": "Entre quatre-vingt-cinq et quatre-vingt-dix pour cent du prix. Torréfaction, aluminium, pub, boutiques… et marges.",
    "ambiance": "revelation",
-   "texte": "Entre quatre-vingt-cinq et quatre-vingt-dix pour cent du prix final, selon l'étude du BASIC.",
+   "media_ref": "wc:File:Colorful Nestlé Nescafé cans.JPG",
+   "look": "bijou",
    "couches": [
     {
      "type": "compteur",
      "vers": 85,
      "decimales": 0,
      "suffixe": " à 90 %",
-     "legende": "du prix d'une capsule : torréfacteurs et distributeurs",
+     "legende": "pour torréfacteurs et distributeurs",
      "source": "BASIC / Max Havelaar / Commerce Équitable France, 2018",
      "a": 0.3,
      "position": "centre"
     }
    ],
-   "media_ref": "wc:File:Nespresso Avenches 1.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c090",
+   "id": "v047",
    "format": "ecran_partage",
-   "cote": "gauche",
+   "texte": "Ta capsule, c'est quinze fois le prix du café qu'elle contient.",
    "ambiance": "revelation",
+   "media_ref": "wc:File:Vertuo Selection.jpg",
+   "cote": "gauche",
    "etiquette_schema": "Ta capsule à 45 c",
-   "texte": "Reprends ta capsule à quarante-cinq centimes. Trois centimes de café vert. Deux pour l'État.",
    "schema": {
     "type": "decomposition",
     "titre": "Ta capsule à 45 c",
@@ -1958,118 +970,111 @@
     ],
     "source": "Calculs ; BASIC 2018 ; CGI"
    },
-   "media_ref": "wc:File:Vertuo Selection.jpg",
    "transition": "coupe"
   },
   {
-   "id": "c091",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "revelation",
-   "texte": "Et environ quarante pour la marque, le magasin, l'emballage… et le marketing.",
-   "couches": [
-    {
-     "type": "mots",
-     "texte": "≈ 40 c",
-     "heros": "40 c",
-     "position": "centre",
-     "a": 0.6
-    }
-   ],
-   "media_ref": "wc:File:Nespressotab.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c092",
+   "id": "v048",
    "format": "mosaique",
-   "look": "champ",
-   "medias": [
-    {
-     "media_ref": "pi:6959638"
-    },
-    {
-     "media_ref": "wc:File:The start of your morning coffee (5984450578).jpg"
-    }
-   ],
-   "ambiance": "emotion",
-   "texte": "Et sur ces trois centimes, il faut encore payer l'exportateur et le transport, avant le caféiculteur.",
-   "transition": "coupe"
-  },
-  {
-   "id": "c093",
-   "format": "rush",
-   "look": "bijou",
-   "ambiance": "revelation",
-   "texte": "Ta capsule coûte quinze fois le prix du café qu'elle contient.",
-   "punch": {
-    "a": 1.6,
-    "texte": "× 15"
-   },
-   "media_ref": "wc:File:User Nespresso pod.jpg",
-   "transition": "coupe"
-  },
-  {
-   "id": "c094",
-   "format": "schema",
-   "ambiance": "revelation",
-   "etiquette_schema": "Ce que tu paies",
-   "texte": "Personne ne vole personne. Tu paies surtout une marque, un emballage, et du confort.",
-   "schema": {
-    "type": "liste",
-    "titre": "Ce que tu paies vraiment",
-    "elements": [
-     {
-      "texte": "Une marque",
-      "heros": true
-     },
-     {
-      "texte": "Un emballage"
-     },
-     {
-      "texte": "Du confort"
-     }
-    ]
-   },
-   "media_ref": "pi:1117933",
-   "transition": "coupe"
-  },
-  {
-   "id": "c095",
-   "format": "mosaique",
+   "texte": "Donc on se fait avoir ?",
+   "ambiance": "tension",
    "medias": [
     {
      "media_ref": "wc:File:Woman enjoying her morning coffee before work.jpg"
     },
     {
-     "media_ref": "wc:File:Making coffee with a coffee machine in a kitchen.jpg"
+     "media_ref": "pv:3595"
     }
    ],
+   "voix": "sceptique",
+   "transition": "coupe"
+  },
+  {
+   "id": "v049",
+   "format": "mosaique",
+   "texte": "Non. Tu paies une marque et du confort. Et pour payer moins : compatibles, ou capsule réutilisable à dix centimes la tasse.",
    "ambiance": "leger",
-   "texte": "Abonne-toi si tu veux savoir où part ton argent. La semaine prochaine : le vrai prix de ton chauffage.",
+   "medias": [
+    {
+     "media_ref": "wc:File:Nespresso store à Dakar 01.jpg"
+    },
+    {
+     "media_ref": "pv:4948"
+    }
+   ],
    "couches": [
     {
-     "type": "carton",
-     "texte": "ABONNE-TOI",
-     "a": 2.4
+     "type": "source",
+     "texte": "graindexpert 04/11/2026 ; calcul 5 g à 20 €/kg",
+     "a": 0.8
     }
    ],
    "transition": "coupe"
   },
   {
-   "id": "c096",
+   "id": "v050",
    "format": "rush",
-   "ambiance": "leger",
-   "texte": "Et toi, ta capsule, tu la paies combien ? Dis-le moi en commentaire.",
+   "texte": "Et Éric Favre ? Il fonde sa propre entreprise, Monodor… et fabrique des capsules pour d'autres marques.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Migros türk.jpg",
    "couches": [
     {
-     "type": "mots",
-     "texte": "TON PRIX EN COMMENTAIRE",
-     "heros": "COMMENTAIRE",
-     "position": "haut",
-     "a": 0.2
+     "type": "source",
+     "texte": "OMPI Magazine, 2010",
+     "a": 0.8
     }
    ],
-   "media_ref": "pv:4947",
+   "transition": "coupe"
+  },
+  {
+   "id": "v051",
+   "format": "rush",
+   "texte": "Contre Nestlé, des années de procès. Jusqu'à un accord, en deux mille trois.",
+   "ambiance": "emotion",
+   "media_ref": "pi:3665164",
+   "surtitre": "2003",
+   "transition": "coupe"
+  },
+  {
+   "id": "v052",
+   "format": "rush",
+   "texte": "Des années plus tard, il écrira : « De toutes mes erreurs, celle que je regrette le plus, c'est d'avoir mis si longtemps à faire les autres. »",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Macro Espresso Process.webm",
+   "extrait": 46,
+   "extrait_duree": 10,
+   "look": "bijou",
+   "couches": [
+    {
+     "type": "carton",
+     "texte": "« SI LONGTEMPS À FAIRE LES AUTRES »",
+     "sous_texte": "Éric Favre, 2014 · House of Switzerland (traduit)",
+     "a": 3.2
+    }
+   ],
+   "transition": "coupe"
+  },
+  {
+   "id": "v053",
+   "format": "rush",
+   "texte": "Abonne-toi : la semaine prochaine, le vrai prix de ton chauffage.",
+   "ambiance": "leger",
+   "media_ref": "pv:91261",
+   "transition": "coupe"
+  },
+  {
+   "id": "v054",
+   "format": "rush",
+   "texte": "Et demain matin, au moment du clic… tu sauras où partent tes quarante-cinq centimes.",
+   "ambiance": "emotion",
+   "media_ref": "wc:File:Machine Nespresso professionnelle -10.JPG",
+   "look": "bijou",
+   "sons": [
+    {
+     "nom": "metal",
+     "a": 2.6,
+     "volume": 0.6
+    }
+   ],
    "transition": "coupe"
   }
  ]

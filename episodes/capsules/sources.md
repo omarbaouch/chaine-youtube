@@ -63,3 +63,9 @@ Chaque chiffre du script, sa source, et le calcul quand il y en a un. Les chiffr
 
 ## Musique
 Kevin MacLeod (incompetech.com), CC-BY 4.0 — crédits dans la description.
+
+## Vidéos libres utilisées dans la v2 (07/11/2026)
+- « The bean that could save coffee from climate change » — Context (Thomson Reuters Foundation), Wikimedia Commons, CC BY-SA 4.0 (Henrique Sloper, caféiculteur, Espírito Santo, Brésil ; récolte, séchage, sacs).
+- « Antiga plantação de café em São Paulo atrai visitantes » — TV Brasil, Wikimedia Commons, CC BY 3.0 (cueillette à la main).
+- « Macro Espresso Process » — Wikimedia Commons, CC BY 2.0 ; « Pantheon, Rome » et « Flight over Rome » — Wikimedia Commons.
+- « Il quitte l'entreprise avant que sa capsule ne devienne un succès mondial » : départ forcé en 1991 alors que Nespresso peinait (House of Switzerland) ; Nespresso est aujourd'hui vendu dans le monde entier.
