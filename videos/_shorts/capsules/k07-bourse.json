@@ -1,0 +1,58 @@
+{
+ "id": "k07-bourse",
+ "titre": "Le café a baissé de 31 %. Et ton paquet ? #shorts",
+ "accroche": "LE CAFÉ A BAISSÉ DE 31 %. ET TON PAQUET ?",
+ "plans": [
+  {
+   "texte": "Café vert : moins trente et un pour cent.",
+   "chiffre": "− 31 %",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:166289",
+    "pi:625693"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-cinq, il dépassait quatre dollars la livre. Un record.",
+   "chiffre": "> 4 $",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "wc:File:Gaming-Wall-Street BTS Prodigium-266.jpg",
+    "pv:338955"
+   ]
+  },
+  {
+   "texte": "Aujourd'hui, deux dollars quatre-vingts. Le Brésil attend une récolte record.",
+   "chiffre": "2,80 $",
+   "chiffre_mot": "quatre-vingts",
+   "medias": [
+    "wc:File:Fazenda Boa Vista, Mococa-SP, Vladimir Benincasa 2.jpg",
+    "pi:2744210"
+   ]
+  },
+  {
+   "texte": "Mais en magasin, le café avait pris dix-huit pour cent en un an.",
+   "chiffre": "+ 18 %",
+   "chiffre_mot": "dix-huit",
+   "medias": [
+    "pi:2619380",
+    "wc:File:Aisle in L Intermarche supermarket in Quebec City.jpg"
+   ]
+  },
+  {
+   "texte": "Ton prix au kilo va-t-il baisser ? Surveille-le.",
+   "chiffre": "?",
+   "chiffre_mot": "baisser",
+   "medias": [
+    "wc:File:Moscow, Paveletskaya Plaza Nov.2023 - cheapest coffee.jpg",
+    "wc:File:Nespresso store à Dakar 01.jpg"
+   ]
+  }
+ ],
+ "sources": [
+  "Trading Economics, 06/11/2026",
+  "AFP, 04/07/2025 ; BFM Bourse / Tradingsat, 21/06/2026",
+  "UFC-Que Choisir, 08/12/2025"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

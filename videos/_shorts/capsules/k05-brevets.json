@@ -1,0 +1,49 @@
+{
+ "id": "k05-brevets",
+ "titre": "Pourquoi les capsules compatibles coûtent moins cher #shorts",
+ "accroche": "POURQUOI DES CAPSULES COMPATIBLES ?",
+ "plans": [
+  {
+   "texte": "Pourquoi les capsules compatibles coûtent moins cher ?",
+   "chiffre": "?",
+   "chiffre_mot": "compatibles",
+   "medias": [
+    "wc:File:Nespresso store à Dakar 01.jpg",
+    "wc:File:Nespresso-capsules AB-02.jpg"
+   ]
+  },
+  {
+   "texte": "Jusqu'en deux mille douze, des brevets protégeaient les capsules de la marque.",
+   "chiffre": "2012",
+   "chiffre_mot": "douze",
+   "medias": [
+    "wc:File:Automatic produce-bagging machine that uses factory-roll polyethylene net tubing (1973) (20324440706).jpg",
+    "wc:File:Nespresso Avenches 2.jpg"
+   ]
+  },
+  {
+   "texte": "Dès deux mille onze, des concurrents lancent des compatibles. Nestlé les attaque en justice.",
+   "chiffre": "2011",
+   "chiffre_mot": "onze",
+   "medias": [
+    "pi:3577254",
+    "pi:3665164"
+   ]
+  },
+  {
+   "texte": "Aujourd'hui, une compatible distributeur coûte vingt-cinq à trente centimes, contre trente-neuf à quarante-neuf.",
+   "chiffre": "0,25 € / 0,49 €",
+   "chiffre_mot": "vingt-cinq",
+   "medias": [
+    "wc:File:Moscow, Paveletskaya Plaza Nov.2023 - cheapest coffee.jpg",
+    "wc:File:Nespresso accessories.jpg"
+   ]
+  }
+ ],
+ "sources": [
+  "Moneyvox, 2019 ; House of Switzerland (brevets jusqu'en 2012)",
+  "Swissinfo, 05/10/2011 (procès)",
+  "graindexpert, 04/11/2026 (prix)"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

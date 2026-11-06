@@ -1,0 +1,48 @@
+{
+ "id": "k06-tva",
+ "titre": "L'État gagne combien sur ta capsule ? #shorts",
+ "accroche": "L'ÉTAT GAGNE COMBIEN SUR TA CAPSULE ?",
+ "plans": [
+  {
+   "texte": "L'État gagne combien sur ta capsule ?",
+   "chiffre": "?",
+   "chiffre_mot": "combien",
+   "medias": [
+    "wc:File:Paid bill for coffee.jpg",
+    "wc:File:Nespresso-capsules AB-03.jpg"
+   ]
+  },
+  {
+   "texte": "Le café est taxé comme un aliment : cinq virgule cinq pour cent de TVA.",
+   "chiffre": "5,5 %",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "wc:File:Vegetable oils etc. aisle in Meny Supermarket in Bergen Storsenter Shopping Mall, Bergen, Norway 2017-10-23 a.jpg",
+    "pv:203874"
+   ]
+  },
+  {
+   "texte": "Sur une capsule à quarante-cinq centimes, ça fait environ deux centimes.",
+   "chiffre": "≈ 2 c",
+   "chiffre_mot": "deux",
+   "medias": [
+    "wc:File:Nespresso-capsules AB-01.jpg",
+    "pi:2180330"
+   ]
+  },
+  {
+   "texte": "Le reste, environ quarante centimes, part ailleurs. Qui le garde ? Réponse dans la vidéo.",
+   "chiffre": "≈ 40 c",
+   "chiffre_mot": "quarante",
+   "medias": [
+    "wc:File:Nespresso Boutique Mannheim O6.jpg",
+    "wc:File:Paris 16 mars 2019 nespresso.jpg"
+   ]
+  }
+ ],
+ "sources": [
+  "Code général des impôts, art. 278-0 bis",
+  "Calcul : 0,45 × 5,5 / 105,5 = 2,35 c"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

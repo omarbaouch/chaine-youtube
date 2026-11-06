@@ -1,0 +1,57 @@
+{
+ "id": "k01-inventeur",
+ "titre": "Il a inventé la capsule… et Nestlé l'a poussé dehors #shorts",
+ "accroche": "L'INVENTEUR DE LA CAPSULE, POUSSÉ DEHORS",
+ "plans": [
+  {
+   "texte": "Cette capsule est née dans un café romain.",
+   "chiffre": "1975",
+   "chiffre_mot": "romain",
+   "medias": [
+    "wc:File:Caffè Sant'Eustachio.JPG",
+    "wc:File:PavoniEspressomaschine.jpg"
+   ]
+  },
+  {
+   "texte": "Un barista y actionnait le levier par petits coups, pour faire entrer de l'air.",
+   "chiffre": "+ AIR",
+   "chiffre_mot": "levier",
+   "medias": [
+    "wc:File:Vintage Coffee Machine, Bar in Prague - 9116.jpg",
+    "pv:134"
+   ]
+  },
+  {
+   "texte": "Nespresso sort en mille neuf cent quatre-vingt-six. Et c'est un échec.",
+   "chiffre": "1986",
+   "chiffre_mot": "échec",
+   "medias": [
+    "wc:File:SGI Indigo2 High Impact workstation, next to an SGI Espressigo.jpg",
+    "pi:4428014"
+   ]
+  },
+  {
+   "texte": "En mille neuf cent quatre-vingt-onze, l'inventeur, Éric Favre, est poussé vers la sortie.",
+   "chiffre": "1991",
+   "chiffre_mot": "onze",
+   "medias": [
+    "wc:File:Nestle Vevey 2014.jpg",
+    "pv:3595"
+   ]
+  },
+  {
+   "texte": "Il fonde Monodor… et fabrique des capsules pour les concurrents.",
+   "chiffre": "MONODOR",
+   "chiffre_mot": "Monodor",
+   "medias": [
+    "wc:File:Nespresso-capsules AB-01.jpg",
+    "wc:File:Migros türk.jpg"
+   ]
+  }
+ ],
+ "sources": [
+  "House of Switzerland (DFAE) : https://www.houseofswitzerland.org/swissstories/economics/eric-favre-swiss-inventor-who-put-coffee-capsules",
+  "OMPI Magazine, 2010 : https://www.wipo.int/fr/web/wipo-magazine/articles/anyone-for-coffee-the-story-behind-the-coffee-capsule-37455"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

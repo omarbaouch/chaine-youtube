@@ -1,0 +1,49 @@
+{
+ "id": "k04-tasse-10c",
+ "titre": "Ton café à 10 centimes la tasse #shorts",
+ "accroche": "TON CAFÉ À 10 CENTIMES LA TASSE",
+ "plans": [
+  {
+   "texte": "Ta capsule te coûte quarante-cinq centimes ?",
+   "chiffre": "0,45 €",
+   "chiffre_mot": "quarante-cinq",
+   "medias": [
+    "wc:File:Nespresso accessories.jpg",
+    "pi:3841386"
+   ]
+  },
+  {
+   "texte": "Une compatible de marque distributeur : vingt-cinq à trente centimes.",
+   "chiffre": "0,25–0,30 €",
+   "chiffre_mot": "vingt-cinq",
+   "medias": [
+    "wc:File:Nespresso store à Dakar 01.jpg",
+    "wc:File:Nespresso-capsules AB-01.jpg"
+   ]
+  },
+  {
+   "texte": "Une capsule réutilisable, remplie de café à vingt euros le kilo : dix centimes.",
+   "chiffre": "0,10 €",
+   "chiffre_mot": "dix",
+   "medias": [
+    "pi:3457587",
+    "pi:206142"
+   ]
+  },
+  {
+   "texte": "Et regarde toujours le prix au kilo, sur l'étiquette du rayon.",
+   "chiffre": "€ / KG",
+   "chiffre_mot": "kilo",
+   "medias": [
+    "wc:File:Moscow, Paveletskaya Plaza Nov.2023 - cheapest coffee.jpg",
+    "pi:2619380"
+   ]
+  }
+ ],
+ "sources": [
+  "graindexpert, 04/11/2026 (prix des capsules)",
+  "UFC-Que Choisir, 08/12/2025 (≈ 20 €/kg en grains ou moulu)",
+  "Calcul : 5 g × 20 €/kg = 0,10 €"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

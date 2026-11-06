@@ -1,0 +1,48 @@
+{
+ "id": "k03-producteurs",
+ "titre": "Le café a doublé : les producteurs sont riches ? #shorts",
+ "accroche": "LE CAFÉ A DOUBLÉ. LES PRODUCTEURS, RICHES ?",
+ "plans": [
+  {
+   "texte": "Le café a doublé. Les producteurs sont riches ?",
+   "chiffre": "× 2",
+   "chiffre_mot": "doublé",
+   "medias": [
+    "pi:3923897",
+    "pi:6959629"
+   ]
+  },
+  {
+   "texte": "Sur vingt ans, leur part du prix passe de vingt-quatre à seize pour cent.",
+   "chiffre": "24 % → 16 %",
+   "chiffre_mot": "seize",
+   "medias": [
+    "wc:File:Female coffee farmer in Ethiopia (5762538117).jpg",
+    "wc:File:Coffee Cravings.jpg"
+   ]
+  },
+  {
+   "texte": "Au Pérou et en Éthiopie, ils gagnaient vingt pour cent de moins qu'en deux mille cinq.",
+   "chiffre": "− 20 %",
+   "chiffre_mot": "vingt",
+   "medias": [
+    "wc:File:Wild Coffee in Ethiopia.jpg",
+    "pi:2347993"
+   ]
+  },
+  {
+   "texte": "Et le prix record ? Il a déjà perdu trente et un pour cent en un an.",
+   "chiffre": "− 31 %",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:166289",
+    "wc:File:Coffee drying panama.jpg"
+   ]
+  }
+ ],
+ "sources": [
+  "BASIC / Max Havelaar / Commerce Équitable France, 2018",
+  "Trading Economics, 06/11/2026 (− 31,3 % sur un an)"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

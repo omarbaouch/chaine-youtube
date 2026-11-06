@@ -1,0 +1,48 @@
+{
+ "id": "k08-trois-groupes",
+ "titre": "3 groupes vendent 81 % de ton café #shorts",
+ "accroche": "3 GROUPES VENDENT 81 % DE TON CAFÉ",
+ "plans": [
+  {
+   "texte": "Trois groupes vendent l'essentiel de ton café.",
+   "chiffre": "3",
+   "chiffre_mot": "Trois",
+   "medias": [
+    "wc:File:Vegetable oils etc. aisle in Meny Supermarket in Bergen Storsenter Shopping Mall, Bergen, Norway 2017-10-23 a.jpg",
+    "pi:7024553"
+   ]
+  },
+  {
+   "texte": "Nestlé : trente-quatre pour cent du marché français.",
+   "chiffre": "34 %",
+   "chiffre_mot": "trente-quatre",
+   "medias": [
+    "wc:File:Nestle Vevey 2014.jpg",
+    "wc:File:Nespresso Avenches 1.jpg"
+   ]
+  },
+  {
+   "texte": "J D E : trente pour cent. Lavazza : dix-sept.",
+   "chiffre": "30 % · 17 %",
+   "chiffre_mot": "trente",
+   "medias": [
+    "wc:File:Vegetable oils etc. aisle in Meny Supermarket in Bergen Storsenter Shopping Mall, Bergen, Norway 2017-10-23 b.jpg",
+    "wc:File:Coffee bag 2.jpg"
+   ]
+  },
+  {
+   "texte": "Ensemble, quatre-vingt-un pour cent. Et les capsules pesaient un milliard quatre cents millions d'euros en deux mille dix-huit.",
+   "chiffre": "81 %",
+   "chiffre_mot": "quatre-vingt-un",
+   "medias": [
+    "wc:File:Farbige Nespresso-Kaffeekapseln.jpg",
+    "pi:7850299"
+   ]
+  }
+ ],
+ "sources": [
+  "BASIC / Max Havelaar / Commerce Équitable France, 2018",
+  "Nielsen, cité par Moneyvox (2019)"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}

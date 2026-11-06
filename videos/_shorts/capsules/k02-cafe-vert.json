@@ -1,0 +1,58 @@
+{
+ "id": "k02-cafe-vert",
+ "titre": "Combien vaut le café dans ta capsule ? #shorts",
+ "accroche": "COMBIEN VAUT LE CAFÉ DE TA CAPSULE ?",
+ "plans": [
+  {
+   "texte": "Combien vaut le café dans ta capsule ?",
+   "chiffre": "?",
+   "chiffre_mot": "vaut",
+   "medias": [
+    "wc:File:Vertuo Pods Pair.jpg",
+    "wc:File:User Nespresso pod.jpg"
+   ]
+  },
+  {
+   "texte": "À la bourse, le café vert vaut cinq euros cinquante le kilo.",
+   "chiffre": "5,50 €/kg",
+   "chiffre_mot": "cinquante",
+   "medias": [
+    "wc:File:Gaming-Wall-Street BTS Prodigium-266.jpg",
+    "pi:625693"
+   ]
+  },
+  {
+   "texte": "Ta capsule en contient cinq grammes.",
+   "chiffre": "5 g",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "pi:2912113",
+    "wc:File:Coffee Beans Drying in the Sun (4261209148).jpg"
+   ]
+  },
+  {
+   "texte": "Soit environ trois centimes de café.",
+   "chiffre": "≈ 3 c",
+   "chiffre_mot": "trois",
+   "medias": [
+    "wc:File:Hand holding coffee cherries.jpg",
+    "pi:1474601"
+   ]
+  },
+  {
+   "texte": "Et ta capsule, tu la paies quarante-cinq centimes. Quinze fois plus.",
+   "chiffre": "× 15",
+   "chiffre_mot": "Quinze",
+   "medias": [
+    "wc:File:Nespresso accessories.jpg",
+    "wc:File:Colorful Nestlé Nescafé cans.JPG"
+   ]
+  }
+ ],
+ "sources": [
+  "Arabica ICE 2,80 $/lb le 06/11/2026 (Trading Economics), 1 € = 1,117 $ : 5,53 €/kg",
+  "5 g par capsule : Nespresso (FAQ)",
+  "Calcul : 5 g × 5,53 €/kg ≈ 3 c ; capsule 0,39–0,49 € (graindexpert, 04/11/2026)"
+ ],
+ "fin": "La vidéo complète est en lien sous ce Short."
+}
