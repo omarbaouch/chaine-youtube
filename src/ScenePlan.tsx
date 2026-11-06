@@ -127,19 +127,19 @@ export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalon
     <AbsoluteFill style={{backgroundColor: '#000', overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `scale(${zoomPunch})`}}>
         <Contenu scene={scene} filtre={filtre} />
+        {scene.look === 'champ' ? <AbsoluteFill style={{background: 'rgba(40,80,130,0.13)', mixBlendMode: 'soft-light', pointerEvents: 'none'}} /> : null}
+        {scene.look === 'bijou' ? (
+          <>
+            <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.55) 100%)', pointerEvents: 'none'}} />
+            {/* bandes cinéma 2,39:1 : image utile 1920 × 803 */}
+            <AbsoluteFill style={{pointerEvents: 'none'}}>
+              <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 138, background: '#000'}} />
+              <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 138, background: '#000'}} />
+            </AbsoluteFill>
+          </>
+        ) : null}
         {scene.couches?.length ? <CouchesScene couches={scene.couches} /> : null}
       </AbsoluteFill>
-      {scene.look === 'champ' ? <AbsoluteFill style={{background: 'rgba(40,80,130,0.13)', mixBlendMode: 'soft-light', pointerEvents: 'none'}} /> : null}
-      {scene.look === 'bijou' ? (
-        <>
-          <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.55) 100%)', pointerEvents: 'none'}} />
-          {/* bandes cinéma 2,39:1 : image utile 1920 × 803 */}
-          <AbsoluteFill style={{pointerEvents: 'none'}}>
-            <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 138, background: '#000'}} />
-            <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 138, background: '#000'}} />
-          </AbsoluteFill>
-        </>
-      ) : null}
       {/* dégradé bas pour la lisibilité des sous-titres */}
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 62%, rgba(0,0,0,.6) 100%)', pointerEvents: 'none'}} />
       {scene.surtitre ? <Surtitre texte={scene.surtitre} /> : null}

@@ -51,7 +51,7 @@ const UneCouche: React.FC<{c: Couche}> = ({c}) => {
     case 'mots': {
       const pos = c.position ?? 'centre';
       const style: React.CSSProperties =
-        pos === 'gauche' ? {left: 150, top: 300, width: 1000} : pos === 'haut' ? {left: 150, top: 120, width: 1620} : {left: 160, top: 380, width: 1600};
+        pos === 'gauche' ? {left: 150, top: 300, width: 1000} : pos === 'haut' ? {left: 150, top: 150, width: 1620} : {left: 160, top: 380, width: 1600};
       return (
         <AbsoluteFill>
           <div style={{position: 'absolute', ...style}}>
