@@ -1,0 +1,59 @@
+{
+ "titre": "Repérage vidéos capsules 3",
+ "scenes": [
+  {
+   "id": "V13",
+   "recherche": [
+    "morning coffee",
+    "making coffee kitchen",
+    "woman drinking coffee"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V14",
+   "recherche": [
+    "recycling",
+    "aluminum recycling",
+    "waste sorting"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V15",
+   "recherche": [
+    "office",
+    "office coffee",
+    "vintage office"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V16",
+   "recherche": [
+    "luxury",
+    "gold",
+    "jewelry"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V17",
+   "recherche": [
+    "Brazil coffee",
+    "Vietnam coffee",
+    "Ethiopia coffee"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V18",
+   "recherche": [
+    "court",
+    "judge gavel",
+    "lawyer"
+   ],
+   "videos_seulement": true
+  }
+ ]
+}
