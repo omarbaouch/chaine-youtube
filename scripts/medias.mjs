@@ -127,8 +127,21 @@ async function telechargerRef(s) {
         ...(s.temoignage ? ['-c:a', 'aac', '-b:a', '192k'] : ['-an']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', path.join(sortie, `${s.id}.mp4`)]);
       fs.rmSync(brut);
     } else {
-      const rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});
-      fs.writeFileSync(path.join(sortie, `${s.id}.jpg`), Buffer.from(await rr.arrayBuffer()));
+      // la miniature Commons échoue parfois (« Too many thumbnail requests ») : on vérifie que c'est bien une image,
+      // sinon on prend l'original et on le réduit à 2400 px
+      const dest = path.join(sortie, `${s.id}.jpg`);
+      let rr = await fetch(ii.thumburl ?? ii.url, {headers: UA});
+      if (!rr.ok || !(rr.headers.get('content-type') ?? '').startsWith('image/')) {
+        console.warn(`  ${s.id} : miniature Commons refusée (${rr.status}), on prend l'original`);
+        rr = await fetch(ii.url, {headers: UA});
+        if (!rr.ok || !(rr.headers.get('content-type') ?? '').startsWith('image/')) throw new Error(`Image Commons illisible : ${id} (${rr.status})`);
+        const brut = path.join(sortie, `${s.id}.orig`);
+        fs.writeFileSync(brut, Buffer.from(await rr.arrayBuffer()));
+        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', brut, '-vf', 'scale=min(2400\\,iw):-2', '-q:v', '3', dest]);
+        fs.rmSync(brut);
+      } else {
+        fs.writeFileSync(dest, Buffer.from(await rr.arrayBuffer()));
+      }
     }
     const auteur = (m.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim();
     credits.push(`${s.id} : ${ii.descriptionurl ?? `https://commons.wikimedia.org/wiki/${encodeURIComponent(id)}`} (Wikimedia Commons, ${auteur}, ${m.LicenseShortName?.value ?? ''})`);
