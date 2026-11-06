@@ -1,0 +1,69 @@
+{
+ "titre": "Repérage capsules partie 2",
+ "scenes": [
+  {
+   "id": "P09",
+   "recherche": [
+    "kitchen coffee machine",
+    "making coffee at home",
+    "morning coffee kitchen"
+   ]
+  },
+  {
+   "id": "P10",
+   "recherche": [
+    "Nestle Vevey",
+    "Vevey Switzerland",
+    "Nestle headquarters"
+   ]
+  },
+  {
+   "id": "P11",
+   "recherche": [
+    "coffee cherries",
+    "coffee cherries branch",
+    "red coffee berries"
+   ]
+  },
+  {
+   "id": "P12",
+   "recherche": [
+    "coffee harvest hands",
+    "coffee picker",
+    "coffee farmer"
+   ]
+  },
+  {
+   "id": "P13",
+   "recherche": [
+    "coffee beans drying sun",
+    "green coffee beans",
+    "coffee drying"
+   ]
+  },
+  {
+   "id": "P14",
+   "recherche": [
+    "coffee sacks",
+    "jute bags coffee",
+    "container port ship"
+   ]
+  },
+  {
+   "id": "P15",
+   "recherche": [
+    "stock market screen",
+    "trading floor",
+    "commodity price chart"
+   ]
+  },
+  {
+   "id": "P16",
+   "recherche": [
+    "coffee plantation aerial",
+    "coffee plantation Brazil",
+    "coffee farm hills"
+   ]
+  }
+ ]
+}
