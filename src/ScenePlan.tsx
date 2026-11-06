@@ -116,7 +116,12 @@ const Contenu: React.FC<{scene: Scene; filtre: string}> = ({scene, filtre}) => {
 
 export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalonnage']}> = ({scene, etalonnage}) => {
   const {fps} = useVideoConfig();
-  const filtre = `contrast(${etalonnage.contraste}) saturate(${etalonnage.saturation}) brightness(${etalonnage.luminosite})`;
+  const filtreBase = `contrast(${etalonnage.contraste}) saturate(${etalonnage.saturation}) brightness(${etalonnage.luminosite})`;
+  const filtre = scene.look === 'bijou'
+    ? `${filtreBase} contrast(1.14) saturate(1.08) brightness(0.93) sepia(0.16)`
+    : scene.look === 'champ'
+      ? `${filtreBase} saturate(0.62) contrast(1.06) brightness(0.97) hue-rotate(-6deg)`
+      : filtreBase;
   const zoomPunch = usePunch(scene.punch);
   return (
     <AbsoluteFill style={{backgroundColor: '#000', overflow: 'hidden'}}>
@@ -124,6 +129,17 @@ export const ScenePlan: React.FC<{scene: Scene; etalonnage: EpisodeProps['etalon
         <Contenu scene={scene} filtre={filtre} />
         {scene.couches?.length ? <CouchesScene couches={scene.couches} /> : null}
       </AbsoluteFill>
+      {scene.look === 'champ' ? <AbsoluteFill style={{background: 'rgba(40,80,130,0.13)', mixBlendMode: 'soft-light', pointerEvents: 'none'}} /> : null}
+      {scene.look === 'bijou' ? (
+        <>
+          <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.55) 100%)', pointerEvents: 'none'}} />
+          {/* bandes cinéma 2,39:1 : image utile 1920 × 803 */}
+          <AbsoluteFill style={{pointerEvents: 'none'}}>
+            <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 138, background: '#000'}} />
+            <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 138, background: '#000'}} />
+          </AbsoluteFill>
+        </>
+      ) : null}
       {/* dégradé bas pour la lisibilité des sous-titres */}
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 62%, rgba(0,0,0,.6) 100%)', pointerEvents: 'none'}} />
       {scene.surtitre ? <Surtitre texte={scene.surtitre} /> : null}

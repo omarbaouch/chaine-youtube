@@ -63,6 +63,7 @@ export type Scene = {
   qui?: string; // 'sceptique' = 2e voix
   temoin?: Temoin; // format temoignage
   ambiance?: string;
+  look?: 'bijou' | 'champ'; // étalonnage par plan (documentaire « Netflix ») : bijou = doré, contrasté, bandes 2,39:1 ; champ = froid, désaturé
 };
 
 // Couches animées, écrites dans montage.json (champ "couches" d'une scène). "a" = début en secondes dans la scène.

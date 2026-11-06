@@ -140,6 +140,7 @@ const scenes = montage.scenes.map((s, i) => {
     sons,
     qui: s.voix,
     ambiance: s.ambiance,
+    look: s.look, // « bijou » (pub de luxe, bandes cinéma) | « champ » (froid, désaturé)
     temoin: tem ? {nom: tem.nom, role: tem.role, source: tem.source} : undefined,
   };
 });
