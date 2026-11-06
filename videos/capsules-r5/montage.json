@@ -1,0 +1,69 @@
+{
+ "titre": "Repérage capsules partie 5",
+ "scenes": [
+  {
+   "id": "Q01",
+   "recherche": [
+    "nespresso capsules",
+    "coffee capsules",
+    "capsules"
+   ]
+  },
+  {
+   "id": "Q02",
+   "recherche": [
+    "coffee pods",
+    "aluminium coffee pods",
+    "espresso pods"
+   ]
+  },
+  {
+   "id": "Q03",
+   "recherche": [
+    "nespresso machine",
+    "capsule machine",
+    "pod coffee machine"
+   ]
+  },
+  {
+   "id": "Q04",
+   "recherche": [
+    "refillable capsule",
+    "reusable capsule coffee",
+    "stainless steel coffee pod"
+   ]
+  },
+  {
+   "id": "Q05",
+   "recherche": [
+    "Lavazza",
+    "Lavazza coffee",
+    "Italian espresso bar"
+   ]
+  },
+  {
+   "id": "Q07",
+   "recherche": [
+    "espresso dark background",
+    "espresso cup black background",
+    "coffee dark moody"
+   ]
+  },
+  {
+   "id": "Q08",
+   "recherche": [
+    "coffee capsules colorful",
+    "capsule coffee macro",
+    "coffee capsule black background"
+   ]
+  },
+  {
+   "id": "Q09",
+   "recherche": [
+    "Sant'Eustachio il caffe",
+    "Piazza Sant'Eustachio",
+    "Rome espresso bar"
+   ]
+  }
+ ]
+}
