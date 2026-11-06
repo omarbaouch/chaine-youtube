@@ -1,0 +1,69 @@
+{
+ "titre": "Repérage capsules partie 4",
+ "scenes": [
+  {
+   "id": "P25",
+   "recherche": [
+    "Eric Favre",
+    "Migros supermarket",
+    "Lavazza coffee"
+   ]
+  },
+  {
+   "id": "P26",
+   "recherche": [
+    "cup of coffee morning",
+    "espresso cup table",
+    "coffee cup steam"
+   ]
+  },
+  {
+   "id": "P27",
+   "recherche": [
+    "euro coins",
+    "euro coins counting",
+    "paying coins"
+   ]
+  },
+  {
+   "id": "P28",
+   "recherche": [
+    "kitchen scale coffee",
+    "digital scale weighing",
+    "weighing scale"
+   ]
+  },
+  {
+   "id": "P29",
+   "recherche": [
+    "jewelry display black velvet",
+    "luxury product black background",
+    "gold reflection dark"
+   ]
+  },
+  {
+   "id": "P30",
+   "recherche": [
+    "engineer workshop vintage",
+    "man thinking window",
+    "inventor workshop"
+   ]
+  },
+  {
+   "id": "P31",
+   "recherche": [
+    "euro banknotes",
+    "cash register supermarket",
+    "shopping receipt"
+   ]
+  },
+  {
+   "id": "P32",
+   "recherche": [
+    "Nespresso",
+    "Nespresso boutique",
+    "coffee capsules store"
+   ]
+  }
+ ]
+}
