@@ -15,5 +15,5 @@
 1. Frame 0 = l'image de la miniature (une capsule en gros plan + le chiffre en « ? »). 1re phrase = la question de la miniature, mot pour mot. Devinette à 3 choix avant 10 s. Aucun contexte, aucune carte avant 30 s.
 2. Durée 8 à 10 min (heures de visionnage), sans remplissage : chaque phrase apporte du nouveau, le dernier tiers accélère.
 3. Titre = requête tapée (« prix café capsule », « capsule café prix au kilo », « Nespresso prix au kilo »…), mot-clé au début.
-4. Voix : Edge Vivienne (règle 9). Le clonage de la voix d'Omar (Chatterbox) a été testé le 06/11 et refusé par Omar (« la voix est nulle »). Le sceptique reste en Edge Rémy.
+4. Voix : Edge Vivienne (règle 9). Le clonage de la voix d'Omar (Chatterbox) a été testé le 06/11 et refusé par Omar (« la voix est nulle » : elle sonne robotique). Piste pour plus tard : garder l’intonation naturelle d’Edge et ne convertir que le timbre vers la voix d’Omar (OpenVoice, licence MIT). Le sceptique reste en Edge Rémy.
 5. Ne pas refaire l'angle du Short capsules (FcM8BzgRVgA, « tu le paies combien au kilo ? ») en Short ; la vidéo longue, elle, y répond en profondeur.
