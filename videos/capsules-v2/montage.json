@@ -1,0 +1,59 @@
+{
+ "titre": "Repérage vidéos capsules 2",
+ "scenes": [
+  {
+   "id": "V07",
+   "recherche": [
+    "factory production line",
+    "packaging machine",
+    "aluminum factory"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V08",
+   "recherche": [
+    "Rome",
+    "Rome street",
+    "Pantheon Rome"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V09",
+   "recherche": [
+    "supermarket",
+    "shopping cart",
+    "grocery store shelf"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V10",
+   "recherche": [
+    "stock market",
+    "trading screen",
+    "financial chart"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V11",
+   "recherche": [
+    "money",
+    "euro coins",
+    "cash register"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V12",
+   "recherche": [
+    "cargo ship",
+    "container port",
+    "coffee sacks"
+   ],
+   "videos_seulement": true
+  }
+ ]
+}
