@@ -141,9 +141,18 @@ def media_choisi(ref, f):
         cred = f"Pixabay {h['id']} — {h.get('user', '')} — {h.get('pageURL', '')}"
     else:
         titre = ref[3:]
-        r = requests.get("https://commons.wikimedia.org/w/api.php", timeout=30, headers={"User-Agent": "LeVraiPrix/1.0"},
-                         params={"action": "query", "titles": titre, "prop": "imageinfo", "iiprop": "url|extmetadata",
-                                 "iiurlwidth": 1600, "format": "json"}).json()
+        import time
+        for essai in range(6):  # Commons renvoie parfois une page d'erreur (limite de débit) : on réessaie
+            rep = requests.get("https://commons.wikimedia.org/w/api.php", timeout=30,
+                               headers={"User-Agent": "chaine-youtube-shorts/1.0 (github.com/omarbaouch/chaine-youtube)"},
+                               params={"action": "query", "titles": titre, "prop": "imageinfo", "iiprop": "url|extmetadata",
+                                       "iiurlwidth": 1600, "format": "json"})
+            try:
+                r = rep.json(); break
+            except ValueError:
+                time.sleep(5 * 2 ** essai)
+        else:
+            raise RuntimeError(f"Commons injoignable pour {titre}")
         info = next(iter(r["query"]["pages"].values()))["imageinfo"][0]
         url, image = info.get("thumburl") or info["url"], True
         meta = info.get("extmetadata", {})
