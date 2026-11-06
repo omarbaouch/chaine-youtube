@@ -1,0 +1,69 @@
+{
+ "titre": "Repérage capsules partie 3",
+ "scenes": [
+  {
+   "id": "P17",
+   "recherche": [
+    "coffee roasting machine",
+    "coffee roaster",
+    "roasted coffee beans cooling"
+   ]
+  },
+  {
+   "id": "P18",
+   "recherche": [
+    "coffee factory production line",
+    "packaging machine factory",
+    "coffee packaging"
+   ]
+  },
+  {
+   "id": "P19",
+   "recherche": [
+    "supermarket coffee shelf",
+    "supermarket aisle",
+    "shelf price tag"
+   ]
+  },
+  {
+   "id": "P20",
+   "recherche": [
+    "coffee beans bag",
+    "roasted coffee beans",
+    "coffee grinder"
+   ]
+  },
+  {
+   "id": "P21",
+   "recherche": [
+    "reusable coffee capsule",
+    "stainless steel coffee capsule",
+    "refillable coffee pod"
+   ]
+  },
+  {
+   "id": "P22",
+   "recherche": [
+    "aluminium recycling",
+    "recycling bin",
+    "used coffee capsules"
+   ]
+  },
+  {
+   "id": "P23",
+   "recherche": [
+    "court gavel",
+    "courthouse",
+    "patent document"
+   ]
+  },
+  {
+   "id": "P24",
+   "recherche": [
+    "Ethiopia coffee farmer",
+    "Peru coffee farmer",
+    "coffee farmer portrait"
+   ]
+  }
+ ]
+}
