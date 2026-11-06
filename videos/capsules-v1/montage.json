@@ -1,0 +1,59 @@
+{
+ "titre": "Repérage vidéos capsules 1",
+ "scenes": [
+  {
+   "id": "V01",
+   "recherche": [
+    "espresso",
+    "espresso machine",
+    "barista"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V02",
+   "recherche": [
+    "coffee capsule",
+    "capsule coffee machine",
+    "coffee pod"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V03",
+   "recherche": [
+    "coffee harvest",
+    "coffee picking",
+    "coffee farmer"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V04",
+   "recherche": [
+    "coffee plantation",
+    "coffee farm",
+    "coffee plant"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V05",
+   "recherche": [
+    "coffee drying",
+    "coffee processing",
+    "green coffee beans"
+   ],
+   "videos_seulement": true
+  },
+  {
+   "id": "V06",
+   "recherche": [
+    "coffee roasting",
+    "coffee roaster",
+    "roasted coffee beans"
+   ],
+   "videos_seulement": true
+  }
+ ]
+}
