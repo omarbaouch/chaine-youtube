@@ -209,6 +209,8 @@ Omar veut de l'**émotion** (références : Léo Duff, Money Radar), pas « un e
 | Écran noir 0,6 s en début de plan | le rush source démarre par un fondu au noir | `blackdetect` sur le rendu final, puis `debut_media` +1 s |
 | Citation non retrouvée | citation reprise sans source primaire | ne JAMAIS mettre une phrase entre guillemets sans l'article qui la cite (date + média) |
 | Pixabay HTTP 429 | trop de requêtes | espacement 700 ms + reprises |
+| Prépa de 56 min au lieu de 15 (capsules, 06/11) | Commons répond 429 → attentes de 600 s | repérer en 4-5 petits lots parallèles (≤ 8 scènes) ; limiter les médias Commons à ~25 par vidéo |
+| « The source image cannot be decoded » au rendu | Commons renvoie « Too many thumbnail requests » à la place d'une très grande image (9 000 px+) | `medias.mjs` vérifie le type et prend l'original réduit ; éviter les fichiers Commons > 8 000 px |
 Contrôle final obligatoire : `ebur128` (-14 LUFS, crête ≤ -1 dBTP), `blackdetect`, planches toutes les 3 s regardées.
 
 ## Règle n°13 — Témoignages : de vraies personnes qui parlent (demande d'Omar, 01/11/2026)
