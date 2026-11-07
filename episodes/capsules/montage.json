@@ -144,7 +144,7 @@
    "texte": "Sur la route, un homme qui a inventé ta capsule… et qu'on a poussé dehors.",
    "ambiance": "emotion",
    "media_ref": "wc:File:Macro Espresso Process.webm",
-   "extrait": 22,
+   "extrait": 16,
    "extrait_duree": 6,
    "look": "bijou",
    "transition": "coupe"
@@ -372,7 +372,7 @@
    "texte": "Il actionne le levier par petits coups. De l'air entre dans l'eau… et le goût change tout.",
    "ambiance": "emotion",
    "media_ref": "wc:File:Macro Espresso Process.webm",
-   "extrait": 34,
+   "extrait": 23,
    "extrait_duree": 7,
    "look": "bijou",
    "transition": "coupe"
@@ -1039,9 +1039,7 @@
    "format": "rush",
    "texte": "Des années plus tard, il écrira : « De toutes mes erreurs, celle que je regrette le plus, c'est d'avoir mis si longtemps à faire les autres. »",
    "ambiance": "emotion",
-   "media_ref": "wc:File:Macro Espresso Process.webm",
-   "extrait": 46,
-   "extrait_duree": 10,
+   "media_ref": "pv:3595",
    "look": "bijou",
    "couches": [
     {
