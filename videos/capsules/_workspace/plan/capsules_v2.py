@@ -13,7 +13,7 @@ MAC = 'wc:File:Macro Espresso Process.webm'                                  # C
 PAN = 'wc:File:Pantheon, Rome 123028.webm'
 ROM = 'wc:File:Flight over Rome 184729.webm'
 CTX_CROP = [0.06, 0.08, 0.8]   # enlève le logo « Context » et les sous-titres anglais incrustés
-TVB_CROP = [0.03, 0.05, 0.7]   # enlève le logo, l'horloge et l'interprète en langue des signes
+TVB_CROP = [0.12, 0.1, 0.62]   # enlève le logo, l'horloge et l'interprète en langue des signes
 
 def W(ref, t, d=6, crop=None):
     m = {"media_ref": ref, "extrait": t, "extrait_duree": d}
@@ -112,7 +112,7 @@ rush("v032", "Dernière étape. Le début de tout.", R("V04 V2"), E, "champ", co
 rush("v033", "Ton café, c'est la graine d'une cerise. Elle mûrit sur un arbuste, sous les tropiques.", W(CTX, 396, 6, CTX_CROP), E, "champ"),
 rush("v034", "On la cueille souvent à la main.", W(TVB, 48, 5, TVB_CROP), E, "champ"),
 mosa("v035", "Puis on la sèche au soleil, on la trie, on la décortique.", [W(CTX, 48, 4, CTX_CROP), R("V03 V1")], E, look="champ"),
-rush("v036", "Au Brésil, premier producteur du monde, Henrique Sloper cultive du café.", W(CTX, 70, 6, CTX_CROP), E, "champ",
+rush("v036", "Au Brésil, premier producteur du monde, Henrique Sloper cultive du café.", W(CTX, 72, 6, CTX_CROP), E, "champ",
      couches=[src("Images : Context (Thomson Reuters Foundation), CC BY-SA 4.0", 0.6)]),
 {"id": "v037", "format": "schema", "texte": "Ta réponse ? Le café de ta capsule vaut…", "ambiance": RV, "media_ref": R("P13 C5"),
  "etiquette_schema": "Ta réponse ?", "duree_min": 4.2,

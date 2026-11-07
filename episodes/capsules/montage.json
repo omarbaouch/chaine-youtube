@@ -642,9 +642,9 @@
    "extrait": 48,
    "extrait_duree": 5,
    "recadre": [
-    0.03,
-    0.05,
-    0.7
+    0.12,
+    0.1,
+    0.62
    ],
    "look": "champ",
    "transition": "coupe"
@@ -678,7 +678,7 @@
    "texte": "Au Brésil, premier producteur du monde, Henrique Sloper cultive du café.",
    "ambiance": "emotion",
    "media_ref": "wc:File:The bean that could save coffee from climate change.webm",
-   "extrait": 70,
+   "extrait": 72,
    "extrait_duree": 6,
    "recadre": [
     0.06,
@@ -737,9 +737,9 @@
    "extrait": 63,
    "extrait_duree": 5,
    "recadre": [
-    0.03,
-    0.05,
-    0.7
+    0.12,
+    0.1,
+    0.62
    ],
    "look": "champ",
    "couches": [
@@ -772,9 +772,9 @@
    "extrait": 57,
    "extrait_duree": 5,
    "recadre": [
-    0.03,
-    0.05,
-    0.7
+    0.12,
+    0.1,
+    0.62
    ],
    "look": "champ",
    "transition": "coupe"
