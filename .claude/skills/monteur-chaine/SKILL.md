@@ -259,3 +259,23 @@ Un témoignage dure 3 à 12 s, un seul par partie ; on l'annonce (« écoute ce 
   On travaille sur `main` ; le rendu `.github/workflows/rendu-rapide.yml` (6 machines) se lance à chaque push sur `episodes/**`.
 - Omar a demandé de ne plus faire de passe de fact-checking séparée (trop lente) : vérifier soi-même chaque chiffre
   et chaque citation à la source pendant l'écriture, et le noter dans `episodes/<slug>/sources.md`.
+
+## Règle n°16 — Faire découvrir les vidéos longues (diagnostic du 08/11/2026, PRIORITAIRE)
+Constat (stats du 08/11) : 98 % des vues viennent du flux Shorts ; les vidéos longues font 6 à 114 vues ; trafic « Accueil »
+(browse) = 0, « Vidéos suggérées » = 89, et le lien Short → vidéo longue n'a servi que **2 fois** (SHORTS_CONTENT_LINKS).
+La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne) : YouTube ne montre presque pas les vidéos longues.
+1. **Lien « Vidéo associée » sur chaque Short** : c'est le seul lien cliquable dans le flux Shorts (un lien en description ou en
+   commentaire n'est quasi jamais cliqué). L'API ne permet pas de le régler : Omar le met à la main (YouTube Studio, onglet
+   Détails → « Vidéo associée », en « version pour ordinateur » sur le navigateur du téléphone si besoin). À chaque fiche de
+   Short, écrire la vidéo longue à associer dans `videos/<slug>/_workspace/07_videos_associees.md` et la lui rappeler.
+2. **Short « bande-annonce »** : au moins un Short par sortie se termine sur la question non résolue de la vidéo longue
+   (« la réponse est dans la vidéo, lien juste au-dessus »), jamais sur la réponse.
+3. **Publier la vidéo longue AVANT les Shorts** du même sujet (au moins 24 h), pour que chaque Short ait sa vidéo associée
+   dès sa sortie. Pas de Shorts orphelins (cigarettes, iPhone, jean : sans vidéo longue → à associer à la vidéo la plus proche).
+4. **Titre + miniature pensés pour l'accueil, pas pour la recherche** : la vidéo longue doit gagner le clic face aux autres
+   miniatures (règle n°14 : image générée, un objet + une main, une question + un chiffre). Jamais une capture du rendu.
+5. **Intro** : les trois vidéos perdent 20 à 35 points entre 0:09 et 0:14, juste quand on passe de l'accroche à la mise en place
+   (« quatre suspects », devinette, voix du sceptique). Avant 15 s : une image forte et nouvelle toutes les 2 s, pas d'annonce
+   de plan (« on va suivre… », « quatre suspects »), on entre directement dans le premier suspect.
+6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
+   Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
