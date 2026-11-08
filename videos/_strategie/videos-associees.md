@@ -1,4 +1,4 @@
-# Vidéos associées à mettre sur les Shorts (08/11/2026)
+# Vidéos associées des Shorts (08/11/2026) — déjà faites par Omar pour les Shorts existants
 YouTube Studio → le Short → Détails → « Vidéo associée ».
 - Shorts baguette (blé, meunier, boulanger, pâte, 29 centimes, pain cuit…) → « Combien gagne un boulanger sur une baguette ? » https://youtu.be/08ITVyaDDEo
 - Shorts chocolat / cacao (planteur, négociant, TVA, cabosses, « clac », Pâques, goût…) → « Prix du cacao en chute… » https://youtu.be/x0onZIENQZk

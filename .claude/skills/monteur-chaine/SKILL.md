@@ -268,6 +268,7 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    commentaire n'est quasi jamais cliqué). L'API ne permet pas de le régler : Omar le met à la main (YouTube Studio, onglet
    Détails → « Vidéo associée », en « version pour ordinateur » sur le navigateur du téléphone si besoin). À chaque fiche de
    Short, écrire la vidéo longue à associer dans `videos/<slug>/_workspace/07_videos_associees.md` et la lui rappeler.
+   (08/11 : Omar a déjà relié les Shorts existants ; les clics n'apparaissent dans les stats qu'avec 2 à 3 jours de retard.)
 2. **Short « bande-annonce »** : au moins un Short par sortie se termine sur la question non résolue de la vidéo longue
    (« la réponse est dans la vidéo, lien juste au-dessus »), jamais sur la réponse.
 3. **Publier la vidéo longue AVANT les Shorts** du même sujet (au moins 24 h), pour que chaque Short ait sa vidéo associée
