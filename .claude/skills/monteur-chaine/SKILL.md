@@ -283,5 +283,10 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    que 2 vues par vidéo longue (SHORTS_CONTENT_LINKS). → Le premier chantier est la miniature + le titre, avant le montage.
    Viser > 4 % ; sous 2 % après 1 000 impressions : changer la miniature puis le titre (API videos.update / thumbnails.set,
    avec l'accord d'Omar), une seule chose à la fois, 48 h entre deux changements.
+5 ter. **Miniatures v2 (08/11, mises en ligne)** : `scripts/miniatures/miniatures_v2_081126.py` (images tirées du rendu,
+   sans sous-titres : recadrer au-dessus de y = 840). Recette : UN contraste visible en 1 s (cacao −60 % | tablette ?,
+   baril ↓ | plein ↑, pièce de 1 € | « qui le prend ? »), 3-4 mots en Inter Black avec contour noir, un visage si possible,
+   vérifiée à 168 px de large. Anciens taux : cacao 1,3 %, gazole 1,7 %, baguette 3,7 % → comparer à 48-72 h.
+   Action `modifier` de bmo-studio-link : `titre` + `miniature_url` (image poussée dans le-vrai-prix-medias/miniatures/).
 6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
    Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
