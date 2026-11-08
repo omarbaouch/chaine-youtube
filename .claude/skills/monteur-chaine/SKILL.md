@@ -278,5 +278,10 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
 5. **Intro** : les trois vidéos perdent 20 à 35 points entre 0:09 et 0:14, juste quand on passe de l'accroche à la mise en place
    (« quatre suspects », devinette, voix du sceptique). Avant 15 s : une image forte et nouvelle toutes les 2 s, pas d'annonce
    de plan (« on va suivre… », « quatre suspects »), on entre directement dans le premier suspect.
+5 bis. **Mesure du 08/11 (Reporting réparé)** : YouTube MONTRE les vidéos longues mais personne ne clique. Cacao : 3 161 impressions,
+   taux de clic 1,3 % ; gazole : 357 impressions, 1,7 % ; baguette : 461, 3,7 %. Norme visée : 4 à 8 %. Les Shorts n'envoient
+   que 2 vues par vidéo longue (SHORTS_CONTENT_LINKS). → Le premier chantier est la miniature + le titre, avant le montage.
+   Viser > 4 % ; sous 2 % après 1 000 impressions : changer la miniature puis le titre (API videos.update / thumbnails.set,
+   avec l'accord d'Omar), une seule chose à la fois, 48 h entre deux changements.
 6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
    Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
