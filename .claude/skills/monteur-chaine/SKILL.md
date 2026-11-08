@@ -326,3 +326,16 @@ annonces TeamYouTube / Creator Insider. Les sites d'agences (AIR, OutlierKit, vi
 - **Monétisation (annonce du 10/08/2026)** : jusqu'au 31/01/2027, 1 000 abonnés + 4 000 h (365 j) ou 10 M vues Shorts (90 j) ;
   **à partir du 01/02/2027 : 1 000 abonnés + 8 000 h ou 20 M vues Shorts**. Au 08/11 : 13 abonnés, 4,8 h → le seuil de janvier est hors
   d'atteinte ; la voie réaliste est le temps de visionnage des vidéos longues (8 000 h). Les vues Shorts n'y comptent pas.
+
+## Règle n°19 — Outils officiels à exploiter (recherche du 08/11/2026)
+1. **Doublage / audio multilingue** : le doublage automatique YouTube (français → anglais, voix « Expressive Speech ») est ouvert à tous
+   les créateurs qui ont activé les fonctionnalités avancées ; YouTube dit qu'il ne nuit pas à la découverte, et les créateurs avec des
+   pistes multilingues tirent en moyenne plus de 25 % de leur temps de visionnage d'autres langues. Toutes les langues comptent dans les
+   8 000 h. → Omar active « Autoriser le doublage automatique » (Studio > Paramètres > Chaîne > Paramètres avancés). Ensuite seulement :
+   titres/descriptions traduits (fiche `traduire` de bmo-studio-link). Notre voix étant de la synthèse depuis un script, piste maison
+   possible (Edge TTS espagnol / arabe / portugais) téléversée comme piste audio multilingue (Studio seulement, pas d'API).
+   Privilégier les sujets universels (cacao, café, iPhone, jean) pour les autres langues ; pas le gazole français.
+2. **Test & Compare** (Studio ordinateur) : jusqu'à 3 titres, 3 miniatures ou 3 combinaisons ; gagnant = part du temps de visionnage, pas
+   le taux de clic ; 1 à 2 semaines. → Pour chaque vidéo, livrer 3 miniatures + 3 titres dans `videos/<slug>/_workspace/06_test_compare/`.
+3. **Hype** : seulement pour les chaînes du Programme Partenaire entre 500 et 500 000 abonnés, vidéos longues de moins de 7 jours.
+   Palier intermédiaire visé : programme « étendu » (500 abonnés + 3 000 h ou 3 M vues Shorts), seuil inchangé en 2027.
