@@ -307,3 +307,22 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    dans le titre (« en ce moment », un chiffre du jour vérifié). Sinon, sortir le même jour/heure chaque semaine.
 5. **Écran de fin** (Studio seulement, à rappeler à Omar à chaque sortie) : vidéo « la plus adaptée au spectateur » + playlist des enquêtes.
 6. **Voix d'Omar** : proposer à chaque vidéo d'enregistrer au téléphone l'accroche (30 s) dans `episodes/<slug>/voix/`.
+
+## Règle n°18 — Ce que dit la documentation officielle (vérifié le 08/11/2026) — PRIORITAIRE sur les « astuces » de créateurs
+Sources : aide YouTube « Search & Discovery : the Algorithm and Performance FAQs » (support.google.com/youtube/answer/141805),
+annonces TeamYouTube / Creator Insider. Les sites d'agences (AIR, OutlierKit, vidIQ…) ne sont que des sources secondaires.
+- **Accueil** = performance auprès de spectateurs similaires + historique de chaque spectateur. **Recherche** = titre, description et
+  contenu qui collent à la requête, puis l'engagement sur cette recherche → 1re ligne de description = les mots tapés (règle 17).
+- **Vidéos longues : c'est le temps de visionnage ABSOLU qui compte** (le relatif compte surtout pour les vidéos courtes). Une vidéo de
+  10 min regardée 4 min vaut mieux qu'une de 4 min regardée 2 min → viser 8-12 min SI la rétention tient (règle 7 ter), jamais du remplissage.
+- **Le rythme et l'heure de publication n'ont pas d'effet mesuré** (YouTube n'a trouvé aucun lien entre délai entre vidéos et vues).
+  Priorité à la qualité ; la régularité sert seulement les habitudes du public (remplace « même jour, même heure » de la règle 7 ter).
+- **Les anciennes vidéos repartent** quand une nouvelle vidéo renvoie vers elles → série « Le Vrai Prix », liens « enquête précédente »,
+  écran de fin vers une ancienne enquête, mention orale (« dans l'enquête sur le chocolat… »).
+- **Titre/miniature** : changer peut aider, mais « ne pas changer ce qui marche » ; toujours fidèles au contenu (le clickbait fait partir).
+- **Les abonnés ne regardent pas tout** : ne pas compter sur les notifications ; c'est l'Accueil et les suggestions qui font les vues.
+- **Shorts originaux favorisés depuis le 01/10/2026** : nos Shorts sont tirés de nos vidéos (OK) ; varier les formats pour ne pas
+  ressembler à un modèle répété (règles de monétisation « contenu inauthentique » précisées le 16/07/2026).
+- **Monétisation (annonce du 10/08/2026)** : jusqu'au 31/01/2027, 1 000 abonnés + 4 000 h (365 j) ou 10 M vues Shorts (90 j) ;
+  **à partir du 01/02/2027 : 1 000 abonnés + 8 000 h ou 20 M vues Shorts**. Au 08/11 : 13 abonnés, 4,8 h → le seuil de janvier est hors
+  d'atteinte ; la voie réaliste est le temps de visionnage des vidéos longues (8 000 h). Les vues Shorts n'y comptent pas.
