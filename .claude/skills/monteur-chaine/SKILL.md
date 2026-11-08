@@ -290,3 +290,20 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    Action `modifier` de bmo-studio-link : `titre` + `miniature_url` (image poussée dans le-vrai-prix-medias/miniatures/).
 6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
    Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
+
+## Règle n°17 — Leviers de découverte (08/11/2026, mis en place) — à appliquer à CHAQUE sortie
+1. **Shorts qui ouvrent, pas qui ferment** (remplace « devinette posée puis tranchée » de la règle n°14) : au moins 6 Shorts sur 8
+   finissent sur une question liée à la vidéo longue, sans la trancher ; dernier plan : « La réponse est dans la vidéo : touche
+   le lien juste en dessous. » Les 2 autres peuvent trancher une devinette secondaire (jamais la réponse principale).
+   Constat : ~6 000 vues de Shorts → 2 vues de vidéo longue chacune.
+2. **Playlist « Le Vrai Prix — les enquêtes »** (https://www.youtube.com/playlist?list=PLOjdVM6W6N0A), en section n°1 de la
+   page d'accueil de la chaîne : chaque nouvelle vidéo longue y entre en tête (fiche `playlist` avec `en_tete`).
+   La bande-annonce de la chaîne (non-abonnés) = la vidéo longue au meilleur taux de clic × rétention (fiche `chaine`,
+   `bande_annonce`) ; aujourd'hui le cacao.
+3. **Description orientée recherche** : 1re ligne = les mots que les gens tapent (« prix gazole », « prix capsule nespresso »…),
+   puis « ▶ Enquête suivante / précédente : lien » et « ▶ Toutes les enquêtes : lien playlist », puis chapitres et sources.
+   Tags : la limite YouTube de 500 se compte en octets avec les guillemets (le script garde 450).
+4. **Caler la sortie sur l'actu** : si le sujet est dans l'actualité (hausse, record, annonce), sortir dans les 24-48 h et le dire
+   dans le titre (« en ce moment », un chiffre du jour vérifié). Sinon, sortir le même jour/heure chaque semaine.
+5. **Écran de fin** (Studio seulement, à rappeler à Omar à chaque sortie) : vidéo « la plus adaptée au spectateur » + playlist des enquêtes.
+6. **Voix d'Omar** : proposer à chaque vidéo d'enregistrer au téléphone l'accroche (30 s) dans `episodes/<slug>/voix/`.
