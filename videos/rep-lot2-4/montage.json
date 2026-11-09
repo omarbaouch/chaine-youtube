@@ -1,0 +1,91 @@
+{
+ "titre": "rep-lot2-4",
+ "scenes": [
+  {
+   "id": "l07-lunettes-p1",
+   "recherche": [
+    "eyeglasses",
+    "glasses on table",
+    "trying glasses"
+   ],
+   "texte": "Tes lunettes, qui les paie vraiment ?"
+  },
+  {
+   "id": "l07-lunettes-p2",
+   "recherche": [
+    "optician shop",
+    "eyeglasses display",
+    "glasses store"
+   ],
+   "texte": "Une paire avec deux verres simples coûte en moyenne trois cents euros."
+  },
+  {
+   "id": "l07-lunettes-p3",
+   "recherche": [
+    "eye exam",
+    "optometrist",
+    "eye test"
+   ],
+   "texte": "En France, on a dépensé huit milliards trois cents millions d'euros en optique en un an."
+  },
+  {
+   "id": "l07-lunettes-p4",
+   "recherche": [
+    "optician lens",
+    "eyeglass lens",
+    "optician workshop"
+   ],
+   "texte": "Selon Que Choisir, en deux mille treize, l'opticien revendait trois fois son prix d'achat."
+  },
+  {
+   "id": "l07-lunettes-p5",
+   "recherche": [
+    "paying card shop",
+    "credit card payment"
+   ],
+   "texte": "Et la Sécu ? Elle ne paie que quatre pour cent. Le reste : ta mutuelle, et toi."
+  },
+  {
+   "id": "l08-encre-p1",
+   "recherche": [
+    "printer ink cartridge",
+    "inkjet printer",
+    "printer printing"
+   ],
+   "texte": "Ton encre d'imprimante, combien au litre ?"
+  },
+  {
+   "id": "l08-encre-p2",
+   "recherche": [
+    "ink cartridge",
+    "printer cartridge replace"
+   ],
+   "texte": "Une petite cartouche noire courante coûte dix-sept euros quatre-vingt-quinze."
+  },
+  {
+   "id": "l08-encre-p3",
+   "recherche": [
+    "teaspoon",
+    "black ink drop",
+    "ink drops"
+   ],
+   "texte": "Dedans : trois millilitres et demi. Moins qu'une cuillère à café."
+  },
+  {
+   "id": "l08-encre-p4",
+   "recherche": [
+    "perfume bottle",
+    "perfume spray"
+   ],
+   "texte": "Le parfum, c'est environ mille quatre cents euros le litre, selon une étude britannique."
+  },
+  {
+   "id": "l08-encre-p5",
+   "recherche": [
+    "printer printing paper",
+    "inkjet printing"
+   ],
+   "texte": "Ton encre : environ cinq mille deux cent quatre-vingts euros le litre."
+  }
+ ]
+}
