@@ -67,3 +67,7 @@ Objectif : **60 % minimum**. Règles :
 3. Durée 15–25 s. Un chiffre choc toutes les 3–5 s, un plan toutes les ~3 s.
 4. Jamais la réponse avant la fin ; la dernière phrase relance (boucle).
 5. Chaque lundi : relever le % par Short (Studio → Contenu → Short → « ont continué de regarder ») et garder les sujets au-dessus de 60 %.
+6. **(09/11, bilan semaine 1)** Famille gagnante confirmée : la **décomposition du prix d'un achat courant** (« qui prend combien sur ton X »,
+   « tu le paies combien au kilo ») — capsules 1 132 vues · 97 %, cigarettes 952 · +3 abonnés, Ormuz 972. Les Shorts « filière » (négociant,
+   cabosses, meunier, fermentation) plafonnent sous 120 vues : ne plus en faire en Short autonome. La carte d'accroche n'a pas d'effet mesurable
+   (T2) : on la garde par défaut. Chaîne au 09/11 : 13 abonnés, Shorts à 65-97 % regardé sur les meilleurs (objectif 60 % atteint sur 14 Shorts).
