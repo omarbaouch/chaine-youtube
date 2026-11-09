@@ -3,35 +3,99 @@
  "titre": "Spotify : l'artiste touche combien quand tu l'écoutes ? #shorts",
  "accroche": "L'ARTISTE TOUCHE COMBIEN PAR ÉCOUTE ?",
  "plans": [
-  {"texte": "Ta chanson préférée : l'artiste touche combien par écoute ?",
-   "recherche": ["spotify phone", "listening music headphones phone"],
-   "medias": ["pi:5432409", "wc:File:Spotify on smartphone (Unsplash).jpg"]},
-  {"texte": "Ton abonnement Spotify coûte douze euros quatorze par mois.",
-   "recherche": ["spotify app smartphone", "smartphone payment"],
-   "chiffre": "12,14 €", "chiffre_mot": "douze",
-   "medias": ["wc:File:HTC Titan.jpeg", "wc:File:Mobile payment 03.JPG"]},
-  {"texte": "Mais Spotify ne paie pas à l'écoute : il partage une cagnotte.",
-   "recherche": ["coins jar", "pile of coins"],
-   "medias": ["pv:98141", "pi:4856513"]},
-  {"texte": "Une écoute rapporte environ zéro virgule quatre centime.",
-   "recherche": ["euro cent coins", "one cent coin"],
-   "chiffre": "0,4 centime", "chiffre_mot": "zéro",
-   "medias": ["pi:400275", "pv:9091"]},
-  {"texte": "Et en maison de disques, l'artiste n'en garde souvent qu'autour de dix pour cent.",
-   "recherche": ["recording studio singer", "music producer studio"],
-   "chiffre": "≈ 10 %", "chiffre_mot": "dix",
-   "medias": ["pv:122748", "pi:2378774"]},
-  {"texte": "Pour gagner un seul SMIC, il lui faut trois millions sept cent mille écoutes. Par mois.",
-   "recherche": ["concert crowd", "stadium concert lights"],
-   "chiffre": "3 700 000", "chiffre_mot": "trois",
-   "medias": ["pv:29322", "pi:1853662"]},
-  {"texte": "Alors ton artiste préféré, tu l'as écouté combien de fois ce mois-ci ?",
-   "recherche": ["phone filming concert", "rapper stage"],
-   "medias": ["pi:2219036", "pi:10189575"]}
+  {
+   "texte": "Ta chanson préférée : l'artiste touche combien par écoute ?",
+   "recherche": [
+    "spotify phone",
+    "listening music headphones phone"
+   ],
+   "medias": [
+    "pi:5432409",
+    "pv:38084"
+   ]
+  },
+  {
+   "texte": "Ton abonnement Spotify coûte douze euros quatorze par mois.",
+   "recherche": [
+    "spotify app smartphone",
+    "smartphone payment"
+   ],
+   "chiffre": "12,14 €",
+   "chiffre_mot": "douze",
+   "medias": [
+    "wc:File:Spotify on smartphone (Unsplash).jpg",
+    "pi:410311"
+   ]
+  },
+  {
+   "texte": "Mais Spotify ne paie pas à l'écoute : il partage une cagnotte.",
+   "recherche": [
+    "coins jar",
+    "pile of coins"
+   ],
+   "medias": [
+    "pv:98141",
+    "pi:4856513"
+   ]
+  },
+  {
+   "texte": "Une écoute rapporte environ zéro virgule quatre centime.",
+   "recherche": [
+    "euro cent coins",
+    "one cent coin"
+   ],
+   "chiffre": "0,4 centime",
+   "chiffre_mot": "zéro",
+   "medias": [
+    "pi:400275",
+    "pv:9091"
+   ]
+  },
+  {
+   "texte": "Et en maison de disques, l'artiste n'en garde souvent qu'autour de dix pour cent.",
+   "recherche": [
+    "recording studio singer",
+    "music producer studio"
+   ],
+   "chiffre": "≈ 10 %",
+   "chiffre_mot": "dix",
+   "medias": [
+    "pv:122748",
+    "pi:2378774"
+   ]
+  },
+  {
+   "texte": "Pour gagner un seul SMIC, il lui faut trois millions sept cent mille écoutes. Par mois.",
+   "recherche": [
+    "concert crowd",
+    "stadium concert lights"
+   ],
+   "chiffre": "3 700 000",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pv:29322",
+    "pi:1853662"
+   ]
+  },
+  {
+   "texte": "Alors ton artiste préféré, tu l'as écouté combien de fois ce mois-ci ?",
+   "recherche": [
+    "phone filming concert",
+    "rapper stage"
+   ],
+   "medias": [
+    "pi:2219036",
+    "pi:10189575"
+   ]
+  }
  ],
  "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu paies.",
- "recherche_fin": ["woman earphones music"],
- "medias_fin": ["pv:161062"],
+ "recherche_fin": [
+  "woman earphones music"
+ ],
+ "medias_fin": [
+  "pv:161062"
+ ],
  "description": "Spotify : combien touche vraiment un artiste quand tu écoutes sa chanson ? Calcul : environ 0,4 centime par écoute versé aux ayants droit (fourchette 0,3 à 0,5 centime), dont un artiste signé en maison de disques garde souvent autour de 10 %. Pour un SMIC net (1 477,93 €/mois depuis juin 2026), il faut donc environ 3,7 millions d'écoutes par mois. Ordre de grandeur : Spotify ne paie pas de tarif fixe par écoute et chaque contrat est différent.\n\nSources :\n- Rémunération par écoute (janv. 2026) : https://lessentieldeleco.fr/5609-combien-rapporte-une-chanson-sur-spotify-en-france/\n- Spotify, fonctionnement des royalties : https://support.spotify.com/tg-fr/artists/article/understanding-spotify-royalties/\n- Prix Spotify Premium Personnel en France (12,14 €) : https://www.clubic.com/actualite-567687-spotify-augmente-a-nouveau-ses-prix.html\n- Taux de royalties des artistes (~10 %) : https://www.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE29175.pdf et https://www.culture.gouv.fr/switchToLanguage/318582/fre-FR\n- SMIC net au 1er juin 2026 : https://www.info.gouv.fr/public/index.php/actualite/le-smic-revalorise-le-1er-juin-2026\n\nVoix off générée par synthèse vocale.",
  "commentaire": "Ton artiste le plus écouté cette année, c'est qui ? 👇",
  "sources": [
@@ -42,5 +106,13 @@
   "info.gouv.fr : SMIC net 1 477,93 € au 1er juin 2026",
   "Calcul : 1 477,93 € / (0,004 € × 10 %) ≈ 3,69 millions d'écoutes"
  ],
- "tags": ["spotify", "streaming", "artiste", "combien gagne un artiste", "rémunération spotify", "musique", "le vrai prix"]
+ "tags": [
+  "spotify",
+  "streaming",
+  "artiste",
+  "combien gagne un artiste",
+  "rémunération spotify",
+  "musique",
+  "le vrai prix"
+ ]
 }
