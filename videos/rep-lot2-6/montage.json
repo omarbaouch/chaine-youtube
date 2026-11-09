@@ -1,0 +1,91 @@
+{
+ "titre": "rep-lot2-6",
+ "scenes": [
+  {
+   "id": "l11-eau-p1",
+   "recherche": [
+    "plastic water bottle",
+    "water bottles pack",
+    "drinking bottled water"
+   ],
+   "texte": "Ta bouteille d'eau, combien de fois plus chère ?"
+  },
+  {
+   "id": "l11-eau-p2",
+   "recherche": [
+    "water tap running",
+    "kitchen faucet water",
+    "filling glass tap"
+   ],
+   "texte": "Au robinet, un mètre cube coûte en moyenne quatre euros quatre-vingt-neuf, assainissement compris."
+  },
+  {
+   "id": "l11-eau-p3",
+   "recherche": [
+    "glass of water",
+    "water glass pouring"
+   ],
+   "texte": "Un mètre cube, c'est mille litres. Ton litre du robinet coûte donc un demi-centime."
+  },
+  {
+   "id": "l11-eau-p4",
+   "recherche": [
+    "bottled water supermarket",
+    "water bottles shelf"
+   ],
+   "texte": "En bouteille, c'est environ trente centimes le litre en moyenne."
+  },
+  {
+   "id": "l11-eau-p5",
+   "recherche": [
+    "water bottle pouring",
+    "mineral water bottle"
+   ],
+   "texte": "Soit environ soixante fois plus cher. Et jusqu'à trois cents fois pour les marques chères."
+  },
+  {
+   "id": "l12-cinema-p1",
+   "recherche": [
+    "cinema audience",
+    "movie theater seats",
+    "cinema screen"
+   ],
+   "texte": "Ta place de ciné, ton argent va où ?"
+  },
+  {
+   "id": "l12-cinema-p2",
+   "recherche": [
+    "cinema ticket",
+    "movie ticket",
+    "cinema box office"
+   ],
+   "texte": "En moyenne, une entrée rapporte sept euros quarante-deux, selon le C N C."
+  },
+  {
+   "id": "l12-cinema-p3",
+   "recherche": [
+    "cinema cash desk",
+    "paying ticket"
+   ],
+   "texte": "La TVA prend environ trente-neuf centimes."
+  },
+  {
+   "id": "l12-cinema-p4",
+   "recherche": [
+    "film camera",
+    "movie set filming",
+    "film crew"
+   ],
+   "texte": "Une taxe qui finance le cinéma français prend soixante-quinze centimes."
+  },
+  {
+   "id": "l12-cinema-p5",
+   "recherche": [
+    "cinema projector",
+    "film projector",
+    "projection room"
+   ],
+   "texte": "Le reste est coupé en deux, à peu près : une moitié pour la salle, l'autre pour le film."
+  }
+ ]
+}
