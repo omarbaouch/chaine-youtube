@@ -1,0 +1,92 @@
+{
+ "titre": "rep-lot2-1",
+ "scenes": [
+  {
+   "id": "l01-lait-p1",
+   "recherche": [
+    "milk carton",
+    "milk supermarket shelf",
+    "pouring milk glass"
+   ],
+   "texte": "Ta brique de lait, qui garde l'argent ?"
+  },
+  {
+   "id": "l01-lait-p2",
+   "recherche": [
+    "supermarket dairy aisle",
+    "milk bottles shelf"
+   ],
+   "texte": "En deux mille vingt-trois, elle coûte en moyenne un euro sept en grande surface."
+  },
+  {
+   "id": "l01-lait-p3",
+   "recherche": [
+    "supermarket checkout",
+    "cashier scanning"
+   ],
+   "texte": "La TVA prend six centimes. Le magasin garde trente-six centimes de marge brute."
+  },
+  {
+   "id": "l01-lait-p4",
+   "recherche": [
+    "milk factory bottling",
+    "dairy factory",
+    "milk production line"
+   ],
+   "texte": "L'industriel qui la remplit garde trente-huit centimes."
+  },
+  {
+   "id": "l01-lait-p5",
+   "recherche": [
+    "dairy cow farm",
+    "cow milking machine",
+    "cows barn"
+   ],
+   "texte": "Et le lait lui-même ? Vingt-huit centimes seulement. À peine un quart du prix."
+  },
+  {
+   "id": "l02-jambon-p1",
+   "recherche": [
+    "sliced ham",
+    "ham slices plate",
+    "ham package"
+   ],
+   "texte": "Ton jambon, qui garde vraiment l'argent ?"
+  },
+  {
+   "id": "l02-jambon-p2",
+   "recherche": [
+    "supermarket meat aisle",
+    "deli counter ham"
+   ],
+   "texte": "En deux mille vingt-trois, le kilo coûte en moyenne quatorze euros cinquante-huit."
+  },
+  {
+   "id": "l02-jambon-p3",
+   "recherche": [
+    "supermarket shopping cart",
+    "slaughterhouse pork carcass",
+    "butcher pork"
+   ],
+   "texte": "Le magasin garde deux euros vingt-cinq. L'abattoir, un euro sept."
+  },
+  {
+   "id": "l02-jambon-p4",
+   "recherche": [
+    "pig farm",
+    "pigs barn",
+    "piglets farm"
+   ],
+   "texte": "La TVA, soixante-seize centimes. Et le cochon lui-même : cinq euros quarante-cinq."
+  },
+  {
+   "id": "l02-jambon-p5",
+   "recherche": [
+    "ham slicing machine",
+    "meat slicer",
+    "food factory meat"
+   ],
+   "texte": "Et l'usine qui le cuit et le tranche ? Cinq euros cinq. Presque autant que le cochon."
+  }
+ ]
+}
