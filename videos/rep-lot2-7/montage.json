@@ -1,0 +1,95 @@
+{
+ "titre": "rep-lot2-7",
+ "scenes": [
+  {
+   "id": "l13-timbre-p1",
+   "recherche": [
+    "postage stamp",
+    "stamps envelope",
+    "letter stamp"
+   ],
+   "texte": "Ton timbre a pris combien en quinze ans ?"
+  },
+  {
+   "id": "l13-timbre-p2",
+   "recherche": [
+    "mailbox letter",
+    "posting letter mailbox",
+    "envelope"
+   ],
+   "texte": "Au premier janvier deux mille vingt-six, la lettre verte passe à un euro cinquante-deux."
+  },
+  {
+   "id": "l13-timbre-p3",
+   "recherche": [
+    "post office counter",
+    "postman delivering",
+    "registered mail"
+   ],
+   "texte": "Une lettre recommandée : six euros onze."
+  },
+  {
+   "id": "l13-timbre-p4",
+   "recherche": [
+    "old letters",
+    "writing letter",
+    "envelopes stack"
+   ],
+   "texte": "En deux mille onze, à sa création, la lettre verte coûtait cinquante-sept centimes."
+  },
+  {
+   "id": "l13-timbre-p5",
+   "recherche": [
+    "postman bicycle",
+    "mail delivery",
+    "letters"
+   ],
+   "texte": "Presque trois fois plus cher en quinze ans."
+  },
+  {
+   "id": "l14-soda-p1",
+   "recherche": [
+    "soda can",
+    "cola can opening",
+    "soft drink can"
+   ],
+   "texte": "Ta canette de soda cache quelle taxe ?"
+  },
+  {
+   "id": "l14-soda-p2",
+   "recherche": [
+    "sugar cubes",
+    "sugar pouring",
+    "sugar spoon"
+   ],
+   "texte": "En France, une taxe frappe le sucre ajouté des boissons. Elle grimpe avec la dose."
+  },
+  {
+   "id": "l14-soda-p3",
+   "recherche": [
+    "soda bottles factory",
+    "beverage factory bottling",
+    "drinks production line"
+   ],
+   "texte": "Au-delà de huit kilos de sucre par hectolitre, c'est trente-cinq euros soixante-trois l'hectolitre."
+  },
+  {
+   "id": "l14-soda-p4",
+   "recherche": [
+    "cola glass ice",
+    "pouring cola",
+    "soda glass"
+   ],
+   "texte": "Ta canette classique fait trente-trois centilitres."
+  },
+  {
+   "id": "l14-soda-p5",
+   "recherche": [
+    "drinking soda",
+    "soda cans",
+    "cola can"
+   ],
+   "texte": "Ça fait environ douze centimes de taxe, rien que pour le sucre."
+  }
+ ]
+}
