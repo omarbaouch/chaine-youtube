@@ -165,6 +165,9 @@ sortie le 04/11 ; l'électricité / le chauffage passe au 17/11.
 - Le script date du 07/11 : le remettre aux règles n°16 à 18 avant le montage. Image 0 = l'image de la miniature, 1re phrase =
   la question de la miniature, pas d'annonce de plan (« dans cette vidéo, je te montre… ») ni de carte titre avant 30 s,
   une image nouvelle toutes les 2 s jusqu'à 15 s. Durée 8 à 10 min sans remplissage.
+- Ouverture (règle n°16, 5 quinquies, constats du 09/11) : de 0 à 30 s, uniquement des images réelles plein écran qui montrent
+  ce que dit la voix (la vraie capture UFC-Que Choisir du casque, pas un rush générique) ; aucun panneau « SCHÉMA » sombre,
+  aucun chiffre-réponse à l'écran (le « −27 % » reste caché jusqu'à sa révélation), aucune pièce dorée ni image étrangère.
 - Revérifier chaque chiffre à la source le jour même (UFC-Que Choisir, Commission européenne, DGCCRF). Ton factuel, pas militant.
 - Miniature et titre faits AVANT le montage, 3 variantes, vérifiées à 168 px de large (règle n°16, 5 ter).
 - Shorts : seulement après la sortie de la vidéo longue, chacun finit sur une question que la vidéo tranche (règle n°17).

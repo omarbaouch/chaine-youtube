@@ -72,3 +72,12 @@ Objectif : **60 % minimum**. Règles :
    « tu le paies combien au kilo ») — capsules 1 132 vues · 97 %, cigarettes 952 · +3 abonnés, Ormuz 972. Les Shorts « filière » (négociant,
    cabosses, meunier, fermentation) plafonnent sous 120 vues : ne plus en faire en Short autonome. La carte d'accroche n'a pas d'effet mesurable
    (T2) : on la garde par défaut. Chaîne au 09/11 : 13 abonnés, Shorts à 65-97 % regardé sur les meilleurs (objectif 60 % atteint sur 14 Shorts).
+7. **(09/11, mesure API)** Le vrai chiffre d'accroche est maintenant relevé automatiquement : colonne **« Restés »** de
+   `bmo-studio-link/stats/LEVRAIPRIX/dernier.md` (= vues engagées / vues, l'équivalent de « ont continué de regarder »). Plus besoin
+   de capture d'écran d'Omar. **Chaîne : 30,7 % sur 28 Shorts ; meilleur 42,6 %, pire 13,4 %. Aucun Short n'atteint 45 %**, donc
+   aucun ne peut décoller (repère 70-90 %). Le « % regardé » (65-97 %) ne concerne que ceux qui sont restés : il ne dit rien de
+   l'accroche et n'est pas lié aux vues (corrélation 0,03). Comme TOUS les sujets plafonnent au même niveau, le problème est le
+   format des 2 premières secondes (rush de banque d'images + carte jaune + voix de synthèse), pas le sujet.
+   **Objectif unique des Shorts : « Restés » ≥ 60 %.** Tant qu'il n'est pas atteint, on ne produit pas plus de Shorts, on teste
+   l'ouverture (test T7 du journal). Images hors sujet relevées dans les meilleurs Shorts : volcan en éruption (cigarettes, 0:02),
+   thé versé dans une tasse pour « une capsule Nespresso » (capsules, 0:03) : la règle n°1 s'applique aussi aux Shorts.

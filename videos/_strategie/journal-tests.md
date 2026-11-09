@@ -57,3 +57,19 @@ Relevé du 09/11 9 h 19 Paris (stats relancées) : 13 abonnés (+0), 9 818 vues 
   Code : `src/anim/Electricite.tsx` (composition AnimElectricite), voix : workflow « Voix des Shorts animés » (`videos/_anim/<slug>/voix.txt`).
   Rendu local : `npx remotion render src/index.ts AnimElectricite out/x.mp4 --props=videos/_anim/<slug>/props.json` puis loudnorm -14 LUFS.
 - À juger à 48-72 h : vues, % regardé, abonnés gagnés. Si B ≥ A, décliner le format animé sur 3 autres sujets.
+
+## Mesure du 09/11 au soir — « Restés » (vues engagées / vues), enfin disponible par l'API
+Chaîne : 30,7 % (2 767 vues engagées sur 9 021). Haut : gazole/essence 42,6 %, cigarettes 42,3 % (+3 abonnés), iPhone 38,6 %.
+Bas : boulanger 13,4 %, négociant 17,1 %, pain cuit 18,1 %, Pâques 18,1 %. Capsules au kilo (record de vues) : 32,8 %.
+Lecture : 7 spectateurs sur 10 balaient dans les premières secondes, quel que soit le sujet. Les conclusions T2 à T5 comparaient des
+vues, donc surtout du bruit : désormais on juge un test sur « Restés » à 48 h (au moins 100 vues par Short).
+
+## Test T7 — les 2 premières secondes (lancé le 09/11, priorité absolue, remplace T5 et T6 comme test principal)
+Hypothèse : c'est le format d'ouverture (rush de banque d'images + voix de synthèse) qui fait balayer, pas le sujet.
+Même sujet, même texte, même durée ; une seule chose change. 3 Shorts par variante, sujets de la famille gagnante.
+- A (témoin) : format actuel.
+- B (voix) : mêmes images, **voix d'Omar** enregistrée au téléphone (tout le Short, 20 s).
+- C (image) : voix actuelle, mais les 2 premières secondes = **l'objet réel filmé par Omar** au téléphone (dans sa main, au
+  magasin ou chez lui, prix visible), sans carte jaune par-dessus.
+Mesure : « Restés » à 48 h. Décision : la variante qui gagne de 10 points ou plus devient le format ; si B et C gagnent, on cumule.
+Ce qu'Omar doit fournir : 3 enregistrements de voix (20 s chacun) et 3 plans de 3 à 5 s. Tant qu'ils ne sont pas là, le test attend.

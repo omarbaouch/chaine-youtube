@@ -300,6 +300,21 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    - **On ne retouche plus titres ni miniatures des 4 vidéos avant le 15/11** : les v2 datent du 08/11 au soir, les taux de
      clic affichés mélangent encore l'ancien et le nouveau. Ensuite une seule chose à la fois.
    - **Une seule vidéo longue par semaine** (4 en 7 jours du 01 au 07/11 : aucune n'a eu le temps d'être mesurée).
+5 quinquies. **Ce qu'on VOIT dans les 30 premières secondes (rendus regardés image par image le 09/11)** — à corriger dès la prochaine vidéo :
+   - **Baguette : la réponse est à l'écran dès 0:02.** Le titre demande « qui touche quoi ? » et le premier plan affiche déjà
+     blé 0,06 €, meunier 0,07 €, après le moulin 0,83 €, TVA 0,05 € ; la liste complète revient à 0:14. YouTube ne compte que
+     32 vues « engagées » sur 114. → Aucun chiffre-réponse à l'écran avant sa révélation, ni en étiquette, ni en légende.
+   - **Les 4 vidéos montrent un panneau « SCHÉMA » sombre à petit texte avant 0:20** (devinette A/B/C, liste) pendant 4 à 6 s,
+     illisible sur téléphone, pile là où la courbe tombe (0:12-0:14). → Avant 0:30 : uniquement des images réelles plein
+     écran ; une devinette = 3 gros chiffres sur l'objet, jamais un panneau.
+   - **Images qui contredisent la voix** : gazole = panneau américain « UNLEADED 2.36 », enseigne en chinois, station asiatique,
+     taxi jaune africain pour parler du plein en France ; « ta pièce d'un euro » = pluie de pièces dorées qui ne sont pas des
+     euros (le même rush est réutilisé dans baguette ET capsules). → Dans les 30 premières secondes, chaque plan est vérifié à
+     l'œil : objet français reconnaissable, sinon on le remplace.
+   - **Carte titre avant 0:30** : baguette 0:06, capsules 0:24, cacao 0:30. Capsules a en plus des bandes noires (rushes non
+     recadrés en 16:9). → Pas de carte titre, pas de bandes noires.
+   - Le cacao (meilleure vidéo : 82 % de vues engagées, rétention relative 0,63) ouvre sur de vraies images plein écran qui
+     montrent exactement ce que dit la voix (fèves, rayon, tablette). C'est le modèle.
 6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
    Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
 
