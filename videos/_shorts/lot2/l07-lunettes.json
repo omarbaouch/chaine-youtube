@@ -1,0 +1,96 @@
+{
+ "id": "l07-lunettes",
+ "titre": "Tes lunettes à 300 € : qui paie vraiment ? #shorts",
+ "accroche": "TES LUNETTES À 300 € : QUI PAIE VRAIMENT ?",
+ "plans": [
+  {
+   "texte": "Tes lunettes, qui les paie vraiment ?",
+   "recherche": [
+    "eyeglasses",
+    "glasses on table",
+    "trying glasses"
+   ],
+   "medias": [
+    "pv:303927",
+    "pi:385533"
+   ]
+  },
+  {
+   "texte": "Une paire avec deux verres simples coûte en moyenne trois cents euros.",
+   "recherche": [
+    "optician shop",
+    "eyeglasses display",
+    "glasses store"
+   ],
+   "chiffre": "≈ 300 €",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pi:5028075",
+    "pi:5108854"
+   ]
+  },
+  {
+   "texte": "En un an, la France dépense huit milliards trois cents millions d'euros en optique.",
+   "recherche": [
+    "eye exam",
+    "optometrist",
+    "eye test"
+   ],
+   "chiffre": "8,3 Md€",
+   "chiffre_mot": "huit",
+   "medias": [
+    "pi:5028090",
+    "pi:5028074"
+   ]
+  },
+  {
+   "texte": "Selon Que Choisir, en deux mille treize, l'opticien revendait ses lunettes plus de trois fois leur prix d'achat.",
+   "recherche": [
+    "optician lens",
+    "eyeglass lens",
+    "optician workshop"
+   ],
+   "chiffre": "× 3,3",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pi:9864287",
+    "pi:509385"
+   ]
+  },
+  {
+   "texte": "Et la Sécu ? Elle ne paie que quatre pour cent. Le reste : ta mutuelle, et toi.",
+   "recherche": [
+    "paying card shop",
+    "credit card payment"
+   ],
+   "chiffre": "4 %",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "pi:256314",
+    "pi:7001455"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "eyeglasses",
+  "glasses"
+ ],
+ "sources": [
+  "DREES, comptes de la santé 2025, fiche 16 L'optique médicale : https://drees.solidarites-sante.gouv.fr/sites/default/files/2025-12/CNS%20-%20Fiche%2016%20-%20L%27optique%20m%C3%A9dicale.pdf",
+  "UFC-Que Choisir, 23/04/2013 : https://www.quechoisir.org/action-ufc-que-choisir-surcouts-de-l-optique-les-marges-exorbitantes-des-opticiens-n11637/",
+  "Octika, 15/05/2025 : https://www.octika.com/blog/les-chiffres-de-l-optique-avril-2025-n201"
+ ],
+ "commentaire": "Tu as payé combien tes dernières lunettes ? 👇",
+ "tags": [
+  "prix lunettes",
+  "lunettes",
+  "opticien",
+  "mutuelle",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "pi:4892557"
+ ]
+}

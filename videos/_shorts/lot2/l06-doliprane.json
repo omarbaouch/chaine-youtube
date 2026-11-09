@@ -1,0 +1,92 @@
+{
+ "id": "l06-doliprane",
+ "titre": "Ta boîte de Doliprane à 2,18 € : qui touche quoi ? #shorts",
+ "accroche": "DOLIPRANE À 2,18 € : QUI TOUCHE QUOI ?",
+ "plans": [
+  {
+   "texte": "Ta boîte de Doliprane, qui touche l'argent ?",
+   "recherche": [
+    "paracetamol tablets",
+    "medicine box pharmacy",
+    "pills blister"
+   ],
+   "medias": [
+    "wc:File:Medication Paracetamol.JPG",
+    "wc:File:Tylenol paracetamol sustained release tablets, Chinese version (20221212120513).jpg"
+   ]
+  },
+  {
+   "texte": "La boîte de huit comprimés de mille milligrammes coûte deux euros dix-huit.",
+   "recherche": [
+    "pharmacy shelf",
+    "pharmacy medicine"
+   ],
+   "chiffre": "2,18 €",
+   "chiffre_mot": "deux",
+   "medias": [
+    "pi:8264057",
+    "pi:218692"
+   ]
+  },
+  {
+   "texte": "Le médicament lui-même compte pour un euro seize, marges du grossiste et de la pharmacie comprises.",
+   "recherche": [
+    "pills blister pack",
+    "tablets medicine"
+   ],
+   "chiffre": "1,16 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "pi:1853400",
+    "wc:File:Lutera (Birth Control Pills).jpg"
+   ]
+  },
+  {
+   "texte": "Le reste ? Un euro deux d'honoraire pour le pharmacien, à chaque boîte vendue.",
+   "recherche": [
+    "pharmacist",
+    "pharmacy counter",
+    "pharmacist customer"
+   ],
+   "chiffre": "1,02 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "pi:10217203",
+    "wc:File:Phikwe's only Private Pharmacist.jpg"
+   ]
+  },
+  {
+   "texte": "Presque la moitié du prix paie l'acte du pharmacien, pas le comprimé.",
+   "recherche": [
+    "pharmacy cross sign",
+    "pharmacy"
+   ],
+   "chiffre": "47 %",
+   "chiffre_mot": "moitié",
+   "medias": [
+    "pi:3215049",
+    "pi:254578"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "pharmacy",
+  "medicine box"
+ ],
+ "sources": [
+  "Base de données publique des médicaments (fiche mise à jour le 29/09/2026) : https://base-donnees-publique.medicaments.gouv.fr/medicament/60234100/extrait"
+ ],
+ "commentaire": "Tu savais que le pharmacien touche un honoraire par boîte ? 👇",
+ "tags": [
+  "prix doliprane",
+  "doliprane",
+  "paracétamol",
+  "pharmacie",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "wc:File:Extra Strength Tylenol and Tylenol PM.jpg"
+ ]
+}

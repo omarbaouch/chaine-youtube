@@ -1,0 +1,94 @@
+{
+ "id": "l02-jambon",
+ "titre": "Ton jambon à 14,58 € le kilo : qui touche quoi ? #shorts",
+ "accroche": "JAMBON À 14,58 € LE KILO : QUI TOUCHE QUOI ?",
+ "plans": [
+  {
+   "texte": "Ton jambon, qui garde vraiment l'argent ?",
+   "recherche": [
+    "sliced ham",
+    "ham slices plate",
+    "ham package"
+   ],
+   "medias": [
+    "pi:7497",
+    "pi:7158559"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-trois, le kilo coûte en moyenne quatorze euros cinquante-huit.",
+   "recherche": [
+    "supermarket meat aisle",
+    "deli counter ham"
+   ],
+   "chiffre": "14,58 €",
+   "chiffre_mot": "quatorze",
+   "medias": [
+    "wc:File:Interior of Supermarket in Japan 02.jpg",
+    "wc:File:FreshMeatSupermarket.jpg"
+   ]
+  },
+  {
+   "texte": "Le magasin garde deux euros vingt-cinq de marge brute. L'abattoir, un euro sept.",
+   "recherche": [
+    "supermarket shopping cart",
+    "slaughterhouse pork carcass",
+    "butcher pork"
+   ],
+   "chiffre": "2,25 €",
+   "chiffre_mot": "deux",
+   "medias": [
+    "pi:1165437",
+    "pv:14241"
+   ]
+  },
+  {
+   "texte": "La T V A, soixante-seize centimes. Et le cochon lui-même : cinq euros quarante-cinq.",
+   "recherche": [
+    "pig farm",
+    "pigs barn",
+    "piglets farm"
+   ],
+   "chiffre": "5,45 €",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "pi:4028140",
+    "wc:File:Pig farm Vampula 6.jpg"
+   ]
+  },
+  {
+   "texte": "Et l'usine qui le cuit et le tranche ? Cinq euros cinq. Presque autant que le cochon.",
+   "recherche": [
+    "ham slicing machine",
+    "meat slicer",
+    "food factory meat"
+   ],
+   "chiffre": "5,05 €",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "wc:File:Meat slicer.jpg",
+    "wc:File:Affettatrice elettrica.jpg"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "sliced ham",
+  "ham sandwich"
+ ],
+ "sources": [
+  "OFPM (FranceAgriMer), rapport 2024, section 1 viande porcine et charcuterie, graphique 31 : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/06_2024_section_1_viande_porcine_et_charcuteriev7_0.pdf"
+ ],
+ "commentaire": "Tu aurais dit combien pour le cochon ? 👇",
+ "tags": [
+  "prix du jambon",
+  "jambon",
+  "charcuterie",
+  "marge",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "pi:1331447"
+ ]
+}

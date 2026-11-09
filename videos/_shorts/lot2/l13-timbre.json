@@ -1,0 +1,97 @@
+{
+ "id": "l13-timbre",
+ "titre": "Ta lettre à 1,52 € : le timbre a pris combien ? #shorts",
+ "accroche": "TIMBRE À 1,52 € : IL A PRIS COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Ton timbre a pris combien depuis deux mille onze ?",
+   "recherche": [
+    "postage stamp",
+    "stamps envelope",
+    "letter stamp"
+   ],
+   "medias": [
+    "pi:6773394",
+    "pi:484991"
+   ]
+  },
+  {
+   "texte": "Depuis le premier janvier deux mille vingt-six, la lettre verte coûte un euro cinquante-deux.",
+   "recherche": [
+    "mailbox letter",
+    "posting letter mailbox",
+    "envelope"
+   ],
+   "chiffre": "1,52 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "pi:1603108",
+    "pi:2349698"
+   ]
+  },
+  {
+   "texte": "Et au premier janvier deux mille vingt-sept, elle passera à un euro soixante-sept.",
+   "recherche": [
+    "post office counter",
+    "postman delivering",
+    "registered mail"
+   ],
+   "chiffre": "1,67 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "pi:2507752",
+    "wc:File:Service counter at US Post Office in Provo, Utah.JPG"
+   ]
+  },
+  {
+   "texte": "En deux mille onze, à sa création, la lettre verte coûtait cinquante-sept centimes.",
+   "recherche": [
+    "old letters",
+    "writing letter",
+    "envelopes stack"
+   ],
+   "chiffre": "0,57 €",
+   "chiffre_mot": "cinquante",
+   "medias": [
+    "pv:8851",
+    "pi:1362879"
+   ]
+  },
+  {
+   "texte": "Presque trois fois plus cher qu'en deux mille onze.",
+   "recherche": [
+    "postman bicycle",
+    "mail delivery",
+    "letters"
+   ],
+   "chiffre": "× 2,9",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pi:2127773",
+    "wc:File:Postman on bicycle, 1992.jpg"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "mailbox",
+  "envelope stamp"
+ ],
+ "sources": [
+  "La Poste, tarifs courrier et colis 2026 (communiqué du 28/07/2025) : https://www.lapostegroupe.com/assets/media/le-groupe-laposte/aIeE8FGsbswqTWUN_CPLaPoste-Tarifscourriercolis2026_.pdf",
+  "Historique des tarifs : https://en.wikipedia.org/wiki/Evolution_of_stamp_prices_in_France",
+  "Service-public.fr, 28/07/2026 (tarifs au 1er janvier 2027 : lettre verte 1,67 €) : https://www.service-public.gouv.fr/particuliers/actualites/A16283"
+ ],
+ "commentaire": "Tu envoies encore des lettres ? 👇",
+ "tags": [
+  "prix du timbre",
+  "timbre",
+  "la poste",
+  "lettre verte",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "pi:2607174"
+ ]
+}

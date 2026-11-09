@@ -1,0 +1,93 @@
+{
+ "id": "l14-soda",
+ "titre": "Ta canette de soda : combien de taxe sucre ? #shorts",
+ "accroche": "TA CANETTE DE SODA : COMBIEN DE TAXE ?",
+ "plans": [
+  {
+   "texte": "Ta canette de soda cache quelle taxe ?",
+   "recherche": [
+    "soda can",
+    "cola can opening",
+    "soft drink can"
+   ],
+   "medias": [
+    "pi:6074749",
+    "pi:3984776"
+   ]
+  },
+  {
+   "texte": "En France, une taxe frappe le sucre ajouté des boissons. Elle grimpe avec la dose.",
+   "recherche": [
+    "sugar cubes",
+    "sugar pouring",
+    "sugar spoon"
+   ],
+   "medias": [
+    "pi:5040276",
+    "pi:2510536"
+   ]
+  },
+  {
+   "texte": "Au-delà de huit kilos de sucre par hectolitre, c'est trente-cinq euros soixante-trois l'hectolitre.",
+   "recherche": [
+    "soda bottles factory",
+    "beverage factory bottling",
+    "drinks production line"
+   ],
+   "chiffre": "35,63 €/hl",
+   "chiffre_mot": "trente",
+   "medias": [
+    "wc:File:Brooklyn Seltzer Museum 10-18-26 - 5.jpg",
+    "wc:File:Brooklyn Seltzer Museum 10-18-26 - 12.jpg"
+   ]
+  },
+  {
+   "texte": "Ta canette de cola classique fait trente-trois centilitres. Et elle dépasse ce seuil.",
+   "recherche": [
+    "cola glass ice",
+    "pouring cola",
+    "soda glass"
+   ],
+   "chiffre": "33 cl",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:79908",
+    "pi:2741251"
+   ]
+  },
+  {
+   "texte": "Ça fait environ douze centimes de taxe, rien que pour le sucre.",
+   "recherche": [
+    "drinking soda",
+    "soda cans",
+    "cola can"
+   ],
+   "chiffre": "≈ 0,12 €",
+   "chiffre_mot": "douze",
+   "medias": [
+    "wc:File:Soft drink shelf 2.jpg",
+    "pi:1679022"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "soda can",
+  "cola"
+ ],
+ "sources": [
+  "Selectra, 29/08/2026 (barème 2026 de la taxe soda, art. 1613 ter du CGI) : https://selectra.info/assurance/actualites/marche/taxe-soda-bareme-coca-cola-combien-et-ou-va-argent"
+ ],
+ "commentaire": "Tu bois combien de canettes par semaine ? 👇",
+ "tags": [
+  "taxe soda",
+  "soda",
+  "canette",
+  "sucre",
+  "le vrai prix"
+ ],
+ "test": "T5-A",
+ "medias_fin": [
+  "pi:1960326"
+ ]
+}

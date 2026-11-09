@@ -1,0 +1,93 @@
+{
+ "id": "l01-lait",
+ "titre": "Ta brique de lait : qui garde l'argent ? #shorts",
+ "accroche": "TA BRIQUE DE LAIT : QUI GARDE L'ARGENT ?",
+ "plans": [
+  {
+   "texte": "Ta brique de lait, qui garde l'argent ?",
+   "recherche": [
+    "milk carton",
+    "milk supermarket shelf",
+    "pouring milk glass"
+   ],
+   "medias": [
+    "pi:4147837",
+    "pv:129723"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-trois, elle coûte en moyenne un euro sept en grande surface.",
+   "recherche": [
+    "supermarket dairy aisle",
+    "milk bottles shelf"
+   ],
+   "chiffre": "1,07 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "wc:File:Whole milk aisle (17132962560).jpg",
+    "wc:File:Juice and dairy section - M&S Simply Food, Brighton Station.jpg"
+   ]
+  },
+  {
+   "texte": "La T V A prend six centimes. Le magasin garde trente-six centimes de marge brute.",
+   "recherche": [
+    "supermarket checkout",
+    "cashier scanning"
+   ],
+   "chiffre": "36 c",
+   "chiffre_mot": "trente",
+   "medias": [
+    "wc:File:Supermarket checkout Tegut Tauberbischofsheim.jpg",
+    "pi:5202138"
+   ]
+  },
+  {
+   "texte": "L'industriel qui la remplit garde trente-huit centimes.",
+   "recherche": [
+    "milk factory bottling",
+    "dairy factory",
+    "milk production line"
+   ],
+   "chiffre": "38 c",
+   "chiffre_mot": "trente",
+   "medias": [
+    "wc:File:EMPLOYEE OF THE DONALD DANNHEIM FAMILY WHO OPERATE A DAIRY AND ICE CREAM STORE. BOTTLING MILK IS THE MAJOR PART OF... - NARA - 558353.jpg",
+    "pi:4484017"
+   ]
+  },
+  {
+   "texte": "Et le lait lui-même ? Vingt-huit centimes, une fois la crème revendue à part. Environ un quart du prix.",
+   "recherche": [
+    "dairy cow farm",
+    "cow milking machine",
+    "cows barn"
+   ],
+   "chiffre": "28 c",
+   "chiffre_mot": "vingt",
+   "medias": [
+    "pv:85146",
+    "pi:7957275"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "milk carton",
+  "pouring milk"
+ ],
+ "sources": [
+  "OFPM (FranceAgriMer), rapport 2024, section 5 lait de vache, graphique 114 : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/10_2024_section_5_lait_de_vache_v7.docx_.pdf"
+ ],
+ "commentaire": "Tu l'achètes combien, ta brique de lait ? 👇",
+ "tags": [
+  "prix du lait",
+  "lait",
+  "éleveur",
+  "marge",
+  "le vrai prix"
+ ],
+ "test": "T5-A",
+ "medias_fin": [
+  "pv:172811"
+ ]
+}

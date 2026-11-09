@@ -1,0 +1,93 @@
+{
+ "id": "l08-encre",
+ "titre": "Ta cartouche d'encre à 17,95 € : combien le litre ? #shorts",
+ "accroche": "CARTOUCHE À 17,95 € : COMBIEN LE LITRE ?",
+ "plans": [
+  {
+   "texte": "Ton encre d'imprimante, combien au litre ?",
+   "recherche": [
+    "printer ink cartridge",
+    "inkjet printer",
+    "printer printing"
+   ],
+   "medias": [
+    "wc:File:Canon S520 ink jet printer - opened.jpg",
+    "pv:15763"
+   ]
+  },
+  {
+   "texte": "Une petite cartouche noire courante coûte dix-sept euros quatre-vingt-quinze.",
+   "recherche": [
+    "ink cartridge",
+    "printer cartridge replace"
+   ],
+   "chiffre": "17,95 €",
+   "chiffre_mot": "dix",
+   "medias": [
+    "wc:File:Canon PG-810 CL-811 ink cartridge.JPG",
+    "wc:File:Daiso Printers Ink.jpg"
+   ]
+  },
+  {
+   "texte": "Dedans : trois virgule quatre millilitres. Moins qu'une cuillère à café.",
+   "recherche": [
+    "teaspoon",
+    "black ink drop",
+    "ink drops"
+   ],
+   "chiffre": "3,4 ml",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pi:554065",
+    "pv:20072"
+   ]
+  },
+  {
+   "texte": "Un parfum de luxe ? Environ mille quatre cents euros le litre, selon une étude de deux mille vingt et un.",
+   "recherche": [
+    "perfume bottle",
+    "perfume spray"
+   ],
+   "chiffre": "≈ 1 400 €/L",
+   "chiffre_mot": "mille",
+   "medias": [
+    "pi:3635196",
+    "pi:2142817"
+   ]
+  },
+  {
+   "texte": "Cette encre-là : environ cinq mille deux cent quatre-vingts euros le litre. Près de quatre fois plus.",
+   "recherche": [
+    "printer printing paper",
+    "inkjet printing"
+   ],
+   "chiffre": "≈ 5 280 €/L",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "pv:3496",
+    "pi:790396"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "printer printing",
+  "ink cartridge"
+ ],
+ "sources": [
+  "Prix relevé le 03/11/2026 chez LDLC (cartouche noire 3,4 ml, 17,95 €) : https://www.ldlc.com/fiche/PB00275816.html",
+  "UFC-Que Choisir, 25/10/2021 (étude Which?) : https://www.quechoisir.org/actualite-encre-d-imprimante-un-produit-de-luxe-n95760/"
+ ],
+ "commentaire": "Tu imprimes encore chez toi ? 👇",
+ "tags": [
+  "prix encre",
+  "cartouche d'encre",
+  "imprimante",
+  "prix au litre",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "pi:534450"
+ ]
+}

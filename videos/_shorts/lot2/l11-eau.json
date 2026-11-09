@@ -1,0 +1,93 @@
+{
+ "id": "l11-eau",
+ "titre": "L'eau en bouteille, combien de fois plus chère ? #shorts",
+ "accroche": "L'EAU EN BOUTEILLE : COMBIEN DE FOIS PLUS CHÈRE ?",
+ "plans": [
+  {
+   "texte": "Ta bouteille d'eau, combien de fois plus chère ?",
+   "recherche": [
+    "plastic water bottle",
+    "water bottles pack",
+    "drinking bottled water"
+   ],
+   "medias": [
+    "pi:4276208",
+    "pi:2821977"
+   ]
+  },
+  {
+   "texte": "Au robinet, un mètre cube coûte en moyenne quatre euros quatre-vingt-neuf, assainissement compris.",
+   "recherche": [
+    "water tap running",
+    "kitchen faucet water",
+    "filling glass tap"
+   ],
+   "chiffre": "4,89 €/m³",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "pv:136086",
+    "pi:791172"
+   ]
+  },
+  {
+   "texte": "Un mètre cube, c'est mille litres. Ton litre du robinet coûte donc un demi-centime.",
+   "recherche": [
+    "glass of water",
+    "water glass pouring"
+   ],
+   "chiffre": "0,005 €/L",
+   "chiffre_mot": "demi",
+   "medias": [
+    "pv:3697",
+    "pi:2315559"
+   ]
+  },
+  {
+   "texte": "En bouteille, c'est environ trente centimes le litre en moyenne.",
+   "recherche": [
+    "bottled water supermarket",
+    "water bottles shelf"
+   ],
+   "chiffre": "≈ 0,30 €/L",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pi:1574384",
+    "wc:File:Bottled water in supermarket.JPG"
+   ]
+  },
+  {
+   "texte": "Soit environ soixante fois plus cher. Et jusqu'à trois cents fois pour les marques chères.",
+   "recherche": [
+    "water bottle pouring",
+    "mineral water bottle"
+   ],
+   "chiffre": "× 60 à × 300",
+   "chiffre_mot": "soixante",
+   "medias": [
+    "wc:File:Hands pour water from a bottle into a glass.jpg",
+    "pi:2032980"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "water tap",
+  "glass water"
+ ],
+ "sources": [
+  "Prix de l'eau au 01/01/2025 (rapport SISPEA, OFB, 25/06/2026) : https://ofb.gouv.fr/sites/ofb-gouv-fr/files/2026-07/cp_sispea_2024_0.pdf",
+  "Selectra, 14/07/2026 (chiffre CIEAU) : https://selectra.info/energie/actualites/marche/eau-bouteille-robinet-prix-canicule-2026"
+ ],
+ "commentaire": "Robinet ou bouteille, toi ? 👇",
+ "tags": [
+  "prix de l'eau",
+  "eau en bouteille",
+  "eau du robinet",
+  "économies",
+  "le vrai prix"
+ ],
+ "test": "T5-A",
+ "medias_fin": [
+  "pi:3240211"
+ ]
+}

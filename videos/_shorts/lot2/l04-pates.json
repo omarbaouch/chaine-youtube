@@ -1,0 +1,94 @@
+{
+ "id": "l04-pates",
+ "titre": "Ton paquet de pâtes à 95 centimes : combien de blé ? #shorts",
+ "accroche": "PÂTES À 0,95 € : COMBIEN DE BLÉ DEDANS ?",
+ "plans": [
+  {
+   "texte": "Tes pâtes : combien vaut le blé dedans ?",
+   "recherche": [
+    "pasta package",
+    "dry pasta",
+    "spaghetti"
+   ],
+   "medias": [
+    "pi:6380410",
+    "pi:3558783"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-cinq, un paquet de cinq cents grammes coûte environ quatre-vingt-quinze centimes.",
+   "recherche": [
+    "pasta supermarket shelf",
+    "dry pasta pile"
+   ],
+   "chiffre": "0,95 €",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "wc:File:Maxim pasta in supermarket, 2026.jpg",
+    "wc:File:Pasta, pasta, and pasta (9875883513).jpg"
+   ]
+  },
+  {
+   "texte": "Depuis deux mille vingt et un, son prix a pris trente-neuf pour cent.",
+   "recherche": [
+    "cooking pasta pot",
+    "boiling pasta"
+   ],
+   "chiffre": "+39 %",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:327639",
+    "pv:350341"
+   ]
+  },
+  {
+   "texte": "Pourtant, depuis deux mille vingt-trois, le blé dur a baissé : de cinquante-six à trente-neuf centimes par kilo de pâtes.",
+   "recherche": [
+    "durum wheat field",
+    "wheat harvest",
+    "wheat ears"
+   ],
+   "chiffre": "56 → 39 c",
+   "chiffre_mot": "cinquante",
+   "medias": [
+    "pv:232561",
+    "pv:21444"
+   ]
+  },
+  {
+   "texte": "Dans ton paquet, le blé vaut environ vingt centimes. Le reste, c'est surtout l'usine et le magasin.",
+   "recherche": [
+    "pasta factory",
+    "pasta production line",
+    "pasta making machine"
+   ],
+   "chiffre": "≈ 20 c",
+   "chiffre_mot": "vingt",
+   "medias": [
+    "wc:File:DEMACO DTC-1000 Treatment Center for Fresh Pasta Production (1995) 001 crop.jpg",
+    "pi:326865"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "spaghetti plate",
+  "pasta"
+ ],
+ "sources": [
+  "OFPM (FranceAgriMer), rapport 2026, section 8 pâtes alimentaires, graphique 184 : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/13_2026_section_8_pates_alimentaires_v4.pdf",
+  "OFPM, synthèse 2026, graphique 18 : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/2026_ofpm_synthese.pdf"
+ ],
+ "commentaire": "Tu paies ton paquet de pâtes combien ? 👇",
+ "tags": [
+  "prix des pâtes",
+  "pâtes",
+  "blé dur",
+  "marge",
+  "le vrai prix"
+ ],
+ "test": "T5-B",
+ "medias_fin": [
+  "wc:File:One Pot Pasta (23029326055).jpg"
+ ]
+}

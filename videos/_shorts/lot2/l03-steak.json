@@ -1,0 +1,94 @@
+{
+ "id": "l03-steak",
+ "titre": "Ton steak haché : combien pour l'éleveur ? #shorts",
+ "accroche": "TON STEAK HACHÉ : COMBIEN POUR L'ÉLEVEUR ?",
+ "plans": [
+  {
+   "texte": "Ton steak haché, l'éleveur touche combien ?",
+   "recherche": [
+    "burger patty grill",
+    "minced beef",
+    "ground beef raw"
+   ],
+   "medias": [
+    "pv:124823",
+    "pi:783551"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-trois, le kilo coûte en moyenne treize euros quatre-vingt-quatorze.",
+   "recherche": [
+    "ground beef package",
+    "supermarket meat",
+    "minced meat"
+   ],
+   "chiffre": "13,94 €",
+   "chiffre_mot": "treize",
+   "medias": [
+    "pi:6720584",
+    "wc:File:Meat display in a supermarket, Quebec City.jpg"
+   ]
+  },
+  {
+   "texte": "L'abattoir et le hachage prennent deux euros quatre-vingt-neuf.",
+   "recherche": [
+    "meat grinder",
+    "mincing meat machine",
+    "butcher grinding meat"
+   ],
+   "chiffre": "2,89 €",
+   "chiffre_mot": "deux",
+   "medias": [
+    "pi:5586849",
+    "pi:2810"
+   ]
+  },
+  {
+   "texte": "Le magasin, trois euros cinquante-six de marge brute. La T V A, soixante-treize centimes.",
+   "recherche": [
+    "supermarket checkout",
+    "grocery store aisle"
+   ],
+   "chiffre": "3,56 €",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pv:21117",
+    "wc:File:Supermarket checkout Tegut Tauberbischofsheim.jpg"
+   ]
+  },
+  {
+   "texte": "Et la viande payée à l'éleveur ? Six euros soixante-dix-sept. Presque la moitié du prix.",
+   "recherche": [
+    "cattle farm",
+    "cows pasture",
+    "beef cattle"
+   ],
+   "chiffre": "6,77 €",
+   "chiffre_mot": "six",
+   "medias": [
+    "pv:108077",
+    "pv:112764"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "burger patty grill",
+  "frying burger"
+ ],
+ "sources": [
+  "OFPM, présentation de Sophie Devienne (présidente de l'Observatoire), Académie d'agriculture, 27/05/2026 : https://www.academie-agriculture.fr/system/files_force/seances-colloques/20260527presentation4.pdf?download=1"
+ ],
+ "commentaire": "Tu l'aurais cru, presque la moitié pour l'éleveur ? 👇",
+ "tags": [
+  "prix steak haché",
+  "steak haché",
+  "viande",
+  "éleveur",
+  "le vrai prix"
+ ],
+ "test": "T5-A",
+ "medias_fin": [
+  "pi:7921082"
+ ]
+}

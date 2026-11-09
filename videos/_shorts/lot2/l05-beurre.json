@@ -1,0 +1,94 @@
+{
+ "id": "l05-beurre",
+ "titre": "Ton beurre : pourquoi il coûte si cher ? #shorts",
+ "accroche": "TON BEURRE : POURQUOI SI CHER ?",
+ "plans": [
+  {
+   "texte": "Ton beurre, pourquoi il coûte si cher ?",
+   "recherche": [
+    "butter",
+    "butter block",
+    "butter knife bread"
+   ],
+   "medias": [
+    "wc:File:Butter and Knive.jpg",
+    "pv:72930"
+   ]
+  },
+  {
+   "texte": "En deux mille vingt-cinq, le kilo est à dix euros trente-quatre en moyenne.",
+   "recherche": [
+    "butter package",
+    "dairy supermarket"
+   ],
+   "chiffre": "10,34 €",
+   "chiffre_mot": "dix",
+   "medias": [
+    "pi:3411126",
+    "wc:File:Butter - Israel.JPG"
+   ]
+  },
+  {
+   "texte": "Ta plaquette de deux cent cinquante grammes : environ deux euros soixante.",
+   "recherche": [
+    "butter slice",
+    "cutting butter"
+   ],
+   "chiffre": "≈ 2,60 €",
+   "chiffre_mot": "environ",
+   "medias": [
+    "wc:File:2023 Masło w maselniczce.jpg",
+    "pi:7584645"
+   ]
+  },
+  {
+   "texte": "En un an, la matière grasse du lait a pris dix-sept pour cent.",
+   "recherche": [
+    "cream pouring",
+    "fresh cream",
+    "churning butter"
+   ],
+   "chiffre": "+17 %",
+   "chiffre_mot": "dix",
+   "medias": [
+    "pi:933106",
+    "pi:2589512"
+   ]
+  },
+  {
+   "texte": "Résultat : hors taxes, soixante-trois pour cent du prix paient la matière grasse du lait.",
+   "recherche": [
+    "dairy cows",
+    "cow milking",
+    "milk tank farm"
+   ],
+   "chiffre": "63 %",
+   "chiffre_mot": "soixante",
+   "medias": [
+    "pv:186594",
+    "pi:2782461"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "butter bread",
+  "butter"
+ ],
+ "sources": [
+  "OFPM, synthèse 2026, graphique 19 : https://observatoire-prixmarges.franceagrimer.fr/sites/default/files/pictures/2026_ofpm_synthese.pdf",
+  "Transformation laitière, 07/08/2026 (rapport OFPM 2026) : https://www.transformation-laitiere.fr/ofpm-2026-repartition-prix-produits-laitiers-gms/"
+ ],
+ "commentaire": "Tu as vu ton beurre grimper, toi aussi ? 👇",
+ "tags": [
+  "prix du beurre",
+  "beurre",
+  "lait",
+  "inflation",
+  "le vrai prix"
+ ],
+ "test": "T5-A",
+ "medias_fin": [
+  "wc:File:Butter with a butter knife.jpg"
+ ]
+}
