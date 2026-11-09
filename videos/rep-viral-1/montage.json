@@ -1,0 +1,13 @@
+{
+ "titre": "rep-viral-1",
+ "scenes": [
+  {"id": "v01-p1", "recherche": ["spotify phone", "listening music headphones phone", "young woman headphones music"], "texte": "Ta chanson préférée : l'artiste touche combien par écoute ?"},
+  {"id": "v01-p2", "recherche": ["spotify app smartphone", "music app smartphone screen", "smartphone payment card"], "texte": "Ton abonnement coûte douze euros quatorze par mois."},
+  {"id": "v01-p3", "recherche": ["coins jar", "pile of coins", "money jar savings"], "texte": "Spotify ne paie pas à l'écoute : il partage une cagnotte."},
+  {"id": "v01-p4", "recherche": ["euro cent coins", "small coins hand", "one cent coin"], "texte": "Une écoute rapporte environ zéro virgule quatre centime."},
+  {"id": "v01-p5", "recherche": ["recording studio singer", "music producer mixing desk", "vinyl record label"], "texte": "Et en maison de disques, l'artiste n'en touche souvent que dix pour cent."},
+  {"id": "v01-p6", "recherche": ["concert crowd", "stadium concert lights", "singer stage concert"], "texte": "Pour un seul SMIC, il lui faut trois millions sept cent mille écoutes."},
+  {"id": "v01-p7", "recherche": ["singer microphone", "guitarist playing guitar", "rapper microphone"], "texte": "Alors ton artiste préféré, tu l'as écouté combien de fois ce mois-ci ?"},
+  {"id": "v01-fin", "recherche": ["headphones music", "vinyl turntable", "earbuds music"], "texte": "Abonne-toi."}
+ ]
+}
