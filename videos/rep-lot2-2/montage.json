@@ -1,0 +1,92 @@
+{
+ "titre": "rep-lot2-2",
+ "scenes": [
+  {
+   "id": "l03-steak-p1",
+   "recherche": [
+    "burger patty grill",
+    "minced beef",
+    "ground beef raw"
+   ],
+   "texte": "Ton steak haché, l'éleveur touche combien ?"
+  },
+  {
+   "id": "l03-steak-p2",
+   "recherche": [
+    "ground beef package",
+    "supermarket meat",
+    "minced meat"
+   ],
+   "texte": "En deux mille vingt-trois, le kilo coûte en moyenne treize euros quatre-vingt-quatorze."
+  },
+  {
+   "id": "l03-steak-p3",
+   "recherche": [
+    "meat grinder",
+    "mincing meat machine",
+    "butcher grinding meat"
+   ],
+   "texte": "L'abattoir et le hachage prennent deux euros quatre-vingt-neuf."
+  },
+  {
+   "id": "l03-steak-p4",
+   "recherche": [
+    "supermarket checkout",
+    "grocery store aisle"
+   ],
+   "texte": "Le magasin, trois euros cinquante-six. La TVA, soixante-treize centimes."
+  },
+  {
+   "id": "l03-steak-p5",
+   "recherche": [
+    "cattle farm",
+    "cows pasture",
+    "beef cattle"
+   ],
+   "texte": "Et la viande payée à l'éleveur ? Six euros soixante-dix-sept. Presque la moitié du prix."
+  },
+  {
+   "id": "l04-pates-p1",
+   "recherche": [
+    "pasta package",
+    "dry pasta",
+    "spaghetti"
+   ],
+   "texte": "Tes pâtes : combien vaut le blé dedans ?"
+  },
+  {
+   "id": "l04-pates-p2",
+   "recherche": [
+    "pasta supermarket shelf",
+    "dry pasta pile"
+   ],
+   "texte": "Un paquet de cinq cents grammes coûte en moyenne quatre-vingt-quinze centimes."
+  },
+  {
+   "id": "l04-pates-p3",
+   "recherche": [
+    "cooking pasta pot",
+    "boiling pasta"
+   ],
+   "texte": "Depuis deux mille vingt et un, son prix en rayon a pris trente-neuf pour cent."
+  },
+  {
+   "id": "l04-pates-p4",
+   "recherche": [
+    "durum wheat field",
+    "wheat harvest",
+    "wheat ears"
+   ],
+   "texte": "Pourtant, le blé dur a baissé : de cinquante-six à trente-neuf centimes par kilo de pâtes."
+  },
+  {
+   "id": "l04-pates-p5",
+   "recherche": [
+    "pasta factory",
+    "pasta production line",
+    "pasta making machine"
+   ],
+   "texte": "Dans ton paquet, le blé vaut environ vingt centimes. Le reste, c'est surtout l'usine et le magasin."
+  }
+ ]
+}
