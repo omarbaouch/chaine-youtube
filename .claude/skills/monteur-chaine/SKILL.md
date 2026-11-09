@@ -288,6 +288,18 @@ La rétention n'est pas le problème n°1 (cacao : 0,64, au-dessus de la moyenne
    baril ↓ | plein ↑, pièce de 1 € | « qui le prend ? »), 3-4 mots en Inter Black avec contour noir, un visage si possible,
    vérifiée à 168 px de large. Anciens taux : cacao 1,3 %, gazole 1,7 %, baguette 3,7 % → comparer à 48-72 h.
    Action `modifier` de bmo-studio-link : `titre` + `miniature_url` (image poussée dans le-vrai-prix-medias/miniatures/).
+5 quater. **Mise à jour du 09/11 (stats API de 13 h 59 UTC : 13 abonnés, 9 818 vues, 267 vues pour les 4 vidéos longues)** :
+   - **Correction** : dans l'API, la source `SUBSCRIBER` n'est pas « les abonnés » : c'est « Fonctionnalités de navigation »
+     (accueil, fil d'abonnements, historique). La baguette a donc eu 101 de ses 114 vues par là (les visionnages d'Omar peuvent
+     en faire partie), pas 0 comme écrit plus haut. YouTube l'a testée, les gens sont partis (26 % regardé, rétention relative
+     0,36) et il a arrêté. Le cacao a été testé en suggestions (3 555 impressions) et a calé au clic (1,38 %).
+   - **Le sujet décide de la diffusion** : le cacao (dans l'actualité) a eu 6 à 10 fois plus d'impressions que les autres.
+     Une vidéo longue = un sujet que les gens cherchent ou regardent déjà cette semaine-là. Sinon on ne la fait pas.
+   - **Les Shorts n'amènent pas de vues longues** : 7 789 vues de Shorts → 4 clics vers une vidéo longue. Ne pas compter
+     dessus ; la vidéo longue doit gagner seule (sujet + clic + 30 premières secondes).
+   - **On ne retouche plus titres ni miniatures des 4 vidéos avant le 15/11** : les v2 datent du 08/11 au soir, les taux de
+     clic affichés mélangent encore l'ancien et le nouveau. Ensuite une seule chose à la fois.
+   - **Une seule vidéo longue par semaine** (4 en 7 jours du 01 au 07/11 : aucune n'a eu le temps d'être mesurée).
 6. Mesurer : nombre de clics « vidéo associée » et vues longues venant de SHORTS_CONTENT_LINKS dans `dernier.md`.
    Attention : moins de 100 vues par vidéo = courbes très bruitées (1 personne = 3 à 8 points) ; ne pas surcorriger.
 

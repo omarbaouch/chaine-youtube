@@ -34,9 +34,10 @@ Promesse répétée partout : « Chaque semaine, le vrai prix d'un truc que tu a
 ## 5. Calendrier des sujets (actualité + saison)
 | Sortie | Sujet | Pourquoi maintenant |
 |---|---|---|
-| 10/11 | **L'essence** | Gazole ~2,36 €, SP95-E10 ~2,14 € début octobre (kelwatt), crise d'Ormuz, « le baril baisse, la pompe non » |
+| 04/11 (fait) | **L'essence** | sortie en avance le 04/11 : « Le baril baisse, ton plein non » |
+| 10/11 | **Le Black Friday** : les vraies et fausses promos | décision d'Omar du 09/11 : Black Friday le 27/11, 17 jours pour profiter de la montée des recherches |
 | 17/11 | Le chauffage / l'électricité de l'hiver | début du froid, factures |
-| 24/11 | **Le Black Friday** : les vraies et fausses promos | Black Friday le 27/11 : sortir avant |
+| 24/11 | à choisir selon l'actualité de la semaine (réserve ci-dessous) | un sujet déjà recherché ou dans l'actualité, jamais un sujet « froid » |
 | 01/12 | Les jouets de Noël | achats de Noël |
 | 08/12 | Le repas de Noël (foie gras, saumon, huîtres) | fêtes |
 Réserve : eau en bouteille, capsules de café, jean, iPhone, canette, cigarette, médicaments.

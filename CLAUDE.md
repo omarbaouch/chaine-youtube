@@ -155,11 +155,20 @@ de `monteur-chaine`. Plus de Metricool (décision d'Omar du 03/11/2026). Statist
 Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/etude-marche.md` (positionnement, calendrier
 des sujets, règles Shorts → abonnés).
 
-## Prochaine vidéo (décision d'Omar du 03/11/2026)
-Vidéo du mardi 10/11/2026 : **l'essence** — le vrai prix d'un litre à la pompe (pétrole brut, raffinage, transport,
-marge de la station, taxes : TICPE et TVA), angle actualité « surtout en ce moment ». Chiffres du jour vérifiés
-(sources officielles : ministère de la Transition écologique / prix-carburants.gouv.fr, UFIP, connaissancedesenergies.org).
-Ton factuel et neutre sur les taxes : expliquer, ne pas militer. Vidéo de 6 à 8 min, 8 à 10 Shorts chiffrés.
+## Prochaine vidéo (décision d'Omar du 09/11/2026)
+Vidéo du mardi 10/11/2026 : **le Black Friday** (slug `black-friday`), mise en ligne le jour même à 18 h. L'essence est déjà
+sortie le 04/11 ; l'électricité / le chauffage passe au 17/11.
+- Le sujet n'est PAS déjà fait : `videos/black-friday/` ne contient que le brief, la recherche, le script et les médias
+  (`_workspace/`, `medias/`). Pas de montage ni de vidéo. Partir de ces livrables, ne pas les refaire de zéro.
+- Pourquoi lui : c'est le seul sujet à venir avec une vraie vague de recherche (Black Friday le 27/11), et le cacao (sujet
+  d'actualité) est la seule vidéo que YouTube a vraiment montrée (3 555 impressions contre 357 à 585 pour les autres).
+- Le script date du 07/11 : le remettre aux règles n°16 à 18 avant le montage. Image 0 = l'image de la miniature, 1re phrase =
+  la question de la miniature, pas d'annonce de plan (« dans cette vidéo, je te montre… ») ni de carte titre avant 30 s,
+  une image nouvelle toutes les 2 s jusqu'à 15 s. Durée 8 à 10 min sans remplissage.
+- Revérifier chaque chiffre à la source le jour même (UFC-Que Choisir, Commission européenne, DGCCRF). Ton factuel, pas militant.
+- Miniature et titre faits AVANT le montage, 3 variantes, vérifiées à 168 px de large (règle n°16, 5 ter).
+- Shorts : seulement après la sortie de la vidéo longue, chacun finit sur une question que la vidéo tranche (règle n°17).
+- Proposer à Omar d'enregistrer l'accroche (30 s) avec sa voix au téléphone (règle n°17, point 6).
 Omar n'a pas d'ordinateur : ne rien lui demander qui exige un PC (Test & Compare : via « version pour ordinateur »
 du navigateur du téléphone seulement si nécessaire).
 

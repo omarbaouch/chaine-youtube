@@ -1,7 +1,7 @@
 # Brief stratège : le Black Friday
 
 **Slug :** `black-friday` · **Format :** 16:9, 1920×1080, 30 i/s · **Durée visée :** 9 à 10 min (environ 1 350 mots de voix off)
-**Sortie :** vendredi 20/11/2026, 18 h, soit une semaine avant le Black Friday (vendredi 27/11/2026). Le calendrier de `etude-marche.md` prévoit le 24/11 : on avance de 4 jours, car la recherche « fausses promos » monte avant le jour J.
+**Sortie :** mardi 10/11/2026, 18 h (décision d'Omar du 09/11 : on avance encore, 17 jours avant le Black Friday du vendredi 27/11/2026, pour profiter de toute la montée des recherches). Ancienne date : 20/11.
 **Date du brief :** 07/11/2026 · préparé avec Omar en conversation.
 
 ## Pourquoi ce sujet
