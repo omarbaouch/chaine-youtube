@@ -50,3 +50,10 @@ Relevé du 09/11 9 h 19 Paris (stats relancées) : 13 abonnés (+0), 9 818 vues 
 - Meilleur Short publié hier : goût du chocolat eWnhl_g9Fb4, 544 vues en ~22 h (8 likes). Clac 283, cacao -60 % 178, négociant 109 (à ~48-72 h).
 - Capsules « compatibles » mN0HueuEP58 est **déjà public depuis le 08/11 22 h 33** (prévu le 10/11 18 h ; aucune fiche ne l'a avancé, sans doute passé en public à la main) : 13 vues. Le créneau du 10/11 18 h est donc vide ; pas de déplacement (ne pas toucher l'équilibre du test T5).
 - T5 : rien à mesurer avant le 12/11. Aucune inversion d'horaires. Toutes les fiches de `publications/fait/` ont réussi (les 9 Shorts du lot 2 sont bien envoyés en privé et programmés).
+
+## Test T6 — format 100 % animation SVG contre mixed media (lancé le 09/11, demande d'Omar)
+- A (mixed media, nouveau sujet grand public) : Short Spotify « l'artiste touche combien par écoute ? » v01-spotify, https://youtu.be/_14kkq1CHUo, 09/11 14 h 30.
+- B (animation SVG Remotion, personnage-billet qui se fait découper) : Short électricité a01-electricite, 09/11 21 h.
+  Code : `src/anim/Electricite.tsx` (composition AnimElectricite), voix : workflow « Voix des Shorts animés » (`videos/_anim/<slug>/voix.txt`).
+  Rendu local : `npx remotion render src/index.ts AnimElectricite out/x.mp4 --props=videos/_anim/<slug>/props.json` puis loudnorm -14 LUFS.
+- À juger à 48-72 h : vues, % regardé, abonnés gagnés. Si B ≥ A, décliner le format animé sur 3 autres sujets.
