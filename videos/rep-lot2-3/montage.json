@@ -1,0 +1,90 @@
+{
+ "titre": "rep-lot2-3",
+ "scenes": [
+  {
+   "id": "l05-beurre-p1",
+   "recherche": [
+    "butter",
+    "butter block",
+    "butter knife bread"
+   ],
+   "texte": "Ton beurre, pourquoi il coûte si cher ?"
+  },
+  {
+   "id": "l05-beurre-p2",
+   "recherche": [
+    "butter package",
+    "dairy supermarket"
+   ],
+   "texte": "En deux mille vingt-cinq, le kilo est à dix euros trente-quatre en moyenne."
+  },
+  {
+   "id": "l05-beurre-p3",
+   "recherche": [
+    "butter slice",
+    "cutting butter"
+   ],
+   "texte": "Ta plaquette de deux cent cinquante grammes : environ deux euros soixante."
+  },
+  {
+   "id": "l05-beurre-p4",
+   "recherche": [
+    "cream pouring",
+    "fresh cream",
+    "churning butter"
+   ],
+   "texte": "En un an, la matière grasse du lait a pris dix-sept pour cent."
+  },
+  {
+   "id": "l05-beurre-p5",
+   "recherche": [
+    "dairy cows",
+    "cow milking",
+    "milk tank farm"
+   ],
+   "texte": "Résultat : hors taxes, soixante-trois pour cent du prix paient la matière grasse du lait."
+  },
+  {
+   "id": "l06-doliprane-p1",
+   "recherche": [
+    "paracetamol tablets",
+    "medicine box pharmacy",
+    "pills blister"
+   ],
+   "texte": "Ta boîte de Doliprane, qui touche l'argent ?"
+  },
+  {
+   "id": "l06-doliprane-p2",
+   "recherche": [
+    "pharmacy shelf",
+    "pharmacy medicine"
+   ],
+   "texte": "La boîte de huit comprimés de mille milligrammes coûte deux euros dix-huit."
+  },
+  {
+   "id": "l06-doliprane-p3",
+   "recherche": [
+    "pills blister pack",
+    "tablets medicine"
+   ],
+   "texte": "Le médicament lui-même compte pour un euro seize, marges du grossiste et de la pharmacie comprises."
+  },
+  {
+   "id": "l06-doliprane-p4",
+   "recherche": [
+    "pharmacist",
+    "pharmacy counter",
+    "pharmacist customer"
+   ],
+   "texte": "Le reste ? Un euro deux d'honoraire pour le pharmacien, à chaque boîte vendue."
+  },
+  {
+   "id": "l06-doliprane-p5",
+   "recherche": [
+    "pharmacy cross sign",
+    "pharmacy"
+   ],
+   "texte": "Presque la moitié du prix paie l'acte du pharmacien, pas le comprimé."
+  }
+ ]
+}
