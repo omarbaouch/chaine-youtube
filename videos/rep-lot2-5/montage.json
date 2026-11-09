@@ -1,0 +1,95 @@
+{
+ "titre": "rep-lot2-5",
+ "scenes": [
+  {
+   "id": "l09-fdj-p1",
+   "recherche": [
+    "lottery ticket",
+    "scratch card",
+    "lottery balls"
+   ],
+   "texte": "Ton ticket F D J : où va l'argent ?"
+  },
+  {
+   "id": "l09-fdj-p2",
+   "recherche": [
+    "euro banknote",
+    "10 euro bill",
+    "euro money"
+   ],
+   "texte": "Prends dix euros joués en point de vente."
+  },
+  {
+   "id": "l09-fdj-p3",
+   "recherche": [
+    "tobacco shop",
+    "newsstand kiosk",
+    "shop counter"
+   ],
+   "texte": "Le buraliste garde cinquante-trois centimes. La F D J, soixante-quatre centimes."
+  },
+  {
+   "id": "l09-fdj-p4",
+   "recherche": [
+    "french parliament",
+    "tax money",
+    "euro coins"
+   ],
+   "texte": "L'État, lui, prend deux euros."
+  },
+  {
+   "id": "l09-fdj-p5",
+   "recherche": [
+    "lottery winner",
+    "scratch card scratching",
+    "lottery draw"
+   ],
+   "texte": "Et les joueurs récupèrent six euros quatre-vingt-trois en gains. En moyenne, tous jeux confondus."
+  },
+  {
+   "id": "l10-livre-p1",
+   "recherche": [
+    "book reading",
+    "open book",
+    "books stack"
+   ],
+   "texte": "Ton livre à vingt euros, l'auteur touche combien ?"
+  },
+  {
+   "id": "l10-livre-p2",
+   "recherche": [
+    "bookstore",
+    "bookshop shelves",
+    "library bookshelf"
+   ],
+   "texte": "Le libraire garde environ sept euros cinquante."
+  },
+  {
+   "id": "l10-livre-p3",
+   "recherche": [
+    "books warehouse",
+    "delivery boxes",
+    "publishing office"
+   ],
+   "texte": "La distribution, trois euros quarante. L'éditeur, trois euros."
+  },
+  {
+   "id": "l10-livre-p4",
+   "recherche": [
+    "printing press",
+    "book printing",
+    "offset printing"
+   ],
+   "texte": "L'imprimeur, trois euros aussi. La TVA, environ un euro."
+  },
+  {
+   "id": "l10-livre-p5",
+   "recherche": [
+    "writer typing",
+    "author writing",
+    "writing notebook"
+   ],
+   "texte": "Et l'auteur ? Environ un euro quatre-vingt-dix pour un roman. Moins d'un euro sur dix."
+  }
+ ]
+}
