@@ -1,0 +1,38 @@
+name: Voix des Shorts animés
+
+# Voix Edge Vivienne + minutage mot à mot pour les Shorts 100 % animation (videos/_anim/<slug>/voix.txt).
+# Résultat dans la Release « anim-<slug> » ; l'animation est rendue ensuite à partir de ce minutage.
+on:
+  push:
+    branches: [main]
+    paths: ['videos/_anim/**/voix.txt']
+  workflow_dispatch:
+    inputs:
+      voix: {description: "Chemin du voix.txt", required: true}
+
+permissions:
+  contents: write
+
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Voix
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pip install -q edge-tts
+          if [ -n "${{ github.event.inputs.voix }}" ]; then liste="${{ github.event.inputs.voix }}"; else
+            avant="${{ github.event.before }}"; git cat-file -e "$avant" 2>/dev/null || avant="HEAD~1"
+            liste="$(git diff --name-only "$avant" "${{ github.sha }}" -- 'videos/_anim/**/voix.txt')"; fi
+          for f in $liste; do
+            slug="$(basename "$(dirname "$f")")"
+            python scripts/voix_seule.py "$f"
+            gh release view "anim-$slug" >/dev/null 2>&1 || gh release create "anim-$slug" --title "Short animé $slug" --notes "Voix + minutage" --prerelease
+            gh release upload "anim-$slug" out/anim/$slug-* --clobber
+          done
