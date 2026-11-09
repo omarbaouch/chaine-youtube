@@ -158,11 +158,18 @@ def media_choisi(ref, f):
         meta = info.get("extmetadata", {})
         cred = f"Wikimedia Commons — {titre} — {meta.get('Artist', {}).get('value', '')[:80]} — {meta.get('LicenseShortName', {}).get('value', '')}"
     f = f.with_suffix(".jpg" if image else ".mp4")
-    with requests.get(url, stream=True, timeout=120, headers={"User-Agent": "LeVraiPrix/1.0"}) as r:
-        r.raise_for_status()
-        with open(f, "wb") as o:
-            for b in r.iter_content(1 << 20):
-                o.write(b)
+    import time
+    for essai in range(6):  # upload.wikimedia.org répond parfois 429 (trop de requêtes) : on attend et on réessaie
+        with requests.get(url, stream=True, timeout=120,
+                          headers={"User-Agent": "chaine-youtube-shorts/1.0 (github.com/omarbaouch/chaine-youtube)"}) as r:
+            if r.status_code == 429 and essai < 5:
+                time.sleep(int(r.headers.get("Retry-After", 0) or 0) or 10 * 2 ** essai)
+                continue
+            r.raise_for_status()
+            with open(f, "wb") as o:
+                for b in r.iter_content(1 << 20):
+                    o.write(b)
+            break
     print(f"  média choisi {ref}", flush=True)
     return f, image, cred
 
