@@ -9,7 +9,7 @@ Seuil de décision : au moins 3 Shorts par variante, sinon « à confirmer ».
 | T1 | 04/11 | Le plein écran vertical retient mieux que la vidéo longue recadrée sur fond flou | Découpé : cx85sBqr0uo (7 vues/13 h), jGXkavzo0zU (5/12 h) | Plein écran : HoJhClpTWE4 essence (32/2 h, 84/5 h), pL592TRDLqY chocolat planteur (94/2 h) | Même sujet (chocolat) : 94 vues en 2 h contre 7-8 en 15 h | **Plein écran gagne** : plus de découpe sur fond flou |
 | T2 | 04/11 | Carte d'accroche géante + voix dès 0 s + impact = moins de balayages | Sans carte : lot 1 (essence, iPhone, capsules, cigarettes, jean) | Avec carte : prochains Shorts (essence e01-e06, chocolat b-c02…) | 05/11 8 h : 1 seul Short avec carte en ligne (baril baisse dyXoRT_LJgs : 12 vues en 1 h). Sans carte à ~24 h : plein 173, iPhone 210 (20 h), capsules 910 (13 h). **À confirmer** (3 Shorts avec carte d'ici le 06/11) ; il faudra le % « ont continué de regarder » | |
 | T3 | 04/11 | Les sujets « porte-monnaie de tous les jours » battent les sujets lointains | Pain, essence | Chocolat, meunier | Pain 656/425/340 vues ; chocolat découpé < 10, mais chocolat plein écran 94 en 2 h : l'écart venait surtout du format | À retester, format égal (plein écran des deux côtés). 05/11 : plein écran porte-monnaie = capsules 910 (13 h), plein 173 (25 h), État/baguette 164 (21 h), boulanger 68 (15 h) ; lointain = planteur 668 (22 h), Pâques 86 (18 h). Écart énorme d'un Short à l'autre dans chaque camp : **à confirmer** |
-| T5 | 09/11 | Le prix payé dans le titre et la carte d'accroche (un chiffre que tu connais) fait moins balayer qu'une question sans chiffre | A = question sans chiffre : lait, steak, beurre, FDJ, eau, cinéma, soda (« Ta brique de lait : qui garde l'argent ? ») | B = prix payé en tête : jambon 14,58 €, pâtes 95 c, Doliprane 2,18 €, lunettes 300 €, encre 17,95 €, livre 20 €, timbre 1,52 € (« Ton livre à 20 € : combien pour l'auteur ? ») | 09/11 9 h : aucun Short du lot 2 en ligne (1er le 12/11 8 h). **À confirmer** : relevé à 24 h dès le 13/11, conclusion à 72 h le 16-19/11 | |
+| T5 | 09/11 | Le prix payé dans le titre et la carte d'accroche (un chiffre que tu connais) fait moins balayer qu'une question sans chiffre | A = question sans chiffre : lait, steak, beurre, FDJ, eau, cinéma, soda (« Ta brique de lait : qui garde l'argent ? ») | B = prix payé en tête : jambon 14,58 €, pâtes 95 c, Doliprane 2,18 €, lunettes 300 €, encre 17,95 €, livre 20 €, timbre 1,52 € (« Ton livre à 20 € : combien pour l'auteur ? ») | 09/11 9 h : aucun Short du lot 2 en ligne (1er le 12/11 8 h). **À confirmer** : relevé à 24 h dès le 13/11, conclusion à 72 h le 16-19/11. 10/11 9 h : toujours aucun Short du lot 2 en ligne (9 programmés en privé, 1er le 12/11 8 h) : **à confirmer** | |
 
 Repère : engagement Shorts de la chaîne au 04/11 = 24,4 % ont continué de regarder (objectif ≥ 60 %).
 
@@ -73,3 +73,17 @@ Même sujet, même texte, même durée ; une seule chose change. 3 Shorts par va
   magasin ou chez lui, prix visible), sans carte jaune par-dessus.
 Mesure : « Restés » à 48 h. Décision : la variante qui gagne de 10 points ou plus devient le format ; si B et C gagnent, on cumule.
 Ce qu'Omar doit fournir : 3 enregistrements de voix (20 s chacun) et 3 plans de 3 à 5 s. Tant qu'ils ne sont pas là, le test attend.
+
+Relevé du 10/11 9 h 16 Paris (stats relancées) : **13 abonnés (+0 depuis le 09/11 au matin)**, 10 187 vues (+369 depuis 9 818 le 09/11 9 h 19 ; +114 sur 24 h glissantes).
+- **Alerte distribution** : les 6 Shorts publiés depuis le 08/11 au soir plafonnent tous sous 35 vues (capsule TVA 34 en ~25 h, cacao fermente 32 en ~21 h,
+  Spotify 31 en ~19 h, compatibles 22 en ~35 h, inventeur capsule 20 en ~15 h, électricité animée 9 en ~12 h, tasse à 10 c 2 en 1 h). Avant, un Short faisait
+  100 à 600 vues en 24 h (goût du chocolat 08/11 : 629). Rien à voir avec le sujet ni le format (les deux camps de T6 sont touchés) : YouTube ne pousse plus
+  les nouveaux Shorts. Pistes : rythme (alerte « trop de Shorts le même jour » : 5 le 09/11) et « Restés » à 30 % qui fait couper la diffusion. Ne rien produire
+  de plus avant que T7 (ouverture) donne un résultat ; ne pas juger T5/T6 sur des vues tant que ça dure.
+- Meilleur Short d'hier (publiés le 09/11) : « L'État gagne combien sur ta capsule ? » LHId83_QGpE, 34 vues. Vieux Shorts : goût du chocolat 544 → 629.
+- **T6** (mixed media Spotify vs animation électricité) : 31 vues (~19 h) contre 9 (~12 h), pas de « Restés » (moins de 100 vues, Analytics en retard).
+  1 Short par variante : **à confirmer** (relevé à 48-72 h les 11-12/11, puis 3 Shorts par variante).
+- **T7** : en attente des 3 voix et 3 plans d'Omar.
+- Correction : commentaire épinglé du Short « tasse à 10 c » (public à 8 h) resté « en attente » → workflow Publier relancé, commentaire posté. Toutes les autres
+  fiches de `publications/fait/` ont réussi (les 4 Shorts café restants et les 9 du lot 2 sont en privé programmé ; vieux refus 409 de playlist inchangés).
+  Aucune inversion d'horaires : aucune variante clairement perdante.
