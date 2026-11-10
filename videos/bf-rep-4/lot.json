@@ -1,0 +1,76 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s062",
+   "texte": "Une réduction correcte, je te rappelle, part du prix le plus bas des trente derniers jours.",
+   "recherche": [
+    "hand holding price tag",
+    "price tag close up hand",
+    "price label shop"
+   ]
+  },
+  {
+   "id": "s065",
+   "texte": "Il y a pire : parmi les sites qui comparaient leurs prix avec un prix de référence, six sur dix n'expliquaient pas clairement d'où sortait ce prix.",
+   "recherche": [
+    "online shop product page laptop close up",
+    "e-commerce website screen",
+    "shopping website scrolling"
+   ]
+  },
+  {
+   "id": "s066",
+   "texte": "Côté France, la répression des fraudes a fait ses contrôles au Black Friday deux mille vingt-deux.",
+   "recherche": [
+    "shop window sale",
+    "store window shopping street",
+    "shopping street france"
+   ]
+  },
+  {
+   "id": "s067",
+   "texte": "Sur quatre cent onze magasins et sites contrôlés, près d'un sur trois était en infraction.",
+   "recherche": [
+    "shopping mall people",
+    "shoppers walking mall",
+    "busy shopping center"
+   ]
+  },
+  {
+   "id": "s068",
+   "texte": "Et le prix barré n'est même pas le seul piège de ces journées-là.",
+   "recherche": [
+    "countdown timer screen",
+    "digital countdown clock",
+    "timer counting down"
+   ]
+  },
+  {
+   "id": "s069",
+   "texte": "",
+   "recherche": [
+    "clock ticking close up",
+    "stopwatch close up"
+   ]
+  },
+  {
+   "id": "s071",
+   "texte": "Pendant que tu réfléchis : Black Friday, le jour des foules, c'est d'abord un mot de la police de Philadelphie.",
+   "recherche": [
+    "Philadelphia City Hall",
+    "Philadelphia downtown street",
+    "Philadelphia police"
+   ]
+  },
+  {
+   "id": "s072",
+   "texte": "En mille neuf cent soixante et un, elle appelle déjà ainsi ce vendredi de bouchons et de foule.",
+   "recherche": [
+    "Philadelphia 1960s street",
+    "traffic jam city crowd",
+    "crowded street shoppers"
+   ]
+  }
+ ]
+}

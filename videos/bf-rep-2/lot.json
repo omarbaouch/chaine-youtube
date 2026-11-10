@@ -1,0 +1,76 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s017",
+   "texte": "Pas un prix d'il y a deux ans : le plus bas du dernier mois.",
+   "recherche": [
+    "price tag gun labeling",
+    "shop assistant putting price tags",
+    "employee labeling products store"
+   ]
+  },
+  {
+   "id": "s018",
+   "texte": "Et si le vendeur enchaîne plusieurs remises, la référence reste le prix d'avant la première.",
+   "recherche": [
+    "discount price tag sticker",
+    "red sale price tag",
+    "price reduction label"
+   ]
+  },
+  {
+   "id": "s023",
+   "texte": "Donc le prix barré est vrai, la loi est respectée, et la promo est réelle ?",
+   "recherche": [
+    "man looking at smartphone surprised",
+    "surprised man reading phone",
+    "woman looking at phone confused"
+   ]
+  },
+  {
+   "id": "s025",
+   "texte": "Et ce petit détail, un aspirateur va te montrer comment on s'en sert.",
+   "recherche": [
+    "cordless stick vacuum cleaner",
+    "vacuum cleaner cleaning floor",
+    "stick vacuum close up"
+   ]
+  },
+  {
+   "id": "s026",
+   "texte": "",
+   "recherche": [
+    "online shopping laptop dark",
+    "laptop screen shopping night"
+   ]
+  },
+  {
+   "id": "s030",
+   "texte": "Pour répondre, il faut remonter à l'été deux mille vingt-cinq.",
+   "recherche": [
+    "summer city street sunny",
+    "sunny summer day street",
+    "summer sun sky"
+   ]
+  },
+  {
+   "id": "s037",
+   "texte": "Et attends, parce que ce n'est même pas le plus fort.",
+   "recherche": [
+    "comparing prices laptop",
+    "browsing online store laptop",
+    "laptop online shopping close up"
+   ]
+  },
+  {
+   "id": "s039",
+   "texte": "Sans prix barré, sans promo, juste à son prix normal.",
+   "recherche": [
+    "online store product page",
+    "smartphone browsing shop",
+    "tablet online shopping"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s040",
+   "texte": "Et ton casque, toujours dans ton panier ? Garde ce mécanisme en tête, on va y revenir.",
+   "recherche": [
+    "headphones on desk laptop",
+    "headphones next to laptop",
+    "headphones on table"
+   ]
+  },
+  {
+   "id": "s041",
+   "texte": "Parce qu'il existe une astuce encore plus simple, qui n'a même pas besoin de monter le prix.",
+   "recherche": [
+    "stainless steel refrigerator kitchen",
+    "modern fridge kitchen",
+    "refrigerator door open"
+   ]
+  },
+  {
+   "id": "s042",
+   "texte": "",
+   "recherche": [
+    "appliance store",
+    "home appliances shop"
+   ]
+  },
+  {
+   "id": "s049",
+   "texte": "Indice : l'U F C a regardé le prix de ce même frigo sur d'autres sites.",
+   "recherche": [
+    "price comparison website phone",
+    "scrolling smartphone shopping",
+    "woman shopping online phone"
+   ]
+  },
+  {
+   "id": "s056",
+   "texte": "Mais combien de sites, en Europe, vont plus loin que la faille ?",
+   "recherche": [
+    "european union flags",
+    "europe flag waving",
+    "eu flag building"
+   ]
+  },
+  {
+   "id": "s057",
+   "texte": "",
+   "recherche": [
+    "online shopping laptop night",
+    "shopping website laptop"
+   ]
+  },
+  {
+   "id": "s059",
+   "texte": "Les autorités de vingt-trois pays, plus l'Islande et la Norvège, ont épluché trois cent quatorze sites marchands.",
+   "recherche": [
+    "inspector checking laptop",
+    "people working computers office",
+    "team analyzing data screens"
+   ]
+  },
+  {
+   "id": "s060",
+   "texte": "C'était pendant le Black Friday et le Cyber Monday de deux mille vingt-cinq.",
+   "recherche": [
+    "woman shopping online laptop night",
+    "online shopping at night",
+    "person ordering online laptop"
+   ]
+  }
+ ]
+}

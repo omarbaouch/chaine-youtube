@@ -1,0 +1,76 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s003",
+   "texte": "Combien tu économises vraiment, toi,",
+   "recherche": [
+    "black over ear headphones close up",
+    "wireless headphones black studio",
+    "headphones product dark background"
+   ]
+  },
+  {
+   "id": "s004",
+   "texte": "si tu l'achètes à ce prix-là ?",
+   "recherche": [
+    "woman putting on headphones",
+    "man wearing black headphones",
+    "headphones on head close up"
+   ]
+  },
+  {
+   "id": "s007",
+   "texte": "Première devinette : à ce prix barré, il s'est vendu combien de temps ?",
+   "recherche": [
+    "calendar pages turning",
+    "wall calendar month close up",
+    "calendar flipping pages"
+   ]
+  },
+  {
+   "id": "s011",
+   "texte": "Garde ta réponse en tête, et imagine que ce casque, tu le veux.",
+   "recherche": [
+    "hand holding headphones",
+    "unboxing headphones",
+    "headphones in hands close up"
+   ]
+  },
+  {
+   "id": "s012",
+   "texte": "Il est dans ton panier, et ton doigt est sur le bouton payer.",
+   "recherche": [
+    "online shopping smartphone close up",
+    "finger tapping smartphone shopping app",
+    "shopping cart on phone screen"
+   ]
+  },
+  {
+   "id": "s013",
+   "texte": "Avant de payer, on vérifie ce prix barré, en commençant par la loi.",
+   "recherche": [
+    "credit card online payment laptop",
+    "paying online with credit card",
+    "hand holding credit card laptop"
+   ]
+  },
+  {
+   "id": "s014",
+   "texte": "",
+   "recherche": [
+    "price tags store shelf",
+    "supermarket price labels close up"
+   ]
+  },
+  {
+   "id": "s015",
+   "texte": "Depuis le vingt-huit mai deux mille vingt-deux, une règle encadre les prix barrés en France.",
+   "recherche": [
+    "supermarket aisle shopping",
+    "shoppers in supermarket aisle",
+    "grocery store shelves"
+   ]
+  }
+ ]
+}

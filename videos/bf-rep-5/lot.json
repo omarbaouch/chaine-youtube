@@ -1,0 +1,76 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s073",
+   "texte": "Aujourd'hui, la foule est dans ton téléphone, et la pression aussi.",
+   "recherche": [
+    "person shopping smartphone sofa",
+    "woman on phone couch night",
+    "scrolling phone on sofa"
+   ]
+  },
+  {
+   "id": "s075",
+   "texte": "Et dans plus de la moitié de ces cas, l'urgence affichée était trompeuse.",
+   "recherche": [
+    "hourglass sand time",
+    "sand timer close up",
+    "hourglass running out"
+   ]
+  },
+  {
+   "id": "s077",
+   "texte": "Et plus d'un sur trois essayait de glisser des options dans ton panier.",
+   "recherche": [
+    "online shopping cart laptop",
+    "adding to cart website",
+    "shopping basket online"
+   ]
+  },
+  {
+   "id": "s078",
+   "texte": "Dernier changement, tout neuf cette année : le paiement en trois ou quatre fois.",
+   "recherche": [
+    "contactless payment smartphone",
+    "paying with phone terminal",
+    "mobile payment hand"
+   ]
+  },
+  {
+   "id": "s079",
+   "texte": "À partir du vingt novembre, les règles du crédit à la consommation s'appliquent aussi à lui.",
+   "recherche": [
+    "credit card bills calculator",
+    "paying bills credit card",
+    "calculator and credit card"
+   ]
+  },
+  {
+   "id": "s080",
+   "texte": "Sa pub devra rappeler qu'un crédit coûte de l'argent et doit être remboursé.",
+   "recherche": [
+    "credit cards close up",
+    "stack of credit cards",
+    "wallet credit cards"
+   ]
+  },
+  {
+   "id": "s081",
+   "texte": "Alors, comment ne pas se faire avoir ? Trois réflexes, et on les teste sur ton casque.",
+   "recherche": [
+    "finger pressing buy button phone",
+    "hand hesitating phone purchase",
+    "thumb over smartphone screen"
+   ]
+  },
+  {
+   "id": "s082",
+   "texte": "",
+   "recherche": [
+    "magnifying glass",
+    "magnifying glass close up"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "titre": "repérage black friday",
+ "scenes": [
+  {
+   "id": "s083",
+   "texte": "Premier réflexe : un prix barré te montre au mieux le mois dernier, jamais les mois d'avant.",
+   "recherche": [
+    "price tag close up",
+    "price tag in store",
+    "label price close"
+   ]
+  },
+  {
+   "id": "s084",
+   "texte": "Va voir l'historique du prix sur plusieurs mois, des sites gratuits le tracent pour toi.",
+   "recherche": [
+    "line chart on laptop screen",
+    "graph on computer screen",
+    "chart data screen"
+   ]
+  },
+  {
+   "id": "s086",
+   "texte": "Troisième réflexe : compare avec au moins deux autres sites avant de cliquer.",
+   "recherche": [
+    "laptop online shop",
+    "tablet shopping website",
+    "phone shopping website"
+   ]
+  },
+  {
+   "id": "s093",
+   "texte": "Reste le réflexe un, le plus important : l'historique du prix sur plusieurs mois.",
+   "recherche": [
+    "magnifying glass on document",
+    "searching with magnifying glass",
+    "detective magnifying glass"
+   ]
+  },
+  {
+   "id": "s100",
+   "texte": "Mardi prochain : sur cent euros de ta facture d'électricité, combien paient vraiment le courant ?",
+   "recherche": [
+    "electricity meter close up",
+    "electric radiator home",
+    "power lines sunset"
+   ]
+  },
+  {
+   "id": "s101",
+   "texte": "Abonne-toi : chaque semaine, le vrai prix d'un truc que tu paies.",
+   "recherche": [
+    "light switch turning on",
+    "light bulb turning on",
+    "lamp switching on"
+   ]
+  }
+ ]
+}
