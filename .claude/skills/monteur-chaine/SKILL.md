@@ -366,3 +366,9 @@ annonces TeamYouTube / Creator Insider. Les sites d'agences (AIR, OutlierKit, vi
    le taux de clic ; 1 à 2 semaines. → Pour chaque vidéo, livrer 3 miniatures + 3 titres dans `videos/<slug>/_workspace/06_test_compare/`.
 3. **Hype** : seulement pour les chaînes du Programme Partenaire entre 500 et 500 000 abonnés, vidéos longues de moins de 7 jours.
    Palier intermédiaire visé : programme « étendu » (500 abonnés + 3 000 h ou 3 M vues Shorts), seuil inchangé en 2027.
+
+## Règle n°20 — Devinettes : jamais de « Réponse A » par défaut (erreur du 11/11/2026 sur Black Friday, signalée par Omar)
+Le schéma `devine` affichait « Réponse A » quand le champ `bonne` manquait : les 5 devinettes de Black Friday donnaient une fausse
+réponse à l'écran. Corrigé dans `src/motion/Schemas.tsx` : sans `bonne`, rien ne s'allume (la réponse vient plus tard dans la vidéo).
+- Si la réponse est donnée dans le même plan : mettre `"bonne": <index 0-2>` et vérifier sur la planche que la case allumée est la bonne.
+- Contrôle qualité obligatoire : regarder l'image de FIN de chaque plan `devine` (pas seulement le milieu) avant de publier.

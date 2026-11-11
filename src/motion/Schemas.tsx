@@ -365,7 +365,9 @@ const Devine: React.FC<{s: Extract<Schema, {type: 'devine'}>; l: number; duree: 
   const enCours = f >= t0 && f < tRev;
   const tick = (f - t0) % fps;
   const pouls = enCours ? 1 + 0.12 * Math.exp(-tick / 5) : 1;
-  const revele = f >= tRev;
+  // Sans `bonne`, la réponse n'est PAS donnée ici (elle arrive plus tard dans la vidéo) : rien ne s'allume, pas de « Réponse X ».
+  const aReponse = s.bonne !== undefined;
+  const revele = aReponse && f >= tRev;
   const lettres = ['A', 'B', 'C', 'D'];
   return (
     <div style={{width: l, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -391,12 +393,12 @@ const Devine: React.FC<{s: Extract<Schema, {type: 'devine'}>; l: number; duree: 
         {enCours ? (
           <div style={{width: 140, height: 140, borderRadius: 70, border: `6px solid ${C.heros}`, display: 'flex', alignItems: 'center', justifyContent: 'center',
             transform: `scale(${pouls})`, fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 84, color: C.heros}}>{reste}</div>
-        ) : f < t0 ? null : (
+        ) : f < t0 || !aReponse ? null : (
           <div style={{fontFamily: theme.polices.titre, fontWeight: 900, fontSize: 56, color: C.heros}}>Réponse {lettres[s.bonne ?? 0]}</div>
         )}
       </div>
       {Array.from({length: sec}).map((_, k) => <Bruit key={k} nom="tick" a={t0 + k * fps} volume={0.5} />)}
-      <Bruit nom="impact" a={tRev} volume={0.55} />
+      {aReponse ? <Bruit nom="impact" a={tRev} volume={0.55} /> : null}
     </div>
   );
 };
