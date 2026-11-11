@@ -106,13 +106,23 @@ def sauver(im, nom):
     im.save(os.path.join(OUT, nom))
 
 
+ENTETES = {"ufc": ("ufc_bf2025_0.png", (396, 236, 1100, 310)), "ue": ("commission_ue_0.png", (220, 296, 1740, 432))}
+
+
 def preuve(nom_sortie, capture, boite, titre=None, hl=(), flou=(), caches=(), stamp=None, chips=None, lmax=1840, hmax=860, cx=None):
     src = preparer(capture, hl, flou, caches)
     base = fond(cap(capture).crop(boite))
     if chips is not None:
         lmax, cx = 1300, 730
     c, m = papier(src, boite, lmax, hmax)
-    poser(base, c, m, cx or W // 2)
+    bande = c.height < 420 and titre is not None
+    if bande:  # une bande de texte seule flotte dans le vide : on pose le titre du document au-dessus
+        e = ENTETES["ue" if "europ" in titre.lower() else "ufc"]
+        ce, me = papier(cap(e[0]), e[1], 1300, 230, 18)
+        poser(base, ce, me, W // 2, 300)
+        poser(base, c, m, W // 2, 300 + ce.height // 2 + 70 + c.height // 2)
+    else:
+        poser(base, c, m, cx or W // 2)
     if titre:
         bandeau(base, titre)
     if chips is not None:
@@ -199,15 +209,17 @@ preuve("ue_10.png", UE, (296, 970, 1250, 1040), titre="Commission européenne, 2
 preuve("signalconso.png", "signalconso_0.png", (300, 20, 1640, 900))
 
 
+BASE = 760  # sous cette ligne : zone des sous-titres
+
+
 # ── Graphiques qui se construisent ────────────────────────────────────────────
 def axes(d, titre, source):
     d.text((110, 90), titre, font=F(60), fill=BLANC, anchor="lm")
-    d.line((180, 880, 1780, 880), fill=GRIS, width=4)
-    d.text((110, 1010), "Source : " + source, font=F(28, False), fill=GRIS, anchor="lm")
+    d.line((180, BASE, 1780, BASE), fill=GRIS, width=4)
 
 
 def y_de(v, vmax):
-    return 880 - int(640 * v / vmax)
+    return BASE - int(520 * v / vmax)
 
 
 # Faille des 30 jours : l'aspirateur (279 € en juillet, 399 € barré, 249 € le jour J)
@@ -219,8 +231,8 @@ for etape in range(1, 6):
     axes(d, "Aspirateur Dyson V8 Advanced, chez Boulanger", "UFC-Que Choisir, 26/11/2025")
     n = min(etape, 4)
     if etape >= 3:  # fenêtre légale des 30 jours
-        d.rounded_rectangle((1010, 200, 1790, 878), 18, fill=(30, 40, 52))
-        d.text((1400, 846), "LES 30 JOURS QUE REGARDE LA LOI", font=F(32), fill=BLEU, anchor="mm")
+        d.rounded_rectangle((1010, 170, 1790, BASE - 2), 18, fill=(30, 40, 52))
+        d.text((1400, BASE - 44), "LES 30 JOURS QUE REGARDE LA LOI", font=F(32), fill=BLEU, anchor="mm")
     xy = [(XS[i], y_de(PTS[i][1], 440)) for i in range(n)]
     if len(xy) > 1:
         d.line(xy, fill=BLANC, width=10, joint="curve")
@@ -229,7 +241,7 @@ for etape in range(1, 6):
         d.ellipse((x - 20, y - 20, x + 20, y + 20), fill=ORANGE if heros else BLANC)
         lab = f"{PTS[i][1]} €" + (" barré" if i == 2 else "")
         d.text((x, y - 62), lab, font=F(64), fill=ORANGE if heros else BLANC, anchor="mm")
-        d.text((x, 925), PTS[i][0], font=F(34), fill=GRIS, anchor="mm")
+        d.text((x, BASE + 40), PTS[i][0], font=F(34), fill=GRIS, anchor="mm")
     if etape >= 4:
         d.text((1620, y_de(249, 440) + 70), "affiché −38 %", font=F(44), fill=ROUGE, anchor="mm")
     if etape == 5:
@@ -250,10 +262,11 @@ for k, visibles in enumerate(ORDRE, 1):
         x = 330 + i * 520
         if i in visibles:
             y = y_de(v, 440)
-            d.rounded_rectangle((x, y, x + 300, 878), 14, fill=coul)
+            d.rounded_rectangle((x, y, x + 300, BASE - 2), 14, fill=coul)
             d.text((x + 150, y - 60), (f"{v:.2f}".replace(".", ",") if v % 1 else str(int(v))) + " €", font=F(84), fill=coul, anchor="mm")
-        d.text((x + 150, 925), lab if i in visibles else "?", font=F(34), fill=GRIS, anchor="mm")
+        d.text((x + 150, BASE + 40), lab if i in visibles else "?", font=F(34), fill=GRIS, anchor="mm")
     if k == 1:
-        d.text((960, 190), "Hausse du prix en septembre", font=F(52), fill=ROUGE, anchor="mm")
+        d.text((1180, 440), "Hausse du prix", font=F(50), fill=ROUGE, anchor="lm")
+        d.text((1180, 500), "en septembre", font=F(50), fill=ROUGE, anchor="lm")
     sauver(im, f"chrono{k}.png")
 print(len(os.listdir(OUT)), "visuels")
