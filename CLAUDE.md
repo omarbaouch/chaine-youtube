@@ -156,7 +156,7 @@ Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/et
 des sujets, règles Shorts → abonnés).
 
 ## Prochaine vidéo (mise à jour du 11/11/2026)
-**Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/QtigLx-W-yE (6 min 56, « Black Friday : −53 % affichés,
+**Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/4tQfKevyzCM (version corrigée, la 1re QtigLx-W-yE est en privé : devinettes fausses ; 6 min 56, « Black Friday : −53 % affichés,
 combien en vrai ? »). Montage : `videos/black-friday/_workspace/montage_src.py` + `choix_rushes.json` ; visuels « preuve à l'écran »
 (vraies captures UFC / Commission européenne, surligneur, caches « ? ») : `videos/black-friday/_workspace/visuels.py`. Ne pas la refaire.
 - À faire ensuite : Shorts Black Friday (chacun finit sur une question que la vidéo tranche, règle n°17) ; nouvelles miniatures
