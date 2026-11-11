@@ -155,23 +155,15 @@ de `monteur-chaine`. Plus de Metricool (décision d'Omar du 03/11/2026). Statist
 Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/etude-marche.md` (positionnement, calendrier
 des sujets, règles Shorts → abonnés).
 
-## Prochaine vidéo (décision d'Omar du 09/11/2026)
-Vidéo du mardi 10/11/2026 : **le Black Friday** (slug `black-friday`), mise en ligne le jour même à 18 h. L'essence est déjà
-sortie le 04/11 ; l'électricité / le chauffage passe au 17/11.
-- Le sujet n'est PAS déjà fait : `videos/black-friday/` ne contient que le brief, la recherche, le script et les médias
-  (`_workspace/`, `medias/`). Pas de montage ni de vidéo. Partir de ces livrables, ne pas les refaire de zéro.
-- Pourquoi lui : c'est le seul sujet à venir avec une vraie vague de recherche (Black Friday le 27/11), et le cacao (sujet
-  d'actualité) est la seule vidéo que YouTube a vraiment montrée (3 555 impressions contre 357 à 585 pour les autres).
-- Le script date du 07/11 : le remettre aux règles n°16 à 18 avant le montage. Image 0 = l'image de la miniature, 1re phrase =
-  la question de la miniature, pas d'annonce de plan (« dans cette vidéo, je te montre… ») ni de carte titre avant 30 s,
-  une image nouvelle toutes les 2 s jusqu'à 15 s. Durée 8 à 10 min sans remplissage.
-- Ouverture (règle n°16, 5 quinquies, constats du 09/11) : de 0 à 30 s, uniquement des images réelles plein écran qui montrent
-  ce que dit la voix (la vraie capture UFC-Que Choisir du casque, pas un rush générique) ; aucun panneau « SCHÉMA » sombre,
-  aucun chiffre-réponse à l'écran (le « −27 % » reste caché jusqu'à sa révélation), aucune pièce dorée ni image étrangère.
-- Revérifier chaque chiffre à la source le jour même (UFC-Que Choisir, Commission européenne, DGCCRF). Ton factuel, pas militant.
-- Miniature et titre faits AVANT le montage, 3 variantes, vérifiées à 168 px de large (règle n°16, 5 ter).
-- Shorts : seulement après la sortie de la vidéo longue, chacun finit sur une question que la vidéo tranche (règle n°17).
-- Proposer à Omar d'enregistrer l'accroche (30 s) avec sa voix au téléphone (règle n°17, point 6).
+## Prochaine vidéo (mise à jour du 11/11/2026)
+**Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/QtigLx-W-yE (6 min 56, « Black Friday : −53 % affichés,
+combien en vrai ? »). Montage : `videos/black-friday/_workspace/montage_src.py` + `choix_rushes.json` ; visuels « preuve à l'écran »
+(vraies captures UFC / Commission européenne, surligneur, caches « ? ») : `videos/black-friday/_workspace/visuels.py`. Ne pas la refaire.
+- À faire ensuite : Shorts Black Friday (chacun finit sur une question que la vidéo tranche, règle n°17) ; nouvelles miniatures
+  capsule (0,5 % de clics) et cacao (1,35 %), accord d'Omar du 11/11 ; relever le taux de clic de Black Friday à 48-72 h.
+- Vidéo suivante, annoncée à la fin de Black Friday : **l'électricité** (« sur 100 € de ta facture, combien paient vraiment le
+  courant ? »), mardi 17/11/2026. Même méthode : preuves réelles à l'écran dès l'image 0, aucune réponse avant sa révélation.
+- Proposer à Omar d'enregistrer l'accroche (30 s) avec sa voix au téléphone (règle n°17, point 6) ; test T7 toujours en attente.
 Omar n'a pas d'ordinateur : ne rien lui demander qui exige un PC (Test & Compare : via « version pour ordinateur »
 du navigateur du téléphone seulement si nécessaire).
 
