@@ -9,7 +9,7 @@ Seuil de décision : au moins 3 Shorts par variante, sinon « à confirmer ».
 | T1 | 04/11 | Le plein écran vertical retient mieux que la vidéo longue recadrée sur fond flou | Découpé : cx85sBqr0uo (7 vues/13 h), jGXkavzo0zU (5/12 h) | Plein écran : HoJhClpTWE4 essence (32/2 h, 84/5 h), pL592TRDLqY chocolat planteur (94/2 h) | Même sujet (chocolat) : 94 vues en 2 h contre 7-8 en 15 h | **Plein écran gagne** : plus de découpe sur fond flou |
 | T2 | 04/11 | Carte d'accroche géante + voix dès 0 s + impact = moins de balayages | Sans carte : lot 1 (essence, iPhone, capsules, cigarettes, jean) | Avec carte : prochains Shorts (essence e01-e06, chocolat b-c02…) | 05/11 8 h : 1 seul Short avec carte en ligne (baril baisse dyXoRT_LJgs : 12 vues en 1 h). Sans carte à ~24 h : plein 173, iPhone 210 (20 h), capsules 910 (13 h). **À confirmer** (3 Shorts avec carte d'ici le 06/11) ; il faudra le % « ont continué de regarder » | |
 | T3 | 04/11 | Les sujets « porte-monnaie de tous les jours » battent les sujets lointains | Pain, essence | Chocolat, meunier | Pain 656/425/340 vues ; chocolat découpé < 10, mais chocolat plein écran 94 en 2 h : l'écart venait surtout du format | À retester, format égal (plein écran des deux côtés). 05/11 : plein écran porte-monnaie = capsules 910 (13 h), plein 173 (25 h), État/baguette 164 (21 h), boulanger 68 (15 h) ; lointain = planteur 668 (22 h), Pâques 86 (18 h). Écart énorme d'un Short à l'autre dans chaque camp : **à confirmer** |
-| T5 | 09/11 | Le prix payé dans le titre et la carte d'accroche (un chiffre que tu connais) fait moins balayer qu'une question sans chiffre | A = question sans chiffre : lait, steak, beurre, FDJ, eau, cinéma, soda (« Ta brique de lait : qui garde l'argent ? ») | B = prix payé en tête : jambon 14,58 €, pâtes 95 c, Doliprane 2,18 €, lunettes 300 €, encre 17,95 €, livre 20 €, timbre 1,52 € (« Ton livre à 20 € : combien pour l'auteur ? ») | 09/11 9 h : aucun Short du lot 2 en ligne (1er le 12/11 8 h). **À confirmer** : relevé à 24 h dès le 13/11, conclusion à 72 h le 16-19/11. 10/11 9 h : toujours aucun Short du lot 2 en ligne (9 programmés en privé, 1er le 12/11 8 h) : **à confirmer** | |
+| T5 | 09/11 | Le prix payé dans le titre et la carte d'accroche (un chiffre que tu connais) fait moins balayer qu'une question sans chiffre | A = question sans chiffre : lait, steak, beurre, FDJ, eau, cinéma, soda (« Ta brique de lait : qui garde l'argent ? ») | B = prix payé en tête : jambon 14,58 €, pâtes 95 c, Doliprane 2,18 €, lunettes 300 €, encre 17,95 €, livre 20 €, timbre 1,52 € (« Ton livre à 20 € : combien pour l'auteur ? ») | 09/11 9 h : aucun Short du lot 2 en ligne (1er le 12/11 8 h). **À confirmer** : relevé à 24 h dès le 13/11, conclusion à 72 h le 16-19/11. 10/11 9 h : toujours aucun Short du lot 2 en ligne (9 programmés en privé, 1er le 12/11 8 h) : **à confirmer** 11/11 9 h : idem, 9 en privé programmé (pâtes B le 12/11 8 h, lait A le 12/11 13 h) : **à confirmer** | |
 
 Repère : engagement Shorts de la chaîne au 04/11 = 24,4 % ont continué de regarder (objectif ≥ 60 %).
 
@@ -86,4 +86,16 @@ Relevé du 10/11 9 h 16 Paris (stats relancées) : **13 abonnés (+0 depuis le 0
 - **T7** : en attente des 3 voix et 3 plans d'Omar.
 - Correction : commentaire épinglé du Short « tasse à 10 c » (public à 8 h) resté « en attente » → workflow Publier relancé, commentaire posté. Toutes les autres
   fiches de `publications/fait/` ont réussi (les 4 Shorts café restants et les 9 du lot 2 sont en privé programmé ; vieux refus 409 de playlist inchangés).
+  Aucune inversion d'horaires : aucune variante clairement perdante.
+
+Relevé du 11/11 9 h 15 Paris (stats relancées) : **13 abonnés (+0, 3e jour sans abonné)**, 10 394 vues (+207 depuis 10 187 le 10/11 9 h 16).
+- Meilleur Short d'hier (publiés le 10/11) : « Ton café à 10 centimes la tasse » bM7SiBBigNk, **89 vues en ~25 h** (mieux que les 34 max de la veille,
+  mais toujours loin des 100-600 d'avant le 08/11). « Combien vaut le café dans ta capsule ? » 7yk3_5zZXeY : 12 vues en ~21 h. Analytics (% regardé, Restés) pas encore là.
+- Shorts du 09/11 à ~48 h : cacao fermente 45, Spotify 44, État/capsule 36 (Restés 100 % sur 36 vues, non significatif), inventeur 24, compatibles 23, électricité 13.
+  La distribution reste coupée : aucun Short récent n'atteint 100 vues, donc pas de « Restés » exploitable.
+- **T6** à ~40 h : Spotify (A, mixed media) 44 vues contre électricité (B, animation) 13. 1 Short par variante : **à confirmer** (il faut 3 par variante).
+- **T5** : rien en ligne avant le 12/11. **T7** : toujours en attente des 3 voix et 3 plans d'Omar.
+- Correction : commentaire épinglé du Short « Le café a doublé : les producteurs sont riches ? » aLZl-k4CICE (public à 8 h) resté « en attente »
+  (le cron horaire de Publier ne tourne en réalité que toutes les ~6 h) → workflow Publier relancé, commentaire posté. Restent en attente, normalement :
+  café 12 h 30 et 18 h aujourd'hui + les 9 du lot 2. Toutes les autres fiches de `publications/fait/` ont réussi (vieux refus 409 de playlist inchangés).
   Aucune inversion d'horaires : aucune variante clairement perdante.
