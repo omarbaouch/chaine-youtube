@@ -1,0 +1,1319 @@
+{
+ "titre": "Black Friday : les fausses promos",
+ "format": {
+  "largeur": 1920,
+  "hauteur": 1080,
+  "fps": 30
+ },
+ "transition_defaut": "coupe",
+ "duree_transition": 8,
+ "voix": {
+  "moteur": "edge",
+  "locuteur": "fr-FR-VivienneMultilingualNeural",
+  "debit": "+6%",
+  "debit_continu": "+6%",
+  "pause_phrase": 0.15
+ },
+ "musique": {
+  "fichier": "../../public/sfx/musique-enquete.wav",
+  "volume": 0.2
+ },
+ "etalonnage": {
+  "contraste": 1.06,
+  "saturation": 1.08,
+  "luminosite": 1
+ },
+ "grain": true,
+ "sous_titres": {
+  "actifs": true,
+  "mots_par_ligne": 4
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "format": "rush",
+   "texte": "Moins cinquante-trois pour cent sur ce casque,",
+   "fichier": "medias/casque_q.png",
+   "zoom": "avant",
+   "ambiance": "tension",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025 (relevé de l'annonce)"
+    }
+   ]
+  },
+  {
+   "id": "s002",
+   "format": "rush",
+   "texte": "c'est une vraie promo ?",
+   "fichier": "medias/casque_53.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 0.5,
+    "texte": "VRAIE PROMO ?"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.5,
+     "volume": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s003",
+   "format": "rush",
+   "texte": "Combien tu économises vraiment, toi,",
+   "media_ref": "pi:9401018"
+  },
+  {
+   "id": "s004",
+   "format": "rush",
+   "texte": "si tu l'achètes à ce prix-là ?",
+   "media_ref": "pv:161062"
+  },
+  {
+   "id": "s005",
+   "format": "rush",
+   "texte": "Ce prix barré, trois cent quatre-vingt-dix-neuf euros quatre-vingt-quinze,",
+   "fichier": "medias/casque_barre.png",
+   "zoom": "arriere"
+  },
+  {
+   "id": "s006",
+   "format": "rush",
+   "texte": "est parfaitement légal.",
+   "fichier": "medias/casque_legal.png",
+   "zoom": "avant",
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.3,
+     "volume": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s007",
+   "format": "rush",
+   "texte": "Première devinette : à ce prix barré, il s'est vendu combien de temps ?",
+   "media_ref": "pi:660670"
+  },
+  {
+   "id": "s008",
+   "format": "rush",
+   "texte": "Jamais,",
+   "fichier": "medias/casque_d1.png",
+   "zoom": "aucun",
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.1,
+     "volume": 0.35
+    }
+   ]
+  },
+  {
+   "id": "s009",
+   "format": "rush",
+   "texte": "pendant un seul jour,",
+   "fichier": "medias/casque_d2.png",
+   "zoom": "aucun",
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.1,
+     "volume": 0.35
+    }
+   ]
+  },
+  {
+   "id": "s010",
+   "format": "rush",
+   "texte": "ou pendant un mois entier ?",
+   "fichier": "medias/casque_d3.png",
+   "zoom": "avant",
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.1,
+     "volume": 0.35
+    }
+   ],
+   "duree_min": 2.4
+  },
+  {
+   "id": "s011",
+   "format": "rush",
+   "texte": "Garde ta réponse en tête, et imagine que ce casque, tu le veux.",
+   "media_ref": "pi:2591092"
+  },
+  {
+   "id": "s012",
+   "format": "rush",
+   "texte": "Il est dans ton panier, et ton doigt est sur le bouton payer.",
+   "media_ref": "pi:4516037"
+  },
+  {
+   "id": "s013",
+   "format": "rush",
+   "texte": "Avant de payer, on vérifie ce prix barré, en commençant par la loi.",
+   "media_ref": "pi:2607114"
+  },
+  {
+   "id": "s014",
+   "format": "titre",
+   "type": "titre",
+   "numero": "01",
+   "titre": "Prix barré : c'est légal ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "ambiance": "enquete",
+   "media_ref": "pi:4052658"
+  },
+  {
+   "id": "s015",
+   "format": "ecran_partage",
+   "texte": "Depuis le vingt-huit mai deux mille vingt-deux, une règle encadre les prix barrés en France.",
+   "schema": {
+    "type": "liste",
+    "titre": "La règle des prix barrés",
+    "elements": [
+     {
+      "texte": "En vigueur depuis le",
+      "valeur": "28 mai 2022",
+      "heros": true
+     },
+     {
+      "texte": "Texte",
+      "valeur": "Code de la conso, L112-1-1"
+     }
+    ],
+    "source": "Code de la consommation, art. L112-1-1"
+   },
+   "cote": "gauche",
+   "etiquette_schema": "La loi",
+   "media_ref": "pv:1887"
+  },
+  {
+   "id": "s016",
+   "format": "schema",
+   "texte": "Le prix barré doit être le prix le plus bas pratiqué ces trente derniers jours.",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 30,
+    "suffixe": " jours",
+    "legende": "Prix barré = le prix le plus bas des 30 derniers jours",
+    "comparaison": "Pour tous les clients, chez ce vendeur",
+    "source": "Code de la consommation, art. L112-1-1"
+   },
+   "etiquette_schema": "La règle des 30 jours"
+  },
+  {
+   "id": "s017",
+   "format": "rush",
+   "texte": "Pas un prix d'il y a deux ans : le plus bas du dernier mois.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "LE PLUS BAS DU MOIS",
+     "heros": "DU MOIS",
+     "position": "haut",
+     "a": 0.3
+    }
+   ],
+   "media_ref": "pi:1813143"
+  },
+  {
+   "id": "s018",
+   "format": "ecran_partage",
+   "texte": "Et si le vendeur enchaîne plusieurs remises, la référence reste le prix d'avant la première.",
+   "schema": {
+    "type": "processus",
+    "titre": "Promos en cascade",
+    "etapes": [
+     "Prix d'avant",
+     "1re remise",
+     "2e remise"
+    ],
+    "actif": 0,
+    "source": "Code de la consommation, art. L112-1-1"
+   },
+   "cote": "droite",
+   "etiquette_schema": "Remises successives",
+   "media_ref": "pv:993"
+  },
+  {
+   "id": "s019",
+   "format": "rush",
+   "texte": "Alors, ce casque, il a vraiment été vendu trois cent quatre-vingt-dix-neuf euros quatre-vingt-quinze ?",
+   "fichier": "medias/casque_prix.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s020",
+   "format": "rush",
+   "texte": "Réponse à la première devinette : un mois entier, tout le mois avant la promo.",
+   "fichier": "medias/casque_mois.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 2.0,
+    "texte": "1 MOIS"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 2.0,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s021",
+   "format": "rush",
+   "texte": "C'est l'U F C Que Choisir qui l'a relevé, pour le Black Friday deux mille vingt-cinq.",
+   "fichier": "medias/ufc_titre.png",
+   "zoom": "arriere"
+  },
+  {
+   "id": "s022",
+   "format": "rush",
+   "texte": "À chaque Black Friday, son observatoire part à la pêche aux fausses promos sur internet.",
+   "fichier": "medias/ufc_peche.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s023",
+   "format": "rush",
+   "texte": "Donc le prix barré est vrai, la loi est respectée, et la promo est réelle ?",
+   "media_ref": "pv:142641"
+  },
+  {
+   "id": "s024",
+   "format": "schema",
+   "texte": "Pas si vite, parce que la loi regarde trente jours en arrière, et pas un de plus.",
+   "schema": {
+    "type": "processus",
+    "titre": "Ce que la loi regarde",
+    "etapes": [
+     "Juillet",
+     "Septembre",
+     "Les 30 derniers jours"
+    ],
+    "actif": 2,
+    "source": "Code de la consommation, art. L112-1-1"
+   },
+   "etiquette_schema": "La fenêtre de 30 jours"
+  },
+  {
+   "id": "s025",
+   "format": "rush",
+   "texte": "Et ce petit détail, un aspirateur va te montrer comment on s'en sert.",
+   "media_ref": "wc:File:Dyson Cyclone V10 Absolute cordless stick vacuum.jpg"
+  },
+  {
+   "id": "s026",
+   "format": "titre",
+   "type": "titre",
+   "numero": "02",
+   "titre": "Une fausse promo peut-elle être légale ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "media_ref": "pi:4849055"
+  },
+  {
+   "id": "s027",
+   "format": "rush",
+   "texte": "Même Black Friday, chez Boulanger : un aspirateur balai Dyson V huit Advanced.",
+   "fichier": "medias/aspi_q.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s028",
+   "format": "rush",
+   "texte": "Affiché deux cent quarante-neuf euros au lieu de trois cent quatre-vingt-dix-neuf, soit moins trente-huit pour cent.",
+   "fichier": "medias/aspi_38.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s029",
+   "format": "schema",
+   "texte": "À ton avis, la vraie réduction : moins trente, moins vingt, ou moins onze pour cent ?",
+   "schema": {
+    "type": "devine",
+    "question": "La vraie réduction ?",
+    "choix": [
+     "−30 %",
+     "−20 %",
+     "−11 %"
+    ],
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.2,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s030",
+   "format": "rush",
+   "texte": "Pour répondre, il faut remonter à l'été deux mille vingt-cinq.",
+   "media_ref": "pi:2466207"
+  },
+  {
+   "id": "s031",
+   "format": "rush",
+   "texte": "En juillet, cet aspirateur se vendait deux cent soixante-dix-neuf euros.",
+   "fichier": "medias/faille1.png",
+   "zoom": "aucun"
+  },
+  {
+   "id": "s032",
+   "format": "rush",
+   "texte": "Puis, en octobre, son prix grimpe nettement, juste avant la saison des promos.",
+   "fichier": "medias/faille2.png",
+   "zoom": "aucun",
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.6,
+     "volume": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s033",
+   "format": "rush",
+   "texte": "En novembre, c'est ce prix gonflé qui sert de prix barré.",
+   "fichier": "medias/faille3.png",
+   "zoom": "aucun"
+  },
+  {
+   "id": "s034",
+   "format": "rush",
+   "texte": "Le jour J, on le baisse, et on affiche un gros pourcentage, calculé depuis ce prix gonflé.",
+   "fichier": "medias/faille4.png",
+   "zoom": "aucun"
+  },
+  {
+   "id": "s035",
+   "format": "rush",
+   "texte": "Mais regarde la ligne en pointillés : c'est le prix de juillet.",
+   "fichier": "medias/faille5.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s036",
+   "format": "rush",
+   "texte": "Par rapport à ce prix-là, la vraie réduction, c'est moins onze pour cent.",
+   "fichier": "medias/aspi_revele.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 2.3,
+    "texte": "−11 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 2.3,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s037",
+   "format": "rush",
+   "texte": "Et attends, parce que ce n'est même pas le plus fort.",
+   "media_ref": "pv:10822"
+  },
+  {
+   "id": "s038",
+   "format": "rush",
+   "texte": "Au même moment, au moins dix autres sites le vendaient déjà deux cent quarante-neuf euros.",
+   "fichier": "medias/aspi_10sites.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s039",
+   "format": "mosaique",
+   "texte": "Sans prix barré, sans promo, juste à son prix normal.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "249 € SANS REMISE",
+     "heros": "SANS REMISE",
+     "position": "haut",
+     "a": 0.4
+    }
+   ],
+   "medias": [
+    {
+     "media_ref": "pv:130652",
+     "legende": "Site 1"
+    },
+    {
+     "media_ref": "pi:6795505",
+     "legende": "Site 2"
+    },
+    {
+     "media_ref": "pi:7584887",
+     "legende": "Site 3"
+    }
+   ]
+  },
+  {
+   "id": "s040",
+   "format": "rush",
+   "texte": "Et ton casque, toujours dans ton panier ? Garde ce mécanisme en tête, on va y revenir.",
+   "media_ref": "pi:1483974"
+  },
+  {
+   "id": "s041",
+   "format": "rush",
+   "texte": "Parce qu'il existe une astuce encore plus simple, qui n'a même pas besoin de monter le prix.",
+   "media_ref": "pi:3564506"
+  },
+  {
+   "id": "s042",
+   "format": "titre",
+   "type": "titre",
+   "numero": "03",
+   "titre": "« Prix conseillé » : vraie réduction ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "media_ref": "pi:5835289"
+  },
+  {
+   "id": "s043",
+   "format": "rush",
+   "texte": "Chez Rakuten, un réfrigérateur Haier affiché mille cinq cent quarante-neuf euros.",
+   "fichier": "medias/frigo_q.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s044",
+   "format": "rush",
+   "texte": "Le prix barré : mille sept cent quatre-vingt-dix-neuf euros, soit moins treize pour cent.",
+   "fichier": "medias/frigo_13.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s045",
+   "format": "rush",
+   "texte": "Sauf que ce prix barré, c'est un prix conseillé, celui suggéré par le fabricant.",
+   "fichier": "medias/frigo_conseille.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s046",
+   "format": "schema",
+   "texte": "Et selon l'U F C Que Choisir, ce prix-là échappe à la règle des trente jours.",
+   "schema": {
+    "type": "liste",
+    "titre": "La règle des 30 jours",
+    "elements": [
+     {
+      "texte": "Prix barré",
+      "valeur": "oui"
+     },
+     {
+      "texte": "Prix conseillé",
+      "valeur": "non",
+      "heros": true
+     }
+    ],
+    "source": "UFC-Que Choisir, 26/11/2025"
+   },
+   "etiquette_schema": "Qui échappe à la règle"
+  },
+  {
+   "id": "s047",
+   "format": "rush",
+   "texte": "Officiellement, ce prix est juste là pour t'informer, mais tout est fait pour ressembler à une promo.",
+   "fichier": "medias/frigo_30j.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s048",
+   "format": "schema",
+   "texte": "Alors, la vraie réduction sur ce frigo : moins treize, moins cinq, ou zéro pour cent ?",
+   "schema": {
+    "type": "devine",
+    "question": "La vraie réduction ?",
+    "choix": [
+     "−13 %",
+     "−5 %",
+     "0 %"
+    ],
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.2,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s049",
+   "format": "rush",
+   "texte": "Indice : l'U F C a regardé le prix de ce même frigo sur d'autres sites.",
+   "media_ref": "pv:47743"
+  },
+  {
+   "id": "s050",
+   "format": "rush",
+   "texte": "Depuis des mois, ailleurs, il se vendait déjà autour de mille cinq cents euros.",
+   "fichier": "medias/frigo_1500.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s051",
+   "format": "rush",
+   "texte": "Réduction réelle selon l'U F C : zéro pour cent, il était même un peu moins cher ailleurs.",
+   "fichier": "medias/frigo_revele.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 1.6,
+    "texte": "0 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 1.6,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s052",
+   "format": "rush",
+   "texte": "Et chez Cdiscount, l'U F C parle carrément du roi du prix de comparaison.",
+   "fichier": "medias/cdiscount_titre.png",
+   "zoom": "arriere"
+  },
+  {
+   "id": "s053",
+   "format": "rush",
+   "texte": "Le principe : afficher de beaux rabais, sans vraiment baisser les prix.",
+   "fichier": "medias/cdiscount_rabais.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s054",
+   "format": "schema",
+   "texte": "Comparer avec le prix d'un autre vendeur, c'est la même brèche : pas de règle des trente jours.",
+   "schema": {
+    "type": "liste",
+    "titre": "Hors règle des 30 jours",
+    "elements": [
+     {
+      "texte": "Prix conseillé",
+      "valeur": "hors règle"
+     },
+     {
+      "texte": "Prix de comparaison",
+      "valeur": "hors règle",
+      "heros": true
+     }
+    ],
+    "source": "Code de la consommation, art. L112-1-1 ; UFC-Que Choisir, 26/11/2025"
+   },
+   "etiquette_schema": "La brèche"
+  },
+  {
+   "id": "s055",
+   "format": "mosaique",
+   "texte": "Trois sites, trois façons d'afficher une remise plus grosse que la vraie.",
+   "medias": [
+    {
+     "fichier": "medias/mos_casque.png",
+     "legende": "Le casque"
+    },
+    {
+     "fichier": "medias/mos_aspi.png",
+     "legende": "L'aspirateur"
+    },
+    {
+     "fichier": "medias/mos_frigo.png",
+     "legende": "Le frigo"
+    }
+   ]
+  },
+  {
+   "id": "s056",
+   "format": "rush",
+   "texte": "Mais combien de sites, en Europe, vont plus loin que la faille ?",
+   "media_ref": "pv:20999"
+  },
+  {
+   "id": "s057",
+   "format": "titre",
+   "type": "titre",
+   "numero": "04",
+   "titre": "Combien de promos sont fausses ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "media_ref": "pi:3692440"
+  },
+  {
+   "id": "s058",
+   "format": "rush",
+   "texte": "En mars deux mille vingt-six, la Commission européenne a publié un grand contrôle des promos en ligne.",
+   "fichier": "medias/ue_titre.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s059",
+   "format": "rush",
+   "texte": "Les autorités de vingt-trois pays, plus l'Islande et la Norvège, ont épluché trois cent quatorze sites marchands.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "314 SITES",
+     "heros": "314",
+     "position": "haut",
+     "a": 2.5
+    }
+   ],
+   "media_ref": "pv:273921"
+  },
+  {
+   "id": "s060",
+   "format": "rush",
+   "texte": "C'était pendant le Black Friday et le Cyber Monday de deux mille vingt-cinq.",
+   "media_ref": "pv:1006"
+  },
+  {
+   "id": "s061",
+   "format": "schema",
+   "texte": "Devine combien affichaient des réductions incorrectes : un sur dix, trois sur dix, ou cinq sur dix ?",
+   "schema": {
+    "type": "devine",
+    "question": "Réductions incorrectes ?",
+    "choix": [
+     "1 sur 10",
+     "3 sur 10",
+     "5 sur 10"
+    ],
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.2,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s062",
+   "format": "rush",
+   "texte": "Une réduction correcte, je te rappelle, part du prix le plus bas des trente derniers jours.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "30 JOURS",
+     "heros": "30",
+     "position": "haut",
+     "a": 1.0
+    }
+   ],
+   "media_ref": "pi:1813135"
+  },
+  {
+   "id": "s063",
+   "format": "rush",
+   "texte": "Résultat : trois sites sur dix ne respectaient pas cette règle.",
+   "fichier": "medias/ue_30.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 0.9,
+    "texte": "3 SUR 10"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.9,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Commission européenne, 26/03/2026"
+    }
+   ]
+  },
+  {
+   "id": "s064",
+   "format": "schema",
+   "texte": "Et attention, là, on ne parle plus d'une faille légale : ce sont des réductions incorrectes.",
+   "schema": {
+    "type": "chiffre",
+    "valeur": 30,
+    "suffixe": " %",
+    "legende": "des 314 sites : réductions incorrectes",
+    "comparaison": "Presque un site sur trois",
+    "source": "Commission européenne, 26/03/2026"
+   },
+   "etiquette_schema": "Contrôle européen"
+  },
+  {
+   "id": "s065",
+   "format": "rush",
+   "texte": "Il y a pire : parmi les sites qui comparaient leurs prix avec un prix de référence, six sur dix n'expliquaient pas clairement d'où sortait ce prix.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "6 SUR 10",
+     "heros": "6",
+     "position": "haut",
+     "a": 4.0
+    }
+   ],
+   "media_ref": "pi:8499942"
+  },
+  {
+   "id": "s066",
+   "format": "rush",
+   "texte": "Côté France, la répression des fraudes a fait ses contrôles au Black Friday deux mille vingt-deux.",
+   "media_ref": "pi:5000728"
+  },
+  {
+   "id": "s067",
+   "format": "ecran_partage",
+   "texte": "Sur quatre cent onze magasins et sites contrôlés, près d'un sur trois était en infraction.",
+   "schema": {
+    "type": "liste",
+    "titre": "Black Friday 2022 en France",
+    "elements": [
+     {
+      "texte": "Contrôlés",
+      "valeur": "411"
+     },
+     {
+      "texte": "En infraction",
+      "valeur": "près d'1 sur 3",
+      "heros": true
+     }
+    ],
+    "source": "DGCCRF, dossier de presse du 20/11/2023"
+   },
+   "cote": "gauche",
+   "etiquette_schema": "Contrôles en France",
+   "media_ref": "pv:7676"
+  },
+  {
+   "id": "s068",
+   "format": "rush",
+   "texte": "Et le prix barré n'est même pas le seul piège de ces journées-là.",
+   "media_ref": "pv:78385"
+  },
+  {
+   "id": "s069",
+   "format": "titre",
+   "type": "titre",
+   "numero": "05",
+   "titre": "Compte à rebours, stock limité : c'est vrai ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "media_ref": "pi:590383"
+  },
+  {
+   "id": "s070",
+   "format": "schema",
+   "texte": "Sur ces trois cent quatorze sites, combien jouaient sur l'urgence, compte à rebours ou stock presque épuisé ? Un sur vingt, un sur cinq, ou un sur deux ?",
+   "schema": {
+    "type": "devine",
+    "question": "Combien jouent sur l'urgence ?",
+    "choix": [
+     "1 sur 20",
+     "1 sur 5",
+     "1 sur 2"
+    ],
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.2,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s071",
+   "format": "rush",
+   "texte": "Pendant que tu réfléchis : Black Friday, le jour des foules, c'est d'abord un mot de la police de Philadelphie.",
+   "surtitre": "Philadelphie",
+   "media_ref": "pi:4189034"
+  },
+  {
+   "id": "s072",
+   "format": "rush",
+   "texte": "En mille neuf cent soixante et un, elle appelle déjà ainsi ce vendredi de bouchons et de foule.",
+   "surtitre": "Philadelphie : trace écrite de 1961",
+   "media_ref": "pi:4022423"
+  },
+  {
+   "id": "s073",
+   "format": "rush",
+   "texte": "Aujourd'hui, la foule est dans ton téléphone, et la pression aussi.",
+   "media_ref": "pv:202987"
+  },
+  {
+   "id": "s074",
+   "format": "rush",
+   "texte": "Réponse : près d'un site contrôlé sur cinq jouait sur l'urgence, compte à rebours ou stock presque épuisé.",
+   "fichier": "medias/ue_18.png",
+   "zoom": "avant",
+   "punch": {
+    "a": 0.8,
+    "texte": "1 SUR 5"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 0.8,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Commission européenne, 26/03/2026"
+    }
+   ]
+  },
+  {
+   "id": "s075",
+   "format": "rush",
+   "texte": "Et dans plus de la moitié de ces cas, l'urgence affichée était trompeuse.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "TROMPEUR",
+     "heros": "TROMPEUR",
+     "position": "haut",
+     "a": 1.5
+    }
+   ],
+   "media_ref": "pv:26452"
+  },
+  {
+   "id": "s076",
+   "format": "rush",
+   "texte": "Un site sur dix ajoutait des frais tard, juste avant le paiement.",
+   "fichier": "medias/ue_10.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "Commission européenne, 26/03/2026"
+    }
+   ]
+  },
+  {
+   "id": "s077",
+   "format": "rush",
+   "texte": "Et plus d'un sur trois essayait de glisser des options dans ton panier.",
+   "couches": [
+    {
+     "type": "mots",
+     "texte": "+ OPTIONS",
+     "heros": "OPTIONS",
+     "position": "haut",
+     "a": 1.2
+    }
+   ],
+   "media_ref": "wc:File:Mini shopping cart placed on a table next to a laptop in a modern office setting.jpg"
+  },
+  {
+   "id": "s078",
+   "format": "rush",
+   "texte": "Dernier changement, tout neuf cette année : le paiement en trois ou quatre fois.",
+   "surtitre": "20 novembre 2026",
+   "media_ref": "pv:736"
+  },
+  {
+   "id": "s079",
+   "format": "ecran_partage",
+   "texte": "À partir du vingt novembre, les règles du crédit à la consommation s'appliquent aussi à lui.",
+   "schema": {
+    "type": "liste",
+    "titre": "Paiement en 3 ou 4 fois",
+    "elements": [
+     {
+      "texte": "À partir du",
+      "valeur": "20/11/2026",
+      "heros": true
+     },
+     {
+      "texte": "Nouvelles règles",
+      "valeur": "celles du crédit"
+     }
+    ],
+    "source": "Service-Public.fr, 27/10/2026"
+   },
+   "cote": "gauche",
+   "etiquette_schema": "Ce qui change",
+   "media_ref": "pi:256319"
+  },
+  {
+   "id": "s080",
+   "format": "rush",
+   "texte": "Sa pub devra rappeler qu'un crédit coûte de l'argent et doit être remboursé.",
+   "couches": [
+    {
+     "type": "carton",
+     "texte": "Attention ! Un crédit coûte de l'argent et doit être remboursé !",
+     "sous_texte": "Mention obligatoire · Service-Public.fr, 27/10/2026",
+     "a": 0.3
+    }
+   ],
+   "media_ref": "pi:4442924"
+  },
+  {
+   "id": "s081",
+   "format": "rush",
+   "texte": "Alors, comment ne pas se faire avoir ? Trois réflexes, et on les teste sur ton casque.",
+   "media_ref": "pi:1851218"
+  },
+  {
+   "id": "s082",
+   "format": "titre",
+   "type": "titre",
+   "numero": "06",
+   "titre": "Comment savoir si une promo est vraie ?",
+   "texte": "",
+   "duree_min": 2.6,
+   "media_ref": "pi:424566"
+  },
+  {
+   "id": "s083",
+   "format": "rush",
+   "texte": "Premier réflexe : un prix barré te montre au mieux le mois dernier, jamais les mois d'avant.",
+   "couches": [
+    {
+     "type": "etiquette",
+     "numero": "01",
+     "texte": "L'historique, pas le prix barré",
+     "a": 0.2
+    }
+   ],
+   "media_ref": "pi:654697"
+  },
+  {
+   "id": "s084",
+   "format": "rush",
+   "texte": "Va voir l'historique du prix sur plusieurs mois, des sites gratuits le tracent pour toi.",
+   "media_ref": "pv:31772"
+  },
+  {
+   "id": "s085",
+   "format": "rush",
+   "texte": "Deuxième réflexe : prix conseillé ou prix de comparaison, ce n'est pas une promo.",
+   "fichier": "medias/reflexe2.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "etiquette",
+     "numero": "02",
+     "texte": "Prix conseillé ≠ promo",
+     "a": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s086",
+   "format": "mosaique",
+   "texte": "Troisième réflexe : compare avec au moins deux autres sites avant de cliquer.",
+   "couches": [
+    {
+     "type": "etiquette",
+     "numero": "03",
+     "texte": "Compare 3 sites",
+     "a": 0.2
+    }
+   ],
+   "medias": [
+    {
+     "media_ref": "pv:233382",
+     "legende": "Site 1"
+    },
+    {
+     "media_ref": "pi:647761",
+     "legende": "Site 2"
+    },
+    {
+     "media_ref": "pv:4941",
+     "legende": "Site 3"
+    }
+   ]
+  },
+  {
+   "id": "s087",
+   "format": "rush",
+   "texte": "Si une réduction te semble fausse, signale-la sur SignalConso, le site officiel de la répression des fraudes.",
+   "fichier": "medias/signalconso.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "signal.conso.gouv.fr"
+    }
+   ]
+  },
+  {
+   "id": "s088",
+   "format": "rush",
+   "texte": "On revient à ton casque, toujours dans le panier, et on applique les réflexes.",
+   "fichier": "medias/casque_retour.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s089",
+   "format": "schema",
+   "texte": "Dernière devinette, la plus importante, avant de cliquer sur payer. Ta vraie économie : plus de quarante pour cent, entre vingt et quarante, ou moins de vingt ?",
+   "schema": {
+    "type": "devine",
+    "question": "Ta vraie économie ?",
+    "choix": [
+     "+ de 40 %",
+     "20 à 40 %",
+     "− de 20 %"
+    ],
+    "secondes": 3
+   },
+   "sons": [
+    {
+     "nom": "tick",
+     "a": 0.2,
+     "volume": 0.3
+    }
+   ],
+   "ambiance": "tension"
+  },
+  {
+   "id": "s090",
+   "format": "rush",
+   "texte": "Réflexe deux : son prix barré n'est pas un prix conseillé, c'est le vrai prix du mois.",
+   "fichier": "medias/casque_pasconseille.png",
+   "zoom": "avant"
+  },
+  {
+   "id": "s091",
+   "format": "rush",
+   "texte": "Réflexe trois : sur d'autres sites, l'U F C l'a longtemps vu à deux cent soixante-dix-neuf euros.",
+   "fichier": "medias/casque_279.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s092",
+   "format": "schema",
+   "texte": "Déjà, ailleurs, on est loin des trois cent quatre-vingt-dix-neuf euros du prix barré.",
+   "schema": {
+    "type": "comparaison",
+    "titre": "Le casque",
+    "unite": " €",
+    "decimales": 0,
+    "heros": "b",
+    "a": {
+     "label": "Prix barré",
+     "valeur": 400
+    },
+    "b": {
+     "label": "Ailleurs, longtemps",
+     "valeur": 279
+    },
+    "source": "UFC-Que Choisir, 26/11/2025 (399,95 € arrondi)"
+   },
+   "etiquette_schema": "Réflexe 3"
+  },
+  {
+   "id": "s093",
+   "format": "rush",
+   "texte": "Reste le réflexe un, le plus important : l'historique du prix sur plusieurs mois.",
+   "sons": [
+    {
+     "nom": "riser",
+     "a": 1.0,
+     "volume": 0.35
+    }
+   ],
+   "media_ref": "pi:5245329"
+  },
+  {
+   "id": "s094",
+   "format": "rush",
+   "texte": "On remonte l'historique : en septembre, son prix grimpe ; le mois avant la promo, il est à trois cent quatre-vingt-dix-neuf euros quatre-vingt-quinze.",
+   "fichier": "medias/chrono1.png",
+   "zoom": "aucun",
+   "ambiance": "revelation"
+  },
+  {
+   "id": "s095",
+   "format": "rush",
+   "texte": "Mais avant cette hausse, en juillet, il se vendait deux cent cinquante-neuf euros.",
+   "fichier": "medias/chrono2.png",
+   "zoom": "aucun"
+  },
+  {
+   "id": "s096",
+   "format": "rush",
+   "texte": "Et le jour du Black Friday, il tombe à cent quatre-vingt-neuf euros.",
+   "fichier": "medias/chrono3.png",
+   "zoom": "aucun"
+  },
+  {
+   "id": "s097",
+   "format": "rush",
+   "texte": "Par rapport au prix de juillet, ta vraie économie, c'est moins vingt-sept pour cent.",
+   "fichier": "medias/casque_revele.png",
+   "zoom": "avant",
+   "avant_voix": 0.6,
+   "punch": {
+    "a": 2.9,
+    "texte": "−27 %"
+   },
+   "sons": [
+    {
+     "nom": "impact",
+     "a": 2.9,
+     "volume": 0.5
+    }
+   ],
+   "couches": [
+    {
+     "type": "flash",
+     "a": 2.9
+    },
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s098",
+   "format": "schema",
+   "texte": "Soixante-dix euros économisés, pas les deux cent onze promis.",
+   "schema": {
+    "type": "comparaison",
+    "titre": "Ce que tu économises",
+    "unite": " €",
+    "decimales": 0,
+    "heros": "b",
+    "a": {
+     "label": "Promis par l'étiquette",
+     "valeur": 211
+    },
+    "b": {
+     "label": "En vrai, depuis juillet",
+     "valeur": 70
+    },
+    "source": "UFC-Que Choisir, 26/11/2025 (calcul : 259 − 189)"
+   },
+   "etiquette_schema": "La vraie économie"
+  },
+  {
+   "id": "s099",
+   "format": "rush",
+   "texte": "Légal du début à la fin, et c'est justement ça, la faille.",
+   "fichier": "medias/casque_trompeuse.png",
+   "zoom": "avant",
+   "couches": [
+    {
+     "type": "source",
+     "texte": "UFC-Que Choisir, 26/11/2025"
+    }
+   ]
+  },
+  {
+   "id": "s100",
+   "format": "rush",
+   "texte": "Mardi prochain : sur cent euros de ta facture d'électricité, combien paient vraiment le courant ?",
+   "ambiance": "leger",
+   "media_ref": "pi:96863"
+  },
+  {
+   "id": "s101",
+   "format": "rush",
+   "texte": "Abonne-toi : chaque semaine, le vrai prix d'un truc que tu paies.",
+   "duree_min": 3.2,
+   "media_ref": "pv:326939"
+  }
+ ]
+}

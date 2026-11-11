@@ -1,0 +1,17 @@
+# Sources — Black Friday (vérifiées le 10/11/2026, voir videos/black-friday/_workspace/02b_fact_check.md)
+- https://commission.europa.eu/news-and-media/news/eu-check-reveals-misleading-sales-practices-online-2026-03-26_en
+- https://fr.wikipedia.org/wiki/Black_Friday_(commerce
+- https://french-business-law.com/rench-legislation-art/article-l112-1-1-of-the-french-consumer-code
+- https://inc-conso.fr/sites/default/files/pdf/tableau-omnibus-inc-2022_0.pdf
+- https://signal.conso.gouv.fr/
+- https://www.clubic.com/actualite-589657-selon-l-ufc-que-choisir-les-promotions-du-black-friday-ne-sont-que-tres-faiblement-inferieurs-aux-prix-pratiques-habituellement.html
+- https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/black-friday-gare-aux-fausses-promesses
+- https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/dossier_de_presse/dossier-de-presse-dgccrf-e-commerce.pdf?v=1700733361
+- https://www.economiematin.fr/black-friday-amazon-promotions-avant-27-novembre-controle-prix-2026
+- https://www.economiematin.fr/black-friday-dgccrf-achats-credit-promotions-9-novembre-2026-0913
+- https://www.inquirer.com/philly/news/breaking/20111125_Black_Friday_started_in_Philly.html
+- https://www.intotheminds.com/blog/black-friday/
+- https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044549592
+- https://www.macommune.info/le-black-friday-permet-il-reellement-de-faire-de-bonnes-affaires
+- https://www.quechoisir.org/actualite-black-friday-2025-encore-des-prix-douteux-n172836/
+- https://www.service-public.gouv.fr/particuliers/actualites/A18451?lang=fr
