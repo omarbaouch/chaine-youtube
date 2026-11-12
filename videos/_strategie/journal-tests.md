@@ -111,3 +111,10 @@ Relevé du 12/11 9 h 15 Paris (stats relancées) : **13 abonnés (+0, 4e jour sa
 - Correction : commentaire épinglé du Short pâtes XjDfe8Ff5wU (public à 8 h) resté « en attente » → workflow Publier relancé, commentaire posté.
   Les 8 autres Shorts du lot 2 sont en privé programmé (commentaire en attente, normal). Toutes les autres fiches de `publications/fait/` ont réussi
   (vieux refus 409 de playlist inchangés). Aucune inversion d'horaires : aucune variante clairement perdante.
+
+## Décision du 12/11 au soir (accord d'Omar) — un seul Short par jour
+Distribution coupée depuis le 08/11 : on ralentit. UN Short par jour sur toute la chaîne, 7 par semaine au maximum.
+- Lot 2 reprogrammé (fiches `reprogrammer`, toutes réussies) : lunettes 13/11 8 h (inchangé), steak 14/11, Doliprane 15/11, eau 16/11,
+  livre 17/11, cinéma 18/11, timbre 19/11, tous à 13 h. L'alternance A/B du test T5 est conservée.
+- Tâche du lundi : fabrique seulement pour les jours libres (7 max). Ne jamais programmer deux Shorts le même jour.
+- Priorité inchangée : test T7 (3 voix et 3 plans d'Omar).
