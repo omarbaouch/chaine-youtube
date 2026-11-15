@@ -86,9 +86,10 @@ for fi, f in enumerate(fiches):
 # ---------- 1. transcription ----------
 from faster_whisper import WhisperModel
 modele = WhisperModel(cfg.get("modele", "medium"), device="cpu", compute_type="int8")
+# découpage par silences (VAD) : sans lui, Whisper « avale » les reprises et étire un mot sur 10 s
 segs, _ = modele.transcribe(str(wav16), language="fr", word_timestamps=True, beam_size=5,
-                            vad_filter=False, condition_on_previous_text=False,
-                            initial_prompt=" ".join(p for _, _, p in attendu)[:800])
+                            vad_filter=True, vad_parameters={"min_silence_duration_ms": 250, "speech_pad_ms": 120},
+                            condition_on_previous_text=False)
 mots_t = []
 for s in segs:
     for w in s.words or []:
@@ -119,6 +120,9 @@ for (fi, mi, p) in attendu:
                 break
             r_, w_ = " ".join(ref), " ".join(TJ[a:b])
             sc = 0.5 * fuzz.ratio(r_, w_) + 0.5 * fuzz.token_sort_ratio(r_, w_)  # « 7,50 € » = « sept euros cinquante »
+            # un « mot » de plus de 1,3 s cache presque toujours une reprise avalée par la transcription
+            if any(jetons[q][3] - jetons[q][2] > 1.3 for q in range(a, b)):
+                sc -= 30
             if sc >= SEUIL:
                 trouves.append((sc, a, b))
     # on garde la meilleure fenêtre parmi celles qui se chevauchent
