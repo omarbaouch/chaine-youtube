@@ -50,7 +50,15 @@ def _norm(t):
 morceaux = [p["texte"] for p in fiche["plans"]] + ([fiche["fin"]] if fiche.get("fin") else [])
 texte_complet = " ".join(morceaux)
 voix_mp3 = tmp / "voix.mp3"
-if TEST:
+VOIX_OMAR = fiche_chemin.parent / fiche["voix_fichier"] if fiche.get("voix_fichier") else None
+if VOIX_OMAR and VOIX_OMAR.with_suffix(".mp3").exists():
+    # voix enregistrée par Omar, découpée par scripts/voix_omar.py (minutage mot à mot avec les mots de la fiche)
+    shutil.copy(VOIX_OMAR.with_suffix(".mp3"), voix_mp3)
+    mots = json.loads(VOIX_OMAR.with_suffix(".mots.json").read_text(encoding="utf-8"))
+    print(f"  voix d'Omar : {VOIX_OMAR.with_suffix('.mp3').name}", flush=True)
+elif VOIX_OMAR and not TEST:
+    raise RuntimeError(f"voix d'Omar introuvable : {VOIX_OMAR}.mp3 (lancer scripts/voix_omar.py)")
+elif TEST:
     mots, t = [], 0.15
     for w in texte_complet.split():
         d = 0.12 + 0.045 * len(w)

@@ -1,0 +1,9 @@
+{
+ "enregistrement": "omar-15nov.m4a",
+ "modele": "medium",
+ "fiches": [
+  "../l10o-livre.json",
+  "../l12o-cinema.json",
+  "../l13o-timbre.json"
+ ]
+}

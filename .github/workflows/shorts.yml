@@ -41,6 +41,14 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install -q edge-tts requests
           node scripts/musique.mjs
+      - name: Voix d'Omar (découpe de son enregistrement)
+        run: |
+          cfg="videos/_shorts/${{ steps.quoi.outputs.lot }}/voix/decoupe.json"
+          if [ -f "$cfg" ]; then
+            pip install -q faster-whisper rapidfuzz num2words
+            python scripts/voix_omar.py "$cfg"
+            mkdir -p out/shorts && for f in "$(dirname "$cfg")"/*.mp3 "$(dirname "$cfg")"/rapport.md; do cp "$f" "out/shorts/voix-$(basename "$f")"; done
+          fi
       - name: Fabriquer les Shorts
         env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}

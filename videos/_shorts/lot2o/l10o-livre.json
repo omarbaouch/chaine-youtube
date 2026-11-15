@@ -1,0 +1,97 @@
+{
+ "id": "l10o-livre",
+ "titre": "Ton livre à 20 € : combien pour l'auteur ? #shorts",
+ "accroche": "TON LIVRE À 20 € : COMBIEN POUR L'AUTEUR ?",
+ "plans": [
+  {
+   "texte": "Ton livre à vingt euros, l'auteur touche combien ?",
+   "recherche": [
+    "book reading",
+    "open book",
+    "books stack"
+   ],
+   "medias": [
+    "pv:185096",
+    "pv:4953"
+   ]
+  },
+  {
+   "texte": "La librairie garde environ sept euros cinquante.",
+   "recherche": [
+    "bookstore",
+    "bookshop shelves",
+    "library bookshelf"
+   ],
+   "chiffre": "≈ 7,50 €",
+   "chiffre_mot": "sept",
+   "medias": [
+    "pv:818",
+    "wc:File:Marburg asv2022-02 img06 Reitgasse.jpg"
+   ]
+  },
+  {
+   "texte": "La distribution, trois euros quarante. L'éditeur, trois euros.",
+   "recherche": [
+    "books warehouse",
+    "delivery boxes",
+    "publishing office"
+   ],
+   "chiffre": "3,40 €",
+   "chiffre_mot": "trois",
+   "medias": [
+    "wc:File:Book Booth at 2nd Floor, Costco Neihu Warehouse 20161229.jpg",
+    "wc:File:Interior of The Warehouse 12 books.jpg"
+   ]
+  },
+  {
+   "texte": "L'imprimeur, trois euros aussi. La T V A, environ un euro.",
+   "recherche": [
+    "printing press",
+    "book printing",
+    "offset printing"
+   ],
+   "chiffre": "3 €",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pi:2650392",
+    "pi:3634411"
+   ]
+  },
+  {
+   "texte": "Et l'auteur ? Environ un euro quatre-vingt-dix pour un roman. Moins d'un euro sur dix.",
+   "recherche": [
+    "writer typing",
+    "author writing",
+    "writing notebook"
+   ],
+   "chiffre": "≈ 1,90 €",
+   "chiffre_mot": "un",
+   "medias": [
+    "pv:50826",
+    "pv:34258"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "books stack",
+  "bookstore"
+ ],
+ "sources": [
+  "Occitanie Livre & Lecture, livret « Les métiers du livre », mise à jour 2026 : https://occitanielivre.fr/sites/default/files/2026-03/livret_jeunes_26_num.pdf",
+  "10e baromètre des relations auteurs-éditeurs SCAM-SGDL, avril 2025 : https://fill-livrelecture.org/wp-content/uploads/2025/04/10e_Barometre_AuteursEditeurs_08-04-25.pdf"
+ ],
+ "commentaire": "Tu lis combien de livres par an ? 👇",
+ "tags": [
+  "prix d'un livre",
+  "livre",
+  "auteur",
+  "librairie",
+  "le vrai prix"
+ ],
+ "test": "T7-B",
+ "medias_fin": [
+  "pi:9370928"
+ ],
+ "voix_fichier": "voix/l10o-livre"
+}

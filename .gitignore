@@ -6,3 +6,8 @@ __pycache__/
 *.tmp.wav
 public/sfx/musique-*.wav
 public/musique/
+
+# voix d'Omar découpées (générées sur GitHub Actions)
+videos/_shorts/*/voix/*.mp3
+videos/_shorts/*/voix/*.mots.json
+videos/_shorts/*/voix/rapport.md
