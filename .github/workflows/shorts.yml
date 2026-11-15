@@ -41,13 +41,20 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install -q edge-tts requests
           node scripts/musique.mjs
-      - name: Voix d'Omar (découpe de son enregistrement)
+      - name: Voix d'Omar (prise unique nettoyée par IA, ou découpe d'un long enregistrement)
         run: |
-          cfg="videos/_shorts/${{ steps.quoi.outputs.lot }}/voix/decoupe.json"
-          if [ -f "$cfg" ]; then
+          v="videos/_shorts/${{ steps.quoi.outputs.lot }}/voix"
+          if [ -f "$v/entier.json" ]; then
+            pip install -q torch==2.0.1 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cpu
+            pip install -q "numpy<2" deepfilternet faster-whisper rapidfuzz num2words soundfile
+            python scripts/voix_omar_entier.py "$v/entier.json"
+          elif [ -f "$v/decoupe.json" ]; then
             pip install -q faster-whisper rapidfuzz num2words
-            python scripts/voix_omar.py "$cfg"
-            mkdir -p out/shorts && for f in "$(dirname "$cfg")"/*.mp3 "$(dirname "$cfg")"/rapport.md "$(dirname "$cfg")"/transcription.json; do cp "$f" "out/shorts/voix-$(basename "$f")"; done
+            python scripts/voix_omar.py "$v/decoupe.json"
+          fi
+          if [ -d "$v" ]; then
+            mkdir -p out/shorts
+            for f in "$v"/*.mp3 "$v"/*-brut-nettoye.wav "$v"/rapport*.md "$v"/transcription.json; do [ -f "$f" ] && cp "$f" "out/shorts/voix-$(basename "$f")"; done
           fi
       - name: Fabriquer les Shorts
         env:

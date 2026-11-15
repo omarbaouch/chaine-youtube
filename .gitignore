@@ -12,3 +12,4 @@ videos/_shorts/*/voix/*.mp3
 videos/_shorts/*/voix/*.mots.json
 videos/_shorts/*/voix/rapport.md
 videos/_shorts/*/voix/transcription.json
+videos/_shorts/*/voix/*-brut-nettoye.wav
