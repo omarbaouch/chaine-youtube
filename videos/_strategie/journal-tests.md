@@ -155,3 +155,12 @@ Relevé du 15/11 9 h 15 Paris (stats relancées) : **13 abonnés (+0, 7e jour sa
   la découpe d'un long enregistrement : fins de mots coupées). Omar a validé le rendu.
 - Cinéma et timbre : en attente des prises d'Omar (puis même remplacement, 18/11 et 19/11 13 h).
 - Mesure : Restés à 48 h contre 30,7 % (moyenne chaîne) et contre les Shorts du lot 2 en voix Vivienne. Gain ≥ 10 points = la voix d'Omar devient le format.
+
+## 15/11 au soir — poussée Black Friday (demande d'Omar : « fais tout pour les abonnés »)
+- Vidéo longue Black Friday renommée pour la recherche : « Black Friday 2026 : repérer une fausse promo en 3 réflexes » (+ début de description et tags).
+- 3 Shorts Black Friday (lot `lotbf`), visuels = captures de preuve de la vidéo (UFC-Que Choisir, Commission européenne), aucune image de banque
+  (les rushes Pixabay tirés au hasard montraient une silhouette, une machine à laver et un sac en dessin animé : refusés) :
+  casque −53 % https://youtu.be/OC-r3G64jI8 (20/11 13 h), prix conseillé https://youtu.be/DT-7EeQle5s (21/11 13 h),
+  Europe 314 sites https://youtu.be/w2-GTv5qxrY (22/11 13 h). Lien de la vidéo longue en description et en commentaire.
+- Nouveau : `short_vertical.py` accepte les visuels du dépôt (`"fi:chemin"`), recadrés sur leur contenu et posés sans rogner le texte.
+- À mesurer : Restés et abonnés de ces 3 Shorts, et clics de la vidéo Black Friday d'ici le 27/11.
