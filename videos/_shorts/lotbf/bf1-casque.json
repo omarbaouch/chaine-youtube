@@ -1,0 +1,57 @@
+{
+ "id": "bf1-casque",
+ "titre": "Casque à −53 % au Black Friday : vraie promo ? #shorts",
+ "accroche": "CASQUE À −53 % : VRAIE PROMO ?",
+ "plans": [
+  {
+   "texte": "Ton casque à moins cinquante-trois pour cent. Vraie promo ?",
+   "recherche": [
+    "headphones",
+    "wireless headphones"
+   ],
+   "chiffre": "−53 %",
+   "chiffre_mot": "moins"
+  },
+  {
+   "texte": "L'an dernier, il était affiché cent quatre-vingt-neuf euros, au lieu de trois cent quatre-vingt-dix-neuf.",
+   "medias": [
+    "fi:episodes/black-friday/medias/casque_53.png"
+   ]
+  },
+  {
+   "texte": "Mais en juillet, ce même casque coûtait deux cent cinquante-neuf euros.",
+   "medias": [
+    "fi:episodes/black-friday/medias/chrono2.png"
+   ]
+  },
+  {
+   "texte": "Son prix a monté en septembre. Juste avant les promos.",
+   "medias": [
+    "fi:episodes/black-friday/medias/casque_mois.png"
+   ]
+  },
+  {
+   "texte": "C'est légal, dit l'UFC-Que Choisir. Mais trompeur.",
+   "medias": [
+    "fi:episodes/black-friday/medias/casque_trompeuse.png"
+   ]
+  }
+ ],
+ "sources": [
+  "UFC-Que Choisir, « Black Friday 2025 – Encore des prix douteux », 26/11/2025 : https://www.quechoisir.org/actualite-black-friday-2025-encore-des-prix-douteux-n172836/"
+ ],
+ "commentaire": "Tu vérifies l'historique des prix avant d'acheter ? 👇",
+ "tags": [
+  "black friday",
+  "black friday 2026",
+  "fausse promo",
+  "prix barré",
+  "le vrai prix"
+ ],
+ "fin": "La vraie remise est dans la vidéo complète. Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "black friday shopping",
+  "shopping bags"
+ ],
+ "test": "BF"
+}

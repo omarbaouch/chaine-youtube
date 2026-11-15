@@ -1,0 +1,57 @@
+{
+ "id": "bf3-frigo",
+ "titre": "« Prix conseillé » barré : vraie promo ? #shorts",
+ "accroche": "PRIX CONSEILLÉ BARRÉ : VRAIE PROMO ?",
+ "plans": [
+  {
+   "texte": "Un prix conseillé barré. Est-ce vraiment une promo ?",
+   "recherche": [
+    "refrigerator",
+    "fridge kitchen"
+   ]
+  },
+  {
+   "texte": "L'an dernier, ce frigo affichait mille cinq cent quarante-neuf euros, au lieu de mille sept cent quatre-vingt-dix-neuf.",
+   "medias": [
+    "fi:episodes/black-friday/medias/frigo_13.png"
+   ]
+  },
+  {
+   "texte": "Moins treize pour cent. Mais sur un prix conseillé.",
+   "medias": [
+    "fi:episodes/black-friday/medias/frigo_q.png"
+   ],
+   "chiffre": "−13 %",
+   "chiffre_mot": "moins"
+  },
+  {
+   "texte": "Selon l'UFC-Que Choisir, cette astuce évite la règle des trente jours.",
+   "medias": [
+    "fi:episodes/black-friday/medias/frigo_conseille.png"
+   ]
+  },
+  {
+   "texte": "Et ailleurs, il se vendait encore moins cher depuis des mois.",
+   "medias": [
+    "fi:episodes/black-friday/medias/frigo_1500.png"
+   ]
+  }
+ ],
+ "sources": [
+  "UFC-Que Choisir, « Black Friday 2025 – Encore des prix douteux », 26/11/2025 : https://www.quechoisir.org/actualite-black-friday-2025-encore-des-prix-douteux-n172836/"
+ ],
+ "commentaire": "Tu compares les prix sur plusieurs sites avant d'acheter ? 👇",
+ "tags": [
+  "black friday",
+  "black friday 2026",
+  "prix conseillé",
+  "fausse promo",
+  "le vrai prix"
+ ],
+ "fin": "La vraie remise est dans la vidéo complète. Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
+ "recherche_fin": [
+  "black friday shopping",
+  "shopping bags"
+ ],
+ "test": "BF"
+}

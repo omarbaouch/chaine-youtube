@@ -137,6 +137,31 @@ def media_choisi(ref, f):
     """Média repéré à la main : "pv:<id>" vidéo Pixabay, "pi:<id>" photo Pixabay, "wc:File:…" Wikimedia Commons.
     Renvoie (fichier, est_image, crédit)."""
     import requests
+    if ref.startswith("fi:"):
+        # visuel du dépôt (capture de preuve 16:9) : posé entier, sans rogner le texte, sur son propre fond flouté.
+        # Carte de 920 px de large centrée à y = 860 (sous le bandeau, au-dessus des sous-titres ; le zoom lent ne la rogne pas).
+        from PIL import Image, ImageFilter, ImageEnhance
+        src = Image.open(RACINE / ref[3:]).convert("RGB")
+        # on recadre sur le contenu utile (cartes claires, textes, barres) pour qu'il reste lisible sur un téléphone
+        boite = src.convert("L").point(lambda v: 255 if v > 150 else 0).getbbox()
+        if boite:
+            m = 36
+            x0, y0, x1, y1 = max(boite[0] - m, 0), max(boite[1] - m, 0), min(boite[2] + m, src.width), min(boite[3] + m, src.height)
+            if (x1 - x0) > 300 and (y1 - y0) > 120:
+                src = src.crop((x0, y0, x1, y1))
+        fond = src.copy()
+        k = max(W / fond.width, H / fond.height)
+        fond = fond.resize((int(fond.width * k) + 1, int(fond.height * k) + 1))
+        fond = fond.crop(((fond.width - W) // 2, (fond.height - H) // 2, (fond.width - W) // 2 + W, (fond.height - H) // 2 + H))
+        fond = ImageEnhance.Brightness(fond.filter(ImageFilter.GaussianBlur(40))).enhance(0.45)
+        lw = 940
+        carte = src.resize((lw, int(src.height * lw / src.width)), Image.LANCZOS)
+        if carte.height > 760:  # carte haute : on la limite pour garder le bandeau et les sous-titres libres
+            carte = src.resize((int(src.width * 760 / src.height), 760), Image.LANCZOS)
+        fond.paste(carte, ((W - carte.width) // 2, 820 - carte.height // 2))
+        f = f.with_suffix(".jpg")
+        fond.save(f, quality=95)
+        return f, True, f"Capture : {Path(ref[3:]).stem}"
     if ref.startswith(("pv:", "pi:")):
         cle = os.environ.get("PIXABAY_API_KEY")
         api = "videos/" if ref.startswith("pv:") else ""
@@ -193,7 +218,7 @@ for i, p in enumerate(fiche["plans"] + ([{"recherche": fiche.get("recherche_fin"
         q = req[j % len(req)] if req else None
         f = tmp / f"rush-{i}-{j}.mp4"
         if p.get("medias"):
-            if TEST:
+            if TEST and not p["medias"][j % len(p["medias"])].startswith("fi:"):
                 f = f.with_suffix(".jpg"); est_image, cred = True, "test"
                 sh("ffmpeg", "-y", "-f", "lavfi", "-i", "testsrc2=size=1280x853", "-frames:v", "1", f)
             else:
