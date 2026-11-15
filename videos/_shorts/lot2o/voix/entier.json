@@ -5,5 +5,6 @@
   "../l10o-livre.json": "livre.m4a",
   "../l12o-cinema.json": "cinema.m4a",
   "../l13o-timbre.json": "timbre.m4a"
- }
+ },
+ "essai": 2
 }
