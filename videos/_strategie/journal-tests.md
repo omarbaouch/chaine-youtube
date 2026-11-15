@@ -148,3 +148,10 @@ Relevé du 15/11 9 h 15 Paris (stats relancées) : **13 abonnés (+0, 7e jour sa
 - **T6** inchangé (Spotify 60 · Restés 38 % contre électricité 21 · Restés 32 %) : **à confirmer**. **T7** : toujours en attente des 3 voix et 3 plans d'Omar.
 - Contrôle : commentaire épinglé steak posté (ok). Doliprane 08uXHwnLYOM et les 4 suivants en privé programmé (commentaire en attente, normal avant publication).
   Toutes les fiches de `publications/fait/` ont réussi. Aucune inversion d'horaires : aucune variante clairement perdante.
+
+## T7-B lancé le 15/11 (voix d'Omar, prise unique nettoyée par IA)
+- Livre l10o-livre : https://youtu.be/ZghcuPz_6qY, public le 17/11 13 h (même créneau que la version synthèse bvZArdgeTHY, gardée privée).
+  Voix : prise unique au téléphone → `scripts/voix_omar_entier.py` (DeepFilterNet 3 + traitement studio, aucune coupe interne ; Omar a refusé
+  la découpe d'un long enregistrement : fins de mots coupées). Omar a validé le rendu.
+- Cinéma et timbre : en attente des prises d'Omar (puis même remplacement, 18/11 et 19/11 13 h).
+- Mesure : Restés à 48 h contre 30,7 % (moyenne chaîne) et contre les Shorts du lot 2 en voix Vivienne. Gain ≥ 10 points = la voix d'Omar devient le format.
