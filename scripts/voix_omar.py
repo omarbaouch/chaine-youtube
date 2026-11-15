@@ -23,6 +23,7 @@ from rapidfuzz import fuzz
 PAUSE_PHRASE = 0.14     # entre deux phrases d'un même plan
 PAUSE_PLAN = 0.22       # entre deux plans
 MARGE_AVANT, MARGE_APRES = 0.07, 0.10
+SILENCE_MAX = 0.18      # une hésitation plus longue est raccourcie à cette durée
 SEUIL = 62              # score minimal (0-100) pour accepter une prise
 
 
@@ -30,7 +31,7 @@ def sh(*cmd):
     r = subprocess.run([str(c) for c in cmd], capture_output=True, text=True)
     if r.returncode:
         raise RuntimeError(f"{cmd[0]} a échoué :\n{r.stderr[-2000:]}")
-    return r.stdout
+    return r.stdout + r.stderr
 
 
 def _sans_accents(t):
@@ -122,7 +123,7 @@ for (fi, mi, p) in attendu:
             sc = 0.5 * fuzz.ratio(r_, w_) + 0.5 * fuzz.token_sort_ratio(r_, w_)  # « 7,50 € » = « sept euros cinquante »
             # un « mot » de plus de 1,3 s cache presque toujours une reprise avalée par la transcription
             if any(jetons[q][3] - jetons[q][2] > 1.3 for q in range(a, b)):
-                sc -= 30
+                sc -= 10
             if sc >= SEUIL:
                 trouves.append((sc, a, b))
     # on garde la meilleure fenêtre parmi celles qui se chevauchent
@@ -176,15 +177,47 @@ for fi, f in enumerate(fiches):
             rapport.append(f"| {d['id']} | {p} | — | absente | (non retrouvée) |")
             continue
         sc, a, b = candidats[k][choix[k]]
+        ref_c = canon(p)
+        # premier / dernier mot mal transcrit (« Abonne » entendu « avant ») : on le reprend s'il est collé à la prise
+        if a > 0 and len(ref_c) > 1 and TJ[a] == ref_c[1] and ref_c[0] not in TJ[a:b] and jetons[a][2] - jetons[a - 1][3] < 0.15 and jetons[a - 1][3] - jetons[a - 1][2] < 1.2:
+            a -= 1
+        if b < len(TJ) and len(ref_c) > 1 and TJ[b - 1] == ref_c[-2] and ref_c[-1] not in TJ[a:b] and jetons[b][2] - jetons[b - 1][3] < 0.15 and jetons[b][3] - jetons[b][2] < 1.2:
+            b += 1
         i_deb, i_fin = jetons[a][1], jetons[b - 1][1]
         debut = mots_t[i_deb]["debut"]; fin = mots_t[i_fin]["fin"]
         avant = mots_t[i_deb - 1]["fin"] if i_deb > 0 else 0.0
         apres = mots_t[i_fin + 1]["debut"] if i_fin + 1 < len(mots_t) else fin + 1
         c0 = max(debut - MARGE_AVANT, (avant + debut) / 2, 0.0)
         c1 = min(fin + MARGE_APRES, (fin + apres) / 2)
+        # silences internes (hésitations) raccourcis à SILENCE_MAX : on garde des morceaux de parole
+        sil = sh("ffmpeg", "-hide_banner", "-nostats", "-ss", f"{c0:.3f}", "-to", f"{c1:.3f}", "-i", wav48,
+                 "-af", "silencedetect=noise=-38dB:d=0.3", "-f", "null", "-")
+        trous = []
+        for m0, m1 in re.findall(r"silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+)", sil):
+            x0, x1 = c0 + float(m0), c0 + float(m1)
+            if x1 - x0 > SILENCE_MAX + 0.05:
+                trous.append((x0 + SILENCE_MAX / 2, x1 - SILENCE_MAX / 2))
+        garde, t = [], c0
+        for x0, x1 in trous:
+            garde.append((t, x0)); t = x1
+        garde.append((t, c1))
+
+        def remap(x, garde=garde):
+            """temps de l'enregistrement → temps dans la prise raccourcie"""
+            out = 0.0
+            for g0, g1 in garde:
+                if x <= g0:
+                    return out
+                if x <= g1:
+                    return out + x - g0
+                out += g1 - g0
+            return out
         clip = tmp / f"c{fi}_{n_k}.wav"
-        sh("ffmpeg", "-y", "-ss", f"{c0:.3f}", "-to", f"{c1:.3f}", "-i", wav48,
-           "-af", f"afade=t=in:d=0.012,afade=t=out:st={max(c1 - c0 - 0.02, 0):.3f}:d=0.02", clip)
+        filtres = ";".join(f"[0:a]atrim={g0:.3f}:{g1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.01,"
+                           f"afade=t=out:st={max(g1 - g0 - 0.015, 0):.3f}:d=0.015[g{q}]" for q, (g0, g1) in enumerate(garde))
+        filtres += ";" + "".join(f"[g{q}]" for q in range(len(garde))) + f"concat=n={len(garde)}:v=0:a=1[o]"
+        sh("ffmpeg", "-y", "-i", wav48, "-filter_complex", filtres, "-map", "[o]", clip)
+        duree_clip = sum(g1 - g0 for g0, g1 in garde)
         # minutage : mots de la fiche calés sur les jetons transcrits (alignement des jetons)
         ref_mots = []
         for m in p.split():  # ponctuation isolée (« combien ? ») collée au mot d'avant
@@ -217,10 +250,10 @@ for fi, f in enumerate(fiches):
             temps[wi] = (t0, t1)
         for wi, m in enumerate(ref_mots):
             t0, t1 = temps[wi]
-            mots_sortie.append({"texte": m, "debut": round(t_sortie + max(t0 - c0, 0), 3),
-                                "fin": round(t_sortie + max(t1 - c0, 0.05), 3)})
+            mots_sortie.append({"texte": m, "debut": round(t_sortie + remap(t0), 3),
+                                "fin": round(t_sortie + max(remap(t1), remap(t0) + 0.05), 3)})
         morceaux_cliques.append(clip)
-        t_sortie += c1 - c0
+        t_sortie += duree_clip
         # pause après la phrase
         suivant = attendu[ks[n_k + 1]][1] if n_k + 1 < len(ks) else None
         if suivant is not None:
@@ -230,7 +263,7 @@ for fi, f in enumerate(fiches):
             morceaux_cliques.append(sil)
             t_sortie += pause
         dit = " ".join(mots_t[i]["texte"] for i in range(i_deb, i_fin + 1))
-        rapport.append(f"| {d['id']} | {p} | {sc:.0f} | {c0:.2f}–{c1:.2f} | {dit} |")
+        rapport.append(f"| {d['id']} | {p} | {sc:.0f} | {c0:.2f}–{c1:.2f} ({len(trous)} silence(s) raccourci(s)) | {dit} |")
     liste_f = tmp / f"liste{fi}.txt"
     liste_f.write_text("".join(f"file '{c}'\n" for c in morceaux_cliques))
     brut = tmp / f"brut{fi}.wav"
@@ -238,7 +271,7 @@ for fi, f in enumerate(fiches):
     sortie = dossier / f"{d['id']}.mp3"
     sh("ffmpeg", "-y", "-i", brut, "-af", FILTRE, "-ar", "48000", "-c:a", "libmp3lame", "-q:a", "2", sortie)
     (dossier / f"{d['id']}.mots.json").write_text(json.dumps(mots_sortie, ensure_ascii=False, indent=1), encoding="utf-8")
-    duree = float(sh("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", sortie))
+    duree = float(sh("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", sortie).strip())
     print(f"✔ {d['id']} : {duree:.1f} s", flush=True)
     rapport.append(f"| **{d['id']}** | **durée finale** | | **{duree:.1f} s** | |")
 
