@@ -81,3 +81,17 @@ Objectif : **60 % minimum**. Règles :
    **Objectif unique des Shorts : « Restés » ≥ 60 %.** Tant qu'il n'est pas atteint, on ne produit pas plus de Shorts, on teste
    l'ouverture (test T7 du journal). Images hors sujet relevées dans les meilleurs Shorts : volcan en éruption (cigarettes, 0:02),
    thé versé dans une tasse pour « une capsule Nespresso » (capsules, 0:03) : la règle n°1 s'applique aussi aux Shorts.
+
+## 8. Audit du 15/11/2026 et nouveau format (décision d'Omar : « fais ce qui booste la chaîne »)
+Détail et plan sur 30 jours : `videos/_strategie/audit-2026-11-15.md` (skill `youtube-croissance`).
+1. **Priorité absolue = l'ouverture des Shorts** (Restés ≈ 30 % ; sous 50 % l'accroche est cassée). Test T7-B (voix d'Omar) lancé
+   avec le lot `lot2o` (livre 17/11, cinéma 18/11, timbre 19/11). Voix : Omar lit tout d'un coup au téléphone, reprises comprises ;
+   `scripts/voix_omar.py` (sur GitHub Actions, workflow Shorts) garde les meilleures prises et cale les sous-titres.
+2. **Vidéos longues : format « classement utile à l'achat »** à tester dès la prochaine vidéo longue :
+   « On a comparé 10 X : lesquels éviter, lesquels acheter », compte à rebours 10 → 1, notes tirées UNIQUEMENT de tests publiés
+   (60 Millions de consommateurs, UFC-Que Choisir, DGCCRF, prix au kilo relevé) et citées à l'écran. Jamais d'avis maison sur une marque.
+   Modèle : Consumer Exposed (créée le 13/06/2026, 169 000 abonnés au 14/11, « 10 US Bread Brands to AVOID and 3 That Are Actually Safe » 4,5 M de vues).
+   Personne ne fait ce format en français (recherche du 15/11).
+3. **Clics des vidéos longues < 2 %** (repère Éducation 4,5 %) : titre = requête tapée, miniature = vrais produits, ≤ 5 mots, 30-40 % de vide,
+   2-3 variantes testées.
+4. **Monétisation** : au 01/02/2027 le seuil passe à 8 000 h ou 20 M de vues Shorts (blog officiel YouTube). Objectif réaliste : 1 000 abonnés d'abord.

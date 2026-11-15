@@ -153,7 +153,11 @@ de `monteur-chaine`. Plus de Metricool (décision d'Omar du 03/11/2026). Statist
 
 ## Étude de marché
 Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/etude-marche.md` (positionnement, calendrier
-des sujets, règles Shorts → abonnés).
+des sujets, règles Shorts → abonnés) et `videos/_strategie/audit-2026-11-15.md` (audit, plan sur 30 jours).
+Skill `youtube-croissance` (claude-youtube, MIT) : audit, accroches, miniatures, Shorts, SEO. Ses repères sont en anglais et génériques :
+les règles d'Omar (`monteur-chaine`) passent avant. Ses sous-agents en parallèle sont facultatifs : les faire à la suite.
+Voix d'Omar : il enregistre tous les textes d'un coup au téléphone ; `videos/_shorts/<lot>/voix/decoupe.json` + champ `voix_fichier`
+dans chaque fiche → `scripts/voix_omar.py` (workflow Shorts) choisit les meilleures prises et cale les sous-titres.
 
 ## Prochaine vidéo (mise à jour du 11/11/2026)
 **Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/4tQfKevyzCM (version corrigée, la 1re QtigLx-W-yE est en privé : devinettes fausses ; 6 min 56, « Black Friday : −53 % affichés,
