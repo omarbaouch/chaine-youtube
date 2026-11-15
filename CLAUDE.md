@@ -175,15 +175,21 @@ dans chaque fiche → `scripts/voix_omar_entier.py` (workflow Shorts) : nettoyag
 coupe au milieu, sous-titres calés. L'ancien mode « tout d'un coup avec reprises » (`decoupe.json`, `scripts/voix_omar.py`) coupait des fins
 de mots : ne plus l'utiliser sans passer par la méthode du skill `cut-video`.
 
-## Prochaine vidéo (mise à jour du 11/11/2026)
-**Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/4tQfKevyzCM (version corrigée, la 1re QtigLx-W-yE est en privé : devinettes fausses ; 6 min 56, « Black Friday : −53 % affichés,
-combien en vrai ? »). Montage : `videos/black-friday/_workspace/montage_src.py` + `choix_rushes.json` ; visuels « preuve à l'écran »
-(vraies captures UFC / Commission européenne, surligneur, caches « ? ») : `videos/black-friday/_workspace/visuels.py`. Ne pas la refaire.
-- À faire ensuite : Shorts Black Friday (chacun finit sur une question que la vidéo tranche, règle n°17) ; nouvelles miniatures
-  capsule (0,5 % de clics) et cacao (1,35 %), accord d'Omar du 11/11 ; relever le taux de clic de Black Friday à 48-72 h.
-- Vidéo suivante, annoncée à la fin de Black Friday : **l'électricité** (« sur 100 € de ta facture, combien paient vraiment le
-  courant ? »), mardi 17/11/2026. Même méthode : preuves réelles à l'écran dès l'image 0, aucune réponse avant sa révélation.
-- Proposer à Omar d'enregistrer l'accroche (30 s) avec sa voix au téléphone (règle n°17, point 6) ; test T7 toujours en attente.
+## Prochaine vidéo (mise à jour du 15/11/2026)
+**Black Friday : FAIT** (11/11, https://youtu.be/4tQfKevyzCM, 6 min 56). Ne pas la refaire.
+**Vidéo du mardi 17/11 : l'électricité, 1re vidéo au format classement** (décision du 15/11, audit `videos/_strategie/audit-2026-11-15.md`) :
+- Angle : « Les offres d'électricité : lesquelles éviter, lesquelles prendre » + la promesse annoncée à la fin de Black Friday
+  (« sur 100 € de ta facture, combien paient vraiment le courant ? ») comme accroche et 1er chapitre. Classement tiré UNIQUEMENT de sources
+  publiques citées à l'écran (comparateur officiel du médiateur national de l'énergie energie-info.fr, CRE, UFC-Que Choisir) ; jamais d'avis maison
+  sur un fournisseur. Compte à rebours, réponse principale après 85 % de la vidéo, 12-15 min.
+- Plans filmés par Omar chez lui (facture, Linky, interrupteur, radiateur, bouilloire, chargeur, tableau électrique) : `episodes/electricite/medias/omar-*.mp4`,
+  prioritaires sur Pixabay. Ses données personnelles (nom, adresse, n° client, n° de compteur/PDL) doivent être floutées.
+- Accroche de 30 s avec la voix d'Omar si `episodes/electricite/voix/accroche.m4a` existe : la nettoyer comme les Shorts (DeepFilterNet + traitement
+  de `scripts/voix_omar_entier.py`), sans couper de mot. Le reste en voix Edge Vivienne.
+- Titre = requête tapée (« offre électricité moins chère 2026 », « prix électricité facture détail »…), miniature = vrais objets, ≤ 5 mots.
+- Toujours à faire : nouvelles miniatures capsule (0,61 % de clics) et cacao (1,79 %), accord d'Omar du 11/11.
+- Shorts : T7-B en cours (voix d'Omar, lot `lot2o` : livre 17/11 13 h publié ; cinéma 18/11 et timbre 19/11 si ses prises arrivent, sinon les versions
+  synthèse déjà programmées restent). Mesure : Restés à 48 h contre 30,7 %.
 Omar n'a pas d'ordinateur : ne rien lui demander qui exige un PC (Test & Compare : via « version pour ordinateur »
 du navigateur du téléphone seulement si nécessaire).
 
