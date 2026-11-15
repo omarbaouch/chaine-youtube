@@ -156,6 +156,20 @@ Avant chaque vidéo, le stratège et le scénariste lisent `videos/_strategie/et
 des sujets, règles Shorts → abonnés) et `videos/_strategie/audit-2026-11-15.md` (audit, plan sur 30 jours).
 Skill `youtube-croissance` (claude-youtube, MIT) : audit, accroches, miniatures, Shorts, SEO. Ses repères sont en anglais et génériques :
 les règles d'Omar (`monteur-chaine`) passent avant. Ses sous-agents en parallèle sont facultatifs : les faire à la suite.
+### Skills externes installés le 15/11/2026 (tous MIT, lus avant installation) — les règles d'Omar passent avant
+- `youtube-croissance` (AgriciDaniel/claude-youtube) : audit, accroches, miniatures, Shorts, SEO.
+- `cut-video` (louisedesadeleer) : couper un long enregistrement avec reprises sur des frontières de mots précises (Montreal Forced
+  Aligner, à installer sur GitHub Actions ; jamais de fin de mot coupée). À utiliser si Omar envoie à nouveau un long enregistrement
+  avec reprises ; par défaut, il enregistre une prise par Short (`scripts/voix_omar_entier.py`). Ne pas lancer son rendu MP4 CapCut.
+- `b-roll-finder` (skill `find-broll`) : méthode pour trouver les images qui illustrent chaque phrase (règles n°1 et n°2 de `monteur-chaine`).
+  Adaptations : sources libres seulement (Pixabay, Wikimedia Commons, captures de documents officiels), jamais d'extrait YouTube ni TV ;
+  en mode automatique, le choix final est fait par le contrôle qualité du studio, Omar ne choisit que s'il le demande ;
+  profil de goût = `TASTE.md`, à remplir avec les réponses d'Omar (onboarding du skill), jamais deviné.
+- `last30days` (mvanhorn) : ce que les gens disent d'un sujet sur 30 jours (Reddit, YouTube, web…) pour choisir les sujets chauds.
+  Sources gratuites sans clé uniquement ; ne jamais lire les cookies d'un navigateur ni ouvrir de compte (ScrapeCreators…) sans
+  l'accord d'Omar. Le réseau de la session cloud bloque ces sites : à lancer sur GitHub Actions ou se rabattre sur WebSearch.
+- Écarté : `claude-faceless-shorts-creator` (dépend d'ElevenLabs, payant, et de la structure de son propre dépôt).
+
 Voix d'Omar : il enregistre tous les textes d'un coup au téléphone ; `videos/_shorts/<lot>/voix/decoupe.json` + champ `voix_fichier`
 dans chaque fiche → `scripts/voix_omar.py` (workflow Shorts) choisit les meilleures prises et cale les sous-titres.
 
