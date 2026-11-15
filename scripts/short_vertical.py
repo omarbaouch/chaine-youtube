@@ -154,7 +154,7 @@ def media_choisi(ref, f):
         fond = fond.resize((int(fond.width * k) + 1, int(fond.height * k) + 1))
         fond = fond.crop(((fond.width - W) // 2, (fond.height - H) // 2, (fond.width - W) // 2 + W, (fond.height - H) // 2 + H))
         fond = ImageEnhance.Brightness(fond.filter(ImageFilter.GaussianBlur(40))).enhance(0.45)
-        lw = 940
+        lw = 860
         carte = src.resize((lw, int(src.height * lw / src.width)), Image.LANCZOS)
         if carte.height > 760:  # carte haute : on la limite pour garder le bandeau et les sous-titres libres
             carte = src.resize((int(src.width * 760 / src.height), 760), Image.LANCZOS)
