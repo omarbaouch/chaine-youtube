@@ -95,6 +95,8 @@ for s in segs:
         mots_t.append({"texte": w.word.strip(), "debut": float(w.start), "fin": float(w.end)})
 if not mots_t:
     raise SystemExit("Transcription vide.")
+(dossier / "transcription.json").write_text(json.dumps(mots_t, ensure_ascii=False, indent=0), encoding="utf-8")
+print("TRANSCRIPTION :", " ".join(f"[{w['debut']:.1f}]{w['texte']}" for w in mots_t), flush=True)
 # jetons de la transcription, chacun rattaché à son mot (minutage partagé à parts égales)
 jetons = []  # (jeton, i_mot, debut, fin)
 for i, w in enumerate(mots_t):
@@ -130,28 +132,29 @@ for (fi, mi, p) in attendu:
         print(f"⚠ phrase introuvable : « {p} »", flush=True)
 
 # ---------- 3. choix des prises (ordre respecté, meilleure prise, la dernière à égalité) ----------
-NEG = -1e9
-meilleur = []  # par phrase : liste (score_cumulé, index_candidat_précédent)
+# Chaque phrase peut aussi être « absente » (forte pénalité) : une phrase ratée ne bloque pas tout le reste.
+ABSENT = -60.0
+etats = []  # par phrase : liste de (score_cumulé, précédent, fin_jeton) ; l'option absente garde la fin précédente
 for k, cands in enumerate(candidats):
     ligne = []
+    prec_lignes = etats[k - 1] if k else [(0.0, None, 0, None)]
     for c_i, (sc, a, b) in enumerate(cands):
-        bonus = sc + 0.02 * jetons[a][2]
-        if k == 0:
-            ligne.append((bonus, None))
-            continue
-        prec = [(meilleur[k - 1][j][0], j) for j, (_, _, b2) in enumerate(candidats[k - 1]) if b2 <= a]
-        prec = [x for x in prec if x[0] > NEG / 2]
-        ligne.append((bonus + max(prec)[0], max(prec)[1]) if prec else (NEG, None))
-    if not ligne:
-        raise SystemExit(f"Aucune prise pour « {attendu[k][2]} » : réenregistrer cette phrase.")
-    meilleur.append(ligne)
+        poss = [(v[0], j) for j, v in enumerate(prec_lignes) if v[2] <= a]
+        if poss:
+            best = max(poss)
+            ligne.append((best[0] + sc + 0.02 * jetons[a][2], best[1], b, c_i))
+    # absent : on reprend chaque état précédent tel quel
+    for j, v in enumerate(prec_lignes):
+        ligne.append((v[0] + ABSENT, j, v[2], None))
+    etats.append(ligne)
 choix = [None] * len(candidats)
-j = max(range(len(meilleur[-1])), key=lambda i: meilleur[-1][i][0])
-if meilleur[-1][j][0] < NEG / 2:
-    raise SystemExit("Impossible de remettre les phrases dans l'ordre.")
+j = max(range(len(etats[-1])), key=lambda i: etats[-1][i][0])
 for k in range(len(candidats) - 1, -1, -1):
-    choix[k] = j
-    j = meilleur[k][j][1]
+    choix[k] = etats[k][j][3]
+    j = etats[k][j][1]
+manquantes = [attendu[k][2] for k in range(len(attendu)) if choix[k] is None]
+for m in manquantes:
+    print(f"⚠ phrase non retrouvée, à réenregistrer : « {m} »", flush=True)
 
 # ---------- 4. montage de chaque Short ----------
 rapport = ["# Découpe de la voix d'Omar", "", f"Enregistrement : `{cfg['enregistrement']}`", "",
@@ -165,6 +168,9 @@ for fi, f in enumerate(fiches):
     morceaux_cliques, t_sortie, mots_sortie, liste = [], 0.0, [], []
     for n_k, k in enumerate(ks):
         _, mi, p = attendu[k]
+        if choix[k] is None:
+            rapport.append(f"| {d['id']} | {p} | — | absente | (non retrouvée) |")
+            continue
         sc, a, b = candidats[k][choix[k]]
         i_deb, i_fin = jetons[a][1], jetons[b - 1][1]
         debut = mots_t[i_deb]["debut"]; fin = mots_t[i_fin]["fin"]

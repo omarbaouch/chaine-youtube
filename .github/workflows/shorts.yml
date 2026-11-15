@@ -47,7 +47,7 @@ jobs:
           if [ -f "$cfg" ]; then
             pip install -q faster-whisper rapidfuzz num2words
             python scripts/voix_omar.py "$cfg"
-            mkdir -p out/shorts && for f in "$(dirname "$cfg")"/*.mp3 "$(dirname "$cfg")"/rapport.md; do cp "$f" "out/shorts/voix-$(basename "$f")"; done
+            mkdir -p out/shorts && for f in "$(dirname "$cfg")"/*.mp3 "$(dirname "$cfg")"/rapport.md "$(dirname "$cfg")"/transcription.json; do cp "$f" "out/shorts/voix-$(basename "$f")"; done
           fi
       - name: Fabriquer les Shorts
         env:
