@@ -5,9 +5,8 @@
  "plans": [
   {
    "texte": "Un prix conseillé barré. Est-ce vraiment une promo ?",
-   "recherche": [
-    "refrigerator",
-    "fridge kitchen"
+   "medias": [
+    "fi:episodes/black-friday/medias/mos_frigo.png"
    ]
   },
   {
@@ -19,15 +18,13 @@
   {
    "texte": "Moins treize pour cent. Mais sur un prix conseillé.",
    "medias": [
-    "fi:episodes/black-friday/medias/frigo_q.png"
-   ],
-   "chiffre": "−13 %",
-   "chiffre_mot": "moins"
+    "fi:episodes/black-friday/medias/frigo_conseille.png"
+   ]
   },
   {
    "texte": "Selon l'UFC-Que Choisir, cette astuce évite la règle des trente jours.",
    "medias": [
-    "fi:episodes/black-friday/medias/frigo_conseille.png"
+    "fi:episodes/black-friday/medias/frigo_30j.png"
    ]
   },
   {
@@ -49,9 +46,9 @@
   "le vrai prix"
  ],
  "fin": "La vraie remise est dans la vidéo complète. Abonne-toi : chaque jour, le vrai prix d'un truc que tu achètes.",
- "recherche_fin": [
-  "black friday shopping",
-  "shopping bags"
+ "test": "BF",
+ "medias_fin": [
+  "fi:episodes/black-friday/medias/frigo_q.png"
  ],
- "test": "BF"
+ "rendu": 3
 }
