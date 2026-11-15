@@ -170,8 +170,10 @@ les règles d'Omar (`monteur-chaine`) passent avant. Ses sous-agents en parallè
   l'accord d'Omar. Le réseau de la session cloud bloque ces sites : à lancer sur GitHub Actions ou se rabattre sur WebSearch.
 - Écarté : `claude-faceless-shorts-creator` (dépend d'ElevenLabs, payant, et de la structure de son propre dépôt).
 
-Voix d'Omar : il enregistre tous les textes d'un coup au téléphone ; `videos/_shorts/<lot>/voix/decoupe.json` + champ `voix_fichier`
-dans chaque fiche → `scripts/voix_omar.py` (workflow Shorts) choisit les meilleures prises et cale les sous-titres.
+Voix d'Omar (choix du 15/11) : une prise par Short au téléphone. `videos/_shorts/<lot>/voix/entier.json` + champ `voix_fichier`
+dans chaque fiche → `scripts/voix_omar_entier.py` (workflow Shorts) : nettoyage IA DeepFilterNet, traitement studio, -16 LUFS, aucune
+coupe au milieu, sous-titres calés. L'ancien mode « tout d'un coup avec reprises » (`decoupe.json`, `scripts/voix_omar.py`) coupait des fins
+de mots : ne plus l'utiliser sans passer par la méthode du skill `cut-video`.
 
 ## Prochaine vidéo (mise à jour du 11/11/2026)
 **Black Friday : FAIT.** En ligne le 11/11/2026 vers 21 h : https://youtu.be/4tQfKevyzCM (version corrigée, la 1re QtigLx-W-yE est en privé : devinettes fausses ; 6 min 56, « Black Friday : −53 % affichés,
