@@ -164,3 +164,24 @@ Relevé du 15/11 9 h 15 Paris (stats relancées) : **13 abonnés (+0, 7e jour sa
   Europe 314 sites https://youtu.be/w2-GTv5qxrY (22/11 13 h). Lien de la vidéo longue en description et en commentaire.
 - Nouveau : `short_vertical.py` accepte les visuels du dépôt (`"fi:chemin"`), recadrés sur leur contenu et posés sans rogner le texte.
 - À mesurer : Restés et abonnés de ces 3 Shorts, et clics de la vidéo Black Friday d'ici le 27/11.
+
+## Bilan du lundi 16/11 (stats du 16/11 6 h 39 UTC)
+Chaîne : **13 abonnés (+0 en 7 jours, 8e jour sans abonné)**, 12 003 vues (+1 930 sur 7 j, +852 sur 24 h). Heures longues 8,0 ; vues Shorts 90 j : 10 366.
+Classement des Shorts publiés du 09 au 15/11 (vues · Restés · abonnés) :
+1. Steak haché CQ_DUZ5X5EE : 482 (~43 h) · Restés pas encore là · 0
+2. **Livre, voix d'Omar ZghcuPz_6qY : 381 en ~15 h** (public dès le 15/11 16 h 28, pas le 17/11 comme prévu) · pas encore là · 0
+3. Doliprane 08uXHwnLYOM : 335 (~19 h) · pas encore là · 0
+4. Lunettes xVZA4wmyIbM : 222 (~72 h) · **15,2 %** · 0
+5. Tasse à 10 c 92 · 14,4 % — Spotify 60 · 36,7 % — cacao fermente 50 · 20 % — le reste sous 40 vues.
+Lecture : la distribution est repartie depuis le 14/11 (rythme 1 Short/jour), mais « Restés » reste très bas (15 % sur le seul Short de la semaine mesurable à plus de 100 vues).
+- **T7-B** (voix d'Omar) : départ le plus rapide de la semaine (381 vues en 15 h), mais Restés pas encore dans l'API. 48 h = 17/11 16 h 30 : **à conclure le 17-18/11**.
+  Cinéma et timbre : prises d'Omar toujours absentes (`lot2o/voix/` n'a que livre.m4a) ; sans elles, les versions synthèse du 18 et 19/11 restent.
+- **T5** (prix payé en tête vs question) : A lait 16,7 % / steak ?, B pâtes 18,5 % / lunettes 15,2 % / Doliprane ? ; écart nul là où on mesure : **à confirmer**, test secondaire.
+- **T6** : clos sans suite (Spotify 36,7 % contre électricité animée 33,3 %, moins de 100 vues, pas de nouveau Short animé).
+- **Test de la semaine : T7-B (suite), une seule variable = la voix d'Omar.** Mesure : Restés à 48 h du livre (et cinéma/timbre si prises) contre 30,7 %.
+  T7-C (vrai objet filmé dans la 1re seconde) attend les plans d'Omar ; il passera la semaine prochaine si T7-B est conclu.
+- Rythme : 16/11 eau, 17/11 livre (déjà en ligne depuis le 15/11 : le 15/11 a eu 2 Shorts), 18/11 cinéma, 19/11 timbre, 20-22/11 Black Friday.
+  **Aucun jour libre du 16 au 22/11 : aucun Short fabriqué cette semaine** (réserve beurre, encre, soda gardée pour la semaine du 23/11).
+- Correction : le commentaire épinglé du livre voix d'Omar restait « en attente » (fiche datée du 17/11 alors que la vidéo est en ligne) → `publier_le`
+  de la fiche `fait/` recalé sur la mise en ligne réelle, le commentaire part au prochain passage du workflow Publier. Autres fiches : toutes réussies.
+- Doublons signalés par les stats (rzuXPc_KRa0, jGXkavzo0zU) : même identifiant listé deux fois, bug d'affichage, rien à faire. Short anglais U5Xn8xj0iPA (92 vues) : toujours en ligne, décision d'Omar.
