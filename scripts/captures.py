@@ -64,12 +64,31 @@ def pdf(e):
     return f"page {page}"
 
 
+def commons(e):
+    """wc:File:… → original via l'API (pas de miniature : évite le 429 « Too many thumbnail requests »), réduit à 2560 px."""
+    import json as _j, time, urllib.parse
+    from PIL import Image
+    titre = e["url"][3:]
+    q = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "titles": titre, "prop": "imageinfo", "iiprop": "url", "format": "json"})
+    for essai in range(6):
+        try:
+            j = _j.loads(urllib.request.urlopen(urllib.request.Request(q, headers={"User-Agent": "chaine-youtube-captures/1.0 (github.com/omarbaouch/chaine-youtube)"}), timeout=60).read())
+            url = list(j["query"]["pages"].values())[0]["imageinfo"][0]["url"]
+            f = os.path.join(sortie, e["nom"])
+            open(f, "wb").write(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "chaine-youtube-captures/1.0 (github.com/omarbaouch/chaine-youtube)"}), timeout=120).read())
+            im = Image.open(f).convert("RGB"); im.thumbnail((2560, 2560)); im.save(f, quality=90)
+            return url
+        except Exception as x:
+            if essai == 5: raise
+            time.sleep(20 * (essai + 1))
+
+
 from playwright.sync_api import sync_playwright
 rapport = []
 with sync_playwright() as pw:
     for e in liste:
         try:
-            r = pdf(e) if e["url"].lower().split("?")[0].endswith(".pdf") else html(e, pw)
+            r = commons(e) if e["url"].startswith("wc:") else pdf(e) if e["url"].lower().split("?")[0].endswith(".pdf") else html(e, pw)
             rapport.append(f"{e['nom']}: ok ({r})")
         except Exception as x:
             rapport.append(f"{e['nom']}: ÉCHEC {type(x).__name__} {str(x)[:200]}")
