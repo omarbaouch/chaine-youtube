@@ -1,0 +1,76 @@
+{
+ "titre": "electricite-rep-10",
+ "scenes": [
+  {
+   "id": "p096",
+   "texte": "Piège numéro deux : l'offre indexée sur le marché, ou dynamique, en plein hiver.",
+   "recherche": [
+    "electrical panel home breakers",
+    "fuse box house",
+    "circuit breaker panel close up"
+   ]
+  },
+  {
+   "id": "p099",
+   "texte": "Indice : le plus cher, c'est en hiver, le soir, quand tout le monde consomme.",
+   "recherche": [
+    "city apartment windows lit at night winter",
+    "kitchen cooking evening stove",
+    "living room lights evening winter"
+   ]
+  },
+  {
+   "id": "p101",
+   "texte": "Le tarif bleu, lui, réseau compris : vingt centimes.",
+   "recherche": [
+    "plug in wall socket europe",
+    "electric kettle on counter",
+    "boiling water kettle light"
+   ]
+  },
+  {
+   "id": "p104",
+   "texte": "Pour la C R E, ce dernier niveau peut évoluer de façon aléatoire ou imprévisible.",
+   "recherche": [
+    "contract document pen",
+    "signing contract close up",
+    "paper contract desk"
+   ]
+  },
+  {
+   "id": "p105",
+   "texte": "Le réflexe : cherche la lettre sur ton contrat. Si elle manque, demande-la.",
+   "recherche": [
+    "flipping through contract pages",
+    "magnifying glass on document",
+    "renewal letter envelope"
+   ]
+  },
+  {
+   "id": "p107",
+   "texte": "Et le pire piège ? C'est celui que tu as peut-être déjà, au fond d'un tiroir.",
+   "recherche": [
+    "opening drawer papers",
+    "old documents in drawer",
+    "file folder documents home"
+   ]
+  },
+  {
+   "id": "p108",
+   "texte": "Est-ce que je paie mon électricité trop cher ?",
+   "recherche": [
+    "drawer papers blurred",
+    "old files dark"
+   ]
+  },
+  {
+   "id": "p109",
+   "texte": "Piège numéro un : le vieux contrat que tu n'as jamais comparé.",
+   "recherche": [
+    "old contract paper folder",
+    "dusty documents box",
+    "binder papers shelf"
+   ]
+  }
+ ]
+}

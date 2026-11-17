@@ -1,0 +1,73 @@
+{
+ "titre": "electricite-rep-9",
+ "scenes": [
+  {
+   "id": "p084",
+   "texte": "Quatrième devinette : pour un client, au total, sa facture prend combien ?",
+   "recherche": [
+    "letter reading hands table",
+    "paper letter unfolded close up"
+   ]
+  },
+  {
+   "id": "p085",
+   "texte": "Plus douze, plus vingt-cinq, ou plus quarante-deux pour cent ?",
+   "recherche": [
+    "letter on wooden table close up",
+    "folded letter close up",
+    "letter paper top view"
+   ]
+  },
+  {
+   "id": "p087",
+   "texte": "Elle ne touchait que le kilowattheure hors taxes. Pas l'abonnement, pas les taxes.",
+   "recherche": [
+    "paper bill pen crossing lines",
+    "crossing out text with marker",
+    "marker on document close up"
+   ]
+  },
+  {
+   "id": "p089",
+   "texte": "Et le plus fort : sans réponse de ta part, le silence vaut acceptation.",
+   "recherche": [
+    "highlighter on letter",
+    "reading fine print document",
+    "letter highlighted text"
+   ]
+  },
+  {
+   "id": "p091",
+   "texte": "C'est légal : le fournisseur doit juste te prévenir au moins un mois avant.",
+   "recherche": [
+    "smartphone email inbox close up",
+    "checking emails phone",
+    "spam folder email phone"
+   ]
+  },
+  {
+   "id": "p092",
+   "texte": "Le réflexe : cherche la date de fin de ton prix, et fouille tes spams.",
+   "recherche": [
+    "bill end date line close up",
+    "junk mail folder smartphone"
+   ]
+  },
+  {
+   "id": "p094",
+   "texte": "Il y a pire : un prix qui ne s'arrête jamais de bouger.",
+   "recherche": [
+    "stock chart zigzag screen",
+    "volatile market graph monitor"
+   ]
+  },
+  {
+   "id": "p095",
+   "texte": "Prix fixe ou indexé : que choisir ?",
+   "recherche": [
+    "stock screen blurred",
+    "trading monitor dark"
+   ]
+  }
+ ]
+}

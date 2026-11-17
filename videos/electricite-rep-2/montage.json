@@ -1,0 +1,75 @@
+{
+ "titre": "electricite-rep-2",
+ "scenes": [
+  {
+   "id": "p010",
+   "texte": "Toi aussi, tu paies peut-être trop. Et parfois, c'est pire.",
+   "recherche": [
+    "hand switching off light switch",
+    "electric kettle boiling kitchen",
+    "phone charger plugged socket"
+   ]
+  },
+  {
+   "id": "p011",
+   "texte": "Printemps deux mille vingt-quatre, dans les Yvelines.",
+   "recherche": [
+    "suburban houses france",
+    "french pavilion house street",
+    "residential street spring"
+   ]
+  },
+  {
+   "id": "p012",
+   "texte": "Un couple ouvre sa facture d'électricité.",
+   "recherche": [
+    "hands opening envelope close up",
+    "unfolded letter reading hands"
+   ]
+  },
+  {
+   "id": "p014",
+   "texte": "Pourquoi leur compteur s'est arrêté ? Personne n'a la réponse.",
+   "recherche": [
+    "electric meter close up dark",
+    "smart meter blinking light",
+    "electricity meter box wall"
+   ]
+  },
+  {
+   "id": "p016",
+   "texte": "Tu sauras à la fin combien ils ont vraiment payé.",
+   "recherche": [
+    "worried hands holding bill",
+    "paper bill on table lamp",
+    "person reading bill at night"
+   ]
+  },
+  {
+   "id": "p017",
+   "texte": "Mais d'abord, ouvrons ensemble ta facture, ligne par ligne.",
+   "recherche": [
+    "invoice lines close up pen",
+    "utility bill details macro",
+    "bill table numbers close up"
+   ]
+  },
+  {
+   "id": "p018",
+   "texte": "Facture d'électricité : où vont tes 100 € ?",
+   "recherche": [
+    "electricity bill blurred background",
+    "invoice papers desk"
+   ]
+  },
+  {
+   "id": "p019",
+   "texte": "Sur ta facture, il y a trois grandes familles de lignes.",
+   "recherche": [
+    "pen pointing invoice sections",
+    "hand pointing document lines",
+    "reviewing bill with pen"
+   ]
+  }
+ ]
+}

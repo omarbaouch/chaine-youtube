@@ -1,0 +1,74 @@
+{
+ "titre": "electricite-rep-11",
+ "scenes": [
+  {
+   "id": "p111",
+   "texte": "Cinquième devinette : combien de foyers payaient un prix fixe plus de cinq pour cent",
+   "recherche": [
+    "apartment building windows night",
+    "french houses street evening",
+    "residential building lights"
+   ]
+  },
+  {
+   "id": "p114",
+   "texte": "au moins cinq cent quatre-vingt-onze euros d'économie par an, hors taxes.",
+   "recherche": [
+    "bill and coins on table",
+    "euro coins on invoice"
+   ]
+  },
+  {
+   "id": "p115",
+   "texte": "Et presque toutes ces offres chères ont un point commun : elles sont vertes.",
+   "recherche": [
+    "wind turbines green field",
+    "solar panels roof",
+    "green energy wind farm"
+   ]
+  },
+  {
+   "id": "p118",
+   "texte": "Le réflexe : compare ton prix du kilowattheure et ton abonnement à ceux du tarif bleu.",
+   "recherche": [
+    "price per kilowatt hour bill close up",
+    "bill subscription line close up"
+   ]
+  },
+  {
+   "id": "p119",
+   "texte": "Voilà pour les pièges. Maintenant, ce qu'il faut prendre, en commençant par le numéro trois.",
+   "recherche": [
+    "hand turning on light switch",
+    "lamp turning on evening",
+    "light bulb switching on"
+   ]
+  },
+  {
+   "id": "p120",
+   "texte": "Heures creuses ou Tempo : ça vaut le coup ?",
+   "recherche": [
+    "washing machine blurred",
+    "laundry room dark"
+   ]
+  },
+  {
+   "id": "p121",
+   "texte": "Numéro trois : les heures creuses, ou Tempo. Seulement si tu peux décaler ta consommation.",
+   "recherche": [
+    "washing machine start button night",
+    "loading washing machine",
+    "washing machine running"
+   ]
+  },
+  {
+   "id": "p122",
+   "texte": "Tu as huit heures creuses par jour, la plupart la nuit.",
+   "recherche": [
+    "water heater tank home",
+    "boiler cylinder house",
+    "hot water tank basement"
+   ]
+  }
+ ]
+}

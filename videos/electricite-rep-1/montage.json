@@ -1,0 +1,77 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "p001",
+   "texte": "Sur cent euros de ta facture d'électricité,",
+   "recherche": [
+    "french electricity bill paper close up",
+    "hand holding electricity bill",
+    "paper invoice table close up"
+   ]
+  },
+  {
+   "id": "p002",
+   "texte": "combien paient vraiment le courant ?",
+   "recherche": [
+    "linky smart meter",
+    "green electricity meter display",
+    "smart meter france close up"
+   ]
+  },
+  {
+   "id": "p003",
+   "texte": "Et cet hiver, quelle offre te protège vraiment ?",
+   "recherche": [
+    "electric radiator home winter",
+    "hand adjusting radiator thermostat",
+    "white electric heater living room"
+   ]
+  },
+  {
+   "id": "p004",
+   "texte": "Devine d'abord : sur ces cent euros, combien pour ton fournisseur :",
+   "recherche": [
+    "finger pointing at bill lines",
+    "reading invoice close up",
+    "person checking utility bill"
+   ]
+  },
+  {
+   "id": "p005",
+   "texte": "vingt euros, quarante euros, ou soixante euros ?",
+   "recherche": [
+    "electricity bill close up desk",
+    "utility bill paper macro",
+    "bill amount paper close up"
+   ]
+  },
+  {
+   "id": "p006",
+   "texte": "Sur les marchés, l'électricité vient de s'envoler.",
+   "recherche": [
+    "high voltage power lines sunset",
+    "electricity pylons winter france",
+    "power line towers aerial"
+   ]
+  },
+  {
+   "id": "p007",
+   "texte": "Et certains contrats vont suivre, dès janvier.",
+   "recherche": [
+    "letter in mailbox close up",
+    "hand taking envelope from mailbox",
+    "opening letter envelope"
+   ]
+  },
+  {
+   "id": "p009",
+   "texte": "au moins cinq cent quatre-vingt-onze euros par an, hors taxes.",
+   "recherche": [
+    "hand holding paper bill close up",
+    "woman holding invoice paper",
+    "man reading paper bill"
+   ]
+  }
+ ]
+}

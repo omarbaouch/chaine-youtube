@@ -1,0 +1,75 @@
+{
+ "titre": "electricite-rep-12",
+ "scenes": [
+  {
+   "id": "p123",
+   "texte": "Et l'été, une partie peut passer en milieu de journée.",
+   "recherche": [
+    "summer afternoon sun house",
+    "solar panels roof sunny day",
+    "sunny garden afternoon"
+   ]
+  },
+  {
+   "id": "p125",
+   "texte": "Le réflexe : vérifie tes horaires, puis lance machine et ballon dedans.",
+   "recherche": [
+    "washing machine timer setting",
+    "programming washing machine delay",
+    "hot water heater switch"
+   ]
+  },
+  {
+   "id": "p126",
+   "texte": "Tempo, c'est plus radical : trois cents jours bleus pas chers, et vingt-deux jours rouges.",
+   "recherche": [
+    "calendar colored days",
+    "radiator in winter home",
+    "winter sky clouds"
+   ]
+  },
+  {
+   "id": "p128",
+   "texte": "Ils tombent de novembre à mars, jamais le week-end, et tu le sais la veille.",
+   "recherche": [
+    "winter morning frost window",
+    "snowy street france",
+    "cold winter day house"
+   ]
+  },
+  {
+   "id": "p130",
+   "texte": "Si tu chauffes à l'électricité et que tu ne peux pas décaler, méfie-toi.",
+   "recherche": [
+    "hand turning radiator thermostat",
+    "electric heater knob",
+    "radiator valve close up"
+   ]
+  },
+  {
+   "id": "p131",
+   "texte": "Il y a plus simple : un tarif que dix-neuf millions de foyers ont déjà.",
+   "recherche": [
+    "aerial view french town houses",
+    "village rooftops france",
+    "city rooftops aerial"
+   ]
+  },
+  {
+   "id": "p132",
+   "texte": "Tarif bleu 2027 : faut-il le garder ?",
+   "recherche": [
+    "bill papers blurred desk",
+    "invoice stack dark"
+   ]
+  },
+  {
+   "id": "p135",
+   "texte": "Fin juin, selon la C R E, la moitié des offres étaient moins chères que lui.",
+   "recherche": [
+    "electricity offers comparison paper",
+    "energy bills comparison table"
+   ]
+  }
+ ]
+}

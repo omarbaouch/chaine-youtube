@@ -1,0 +1,75 @@
+{
+ "titre": "electricite-rep-5",
+ "scenes": [
+  {
+   "id": "p040",
+   "texte": "Et le courant livrable l'an prochain a plus que doublé depuis janvier.",
+   "recherche": [
+    "financial graph rising screen",
+    "stock chart going up monitor",
+    "price chart close up"
+   ]
+  },
+  {
+   "id": "p042",
+   "texte": "Ta facture, elle, n'a pas pris fois quatre. Le tarif bleu amortit le choc.",
+   "recherche": [
+    "bill on table with calculator",
+    "calculator and invoice",
+    "person calculating bills"
+   ]
+  },
+  {
+   "id": "p043",
+   "texte": "Son prix est calculé sur des achats étalés sur vingt-quatre mois.",
+   "recherche": [
+    "calendar pages turning",
+    "wall calendar months",
+    "desk calendar close up"
+   ]
+  },
+  {
+   "id": "p044",
+   "texte": "Il ne bouge pas avant le premier février. Après, personne ne sait de combien il montera.",
+   "recherche": [
+    "calendar february page",
+    "calendar date circled red",
+    "marking calendar pen"
+   ]
+  },
+  {
+   "id": "p045",
+   "texte": "Les autres offres n'ont pas toutes cette protection. Certaines changent déjà de prix, en silence.",
+   "recherche": [
+    "reading letter at home",
+    "email on smartphone close up",
+    "mailbox letters"
+   ]
+  },
+  {
+   "id": "p046",
+   "texte": "Voilà les cinq pièges à éviter cet hiver, et les trois choix qui te protègent.",
+   "recherche": [
+    "electricity bill on table blurred",
+    "bills stacked on desk"
+   ]
+  },
+  {
+   "id": "p047",
+   "texte": "Démarchage électricité : est-ce légal ?",
+   "recherche": [
+    "smartphone on table dark",
+    "phone screen glow night"
+   ]
+  },
+  {
+   "id": "p048",
+   "texte": "Piège numéro cinq : le contrat signé au téléphone, ou sur le pas de ta porte.",
+   "recherche": [
+    "smartphone ringing unknown number table",
+    "phone ringing on kitchen table",
+    "incoming call smartphone close up"
+   ]
+  }
+ ]
+}

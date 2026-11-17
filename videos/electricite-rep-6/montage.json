@@ -1,0 +1,75 @@
+{
+ "titre": "electricite-rep-6",
+ "scenes": [
+  {
+   "id": "p051",
+   "texte": "Un vendeur n'a plus le droit de t'appeler sans ton accord préalable.",
+   "recherche": [
+    "hand rejecting phone call",
+    "declining call smartphone",
+    "phone call screen close up"
+   ]
+  },
+  {
+   "id": "p055",
+   "texte": "Réponse à la devinette : le contrat est nul, comme s'il n'avait jamais existé.",
+   "recherche": [
+    "tearing paper contract",
+    "ripping document close up",
+    "torn paper sheet hands"
+   ]
+  },
+  {
+   "id": "p056",
+   "texte": "Deux limites quand même : ton fournisseur actuel peut t'appeler pour ton contrat en cours.",
+   "recherche": [
+    "phone ringing on desk office",
+    "mobile phone vibrating table"
+   ]
+  },
+  {
+   "id": "p057",
+   "texte": "Et cette loi parle du téléphone. À ta porte, le démarchage reste permis.",
+   "recherche": [
+    "salesman at front door",
+    "man ringing doorbell",
+    "door knock close up"
+   ]
+  },
+  {
+   "id": "p058",
+   "texte": "Le réflexe : ne signe jamais sur le moment. Raccroche, ferme, et compare au calme.",
+   "recherche": [
+    "hand hanging up phone",
+    "closing front door",
+    "comparing offers on laptop"
+   ]
+  },
+  {
+   "id": "p059",
+   "texte": "Mais le piège suivant arrive par la poste. Et notre couple des Yvelines le connaît bien.",
+   "recherche": [
+    "hand taking letter from mailbox",
+    "envelope in letterbox",
+    "mail delivery letterbox"
+   ]
+  },
+  {
+   "id": "p060",
+   "texte": "Facture d'électricité trop élevée : que faire ?",
+   "recherche": [
+    "electric meter wall blurred",
+    "meter display dark"
+   ]
+  },
+  {
+   "id": "p061",
+   "texte": "Piège numéro quatre : la facture estimée que tu ne vérifies jamais.",
+   "recherche": [
+    "smart meter display digits",
+    "electricity meter reading close up",
+    "meter counter numbers"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "titre": "electricite-rep-7",
+ "scenes": [
+  {
+   "id": "p063",
+   "texte": "Leur fournisseur facture donc à l'estimation, et réclame quatre mille euros pour le mois de mai.",
+   "recherche": [
+    "calculator and bill close up",
+    "invoice total amount paper",
+    "shocked hands holding paper bill"
+   ]
+  },
+  {
+   "id": "p064",
+   "texte": "Ils ne paient pas. Le contrat est résilié, et leur espace client est coupé.",
+   "recherche": [
+    "pushing paper bill away table",
+    "access denied phone screen",
+    "recorded delivery letter hand"
+   ]
+  },
+  {
+   "id": "p065",
+   "texte": "Puis arrive un commissaire de justice, l'ancien huissier.",
+   "recherche": [
+    "official letter envelope stamp",
+    "registered mail letter",
+    "door with letter on floor"
+   ]
+  },
+  {
+   "id": "p068",
+   "texte": "Garde ta réponse. L'an dernier, dans l'Hérault, une sexagénaire a vécu pire.",
+   "recherche": [
+    "etang de thau sete",
+    "mediterranean village france",
+    "south france lagoon village"
+   ]
+  },
+  {
+   "id": "p069",
+   "texte": "Une erreur de saisie, et on lance un prélèvement de deux cent onze mille euros.",
+   "recherche": [
+    "bank statement close up",
+    "bank card payment terminal",
+    "hands holding bank statement"
+   ]
+  },
+  {
+   "id": "p070",
+   "texte": "Elle a raconté à Midi Libre : « J'ai hurlé et même vomi. »",
+   "recherche": [
+    "hands covering face paper bill",
+    "woman hands paper bill close up",
+    "crumpled paper bill hand"
+   ]
+  },
+  {
+   "id": "p071",
+   "texte": "Si ça t'arrive : fais d'abord une réclamation écrite à ton fournisseur.",
+   "recherche": [
+    "pen writing letter desk",
+    "handwritten letter close up"
+   ]
+  },
+  {
+   "id": "p072",
+   "texte": "Réponse : pas de solution deux mois après ta réclamation ? Tu saisis le médiateur, gratuitement.",
+   "recherche": [
+    "laptop online form typing",
+    "person filling form laptop",
+    "hands typing keyboard home"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "titre": "electricite-rep-4",
+ "scenes": [
+  {
+   "id": "p031",
+   "texte": "Une trentaine d'euros seulement, sur tes cent euros.",
+   "recherche": [
+    "cooling tower steam close up",
+    "nuclear plant at dusk"
+   ]
+  },
+  {
+   "id": "p032",
+   "texte": "Et c'est justement cette part-là qui s'envole sur les marchés. De combien ?",
+   "recherche": [
+    "stock market screen numbers",
+    "trading floor monitors",
+    "financial chart screen rising"
+   ]
+  },
+  {
+   "id": "p033",
+   "texte": "Prix de l'électricité 2027 : pourquoi ça monte ?",
+   "recherche": [
+    "pylons silhouette dusk",
+    "power grid towers evening"
+   ]
+  },
+  {
+   "id": "p034",
+   "texte": "Jusqu'en deux mille vingt-cinq, les fournisseurs avaient une part du nucléaire à prix régulé.",
+   "recherche": [
+    "nuclear power plant aerial",
+    "nuclear reactor building",
+    "cooling tower steam sky"
+   ]
+  },
+  {
+   "id": "p035",
+   "texte": "Depuis janvier, c'est fini : ils achètent tout sur les marchés, ou le produisent eux-mêmes.",
+   "recherche": [
+    "trading floor screens",
+    "electricity grid control room",
+    "wind turbines field"
+   ]
+  },
+  {
+   "id": "p036",
+   "texte": "Deuxième devinette : début novembre, sur le marché, le prix avait été multiplié par combien ?",
+   "recherche": [
+    "stock ticker screen close up",
+    "market prices monitor",
+    "trading screen numbers"
+   ]
+  },
+  {
+   "id": "p038",
+   "texte": "Et le mécanisme censé prendre le relais s'appelle le versement nucléaire universel.",
+   "recherche": [
+    "nuclear plant landscape",
+    "high voltage line close up",
+    "electricity meter linky"
+   ]
+  },
+  {
+   "id": "p039",
+   "texte": "Selon la C R E, début octobre, il ne te rendrait rien en deux mille vingt-sept.",
+   "recherche": [
+    "nuclear power station winter",
+    "reactor dome aerial"
+   ]
+  }
+ ]
+}

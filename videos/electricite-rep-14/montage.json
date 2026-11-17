@@ -1,0 +1,49 @@
+{
+ "titre": "electricite-rep-14",
+ "scenes": [
+  {
+   "id": "p151",
+   "texte": "Aucun frais, et le courant ne s'arrête pas : c'est le même réseau.",
+   "recherche": [
+    "light bulb glowing",
+    "electric meter wall",
+    "power line close up"
+   ]
+  },
+  {
+   "id": "p152",
+   "texte": "Alors, cet hiver, quelle offre te protège vraiment ?",
+   "recherche": [
+    "electricity bill and meter",
+    "bill next to electric meter",
+    "electric bill on table close up"
+   ]
+  },
+  {
+   "id": "p157",
+   "texte": "Et toi, ton prix fixe, il se termine quand ? Dis-le en commentaire.",
+   "recherche": [
+    "bill end date close up",
+    "typing comment on phone",
+    "alphabet letter blocks"
+   ]
+  },
+  {
+   "id": "p158",
+   "texte": "Mardi premier décembre : les jouets de Noël, et ce qu'ils coûtent vraiment à fabriquer.",
+   "recherche": [
+    "christmas toys under tree",
+    "wrapped gifts christmas tree",
+    "toy shop christmas"
+   ]
+  },
+  {
+   "id": "p159",
+   "texte": "Abonne-toi pour ne pas la rater.",
+   "recherche": [
+    "hand pressing button smartphone",
+    "notification bell phone"
+   ]
+  }
+ ]
+}

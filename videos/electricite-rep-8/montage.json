@@ -1,0 +1,75 @@
+{
+ "titre": "electricite-rep-8",
+ "scenes": [
+  {
+   "id": "p073",
+   "texte": "Notre couple, lui, a attendu un an avant d'appeler une association, l'Adéic.",
+   "recherche": [
+    "stack of letters desk",
+    "phone call home desk"
+   ]
+  },
+  {
+   "id": "p074",
+   "texte": "Cette association a une adresse directe chez leur fournisseur.",
+   "recherche": [
+    "email inbox laptop screen",
+    "sending email laptop",
+    "office desk letters"
+   ]
+  },
+  {
+   "id": "p076",
+   "texte": "Le réflexe : compare l'index de ton compteur avec celui écrit sur ta facture.",
+   "recherche": [
+    "reading electricity meter flashlight",
+    "checking meter numbers",
+    "meter reading notebook"
+   ]
+  },
+  {
+   "id": "p077",
+   "texte": "Eux, au moins, ont vu leur facture. D'autres reçoivent juste un courrier qu'ils ne lisent pas.",
+   "recherche": [
+    "pile of unopened envelopes",
+    "unread email notification phone",
+    "waste paper bin letters"
+   ]
+  },
+  {
+   "id": "p078",
+   "texte": "Offre électricité −20 % : où est le piège ?",
+   "recherche": [
+    "letter on desk blurred",
+    "envelope close up dark"
+   ]
+  },
+  {
+   "id": "p079",
+   "texte": "Piège numéro trois : la remise de moins vingt pour cent, qui bascule en silence.",
+   "recherche": [
+    "reading letter close up",
+    "unfolding letter hands",
+    "letter on table"
+   ]
+  },
+  {
+   "id": "p081",
+   "texte": "Leur offre à moins vingt pour cent s'arrête le trente et un décembre.",
+   "recherche": [
+    "calendar december 31",
+    "new year calendar page",
+    "calendar last day of year"
+   ]
+  },
+  {
+   "id": "p083",
+   "texte": "Et l'abonnement, lui, prend près de cinquante pour cent.",
+   "recherche": [
+    "french electrical outlet",
+    "wall socket type e",
+    "electricity meter cabinet"
+   ]
+  }
+ ]
+}

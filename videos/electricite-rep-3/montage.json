@@ -1,0 +1,76 @@
+{
+ "titre": "electricite-rep-3",
+ "scenes": [
+  {
+   "id": "p020",
+   "texte": "D'abord le réseau : les lignes, les poteaux, et le compteur, jusqu'à chez toi.",
+   "recherche": [
+    "power lines countryside france",
+    "electric pole street",
+    "lineman working on power line"
+   ]
+  },
+  {
+   "id": "p021",
+   "texte": "Ça, tu le paies pareil, quel que soit ton fournisseur.",
+   "recherche": [
+    "electrician technician meter installation",
+    "worker installing electric meter",
+    "electric cabinet technician"
+   ]
+  },
+  {
+   "id": "p022",
+   "texte": "Sur cent euros, le réseau en prend un peu moins de trente.",
+   "recherche": [
+    "high voltage pylons fog",
+    "transmission towers field"
+   ]
+  },
+  {
+   "id": "p023",
+   "texte": "Ensuite, les taxes : l'accise, une petite contribution, et la T V A.",
+   "recherche": [
+    "invoice tax line close up",
+    "calculator and receipts",
+    "paper bill numbers macro"
+   ]
+  },
+  {
+   "id": "p024",
+   "texte": "Devine : sur cent euros, dix, vingt, ou trente euros de taxes ?",
+   "recherche": [
+    "electricity invoice on kitchen table",
+    "bill paper top view",
+    "printed bill close up light"
+   ]
+  },
+  {
+   "id": "p026",
+   "texte": "Il reste la fourniture : ce que te vend vraiment ton fournisseur.",
+   "recherche": [
+    "kettle steam close up",
+    "switching on kettle",
+    "woman pouring from electric kettle"
+   ]
+  },
+  {
+   "id": "p029",
+   "texte": "Dans ces quarante euros, environ sept paient la commercialisation et des certificats d'économies d'énergie.",
+   "recherche": [
+    "call center headset office",
+    "customer service desk phone",
+    "office telephone desk"
+   ]
+  },
+  {
+   "id": "p030",
+   "texte": "Et le courant lui-même, celui qui sort des centrales ?",
+   "recherche": [
+    "nuclear power plant cooling towers",
+    "nuclear plant river france",
+    "power station steam towers"
+   ]
+  }
+ ]
+}
