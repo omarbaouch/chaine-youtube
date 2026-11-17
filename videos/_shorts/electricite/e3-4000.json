@@ -1,0 +1,52 @@
+{
+ "id": "e3-4000",
+ "titre": "4 000 € d'électricité en un mois : comment c'est possible ? #shorts",
+ "accroche": "4 000 € D'ÉLECTRICITÉ EN UN MOIS ?",
+ "plans": [
+  {
+   "texte": "Quatre mille euros d'électricité en un mois.",
+   "chiffre": "4 000 €",
+   "chiffre_mot": "quatre",
+   "medias": [
+    "fi:episodes/electricite/medias/cap11a_jdn_titre.png"
+   ]
+  },
+  {
+   "texte": "Dans les Yvelines, leur Linky n'envoie plus aucun relevé, de mars à mai.",
+   "medias": [
+    "wc:File:Linky.JPG",
+    "wc:File:Un compteur Linky Rue Professeur Morat (Lyon).jpg"
+   ]
+  },
+  {
+   "texte": "Le fournisseur facture à l'estimation : quatre mille euros pour le seul mois de mai.",
+   "chiffre": "1 mois",
+   "chiffre_mot": "estimation",
+   "medias": [
+    "pi:286479",
+    "pv:133501"
+   ]
+  },
+  {
+   "texte": "Ils ne paient pas. Contrat résilié, puis un commissaire de justice.",
+   "medias": [
+    "pv:198901",
+    "wc:File:1002 Swiss lawyer in front of the Federal Supreme Court of Switzerland Photo by Giles Laurent.jpg"
+   ]
+  }
+ ],
+ "fin": "Combien ils ont fini par payer ? La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "Journal du Net, 15/05/2026"
+ ],
+ "commentaire": "Tu vérifies l'index de ton compteur sur ta facture ? 👇",
+ "tags": [
+  "linky",
+  "facture électricité",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "fi:episodes/electricite/medias/cap11a_jdn_titre.png"
+ ]
+}

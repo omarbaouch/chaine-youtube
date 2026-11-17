@@ -1,0 +1,52 @@
+{
+ "id": "e6-591",
+ "titre": "Ton vieux contrat d'électricité te coûte combien ? #shorts",
+ "accroche": "TON VIEUX CONTRAT : TU PAIES TROP ?",
+ "plans": [
+  {
+   "texte": "Ton vieux contrat d'électricité, tu l'as comparé ?",
+   "medias": [
+    "pi:3293203",
+    "pi:3938883"
+   ]
+  },
+  {
+   "texte": "En juin, la C R E a passé au crible les offres de marché.",
+   "medias": [
+    "fi:episodes/electricite/medias/cap07a_cre_coherence_titre.png"
+   ]
+  },
+  {
+   "texte": "Pour les contrats les plus chers : au moins cinq cent quatre-vingt-onze euros d'économie par an, hors taxes.",
+   "chiffre": "591 € / an",
+   "chiffre_mot": "cinq",
+   "medias": [
+    "fi:episodes/electricite/medias/cap07b_cre_coherence_591.png",
+    "pi:1005464"
+   ]
+  },
+  {
+   "texte": "Combien de foyers paient plus de cinq pour cent au-dessus du tarif bleu ? Cent mille, deux millions, ou cinq millions ?",
+   "chiffre": "?",
+   "chiffre_mot": "combien",
+   "medias": [
+    "pi:1080589",
+    "pi:3021474"
+   ]
+  }
+ ],
+ "fin": "La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "CRE, rapport Cohérence des offres, 03/06/2026 (591 €/an HT pour le 1 % des contrats à prix fixe les plus chers)"
+ ],
+ "commentaire": "Cent mille, deux millions ou cinq millions ? 👇",
+ "tags": [
+  "offre électricité moins chère",
+  "comparateur électricité",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "pi:3293203"
+ ]
+}

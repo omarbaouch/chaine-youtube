@@ -1,0 +1,57 @@
+{
+ "id": "e1-facture100",
+ "titre": "Facture d'électricité : où vont tes 100 € ? #shorts",
+ "accroche": "TES 100 € D'ÉLECTRICITÉ : QUI LES PREND ?",
+ "plans": [
+  {
+   "texte": "Cent euros d'électricité : qui les prend ?",
+   "medias": [
+    "wc:File:Compteur Linky tout juste installé (France).jpg",
+    "pv:212508"
+   ]
+  },
+  {
+   "texte": "Le réseau, les poteaux et le compteur : un peu moins de trente euros.",
+   "chiffre": "≈ 28 €",
+   "chiffre_mot": "trente",
+   "medias": [
+    "pv:23470",
+    "pi:7997980"
+   ]
+  },
+  {
+   "texte": "Les taxes, l'accise et la T V A : encore une trentaine d'euros.",
+   "chiffre": "≈ 31 €",
+   "chiffre_mot": "trentaine",
+   "medias": [
+    "pi:400249",
+    "wc:File:Euro banknotes, Europa series.png"
+   ]
+  },
+  {
+   "texte": "Il reste la fourniture : à peu près quarante euros. La seule part qui change d'un contrat à l'autre.",
+   "chiffre": "≈ 40 €",
+   "chiffre_mot": "quarante",
+   "medias": [
+    "pv:4975",
+    "fi:episodes/electricite/medias/cap06_energieinfo_seule_composante.png"
+   ]
+  }
+ ],
+ "fin": "Alors, quelle offre te protège cet hiver ? La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "Calcul Le Vrai Prix d'après la CRE (tarif bleu Base 6 kVA, 4 500 kWh/an, délibérations 2026-147 et 2026-105)",
+  "energie-info.fr, « Prix de l'électricité : que payons-nous ? »"
+ ],
+ "commentaire": "Tu aurais dit combien pour ton fournisseur ? 👇",
+ "tags": [
+  "prix électricité",
+  "facture électricité",
+  "tarif bleu",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "wc:File:Compteur Linky tout juste installé (France).jpg"
+ ]
+}

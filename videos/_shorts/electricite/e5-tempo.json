@@ -1,0 +1,56 @@
+{
+ "id": "e5-tempo",
+ "titre": "Un jour rouge Tempo, ton kWh coûte combien ? #shorts",
+ "accroche": "JOUR ROUGE : TON KWH À COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Un jour rouge, ton kilowattheure coûte combien ?",
+   "medias": [
+    "pi:2471184",
+    "pi:2576906"
+   ]
+  },
+  {
+   "texte": "Avec Tempo, tu as trois cents jours bleus pas chers.",
+   "chiffre": "300 jours",
+   "chiffre_mot": "trois",
+   "medias": [
+    "pv:30704",
+    "pv:105688"
+   ]
+  },
+  {
+   "texte": "Mais aussi vingt-deux jours rouges, de novembre à mars.",
+   "chiffre": "22 jours",
+   "chiffre_mot": "vingt-deux",
+   "medias": [
+    "pv:327388",
+    "pi:2722002"
+   ]
+  },
+  {
+   "texte": "Trente, cinquante, ou soixante-treize centimes ? Le tarif bleu, lui, est à vingt centimes.",
+   "chiffre": "? c / kWh",
+   "chiffre_mot": "soixante-treize",
+   "medias": [
+    "pi:7349347",
+    "fi:episodes/electricite/medias/cap04_cre_annexeB.png"
+   ]
+  }
+ ],
+ "fin": "La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "CRE, délibération 2026-147, annexe B (tarifs au 01/08/2026)"
+ ],
+ "commentaire": "Trente, cinquante ou soixante-treize ? 👇",
+ "tags": [
+  "tempo edf",
+  "heures creuses",
+  "tarif bleu",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "pi:2471184"
+ ]
+}

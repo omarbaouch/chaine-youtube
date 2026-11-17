@@ -1,0 +1,52 @@
+{
+ "id": "e4-demarchage",
+ "titre": "Un vendeur d'électricité t'appelle ? Raccroche. #shorts",
+ "accroche": "DÉMARCHAGE ÉLECTRICITÉ : C'EST LÉGAL ?",
+ "plans": [
+  {
+   "texte": "Un vendeur d'électricité t'appelle ? Raccroche.",
+   "medias": [
+    "pv:304045",
+    "pi:10300126"
+   ]
+  },
+  {
+   "texte": "Depuis le onze août deux mille vingt-six, la loi a changé.",
+   "chiffre": "11/08/2026",
+   "chiffre_mot": "onze",
+   "medias": [
+    "fi:episodes/electricite/medias/cap09_loi_2025_594.png"
+   ]
+  },
+  {
+   "texte": "Sans ton accord préalable, il n'a plus le droit de t'appeler.",
+   "medias": [
+    "pv:34767",
+    "pi:3188291"
+   ]
+  },
+  {
+   "texte": "L'entreprise risque jusqu'à trois cent soixante-quinze mille euros d'amende.",
+   "chiffre": "375 000 €",
+   "chiffre_mot": "soixante-quinze",
+   "medias": [
+    "pv:198890"
+   ]
+  }
+ ],
+ "fin": "Et le contrat signé après cet appel : valable, annulable ou nul ? La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "Loi n° 2025-594 du 30/06/2025, art. 13 (JO du 01/07/2025)",
+  "Code de la consommation, art. L. 242-16"
+ ],
+ "commentaire": "Tu as déjà été appelé pour changer de fournisseur ? 👇",
+ "tags": [
+  "démarchage téléphonique",
+  "électricité",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "pv:304045"
+ ]
+}

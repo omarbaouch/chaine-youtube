@@ -1,0 +1,51 @@
+{
+ "id": "e2-remise",
+ "titre": "Électricité : ta remise de −20 % va finir. Et après ? #shorts",
+ "accroche": "TA REMISE DE −20 % : ET APRÈS ?",
+ "plans": [
+  {
+   "texte": "Ta remise de moins vingt pour cent ? Attention.",
+   "medias": [
+    "pi:1803662",
+    "pi:595854"
+   ]
+  },
+  {
+   "texte": "Un fournisseur vient d'écrire à ses clients : fin de l'offre le trente et un décembre.",
+   "chiffre": "31/12",
+   "chiffre_mot": "trente",
+   "medias": [
+    "fi:episodes/electricite/medias/cap12_jechange.png"
+   ]
+  },
+  {
+   "texte": "Le kilowattheure hors taxes passe de onze centimes quarante à dix-sept centimes quarante-sept.",
+   "chiffre": "11,4 c → 17,5 c",
+   "chiffre_mot": "dix-sept",
+   "medias": [
+    "pi:96863",
+    "pi:385506"
+   ]
+  },
+  {
+   "texte": "Et si tu ne réponds pas, le silence vaut acceptation.",
+   "medias": [
+    "pi:7102985"
+   ]
+  }
+ ],
+ "fin": "Sa facture prend combien au total ? La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "JeChange, mis à jour le 11/11/2026"
+ ],
+ "commentaire": "Tu connais la date de fin de ton prix ? 👇",
+ "tags": [
+  "offre électricité",
+  "prix électricité 2027",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "pi:1803662"
+ ]
+}

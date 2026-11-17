@@ -1,0 +1,55 @@
+{
+ "id": "e7-dynamique",
+ "titre": "Prix de l'électricité qui change toutes les heures : danger ? #shorts",
+ "accroche": "UN PRIX QUI CHANGE TOUTES LES HEURES ?",
+ "plans": [
+  {
+   "texte": "Ton prix d'électricité change toutes les heures ?",
+   "medias": [
+    "pv:204306",
+    "fi:episodes/electricite/medias/cap14_energieinfo_dynamiques.png"
+   ]
+  },
+  {
+   "texte": "Avec une offre dynamique, le prix change tous les jours, et même toutes les heures.",
+   "chiffre": "24 prix / jour",
+   "chiffre_mot": "heures",
+   "medias": [
+    "pi:1905225",
+    "pv:3176"
+   ]
+  },
+  {
+   "texte": "Le plus cher : en hiver, le soir, quand tout le monde consomme.",
+   "medias": [
+    "pv:164339",
+    "pi:6966011"
+   ]
+  },
+  {
+   "texte": "Début novembre, marché et taxes seuls : trente-six centimes le kilowattheure. Le tarif bleu, réseau compris : vingt.",
+   "chiffre": "36 c vs 20 c",
+   "chiffre_mot": "trente-six",
+   "medias": [
+    "pi:870757",
+    "pi:533818"
+   ]
+  }
+ ],
+ "fin": "Alors, quelle offre prendre cet hiver ? La réponse est dans la vidéo : touche le lien juste en dessous.",
+ "sources": [
+  "energie-info.fr, offres à tarification dynamique",
+  "Calcul Selectra, 11/11/2026 (prix spot + taxes, hors réseau)",
+  "CRE, délibération 2026-147"
+ ],
+ "commentaire": "Tu as une offre indexée ou à prix fixe ? 👇",
+ "tags": [
+  "offre dynamique électricité",
+  "prix électricité",
+  "le vrai prix"
+ ],
+ "description": "",
+ "medias_fin": [
+  "pv:204306"
+ ]
+}
