@@ -1,0 +1,42 @@
+name: Captures de documents
+
+# Fait les captures d'écran des pages officielles citées dans une vidéo (le réseau de la session cloud est fermé).
+on:
+  push:
+    branches: [main]
+    paths: ['videos/*/captures.json']
+  workflow_dispatch:
+    inputs:
+      liste:
+        description: 'Fichier de captures (ex. videos/electricite/captures.json)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  captures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 2}
+      - name: Quelle liste ?
+        id: quoi
+        run: |
+          l="${{ github.event.inputs.liste }}"
+          [ -z "$l" ] && l="$(git diff --name-only HEAD~1 HEAD -- 'videos/*/captures.json' | head -1)"
+          echo "liste=$l" >> "$GITHUB_OUTPUT"
+          echo "slug=$(basename $(dirname $l))" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils fonts-dejavu-core > /dev/null
+          pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null
+      - run: python scripts/captures.py "${{ steps.quoi.outputs.liste }}" out/captures
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "captures-${{ steps.quoi.outputs.slug }}-${{ github.run_number }}" out/captures/* --target "${{ github.sha }}" \
+            --title "📸 Captures ${{ steps.quoi.outputs.slug }} #${{ github.run_number }}" --notes "$(cat out/captures/rapport.txt)" --prerelease
