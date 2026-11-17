@@ -1,0 +1,65 @@
+{
+ "id": "g01-gaz",
+ "titre": "Ton gaz augmente encore au 1er décembre : de combien ? #shorts",
+ "accroche": "TON GAZ AUGMENTE ENCORE : DE COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Ton chauffage au gaz augmente encore au premier décembre.",
+   "recherche": [
+    "gas stove flame",
+    "gas burner flame",
+    "blue gas flame"
+   ]
+  },
+  {
+   "texte": "C'est la quatrième hausse d'affilée : septembre, octobre, novembre, et décembre.",
+   "chiffre": "4 hausses d'affilée",
+   "chiffre_mot": "quatrième",
+   "recherche": [
+    "radiator thermostat",
+    "heating radiator",
+    "thermostat"
+   ]
+  },
+  {
+   "texte": "La cause ? Le gaz acheté en gros coûte deux fois et demie plus cher qu'en février, depuis la crise du détroit d'Ormuz.",
+   "chiffre": "× 2,6 depuis février",
+   "chiffre_mot": "deux",
+   "recherche": [
+    "lng tanker",
+    "gas tanker ship",
+    "gas pipeline"
+   ]
+  },
+  {
+   "texte": "Résultat, selon le régulateur : ta facture de l'année, cent quarante-trois euros plus chère qu'en deux mille vingt-cinq.",
+   "chiffre": "+143 € sur l'année",
+   "chiffre_mot": "cent",
+   "recherche": [
+    "gas meter",
+    "energy bill",
+    "utility bill"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu paies.",
+ "recherche_fin": [
+  "gas flame",
+  "radiator"
+ ],
+ "sources": [
+  "CRE via AFP, 09/11/2026 (prix repère 206,26 €/MWh au 01/12, +5,8 % ; facture moyenne 2026 +143 € TTC, +11,8 % vs 2025 ; Ormuz) : https://www.connaissancedesenergies.org/afp/france-le-prix-de-reference-du-gaz-augmentera-de-58-en-decembre-regulateur-261109",
+  "JeChange, 10/11/2026 (hausses +5,6 % sept., +6,3 % oct., +6,6 % nov., +5,8 % déc.) : https://www.jechange.fr/energie/gaz/news/prix-gaz-record-5-8-pourcent-1er-decembre-2026-facture-143-euros",
+  "AFP, 12/10/2026 (TTF 31,47 €/MWh le 27/02, 82,76 €/MWh contrats de novembre) : https://www.connaissancedesenergies.org/afp/france-le-prix-de-reference-du-gaz-augmentera-de-66-au-1er-novembre-261012"
+ ],
+ "commentaire": "Toi, tu chauffes au gaz ou à l'électricité ? 👇",
+ "tags": [
+  "prix du gaz",
+  "hausse gaz décembre 2026",
+  "facture de gaz",
+  "prix repère gaz",
+  "chauffage",
+  "le vrai prix"
+ ],
+ "test": "T8"
+}

@@ -1,0 +1,72 @@
+{
+ "id": "n01-netflix",
+ "titre": "Ton Netflix à 14,99 € : combien de bénéfice pour eux ? #shorts",
+ "accroche": "TON NETFLIX À 14,99 € : QUI GARDE QUOI ?",
+ "plans": [
+  {
+   "texte": "Ton Netflix à quatorze euros quatre-vingt-dix-neuf par mois. À ton avis, combien de bénéfice pour Netflix ?",
+   "recherche": [
+    "netflix",
+    "watching tv remote",
+    "tv streaming"
+   ]
+  },
+  {
+   "texte": "D'abord, l'État prend sa TVA : deux euros cinquante.",
+   "chiffre": "TVA : 2,50 €",
+   "chiffre_mot": "cinquante",
+   "recherche": [
+    "euro coins",
+    "euro money"
+   ]
+  },
+  {
+   "texte": "Les films et les séries ? D'après ses derniers comptes, environ quatre euros dix.",
+   "chiffre": "Films et séries : ≈ 4,10 €",
+   "chiffre_mot": "dix",
+   "recherche": [
+    "film set camera",
+    "movie camera filming",
+    "film crew"
+   ]
+  },
+  {
+   "texte": "Serveurs, salaires, publicité : encore quatre euros.",
+   "chiffre": "Le reste : ≈ 4 €",
+   "chiffre_mot": "quatre",
+   "recherche": [
+    "server room",
+    "data center"
+   ]
+  },
+  {
+   "texte": "Et le bénéfice de Netflix ? Quatre euros trente. Plus que ce qu'il dépense pour les films.",
+   "chiffre": "Bénéfice : ≈ 4,30 €",
+   "chiffre_mot": "trente",
+   "recherche": [
+    "counting money",
+    "money cash hands"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu paies.",
+ "recherche_fin": [
+  "watching tv",
+  "tv remote"
+ ],
+ "sources": [
+  "Netflix, résultats du 3e trimestre 2026 (chiffre d'affaires 12,87 Md$, résultat d'exploitation 4,46 Md$ soit 34,6 %, amortissement des contenus 4,24 Md$) : https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+  "Tarif Standard sans pub 14,99 €/mois en France (JeChange, novembre 2026) : https://www.jechange.fr/telecom/tv/netflix-tarif",
+  "Calcul : 14,99 € TTC = 12,49 € HT + 2,50 € de TVA (20 %) ; les parts mondiales de Netflix sont appliquées aux 12,49 € (contenus 32,9 %, autres coûts 32,5 %, résultat d'exploitation 34,6 %). Ordre de grandeur, pas les comptes de Netflix France."
+ ],
+ "commentaire": "Tu le gardes, ton Netflix, ou tu as résilié ? 👇",
+ "tags": [
+  "netflix",
+  "prix netflix",
+  "abonnement netflix",
+  "bénéfice netflix",
+  "streaming",
+  "le vrai prix"
+ ],
+ "test": "T8"
+}

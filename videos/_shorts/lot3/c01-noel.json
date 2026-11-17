@@ -1,0 +1,75 @@
+{
+ "id": "c01-noel",
+ "titre": "Noël 2026 : tu vas dépenser combien ? #shorts",
+ "accroche": "NOËL 2026 : TU VAS DÉPENSER COMBIEN ?",
+ "plans": [
+  {
+   "texte": "Pour Noël cette année, combien les Français prévoient de dépenser ? Cinq cents, six cents, sept cents euros ?",
+   "recherche": [
+    "christmas gifts tree",
+    "christmas presents",
+    "christmas gift boxes"
+   ]
+  },
+  {
+   "texte": "Cinq cent quatre-vingt-un euros en moyenne. Quatre-vingt-dix euros de plus que l'an dernier.",
+   "chiffre": "581 € (+90 €)",
+   "chiffre_mot": "cinq",
+   "recherche": [
+    "christmas shopping",
+    "shopping bags",
+    "christmas market"
+   ]
+  },
+  {
+   "texte": "Rien que pour les cadeaux, trois cent quarante euros.",
+   "chiffre": "Cadeaux : 340 €",
+   "chiffre_mot": "trois",
+   "recherche": [
+    "wrapping gift",
+    "gift wrapping",
+    "gift box"
+   ]
+  },
+  {
+   "texte": "Mais il y en aura moins sous le sapin : sept cadeaux au lieu de neuf.",
+   "chiffre": "7 au lieu de 9",
+   "chiffre_mot": "sept",
+   "recherche": [
+    "christmas tree presents",
+    "opening gift",
+    "unwrapping gift"
+   ]
+  },
+  {
+   "texte": "Chaque cadeau te coûte donc près de cinquante euros, contre trente-trois l'an dernier.",
+   "chiffre": "≈ 49 €/cadeau",
+   "chiffre_mot": "cinquante",
+   "recherche": [
+    "price tag",
+    "shopping receipt",
+    "credit card payment"
+   ]
+  }
+ ],
+ "fin": "Abonne-toi : chaque jour, le vrai prix d'un truc que tu paies.",
+ "recherche_fin": [
+  "christmas tree",
+  "christmas lights"
+ ],
+ "sources": [
+  "Baromètre Cofidis / CSA Research, novembre 2026 (581 € en 2026 contre 491 € en 2025 ; cadeaux 340 € contre 297 € ; 7 cadeaux contre 9), relayé par Empruntis, 12/11/2026 : https://www.empruntis.com/rachat-credits/actualites/2026/budget-noel-2026-581-euros-moyenne-comment-les-menages-organisent-ils-21407/",
+  "Toutsurmesfinances, 04/11/2026 : https://www.toutsurmesfinances.com/actualites/?p=2810",
+  "Calcul : 340 € ÷ 7 ≈ 48,6 € par cadeau en 2026 ; 297 € ÷ 9 = 33 € en 2025."
+ ],
+ "commentaire": "Toi, ton budget de Noël, il monte ou il baisse cette année ? 👇",
+ "tags": [
+  "budget noël 2026",
+  "noël 2026",
+  "cadeaux de noël",
+  "prix cadeaux",
+  "pouvoir d'achat",
+  "le vrai prix"
+ ],
+ "test": "T8"
+}
