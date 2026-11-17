@@ -21,6 +21,8 @@ SRC_SCRIPT = {r["id"]: r.get("src") for r in PLANS}
 
 CHOIX = {}  # rempli après repérage
 CHOIX_FICHIER = os.path.join(ICI, "choix_rushes.json")
+_L = os.path.join(ICI, "commons_local.json")
+LOCAL = json.load(open(_L)) if os.path.exists(_L) else {}
 if os.path.exists(CHOIX_FICHIER):
     CHOIX = json.load(open(CHOIX_FICHIER))
 
@@ -499,6 +501,12 @@ for s in scenes:
         s["media_ref"] = c
     if c:
         s.pop("recherche", None)
+    # Commons : originaux téléchargés par le workflow Captures (le 429 des miniatures bloquait le rendu)
+    if s.get("media_ref") in LOCAL:
+        s["fichier"] = LOCAL[s.pop("media_ref")]
+    for m in s.get("medias", []):
+        if m.get("media_ref") in LOCAL:
+            m["fichier"] = LOCAL[m.pop("media_ref")]
     montage["scenes"].append(s)
 
 

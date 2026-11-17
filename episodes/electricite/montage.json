@@ -52,7 +52,7 @@
     "a": 1.8,
     "texte": "COURANT ?"
    },
-   "media_ref": "wc:File:Compteur Linky tout juste installé (France).jpg"
+   "media_ref": "pi:96863"
   },
   {
    "id": "p003",
@@ -149,7 +149,7 @@
    "texte": "Toi aussi, tu paies peut-être trop. Et parfois, c'est pire.",
    "medias": [
     {
-     "media_ref": "wc:File:White light switch.jpg"
+     "media_ref": "pi:6861887"
     },
     {
      "media_ref": "pi:6966011"
@@ -164,7 +164,7 @@
    "format": "rush",
    "texte": "Printemps deux mille vingt-quatre, dans les Yvelines.",
    "surtitre": "Yvelines · printemps 2024",
-   "media_ref": "wc:File:Modern suburban house in the outskirts - Ljubljana, Slovenia.jpg"
+   "media_ref": "pi:1080589"
   },
   {
    "id": "p012",
@@ -199,7 +199,7 @@
    "id": "p014",
    "format": "rush",
    "texte": "Pourquoi leur compteur s'est arrêté ? Personne n'a la réponse.",
-   "media_ref": "wc:File:Un compteur Linky Rue Professeur Morat (Lyon).jpg"
+   "media_ref": "pi:96512"
   },
   {
    "id": "p015",
@@ -235,13 +235,13 @@
    "texte": "Mais d'abord, ouvrons ensemble ta facture, ligne par ligne.",
    "medias": [
     {
-     "media_ref": "pi:1016310"
-    },
-    {
      "media_ref": "pi:2700757"
     },
     {
      "media_ref": "pi:1238598"
+    },
+    {
+     "media_ref": "pi:2614150"
     }
    ]
   },
@@ -338,11 +338,11 @@
      "legende": "Accise"
     },
     {
-     "media_ref": "wc:File:Euro banknotes, Europa series.png",
+     "media_ref": "pi:1963184",
      "legende": "Contribution (CTA)"
     },
     {
-     "media_ref": "wc:File:Euro coins 2.jpg",
+     "media_ref": "pi:400287",
      "legende": "TVA"
     }
    ]
@@ -937,7 +937,7 @@
      "a": 2.2
     }
    ],
-   "media_ref": "wc:File:Doorbell being pushed by thumb.jpg"
+   "media_ref": "pi:2694879"
   },
   {
    "id": "p058",
@@ -996,7 +996,7 @@
      "a": 1.0
     }
    ],
-   "media_ref": "wc:File:Linky.JPG"
+   "media_ref": "pi:1016310"
   },
   {
    "id": "p062",
@@ -1051,13 +1051,13 @@
    ],
    "medias": [
     {
-     "media_ref": "wc:File:One stands out 002 2025 01 01.jpg"
-    },
-    {
      "media_ref": "pi:962355"
     },
     {
      "media_ref": "pi:2557571"
+    },
+    {
+     "media_ref": "pi:7850299"
     }
    ]
   },
@@ -1124,7 +1124,7 @@
      "media_ref": "pv:51722"
     },
     {
-     "media_ref": "pi:7850299"
+     "media_ref": "pi:1510597"
     }
    ]
   },
@@ -1271,7 +1271,7 @@
      "a": 0.2
     }
    ],
-   "media_ref": "pi:96863"
+   "media_ref": "pi:5229750"
   },
   {
    "id": "p077",
@@ -1279,13 +1279,13 @@
    "texte": "Eux, au moins, ont vu leur facture. D'autres reçoivent juste un courrier qu'ils ne lisent pas.",
    "medias": [
     {
-     "media_ref": "wc:File:Canberra (AU), Letter Boxes at Kendall Lane -- 2019 -- 1829.jpg"
-    },
-    {
      "media_ref": "pi:286479"
     },
     {
      "media_ref": "pi:586268"
+    },
+    {
+     "media_ref": "pi:2828146"
     }
    ]
   },
@@ -2056,7 +2056,7 @@
      "media_ref": "pi:1680905"
     },
     {
-     "media_ref": "wc:File:HP 35 Calculator.jpg"
+     "media_ref": "pi:970340"
     },
     {
      "fichier": "medias/cap04_cre_annexeB.png"
@@ -2079,7 +2079,7 @@
    "id": "p119",
    "format": "rush",
    "texte": "Voilà pour les pièges. Maintenant, ce qu'il faut prendre, en commençant par le numéro trois.",
-   "media_ref": "wc:File:Rocker light switch.jpg"
+   "media_ref": "pi:4931669"
   },
   {
    "id": "p120",
@@ -2182,10 +2182,10 @@
      "media_ref": "pi:8579310"
     },
     {
-     "media_ref": "pi:5914171"
+     "media_ref": "pi:841165"
     },
     {
-     "media_ref": "pi:841165"
+     "media_ref": "pi:1828779"
     }
    ]
   },
@@ -2266,7 +2266,7 @@
    "id": "p130",
    "format": "rush",
    "texte": "Si tu chauffes à l'électricité et que tu ne peux pas décaler, méfie-toi.",
-   "media_ref": "wc:File:White electric radiator.jpg"
+   "media_ref": "pi:2576906"
   },
   {
    "id": "p131",
@@ -2280,13 +2280,13 @@
    ],
    "medias": [
     {
-     "media_ref": "pi:1080589"
-    },
-    {
      "media_ref": "pi:3021474"
     },
     {
-     "media_ref": "wc:File:House on suburban street in Sunshine, Victoria.jpg"
+     "media_ref": "pi:7772554"
+    },
+    {
+     "media_ref": "pi:5914171"
     }
    ]
   },
@@ -2460,7 +2460,7 @@
      "texte": "Journal du Net, 15/05/2026"
     }
    ],
-   "media_ref": "wc:File:All Euro banknotes.png"
+   "media_ref": "pv:138315"
   },
   {
    "id": "p143",
@@ -2494,7 +2494,7 @@
      "texte": "Journal du Net, 15/05/2026"
     }
    ],
-   "media_ref": "pv:138315"
+   "media_ref": "pv:93550"
   },
   {
    "id": "p145",
@@ -2502,13 +2502,13 @@
    "texte": "Et ils ont fait deux choses : changer de compteur, et changer de fournisseur.",
    "medias": [
     {
-     "media_ref": "wc:File:Un compteur Linky dans la rue du Repos (Lyon).jpg"
-    },
-    {
      "media_ref": "pi:1080554"
     },
     {
      "media_ref": "pv:261362"
+    },
+    {
+     "media_ref": "pi:7776176"
     }
    ]
   },

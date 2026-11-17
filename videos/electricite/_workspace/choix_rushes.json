@@ -1,6 +1,6 @@
 {
  "p001": "pv:212508",
- "p002": "wc:File:Compteur Linky tout juste installé (France).jpg",
+ "p002": "pi:96863",
  "p003": "pv:42014",
  "p004": "pi:385506",
  "p005": "pi:7592322",
@@ -8,21 +8,21 @@
  "p007": "pi:1803662",
  "p009": "pi:1005464",
  "p010": [
-  "wc:File:White light switch.jpg",
+  "pi:6861887",
   "pi:6966011",
   "pi:3509490"
  ],
- "p011": "wc:File:Modern suburban house in the outskirts - Ljubljana, Slovenia.jpg",
+ "p011": "pi:1080589",
  "p012": [
   "pv:245932",
   "pi:3202747"
  ],
- "p014": "wc:File:Un compteur Linky Rue Professeur Morat (Lyon).jpg",
+ "p014": "pi:96512",
  "p016": "pi:2180338",
  "p017": [
-  "pi:1016310",
   "pi:2700757",
-  "pi:1238598"
+  "pi:1238598",
+  "pi:2614150"
  ],
  "p019": "pi:870757",
  "p020": "pi:7997980",
@@ -30,8 +30,8 @@
  "p022": "pv:110023",
  "p023": [
   "pi:400249",
-  "wc:File:Euro banknotes, Europa series.png",
-  "wc:File:Euro coins 2.jpg"
+  "pi:1963184",
+  "pi:400287"
  ],
  "p024": "pv:203874",
  "p026": "pv:4975",
@@ -70,25 +70,25 @@
  ],
  "p055": "pi:428334",
  "p056": "pv:227112",
- "p057": "wc:File:Doorbell being pushed by thumb.jpg",
+ "p057": "pi:2694879",
  "p058": [
   "pi:3188744",
   "pi:8029231",
   "pi:849825"
  ],
  "p059": "pi:595854",
- "p061": "wc:File:Linky.JPG",
+ "p061": "pi:1016310",
  "p063": "pv:133501",
  "p064": [
-  "wc:File:One stands out 002 2025 01 01.jpg",
   "pi:962355",
-  "pi:2557571"
+  "pi:2557571",
+  "pi:7850299"
  ],
  "p065": "pv:198901",
  "p068": [
   "pv:209855",
   "pv:51722",
-  "pi:7850299"
+  "pi:1510597"
  ],
  "p069": "pv:64212",
  "p070": "pv:3172",
@@ -99,11 +99,11 @@
   "pv:3174"
  ],
  "p074": "pi:4487083",
- "p076": "pi:96863",
+ "p076": "pi:5229750",
  "p077": [
-  "wc:File:Canberra (AU), Letter Boxes at Kendall Lane -- 2019 -- 1829.jpg",
   "pi:286479",
-  "pi:586268"
+  "pi:586268",
+  "pi:2828146"
  ],
  "p079": "pi:1642989",
  "p081": "pi:10045176",
@@ -149,35 +149,35 @@
  "p115": "pv:117843",
  "p118": [
   "pi:1680905",
-  "wc:File:HP 35 Calculator.jpg"
+  "pi:970340"
  ],
- "p119": "wc:File:Rocker light switch.jpg",
+ "p119": "pi:4931669",
  "p121": "pi:1033640",
  "p122": "pv:327388",
  "p123": "pi:2138992",
  "p125": "pi:8033474",
  "p126": [
   "pi:8579310",
-  "pi:5914171",
-  "pi:841165"
+  "pi:841165",
+  "pi:1828779"
  ],
  "p128": "pi:3373432",
- "p130": "wc:File:White electric radiator.jpg",
+ "p130": "pi:2576906",
  "p131": [
-  "pi:1080589",
   "pi:3021474",
-  "wc:File:House on suburban street in Sunshine, Victoria.jpg"
+  "pi:7772554",
+  "pi:5914171"
  ],
  "p135": "pv:110022",
  "p136": "pv:5372",
  "p137": "pi:1851218",
  "p140": "pi:8453898",
- "p142": "wc:File:All Euro banknotes.png",
- "p144": "pv:138315",
+ "p142": "pv:138315",
+ "p144": "pv:93550",
  "p145": [
-  "wc:File:Un compteur Linky dans la rue du Repos (Lyon).jpg",
   "pi:1080554",
-  "pv:261362"
+  "pv:261362",
+  "pi:7776176"
  ],
  "p150": "pv:107425",
  "p151": [
