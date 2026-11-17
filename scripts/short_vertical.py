@@ -391,7 +391,7 @@ sh("ffmpeg", "-y", *entrees, "-filter_complex", vf + ";" + ";".join(mix), "-map"
    "-t", f"{TOTAL:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
    "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", SORTIE)
 
-d_img = float(sh("ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", SORTIE).strip())
+d_img = float(sh("ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", SORTIE).strip().replace(",", "\n").split()[0])
 if d_img < TOTAL - 0.5:
     raise RuntimeError(f"Image trop courte : {d_img:.1f} s pour {TOTAL:.1f} s de son")
 (sortie_dir / f"{fiche['id']}-credits.txt").write_text("\n".join(credits) + "\n", encoding="utf-8")

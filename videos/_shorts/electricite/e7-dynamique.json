@@ -12,7 +12,7 @@
   },
   {
    "texte": "Avec une offre dynamique, le prix change tous les jours, et même toutes les heures.",
-   "chiffre": "24 prix / jour",
+   "chiffre": "prix à l'heure",
    "chiffre_mot": "heures",
    "medias": [
     "pi:1905225",
