@@ -1,0 +1,61 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k09-mailbox",
+   "texte": "",
+   "recherche": [
+    "mailbox"
+   ]
+  },
+  {
+   "id": "k10-envelope-letter",
+   "texte": "",
+   "recherche": [
+    "envelope letter"
+   ]
+  },
+  {
+   "id": "k11-light-switch",
+   "texte": "",
+   "recherche": [
+    "light switch"
+   ]
+  },
+  {
+   "id": "k12-electric-kettle",
+   "texte": "",
+   "recherche": [
+    "electric kettle"
+   ]
+  },
+  {
+   "id": "k13-phone-charger",
+   "texte": "",
+   "recherche": [
+    "phone charger"
+   ]
+  },
+  {
+   "id": "k14-power-socket",
+   "texte": "",
+   "recherche": [
+    "power socket"
+   ]
+  },
+  {
+   "id": "k15-fuse-box",
+   "texte": "",
+   "recherche": [
+    "fuse box"
+   ]
+  },
+  {
+   "id": "k16-nuclear-power-plant",
+   "texte": "",
+   "recherche": [
+    "nuclear power plant"
+   ]
+  }
+ ]
+}

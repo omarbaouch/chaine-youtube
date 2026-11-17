@@ -1,0 +1,61 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k17-stock-market",
+   "texte": "",
+   "recherche": [
+    "stock market"
+   ]
+  },
+  {
+   "id": "k18-telephone-call",
+   "texte": "",
+   "recherche": [
+    "telephone call"
+   ]
+  },
+  {
+   "id": "k19-doorbell",
+   "texte": "",
+   "recherche": [
+    "doorbell"
+   ]
+  },
+  {
+   "id": "k20-door-knock",
+   "texte": "",
+   "recherche": [
+    "door knock"
+   ]
+  },
+  {
+   "id": "k21-washing-machine",
+   "texte": "",
+   "recherche": [
+    "washing machine"
+   ]
+  },
+  {
+   "id": "k22-water-heater",
+   "texte": "",
+   "recherche": [
+    "water heater"
+   ]
+  },
+  {
+   "id": "k23-calendar",
+   "texte": "",
+   "recherche": [
+    "calendar"
+   ]
+  },
+  {
+   "id": "k24-laptop-typing",
+   "texte": "",
+   "recherche": [
+    "laptop typing"
+   ]
+  }
+ ]
+}

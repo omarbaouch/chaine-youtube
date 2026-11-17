@@ -1,0 +1,61 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k25-smartphone-hand",
+   "texte": "",
+   "recherche": [
+    "smartphone hand"
+   ]
+  },
+  {
+   "id": "k26-euro-coins",
+   "texte": "",
+   "recherche": [
+    "euro coins"
+   ]
+  },
+  {
+   "id": "k27-euro-banknotes",
+   "texte": "",
+   "recherche": [
+    "euro banknotes"
+   ]
+  },
+  {
+   "id": "k28-piggy-bank",
+   "texte": "",
+   "recherche": [
+    "piggy bank"
+   ]
+  },
+  {
+   "id": "k29-suburban-house",
+   "texte": "",
+   "recherche": [
+    "suburban house"
+   ]
+  },
+  {
+   "id": "k30-worried-couple",
+   "texte": "",
+   "recherche": [
+    "worried couple"
+   ]
+  },
+  {
+   "id": "k31-lawyer",
+   "texte": "",
+   "recherche": [
+    "lawyer"
+   ]
+  },
+  {
+   "id": "k32-snow-house",
+   "texte": "",
+   "recherche": [
+    "snow house"
+   ]
+  }
+ ]
+}

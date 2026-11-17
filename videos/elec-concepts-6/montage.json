@@ -1,0 +1,33 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k41-email-inbox",
+   "texte": "",
+   "recherche": [
+    "email inbox"
+   ]
+  },
+  {
+   "id": "k42-cold-winter-blanket",
+   "texte": "",
+   "recherche": [
+    "cold winter blanket"
+   ]
+  },
+  {
+   "id": "k43-hydroelectric-dam",
+   "texte": "",
+   "recherche": [
+    "hydroelectric dam"
+   ]
+  },
+  {
+   "id": "k44-shopping-receipt",
+   "texte": "",
+   "recherche": [
+    "shopping receipt"
+   ]
+  }
+ ]
+}

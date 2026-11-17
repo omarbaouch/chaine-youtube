@@ -1,0 +1,61 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k01-electricity-bill",
+   "texte": "",
+   "recherche": [
+    "electricity bill"
+   ]
+  },
+  {
+   "id": "k02-invoice-paper",
+   "texte": "",
+   "recherche": [
+    "invoice paper"
+   ]
+  },
+  {
+   "id": "k03-electricity-meter",
+   "texte": "",
+   "recherche": [
+    "electricity meter"
+   ]
+  },
+  {
+   "id": "k04-linky",
+   "texte": "",
+   "recherche": [
+    "linky"
+   ]
+  },
+  {
+   "id": "k05-electric-radiator",
+   "texte": "",
+   "recherche": [
+    "electric radiator"
+   ]
+  },
+  {
+   "id": "k06-thermostat",
+   "texte": "",
+   "recherche": [
+    "thermostat"
+   ]
+  },
+  {
+   "id": "k07-power-lines",
+   "texte": "",
+   "recherche": [
+    "power lines"
+   ]
+  },
+  {
+   "id": "k08-electricity-pylon",
+   "texte": "",
+   "recherche": [
+    "electricity pylon"
+   ]
+  }
+ ]
+}

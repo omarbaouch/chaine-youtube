@@ -1,0 +1,61 @@
+{
+ "titre": "electricite-rep-1",
+ "scenes": [
+  {
+   "id": "k33-electrician",
+   "texte": "",
+   "recherche": [
+    "electrician"
+   ]
+  },
+  {
+   "id": "k34-wind-turbines",
+   "texte": "",
+   "recherche": [
+    "wind turbines"
+   ]
+  },
+  {
+   "id": "k35-solar-panels",
+   "texte": "",
+   "recherche": [
+    "solar panels"
+   ]
+  },
+  {
+   "id": "k36-candle-light",
+   "texte": "",
+   "recherche": [
+    "candle light"
+   ]
+  },
+  {
+   "id": "k37-city-night-lights",
+   "texte": "",
+   "recherche": [
+    "city night lights"
+   ]
+  },
+  {
+   "id": "k38-christmas-toys",
+   "texte": "",
+   "recherche": [
+    "christmas toys"
+   ]
+  },
+  {
+   "id": "k39-calculator",
+   "texte": "",
+   "recherche": [
+    "calculator"
+   ]
+  },
+  {
+   "id": "k40-contract-signing",
+   "texte": "",
+   "recherche": [
+    "contract signing"
+   ]
+  }
+ ]
+}
