@@ -210,3 +210,12 @@ Relevé du 18/11 9 h 15 Paris : **aucune statistique nouvelle**. Depuis le 17/11
 - Correction : aucune possible depuis ici (pas de fiche à poser, aucun workflow ne démarre). Aucune inversion d'horaires.
 - À décider par Omar (gratuit) : passer `bmo-studio-link` en public (minutes Actions illimitées pour un dépôt public, les secrets restent cachés,
   mais les stats et fiches deviennent visibles), ou attendre la remise à zéro mensuelle du quota. Ne pas payer de minutes (budget 0 $).
+
+Relevé du 19/11 9 h 15 Paris : **toujours aucune statistique** (3e relevé manqué). Statistiques relancées à 8 h 15 UTC (run 48) : échec en 2 s,
+cause désormais confirmée par GitHub : « The job was not started because recent account payments have failed or your spending limit needs to be increased »
+(quota gratuit Actions des dépôts privés épuisé). Publier a aussi échoué 18/11 14 h 13, 22 h 05 et 19/11 3 h 38 (UTC). Derniers chiffres = 17/11 (13 abonnés, 12 646 vues).
+- **T7-B** et **T5** : **à confirmer** (aucune donnée nouvelle). Aucune inversion d'horaires possible ni utile sans mesure.
+- Conséquences : cinéma (18/11) et timbre (19/11 13 h) passent en public côté YouTube sans commentaire épinglé ; idem pour les 3 Black Friday (20-22/11)
+  tant que Publier ne tourne pas. Les fiches en attente partiront d'elles-mêmes au premier passage réussi.
+- Correction : aucune possible depuis ici. Décision toujours attendue d'Omar (gratuit) : passer `bmo-studio-link` en public, ou attendre la remise à zéro
+  mensuelle du quota (début du prochain cycle de facturation). Ne pas payer (budget 0 $).
