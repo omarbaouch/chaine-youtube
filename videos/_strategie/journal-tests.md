@@ -219,3 +219,19 @@ cause désormais confirmée par GitHub : « The job was not started because rece
   tant que Publier ne tourne pas. Les fiches en attente partiront d'elles-mêmes au premier passage réussi.
 - Correction : aucune possible depuis ici. Décision toujours attendue d'Omar (gratuit) : passer `bmo-studio-link` en public, ou attendre la remise à zéro
   mensuelle du quota (début du prochain cycle de facturation). Ne pas payer (budget 0 $).
+
+## Bilan du lundi 23/11 (routine Shorts, 7 h 40 Paris) — semaine bloquée
+- Statistiques relancées à 6 h 38 UTC (run 53) : **échec en 1 s, machine jamais attribuée**, comme tous les workflows de `bmo-studio-link`
+  depuis le 17/11 (Publier : aucun passage réussi du 17 au 23/11). Cause confirmée le 19/11 : quota gratuit GitHub Actions des dépôts privés épuisé.
+  Derniers chiffres connus = 17/11 (13 abonnés, 12 646 vues). **Aucun classement possible** de la semaine du 16 au 22/11.
+- **T7-B** (livre voix d'Omar, 610 vues à ~42 h, meilleur départ) : Restés jamais remonté → **à confirmer**. T5 : **à confirmer**.
+  Pas de nouveau test lancé : sans mesure ni publication, une nouvelle variable ne servirait à rien. T7-B reste le test en cours.
+- Rythme : dernier Short programmé = Black Friday frigo 22/11. **Jours libres du 23 au 29/11 : 7.**
+- **Aucun Short fabriqué ni programmé** : le rendu (workflow Shorts de `chaine-youtube`) et la publication (`bmo-studio-link`) tournent tous deux sur
+  GitHub Actions, bloqué. Poser des fiches datées de cette semaine est risqué : avec `forcer_heure` et une date passée, le script met en ligne tout
+  de suite, donc plusieurs Shorts le même jour au retour du quota (règle de rythme). Les fiches seront écrites au premier lundi où Actions tourne.
+- Réserve prête (déjà rendue, à contrôler avant publication) : lot 2 beurre, encre, soda ; Release `shorts-lot3` (gaz, Netflix 14,99 €, budget de Noël) ;
+  Release `shorts-electricite`. Priorité au retour : Noël et Netflix (actualité), puis électricité (annonce de la vidéo longue).
+- Commentaires épinglés des Shorts cinéma, timbre et des 3 Black Friday : toujours en attente (partiront au premier passage réussi de Publier).
+- Décision attendue d'Omar (gratuit, depuis le navigateur du téléphone) : passer `bmo-studio-link` et `chaine-youtube` en public (minutes Actions
+  illimitées, les secrets restent cachés ; vérifier avant qu'aucune donnée perso n'est dans les fichiers), ou attendre la remise à zéro mensuelle du quota.
