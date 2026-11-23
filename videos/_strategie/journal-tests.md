@@ -235,3 +235,6 @@ cause désormais confirmée par GitHub : « The job was not started because rece
 - Commentaires épinglés des Shorts cinéma, timbre et des 3 Black Friday : toujours en attente (partiront au premier passage réussi de Publier).
 - Décision attendue d'Omar (gratuit, depuis le navigateur du téléphone) : passer `bmo-studio-link` et `chaine-youtube` en public (minutes Actions
   illimitées, les secrets restent cachés ; vérifier avant qu'aucune donnée perso n'est dans les fichiers), ou attendre la remise à zéro mensuelle du quota.
+
+Relevé du 23/11 9 h 15 Paris : Statistiques relancées à 8 h 15 UTC (run 54) : **échec en 5 s**, toujours sans machine (quota Actions des dépôts privés).
+Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues). T7-B et T5 : **à confirmer**. Aucun Short programmé, aucune correction possible.
