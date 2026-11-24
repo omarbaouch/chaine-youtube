@@ -247,3 +247,7 @@ Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues). T7-B et T5 
   jamais rendu). Pas de nouveau sujet : il resterait aussi bloqué et dépasserait la vidéo déjà prête. Au retour d'Actions : rendu → contrôle → 7 Shorts
   (Release `shorts-electricite` déjà rendue, à recontrôler) → publication 18 h, un Short par jour à 18 h.
 - Geste attendu d'Omar (gratuit) : passer `chaine-youtube` et `bmo-studio-link` en public (minutes illimitées), ou attendre la remise à zéro mensuelle.
+
+Relevé du 24/11 9 h 15 Paris : Statistiques relancées à 8 h 14 UTC (run 56) : **échec en 3 s**, toujours sans machine (quota Actions des dépôts privés).
+Publier a aussi échoué (23/11 13 h 08 et 24/11 1 h 00 UTC). Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues).
+T7-B et T5 : **à confirmer**. Aucun Short programmé, aucune correction possible. 8e jour sans mesure.
