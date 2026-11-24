@@ -238,3 +238,12 @@ cause désormais confirmée par GitHub : « The job was not started because rece
 
 Relevé du 23/11 9 h 15 Paris : Statistiques relancées à 8 h 15 UTC (run 54) : **échec en 5 s**, toujours sans machine (quota Actions des dépôts privés).
 Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues). T7-B et T5 : **à confirmer**. Aucun Short programmé, aucune correction possible.
+
+## Vidéo de la semaine du 24/11 (routine vidéo, mardi 24/11 8 h 55 Paris) — non produite
+- Test de démarrage : Repérage relancé à 7 h 53 UTC (run 78) → **échec en 2 s, aucune machine** : quota GitHub Actions des dépôts privés toujours épuisé.
+  Rendu, Shorts et publication (`bmo-studio-link`) tournent tous sur Actions : **rien ne peut être rendu ni mis en ligne cette semaine**.
+- Session cloud : Pixabay, la voix (Edge/Hugging Face) refusés par le réseau ; `bmo-studio-link` et `le-vrai-prix-medias` non rattachés à cette session.
+- Décision : **sujet de la semaine = électricité** (« Offre électricité moins chère 2026 : 5 pièges à éviter », montage prêt depuis le 17/11, 159 plans,
+  jamais rendu). Pas de nouveau sujet : il resterait aussi bloqué et dépasserait la vidéo déjà prête. Au retour d'Actions : rendu → contrôle → 7 Shorts
+  (Release `shorts-electricite` déjà rendue, à recontrôler) → publication 18 h, un Short par jour à 18 h.
+- Geste attendu d'Omar (gratuit) : passer `chaine-youtube` et `bmo-studio-link` en public (minutes illimitées), ou attendre la remise à zéro mensuelle.
