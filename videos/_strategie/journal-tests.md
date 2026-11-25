@@ -251,3 +251,7 @@ Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues). T7-B et T5 
 Relevé du 24/11 9 h 15 Paris : Statistiques relancées à 8 h 14 UTC (run 56) : **échec en 3 s**, toujours sans machine (quota Actions des dépôts privés).
 Publier a aussi échoué (23/11 13 h 08 et 24/11 1 h 00 UTC). Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues).
 T7-B et T5 : **à confirmer**. Aucun Short programmé, aucune correction possible. 8e jour sans mesure.
+
+Relevé du 25/11 9 h 15 Paris : Statistiques relancées à 8 h 14 UTC (run 58) : **échec en 2 s**, toujours sans machine (quota Actions des dépôts privés ;
+le passage planifié du 24/11 15 h 57 UTC, run 57, a échoué pareil). Aucun chiffre nouveau (derniers = 17/11 : 13 abonnés, 12 646 vues).
+T7-B et T5 : **à confirmer**. Aucun Short programmé, aucune inversion ni correction possible. 9e jour sans mesure.
