@@ -275,3 +275,15 @@ Relevé du 27/11 12 h 25 Paris (stats enfin à jour après le passage des dépô
   sous la moyenne chaîne (29,4 %) et loin du +10 pts visé. 1 seul Short (prises cinéma et timbre jamais arrivées) : **à confirmer**, tendance : la voix ne règle pas le balayage.
 - **T5** : clos, hypothèse rejetée (voir tableau).
 - Correction : 5 commentaires épinglés en attente depuis le 17/11 (cinéma, timbre, 3 Black Friday) → workflow Publier relancé à la main (runs 145-146) : « action requise », à approuver par Omar comme Statistiques.
+
+Relevé du 28/11 9 h 15 Paris (Statistiques run 67, réussi ; Publier tourne de nouveau seul : runs 147-148 réussis) :
+**13 abonnés (+0, 0 depuis le 17/11)**, 13 719 vues (**+19 en 24 h**). La chaîne est à l'arrêt : aucun Short français publié depuis le 22/11.
+- Shorts de moins de 7 jours : Europe 314 sites w2-GTv5qxrY 46 vues (~6 j) · 22,2 % Restés · 0 abonné ; prix conseillé DT-7EeQle5s 90 (~7 j) · 20,5 % · 0.
+  Vues à 24 h / 72 h non relevées (stats bloquées à l'époque). Les deux plafonnent (+1 et +0 depuis hier).
+- **Nouveau Short anglais inconnu** « Retirement Savings by Age. Where Do You Fall? » 9_8FsX368nc (27/11, 5 vues) : 3e du genre (après U5Xn8xj0iPA le 14/11
+  et « 1% Mortgage Rate » le 23/11), aucune fiche de `bmo-studio-link` ne l'a envoyé. Signalé à Omar, rien supprimé.
+- Meilleur Short d'hier : aucun Short publié le 27/11 par le studio ; plus forte hausse = station essence k3DeuIxK6Mk +3 (295).
+- **T7-B** (voix d'Omar) : inchangé (livre 647 · 26,7 % · 0 abonné), 1 seul Short : **à confirmer**. Aucun autre test en cours.
+- Contrôle : les 5 commentaires épinglés en attente (cinéma, timbre, 3 Black Friday) sont **postés** (« ok » depuis Publier du 27/11 11 h 39 UTC).
+  Toutes les fiches de `publications/fait/` ont réussi (vieux refus 409 de playlist inchangés). Aucun Short programmé : aucune inversion d'horaires.
+- Doublons wkDQjDh_x0w et rzuXPc_KRa0 : même identifiant listé deux fois (bug d'affichage), rien à faire.
